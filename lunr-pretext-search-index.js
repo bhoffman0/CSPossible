@@ -691,7 +691,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "1.5",
   "title": "Sequencing",
-  "body": "  Sequencing   In this lesson, we will talk about algorithms using sequential steps and start coding in Python with print statements and Turtle code to draw shapes.    Learning Objectives   1.5.A  Represent an algorithm that uses sequencing using written steps or a flowchart.    1.5.B  Develop code that runs sequentially and determine the result of sequential statements.     Sequencing in Written Steps and Flowcharts  algorithm  sequencing  flowchart   1.5.A.1  Many tasks can be completed by following step-by-step instructions. An algorithm describes these steps in an order that can be followed to solve a problem.   Algorithms are step by step instructions for solving a problem or completing a task. Before writing code, programmers often design algorithms to plan out the steps needed to solve a problem. Algorithms are used in many areas of life, not just in computer science. For example, a recipe is an algorithm for cooking a meal. A set of directions to a friend’s house is an algorithm for getting there.  Watch the following video about algorithms by Dr. Ralph Morelli, one of the founders of Mobile CSP ( slides , TeacherTube version ).     Write an algorithm in the form of written steps for how to make a peanut butter and jelly sandwich. Have a friend attempt to follow it.     Watch the following video of how instructions to make a peanut butter and jelly sandwich can go horribly wrong if the instructions are not precise enough!    1.5.A.2  Algorithms can be represented in ways people can read and follow, such as written steps or flowcharts .    1.5.A.3  When representing an algorithm in written steps or a flowchart, each step should be clear and specific so the process can be followed correctly.   Algorithms can be written as text in any language or in pseudocode which is a way to describe precise coding steps using a language like English or using flowcharts . Here's an example of a flowchart for choosing a pet:     Create a flowchart to help someone decide what clothes to wear based on the weather. Be sure to include yes\/no questions and different paths for at least 4 different outcomes.      1.5.A.4  Sequencing means the steps of an algorithm are carried out in a specific order, one step at a time. Changing the order of the steps can change what happens or whether the task is completed correctly.   The activity below demonstrated that the steps of an algorithm need to be in order. Put the steps for sending a text message in order. Try them out of order and it will not work!    Put the following pseudocode algorithm steps for sending a text message in order. Click on Check Me to see if you are right.     Unlock your phone.    Open the messaging app.    Choose a contact.    Type your message.    Press Send.       Python Output with print()  print  output  The print() function is used to display output to the screen in Python. Inside the parenthesis of the function, you can put in any message in quotes to be printed out, for example:   print(\"Hello World!\")   Try running this code in the exercise below. Notice that every Python command to the computer must be on a separate line.    Run the following code. Then, change \"World\" to your name and run the code again.    print(\"Hello World!\") print(\"Good bye!\")  from unittest.gui import TestCaseGui class myTests(TestCaseGui): def test1(self): self.assertIn(\"Hello\",self.getOutput(),\"Says hello\") self.assertNotIn(\"World\",self.getOutput(),\"Change World to your name\") myTests().main()      Drag or click on the blocks you need to move them from the top section into the yellow area to create a print statement that will print “Hi!”. There are extra blocks that you don’t need.     print    (    \"Hi!\"    )    ;    Print       Sequencing in Code  IDE  In this e-book, you can write Python code right in the Active Code exercises. When you click on run, the code is executed or run by the computer, which means the computer follows the algorithm instructions in the code.   1.5.B.1  When an app runs, a computer executes algorithms that are expressed as program code.    1.5.B.2  Programmers write code using tools such as text editors or integrated development environments (IDEs) that help them write and run programs. Some tools include AI features that can generate or autocomplete code, which programmers can adapt and test as they develop programs.   The IDE in this e-book is in the Active Code exercise windows, but you could copy the code into a text editor or IDE like VSCode that can be downloaded to your computer and run.   1.5.B.3  Clarity and readability are important when expressing an algorithm in a programming language so others can understand and modify the code.    1.5.B.4  Sequential statements execute in the order they appear in the program, and changing the order of statements can change the program’s behavior or what the user sees.   To demonstrate that statements need to be in order, put the following Knock Knock joke in order:    Put the lines of this knock-knock joke in the correct order. Remember that Python executes statements sequentially in order from top to bottom.     print(\"Knock knock!\")    print(\"Who's there?\")    print(\"Lettuce.\")    print(\"Lettuce who?\")    print(\"Let us in, it's cold out here!\")     Now let's try it in Python code. Python executes each line of code in order, so if the lines are out of order, the joke will not make sense when it is printed out. Put them in order by moving the lines of code, and then run it again to see the joke printed out correctly!    The lines of this knock-knock joke are out of order. Run to see what it prints out! Highlight and drag or cut and paste with (ctrl-x and ctrl-v) the print statements to put them in order, so the joke makes sense, and then run again.    print(\"Lettuce who?\") print(\"Knock knock!\") print(\"Let us in, it's cold out here!\") print(\"Who's there?\") print(\"Lettuce.\")  from unittest.gui import TestCaseGui class myTests(TestCaseGui): def test1(self): output = self.getOutput() expected = \"Knock knock!\\nWho's there?\\nLettuce.\\nLettuce who?\\nLet us in, it's cold out here!\\n\" self.assertEqual(output,expected,\"The joke lines are in the correct order.\") myTests().main()      Debugging  debugging  syntax error   Syntax errors are bugs or mistakes in the way the code is written. For example, the following code has a syntax error because the quotes and parenthesis are not closed. Try running the code and see what happens. Try fixing the errors to debug the code.    Run the following code. Fix the errors and run again.    print(\"Hello World!  from unittest.gui import TestCaseGui class myTests(TestCaseGui): def test1(self): self.assertIn(\"Hello World!\",self.getOutput(),\"output\") myTests().main()      Python Turtles  turtle  Python has a Turtle library where turtle objects can move around on the screen and draw pictures. We can import the library and set up the drawing space and the turtle with the following code where # indicates a comment that is not executed but explains the code.   import turtle # use the turtle library yertle = turtle.Turtle() # create a turtle named yertle yertle.shape(\"turtle\") # make yertle look like a turtle (default is an arrow)   We can set up a Turtle object like yertle that can be used to call functions to move the turtle around the screen. For example, the following code will move the turtle forward 100 pixels, turn it left 90 degrees, and move it forward 100 pixels again. The amount of movement or turning is put in parentheses after the function name.   yertle.forward(100) # move forward 100 pixels yertle.left(90) # turn left 90 degrees yertle.forward(100) # move forward 100 pixels   Try running the code to see how the turtle moves. You can change the numbers in the parentheses to move or turn different amounts. You can also use other functions like right() to turn right, backward() to move backward. Note that the turtle always starts facing to the right and moves forward whichever way it is facing.    Run the code below. Then, add one more statement at the end to move yertle forward 100 pixels. Run again.    import turtle # use the turtle library yertle = turtle.Turtle() # create a turtle named yertle yertle.shape(\"turtle\") # make yertle look like a turtle yertle.forward(100) yertle.left(90) yertle.forward(100) # Can you add code below to make yertle move forward again?  from unittest.gui import TestCaseGui class myTests(TestCaseGui): def test1(self): input_count = self.getEditorText().count(\".forward\") self.assertGreaterEqual(input_count, 3, \"at least 3 forward statements\") myTests().main()      The following program uses a turtle to draw a capital L as shown below, but the lines are mixed up. The turtle should turn to face south, draw a line that is 150 pixels long, then turn to face east, and draw a line that is 75 pixels long. We have added a compass to the picture to indicate the directions north, south, west, and east. Drag the needed blocks of statements from the left column to the right column and put them in the right order. There may be additional blocks that are not needed in a correct solution. Then click on Check to see if you are right. You will be told if any of the lines are in the wrong order or are the wrong blocks.      import turtle    ella = turtle.Turtle()     ella.right(90)    ella.turn(90)     ella.forward(150)    ella.left(90)     ella.forward(75)    ella.go(75)        Run the following code. Can you make the turtle complete the square? Can you change its pen color for each side of the square?    import turtle tina = turtle.Turtle() tina.shape(\"turtle\") tina.color(\"green\") # set pen color to green tina.fillcolor(\"green\") # set turtle body and fill color to green tina.forward(100) tina.right(90) tina.forward(100) # add code to complete the square  from unittest.gui import TestCaseGui class myTests(TestCaseGui): def test1(self): input_count = self.getEditorText().count(\".forward\") self.assertGreaterEqual(input_count, 4, \"at least 4 forward statements\") input_count = self.getEditorText().count(\".right\") self.assertGreaterEqual(input_count, 4, \"at least 4 right turns\") input_count = self.getEditorText().count(\".color\") self.assertGreaterEqual(input_count, 2, \"at least 2 colors\") myTests().main()      Tracing Sequential Code  tracing  trace table   1.5.B.5  Tracing program execution means following which statements are executed and what values are produced and stored as the program runs.   Pretend that you are the computer and trace through the code below line by line to figure out what the turtle will draw.    What shape will the program below draw when run?   import turtle zari = turtle.Turtle() zari.left(90) zari.forward(100) zari.left(90) zari.forward(100) zari.left(90) zari.forward(100) zari.left(90) zari.forward(100)       Correct!      Try again. Choose between an A, C, L, circle, triangle, square, pentagon.        1.5.B.6  Programmers can trace execution by using debuggers or print statements to display values at different points in a program. When the following code runs, the program displays the value of expression followed by a new line. print(expression)   The xcor() turtle command will print out the current x-coordinate of the turtle on the screen. Try running the following program that uses print statements to trace the current location of the turtle.    Run the following code. Add another print statement to print out tina's current x-coordinate at the end.    import turtle tina = turtle.Turtle() tina.shape(\"turtle\") tina.color(\"purple\") tina.fillcolor(\"purple\") print( tina.xcor() ) tina.forward(50) print( tina.xcor() ) tina.forward(50) # add another print statement  from unittest.gui import TestCaseGui class myTests(TestCaseGui): def test1(self): input_count = self.getEditorText().count(\".xcor\") self.assertGreaterEqual(input_count, 3, \"at least 3 xcor\") self.assertIn(\"100\",self.getOutput(),\"50+50\") myTests().main()     1.5.B.7  The result of sequential statements can be determined by tracing code in order and keeping track of the values and output.   Trace tables can be used to track the values as they change throughout a program. To trace through code, write down a variable in each column or row in a table and keep track of its value throughout the program. Some trace tables also keep track of the output like below.     What x-coordinate will be printed out by this code?   import turtle teeny = turtle.Turtle() teeny.forward(20) teeny.forward(30) teeny.left(30) print( teeny.xcor() )       Correct!      Try again. Turning does not change the x-coordinate.        1.5.B.8  Programmers trace sequential code to confirm an app works as intended and the information it displays is correct and understandable.     Vocabulary Review    Review the vocabulary in this lesson. Drag the vocabulary term from the left and drop it on its correct definition on the right. Click the \"Check Me\" button to see if you are correct.    Find the words in the lesson above and try again.     algorithm  Step by step instructions for solving a problem    sequencing  The default order of code that is run line-by-line from the top down    flowchart  Visual representation of an algorithm that uses shapes and arrows to show the steps    IDE  Software that provides tools for programmers to write, test, and debug code    syntax error  A mistake in the way code is written that prevents it from running correctly    debugging  The process of finding and fixing errors in code       Turtle Project    Draw something interesting with the turtle. The code below also shows how to change colors, fill in colors, lift up the pen, and draw dots. You could draw a flower, a house for the turtle, a smiley face, or anything you want.    import turtle tina = turtle.Turtle() tina.shape(\"turtle\") tina.color(\"blue\") # set pen color to blue tina.fillcolor(\"green\") # set fill color to green tina.begin_fill() # start filling in the shape # draw a closed shape tina.forward(100) tina.right(90) tina.forward(100) tina.right(90) tina.forward(100) tina.right(90) tina.forward(100) tina.end_fill() # end filling in the shape tina.penup() # put pen up so it doesn't draw tina.forward(150) # move without drawing tina.pendown() # put pen down so it draws tina.dot(50, \"red\") # draw a red dot of size 20  from unittest.gui import TestCaseGui class myTests(TestCaseGui): def test1(self): input_count = self.getEditorText().count(\".forward\") self.assertGreaterEqual(input_count, 8, \"at least 8 forward statements\") myTests().main()     "
+  "body": "  Sequencing   In this lesson, we will talk about algorithms using sequential steps and start coding in Python with print statements and Turtle code to draw shapes.    Learning Objectives   1.5.A  Represent an algorithm that uses sequencing using written steps or a flowchart.    1.5.B  Develop code that runs sequentially and determine the result of sequential statements.     Sequencing in Written Steps and Flowcharts  algorithm  sequencing  flowchart   1.5.A.1  Many tasks can be completed by following step-by-step instructions. An algorithm describes these steps in an order that can be followed to solve a problem.   Algorithms are step by step instructions for solving a problem or completing a task. Before writing code, programmers often design algorithms to plan out the steps needed to solve a problem. Algorithms are used in many areas of life, not just in computer science. For example, a recipe is an algorithm for cooking a meal. A set of directions to a friend’s house is an algorithm for getting there.  Watch the following video about algorithms by Dr. Ralph Morelli, one of the founders of Mobile CSP ( slides , TeacherTube version ).     Write an algorithm in the form of written steps for how to make a peanut butter and jelly sandwich. Have a friend attempt to follow it.     Watch the following video of how instructions to make a peanut butter and jelly sandwich can go horribly wrong if the instructions are not precise enough!    1.5.A.2  Algorithms can be represented in ways people can read and follow, such as written steps or flowcharts .    1.5.A.3  When representing an algorithm in written steps or a flowchart, each step should be clear and specific so the process can be followed correctly.   Algorithms can be written as text in any language or in pseudocode which is a way to describe precise coding steps using a language like English or using flowcharts . Here's an example of a flowchart for choosing a pet:     Create a flowchart to help someone decide what clothes to wear based on the weather. Be sure to include yes\/no questions and different paths for at least 4 different outcomes.      1.5.A.4  Sequencing means the steps of an algorithm are carried out in a specific order, one step at a time. Changing the order of the steps can change what happens or whether the task is completed correctly.   The activity below demonstrated that the steps of an algorithm need to be in order. Put the steps for sending a text message in order. Try them out of order and it will not work!    Put the following pseudocode algorithm steps for sending a text message in order. Click on Check Me to see if you are right.     Unlock your phone.    Open the messaging app.    Choose a contact.    Type your message.    Press Send.       Python Output with print()  print  output  The print() function is used to display output to the screen in Python. Inside the parenthesis of the function, you can put in any message in quotes to be printed out, for example:   print(\"Hello World!\")   Try running this code in the exercise below. Notice that every Python command to the computer must be on a separate line.    Run the following code. Then, change \"World\" to your name and run the code again.    print(\"Hello World!\") print(\"Good bye!\")  from unittest.gui import TestCaseGui class myTests(TestCaseGui): def test1(self): self.assertIn(\"Hello\",self.getOutput(),\"Says hello\") self.assertNotIn(\"World\",self.getOutput(),\"Change World to your name\") myTests().main()      Drag or click on the blocks you need to move them from the top section into the yellow area to create a print statement that will print “Hi!”. There are extra blocks that you don’t need.     print    (    \"Hi!\"    )    ;    Print       Sequencing in Code  IDE  In this e-book, you can write Python code right in the Active Code exercises. When you click on run, the code is executed or run by the computer, which means the computer follows the algorithm instructions in the code.   1.5.B.1  When an app runs, a computer executes algorithms that are expressed as program code.    1.5.B.2  Programmers write code using tools such as text editors or integrated development environments (IDEs) that help them write and run programs. Some tools include AI features that can generate or autocomplete code, which programmers can adapt and test as they develop programs.   The IDE in this e-book is in the Active Code exercise windows, but you could copy the code into a text editor or IDE like VSCode that can be downloaded to your computer and run.   1.5.B.3  Clarity and readability are important when expressing an algorithm in a programming language so others can understand and modify the code.    1.5.B.4  Sequential statements execute in the order they appear in the program, and changing the order of statements can change the program’s behavior or what the user sees.   To demonstrate that statements need to be in order, put the following Knock Knock joke in order:    Put the lines of this knock-knock joke in the correct order. Remember that Python executes statements sequentially in order from top to bottom.     print(\"Knock knock!\")    print(\"Who's there?\")    print(\"Lettuce.\")    print(\"Lettuce who?\")    print(\"Let us in, it's cold out here!\")     Now let's try it in Python code. Python executes each line of code in order, so if the lines are out of order, the joke will not make sense when it is printed out. Put them in order by moving the lines of code, and then run it again to see the joke printed out correctly!    The lines of this knock-knock joke are out of order. Run to see what it prints out! Highlight and drag or cut and paste with (ctrl-x and ctrl-v) the print statements to put them in order, so the joke makes sense, and then run again.    print(\"Lettuce who?\") print(\"Knock knock!\") print(\"Let us in, it's cold out here!\") print(\"Who's there?\") print(\"Lettuce.\")  from unittest.gui import TestCaseGui class myTests(TestCaseGui): def test1(self): output = self.getOutput() expected = \"Knock knock!\\nWho's there?\\nLettuce.\\nLettuce who?\\nLet us in, it's cold out here!\\n\" self.assertEqual(output,expected,\"The joke lines are in the correct order.\") myTests().main()      Debugging  debugging  syntax error   Syntax errors are bugs or mistakes in the way the code is written. For example, the following code has a syntax error because the quotes and parenthesis are not closed. Try running the code and see what happens. Try fixing the errors to debug the code.    Run the following code. Fix the errors and run again.    print(\"Hello World!  from unittest.gui import TestCaseGui class myTests(TestCaseGui): def test1(self): self.assertIn(\"Hello World!\",self.getOutput(),\"output\") myTests().main()      Python Turtles  turtle  Python has a Turtle library where turtle objects can move around on the screen and draw pictures. We can import the library and set up the drawing space and the turtle with the following code where # indicates a comment that is not executed but explains the code.   import turtle # use the turtle library yertle = turtle.Turtle() # create a turtle named yertle yertle.shape(\"turtle\") # make yertle look like a turtle (default is an arrow)   We can set up a Turtle object like yertle that can be used to call functions to move the turtle around the screen. For example, the following code will move the turtle forward 100 pixels, turn it left 90 degrees, and move it forward 100 pixels again. The amount of movement or turning is put in parentheses after the function name.   yertle.forward(100) # move forward 100 pixels yertle.left(90) # turn left 90 degrees yertle.forward(100) # move forward 100 pixels   Try running the code to see how the turtle moves. You can change the numbers in the parentheses to move or turn different amounts. You can also use other functions like right() to turn right, backward() to move backward. Note that the turtle always starts facing to the right and moves forward whichever way it is facing.    Run the code below. Then, add one more statement at the end to move yertle forward 100 pixels. Run again.    import turtle # use the turtle library yertle = turtle.Turtle() # create a turtle named yertle yertle.shape(\"turtle\") # make yertle look like a turtle yertle.forward(100) yertle.left(90) yertle.forward(100) # Can you add code below to make yertle move forward again?  from unittest.gui import TestCaseGui class myTests(TestCaseGui): def test1(self): input_count = self.getEditorText().count(\".forward\") self.assertGreaterEqual(input_count, 3, \"at least 3 forward statements\") myTests().main()      The following program uses a turtle to draw a capital L as shown below, but the lines are mixed up. The turtle should turn to face south, draw a line that is 150 pixels long, then turn to face east, and draw a line that is 75 pixels long. We have added a compass to the picture to indicate the directions north, south, west, and east. Drag the needed blocks of statements from the left column to the right column and put them in the right order. There may be additional blocks that are not needed in a correct solution. Then click on Check to see if you are right. You will be told if any of the lines are in the wrong order or are the wrong blocks.      import turtle    ella = turtle.Turtle()     ella.right(90)    ella.turn(90)     ella.forward(150)    ella.left(90)     ella.forward(75)    ella.go(75)        Run the following code. Can you make the turtle complete the square? Can you change its pen color for each side of the square?    import turtle tina = turtle.Turtle() tina.shape(\"turtle\") tina.color(\"green\") # set pen color to green tina.fillcolor(\"green\") # set turtle body and fill color to green tina.forward(100) tina.right(90) tina.forward(100) # add code to complete the square  from unittest.gui import TestCaseGui class myTests(TestCaseGui): def test1(self): input_count = self.getEditorText().count(\".forward\") self.assertGreaterEqual(input_count, 4, \"at least 4 forward statements\") input_count = self.getEditorText().count(\".right\") self.assertGreaterEqual(input_count, 4, \"at least 4 right turns\") input_count = self.getEditorText().count(\".color\") self.assertGreaterEqual(input_count, 2, \"at least 2 colors\") myTests().main()      Tracing Sequential Code  tracing  trace table   1.5.B.5  Tracing program execution means following which statements are executed and what values are produced and stored as the program runs.   Pretend that you are the computer and trace through the code below line by line to figure out what the turtle will draw.    What shape will the program below draw when run?    import turtle zari = turtle.Turtle() zari.left(90) zari.forward(100) zari.left(90) zari.forward(100) zari.left(90) zari.forward(100) zari.left(90) zari.forward(100)       Correct!      Try again. Choose between an A, C, L, circle, triangle, square, or pentagon.        1.5.B.6  Programmers can trace execution by using debuggers or print statements to display values at different points in a program. When the following code runs, the program displays the value of expression followed by a new line. print(expression)   The xcor() turtle command will print out the current x-coordinate of the turtle on the screen. Try running the following program that uses print statements to trace the current location of the turtle.    Run the following code. Add another print statement to print out tina's current x-coordinate at the end.    import turtle tina = turtle.Turtle() tina.shape(\"turtle\") tina.color(\"purple\") tina.fillcolor(\"purple\") print( tina.xcor() ) tina.forward(50) print( tina.xcor() ) tina.forward(50) # add another print statement  from unittest.gui import TestCaseGui class myTests(TestCaseGui): def test1(self): input_count = self.getEditorText().count(\".xcor\") self.assertGreaterEqual(input_count, 3, \"at least 3 xcor\") self.assertIn(\"100\",self.getOutput(),\"50+50\") myTests().main()     1.5.B.7  The result of sequential statements can be determined by tracing code in order and keeping track of the values and output.   Trace tables can be used to track the values as they change throughout a program. To trace through code, write down a variable in each column or row in a table and keep track of its value throughout the program. Some trace tables also keep track of the output like below.     What x-coordinate will be printed out by this code?   import turtle teeny = turtle.Turtle() teeny.forward(20) teeny.forward(30) teeny.left(30) print( teeny.xcor() )       Correct!      Try again. Turning does not change the x-coordinate.        1.5.B.8  Programmers trace sequential code to confirm an app works as intended and the information it displays is correct and understandable.     Vocabulary Review    Review the vocabulary in this lesson. Drag the vocabulary term from the left and drop it on its correct definition on the right. Click the \"Check Me\" button to see if you are correct.    Find the words in the lesson above and try again.     algorithm  Step by step instructions for solving a problem    sequencing  The default order of code that is run line-by-line from the top down    flowchart  Visual representation of an algorithm that uses shapes and arrows to show the steps    IDE  Software that provides tools for programmers to write, test, and debug code    syntax error  A mistake in the way code is written that prevents it from running correctly    debugging  The process of finding and fixing errors in code       Turtle Project    Draw something interesting with the turtle. The code below also shows how to change colors, fill in colors, lift up the pen, and draw dots. You could draw a flower, a house for the turtle, a smiley face, or anything you want.    import turtle tina = turtle.Turtle() tina.shape(\"turtle\") tina.color(\"blue\") # set pen color to blue tina.fillcolor(\"green\") # set fill color to green tina.begin_fill() # start filling in the shape # draw a closed shape tina.forward(100) tina.right(90) tina.forward(100) tina.right(90) tina.forward(100) tina.right(90) tina.forward(100) tina.end_fill() # end filling in the shape tina.penup() # put pen up so it doesn't draw tina.forward(150) # move without drawing tina.pendown() # put pen down so it draws tina.dot(50, \"red\") # draw a red dot of size 20  from unittest.gui import TestCaseGui class myTests(TestCaseGui): def test1(self): input_count = self.getEditorText().count(\".forward\") self.assertGreaterEqual(input_count, 8, \"at least 8 forward statements\") myTests().main()     "
 },
 {
   "id": "LOs-1-5-2",
@@ -943,7 +943,7 @@ var ptx_lunr_docs = [
   "type": "Activity",
   "number": "1.5.12",
   "title": "",
-  "body": "  What shape will the program below draw when run?   import turtle zari = turtle.Turtle() zari.left(90) zari.forward(100) zari.left(90) zari.forward(100) zari.left(90) zari.forward(100) zari.left(90) zari.forward(100)       Correct!      Try again. Choose between an A, C, L, circle, triangle, square, pentagon.      "
+  "body": "  What shape will the program below draw when run?    import turtle zari = turtle.Turtle() zari.left(90) zari.forward(100) zari.left(90) zari.forward(100) zari.left(90) zari.forward(100) zari.left(90) zari.forward(100)       Correct!      Try again. Choose between an A, C, L, circle, triangle, square, or pentagon.      "
 },
 {
   "id": "tracing-7",
@@ -1015,214 +1015,484 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "1.6",
   "title": "Variables",
-  "body": "  Variables       Learning Objectives   1.6.A  Identify the use of variables in an app while interacting with it.     1.6.B  Develop code for assignment statements using variables, and determine the values that are stored in the variables as a result.    1.6.C  Develop code to store and modify strings, and determine the output produced.     Identifying Variables in Apps   1.6.A.1  A variable is a named storage location used to hold a value that can change while the program is running. It is an abstraction that lets programmers use a name to represent a value.    1.6.A.2  Apps use variables to keep track of changing information by updating their values as the user interacts with the app. Programs can then use a variable’s current value to decide what to do next and what feedback to provide, such as updating the screen, playing a sound, or triggering a vibration.    1.6.A.3  Every value in a program has a data type, such as a number, Boolean, or string. Some programming languages require programmers to specify the type, while others determine it automatically by how the data is used.    1.6.A.4  The choice of data type depends on what a value represents. Values used to count or measure are best represented as numbers, values that record a true or false condition are best represented as Booleans, and values that store text are best represented as strings. The data type affects what operations can be performed on the variable and how accurately the output is represented in an app.    1.6.A.5  Variables are often used to store information about the user or a program’s state, such as a username, a selected theme, a score, progress toward a goal, a shopping cart total, or whether notifications are on. The program can use the stored value to adjust its behavior or display the value to the user.    1.6.A.6  Program state is the set of values and information a program is storing at a specific moment, including variable values and any inputs it is using. As the program runs, the state changes when inputs are received and variables are updated.    1.6.A.7  Users can infer the use of variables in an app by observing information that changes over time, such as counters, totals, settings, progress, or status, and reasoning about what values the app must store and update to produce those changes.     Variables and Assignment   1.6.B.1  The assignment operator allows a program to initialize or change the value stored in a variable. When the following code runs, expression is evaluated, and the resulting value is stored in the variable a . a = expression    1.6.B.2  Variables are initialized by assigning an initial value before they are used. After initialization, later statements can use the variable’s value and update it as the program runs.    1.6.B.3  Using meaningful variable names improves readability and helps programmers understand what the stored values represent.    1.6.B.4  A variable stores its most recently assigned value.    1.6.B.5  The value stored in a variable after a sequence of assignment statements can be determined by tracing statements in order and updating the variable’s value after each assignment.    1.6.B.6  Assignment statements are often used to update information an app remembers about the user or the program’s state, such as a score or setting, so the app responds appropriately as the user interacts with it.     Strings   1.6.C.1  A string is an ordered sequence of characters used to represent text in a program.    1.6.C.2  Apps often use strings to store and display user-facing information, such as names, messages, labels, or search terms.    1.6.C.3  To initialize a string variable, programmers assign it an initial text value or an empty string before it is used so the program starts with a known value. An empty string has zero characters ( \"\" ). It is not the same as a string that contains spaces ( \" \" ).    1.6.C.4  String concatenation joins two or more strings to create a new string, such as combining a greeting with a user’s name.    1.6.C.5  A substring is part of an existing string. Programs can create substrings to extract or use part of a text value, such as extracting the month from a date, reading a portion of a message, or checking for a word within a string.    1.6.C.6  The output of code that uses string operations can be determined by tracing statements in order and keeping track of how string values change and what text is displayed.    1.6.C.7  To communicate clearly with users, programmers use strings to store and generate text that apps display, such as prompts, feedback messages, and personalized responses.    "
+  "body": "  Variables  variable    Variables are named memory locations that store values used by a program. These values can change or vary as the program runs. A variable is like a box with a label where different values can be put into the box. For example, when you interact with an app or game, there may be variables that store your name or your score, and these variables can be used by the app to customize how it behaves or the information it displays. In this section, you will learn how to identify variables in apps and how to use them in Python code.     Learning Objectives   1.6.A  Identify the use of variables in an app while interacting with it.    1.6.B  Develop code for assignment statements using variables, and determine the values that are stored in the variables as a result.    1.6.C  Develop code to store and modify strings, and determine the output produced.     Identifying Variables in Apps   1.6.A.1  A variable is a named storage location used to hold a value that can change while the program is running. It is an abstraction that lets programmers use a name to represent a value.    1.6.A.2  Apps use variables to keep track of changing information by updating their values as the user interacts with the app. Programs can then use a variable’s current value to decide what to do next and what feedback to provide, such as updating the screen, playing a sound, or triggering a vibration.   Try the following pizza web app by typing in your name and choosing different options. Think about the inputs and outputs to the app. When you type in your name and other inputs, your information gets saved in variables in the program. These values can then be used in the outputs of the app.     Interact with the pizza app above. Which of the following are variables that the app above might use to store information about the user.      name    The app needs to store the user's name to display it in the output.      favoriteColor    The app needs the favorite color to change the background to that color.     address   The app does not need the user's address to function, so it would not use a variable to store this information.      age    The app needs to store the user's age to display it in the output.      temperature    The app does not need to know the temperature to function, so it would not use a variable to store this information.      likesPizza    The app needs to store whether the user likes pizza to display it and pizza images in the output.       1.6.A.5  Variables are often used to store information about the user or a program’s state, such as a username, a selected theme, a score, progress toward a goal, a shopping cart total, or whether notifications are on. The program can use the stored value to adjust its behavior or display the value to the user.    1.6.A.6  Program state is the set of values and information a program is storing at a specific moment, including variable values and any inputs it is using. As the program runs, the state changes when inputs are received and variables are updated.   Some video games keep a list of players with the highest scores in the game. Each entry in the list a snapshot of the program state at a certain time. For example, the player with the name or initials \"AKI\" had a score of 12,000 at a certain point.    1.6.A.7  Users can infer the use of variables in an app by observing information that changes over time, such as counters, totals, settings, progress, or status, and reasoning about what values the app must store and update to produce those changes.     Assume that you are playing a game that starts with the score at 0. As you play, you earn or lose the following points from your score. Each event below is a program state. What is your score in the last program state?  Player earns 10 points. Player earns 5 points. Player loses 3 points. Your score is?        Correct! The score changes each time the variable is updated. The final score is 12.      Try tracing the value of score after each line:   Start: 0  After adding 10: 10  After adding 5: 15  After subtracting 3 from 15: ?          Variables in Python   Variables are names for memory locations that store values used in a program. In Python, a variable is created when a value is assigned to it. For example, the following code creates a variable named name and assigns the value \"Dani\" to it and a variable named age with the value 16. Note that text values like \"Dani\" are placed in quotes (\"\"), but numbers like 16 are not.   # variable = value name = \"Dani\" age = 16   In Python, multiple values can be printed out separated by commas. The variables, name and age, are never put inside quotes because we do not want to literally print the variable names; we want to print the values stored in the variables.   print(\"Hello\", name, \"you are\", age, \"years old\")     Run the following code. Change the variable values and run again.    name = \"Dani\" age = 16 print(\"Hello\", name, \"you are\", age, \"years old\")  from unittest.gui import TestCaseGui class myTests(TestCaseGui): def test1(self): self.assertIn(\"years old\",self.getOutput(),\"output\") self.assertNotIn(\"Dani\",self.getOutput(),\"Change Dani to a different name\") myTests().main()      Drag or click on the blocks you need to move them from the top section into the yellow area to create a print statement with the variable name . For example, if name = \"Alex\" , it will print \"Hello Alex!\". There are extra blocks that you don't need.     print    (    \"Hello \"    ,    name    ,    \"!\"    )    \"Hello name!\"    \"name\"       Data Types  The pizza app above stores lots of different types of data: the user's name, their age, their favorite color, and whether they like pizza. The user's name is text (which is called a string in coding, but the age is a number. Whether they like pizza or not could be stored as a Boolean value of true or false. These are all different data types .   1.6.A.3  Every value in a program has a data type , such as a number, Boolean, or string. Some programming languages require programmers to specify the type, while others determine it automatically by how the data is used.    1.6.A.4  The choice of data type depends on what a value represents. Values used to count or measure are best represented as numbers, values that record a true or false condition are best represented as Booleans, and values that store text are best represented as strings. The data type affects what operations can be performed on the variable and how accurately the output is represented in an app.   In some languages, you have to declare the data type of a variable, but in Python, the data type is assigned automatically depending on its value during run time. Python has several built-in data types, including:   int - for integers (whole numbers)  float - for floating-point numbers (decimals)  str - for strings (text)  bool - for boolean values (True or False)  For example, the following two variables have different data types because of the value assigned to them. Text in quotes are strings, where as numbers with no quotes are int or float data types.  name = \"Dani\" # type string age = 16 # type int   You can check the data type of a variable using the type() function. For example:   print(type(name)) # This will print str, for a string or text data type print(type(age)) # This will print int for an integer whole number     Run the following code to see the data types of the variables. Add another print to see the type of the last variable which is a number inside quotes. You'll see that anything in quotes is a string, even if it is a number inside.    name = \"Dani\" age = 16 print(\"The variable name has the value\", name, \"and the type\", type(name)) print(\"The variable age has the value\", age, \"and the type\", type(age)) ageStr = \"16\" # print out the type of ageStr  from unittest.gui import TestCaseGui class myTests(TestCaseGui): def testOne(self): self.assertIn(\"type(ageStr)\", self.getEditorText(), \"Print the type of ageStr\") myTests().main()      Naming variables  Although you can name a variable almost anything you want, there are some rules and conventions to follow. In Python, variable names must follow these rules:     It must start with a letter or an underscore _ .    It can contain digits, like 1 or 9 , but not as the first character.    It cannot have spaces, or special symbols other than _   It cannot be a Python keyword . Keywords are words that have special meaning in the language(see below for examples).   Case matters. A variable named result is not the same as one named Result .   Use meaningful variable names that describe what the variable holds, not letters like x,y,z.     1.6.B.3  Using meaningful variable names improves readability and helps programmers understand what the stored values represent.   Python has a few dozen keywords that you can’t use as variable names. Here is a list of the most common ones. If you ever have an error based on one of your variable names and do not know why, compare your name to this list to make sure you are not using a keyword as your variable name.   Python keywords    and  as  assert  break  class  continue    def  del  elif  else  except  exec    finally  for  from  global  if  import    in  is  lambda  nonlocal  not  or    pass  raise  return  try  while  with    yield  True  False  None           Which of the following is not a legal variable name in Python?      my name    Right, you can't have a space in a variable name.      my_name    You can use an underscore between words in a variable name.      _a1    Although it is not very common, you can use an underscore as the first character in a variable name      amountOfStuff    You can use both uppercase and lowercase letters in a variable name.      1A    Correct, you can't use a digit as the first letter in a variable name.        Variables and Assignment   1.6.B.1  The assignment operator = allows a program to initialize or change the value stored in a variable. When the following code runs, expression is evaluated, and the resulting value is stored in the variable a . a = expression    1.6.B.2  Variables are initialized by assigning an initial value before they are used. After initialization, later statements can use the variable’s value and update it as the program runs.   An assignment statement assigns a value to a variable using the assignment operator = . The first assignment to a variable initializes the variable to its first value. It can then be changed with other assignment statements. For example, the variable score is initialized to 0 and then changes to 50 below. Note that the variable name must match exactly with the same capitalization and spelling to have it refer to the same variable.   score = 0 score = 50     Python variables are case sensitive so gameScore and gamescore are not the same. Run and fix the code below to use the right variable name.    gameScore = 0 print(\"Initial score:\", gamescore) game_score = 100 print(\"Final score:\", gameScore)  from unittest.gui import TestCaseGui class myTests(TestCaseGui): def test1(self): self.assertIn(\"Initial score: 0\\nFinal score: 100\", self.getOutput(), \"Initial score: 0 Final score: 100\") myTests().main()     1.6.B.4  A variable stores its most recently assigned value.    1.6.B.5  The value stored in a variable after a sequence of assignment statements can be determined by tracing statements in order and updating the variable’s value after each assignment.     Trace the code below keeping track of the variables and their values. What is the value in the variable score after the code executes?   score = 0 name = \"user\" score = 50 Name = \"user1\" Score = 100         Correct! The variable score changes from 0 to 50. The last line of the code changes a different variable Score to 100.      Remember that variable names have to match exactly including capitalization to refer to the same memory location.        1.6.B.6  Assignment statements are often used to update information an app remembers about the user or the program’s state, such as a score or setting, so the app responds appropriately as the user interacts with it.     Strings  In coding, a string is a sequence of characters surrounded by quotes (\"\"). Imagine strings with lined up letter beads like below.    1.6.C.1  A string is an ordered sequence of characters used to represent text in a program.   In the web app above, the text that the use types in like name was probably saved as strings.   1.6.C.2  Apps often use strings to store and display user-facing information, such as names, messages, labels, or search terms.    1.6.C.3  To initialize a string variable, programmers assign it an initial text value or an empty string before it is used so the program starts with a known value. An empty string has zero characters ( \"\" ). It is not the same as a string that contains spaces ( \" \" ).   Variables can be assigned values or an empty string \"\" that will be filled in later. Python allows double quotes \"\" or single quotes ' for string values.   name = \"Sam\" # double quotes email = 'sam@gmail.com' # single quotes message = \"\" # empty string    1.6.C.4  String concatenation joins two or more strings to create a new string, such as combining a greeting with a user’s name.   We can concatenate or append or add strings in Python using the operator + , which can be used to add numbers or strings. Blank spaces are not automatically added when you use + (unlike , ), so if you want a blank space, you need to type it inside the quotes or add in a string with just a space in it \" \" as shown below.   name = \"Sam\" message = \"Hello \" + name # note the space after Hello print(message)     Run the following code to see the smushed output. Fix the error by putting in an extra space and concatenate an ! at the end.    first = 'Sam' last = \"Smith\" fullName = first + \" \" + last print(\"Hello\" + fullName) # fix smushed output and add \"!\"  from unittest.gui import TestCaseGui class myTests(TestCaseGui): def testOne(self): self.assertEqual(self.getOutput().strip(), \"Hello Sam Smith!\", \"Add a space after Hello and add a ! at the end\") myTests().main()    Since the operator + is used to add numbers or concatenate strings in Python, the interpreter will get confused and show an error if you use it to concatenate a string with a number. To concatenate the number with a string we need to convert the number into a string first. The str(num) function will convert a number into a string. Another option is to use the , instead of + in print statements because that will print different data types with no problem, but it can only be used in print statements.    Run the following code to see the error. Fix the error by using str to convert the number.    name = \"Sam\" age = 16 print(name + \" is \" + age + \" years old\")  from unittest.gui import TestCaseGui class myTests(TestCaseGui): def testOne(self): self.assertEqual(self.getOutput().strip(), \"Sam is 16 years old\", \"Use str(age)\") myTests().main()     1.6.C.5  A substring is part of an existing string. Programs can create substrings to extract or use part of a text value, such as extracting the month from a date, reading a portion of a message, or checking for a word within a string.   In Python, every character in a string is associated with an index starting with 0. Square brackets and an index can pull out any character from a string.   Python has a special slicing operator to pull out a substring from a start index up to a end index (but not including the end index), message[start:end] .   message = \"Python is fun!\" letter = message[0] # pull out 0th letter P substring = message[0:6] # substring \"Python\" from index 0 up to index 6     Run the following code to see examples of slicing. Add to the code to print another substring of message that uses slicing to pull out the word \"fun\".    message = \"Python is fun!\" letter = message[0] print(\"The 0th letter is\", letter) print(\"Substring: \", message[0:6] ) # substring \"Python\" from index 0 up to index 6 # print another substring of message that uses slicing to pull out the word fun.  from unittest.gui import TestCaseGui class myTests(TestCaseGui): def testOne(self): self.assertIn(\"message[10:\", self.getEditorText(), \"Start from index 10 to pull out fun from message.\") myTests().main()     1.6.C.6  The output of code that uses string operations can be determined by tracing statements in order and keeping track of how string values change and what text is displayed.     Trace the code below keeping track of the variables and their values. What is the value in the variable score after the code executes?   message1 = \"Python is fun!\" message2 = \"Coding\" message3 = message2 + message1[6:13] print(message3)         Correct!      The answer is 3 words separated by spaces. Remember that slicing is up to but not including the end index. Capitalization matters. You can try the code in an active coding area.        1.6.C.7  To communicate clearly with users, programmers use strings to store and generate text that apps display, such as prompts, feedback messages, and personalized responses.     Input  Python has an input function that can be used to get input from the typed in by user. This input must be saved into a variable. This is another way to initialize or assign to a variable. The syntax for an input statement is:   variable_name = input(\"Input prompt or question? \")   The following code will ask the user for their name and then print out a greeting. Try it out by clicking the \"Run\" button.    Run the following code. Enter your name in the pop up input box and then scroll down to see the output.    name = input(\"What is your name? \") print(\"Hello\", name)  from unittest.gui import TestCaseGui class myTests(TestCaseGui): def test1(self): self.assertIn(\"Hello\",self.getOutput(),\"output\") myTests().main()      Drag or click on the blocks you need to move them from the top section into the yellow area to create an input statement that will ask for the user's age. There are extra blocks that you don't need.     age    =    input    (    \"What is your age?\"    )     The input() function in Python always returns a string, even if the user enters a number. For example, if the user enters \"25\", the variable will be a string containing \"25\", not the integer number 25. But sometimes, you need it to be a number and not a string so that you can do math with it.  To convert a string to an integer whole number or a floating point decimal number, you can use the int() or float() functions. We will need this in the next lesson to do math with or compare these variables. For example:   ageStr = input(\"Enter your age: \") age = int(ageStr) # Convert the string to an integer   To convert a number back into a string, you can use the str() function. For example:   ageString = str(age) # Convert the integer back to a string     Run the following code to see that there are some errors caused by the data types. Try using int or str functions to convert the variables to the correct data type.    score = input(\"Input the initial score: \") print(\"Type of score after input:\", type(score)) score = int(score) print(\"Type of score after type conversion:\", type(score)) bonus = input(\"Enter the bonus points (5-10): \") print(\"Type of bonus after input:\", type(bonus)) # This will cause an error because bonus needs to be an int to be added to an int score += bonus # This will cause an error because score needs to be an string to be added to a string print(\"Total score: \" + score)  from unittest.gui import TestCaseGui class myTests(TestCaseGui): def test1(self): self.assertIn(\"Total score\",self.getOutput(),\"output\") self.assertIn(\"int(bonus)\", self.getEditorText(), \"Used int(bonus)\"\" ) myTests().main()      Story Project  Let's make a poem or a story using input and variables in Python. Ask the user to input different nouns and verbs, and weave together a story.   Story   Finish the input statements below to ask the user for 2 colors and a food item. Run to see the silly poem. Then, ask the user for more input words and create your own poem or story using the variables in print statements.    # Get user input pluralnoun1 = input(\"Enter a plural noun: \") pluralnoun2 = input(\"Enter another plural noun: \") # Complete 3 input statements below color1 = input( ) color2 = food = # create 2 more variables and input statements # Run to see the silly poem print(\"Here's my silly poem!\") print(\"Roses are \" + color1) print(pluralnoun1 + \" are \" + color2) print(\"I like \" + food) print(\"Do \" + pluralnoun2 + \" like them too?\") # Add at least 2 more lines to the poem # using print and your last 2 variables  from unittest.gui import TestCaseGui class myTests(TestCaseGui): def test1(self): self.assertIn(\"I like\",self.getOutput(),\"output\") input_count = self.getEditorText().count(\"input(\") self.assertGreaterEqual(input_count, 7, \"at least 7 input statements\") myTests().main()      Vocabulary Review    Review the vocabulary in this lesson. Drag the vocabulary term from the left and drop it on its correct definition on the right. Click the \"Check Me\" button to see if you are correct.    Find the words in the lesson above and try again.     variable  a named storage location used to hold a value that can change while the program is running    program state  the set of values and information a program is storing at a specific moment    data types  numbers, strings, or booleans    string  an ordered sequence of characters used to represent text in a program    concatenation  joins two or more strings to create a new string    substring  part of an existing string      "
 },
 {
-  "id": "topic-1-6-variables-4-2",
+  "id": "topic-1-6-variables-4-1",
   "level": "2",
-  "url": "topic-1-6-variables.html#topic-1-6-variables-4-2",
+  "url": "topic-1-6-variables.html#topic-1-6-variables-4-1",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "Variables "
+},
+{
+  "id": "LOs-1-6-2",
+  "level": "2",
+  "url": "topic-1-6-variables.html#LOs-1-6-2",
   "type": "Learning Objective",
   "number": "1.6.1",
   "title": "1.6.A.",
   "body": " 1.6.A  Identify the use of variables in an app while interacting with it.  "
 },
 {
-  "id": "topic-1-6-variables-4-4",
+  "id": "LOs-1-6-3",
   "level": "2",
-  "url": "topic-1-6-variables.html#topic-1-6-variables-4-4",
+  "url": "topic-1-6-variables.html#LOs-1-6-3",
   "type": "Learning Objective",
   "number": "1.6.2",
   "title": "1.6.B.",
   "body": " 1.6.B  Develop code for assignment statements using variables, and determine the values that are stored in the variables as a result.  "
 },
 {
-  "id": "topic-1-6-variables-4-5",
+  "id": "LOs-1-6-4",
   "level": "2",
-  "url": "topic-1-6-variables.html#topic-1-6-variables-4-5",
+  "url": "topic-1-6-variables.html#LOs-1-6-4",
   "type": "Learning Objective",
   "number": "1.6.3",
   "title": "1.6.C.",
   "body": " 1.6.C  Develop code to store and modify strings, and determine the output produced.  "
 },
 {
-  "id": "topic-1-6-variables-5-2",
+  "id": "vars-in-apps-2",
   "level": "2",
-  "url": "topic-1-6-variables.html#topic-1-6-variables-5-2",
+  "url": "topic-1-6-variables.html#vars-in-apps-2",
   "type": "Essential Knowledge",
   "number": "1.6.4",
   "title": "1.6.A.1.",
   "body": " 1.6.A.1  A variable is a named storage location used to hold a value that can change while the program is running. It is an abstraction that lets programmers use a name to represent a value.  "
 },
 {
-  "id": "topic-1-6-variables-5-3",
+  "id": "vars-in-apps-3",
   "level": "2",
-  "url": "topic-1-6-variables.html#topic-1-6-variables-5-3",
+  "url": "topic-1-6-variables.html#vars-in-apps-3",
   "type": "Essential Knowledge",
   "number": "1.6.5",
   "title": "1.6.A.2.",
   "body": " 1.6.A.2  Apps use variables to keep track of changing information by updating their values as the user interacts with the app. Programs can then use a variable’s current value to decide what to do next and what feedback to provide, such as updating the screen, playing a sound, or triggering a vibration.  "
 },
 {
-  "id": "topic-1-6-variables-5-4",
+  "id": "vars-in-apps-4",
   "level": "2",
-  "url": "topic-1-6-variables.html#topic-1-6-variables-5-4",
+  "url": "topic-1-6-variables.html#vars-in-apps-4",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "variables "
+},
+{
+  "id": "pizzaAppVars",
+  "level": "2",
+  "url": "topic-1-6-variables.html#pizzaAppVars",
+  "type": "Activity",
+  "number": "1.6.1",
+  "title": "",
+  "body": "  Interact with the pizza app above. Which of the following are variables that the app above might use to store information about the user.      name    The app needs to store the user's name to display it in the output.      favoriteColor    The app needs the favorite color to change the background to that color.     address   The app does not need the user's address to function, so it would not use a variable to store this information.      age    The app needs to store the user's age to display it in the output.      temperature    The app does not need to know the temperature to function, so it would not use a variable to store this information.      likesPizza    The app needs to store whether the user likes pizza to display it and pizza images in the output.     "
+},
+{
+  "id": "vars-in-apps-7",
+  "level": "2",
+  "url": "topic-1-6-variables.html#vars-in-apps-7",
   "type": "Essential Knowledge",
   "number": "1.6.6",
-  "title": "1.6.A.3.",
-  "body": " 1.6.A.3  Every value in a program has a data type, such as a number, Boolean, or string. Some programming languages require programmers to specify the type, while others determine it automatically by how the data is used.  "
-},
-{
-  "id": "topic-1-6-variables-5-5",
-  "level": "2",
-  "url": "topic-1-6-variables.html#topic-1-6-variables-5-5",
-  "type": "Essential Knowledge",
-  "number": "1.6.7",
-  "title": "1.6.A.4.",
-  "body": " 1.6.A.4  The choice of data type depends on what a value represents. Values used to count or measure are best represented as numbers, values that record a true or false condition are best represented as Booleans, and values that store text are best represented as strings. The data type affects what operations can be performed on the variable and how accurately the output is represented in an app.  "
-},
-{
-  "id": "topic-1-6-variables-5-6",
-  "level": "2",
-  "url": "topic-1-6-variables.html#topic-1-6-variables-5-6",
-  "type": "Essential Knowledge",
-  "number": "1.6.8",
   "title": "1.6.A.5.",
   "body": " 1.6.A.5  Variables are often used to store information about the user or a program’s state, such as a username, a selected theme, a score, progress toward a goal, a shopping cart total, or whether notifications are on. The program can use the stored value to adjust its behavior or display the value to the user.  "
 },
 {
-  "id": "topic-1-6-variables-5-7",
+  "id": "vars-in-apps-8",
   "level": "2",
-  "url": "topic-1-6-variables.html#topic-1-6-variables-5-7",
+  "url": "topic-1-6-variables.html#vars-in-apps-8",
   "type": "Essential Knowledge",
-  "number": "1.6.9",
+  "number": "1.6.7",
   "title": "1.6.A.6.",
   "body": " 1.6.A.6  Program state is the set of values and information a program is storing at a specific moment, including variable values and any inputs it is using. As the program runs, the state changes when inputs are received and variables are updated.  "
 },
 {
-  "id": "topic-1-6-variables-5-8",
+  "id": "vars-in-apps-9",
   "level": "2",
-  "url": "topic-1-6-variables.html#topic-1-6-variables-5-8",
+  "url": "topic-1-6-variables.html#vars-in-apps-9",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "program state "
+},
+{
+  "id": "vars-in-apps-11",
+  "level": "2",
+  "url": "topic-1-6-variables.html#vars-in-apps-11",
   "type": "Essential Knowledge",
-  "number": "1.6.10",
+  "number": "1.6.8",
   "title": "1.6.A.7.",
   "body": " 1.6.A.7  Users can infer the use of variables in an app by observing information that changes over time, such as counters, totals, settings, progress, or status, and reasoning about what values the app must store and update to produce those changes.  "
 },
 {
-  "id": "topic-1-6-variables-6-2",
+  "id": "program-state-score",
   "level": "2",
-  "url": "topic-1-6-variables.html#topic-1-6-variables-6-2",
+  "url": "topic-1-6-variables.html#program-state-score",
+  "type": "Activity",
+  "number": "1.6.2",
+  "title": "",
+  "body": "  Assume that you are playing a game that starts with the score at 0. As you play, you earn or lose the following points from your score. Each event below is a program state. What is your score in the last program state?  Player earns 10 points. Player earns 5 points. Player loses 3 points. Your score is?        Correct! The score changes each time the variable is updated. The final score is 12.      Try tracing the value of score after each line:   Start: 0  After adding 10: 10  After adding 5: 15  After subtracting 3 from 15: ?       "
+},
+{
+  "id": "python-vars-2",
+  "level": "2",
+  "url": "topic-1-6-variables.html#python-vars-2",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "Variables "
+},
+{
+  "id": "printVars",
+  "level": "2",
+  "url": "topic-1-6-variables.html#printVars",
+  "type": "Activity",
+  "number": "1.6.3",
+  "title": "",
+  "body": "  Run the following code. Change the variable values and run again.    name = \"Dani\" age = 16 print(\"Hello\", name, \"you are\", age, \"years old\")  from unittest.gui import TestCaseGui class myTests(TestCaseGui): def test1(self): self.assertIn(\"years old\",self.getOutput(),\"output\") self.assertNotIn(\"Dani\",self.getOutput(),\"Change Dani to a different name\") myTests().main()   "
+},
+{
+  "id": "mixedUpPrintVars",
+  "level": "2",
+  "url": "topic-1-6-variables.html#mixedUpPrintVars",
+  "type": "Activity",
+  "number": "1.6.4",
+  "title": "",
+  "body": "  Drag or click on the blocks you need to move them from the top section into the yellow area to create a print statement with the variable name . For example, if name = \"Alex\" , it will print \"Hello Alex!\". There are extra blocks that you don't need.     print    (    \"Hello \"    ,    name    ,    \"!\"    )    \"Hello name!\"    \"name\"    "
+},
+{
+  "id": "data-types-2",
+  "level": "2",
+  "url": "topic-1-6-variables.html#data-types-2",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "string data types "
+},
+{
+  "id": "data-types-3",
+  "level": "2",
+  "url": "topic-1-6-variables.html#data-types-3",
+  "type": "Essential Knowledge",
+  "number": "1.6.9",
+  "title": "1.6.A.3.",
+  "body": " 1.6.A.3  Every value in a program has a data type , such as a number, Boolean, or string. Some programming languages require programmers to specify the type, while others determine it automatically by how the data is used.  "
+},
+{
+  "id": "data-types-4",
+  "level": "2",
+  "url": "topic-1-6-variables.html#data-types-4",
+  "type": "Essential Knowledge",
+  "number": "1.6.10",
+  "title": "1.6.A.4.",
+  "body": " 1.6.A.4  The choice of data type depends on what a value represents. Values used to count or measure are best represented as numbers, values that record a true or false condition are best represented as Booleans, and values that store text are best represented as strings. The data type affects what operations can be performed on the variable and how accurately the output is represented in an app.  "
+},
+{
+  "id": "dataTypes",
+  "level": "2",
+  "url": "topic-1-6-variables.html#dataTypes",
+  "type": "Activity",
+  "number": "1.6.5",
+  "title": "",
+  "body": "  Run the following code to see the data types of the variables. Add another print to see the type of the last variable which is a number inside quotes. You'll see that anything in quotes is a string, even if it is a number inside.    name = \"Dani\" age = 16 print(\"The variable name has the value\", name, \"and the type\", type(name)) print(\"The variable age has the value\", age, \"and the type\", type(age)) ageStr = \"16\" # print out the type of ageStr  from unittest.gui import TestCaseGui class myTests(TestCaseGui): def testOne(self): self.assertIn(\"type(ageStr)\", self.getEditorText(), \"Print the type of ageStr\") myTests().main()   "
+},
+{
+  "id": "naming-vars-3",
+  "level": "2",
+  "url": "topic-1-6-variables.html#naming-vars-3",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "keyword "
+},
+{
+  "id": "naming-vars-4",
+  "level": "2",
+  "url": "topic-1-6-variables.html#naming-vars-4",
   "type": "Essential Knowledge",
   "number": "1.6.11",
-  "title": "1.6.B.1.",
-  "body": " 1.6.B.1  The assignment operator allows a program to initialize or change the value stored in a variable. When the following code runs, expression is evaluated, and the resulting value is stored in the variable a . a = expression  "
-},
-{
-  "id": "topic-1-6-variables-6-3",
-  "level": "2",
-  "url": "topic-1-6-variables.html#topic-1-6-variables-6-3",
-  "type": "Essential Knowledge",
-  "number": "1.6.12",
-  "title": "1.6.B.2.",
-  "body": " 1.6.B.2  Variables are initialized by assigning an initial value before they are used. After initialization, later statements can use the variable’s value and update it as the program runs.  "
-},
-{
-  "id": "topic-1-6-variables-6-4",
-  "level": "2",
-  "url": "topic-1-6-variables.html#topic-1-6-variables-6-4",
-  "type": "Essential Knowledge",
-  "number": "1.6.13",
   "title": "1.6.B.3.",
   "body": " 1.6.B.3  Using meaningful variable names improves readability and helps programmers understand what the stored values represent.  "
 },
 {
-  "id": "topic-1-6-variables-6-5",
+  "id": "python-keywords",
   "level": "2",
-  "url": "topic-1-6-variables.html#topic-1-6-variables-6-5",
+  "url": "topic-1-6-variables.html#python-keywords",
+  "type": "Table",
+  "number": "1.6.12",
+  "title": "Python keywords",
+  "body": " Python keywords    and  as  assert  break  class  continue    def  del  elif  else  except  exec    finally  for  from  global  if  import    in  is  lambda  nonlocal  not  or    pass  raise  return  try  while  with    yield  True  False  None        "
+},
+{
+  "id": "legalVarNames",
+  "level": "2",
+  "url": "topic-1-6-variables.html#legalVarNames",
+  "type": "Activity",
+  "number": "1.6.6",
+  "title": "",
+  "body": "  Which of the following is not a legal variable name in Python?      my name    Right, you can't have a space in a variable name.      my_name    You can use an underscore between words in a variable name.      _a1    Although it is not very common, you can use an underscore as the first character in a variable name      amountOfStuff    You can use both uppercase and lowercase letters in a variable name.      1A    Correct, you can't use a digit as the first letter in a variable name.     "
+},
+{
+  "id": "assignment-2",
+  "level": "2",
+  "url": "topic-1-6-variables.html#assignment-2",
+  "type": "Essential Knowledge",
+  "number": "1.6.13",
+  "title": "1.6.B.1.",
+  "body": " 1.6.B.1  The assignment operator = allows a program to initialize or change the value stored in a variable. When the following code runs, expression is evaluated, and the resulting value is stored in the variable a . a = expression  "
+},
+{
+  "id": "assignment-3",
+  "level": "2",
+  "url": "topic-1-6-variables.html#assignment-3",
   "type": "Essential Knowledge",
   "number": "1.6.14",
+  "title": "1.6.B.2.",
+  "body": " 1.6.B.2  Variables are initialized by assigning an initial value before they are used. After initialization, later statements can use the variable’s value and update it as the program runs.  "
+},
+{
+  "id": "assignment-4",
+  "level": "2",
+  "url": "topic-1-6-variables.html#assignment-4",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "assignment statement assignment initializes "
+},
+{
+  "id": "varCaseSensitive",
+  "level": "2",
+  "url": "topic-1-6-variables.html#varCaseSensitive",
+  "type": "Activity",
+  "number": "1.6.7",
+  "title": "",
+  "body": "  Python variables are case sensitive so gameScore and gamescore are not the same. Run and fix the code below to use the right variable name.    gameScore = 0 print(\"Initial score:\", gamescore) game_score = 100 print(\"Final score:\", gameScore)  from unittest.gui import TestCaseGui class myTests(TestCaseGui): def test1(self): self.assertIn(\"Initial score: 0\\nFinal score: 100\", self.getOutput(), \"Initial score: 0 Final score: 100\") myTests().main()   "
+},
+{
+  "id": "assignment-7",
+  "level": "2",
+  "url": "topic-1-6-variables.html#assignment-7",
+  "type": "Essential Knowledge",
+  "number": "1.6.15",
   "title": "1.6.B.4.",
   "body": " 1.6.B.4  A variable stores its most recently assigned value.  "
 },
 {
-  "id": "topic-1-6-variables-6-6",
+  "id": "assignment-8",
   "level": "2",
-  "url": "topic-1-6-variables.html#topic-1-6-variables-6-6",
+  "url": "topic-1-6-variables.html#assignment-8",
   "type": "Essential Knowledge",
-  "number": "1.6.15",
+  "number": "1.6.16",
   "title": "1.6.B.5.",
   "body": " 1.6.B.5  The value stored in a variable after a sequence of assignment statements can be determined by tracing statements in order and updating the variable’s value after each assignment.  "
 },
 {
-  "id": "topic-1-6-variables-6-7",
+  "id": "trace-score",
   "level": "2",
-  "url": "topic-1-6-variables.html#topic-1-6-variables-6-7",
+  "url": "topic-1-6-variables.html#trace-score",
+  "type": "Activity",
+  "number": "1.6.8",
+  "title": "",
+  "body": "  Trace the code below keeping track of the variables and their values. What is the value in the variable score after the code executes?   score = 0 name = \"user\" score = 50 Name = \"user1\" Score = 100         Correct! The variable score changes from 0 to 50. The last line of the code changes a different variable Score to 100.      Remember that variable names have to match exactly including capitalization to refer to the same memory location.      "
+},
+{
+  "id": "assignment-10",
+  "level": "2",
+  "url": "topic-1-6-variables.html#assignment-10",
   "type": "Essential Knowledge",
-  "number": "1.6.16",
+  "number": "1.6.17",
   "title": "1.6.B.6.",
   "body": " 1.6.B.6  Assignment statements are often used to update information an app remembers about the user or the program’s state, such as a score or setting, so the app responds appropriately as the user interacts with it.  "
 },
 {
-  "id": "topic-1-6-variables-7-2",
+  "id": "strings-2",
   "level": "2",
-  "url": "topic-1-6-variables.html#topic-1-6-variables-7-2",
+  "url": "topic-1-6-variables.html#strings-2",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "string "
+},
+{
+  "id": "strings-4",
+  "level": "2",
+  "url": "topic-1-6-variables.html#strings-4",
   "type": "Essential Knowledge",
-  "number": "1.6.17",
+  "number": "1.6.18",
   "title": "1.6.C.1.",
   "body": " 1.6.C.1  A string is an ordered sequence of characters used to represent text in a program.  "
 },
 {
-  "id": "topic-1-6-variables-7-3",
+  "id": "strings-6",
   "level": "2",
-  "url": "topic-1-6-variables.html#topic-1-6-variables-7-3",
+  "url": "topic-1-6-variables.html#strings-6",
   "type": "Essential Knowledge",
-  "number": "1.6.18",
+  "number": "1.6.19",
   "title": "1.6.C.2.",
   "body": " 1.6.C.2  Apps often use strings to store and display user-facing information, such as names, messages, labels, or search terms.  "
 },
 {
-  "id": "topic-1-6-variables-7-4",
+  "id": "strings-7",
   "level": "2",
-  "url": "topic-1-6-variables.html#topic-1-6-variables-7-4",
+  "url": "topic-1-6-variables.html#strings-7",
   "type": "Essential Knowledge",
-  "number": "1.6.19",
+  "number": "1.6.20",
   "title": "1.6.C.3.",
   "body": " 1.6.C.3  To initialize a string variable, programmers assign it an initial text value or an empty string before it is used so the program starts with a known value. An empty string has zero characters ( \"\" ). It is not the same as a string that contains spaces ( \" \" ).  "
 },
 {
-  "id": "topic-1-6-variables-7-5",
+  "id": "strings-8",
   "level": "2",
-  "url": "topic-1-6-variables.html#topic-1-6-variables-7-5",
+  "url": "topic-1-6-variables.html#strings-8",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "empty string "
+},
+{
+  "id": "strings-10",
+  "level": "2",
+  "url": "topic-1-6-variables.html#strings-10",
   "type": "Essential Knowledge",
-  "number": "1.6.20",
+  "number": "1.6.21",
   "title": "1.6.C.4.",
   "body": " 1.6.C.4  String concatenation joins two or more strings to create a new string, such as combining a greeting with a user’s name.  "
 },
 {
-  "id": "topic-1-6-variables-7-6",
+  "id": "strings-11",
   "level": "2",
-  "url": "topic-1-6-variables.html#topic-1-6-variables-7-6",
+  "url": "topic-1-6-variables.html#strings-11",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "concatenate append "
+},
+{
+  "id": "concat",
+  "level": "2",
+  "url": "topic-1-6-variables.html#concat",
+  "type": "Activity",
+  "number": "1.6.9",
+  "title": "",
+  "body": "  Run the following code to see the smushed output. Fix the error by putting in an extra space and concatenate an ! at the end.    first = 'Sam' last = \"Smith\" fullName = first + \" \" + last print(\"Hello\" + fullName) # fix smushed output and add \"!\"  from unittest.gui import TestCaseGui class myTests(TestCaseGui): def testOne(self): self.assertEqual(self.getOutput().strip(), \"Hello Sam Smith!\", \"Add a space after Hello and add a ! at the end\") myTests().main()   "
+},
+{
+  "id": "concat-num-str",
+  "level": "2",
+  "url": "topic-1-6-variables.html#concat-num-str",
+  "type": "Activity",
+  "number": "1.6.10",
+  "title": "",
+  "body": "  Run the following code to see the error. Fix the error by using str to convert the number.    name = \"Sam\" age = 16 print(name + \" is \" + age + \" years old\")  from unittest.gui import TestCaseGui class myTests(TestCaseGui): def testOne(self): self.assertEqual(self.getOutput().strip(), \"Sam is 16 years old\", \"Use str(age)\") myTests().main()   "
+},
+{
+  "id": "strings-16",
+  "level": "2",
+  "url": "topic-1-6-variables.html#strings-16",
   "type": "Essential Knowledge",
-  "number": "1.6.21",
+  "number": "1.6.22",
   "title": "1.6.C.5.",
   "body": " 1.6.C.5  A substring is part of an existing string. Programs can create substrings to extract or use part of a text value, such as extracting the month from a date, reading a portion of a message, or checking for a word within a string.  "
 },
 {
-  "id": "topic-1-6-variables-7-7",
+  "id": "strings-19",
   "level": "2",
-  "url": "topic-1-6-variables.html#topic-1-6-variables-7-7",
+  "url": "topic-1-6-variables.html#strings-19",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "slicing substring "
+},
+{
+  "id": "slicing0",
+  "level": "2",
+  "url": "topic-1-6-variables.html#slicing0",
+  "type": "Activity",
+  "number": "1.6.11",
+  "title": "",
+  "body": "  Run the following code to see examples of slicing. Add to the code to print another substring of message that uses slicing to pull out the word \"fun\".    message = \"Python is fun!\" letter = message[0] print(\"The 0th letter is\", letter) print(\"Substring: \", message[0:6] ) # substring \"Python\" from index 0 up to index 6 # print another substring of message that uses slicing to pull out the word fun.  from unittest.gui import TestCaseGui class myTests(TestCaseGui): def testOne(self): self.assertIn(\"message[10:\", self.getEditorText(), \"Start from index 10 to pull out fun from message.\") myTests().main()   "
+},
+{
+  "id": "strings-22",
+  "level": "2",
+  "url": "topic-1-6-variables.html#strings-22",
   "type": "Essential Knowledge",
-  "number": "1.6.22",
+  "number": "1.6.23",
   "title": "1.6.C.6.",
   "body": " 1.6.C.6  The output of code that uses string operations can be determined by tracing statements in order and keeping track of how string values change and what text is displayed.  "
 },
 {
-  "id": "topic-1-6-variables-7-8",
+  "id": "trace-slicing",
   "level": "2",
-  "url": "topic-1-6-variables.html#topic-1-6-variables-7-8",
+  "url": "topic-1-6-variables.html#trace-slicing",
+  "type": "Activity",
+  "number": "1.6.12",
+  "title": "",
+  "body": "  Trace the code below keeping track of the variables and their values. What is the value in the variable score after the code executes?   message1 = \"Python is fun!\" message2 = \"Coding\" message3 = message2 + message1[6:13] print(message3)         Correct!      The answer is 3 words separated by spaces. Remember that slicing is up to but not including the end index. Capitalization matters. You can try the code in an active coding area.      "
+},
+{
+  "id": "strings-24",
+  "level": "2",
+  "url": "topic-1-6-variables.html#strings-24",
   "type": "Essential Knowledge",
-  "number": "1.6.23",
+  "number": "1.6.24",
   "title": "1.6.C.7.",
   "body": " 1.6.C.7  To communicate clearly with users, programmers use strings to store and generate text that apps display, such as prompts, feedback messages, and personalized responses.  "
+},
+{
+  "id": "input-2",
+  "level": "2",
+  "url": "topic-1-6-variables.html#input-2",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "input "
+},
+{
+  "id": "input1",
+  "level": "2",
+  "url": "topic-1-6-variables.html#input1",
+  "type": "Activity",
+  "number": "1.6.13",
+  "title": "",
+  "body": "  Run the following code. Enter your name in the pop up input box and then scroll down to see the output.    name = input(\"What is your name? \") print(\"Hello\", name)  from unittest.gui import TestCaseGui class myTests(TestCaseGui): def test1(self): self.assertIn(\"Hello\",self.getOutput(),\"output\") myTests().main()   "
+},
+{
+  "id": "mixedUpInput",
+  "level": "2",
+  "url": "topic-1-6-variables.html#mixedUpInput",
+  "type": "Activity",
+  "number": "1.6.14",
+  "title": "",
+  "body": "  Drag or click on the blocks you need to move them from the top section into the yellow area to create an input statement that will ask for the user's age. There are extra blocks that you don't need.     age    =    input    (    \"What is your age?\"    )    "
+},
+{
+  "id": "dataTypesDebug",
+  "level": "2",
+  "url": "topic-1-6-variables.html#dataTypesDebug",
+  "type": "Activity",
+  "number": "1.6.15",
+  "title": "",
+  "body": "  Run the following code to see that there are some errors caused by the data types. Try using int or str functions to convert the variables to the correct data type.    score = input(\"Input the initial score: \") print(\"Type of score after input:\", type(score)) score = int(score) print(\"Type of score after type conversion:\", type(score)) bonus = input(\"Enter the bonus points (5-10): \") print(\"Type of bonus after input:\", type(bonus)) # This will cause an error because bonus needs to be an int to be added to an int score += bonus # This will cause an error because score needs to be an string to be added to a string print(\"Total score: \" + score)  from unittest.gui import TestCaseGui class myTests(TestCaseGui): def test1(self): self.assertIn(\"Total score\",self.getOutput(),\"output\") self.assertIn(\"int(bonus)\", self.getEditorText(), \"Used int(bonus)\"\" ) myTests().main()   "
+},
+{
+  "id": "madlibs",
+  "level": "2",
+  "url": "topic-1-6-variables.html#madlibs",
+  "type": "Activity",
+  "number": "1.6.16",
+  "title": "Story.",
+  "body": " Story   Finish the input statements below to ask the user for 2 colors and a food item. Run to see the silly poem. Then, ask the user for more input words and create your own poem or story using the variables in print statements.    # Get user input pluralnoun1 = input(\"Enter a plural noun: \") pluralnoun2 = input(\"Enter another plural noun: \") # Complete 3 input statements below color1 = input( ) color2 = food = # create 2 more variables and input statements # Run to see the silly poem print(\"Here's my silly poem!\") print(\"Roses are \" + color1) print(pluralnoun1 + \" are \" + color2) print(\"I like \" + food) print(\"Do \" + pluralnoun2 + \" like them too?\") # Add at least 2 more lines to the poem # using print and your last 2 variables  from unittest.gui import TestCaseGui class myTests(TestCaseGui): def test1(self): self.assertIn(\"I like\",self.getOutput(),\"output\") input_count = self.getEditorText().count(\"input(\") self.assertGreaterEqual(input_count, 7, \"at least 7 input statements\") myTests().main()   "
+},
+{
+  "id": "vars-vocab",
+  "level": "2",
+  "url": "topic-1-6-variables.html#vars-vocab",
+  "type": "Activity",
+  "number": "1.6.17",
+  "title": "",
+  "body": "  Review the vocabulary in this lesson. Drag the vocabulary term from the left and drop it on its correct definition on the right. Click the \"Check Me\" button to see if you are correct.    Find the words in the lesson above and try again.     variable  a named storage location used to hold a value that can change while the program is running    program state  the set of values and information a program is storing at a specific moment    data types  numbers, strings, or booleans    string  an ordered sequence of characters used to represent text in a program    concatenation  joins two or more strings to create a new string    substring  part of an existing string    "
 },
 {
   "id": "topic-1-7-expressions",
