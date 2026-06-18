@@ -1015,7 +1015,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "1.6",
   "title": "Variables",
-  "body": "  Variables  variable    Variables are named memory locations that store values used by a program. These values can change or vary as the program runs. A variable is like a box with a label where different values can be put into the box. For example, when you interact with an app or game, there may be variables that store your name or your score, and these variables can be used by the app to customize how it behaves or the information it displays. In this section, you will learn how to identify variables in apps and how to use them in Python code.     Learning Objectives   1.6.A  Identify the use of variables in an app while interacting with it.    1.6.B  Develop code for assignment statements using variables, and determine the values that are stored in the variables as a result.    1.6.C  Develop code to store and modify strings, and determine the output produced.     Identifying Variables in Apps   1.6.A.1  A variable is a named storage location used to hold a value that can change while the program is running. It is an abstraction that lets programmers use a name to represent a value.    1.6.A.2  Apps use variables to keep track of changing information by updating their values as the user interacts with the app. Programs can then use a variable’s current value to decide what to do next and what feedback to provide, such as updating the screen, playing a sound, or triggering a vibration.   Try the following pizza web app by typing in your name and choosing different options. Think about the inputs and outputs to the app. When you type in your name and other inputs, your information gets saved in variables in the program. These values can then be used in the outputs of the app.     Interact with the pizza app above. Which of the following are variables that the app above might use to store information about the user.      name    The app needs to store the user's name to display it in the output.      favoriteColor    The app needs the favorite color to change the background to that color.     address   The app does not need the user's address to function, so it would not use a variable to store this information.      age    The app needs to store the user's age to display it in the output.      temperature    The app does not need to know the temperature to function, so it would not use a variable to store this information.      likesPizza    The app needs to store whether the user likes pizza to display it and pizza images in the output.       1.6.A.5  Variables are often used to store information about the user or a program’s state, such as a username, a selected theme, a score, progress toward a goal, a shopping cart total, or whether notifications are on. The program can use the stored value to adjust its behavior or display the value to the user.    1.6.A.6  Program state is the set of values and information a program is storing at a specific moment, including variable values and any inputs it is using. As the program runs, the state changes when inputs are received and variables are updated.   Some video games keep a list of players with the highest scores in the game. Each entry in the list a snapshot of the program state at a certain time. For example, the player with the name or initials \"AKI\" had a score of 12,000 at a certain point.    1.6.A.7  Users can infer the use of variables in an app by observing information that changes over time, such as counters, totals, settings, progress, or status, and reasoning about what values the app must store and update to produce those changes.     Assume that you are playing a game that starts with the score at 0. As you play, you earn or lose the following points from your score. Each event below is a program state. What is your score in the last program state?  Player earns 10 points. Player earns 5 points. Player loses 3 points. Your score is?        Correct! The score changes each time the variable is updated. The final score is 12.      Try tracing the value of score after each line:   Start: 0  After adding 10: 10  After adding 5: 15  After subtracting 3 from 15: ?          Variables in Python   Variables are names for memory locations that store values used in a program. In Python, a variable is created when a value is assigned to it. For example, the following code creates a variable named name and assigns the value \"Dani\" to it and a variable named age with the value 16. Note that text values like \"Dani\" are placed in quotes (\"\"), but numbers like 16 are not.   # variable = value name = \"Dani\" age = 16   In Python, multiple values can be printed out separated by commas. The variables, name and age, are never put inside quotes because we do not want to literally print the variable names; we want to print the values stored in the variables.   print(\"Hello\", name, \"you are\", age, \"years old\")     Run the following code. Change the variable values and run again.    name = \"Dani\" age = 16 print(\"Hello\", name, \"you are\", age, \"years old\")  from unittest.gui import TestCaseGui class myTests(TestCaseGui): def test1(self): self.assertIn(\"years old\",self.getOutput(),\"output\") self.assertNotIn(\"Dani\",self.getOutput(),\"Change Dani to a different name\") myTests().main()      Drag or click on the blocks you need to move them from the top section into the yellow area to create a print statement with the variable name . For example, if name = \"Alex\" , it will print \"Hello Alex!\". There are extra blocks that you don't need.     print    (    \"Hello \"    ,    name    ,    \"!\"    )    \"Hello name!\"    \"name\"       Data Types  The pizza app above stores lots of different types of data: the user's name, their age, their favorite color, and whether they like pizza. The user's name is text (which is called a string in coding, but the age is a number. Whether they like pizza or not could be stored as a Boolean value of true or false. These are all different data types .   1.6.A.3  Every value in a program has a data type , such as a number, Boolean, or string. Some programming languages require programmers to specify the type, while others determine it automatically by how the data is used.    1.6.A.4  The choice of data type depends on what a value represents. Values used to count or measure are best represented as numbers, values that record a true or false condition are best represented as Booleans, and values that store text are best represented as strings. The data type affects what operations can be performed on the variable and how accurately the output is represented in an app.   In some languages, you have to declare the data type of a variable, but in Python, the data type is assigned automatically depending on its value during run time. Python has several built-in data types, including:   int - for integers (whole numbers)  float - for floating-point numbers (decimals)  str - for strings (text)  bool - for boolean values (True or False)  For example, the following two variables have different data types because of the value assigned to them. Text in quotes are strings, where as numbers with no quotes are int or float data types.  name = \"Dani\" # type string age = 16 # type int   You can check the data type of a variable using the type() function. For example:   print(type(name)) # This will print str, for a string or text data type print(type(age)) # This will print int for an integer whole number     Run the following code to see the data types of the variables. Add another print to see the type of the last variable which is a number inside quotes. You'll see that anything in quotes is a string, even if it is a number inside.    name = \"Dani\" age = 16 print(\"The variable name has the value\", name, \"and the type\", type(name)) print(\"The variable age has the value\", age, \"and the type\", type(age)) ageStr = \"16\" # print out the type of ageStr  from unittest.gui import TestCaseGui class myTests(TestCaseGui): def testOne(self): self.assertIn(\"type(ageStr)\", self.getEditorText(), \"Print the type of ageStr\") myTests().main()      Naming variables  Although you can name a variable almost anything you want, there are some rules and conventions to follow. In Python, variable names must follow these rules:     It must start with a letter or an underscore _ .    It can contain digits, like 1 or 9 , but not as the first character.    It cannot have spaces, or special symbols other than _   It cannot be a Python keyword . Keywords are words that have special meaning in the language(see below for examples).   Case matters. A variable named result is not the same as one named Result .   Use meaningful variable names that describe what the variable holds, not letters like x,y,z.     1.6.B.3  Using meaningful variable names improves readability and helps programmers understand what the stored values represent.   Python has a few dozen keywords that you can’t use as variable names. Here is a list of the most common ones. If you ever have an error based on one of your variable names and do not know why, compare your name to this list to make sure you are not using a keyword as your variable name.   Python keywords    and  as  assert  break  class  continue    def  del  elif  else  except  exec    finally  for  from  global  if  import    in  is  lambda  nonlocal  not  or    pass  raise  return  try  while  with    yield  True  False  None           Which of the following is not a legal variable name in Python?      my name    Right, you can't have a space in a variable name.      my_name    You can use an underscore between words in a variable name.      _a1    Although it is not very common, you can use an underscore as the first character in a variable name      amountOfStuff    You can use both uppercase and lowercase letters in a variable name.      1A    Correct, you can't use a digit as the first letter in a variable name.        Variables and Assignment   1.6.B.1  The assignment operator = allows a program to initialize or change the value stored in a variable. When the following code runs, expression is evaluated, and the resulting value is stored in the variable a . a = expression    1.6.B.2  Variables are initialized by assigning an initial value before they are used. After initialization, later statements can use the variable’s value and update it as the program runs.   An assignment statement assigns a value to a variable using the assignment operator = . The first assignment to a variable initializes the variable to its first value. It can then be changed with other assignment statements. For example, the variable score is initialized to 0 and then changes to 50 below. Note that the variable name must match exactly with the same capitalization and spelling to have it refer to the same variable.   score = 0 score = 50     Python variables are case sensitive so gameScore and gamescore are not the same. Run and fix the code below to use the right variable name.    gameScore = 0 print(\"Initial score:\", gamescore) game_score = 100 print(\"Final score:\", gameScore)  from unittest.gui import TestCaseGui class myTests(TestCaseGui): def test1(self): self.assertIn(\"Initial score: 0\\nFinal score: 100\", self.getOutput(), \"Initial score: 0 Final score: 100\") myTests().main()     1.6.B.4  A variable stores its most recently assigned value.    1.6.B.5  The value stored in a variable after a sequence of assignment statements can be determined by tracing statements in order and updating the variable’s value after each assignment.     Trace the code below keeping track of the variables and their values. What is the value in the variable score after the code executes?   score = 0 name = \"user\" score = 50 Name = \"user1\" Score = 100         Correct! The variable score changes from 0 to 50. The last line of the code changes a different variable Score to 100.      Remember that variable names have to match exactly including capitalization to refer to the same memory location.        1.6.B.6  Assignment statements are often used to update information an app remembers about the user or the program’s state, such as a score or setting, so the app responds appropriately as the user interacts with it.     Strings  In coding, a string is a sequence of characters surrounded by quotes (\"\"). Imagine strings with lined up letter beads like below.    1.6.C.1  A string is an ordered sequence of characters used to represent text in a program.   In the web app above, the text that the use types in like name was probably saved as strings.   1.6.C.2  Apps often use strings to store and display user-facing information, such as names, messages, labels, or search terms.    1.6.C.3  To initialize a string variable, programmers assign it an initial text value or an empty string before it is used so the program starts with a known value. An empty string has zero characters ( \"\" ). It is not the same as a string that contains spaces ( \" \" ).   Variables can be assigned values or an empty string \"\" that will be filled in later. Python allows double quotes \"\" or single quotes ' for string values.   name = \"Sam\" # double quotes email = 'sam@gmail.com' # single quotes message = \"\" # empty string    1.6.C.4  String concatenation joins two or more strings to create a new string, such as combining a greeting with a user’s name.   We can concatenate or append or add strings in Python using the operator + , which can be used to add numbers or strings. Blank spaces are not automatically added when you use + (unlike , ), so if you want a blank space, you need to type it inside the quotes or add in a string with just a space in it \" \" as shown below.   name = \"Sam\" message = \"Hello \" + name # note the space after Hello print(message)     Run the following code to see the smushed output. Fix the error by putting in an extra space and concatenate an ! at the end.    first = 'Sam' last = \"Smith\" fullName = first + \" \" + last print(\"Hello\" + fullName) # fix smushed output and add \"!\"  from unittest.gui import TestCaseGui class myTests(TestCaseGui): def testOne(self): self.assertEqual(self.getOutput().strip(), \"Hello Sam Smith!\", \"Add a space after Hello and add a ! at the end\") myTests().main()    Since the operator + is used to add numbers or concatenate strings in Python, the interpreter will get confused and show an error if you use it to concatenate a string with a number. To concatenate the number with a string we need to convert the number into a string first. The str(num) function will convert a number into a string. Another option is to use the , instead of + in print statements because that will print different data types with no problem, but it can only be used in print statements.    Run the following code to see the error. Fix the error by using str to convert the number.    name = \"Sam\" age = 16 print(name + \" is \" + age + \" years old\")  from unittest.gui import TestCaseGui class myTests(TestCaseGui): def testOne(self): self.assertEqual(self.getOutput().strip(), \"Sam is 16 years old\", \"Use str(age)\") myTests().main()     1.6.C.5  A substring is part of an existing string. Programs can create substrings to extract or use part of a text value, such as extracting the month from a date, reading a portion of a message, or checking for a word within a string.   In Python, every character in a string is associated with an index starting with 0. Square brackets and an index can pull out any character from a string.   Python has a special slicing operator to pull out a substring from a start index up to a end index (but not including the end index), message[start:end] .   message = \"Python is fun!\" letter = message[0] # pull out 0th letter P substring = message[0:6] # substring \"Python\" from index 0 up to index 6     Run the following code to see examples of slicing. Add to the code to print another substring of message that uses slicing to pull out the word \"fun\".    message = \"Python is fun!\" letter = message[0] print(\"The 0th letter is\", letter) print(\"Substring: \", message[0:6] ) # substring \"Python\" from index 0 up to index 6 # print another substring of message that uses slicing to pull out the word fun.  from unittest.gui import TestCaseGui class myTests(TestCaseGui): def testOne(self): self.assertIn(\"message[10:\", self.getEditorText(), \"Start from index 10 to pull out fun from message.\") myTests().main()     1.6.C.6  The output of code that uses string operations can be determined by tracing statements in order and keeping track of how string values change and what text is displayed.     Trace the code below keeping track of the variables and their values. What is the value in the variable score after the code executes?   message1 = \"Python is fun!\" message2 = \"Coding\" message3 = message2 + message1[6:13] print(message3)         Correct!      The answer is 3 words separated by spaces. Remember that slicing is up to but not including the end index. Capitalization matters. You can try the code in an active coding area.        1.6.C.7  To communicate clearly with users, programmers use strings to store and generate text that apps display, such as prompts, feedback messages, and personalized responses.     Input  Python has an input function that can be used to get input from the typed in by user. This input must be saved into a variable. This is another way to initialize or assign to a variable. The syntax for an input statement is:   variable_name = input(\"Input prompt or question? \")   The following code will ask the user for their name and then print out a greeting. Try it out by clicking the \"Run\" button.    Run the following code. Enter your name in the pop up input box and then scroll down to see the output.    name = input(\"What is your name? \") print(\"Hello\", name)  from unittest.gui import TestCaseGui class myTests(TestCaseGui): def test1(self): self.assertIn(\"Hello\",self.getOutput(),\"output\") myTests().main()      Drag or click on the blocks you need to move them from the top section into the yellow area to create an input statement that will ask for the user's age. There are extra blocks that you don't need.     age    =    input    (    \"What is your age?\"    )     The input() function in Python always returns a string, even if the user enters a number. For example, if the user enters \"25\", the variable will be a string containing \"25\", not the integer number 25. But sometimes, you need it to be a number and not a string so that you can do math with it.  To convert a string to an integer whole number or a floating point decimal number, you can use the int() or float() functions. We will need this in the next lesson to do math with or compare these variables. For example:   ageStr = input(\"Enter your age: \") age = int(ageStr) # Convert the string to an integer   To convert a number back into a string, you can use the str() function. For example:   ageString = str(age) # Convert the integer back to a string     Run the following code to see that there are some errors caused by the data types. Try using int or str functions to convert the variables to the correct data type.    score = input(\"Input the initial score: \") print(\"Type of score after input:\", type(score)) score = int(score) print(\"Type of score after type conversion:\", type(score)) bonus = input(\"Enter the bonus points (5-10): \") print(\"Type of bonus after input:\", type(bonus)) # This will cause an error because bonus needs to be an int to be added to an int score += bonus # This will cause an error because score needs to be an string to be added to a string print(\"Total score: \" + score)  from unittest.gui import TestCaseGui class myTests(TestCaseGui): def test1(self): self.assertIn(\"Total score\",self.getOutput(),\"output\") self.assertIn(\"int(bonus)\", self.getEditorText(), \"Used int(bonus)\"\" ) myTests().main()      Story Project  Let's make a poem or a story using input and variables in Python. Ask the user to input different nouns and verbs, and weave together a story.   Story   Finish the input statements below to ask the user for 2 colors and a food item. Run to see the silly poem. Then, ask the user for more input words and create your own poem or story using the variables in print statements.    # Get user input pluralnoun1 = input(\"Enter a plural noun: \") pluralnoun2 = input(\"Enter another plural noun: \") # Complete 3 input statements below color1 = input( ) color2 = food = # create 2 more variables and input statements # Run to see the silly poem print(\"Here's my silly poem!\") print(\"Roses are \" + color1) print(pluralnoun1 + \" are \" + color2) print(\"I like \" + food) print(\"Do \" + pluralnoun2 + \" like them too?\") # Add at least 2 more lines to the poem # using print and your last 2 variables  from unittest.gui import TestCaseGui class myTests(TestCaseGui): def test1(self): self.assertIn(\"I like\",self.getOutput(),\"output\") input_count = self.getEditorText().count(\"input(\") self.assertGreaterEqual(input_count, 7, \"at least 7 input statements\") myTests().main()      Vocabulary Review    Review the vocabulary in this lesson. Drag the vocabulary term from the left and drop it on its correct definition on the right. Click the \"Check Me\" button to see if you are correct.    Find the words in the lesson above and try again.     variable  a named storage location used to hold a value that can change while the program is running    program state  the set of values and information a program is storing at a specific moment    data types  numbers, strings, or booleans    string  an ordered sequence of characters used to represent text in a program    concatenation  joins two or more strings to create a new string    substring  part of an existing string      "
+  "body": "  Variables  variable    Variables are named memory locations that store values used by a program. These values can change or vary as the program runs. A variable is like a box with a label where different values can be put into the box. For example, when you interact with an app or game, there may be variables that store your name or your score, and these variables can be used by the app to customize how it behaves or the information it displays. In this section, you will learn how to identify variables in apps and how to use them in Python code.     Learning Objectives   1.6.A  Identify the use of variables in an app while interacting with it.    1.6.B  Develop code for assignment statements using variables, and determine the values that are stored in the variables as a result.    1.6.C  Develop code to store and modify strings, and determine the output produced.    Additional  Write code using Python input and print statements.     Identifying Variables in Apps   1.6.A.1  A variable is a named storage location used to hold a value that can change while the program is running. It is an abstraction that lets programmers use a name to represent a value.    1.6.A.2  Apps use variables to keep track of changing information by updating their values as the user interacts with the app. Programs can then use a variable’s current value to decide what to do next and what feedback to provide, such as updating the screen, playing a sound, or triggering a vibration.   Try the following pizza web app by typing in your name and choosing different options. Think about the inputs and outputs to the app. When you type in your name and other inputs, your information gets saved in variables in the program. These values can then be used in the outputs of the app.     Interact with the pizza app above. Which of the following are variables that the app above might use to store information about the user.      name    The app needs to store the user's name to display it in the output.      favoriteColor    The app needs the favorite color to change the background to that color.     address   The app does not need the user's address to function, so it would not use a variable to store this information.      age    The app needs to store the user's age to display it in the output.      temperature    The app does not need to know the temperature to function, so it would not use a variable to store this information.      likesPizza    The app needs to store whether the user likes pizza to display it and pizza images in the output.      program state  state   1.6.A.5  Variables are often used to store information about the user or a program’s state, such as a username, a selected theme, a score, progress toward a goal, a shopping cart total, or whether notifications are on. The program can use the stored value to adjust its behavior or display the value to the user.    1.6.A.6  Program state is the set of values and information a program is storing at a specific moment, including variable values and any inputs it is using. As the program runs, the state changes when inputs are received and variables are updated.   Some video games keep a list of players with the highest scores in the game. Each entry in the list a snapshot of the program state at a certain time. For example, the player with the name or initials \"AKI\" had a score of 12,000 at a certain point.    1.6.A.7  Users can infer the use of variables in an app by observing information that changes over time, such as counters, totals, settings, progress, or status, and reasoning about what values the app must store and update to produce those changes.     Assume that you are playing a game that starts with the score at 0. As you play, you earn or lose the following points from your score. Each event below is a program state. What is your score in the last program state?  Player earns 10 points. Player earns 5 points. Player loses 3 points. Your score is?        Correct! The score changes each time the variable is updated. The final score is 12.      Try tracing the value of score after each line:   Start: 0  After adding 10: 10  After adding 5: 15  After subtracting 3 from 15: ?          Variables in Python   Variables are names for memory locations that store values used in a program. In Python, a variable is created when a value is assigned to it. For example, the following code creates a variable named name and assigns the value \"Dani\" to it and a variable named age with the value 16. Note that text values like \"Dani\" are placed in quotes (\"\"), but numbers like 16 are not.   # variable = value name = \"Dani\" age = 16   In Python, multiple values can be printed out separated by commas. The variables, name and age, are never put inside quotes because we do not want to literally print the variable names; we want to print the values stored in the variables.   print(\"Hello\", name, \"you are\", age, \"years old\")     Run the following code. Change the variable values and run again.    name = \"Dani\" age = 16 print(\"Hello\", name, \"you are\", age, \"years old\")  from unittest.gui import TestCaseGui class myTests(TestCaseGui): def test1(self): self.assertIn(\"years old\",self.getOutput(),\"output\") self.assertNotIn(\"Dani\",self.getOutput(),\"Change Dani to a different name\") myTests().main()      Drag or click on the blocks you need to move them from the top section into the yellow area to create a print statement with the variable name . For example, if name = \"Alex\" , it will print \"Hello Alex!\". There are extra blocks that you don't need.     print    (    \"Hello \"    ,    name    ,    \"!\"    )    \"Hello name!\"    \"name\"       Data Types  data types  type  The pizza app above stores lots of different types of data: the user's name, their age, their favorite color, and whether they like pizza. The user's name is text (which is called a string in coding, but the age is a number. Whether they like pizza or not could be stored as a Boolean value of true or false. These are all different data types .   1.6.A.3  Every value in a program has a data type , such as a number, Boolean, or string. Some programming languages require programmers to specify the type, while others determine it automatically by how the data is used.    1.6.A.4  The choice of data type depends on what a value represents. Values used to count or measure are best represented as numbers, values that record a true or false condition are best represented as Booleans, and values that store text are best represented as strings. The data type affects what operations can be performed on the variable and how accurately the output is represented in an app.   In some languages, you have to declare the data type of a variable, but in Python, the data type is assigned automatically depending on its value during run time. Python has several built-in data types, including:   int - for integers (whole numbers)  float - for floating-point numbers (decimals)  str - for strings (text)  bool - for boolean values (True or False)  For example, the following two variables have different data types because of the value assigned to them. Text in quotes are strings, where as numbers with no quotes are int or float data types.  name = \"Dani\" # type string age = 16 # type int   You can check the data type of a variable using the type() function. For example:   print(type(name)) # This will print str, for a string or text data type print(type(age)) # This will print int for an integer whole number     Run the following code to see the data types of the variables. Add another print to see the type of the last variable which is a number inside quotes. You'll see that anything in quotes is a string, even if it is a number inside.    name = \"Dani\" age = 16 print(\"The variable name has the value\", name, \"and the type\", type(name)) print(\"The variable age has the value\", age, \"and the type\", type(age)) ageStr = \"16\" # print out the type of ageStr  from unittest.gui import TestCaseGui class myTests(TestCaseGui): def testOne(self): self.assertIn(\"type(ageStr)\", self.getEditorText(), \"Print the type of ageStr\") myTests().main()      Naming variables  names  Although you can name a variable almost anything you want, there are some rules and conventions to follow. In Python, variable names must follow these rules:     It must start with a letter or an underscore _ .    It can contain digits, like 1 or 9 , but not as the first character.    It cannot have spaces, or special symbols other than _   It cannot be a Python keyword . Keywords are words that have special meaning in the language(see below for examples).   Case matters. A variable named result is not the same as one named Result .   Use meaningful variable names that describe what the variable holds, not letters like x,y,z.     1.6.B.3  Using meaningful variable names improves readability and helps programmers understand what the stored values represent.   Python has a few dozen keywords that you can’t use as variable names. Here is a list of the most common ones. If you ever have an error based on one of your variable names and do not know why, compare your name to this list to make sure you are not using a keyword as your variable name.   Python keywords    and  as  assert  break  class  continue    def  del  elif  else  except  exec    finally  for  from  global  if  import    in  is  lambda  nonlocal  not  or    pass  raise  return  try  while  with    yield  True  False  None           Which of the following is not a legal variable name in Python?      my name    Right, you can't have a space in a variable name.      my_name    You can use an underscore between words in a variable name.      _a1    Although it is not very common, you can use an underscore as the first character in a variable name      amountOfStuff    You can use both uppercase and lowercase letters in a variable name.      1A    Correct, you can't use a digit as the first letter in a variable name.        Variables and Assignment  assignment   1.6.B.1  The assignment operator = allows a program to initialize or change the value stored in a variable. When the following code runs, expression is evaluated, and the resulting value is stored in the variable a . a = expression    1.6.B.2  Variables are initialized by assigning an initial value before they are used. After initialization, later statements can use the variable’s value and update it as the program runs.   An assignment statement assigns a value to a variable using the assignment operator = . The first assignment to a variable initializes the variable to its first value. It can then be changed with other assignment statements. For example, the variable score is initialized to 0 and then changes to 50 below. Note that the variable name must match exactly with the same capitalization and spelling to have it refer to the same variable.   score = 0 score = 50     Python variables are case sensitive so gameScore and gamescore are not the same. Run and fix the code below to use the right variable name.    gameScore = 0 print(\"Initial score:\", gamescore) game_score = 100 print(\"Final score:\", gameScore)  from unittest.gui import TestCaseGui class myTests(TestCaseGui): def test1(self): self.assertIn(\"Initial score: 0\\nFinal score: 100\", self.getOutput(), \"Initial score: 0 Final score: 100\") myTests().main()     1.6.B.4  A variable stores its most recently assigned value.    1.6.B.5  The value stored in a variable after a sequence of assignment statements can be determined by tracing statements in order and updating the variable’s value after each assignment.     Trace the code below keeping track of the variables and their values. What is the value in the variable score after the code executes?   score = 0 name = \"user\" score = 50 Name = \"user1\" Score = 100         Correct! The variable score changes from 0 to 50. The last line of the code changes a different variable Score to 100.      Remember that variable names have to match exactly including capitalization to refer to the same memory location.        1.6.B.6  Assignment statements are often used to update information an app remembers about the user or the program’s state, such as a score or setting, so the app responds appropriately as the user interacts with it.     Strings  string  strings  concatenation  substring  empty string  In coding, a string is a sequence of characters surrounded by quotes (\"\"). Imagine strings with lined up letter beads like below.    1.6.C.1  A string is an ordered sequence of characters used to represent text in a program.   In the web app above, the text that the use types in like name was probably saved as strings.   1.6.C.2  Apps often use strings to store and display user-facing information, such as names, messages, labels, or search terms.    1.6.C.3  To initialize a string variable, programmers assign it an initial text value or an empty string before it is used so the program starts with a known value. An empty string has zero characters ( \"\" ). It is not the same as a string that contains spaces ( \" \" ).   Variables can be assigned values or an empty string \"\" that will be filled in later. Python allows double quotes \"\" or single quotes ' for string values.   name = \"Sam\" # double quotes email = 'sam@gmail.com' # single quotes message = \"\" # empty string    1.6.C.4  String concatenation joins two or more strings to create a new string, such as combining a greeting with a user’s name.   We can concatenate or append or add strings in Python using the operator + , which can be used to add numbers or strings. Blank spaces are not automatically added when you use + (unlike , ), so if you want a blank space, you need to type it inside the quotes or add in a string with just a space in it \" \" as shown below.   name = \"Sam\" message = \"Hello \" + name # note the space after Hello print(message)     Run the following code to see the smushed output. Fix the error by putting in an extra space and concatenate an ! at the end.    first = 'Sam' last = \"Smith\" fullName = first + \" \" + last print(\"Hello\" + fullName) # fix smushed output and add \"!\"  from unittest.gui import TestCaseGui class myTests(TestCaseGui): def testOne(self): self.assertEqual(self.getOutput().strip(), \"Hello Sam Smith!\", \"Add a space after Hello and add a ! at the end\") myTests().main()    Since the operator + is used to add numbers or concatenate strings in Python, the interpreter will get confused and show an error if you use it to concatenate a string with a number. To concatenate the number with a string we need to convert the number into a string first. The str(num) function will convert a number into a string. Another option is to use the , instead of + in print statements because that will print different data types with no problem, but it can only be used in print statements.    Run the following code to see the error. Fix the error by using str to convert the number.    name = \"Sam\" age = 16 print(name + \" is \" + age + \" years old\")  from unittest.gui import TestCaseGui class myTests(TestCaseGui): def testOne(self): self.assertEqual(self.getOutput().strip(), \"Sam is 16 years old\", \"Use str(age)\") myTests().main()     1.6.C.5  A substring is part of an existing string. Programs can create substrings to extract or use part of a text value, such as extracting the month from a date, reading a portion of a message, or checking for a word within a string.   In Python, every character in a string is associated with an index starting with 0. Square brackets and an index can pull out any character from a string.   Python has a special slicing operator to pull out a substring from a start index up to a end index (but not including the end index), message[start:end] .   message = \"Python is fun!\" letter = message[0] # pull out 0th letter P substring = message[0:6] # substring \"Python\" from index 0 up to index 6   slicing    Run the following code to see examples of slicing. Add to the code to print another substring of message that uses slicing to pull out the word \"fun\".    message = \"Python is fun!\" letter = message[0] print(\"The 0th letter is\", letter) print(\"Substring: \", message[0:6] ) # substring \"Python\" from index 0 up to index 6 # print another substring of message that uses slicing to pull out the word fun.  from unittest.gui import TestCaseGui class myTests(TestCaseGui): def testOne(self): self.assertIn(\"message[10:\", self.getEditorText(), \"Start from index 10 to pull out fun from message.\") myTests().main()     1.6.C.6  The output of code that uses string operations can be determined by tracing statements in order and keeping track of how string values change and what text is displayed.     Trace the code below keeping track of the variables and their values. What is the value in the variable score after the code executes?   message1 = \"Python is fun!\" message2 = \"Coding\" message3 = message2 + message1[6:13] print(message3)         Correct!      The answer is 3 words separated by spaces. Remember that slicing is up to but not including the end index. Capitalization matters. You can try the code in an active coding area.        1.6.C.7  To communicate clearly with users, programmers use strings to store and generate text that apps display, such as prompts, feedback messages, and personalized responses.     Input  input  Python has an input function that can be used to get input from the typed in by user. This input must be saved into a variable. This is another way to initialize or assign to a variable. The syntax for an input statement is:   variable_name = input(\"Input prompt or question? \")   The following code will ask the user for their name and then print out a greeting. Try it out by clicking the \"Run\" button.    Run the following code. Enter your name in the pop up input box and then scroll down to see the output.    name = input(\"What is your name? \") print(\"Hello\", name)  from unittest.gui import TestCaseGui class myTests(TestCaseGui): def test1(self): self.assertIn(\"Hello\",self.getOutput(),\"output\") myTests().main()      Drag or click on the blocks you need to move them from the top section into the yellow area to create an input statement that will ask for the user's age. There are extra blocks that you don't need.     age    =    input    (    \"What is your age?\"    )     The input() function in Python always returns a string, even if the user enters a number. For example, if the user enters \"25\", the variable will be a string containing \"25\", not the integer number 25. But sometimes, you need it to be a number and not a string so that you can do math with it.  To convert a string to an integer whole number or a floating point decimal number, you can use the int() or float() functions. We will need this in the next lesson to do math with or compare these variables. For example:   ageStr = input(\"Enter your age: \") age = int(ageStr) # Convert the string to an integer   To convert a number back into a string, you can use the str() function. For example:   ageString = str(age) # Convert the integer back to a string     Run the following code to see that there are some errors caused by the data types. Try using int or str functions to convert the variables to the correct data type.    score = input(\"Input the initial score: \") print(\"Type of score after input:\", type(score)) score = int(score) print(\"Type of score after type conversion:\", type(score)) bonus = input(\"Enter the bonus points (5-10): \") print(\"Type of bonus after input:\", type(bonus)) # This will cause an error because bonus needs to be an int to be added to an int score += bonus # This will cause an error because score needs to be an string to be added to a string print(\"Total score: \" + score)  from unittest.gui import TestCaseGui class myTests(TestCaseGui): def test1(self): self.assertIn(\"Total score\",self.getOutput(),\"output\") self.assertIn(\"int(bonus)\", self.getEditorText(), \"Used int(bonus)\"\" ) myTests().main()      Story Project  Let's make a poem or a story using input and variables in Python. Ask the user to input different nouns and verbs, and weave together a story.   Story   Finish the input statements below to ask the user for 2 colors and a food item. Run to see the silly poem. Then, ask the user for more input words and create your own poem or story using the variables in print statements.    # Get user input pluralnoun1 = input(\"Enter a plural noun: \") pluralnoun2 = input(\"Enter another plural noun: \") # Complete 3 input statements below color1 = input( ) color2 = food = # create 2 more variables and input statements # Run to see the silly poem print(\"Here's my silly poem!\") print(\"Roses are \" + color1) print(pluralnoun1 + \" are \" + color2) print(\"I like \" + food) print(\"Do \" + pluralnoun2 + \" like them too?\") # Add at least 2 more lines to the poem # using print and your last 2 variables  from unittest.gui import TestCaseGui class myTests(TestCaseGui): def test1(self): self.assertIn(\"I like\",self.getOutput(),\"output\") input_count = self.getEditorText().count(\"input(\") self.assertGreaterEqual(input_count, 7, \"at least 7 input statements\") myTests().main()      Vocabulary Review    Review the vocabulary in this lesson. Drag the vocabulary term from the left and drop it on its correct definition on the right. Click the \"Check Me\" button to see if you are correct.    Find the words in the lesson above and try again.     variable  a named storage location used to hold a value that can change while the program is running    program state  the set of values and information a program is storing at a specific moment    data types  numbers, strings, or booleans    string  an ordered sequence of characters used to represent text in a program    concatenation  joins two or more strings to create a new string    substring  part of an existing string      "
 },
 {
   "id": "topic-1-6-variables-4-1",
@@ -1054,11 +1054,20 @@ var ptx_lunr_docs = [
   "body": " 1.6.C  Develop code to store and modify strings, and determine the output produced.  "
 },
 {
+  "id": "LOs-1-6-5",
+  "level": "2",
+  "url": "topic-1-6-variables.html#LOs-1-6-5",
+  "type": "Learning Objective",
+  "number": "1.6.4",
+  "title": "Additional.",
+  "body": " Additional  Write code using Python input and print statements.  "
+},
+{
   "id": "vars-in-apps-2",
   "level": "2",
   "url": "topic-1-6-variables.html#vars-in-apps-2",
   "type": "Essential Knowledge",
-  "number": "1.6.4",
+  "number": "1.6.5",
   "title": "1.6.A.1.",
   "body": " 1.6.A.1  A variable is a named storage location used to hold a value that can change while the program is running. It is an abstraction that lets programmers use a name to represent a value.  "
 },
@@ -1067,7 +1076,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "topic-1-6-variables.html#vars-in-apps-3",
   "type": "Essential Knowledge",
-  "number": "1.6.5",
+  "number": "1.6.6",
   "title": "1.6.A.2.",
   "body": " 1.6.A.2  Apps use variables to keep track of changing information by updating their values as the user interacts with the app. Programs can then use a variable’s current value to decide what to do next and what feedback to provide, such as updating the screen, playing a sound, or triggering a vibration.  "
 },
@@ -1090,38 +1099,38 @@ var ptx_lunr_docs = [
   "body": "  Interact with the pizza app above. Which of the following are variables that the app above might use to store information about the user.      name    The app needs to store the user's name to display it in the output.      favoriteColor    The app needs the favorite color to change the background to that color.     address   The app does not need the user's address to function, so it would not use a variable to store this information.      age    The app needs to store the user's age to display it in the output.      temperature    The app does not need to know the temperature to function, so it would not use a variable to store this information.      likesPizza    The app needs to store whether the user likes pizza to display it and pizza images in the output.     "
 },
 {
-  "id": "vars-in-apps-7",
+  "id": "vars-in-apps-9",
   "level": "2",
-  "url": "topic-1-6-variables.html#vars-in-apps-7",
+  "url": "topic-1-6-variables.html#vars-in-apps-9",
   "type": "Essential Knowledge",
-  "number": "1.6.6",
+  "number": "1.6.7",
   "title": "1.6.A.5.",
   "body": " 1.6.A.5  Variables are often used to store information about the user or a program’s state, such as a username, a selected theme, a score, progress toward a goal, a shopping cart total, or whether notifications are on. The program can use the stored value to adjust its behavior or display the value to the user.  "
 },
 {
-  "id": "vars-in-apps-8",
+  "id": "vars-in-apps-10",
   "level": "2",
-  "url": "topic-1-6-variables.html#vars-in-apps-8",
+  "url": "topic-1-6-variables.html#vars-in-apps-10",
   "type": "Essential Knowledge",
-  "number": "1.6.7",
+  "number": "1.6.8",
   "title": "1.6.A.6.",
   "body": " 1.6.A.6  Program state is the set of values and information a program is storing at a specific moment, including variable values and any inputs it is using. As the program runs, the state changes when inputs are received and variables are updated.  "
 },
 {
-  "id": "vars-in-apps-9",
+  "id": "vars-in-apps-11",
   "level": "2",
-  "url": "topic-1-6-variables.html#vars-in-apps-9",
+  "url": "topic-1-6-variables.html#vars-in-apps-11",
   "type": "Paragraph (with a defined term)",
   "number": "",
   "title": "",
   "body": "program state "
 },
 {
-  "id": "vars-in-apps-11",
+  "id": "vars-in-apps-13",
   "level": "2",
-  "url": "topic-1-6-variables.html#vars-in-apps-11",
+  "url": "topic-1-6-variables.html#vars-in-apps-13",
   "type": "Essential Knowledge",
-  "number": "1.6.8",
+  "number": "1.6.9",
   "title": "1.6.A.7.",
   "body": " 1.6.A.7  Users can infer the use of variables in an app by observing information that changes over time, such as counters, totals, settings, progress, or status, and reasoning about what values the app must store and update to produce those changes.  "
 },
@@ -1162,29 +1171,29 @@ var ptx_lunr_docs = [
   "body": "  Drag or click on the blocks you need to move them from the top section into the yellow area to create a print statement with the variable name . For example, if name = \"Alex\" , it will print \"Hello Alex!\". There are extra blocks that you don't need.     print    (    \"Hello \"    ,    name    ,    \"!\"    )    \"Hello name!\"    \"name\"    "
 },
 {
-  "id": "data-types-2",
+  "id": "data-types-4",
   "level": "2",
-  "url": "topic-1-6-variables.html#data-types-2",
+  "url": "topic-1-6-variables.html#data-types-4",
   "type": "Paragraph (with a defined term)",
   "number": "",
   "title": "",
   "body": "string data types "
 },
 {
-  "id": "data-types-3",
+  "id": "data-types-5",
   "level": "2",
-  "url": "topic-1-6-variables.html#data-types-3",
+  "url": "topic-1-6-variables.html#data-types-5",
   "type": "Essential Knowledge",
-  "number": "1.6.9",
+  "number": "1.6.10",
   "title": "1.6.A.3.",
   "body": " 1.6.A.3  Every value in a program has a data type , such as a number, Boolean, or string. Some programming languages require programmers to specify the type, while others determine it automatically by how the data is used.  "
 },
 {
-  "id": "data-types-4",
+  "id": "data-types-6",
   "level": "2",
-  "url": "topic-1-6-variables.html#data-types-4",
+  "url": "topic-1-6-variables.html#data-types-6",
   "type": "Essential Knowledge",
-  "number": "1.6.10",
+  "number": "1.6.11",
   "title": "1.6.A.4.",
   "body": " 1.6.A.4  The choice of data type depends on what a value represents. Values used to count or measure are best represented as numbers, values that record a true or false condition are best represented as Booleans, and values that store text are best represented as strings. The data type affects what operations can be performed on the variable and how accurately the output is represented in an app.  "
 },
@@ -1198,20 +1207,20 @@ var ptx_lunr_docs = [
   "body": "  Run the following code to see the data types of the variables. Add another print to see the type of the last variable which is a number inside quotes. You'll see that anything in quotes is a string, even if it is a number inside.    name = \"Dani\" age = 16 print(\"The variable name has the value\", name, \"and the type\", type(name)) print(\"The variable age has the value\", age, \"and the type\", type(age)) ageStr = \"16\" # print out the type of ageStr  from unittest.gui import TestCaseGui class myTests(TestCaseGui): def testOne(self): self.assertIn(\"type(ageStr)\", self.getEditorText(), \"Print the type of ageStr\") myTests().main()   "
 },
 {
-  "id": "naming-vars-3",
+  "id": "naming-vars-4",
   "level": "2",
-  "url": "topic-1-6-variables.html#naming-vars-3",
+  "url": "topic-1-6-variables.html#naming-vars-4",
   "type": "Paragraph (with a defined term)",
   "number": "",
   "title": "",
   "body": "keyword "
 },
 {
-  "id": "naming-vars-4",
+  "id": "naming-vars-5",
   "level": "2",
-  "url": "topic-1-6-variables.html#naming-vars-4",
+  "url": "topic-1-6-variables.html#naming-vars-5",
   "type": "Essential Knowledge",
-  "number": "1.6.11",
+  "number": "1.6.12",
   "title": "1.6.B.3.",
   "body": " 1.6.B.3  Using meaningful variable names improves readability and helps programmers understand what the stored values represent.  "
 },
@@ -1220,7 +1229,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "topic-1-6-variables.html#python-keywords",
   "type": "Table",
-  "number": "1.6.12",
+  "number": "1.6.13",
   "title": "Python keywords",
   "body": " Python keywords    and  as  assert  break  class  continue    def  del  elif  else  except  exec    finally  for  from  global  if  import    in  is  lambda  nonlocal  not  or    pass  raise  return  try  while  with    yield  True  False  None        "
 },
@@ -1234,27 +1243,27 @@ var ptx_lunr_docs = [
   "body": "  Which of the following is not a legal variable name in Python?      my name    Right, you can't have a space in a variable name.      my_name    You can use an underscore between words in a variable name.      _a1    Although it is not very common, you can use an underscore as the first character in a variable name      amountOfStuff    You can use both uppercase and lowercase letters in a variable name.      1A    Correct, you can't use a digit as the first letter in a variable name.     "
 },
 {
-  "id": "assignment-2",
-  "level": "2",
-  "url": "topic-1-6-variables.html#assignment-2",
-  "type": "Essential Knowledge",
-  "number": "1.6.13",
-  "title": "1.6.B.1.",
-  "body": " 1.6.B.1  The assignment operator = allows a program to initialize or change the value stored in a variable. When the following code runs, expression is evaluated, and the resulting value is stored in the variable a . a = expression  "
-},
-{
   "id": "assignment-3",
   "level": "2",
   "url": "topic-1-6-variables.html#assignment-3",
   "type": "Essential Knowledge",
   "number": "1.6.14",
-  "title": "1.6.B.2.",
-  "body": " 1.6.B.2  Variables are initialized by assigning an initial value before they are used. After initialization, later statements can use the variable’s value and update it as the program runs.  "
+  "title": "1.6.B.1.",
+  "body": " 1.6.B.1  The assignment operator = allows a program to initialize or change the value stored in a variable. When the following code runs, expression is evaluated, and the resulting value is stored in the variable a . a = expression  "
 },
 {
   "id": "assignment-4",
   "level": "2",
   "url": "topic-1-6-variables.html#assignment-4",
+  "type": "Essential Knowledge",
+  "number": "1.6.15",
+  "title": "1.6.B.2.",
+  "body": " 1.6.B.2  Variables are initialized by assigning an initial value before they are used. After initialization, later statements can use the variable’s value and update it as the program runs.  "
+},
+{
+  "id": "assignment-5",
+  "level": "2",
+  "url": "topic-1-6-variables.html#assignment-5",
   "type": "Paragraph (with a defined term)",
   "number": "",
   "title": "",
@@ -1270,20 +1279,20 @@ var ptx_lunr_docs = [
   "body": "  Python variables are case sensitive so gameScore and gamescore are not the same. Run and fix the code below to use the right variable name.    gameScore = 0 print(\"Initial score:\", gamescore) game_score = 100 print(\"Final score:\", gameScore)  from unittest.gui import TestCaseGui class myTests(TestCaseGui): def test1(self): self.assertIn(\"Initial score: 0\\nFinal score: 100\", self.getOutput(), \"Initial score: 0 Final score: 100\") myTests().main()   "
 },
 {
-  "id": "assignment-7",
-  "level": "2",
-  "url": "topic-1-6-variables.html#assignment-7",
-  "type": "Essential Knowledge",
-  "number": "1.6.15",
-  "title": "1.6.B.4.",
-  "body": " 1.6.B.4  A variable stores its most recently assigned value.  "
-},
-{
   "id": "assignment-8",
   "level": "2",
   "url": "topic-1-6-variables.html#assignment-8",
   "type": "Essential Knowledge",
   "number": "1.6.16",
+  "title": "1.6.B.4.",
+  "body": " 1.6.B.4  A variable stores its most recently assigned value.  "
+},
+{
+  "id": "assignment-9",
+  "level": "2",
+  "url": "topic-1-6-variables.html#assignment-9",
+  "type": "Essential Knowledge",
+  "number": "1.6.17",
   "title": "1.6.B.5.",
   "body": " 1.6.B.5  The value stored in a variable after a sequence of assignment statements can be determined by tracing statements in order and updating the variable’s value after each assignment.  "
 },
@@ -1297,72 +1306,72 @@ var ptx_lunr_docs = [
   "body": "  Trace the code below keeping track of the variables and their values. What is the value in the variable score after the code executes?   score = 0 name = \"user\" score = 50 Name = \"user1\" Score = 100         Correct! The variable score changes from 0 to 50. The last line of the code changes a different variable Score to 100.      Remember that variable names have to match exactly including capitalization to refer to the same memory location.      "
 },
 {
-  "id": "assignment-10",
+  "id": "assignment-11",
   "level": "2",
-  "url": "topic-1-6-variables.html#assignment-10",
+  "url": "topic-1-6-variables.html#assignment-11",
   "type": "Essential Knowledge",
-  "number": "1.6.17",
+  "number": "1.6.18",
   "title": "1.6.B.6.",
   "body": " 1.6.B.6  Assignment statements are often used to update information an app remembers about the user or the program’s state, such as a score or setting, so the app responds appropriately as the user interacts with it.  "
 },
 {
-  "id": "strings-2",
+  "id": "strings-7",
   "level": "2",
-  "url": "topic-1-6-variables.html#strings-2",
+  "url": "topic-1-6-variables.html#strings-7",
   "type": "Paragraph (with a defined term)",
   "number": "",
   "title": "",
   "body": "string "
 },
 {
-  "id": "strings-4",
+  "id": "strings-9",
   "level": "2",
-  "url": "topic-1-6-variables.html#strings-4",
+  "url": "topic-1-6-variables.html#strings-9",
   "type": "Essential Knowledge",
-  "number": "1.6.18",
+  "number": "1.6.19",
   "title": "1.6.C.1.",
   "body": " 1.6.C.1  A string is an ordered sequence of characters used to represent text in a program.  "
 },
 {
-  "id": "strings-6",
+  "id": "strings-11",
   "level": "2",
-  "url": "topic-1-6-variables.html#strings-6",
+  "url": "topic-1-6-variables.html#strings-11",
   "type": "Essential Knowledge",
-  "number": "1.6.19",
+  "number": "1.6.20",
   "title": "1.6.C.2.",
   "body": " 1.6.C.2  Apps often use strings to store and display user-facing information, such as names, messages, labels, or search terms.  "
 },
 {
-  "id": "strings-7",
+  "id": "strings-12",
   "level": "2",
-  "url": "topic-1-6-variables.html#strings-7",
+  "url": "topic-1-6-variables.html#strings-12",
   "type": "Essential Knowledge",
-  "number": "1.6.20",
+  "number": "1.6.21",
   "title": "1.6.C.3.",
   "body": " 1.6.C.3  To initialize a string variable, programmers assign it an initial text value or an empty string before it is used so the program starts with a known value. An empty string has zero characters ( \"\" ). It is not the same as a string that contains spaces ( \" \" ).  "
 },
 {
-  "id": "strings-8",
+  "id": "strings-13",
   "level": "2",
-  "url": "topic-1-6-variables.html#strings-8",
+  "url": "topic-1-6-variables.html#strings-13",
   "type": "Paragraph (with a defined term)",
   "number": "",
   "title": "",
   "body": "empty string "
 },
 {
-  "id": "strings-10",
+  "id": "strings-15",
   "level": "2",
-  "url": "topic-1-6-variables.html#strings-10",
+  "url": "topic-1-6-variables.html#strings-15",
   "type": "Essential Knowledge",
-  "number": "1.6.21",
+  "number": "1.6.22",
   "title": "1.6.C.4.",
   "body": " 1.6.C.4  String concatenation joins two or more strings to create a new string, such as combining a greeting with a user’s name.  "
 },
 {
-  "id": "strings-11",
+  "id": "strings-16",
   "level": "2",
-  "url": "topic-1-6-variables.html#strings-11",
+  "url": "topic-1-6-variables.html#strings-16",
   "type": "Paragraph (with a defined term)",
   "number": "",
   "title": "",
@@ -1387,18 +1396,18 @@ var ptx_lunr_docs = [
   "body": "  Run the following code to see the error. Fix the error by using str to convert the number.    name = \"Sam\" age = 16 print(name + \" is \" + age + \" years old\")  from unittest.gui import TestCaseGui class myTests(TestCaseGui): def testOne(self): self.assertEqual(self.getOutput().strip(), \"Sam is 16 years old\", \"Use str(age)\") myTests().main()   "
 },
 {
-  "id": "strings-16",
+  "id": "strings-21",
   "level": "2",
-  "url": "topic-1-6-variables.html#strings-16",
+  "url": "topic-1-6-variables.html#strings-21",
   "type": "Essential Knowledge",
-  "number": "1.6.22",
+  "number": "1.6.23",
   "title": "1.6.C.5.",
   "body": " 1.6.C.5  A substring is part of an existing string. Programs can create substrings to extract or use part of a text value, such as extracting the month from a date, reading a portion of a message, or checking for a word within a string.  "
 },
 {
-  "id": "strings-19",
+  "id": "strings-24",
   "level": "2",
-  "url": "topic-1-6-variables.html#strings-19",
+  "url": "topic-1-6-variables.html#strings-24",
   "type": "Paragraph (with a defined term)",
   "number": "",
   "title": "",
@@ -1414,11 +1423,11 @@ var ptx_lunr_docs = [
   "body": "  Run the following code to see examples of slicing. Add to the code to print another substring of message that uses slicing to pull out the word \"fun\".    message = \"Python is fun!\" letter = message[0] print(\"The 0th letter is\", letter) print(\"Substring: \", message[0:6] ) # substring \"Python\" from index 0 up to index 6 # print another substring of message that uses slicing to pull out the word fun.  from unittest.gui import TestCaseGui class myTests(TestCaseGui): def testOne(self): self.assertIn(\"message[10:\", self.getEditorText(), \"Start from index 10 to pull out fun from message.\") myTests().main()   "
 },
 {
-  "id": "strings-22",
+  "id": "strings-28",
   "level": "2",
-  "url": "topic-1-6-variables.html#strings-22",
+  "url": "topic-1-6-variables.html#strings-28",
   "type": "Essential Knowledge",
-  "number": "1.6.23",
+  "number": "1.6.24",
   "title": "1.6.C.6.",
   "body": " 1.6.C.6  The output of code that uses string operations can be determined by tracing statements in order and keeping track of how string values change and what text is displayed.  "
 },
@@ -1432,18 +1441,18 @@ var ptx_lunr_docs = [
   "body": "  Trace the code below keeping track of the variables and their values. What is the value in the variable score after the code executes?   message1 = \"Python is fun!\" message2 = \"Coding\" message3 = message2 + message1[6:13] print(message3)         Correct!      The answer is 3 words separated by spaces. Remember that slicing is up to but not including the end index. Capitalization matters. You can try the code in an active coding area.      "
 },
 {
-  "id": "strings-24",
+  "id": "strings-30",
   "level": "2",
-  "url": "topic-1-6-variables.html#strings-24",
+  "url": "topic-1-6-variables.html#strings-30",
   "type": "Essential Knowledge",
-  "number": "1.6.24",
+  "number": "1.6.25",
   "title": "1.6.C.7.",
   "body": " 1.6.C.7  To communicate clearly with users, programmers use strings to store and generate text that apps display, such as prompts, feedback messages, and personalized responses.  "
 },
 {
-  "id": "input-2",
+  "id": "input-3",
   "level": "2",
-  "url": "topic-1-6-variables.html#input-2",
+  "url": "topic-1-6-variables.html#input-3",
   "type": "Paragraph (with a defined term)",
   "number": "",
   "title": "",
@@ -1657,9 +1666,9 @@ var ptx_lunr_docs = [
   "body": " Making Data-Driven Decisions using the Internet and AI   This unit introduces students to the Internet, Data Processing, and AI.     AP Exam Weighting:    Class Periods:    Time Estimate: 45 minutes per lesson    AP Classroom Progress Check Unit 4    AP Classroom Unit 4 Labs:       "
 },
 {
-  "id": "csphenomenal-9-1",
+  "id": "cspossible-9-1",
   "level": "1",
-  "url": "csphenomenal-9-1.html",
+  "url": "cspossible-9-1.html",
   "type": "Index",
   "number": "",
   "title": "Index",
