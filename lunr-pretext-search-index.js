@@ -700,7 +700,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "1.5",
   "title": "Sequencing",
-  "body": "  Sequencing   In this lesson, we will talk about algorithms using sequential steps or flowcharts and start coding in Python with print statements and Turtle code to draw shapes like below.     Sequencing in Written Steps and Flowcharts  algorithm  sequencing  flowchart   1.5.A.1  Many tasks can be completed by following step-by-step instructions. An algorithm describes these steps in an order that can be followed to solve a problem.   Algorithms are step by step instructions for solving a problem or completing a task. Before writing code, programmers often design algorithms to plan out the steps needed to solve a problem. Algorithms are used in many areas of life, not just in computer science. For example, a recipe is an algorithm for cooking a meal. A set of directions to a friend’s house is an algorithm for getting there.  Watch the following video about algorithms by Dr. Ralph Morelli, one of the founders of Mobile CSP ( slides , TeacherTube version ).     Write an algorithm in the form of written steps for how to make a peanut butter and jelly sandwich. Have a friend attempt to follow it.     Watch the following video of how instructions to make a peanut butter and jelly sandwich can go horribly wrong if the instructions are not precise enough!    1.5.A.2  Algorithms can be represented in ways people can read and follow, such as written steps or flowcharts .    1.5.A.3  When representing an algorithm in written steps or a flowchart, each step should be clear and specific so the process can be followed correctly.   Algorithms can be written as text in any language or in pseudocode which is a way to describe precise coding steps using a language like English or using flowcharts . Here's an example of a flowchart for choosing a pet:     Create a flowchart to help someone decide what clothes to wear based on the weather. Be sure to include yes\/no questions and different paths for at least 4 different outcomes.      1.5.A.4  Sequencing means the steps of an algorithm are carried out in a specific order, one step at a time. Changing the order of the steps can change what happens or whether the task is completed correctly.   The activity below demonstrated that the steps of an algorithm need to be in order. Put the steps for sending a text message in order. Try them out of order and it will not work!    Put the following pseudocode algorithm steps for sending a text message in order. Click on Check Me to see if you are right.     Unlock your phone.    Open the messaging app.    Choose a contact.    Type your message.    Press Send.       Python Output with print()  print  output  The print() function is used to display output to the screen in Python. Inside the parenthesis of the function, you can put in any message in quotes to be printed out, for example:   print(\"Hello World!\")   Try running this code in the exercise below. Notice that every Python command to the computer must be on a separate line.    Run the following code. Then, change \"World\" to your name and run the code again.    print(\"Hello World!\") print(\"Good bye!\")  from unittest.gui import TestCaseGui class myTests(TestCaseGui): def test1(self): self.assertIn(\"Hello\",self.getOutput(),\"Says hello\") self.assertNotIn(\"World\",self.getOutput(),\"Change World to your name\") myTests().main()      Drag or click on the blocks you need to move them from the top section into the yellow area to create a print statement that will print “Hi!”. There are extra blocks that you don’t need.     print    (    \"Hi!\"    )    ;    Print       Sequencing in Code  IDE  In this e-book, you can write Python code right in the Active Code exercises. When you click on run, the code is executed or run by the computer, which means the computer follows the algorithm instructions in the code.   1.5.B.1  When an app runs, a computer executes algorithms that are expressed as program code.    1.5.B.2  Programmers write code using tools such as text editors or integrated development environments (IDEs) that help them write and run programs. Some tools include AI features that can generate or autocomplete code, which programmers can adapt and test as they develop programs.   The IDE in this e-book is in the Active Code exercise windows, but you could copy the code into a text editor or IDE like VSCode that can be downloaded to your computer and run.   1.5.B.3  Clarity and readability are important when expressing an algorithm in a programming language so others can understand and modify the code.    1.5.B.4  Sequential statements execute in the order they appear in the program, and changing the order of statements can change the program’s behavior or what the user sees.   To demonstrate that statements need to be in order, put the following Knock Knock joke in order:    Put the lines of this knock-knock joke in the correct order. Remember that Python executes statements sequentially in order from top to bottom.     print(\"Knock knock!\")    print(\"Who's there?\")    print(\"Lettuce.\")    print(\"Lettuce who?\")    print(\"Let us in, it's cold out here!\")     Now let's try it in Python code. Python executes each line of code in order, so if the lines are out of order, the joke will not make sense when it is printed out. Put them in order by moving the lines of code, and then run it again to see the joke printed out correctly!    The lines of this knock-knock joke are out of order. Run to see what it prints out! Highlight and drag or cut and paste with (ctrl-x and ctrl-v) the print statements to put them in order, so the joke makes sense, and then run again.    print(\"Lettuce who?\") print(\"Knock knock!\") print(\"Let us in, it's cold out here!\") print(\"Who's there?\") print(\"Lettuce.\")  from unittest.gui import TestCaseGui class myTests(TestCaseGui): def test1(self): output = self.getOutput() expected = \"Knock knock!\\nWho's there?\\nLettuce.\\nLettuce who?\\nLet us in, it's cold out here!\\n\" self.assertEqual(output,expected,\"The joke lines are in the correct order.\") myTests().main()      Debugging  debugging  syntax error   Syntax errors are bugs or mistakes in the way the code is written. For example, the following code has a syntax error because the quotes and parenthesis are not closed. Try running the code and see what happens. Try fixing the errors to debug the code.    Run the following code. Fix the errors and run again.    print(\"Hello World!  from unittest.gui import TestCaseGui class myTests(TestCaseGui): def test1(self): self.assertIn(\"Hello World!\",self.getOutput(),\"output\") myTests().main()      Python Turtles  turtle  Python has a Turtle library where turtle objects can move around on the screen and draw pictures. We can import the library and set up the drawing space and the turtle with the following code where # indicates a comment that is not executed but explains the code.   import turtle # use the turtle library yertle = turtle.Turtle() # create a turtle named yertle yertle.shape(\"turtle\") # make yertle look like a turtle (default is an arrow)   We can set up a Turtle object like yertle that can be used to call functions to move the turtle around the screen. For example, the following code will move the turtle forward 100 pixels, turn it left 90 degrees, and move it forward 100 pixels again. The amount of movement or turning is put in parentheses after the function name.   yertle.forward(100) # move forward 100 pixels yertle.left(90) # turn left 90 degrees yertle.forward(100) # move forward 100 pixels   Try running the code to see how the turtle moves. You can change the numbers in the parentheses to move or turn different amounts. You can also use other functions like right() to turn right, backward() to move backward. Note that the turtle always starts facing to the right and moves forward whichever way it is facing.    Run the code below. Then, add one more statement at the end to move yertle forward 100 pixels. Run again.    import turtle # use the turtle library yertle = turtle.Turtle() # create a turtle named yertle yertle.shape(\"turtle\") # make yertle look like a turtle yertle.forward(100) yertle.left(90) yertle.forward(100) # Can you add code below to make yertle move forward again?  from unittest.gui import TestCaseGui class myTests(TestCaseGui): def test1(self): input_count = self.getEditorText().count(\".forward\") self.assertGreaterEqual(input_count, 3, \"at least 3 forward statements\") myTests().main()      The following program uses a turtle to draw a capital L as shown below, but the lines are mixed up. The turtle should turn to face south, draw a line that is 150 pixels long, then turn to face east, and draw a line that is 75 pixels long. We have added a compass to the picture to indicate the directions north, south, west, and east. Drag the needed blocks of statements from the left column to the right column and put them in the right order. There may be additional blocks that are not needed in a correct solution. Then click on Check to see if you are right. You will be told if any of the lines are in the wrong order or are the wrong blocks.      import turtle    ella = turtle.Turtle()     ella.right(90)    ella.turn(90)     ella.forward(150)    ella.left(90)     ella.forward(75)    ella.go(75)        Run the following code. Can you make the turtle complete the square? Can you change its pen color for each side of the square?    import turtle tina = turtle.Turtle() tina.shape(\"turtle\") tina.color(\"green\") # set pen color to green tina.fillcolor(\"green\") # set turtle body and fill color to green tina.forward(100) tina.right(90) tina.forward(100) # add code to complete the square  from unittest.gui import TestCaseGui class myTests(TestCaseGui): def test1(self): input_count = self.getEditorText().count(\".forward\") self.assertGreaterEqual(input_count, 4, \"at least 4 forward statements\") input_count = self.getEditorText().count(\".right\") self.assertGreaterEqual(input_count, 4, \"at least 4 right turns\") input_count = self.getEditorText().count(\".color\") self.assertGreaterEqual(input_count, 2, \"at least 2 colors\") myTests().main()      Tracing Sequential Code  tracing  trace table   1.5.B.5  Tracing program execution means following which statements are executed and what values are produced and stored as the program runs.   Pretend that you are the computer and trace through the code below line by line to figure out what the turtle will draw.    What shape will the program below draw when run?    import turtle zari = turtle.Turtle() zari.left(90) zari.forward(100) zari.left(90) zari.forward(100) zari.left(90) zari.forward(100) zari.left(90) zari.forward(100)       Correct!      Try again. Choose between an A, C, L, circle, triangle, square, or pentagon.        1.5.B.6  Programmers can trace execution by using debuggers or print statements to display values at different points in a program. When the following code runs, the program displays the value of expression followed by a new line. print(expression)   The xcor() turtle command will print out the current x-coordinate of the turtle on the screen. Try running the following program that uses print statements to trace the current location of the turtle.    Run the following code. Add another print statement to print out tina's current x-coordinate at the end.    import turtle tina = turtle.Turtle() tina.shape(\"turtle\") tina.color(\"purple\") tina.fillcolor(\"purple\") print( tina.xcor() ) tina.forward(50) print( tina.xcor() ) tina.forward(50) # add another print statement  from unittest.gui import TestCaseGui class myTests(TestCaseGui): def test1(self): input_count = self.getEditorText().count(\".xcor\") self.assertGreaterEqual(input_count, 3, \"at least 3 xcor\") self.assertIn(\"100\",self.getOutput(),\"50+50\") myTests().main()     1.5.B.7  The result of sequential statements can be determined by tracing code in order and keeping track of the values and output.   Trace tables can be used to track the values as they change throughout a program. To trace through code, write down a variable in each column or row in a table and keep track of its value throughout the program. Some trace tables also keep track of the output like below.     What x-coordinate will be printed out by this code?   import turtle teeny = turtle.Turtle() teeny.forward(20) teeny.forward(30) teeny.left(30) print( teeny.xcor() )       Correct!      Try again. Turning does not change the x-coordinate.        1.5.B.8  Programmers trace sequential code to confirm an app works as intended and the information it displays is correct and understandable.     Turtle Project    Draw something interesting with the turtle. The code below also shows how to change colors, fill in colors, lift up the pen, and draw dots. You could draw a flower, a house for the turtle, a smiley face, or anything you want.    import turtle tina = turtle.Turtle() tina.shape(\"turtle\") tina.color(\"blue\") # set pen color to blue tina.fillcolor(\"green\") # set fill color to green tina.begin_fill() # start filling in the shape # draw a closed shape tina.forward(100) tina.right(90) tina.forward(100) tina.right(90) tina.forward(100) tina.right(90) tina.forward(100) tina.end_fill() # end filling in the shape tina.penup() # put pen up so it doesn't draw tina.forward(150) # move without drawing tina.pendown() # put pen down so it draws tina.dot(50, \"red\") # draw a red dot of size 20  from unittest.gui import TestCaseGui class myTests(TestCaseGui): def test1(self): input_count = self.getEditorText().count(\".forward\") self.assertGreaterEqual(input_count, 8, \"at least 8 forward statements\") myTests().main()     Project Reflection   Describe the purpose of your program above in 1-2 sentences.       Review Learning Objectives  After this lesson, you should be able to:   1.5.A  Represent an algorithm that uses sequencing using written steps or a flowchart.    1.5.B  Develop code that runs sequentially and determine the result of sequential statements.     Vocabulary Review    Review the vocabulary in this lesson. Drag the vocabulary term from the left and drop it on its correct definition on the right. Click the \"Check Me\" button to see if you are correct.    Find the words in the lesson above and try again.     algorithm  Step by step instructions for solving a problem    sequencing  The default order of code that is run line-by-line from the top down    flowchart  Visual representation of an algorithm that uses shapes and arrows to show the steps    IDE  Software that provides tools for programmers to write, test, and debug code    syntax error  A mistake in the way code is written that prevents it from running correctly    debugging  The process of finding and fixing errors in code      "
+  "body": "  Sequencing   In this lesson, we will talk about algorithms using sequential steps or flowcharts and start coding in Python with print statements and Turtle code to draw shapes like below.     Sequencing in Written Steps and Flowcharts  algorithm  sequencing  flowchart   1.5.A.1  Many tasks can be completed by following step-by-step instructions. An algorithm describes these steps in an order that can be followed to solve a problem.   Algorithms are step by step instructions for solving a problem or completing a task. Before writing code, programmers often design algorithms to plan out the steps needed to solve a problem. Algorithms are used in many areas of life, not just in computer science. For example, a recipe is an algorithm for cooking a meal. A set of directions to a friend’s house is an algorithm for getting there.  Watch the following video about algorithms by Dr. Ralph Morelli, one of the founders of Mobile CSP ( slides , TeacherTube version ).     Write an algorithm in the form of written steps for how to make a peanut butter and jelly sandwich. Have a friend attempt to follow it.     Watch the following video of how instructions to make a peanut butter and jelly sandwich can go horribly wrong if the instructions are not precise enough!    1.5.A.2  Algorithms can be represented in ways people can read and follow, such as written steps or flowcharts .    1.5.A.3  When representing an algorithm in written steps or a flowchart, each step should be clear and specific so the process can be followed correctly.   Algorithms can be written as text in any language or in pseudocode which is a way to describe precise coding steps using a language like English or using flowcharts . Here's an example of a flowchart for choosing a pet:     Create a flowchart to help someone decide what clothes to wear based on the weather. Be sure to include yes\/no questions and different paths for at least 4 different outcomes.      1.5.A.4  Sequencing means the steps of an algorithm are carried out in a specific order, one step at a time. Changing the order of the steps can change what happens or whether the task is completed correctly.   The activity below demonstrated that the steps of an algorithm need to be in order. Put the steps for sending a text message in order. Try them out of order and it will not work!    Put the following pseudocode algorithm steps for sending a text message in order. Click on Check Me to see if you are right.     Unlock your phone.    Open the messaging app.    Choose a contact.    Type your message.    Press Send.       Python Output with print()  print  output  The print() function is used to display output to the screen in Python. Inside the parenthesis of the function, you can put in any message in quotes to be printed out, for example:   print(\"Hello World!\")   Try running this code in the exercise below. In Python, every command must be placed on its own line and start lined up at the same position (with no extra spaces on the left).    Run the following code. Then, change \"World\" to your name and run the code again.    print(\"Hello World!\") print(\"Good bye!\")  from unittest.gui import TestCaseGui class myTests(TestCaseGui): def test1(self): self.assertIn(\"Hello\",self.getOutput(),\"Says hello\") self.assertNotIn(\"World\",self.getOutput(),\"Change World to your name\") myTests().main()      Drag or click on the blocks you need to move them from the top section into the yellow area to create a print statement that will print “Hi!”. There are extra blocks that you don’t need.     print    (    \"Hi!\"    )    ;    Print       Sequencing in Code  IDE  In this e-book, you can write Python code right in the Active Code exercises. When you click on run, the code is executed or run by the computer, which means the computer follows the algorithm instructions in the code.   1.5.B.1  When an app runs, a computer executes algorithms that are expressed as program code.    1.5.B.2  Programmers write code using tools such as text editors or integrated development environments (IDEs) that help them write and run programs. Some tools include AI features that can generate or autocomplete code, which programmers can adapt and test as they develop programs.   The IDE in this e-book is in the Active Code exercise windows, but you could copy the code into a text editor or IDE like VSCode that can be downloaded to your computer and run.   1.5.B.3  Clarity and readability are important when expressing an algorithm in a programming language so others can understand and modify the code.    1.5.B.4  Sequential statements execute in the order they appear in the program, and changing the order of statements can change the program’s behavior or what the user sees.   To demonstrate that statements need to be in order, put the following Knock Knock joke in order:    Put the lines of this knock-knock joke in the correct order. Remember that Python executes statements sequentially in order from top to bottom.     print(\"Knock knock!\")    print(\"Who's there?\")    print(\"Lettuce.\")    print(\"Lettuce who?\")    print(\"Let us in, it's cold out here!\")     Now let's try it in Python code. Python executes each line of code in order, so if the lines are out of order, the joke will not make sense when it is printed out. Put them in order by moving the lines of code, and then run it again to see the joke printed out correctly!    The lines of this knock-knock joke are out of order. Run to see what it prints out! Highlight and drag or cut and paste with (ctrl-x and ctrl-v) the print statements to put them in order, so the joke makes sense, and then run again.    print(\"Lettuce who?\") print(\"Knock knock!\") print(\"Let us in, it's cold out here!\") print(\"Who's there?\") print(\"Lettuce.\")  from unittest.gui import TestCaseGui class myTests(TestCaseGui): def test1(self): output = self.getOutput() expected = \"Knock knock!\\nWho's there?\\nLettuce.\\nLettuce who?\\nLet us in, it's cold out here!\\n\" self.assertEqual(output,expected,\"The joke lines are in the correct order.\") myTests().main()      Debugging  debugging  syntax error   Syntax errors are bugs or mistakes in the way the code is written. For example, the following code has a syntax error because the quotes and parenthesis are not closed. Try running the code and see what happens. Try fixing the errors to debug the code.    Run the following code. Fix the errors and run again.    print(\"Hello World!  from unittest.gui import TestCaseGui class myTests(TestCaseGui): def test1(self): self.assertIn(\"Hello World!\",self.getOutput(),\"output\") myTests().main()      Python Turtles  turtle  Python has a Turtle library where turtle objects can move around on the screen and draw pictures. We can import the library and set up the drawing space and the turtle with the following code where # indicates a comment that is not executed but explains the code.   import turtle # use the turtle library yertle = turtle.Turtle() # create a turtle named yertle yertle.shape(\"turtle\") # make yertle look like a turtle (default is an arrow)   We can set up a Turtle object like yertle that can be used to call functions to move the turtle around the screen. For example, the following code will move the turtle forward 100 pixels, turn it left 90 degrees, and move it forward 100 pixels again. The amount of movement or turning is put in parentheses after the function name.   yertle.forward(100) # move forward 100 pixels yertle.left(90) # turn left 90 degrees yertle.forward(100) # move forward 100 pixels   Try running the code to see how the turtle moves. You can change the numbers in the parentheses to move or turn different amounts. You can also use other functions like right() to turn right, backward() to move backward. Note that the turtle always starts facing to the right and moves forward whichever way it is facing.    Run the code below. Then, add one more statement at the end to move yertle forward 100 pixels. Run again.    import turtle # use the turtle library yertle = turtle.Turtle() # create a turtle named yertle yertle.shape(\"turtle\") # make yertle look like a turtle yertle.forward(100) yertle.left(90) yertle.forward(100) # Can you add code below to make yertle move forward again?  from unittest.gui import TestCaseGui class myTests(TestCaseGui): def test1(self): input_count = self.getEditorText().count(\".forward\") self.assertGreaterEqual(input_count, 3, \"at least 3 forward statements\") myTests().main()      The following program uses a turtle to draw a capital L as shown below, but the lines are mixed up. The turtle should turn to face south, draw a line that is 150 pixels long, then turn to face east, and draw a line that is 75 pixels long. We have added a compass to the picture to indicate the directions north, south, west, and east. Drag the needed blocks of statements from the left column to the right column and put them in the right order. There may be additional blocks that are not needed in a correct solution. Then click on Check to see if you are right. You will be told if any of the lines are in the wrong order or are the wrong blocks.      import turtle    ella = turtle.Turtle()     ella.right(90)    ella.turn(90)     ella.forward(150)    ella.left(90)     ella.forward(75)    ella.go(75)        Run the following code. Can you make the turtle complete the square? Can you change its pen color for each side of the square?    import turtle tina = turtle.Turtle() tina.shape(\"turtle\") tina.color(\"green\") # set color to green tina.forward(100) tina.right(90) tina.forward(100) # add code to complete the square  from unittest.gui import TestCaseGui class myTests(TestCaseGui): def test1(self): input_count = self.getEditorText().count(\".forward\") self.assertGreaterEqual(input_count, 4, \"at least 4 forward statements\") input_count = self.getEditorText().count(\".right\") self.assertGreaterEqual(input_count, 4, \"at least 4 right turns\") input_count = self.getEditorText().count(\".color\") self.assertGreaterEqual(input_count, 2, \"at least 2 colors\") myTests().main()      Tracing Sequential Code  tracing  trace table   1.5.B.5  Tracing program execution means following which statements are executed and what values are produced and stored as the program runs.   Pretend that you are the computer and trace through the code below line by line to figure out what the turtle will draw.    What shape will the program below draw when run?    import turtle zari = turtle.Turtle() zari.left(90) zari.forward(100) zari.left(90) zari.forward(100) zari.left(90) zari.forward(100) zari.left(90) zari.forward(100)       Correct!      Try again. Choose between an A, C, L, circle, triangle, square, or pentagon.        1.5.B.6  Programmers can trace execution by using debuggers or print statements to display values at different points in a program. When the following code runs, the program displays the value of expression followed by a new line. print(expression)   The xcor() turtle command will print out the current x-coordinate of the turtle on the screen. The Python turtle starts at the default coordinates (0,0) at the center of the screen. The x-coordinate increases as the turtle moves forward to the right and decreases as it moves to the left. Try running the following program that uses print statements to trace the current location of the turtle.    Run the following code. Add another print statement to print out tina's current x-coordinate at the end.    import turtle tina = turtle.Turtle() tina.shape(\"turtle\") tina.color(\"purple\") print( tina.xcor() ) tina.forward(50) print( tina.xcor() ) tina.forward(50) # add another print statement  from unittest.gui import TestCaseGui class myTests(TestCaseGui): def test1(self): input_count = self.getEditorText().count(\".xcor\") self.assertGreaterEqual(input_count, 3, \"at least 3 xcor\") self.assertIn(\"100\",self.getOutput(),\"50+50\") myTests().main()     1.5.B.7  The result of sequential statements can be determined by tracing code in order and keeping track of the values and output.   Trace tables can be used to track the values as they change throughout a program. To trace through code, write down a variable in each column or row in a table and keep track of its value throughout the program. Some trace tables also keep track of the output like below.     What x-coordinate will be printed out by this code?   import turtle teeny = turtle.Turtle() teeny.forward(20) teeny.forward(30) teeny.left(30) print( teeny.xcor() )       Correct!      Try again. Turning does not change the x-coordinate.        1.5.B.8  Programmers trace sequential code to confirm an app works as intended and the information it displays is correct and understandable.     Turtle Project    Draw something interesting with the turtle. You could draw a flower, a house for the turtle, a smiley face, or anything you want. The code below also shows how to change colors, fill in colors, lift up the pen, and draw dots. Check out all the Turtle Colors that you can use.    import turtle screen = turtle.Screen() screen.bgcolor(\"lightyellow\") # set the background color of the screen tina = turtle.Turtle() tina.shape(\"turtle\") tina.color(\"blue\") # set drawing color to blue tina.begin_fill() # start filling in the shape # draw a closed shape tina.forward(100) tina.right(90) tina.forward(100) tina.right(90) tina.forward(100) tina.right(90) tina.forward(100) tina.end_fill() # end filling in the shape tina.penup() # put pen up so it doesn't draw tina.forward(150) # move without drawing tina.pendown() # put pen down so it draws tina.dot(50, \"red\") # draw a red dot of size 20  from unittest.gui import TestCaseGui class myTests(TestCaseGui): def test1(self): input_count = self.getEditorText().count(\".forward\") self.assertGreaterEqual(input_count, 8, \"at least 8 forward statements\") myTests().main()     Project Reflection   Describe the purpose of your program above in 1-2 sentences.       Review Learning Objectives  After this lesson, you should be able to:   1.5.A  Represent an algorithm that uses sequencing using written steps or a flowchart.    1.5.B  Develop code that runs sequentially and determine the result of sequential statements.     Vocabulary Review    Review the vocabulary in this lesson. Drag the vocabulary term from the left and drop it on its correct definition on the right. Click the \"Check Me\" button to see if you are correct.    Find the words in the lesson above and try again.     algorithm  Step by step instructions for solving a problem    sequencing  The default order of code that is run line-by-line from the top down    flowchart  Visual representation of an algorithm that uses shapes and arrows to show the steps    IDE  Software that provides tools for programmers to write, test, and debug code    syntax error  A mistake in the way code is written that prevents it from running correctly    debugging  The process of finding and fixing errors in code      "
 },
 {
   "id": "sequencing-5",
@@ -892,6 +892,15 @@ var ptx_lunr_docs = [
   "body": "  Run the following code. Fix the errors and run again.    print(\"Hello World!  from unittest.gui import TestCaseGui class myTests(TestCaseGui): def test1(self): self.assertIn(\"Hello World!\",self.getOutput(),\"output\") myTests().main()   "
 },
 {
+  "id": "turtles-3",
+  "level": "2",
+  "url": "topic-1-5-sequencing.html#turtles-3",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "comment "
+},
+{
   "id": "turtle1",
   "level": "2",
   "url": "topic-1-5-sequencing.html#turtle1",
@@ -916,7 +925,7 @@ var ptx_lunr_docs = [
   "type": "Activity",
   "number": "1.5.11",
   "title": "",
-  "body": "  Run the following code. Can you make the turtle complete the square? Can you change its pen color for each side of the square?    import turtle tina = turtle.Turtle() tina.shape(\"turtle\") tina.color(\"green\") # set pen color to green tina.fillcolor(\"green\") # set turtle body and fill color to green tina.forward(100) tina.right(90) tina.forward(100) # add code to complete the square  from unittest.gui import TestCaseGui class myTests(TestCaseGui): def test1(self): input_count = self.getEditorText().count(\".forward\") self.assertGreaterEqual(input_count, 4, \"at least 4 forward statements\") input_count = self.getEditorText().count(\".right\") self.assertGreaterEqual(input_count, 4, \"at least 4 right turns\") input_count = self.getEditorText().count(\".color\") self.assertGreaterEqual(input_count, 2, \"at least 2 colors\") myTests().main()   "
+  "body": "  Run the following code. Can you make the turtle complete the square? Can you change its pen color for each side of the square?    import turtle tina = turtle.Turtle() tina.shape(\"turtle\") tina.color(\"green\") # set color to green tina.forward(100) tina.right(90) tina.forward(100) # add code to complete the square  from unittest.gui import TestCaseGui class myTests(TestCaseGui): def test1(self): input_count = self.getEditorText().count(\".forward\") self.assertGreaterEqual(input_count, 4, \"at least 4 forward statements\") input_count = self.getEditorText().count(\".right\") self.assertGreaterEqual(input_count, 4, \"at least 4 right turns\") input_count = self.getEditorText().count(\".color\") self.assertGreaterEqual(input_count, 2, \"at least 2 colors\") myTests().main()   "
 },
 {
   "id": "tracing-4",
@@ -952,7 +961,7 @@ var ptx_lunr_docs = [
   "type": "Activity",
   "number": "1.5.13",
   "title": "",
-  "body": "  Run the following code. Add another print statement to print out tina's current x-coordinate at the end.    import turtle tina = turtle.Turtle() tina.shape(\"turtle\") tina.color(\"purple\") tina.fillcolor(\"purple\") print( tina.xcor() ) tina.forward(50) print( tina.xcor() ) tina.forward(50) # add another print statement  from unittest.gui import TestCaseGui class myTests(TestCaseGui): def test1(self): input_count = self.getEditorText().count(\".xcor\") self.assertGreaterEqual(input_count, 3, \"at least 3 xcor\") self.assertIn(\"100\",self.getOutput(),\"50+50\") myTests().main()   "
+  "body": "  Run the following code. Add another print statement to print out tina's current x-coordinate at the end.    import turtle tina = turtle.Turtle() tina.shape(\"turtle\") tina.color(\"purple\") print( tina.xcor() ) tina.forward(50) print( tina.xcor() ) tina.forward(50) # add another print statement  from unittest.gui import TestCaseGui class myTests(TestCaseGui): def test1(self): input_count = self.getEditorText().count(\".xcor\") self.assertGreaterEqual(input_count, 3, \"at least 3 xcor\") self.assertIn(\"100\",self.getOutput(),\"50+50\") myTests().main()   "
 },
 {
   "id": "tracing-10",
@@ -988,7 +997,7 @@ var ptx_lunr_docs = [
   "type": "Activity",
   "number": "1.5.15",
   "title": "",
-  "body": "  Draw something interesting with the turtle. The code below also shows how to change colors, fill in colors, lift up the pen, and draw dots. You could draw a flower, a house for the turtle, a smiley face, or anything you want.    import turtle tina = turtle.Turtle() tina.shape(\"turtle\") tina.color(\"blue\") # set pen color to blue tina.fillcolor(\"green\") # set fill color to green tina.begin_fill() # start filling in the shape # draw a closed shape tina.forward(100) tina.right(90) tina.forward(100) tina.right(90) tina.forward(100) tina.right(90) tina.forward(100) tina.end_fill() # end filling in the shape tina.penup() # put pen up so it doesn't draw tina.forward(150) # move without drawing tina.pendown() # put pen down so it draws tina.dot(50, \"red\") # draw a red dot of size 20  from unittest.gui import TestCaseGui class myTests(TestCaseGui): def test1(self): input_count = self.getEditorText().count(\".forward\") self.assertGreaterEqual(input_count, 8, \"at least 8 forward statements\") myTests().main()   "
+  "body": "  Draw something interesting with the turtle. You could draw a flower, a house for the turtle, a smiley face, or anything you want. The code below also shows how to change colors, fill in colors, lift up the pen, and draw dots. Check out all the Turtle Colors that you can use.    import turtle screen = turtle.Screen() screen.bgcolor(\"lightyellow\") # set the background color of the screen tina = turtle.Turtle() tina.shape(\"turtle\") tina.color(\"blue\") # set drawing color to blue tina.begin_fill() # start filling in the shape # draw a closed shape tina.forward(100) tina.right(90) tina.forward(100) tina.right(90) tina.forward(100) tina.right(90) tina.forward(100) tina.end_fill() # end filling in the shape tina.penup() # put pen up so it doesn't draw tina.forward(150) # move without drawing tina.pendown() # put pen down so it draws tina.dot(50, \"red\") # draw a red dot of size 20  from unittest.gui import TestCaseGui class myTests(TestCaseGui): def test1(self): input_count = self.getEditorText().count(\".forward\") self.assertGreaterEqual(input_count, 8, \"at least 8 forward statements\") myTests().main()   "
 },
 {
   "id": "turtle-project-reflection",
@@ -1555,133 +1564,349 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "1.7",
   "title": "Mathematical Expressions",
-  "body": "  Mathematical Expressions       Learning Objectives   1.7.A  Develop code using mathematical expressions, and determine the result of these expressions.    1.7.B  Develop code to generate random numbers, and determine the possible values that could be produced as a result.     Mathematical Expressions   1.7.A.1  Apps use mathematical expressions to calculate values that help users make decisions, such as prices, time estimates, or progress toward a goal.    1.7.A.2  Mathematical expressions can be used to update the state of a program by changing values stored in variables, such as scores, timers, levels, and resource usage.    1.7.A.3  An integer is a numeric data type that represents positive and negative whole numbers, including zero. Integers are often used for counts or scores in a program.    1.7.A.4  Arithmetic operators appear in most programming languages, but the notation used for those operations is determined by the language. Common arithmetic operators include addition + , subtraction - , multiplication * , division \/ and modulo % .    1.7.A.5  The modulo operation % evaluates to the remainder when one integer is divided by another: a % b is the remainder when a is divided by b . Modulo can be used to identify patterns in numbers, such as whether a number is even or odd, and to help format values in user-friendly ways, such as converting total minutes into hours and minutes.    1.7.A.6  Expressions enclosed in parentheses are evaluated first. Then, multiplication * , division \/ , and modulo % operations are evaluated from left to right. Then, addition + and subtraction - operations are evaluated from left to right.    1.7.A.7  The result of a mathematical expression can be determined by evaluating it step by step using the order of operations and operators.    1.7.A.8  Mathematical expressions can include variables. To determine the result, substitute the current values of variables and then evaluate the expression using the order of operations.     Random Numbers   1.7.B.1  Apps use random number generation to create variety and unpredictability, such as in games, simulations, or randomly generated prompts.    1.7.B.2  Random values can support variation in app behavior, such as shuffling a playlist, selecting a random item, or assigning outcomes like rolling a die.    1.7.B.3  Programmers can determine the set of possible values produced by a random command by identifying the endpoints and whether they are included. When the following code runs, a random integer from a to b , including a and b , is generated and returned. Each result is equally likely to occur. The possible results of random(a, b) are all integers from a through b . random(a, b)    1.7.B.4  When a program uses random number generation, the same code can produce different results each time it runs.    "
+  "body": "  Mathematical Expressions  expressions  math   Computers are very good at math! In this lesson, we'll learn how to do math in Python using mathematical expressions which are mathematical formulas that combine numbers, variables, and operators to calculate a value like width*height below.     Mathematical Expressions   1.7.A.1  Apps use mathematical expressions to calculate values that help users make decisions, such as prices, time estimates, or progress toward a goal.   In the last lesson, we assigned values to variables like score = 0 , but the right side of an assignment statement can be more than just a simple value like 0. We can use expressions which combine numbers, variables, and operators to calculate a value and assign it to the variable in an assignment statement like below.   This looks like a mathematical formula, but in coding, an assignment statement always has a single variable on the left side and an expression on the right side. The expression is evaluated and then assigned to the variable.   If points = 3 , what is the value of score after this assignment statement which multiplies points by 10 and adds 5?   score = (10 * points) + 5         Correct! (10*3) + 5 = 35       Incorrect, try again. What is (10 * 3) + 5?         Updating State with Expressions   1.7.A.2  Mathematical expressions can be used to update the state of a program by changing values stored in variables, such as scores, timers, levels, and resource usage.   If you use a variable to keep score, you would probably increment the score (add one to the current value) as the game progresses. You can do this by setting the variable to the current value of the variable plus one ( score = score + 1 ) as shown below. The formula would look strange in math class, but it makes sense in coding because it is assigning a new value to the variable on the left that comes from evaluating the arithmetic expression on the right. So, the score variable is set to the previous value of score plus 1.    Try the code below to see how score is incremented by 1. Try substituting 2 instead of 1 to increment by 2.    score = 10 print(score) score = score + 1 print(score)  from unittest.gui import TestCaseGui class myTests(TestCaseGui): def test1(self): self.assertIn(\"12\",self.getOutput(),\"Change + 1 to + 2\") myTests().main()     1.7.A.3  An integer is a numeric data type that represents positive and negative whole numbers, including zero. Integers are often used for counts or scores in a program.   In Python, you do not need to indicate the data type of a variable, but variable that are assigned whole number values like score = 5 are automatically type int for integer .    Arithmetic Operators  operators   math operators    operators addition    operators subtraction    operators multiplication    operators division    operators modulo    operators mod    operators remainder    operators exponent    operators power    operators integer division    1.7.A.4  Arithmetic operators appear in most programming languages, but the notation used for those operations is determined by the language. Common arithmetic operators include addition + , subtraction - , multiplication * , division \/ and modulo % .   Python uses the following basic arithmetic operators:   Python Basic Arithmetic Operators    Operator  Meaning    +  Addition    -  Subtraction    *  Multiplication    \/  Division       Try the code below to see how the basic arithmetic operators work in Python. Add two more lines to the code as described.    print(10 + 5) print(10 - 5) print(10 * 5) print(10 \/ 5) # print 2 times 3 # print 5 divided by 2  from unittest.gui import TestCaseGui class myTests(TestCaseGui): def test1(self): self.assertIn(\"6\",self.getOutput(),\"Check 2 times 3\") self.assertIn(\"2.5\",self.getOutput(),\"Check 5 divided by 2\") count = self.getEditorText().count(\"*\") self.assertGreaterEqual(count, 2, \"* used\") myTests().main()    Python also has the following non-standard operators:   Python Special Operators    Operator  Meaning    \/\/  Integer Division (everything after the decimal point is removed)    %  Modulo (integer remainder after integer division)    **  Exponent (raises a number to a power)      1.7.A.5  The modulo operation % evaluates to the remainder when one integer is divided by another: a % b is the remainder when a is divided by b . Modulo can be used to identify patterns in numbers, such as whether a number is even or odd, and to help format values in user-friendly ways, such as converting total minutes into hours and minutes.   The modulo (mod) or remainder operator is very useful in coding. For example, it can be used to check if a number is even (divisible by 2) if it has no remainders when divided by 2. The expression 5 % 2 is equal to 1, because 5 divided by 2 is equal to 2 with a remainder of 1 (since 2 * 2 = 4).    Try the code below to see how the special arithmetic operators work in Python. Compare the result of 5\/2 and 5\/\/2 and the remainder 5%2. Add 1 more line to the code as described.    print(\"5 \/ 2 = \", 5 \/ 2) print(\"5 \/\/ 2 = \", 5 \/\/ 2) print(\"Mod or Remainder 5 % 2 = \", 5 % 2) print(\"5 ** 2 = \", 5 ** 2) # print 13 mod 5  from unittest.gui import TestCaseGui class myTests(TestCaseGui): def test1(self): self.assertIn(\"3\",self.getOutput(),\"Check 13 mod 5\") count = self.getEditorText().count(\"%\") self.assertGreaterEqual(count, 2, \"% used\") myTests().main()      What is the result of 2 % 6 ?      0    This would be correct if it was 6 % 2 .      1    This would be correct if it was some odd number divided by 2, but it is not.      2    6 goes into 2 zero times with 2 left over. If you have a smaller number divided by a larger number the remainder is always the smaller number.      6    If you have a smaller number divided by a larger number the remainder is always the smaller number.      If you have a smaller number divided by a larger number the remainder is always the smaller number.   1.7.A.6  Expressions enclosed in parentheses are evaluated first. Then, multiplication * , division \/ , and modulo % operations are evaluated from left to right. Then, addition + and subtraction - operations are evaluated from left to right.   When compound expressions are evaluated, operator precedence rules are used, just like when we do math, so that multiplication *, division \/, and remainder % are done before addition + and subtraction -. However, anything in parentheses is done first. The PEMDAS acronym can help you remember the order of operations: Parentheses, Exponents, Multiplication and Division, Addition and Subtraction (from left to right). It doesn’t hurt to put in extra parentheses if you are unsure as to what will be done first or just to make it more clear.    What is the result of 1 + 3 * (2 + 1) ?      12    Remember PEMDAS! Don't do the addition first.      9    Remember to do the parentheses first.      15    Remember PEMDAS      10    Yes, 1 + 3 * (2 + 1) = 1 + 3 * 3 = 1 + 9 = 10      compound operators  Compound assignment operators += , -= , *= , \/= , and %= are shortcuts that do a math operation and assignment in one step. For example, x += 1 adds 1 to the current value of x and assigns the result back to x . It is the same as x = x + 1 . This pattern is possible with any operator put in front of the = sign.   1.7.A.7  The result of a mathematical expression can be determined by evaluating it step by step using the order of operations and operators.    1.7.A.8  Mathematical expressions can include variables. To determine the result, substitute the current values of variables and then evaluate the expression using the order of operations.   When tracing through code with expressions, always remember to evaluate the right-hand side of the assignment first, then assign the result to the variable on the left-hand side. You can practice and check your answers by adding print statements to show the variables or click on the \"Show CodeLens\" button on any Active Code exercise to turn on the interactive tracing tool called CodeLens as seen below. This is a tool called Python Tutor that is built into Runestone.    Keep clicking on the Next button at the bottom of the code to see how the values of the variables change as you step through the running program. You can see interactive tracing in any Active Code exercise by clicking the CodeLens button.    score = 9; print(score) score += 1 print(score) bonus = 11 % 3 print(bonus) score *= bonus print(score);      What are the values of x and y after the following code executes? Remember to evaluate the right hand side of = first and then assign the result to the variable on the left side. You can step through this code by clicking on this visualizer link .   a = 2 b = 10 a = b a = a + 1 b = b * 3       a = 10, b = 30    Remember that a is incremented.      a = 11, b = 33    No, b's value is copied into a but they are not connected after that.      a = 11, b = 30    Correct!      a = 10, b = 33    Try the visualizer to see the step-by-step evaluation.        Input and Math  input  When you use the input() command to get input from a user, the value is always treated as a string, even if the user types in a number. If you want to use that input in a mathematical expression, you need to convert it to a number first using the int() command for integers or float() command for decimal numbers. For example:   ageStr = input(\"How old are you? \") age = int(ageStr) # Now we can do math with the age variable since it is an int instead of a string print(\"Next year you will be\", age + 1, \"years old.\")     Try the code below to see that there is an error when you try to do math with a string. Then, fix the code by converting the input to an int before doing the math.    ageStr = input(\"How old are you? \") # To fix the error, convert the string ageStr to an int and use it in the formula below yearsUntil100 = 100 - ageStr print(\"You will be 100 in\", yearsUntil100, \"years.\")  from unittest.gui import TestCaseGui class myTests(TestCaseGui): def test1(self): self.assertIn(\"You will be 100\",self.getOutput(),\"It works!\") myTests().main()      Write a program that asks the user for the number of minutes they have spent in class and then calculate the number of hours, remaining minutes, and seconds. Fill in the formulas for 1,2, and 3 below.    # 1. Ask the user for the number of minutes they have spent in class minutesStr = input(\"How many minutes have you spent in class? \") # convert the input to an int minutes = int(minutesStr) # 1. calculate the hours in minutes by using integer division \/\/ (there are 60 minutes in an hour) hours = # 2. calculate the remaining minutes in minutes using the mod % operator and 60 remainingMinutes = # 3. calculate the number of seconds in minutes with multiplication (there are 60 seconds in a minute) seconds = # print the results print(\"You have spent\", hours, \"hour(s) and\", remainingMinutes, \"minute(s), and a total of\", seconds, \"second(s) in class.\")  from unittest.gui import TestCaseGui class myTests(TestCaseGui): def test1(self): self.assertIn(\"minutes\/\/60\",self.getEditorText().replace(\" \", \"\"),\"Use minutes\/\/60 to calculate hours\") self.assertIn(\"minutes%60\",self.getEditorText().replace(\" \", \"\"),\"Use minutes%60 to calculate remaining minutes\") self.assertIn(\"minutes*60\",self.getEditorText().replace(\" \", \"\"),\"Use minutes*60 to calculate seconds\") myTests().main()      Random Numbers  random numbers  random   1.7.B.1  Apps use random number generation to create variety and unpredictability, such as in games, simulations, or randomly generated prompts.   Games would be boring if the same thing happened each time you played the game. Random numbers can be used in games to generate different actions or outcomes each time the game is played. Try a game app on your phone or computer and try to identify where random numbers are used. If you roll dice or flip a coin or if the enemies in the game do not always act the same way, then random numbers are likely being used.   1.7.B.2  Random values can support variation in app behavior, such as shuffling a playlist, selecting a random item, or assigning outcomes like rolling a die.    1.7.B.3  Programmers can determine the set of possible values produced by a random command by identifying the endpoints and whether they are included. When the following code runs, a random integer from a to b , including a and b , is generated and returned. Each result is equally likely to occur. The possible results of random(a, b) are all integers from a through b . random(a, b)   In Python, there is a library called random that can be imported and used to generate random values. Use random.randint(start, end) to generate a random integer from start to end , including both endpoints. For example:   import random # pick a random number from 0 to 10 r = random.randint(0, 10)   Try running the program below a few times to see that it generates different random numbers each time it runs.    Try the code below to see how to generate random numbers in Python. Run it a few times to see that it generates different random numbers each time. Then, generate another random number from -10 to 10.    import random # pick a random number from 1 to 100 r = random.randint(1, 100) print(r) # print another random number from -10 to 10  from unittest.gui import TestCaseGui class myTests(TestCaseGui): def test1(self): count = self.getEditorText().count(\"randint\") self.assertGreaterEqual(count, 2, \"randint used twice\") myTests().main()     1.7.B.4  When a program uses random number generation, the same code can produce different results each time it runs.   Computers can’t usually generate truly random numbers without measuring something that is random (like static noise on radio frequencies or lava lamps). If they don’t have access to something like that, they must rely on generating pseudorandom numbers that look random even though they are created using a mathematical formula. Python takes the system time as the seed or starting point (since it is always changing) and then uses a mathematical formula to generate the next random number each time we ask for one.    Random Turtle Project  Let's practice with turtles drawing with random colors and random movements. Colors on computers and on the web can be set using RGB (red, green, blue) values that range from 0 to 255 (which can be saved in 8 bits). Try the Google color picker and look at the RGB values for different colors below the selected color. Any color can be made by mixing different amounts of red, green, and blue light. Mixing light is different than mixing paint, so when you mix red, green, and blue light, you get white light.     What RGB values do you need to make black? Try the Google color picker to test.     0, 0, 0    Correct! Black light is the default state of no light. For example at nighttime, all is black because of there is no sunlight.      255, 255, 255    This is white, not black. If you mix all three primary RGB colors of light, you get white.      255, 0, 0    This is red light, not black. Red light is made with all red and no green or blue.      0, 255, 255    This is cyan light, not black. Cyan light is made with all green and blue and no red.        The assignment statement x = random.randint(-200, 200) can be used to generate a random x-coordinate for a turtle, because it is initially placed at coordinates (0, 0) and can move 200 pixels to the right to 200 or left to -200. Which of the following numbers cannot be generated by this expression?     0    0 is between -200 and 200, so it can be generated.      -200    -200 is between -200 and 200, so it can be generated.      200    200 is between -200 and 200, so it can be generated.      -255    -255 is not between -200 and 200, so it cannot be generated by random.randint(-200, 200).        Try the code below to see how to use random numbers to set random colors and random movements for a turtle. Then, modify the code to make the turtle draw a different pattern.    import turtle import random screen = turtle.Screen() turt = turtle.Turtle() # Choose random RGB values for a light background color from 100 to 255 # You can choose different ranges within that for r, g, and b. r = 255 # Change these to use random.randint(start,end) g = 255 b = 255 # Set the background color using the random RGB values (scaled by \/255) screen.bgcolor(r\/255, g\/255, b\/255) # Choose random RGB values for a dark pen color from 0 to 100 # You can choose different ranges within that for r, g, and b. r = 0 # Change these to use random.randint(start,end) g = 0 b = 0 # Set the pen color using the random RGB values (scaled by \/ 255) turt.color(r\/255, g\/255, b\/255) # Choose a random x and y coordinate from -200 to 200 x = 100 # Change these to use random.randint(start,end) y = 100 turt.goto(x, y) # Move the turtle to the random (x, y) coordinates # Choose a random angle from 0 to 360 and a random distance from 20 to 100 angle = 45 # Change these to use random.randint(start,end) distance = 50 turt.right(angle) # Turn the turtle right by the random angle turt.forward(distance) # Move the turtle forward by the random distance turt.goto(0, 0) # Repeat the code above to choose random colors, # random x, y, angle, distance and move the turtle at least 3 times  from unittest.gui import TestCaseGui class myTests(TestCaseGui): def test1(self): count = self.getEditorText().count(\"randint\") self.assertGreaterEqual(count, 30, \"at least 30 randint used\") myTests().main()     Project Reflection   Describe how you used random numbers in your turtle project. What was the range of random numbers you used for the RGB values and the x, y coordinates? How did the random numbers enhance the project?       Review Learning Objectives  After this lesson, you should be able to:   1.7.A  Develop code using mathematical expressions, and determine the result of these expressions.    1.7.B  Develop code to generate random numbers, and determine the possible values that could be produced as a result.     Vocabulary Review    Review the vocabulary in this lesson. Drag the vocabulary term from the left and drop it on its correct definition on the right. Click the \"Check Me\" button to see if you are correct.    Find the words in the lesson above and try again.     expression  combination of numbers, variables, and operators that represents a value    increment  to increase a variable's value, often by adding 1 to it    integer  a numeric data type that represents positive and negative whole numbers, including zero.    modulo (%)  operator that returns the remainder of a division operation    random.randint  Python function that generates a random integer between two specified values (inclusive)      "
 },
 {
-  "id": "topic-1-7-expressions-4-2",
+  "id": "topic-1-7-expressions-5-1",
   "level": "2",
-  "url": "topic-1-7-expressions.html#topic-1-7-expressions-4-2",
-  "type": "Learning Objective",
-  "number": "1.7.1",
-  "title": "1.7.A.",
-  "body": " 1.7.A  Develop code using mathematical expressions, and determine the result of these expressions.  "
+  "url": "topic-1-7-expressions.html#topic-1-7-expressions-5-1",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "mathematical expressions "
 },
 {
-  "id": "topic-1-7-expressions-4-3",
+  "id": "expressions-2",
   "level": "2",
-  "url": "topic-1-7-expressions.html#topic-1-7-expressions-4-3",
-  "type": "Learning Objective",
-  "number": "1.7.2",
-  "title": "1.7.B.",
-  "body": " 1.7.B  Develop code to generate random numbers, and determine the possible values that could be produced as a result.  "
-},
-{
-  "id": "topic-1-7-expressions-5-2",
-  "level": "2",
-  "url": "topic-1-7-expressions.html#topic-1-7-expressions-5-2",
+  "url": "topic-1-7-expressions.html#expressions-2",
   "type": "Essential Knowledge",
-  "number": "1.7.3",
+  "number": "1.7.1",
   "title": "1.7.A.1.",
   "body": " 1.7.A.1  Apps use mathematical expressions to calculate values that help users make decisions, such as prices, time estimates, or progress toward a goal.  "
 },
 {
-  "id": "topic-1-7-expressions-5-3",
+  "id": "expressions-3",
   "level": "2",
-  "url": "topic-1-7-expressions.html#topic-1-7-expressions-5-3",
+  "url": "topic-1-7-expressions.html#expressions-3",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "expressions "
+},
+{
+  "id": "trace-expr0",
+  "level": "2",
+  "url": "topic-1-7-expressions.html#trace-expr0",
+  "type": "Activity",
+  "number": "1.7.1",
+  "title": "",
+  "body": " If points = 3 , what is the value of score after this assignment statement which multiplies points by 10 and adds 5?   score = (10 * points) + 5         Correct! (10*3) + 5 = 35       Incorrect, try again. What is (10 * 3) + 5?      "
+},
+{
+  "id": "updating-state-2",
+  "level": "2",
+  "url": "topic-1-7-expressions.html#updating-state-2",
   "type": "Essential Knowledge",
-  "number": "1.7.4",
+  "number": "1.7.2",
   "title": "1.7.A.2.",
   "body": " 1.7.A.2  Mathematical expressions can be used to update the state of a program by changing values stored in variables, such as scores, timers, levels, and resource usage.  "
 },
 {
-  "id": "topic-1-7-expressions-5-4",
+  "id": "updating-state-3",
   "level": "2",
-  "url": "topic-1-7-expressions.html#topic-1-7-expressions-5-4",
+  "url": "topic-1-7-expressions.html#updating-state-3",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "increment "
+},
+{
+  "id": "incrementScore",
+  "level": "2",
+  "url": "topic-1-7-expressions.html#incrementScore",
+  "type": "Activity",
+  "number": "1.7.2",
+  "title": "",
+  "body": "  Try the code below to see how score is incremented by 1. Try substituting 2 instead of 1 to increment by 2.    score = 10 print(score) score = score + 1 print(score)  from unittest.gui import TestCaseGui class myTests(TestCaseGui): def test1(self): self.assertIn(\"12\",self.getOutput(),\"Change + 1 to + 2\") myTests().main()   "
+},
+{
+  "id": "updating-state-5",
+  "level": "2",
+  "url": "topic-1-7-expressions.html#updating-state-5",
   "type": "Essential Knowledge",
-  "number": "1.7.5",
+  "number": "1.7.3",
   "title": "1.7.A.3.",
   "body": " 1.7.A.3  An integer is a numeric data type that represents positive and negative whole numbers, including zero. Integers are often used for counts or scores in a program.  "
 },
 {
-  "id": "topic-1-7-expressions-5-5",
+  "id": "updating-state-6",
   "level": "2",
-  "url": "topic-1-7-expressions.html#topic-1-7-expressions-5-5",
+  "url": "topic-1-7-expressions.html#updating-state-6",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "integer "
+},
+{
+  "id": "operators-14",
+  "level": "2",
+  "url": "topic-1-7-expressions.html#operators-14",
   "type": "Essential Knowledge",
-  "number": "1.7.6",
+  "number": "1.7.4",
   "title": "1.7.A.4.",
   "body": " 1.7.A.4  Arithmetic operators appear in most programming languages, but the notation used for those operations is determined by the language. Common arithmetic operators include addition + , subtraction - , multiplication * , division \/ and modulo % .  "
 },
 {
-  "id": "topic-1-7-expressions-5-6",
+  "id": "basic-operators",
   "level": "2",
-  "url": "topic-1-7-expressions.html#topic-1-7-expressions-5-6",
+  "url": "topic-1-7-expressions.html#basic-operators",
+  "type": "Table",
+  "number": "1.7.5",
+  "title": "Python Basic Arithmetic Operators",
+  "body": " Python Basic Arithmetic Operators    Operator  Meaning    +  Addition    -  Subtraction    *  Multiplication    \/  Division    "
+},
+{
+  "id": "operators",
+  "level": "2",
+  "url": "topic-1-7-expressions.html#operators",
+  "type": "Activity",
+  "number": "1.7.3",
+  "title": "",
+  "body": "  Try the code below to see how the basic arithmetic operators work in Python. Add two more lines to the code as described.    print(10 + 5) print(10 - 5) print(10 * 5) print(10 \/ 5) # print 2 times 3 # print 5 divided by 2  from unittest.gui import TestCaseGui class myTests(TestCaseGui): def test1(self): self.assertIn(\"6\",self.getOutput(),\"Check 2 times 3\") self.assertIn(\"2.5\",self.getOutput(),\"Check 5 divided by 2\") count = self.getEditorText().count(\"*\") self.assertGreaterEqual(count, 2, \"* used\") myTests().main()   "
+},
+{
+  "id": "special-operators",
+  "level": "2",
+  "url": "topic-1-7-expressions.html#special-operators",
+  "type": "Table",
+  "number": "1.7.6",
+  "title": "Python Special Operators",
+  "body": " Python Special Operators    Operator  Meaning    \/\/  Integer Division (everything after the decimal point is removed)    %  Modulo (integer remainder after integer division)    **  Exponent (raises a number to a power)    "
+},
+{
+  "id": "operators-20",
+  "level": "2",
+  "url": "topic-1-7-expressions.html#operators-20",
   "type": "Essential Knowledge",
   "number": "1.7.7",
   "title": "1.7.A.5.",
   "body": " 1.7.A.5  The modulo operation % evaluates to the remainder when one integer is divided by another: a % b is the remainder when a is divided by b . Modulo can be used to identify patterns in numbers, such as whether a number is even or odd, and to help format values in user-friendly ways, such as converting total minutes into hours and minutes.  "
 },
 {
-  "id": "topic-1-7-expressions-5-7",
+  "id": "operators-21",
   "level": "2",
-  "url": "topic-1-7-expressions.html#topic-1-7-expressions-5-7",
+  "url": "topic-1-7-expressions.html#operators-21",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "modulo (mod) remainder operator "
+},
+{
+  "id": "special-operators",
+  "level": "2",
+  "url": "topic-1-7-expressions.html#special-operators",
+  "type": "Activity",
+  "number": "1.7.4",
+  "title": "",
+  "body": "  Try the code below to see how the special arithmetic operators work in Python. Compare the result of 5\/2 and 5\/\/2 and the remainder 5%2. Add 1 more line to the code as described.    print(\"5 \/ 2 = \", 5 \/ 2) print(\"5 \/\/ 2 = \", 5 \/\/ 2) print(\"Mod or Remainder 5 % 2 = \", 5 % 2) print(\"5 ** 2 = \", 5 ** 2) # print 13 mod 5  from unittest.gui import TestCaseGui class myTests(TestCaseGui): def test1(self): self.assertIn(\"3\",self.getOutput(),\"Check 13 mod 5\") count = self.getEditorText().count(\"%\") self.assertGreaterEqual(count, 2, \"% used\") myTests().main()   "
+},
+{
+  "id": "mod-exercise",
+  "level": "2",
+  "url": "topic-1-7-expressions.html#mod-exercise",
+  "type": "Activity",
+  "number": "1.7.5",
+  "title": "",
+  "body": "  What is the result of 2 % 6 ?      0    This would be correct if it was 6 % 2 .      1    This would be correct if it was some odd number divided by 2, but it is not.      2    6 goes into 2 zero times with 2 left over. If you have a smaller number divided by a larger number the remainder is always the smaller number.      6    If you have a smaller number divided by a larger number the remainder is always the smaller number.     "
+},
+{
+  "id": "operators-25",
+  "level": "2",
+  "url": "topic-1-7-expressions.html#operators-25",
   "type": "Essential Knowledge",
   "number": "1.7.8",
   "title": "1.7.A.6.",
   "body": " 1.7.A.6  Expressions enclosed in parentheses are evaluated first. Then, multiplication * , division \/ , and modulo % operations are evaluated from left to right. Then, addition + and subtraction - operations are evaluated from left to right.  "
 },
 {
-  "id": "topic-1-7-expressions-5-8",
+  "id": "pemdas",
   "level": "2",
-  "url": "topic-1-7-expressions.html#topic-1-7-expressions-5-8",
+  "url": "topic-1-7-expressions.html#pemdas",
+  "type": "Activity",
+  "number": "1.7.6",
+  "title": "",
+  "body": "  What is the result of 1 + 3 * (2 + 1) ?      12    Remember PEMDAS! Don't do the addition first.      9    Remember to do the parentheses first.      15    Remember PEMDAS      10    Yes, 1 + 3 * (2 + 1) = 1 + 3 * 3 = 1 + 9 = 10     "
+},
+{
+  "id": "operators-30",
+  "level": "2",
+  "url": "topic-1-7-expressions.html#operators-30",
   "type": "Essential Knowledge",
   "number": "1.7.9",
   "title": "1.7.A.7.",
   "body": " 1.7.A.7  The result of a mathematical expression can be determined by evaluating it step by step using the order of operations and operators.  "
 },
 {
-  "id": "topic-1-7-expressions-5-9",
+  "id": "operators-31",
   "level": "2",
-  "url": "topic-1-7-expressions.html#topic-1-7-expressions-5-9",
+  "url": "topic-1-7-expressions.html#operators-31",
   "type": "Essential Knowledge",
   "number": "1.7.10",
   "title": "1.7.A.8.",
   "body": " 1.7.A.8  Mathematical expressions can include variables. To determine the result, substitute the current values of variables and then evaluate the expression using the order of operations.  "
 },
 {
-  "id": "topic-1-7-expressions-6-2",
+  "id": "codelensAsgn",
   "level": "2",
-  "url": "topic-1-7-expressions.html#topic-1-7-expressions-6-2",
+  "url": "topic-1-7-expressions.html#codelensAsgn",
+  "type": "Activity",
+  "number": "1.7.7",
+  "title": "",
+  "body": "  Keep clicking on the Next button at the bottom of the code to see how the values of the variables change as you step through the running program. You can see interactive tracing in any Active Code exercise by clicking the CodeLens button.    score = 9; print(score) score += 1 print(score) bonus = 11 % 3 print(bonus) score *= bonus print(score);   "
+},
+{
+  "id": "trace-expr",
+  "level": "2",
+  "url": "topic-1-7-expressions.html#trace-expr",
+  "type": "Activity",
+  "number": "1.7.8",
+  "title": "",
+  "body": "  What are the values of x and y after the following code executes? Remember to evaluate the right hand side of = first and then assign the result to the variable on the left side. You can step through this code by clicking on this visualizer link .   a = 2 b = 10 a = b a = a + 1 b = b * 3       a = 10, b = 30    Remember that a is incremented.      a = 11, b = 33    No, b's value is copied into a but they are not connected after that.      a = 11, b = 30    Correct!      a = 10, b = 33    Try the visualizer to see the step-by-step evaluation.     "
+},
+{
+  "id": "input-math",
+  "level": "2",
+  "url": "topic-1-7-expressions.html#input-math",
+  "type": "Activity",
+  "number": "1.7.9",
+  "title": "",
+  "body": "  Try the code below to see that there is an error when you try to do math with a string. Then, fix the code by converting the input to an int before doing the math.    ageStr = input(\"How old are you? \") # To fix the error, convert the string ageStr to an int and use it in the formula below yearsUntil100 = 100 - ageStr print(\"You will be 100 in\", yearsUntil100, \"years.\")  from unittest.gui import TestCaseGui class myTests(TestCaseGui): def test1(self): self.assertIn(\"You will be 100\",self.getOutput(),\"It works!\") myTests().main()   "
+},
+{
+  "id": "calculate-hours",
+  "level": "2",
+  "url": "topic-1-7-expressions.html#calculate-hours",
+  "type": "Activity",
+  "number": "1.7.10",
+  "title": "",
+  "body": "  Write a program that asks the user for the number of minutes they have spent in class and then calculate the number of hours, remaining minutes, and seconds. Fill in the formulas for 1,2, and 3 below.    # 1. Ask the user for the number of minutes they have spent in class minutesStr = input(\"How many minutes have you spent in class? \") # convert the input to an int minutes = int(minutesStr) # 1. calculate the hours in minutes by using integer division \/\/ (there are 60 minutes in an hour) hours = # 2. calculate the remaining minutes in minutes using the mod % operator and 60 remainingMinutes = # 3. calculate the number of seconds in minutes with multiplication (there are 60 seconds in a minute) seconds = # print the results print(\"You have spent\", hours, \"hour(s) and\", remainingMinutes, \"minute(s), and a total of\", seconds, \"second(s) in class.\")  from unittest.gui import TestCaseGui class myTests(TestCaseGui): def test1(self): self.assertIn(\"minutes\/\/60\",self.getEditorText().replace(\" \", \"\"),\"Use minutes\/\/60 to calculate hours\") self.assertIn(\"minutes%60\",self.getEditorText().replace(\" \", \"\"),\"Use minutes%60 to calculate remaining minutes\") self.assertIn(\"minutes*60\",self.getEditorText().replace(\" \", \"\"),\"Use minutes*60 to calculate seconds\") myTests().main()   "
+},
+{
+  "id": "random-numbers-4",
+  "level": "2",
+  "url": "topic-1-7-expressions.html#random-numbers-4",
   "type": "Essential Knowledge",
   "number": "1.7.11",
   "title": "1.7.B.1.",
   "body": " 1.7.B.1  Apps use random number generation to create variety and unpredictability, such as in games, simulations, or randomly generated prompts.  "
 },
 {
-  "id": "topic-1-7-expressions-6-3",
+  "id": "random-numbers-6",
   "level": "2",
-  "url": "topic-1-7-expressions.html#topic-1-7-expressions-6-3",
+  "url": "topic-1-7-expressions.html#random-numbers-6",
   "type": "Essential Knowledge",
   "number": "1.7.12",
   "title": "1.7.B.2.",
   "body": " 1.7.B.2  Random values can support variation in app behavior, such as shuffling a playlist, selecting a random item, or assigning outcomes like rolling a die.  "
 },
 {
-  "id": "topic-1-7-expressions-6-4",
+  "id": "random-numbers-7",
   "level": "2",
-  "url": "topic-1-7-expressions.html#topic-1-7-expressions-6-4",
+  "url": "topic-1-7-expressions.html#random-numbers-7",
   "type": "Essential Knowledge",
   "number": "1.7.13",
   "title": "1.7.B.3.",
   "body": " 1.7.B.3  Programmers can determine the set of possible values produced by a random command by identifying the endpoints and whether they are included. When the following code runs, a random integer from a to b , including a and b , is generated and returned. Each result is equally likely to occur. The possible results of random(a, b) are all integers from a through b . random(a, b)  "
 },
 {
-  "id": "topic-1-7-expressions-6-5",
+  "id": "random-num-gen",
   "level": "2",
-  "url": "topic-1-7-expressions.html#topic-1-7-expressions-6-5",
+  "url": "topic-1-7-expressions.html#random-num-gen",
+  "type": "Activity",
+  "number": "1.7.11",
+  "title": "",
+  "body": "  Try the code below to see how to generate random numbers in Python. Run it a few times to see that it generates different random numbers each time. Then, generate another random number from -10 to 10.    import random # pick a random number from 1 to 100 r = random.randint(1, 100) print(r) # print another random number from -10 to 10  from unittest.gui import TestCaseGui class myTests(TestCaseGui): def test1(self): count = self.getEditorText().count(\"randint\") self.assertGreaterEqual(count, 2, \"randint used twice\") myTests().main()   "
+},
+{
+  "id": "random-numbers-12",
+  "level": "2",
+  "url": "topic-1-7-expressions.html#random-numbers-12",
   "type": "Essential Knowledge",
   "number": "1.7.14",
   "title": "1.7.B.4.",
   "body": " 1.7.B.4  When a program uses random number generation, the same code can produce different results each time it runs.  "
+},
+{
+  "id": "random-numbers-13",
+  "level": "2",
+  "url": "topic-1-7-expressions.html#random-numbers-13",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "pseudorandom "
+},
+{
+  "id": "rgb-color",
+  "level": "2",
+  "url": "topic-1-7-expressions.html#rgb-color",
+  "type": "Activity",
+  "number": "1.7.12",
+  "title": "",
+  "body": "  What RGB values do you need to make black? Try the Google color picker to test.     0, 0, 0    Correct! Black light is the default state of no light. For example at nighttime, all is black because of there is no sunlight.      255, 255, 255    This is white, not black. If you mix all three primary RGB colors of light, you get white.      255, 0, 0    This is red light, not black. Red light is made with all red and no green or blue.      0, 255, 255    This is cyan light, not black. Cyan light is made with all green and blue and no red.     "
+},
+{
+  "id": "rand-predict",
+  "level": "2",
+  "url": "topic-1-7-expressions.html#rand-predict",
+  "type": "Activity",
+  "number": "1.7.13",
+  "title": "",
+  "body": "  The assignment statement x = random.randint(-200, 200) can be used to generate a random x-coordinate for a turtle, because it is initially placed at coordinates (0, 0) and can move 200 pixels to the right to 200 or left to -200. Which of the following numbers cannot be generated by this expression?     0    0 is between -200 and 200, so it can be generated.      -200    -200 is between -200 and 200, so it can be generated.      200    200 is between -200 and 200, so it can be generated.      -255    -255 is not between -200 and 200, so it cannot be generated by random.randint(-200, 200).     "
+},
+{
+  "id": "random-turtle",
+  "level": "2",
+  "url": "topic-1-7-expressions.html#random-turtle",
+  "type": "Project",
+  "number": "1.7.14",
+  "title": "",
+  "body": "  Try the code below to see how to use random numbers to set random colors and random movements for a turtle. Then, modify the code to make the turtle draw a different pattern.    import turtle import random screen = turtle.Screen() turt = turtle.Turtle() # Choose random RGB values for a light background color from 100 to 255 # You can choose different ranges within that for r, g, and b. r = 255 # Change these to use random.randint(start,end) g = 255 b = 255 # Set the background color using the random RGB values (scaled by \/255) screen.bgcolor(r\/255, g\/255, b\/255) # Choose random RGB values for a dark pen color from 0 to 100 # You can choose different ranges within that for r, g, and b. r = 0 # Change these to use random.randint(start,end) g = 0 b = 0 # Set the pen color using the random RGB values (scaled by \/ 255) turt.color(r\/255, g\/255, b\/255) # Choose a random x and y coordinate from -200 to 200 x = 100 # Change these to use random.randint(start,end) y = 100 turt.goto(x, y) # Move the turtle to the random (x, y) coordinates # Choose a random angle from 0 to 360 and a random distance from 20 to 100 angle = 45 # Change these to use random.randint(start,end) distance = 50 turt.right(angle) # Turn the turtle right by the random angle turt.forward(distance) # Move the turtle forward by the random distance turt.goto(0, 0) # Repeat the code above to choose random colors, # random x, y, angle, distance and move the turtle at least 3 times  from unittest.gui import TestCaseGui class myTests(TestCaseGui): def test1(self): count = self.getEditorText().count(\"randint\") self.assertGreaterEqual(count, 30, \"at least 30 randint used\") myTests().main()   "
+},
+{
+  "id": "turtle-rand-reflection",
+  "level": "2",
+  "url": "topic-1-7-expressions.html#turtle-rand-reflection",
+  "type": "Activity",
+  "number": "1.7.15",
+  "title": "Project Reflection.",
+  "body": " Project Reflection   Describe how you used random numbers in your turtle project. What was the range of random numbers you used for the RGB values and the x, y coordinates? How did the random numbers enhance the project?    "
+},
+{
+  "id": "LOs-1-7-3",
+  "level": "2",
+  "url": "topic-1-7-expressions.html#LOs-1-7-3",
+  "type": "Learning Objective",
+  "number": "1.7.15",
+  "title": "1.7.A.",
+  "body": " 1.7.A  Develop code using mathematical expressions, and determine the result of these expressions.  "
+},
+{
+  "id": "LOs-1-7-4",
+  "level": "2",
+  "url": "topic-1-7-expressions.html#LOs-1-7-4",
+  "type": "Learning Objective",
+  "number": "1.7.16",
+  "title": "1.7.B.",
+  "body": " 1.7.B  Develop code to generate random numbers, and determine the possible values that could be produced as a result.  "
+},
+{
+  "id": "vocab-exprs",
+  "level": "2",
+  "url": "topic-1-7-expressions.html#vocab-exprs",
+  "type": "Activity",
+  "number": "1.7.16",
+  "title": "",
+  "body": "  Review the vocabulary in this lesson. Drag the vocabulary term from the left and drop it on its correct definition on the right. Click the \"Check Me\" button to see if you are correct.    Find the words in the lesson above and try again.     expression  combination of numbers, variables, and operators that represents a value    increment  to increase a variable's value, often by adding 1 to it    integer  a numeric data type that represents positive and negative whole numbers, including zero.    modulo (%)  operator that returns the remainder of a division operation    random.randint  Python function that generates a random integer between two specified values (inclusive)    "
 },
 {
   "id": "unit2",
