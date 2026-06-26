@@ -16,151 +16,196 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "1.1",
   "title": "Purpose and Behavior",
-  "body": "  Purpose and Behavior       Learning Objectives   1.1.A  Determine the purpose and behavior of an app by interacting with it.    1.1.B  Identify inputs and outputs of an app while using it.     Purpose and Behavior of Apps   1.1.A.1  Applications (apps) are programs that run on many kinds of computing devices. Apps can run on smartphones, tablets, laptops, desktops, game consoles, and web browsers, and they are designed to help users accomplish tasks or goals.    1.1.A.2  People use apps to help solve real problems and accomplish everyday tasks, such as communicating, learning, navigating, creating and sharing media, staying organized, and being entertained.    1.1.A.3  An app is successful when it uses information to produce an output that helps a user achieve a goal. An app’s value to the user depends on how well the results meet their needs.    1.1.A.4  Because people rely on apps for everyday tasks, app behavior matters. When an app is confusing, unreliable, or does not work as expected, users can become frustrated because it interrupts what they are trying to do.    1.1.A.5  An app’s behavior is what it does while it is running, including how it responds to user interactions. The behavior of an app is determined by its program code.    1.1.A.6  An app should behave as intended across a range of conditions, including different ways people may interact with it.    1.1.A.7  Users can understand an app’s purpose and behavior by using it and observing how it responds to their actions.     Inputs and Outputs   1.1.B.1  Apps are designed to take in information from a variety of sources, process that information, and respond in useful ways.    1.1.B.2  When users interact with apps, they often tap or click buttons, type letters or numbers, speak, or move the device. Each of these actions provides input: data sent to a computer for a program to process.    1.1.B.3  Apps should provide clear feedback when they receive input, such as highlighting a button, showing a loading icon, playing a sound, vibrating, or displaying an error message. This feedback is a form of output that helps users know the app received the input, is working, and what step to take next.    1.1.B.4  Input often comes from a user’s direct actions, but it can also be captured automatically from sources such as sensors (like an accelerometer), location, time, or network signals. Apps may also receive audio or images from microphones and cameras, often through user actions (like a voice command or face scan). These inputs allow apps to provide features like maps, step counting, face filters, or recommendations.    1.1.B.5  In many apps, the program responds to events, such as button clicks, key presses, or sensor updates, by running specific code. Events are one way input is delivered to a program. An event signals that something happened, and an event handler processes the input and determines what happens next.    1.1.B.6  Outputs are what an app produces. Outputs may include text, images, sounds, or something the user feels, like a vibration. Some outputs are directly perceived by the user, while others are not, such as data written to a file or sent over a network.    1.1.B.7  Users can identify inputs and outputs by trying different actions in an app and observing what the app displays or does in response.    "
+  "body": "  Purpose and Behavior   Computer Science is an exciting field that is transforming the way we live and work. Watch the video below to learn more about how computers and software are changing the world.   In this lessons, we will explore the purpose and behavior of apps by interacting with them and observing their input and output.    Purpose and Behavior of Apps  Think about your favorite apps on your phone and their purpose. App is short for application , which is a program that runs on a computer or any computing device including your phone.   1.1.A.1  Applications (apps) are programs that run on many kinds of computing devices. Apps can run on smartphones, tablets, laptops, desktops, game consoles, and web browsers, and they are designed to help users accomplish tasks or goals.    1.1.A.2  People use apps to help solve real problems and accomplish everyday tasks, such as communicating, learning, navigating, creating and sharing media, staying organized, and being entertained.   An app's purpose is why it was created, its ultimate goal or the problem it solves. For example, the purpose of a texting app on a phone is to help us to communicate with each other.  Take a look at the Google Stopwatch or Github Stopwatch app below. Why would someone use this app? What is its purpose? What happens when you click the Start button? What happens when you click the Pause or Reset buttons? Try it out below.    App Purpose   What is the purpose of the Google Stopwatch app and how does it behave when you interact with it?      1.1.A.3  An app is successful when it uses information to produce an output that helps a user achieve a goal. An app’s value to the user depends on how well the results meet their needs.    1.1.A.4  Because people rely on apps for everyday tasks, app behavior matters. When an app is confusing, unreliable, or does not work as expected, users can become frustrated because it interrupts what they are trying to do.   Some apps are easy to use with clear purposes and behaviors, but sometimes apps and other designs can fail to meet user needs or expectations. Watch the following video about bad design choices.   Take a look at this app with bad design below or the userinyerface.com funny website. The purpose of the app is to accept your date of birth, but the app is not a successful design. Try to put in your birthdate. Is it frustrating to use?     What are the issues with the Bad Date app and how does it behave when you interact with it? How could it be improved to better meet user needs and expectations?      1.1.A.5  An app’s behavior is what it does while it is running, including how it responds to user interactions. The behavior of an app is determined by its program code.    1.1.A.6  An app should behave as intended across a range of conditions, including different ways people may interact with it.    1.1.A.7  Users can understand an app’s purpose and behavior by using it and observing how it responds to their actions.     Take a look at Google Maps . What is the purpose of Google Maps? People may interact with Google Maps in different ways. Describe the behavior of Google Maps including how you interact with it and how it responds to do two different tasks.       Inputs and Outputs   1.1.B.1  Apps are designed to take in information from a variety of sources, process that information, and respond in useful ways.    1.1.B.2  When users interact with apps, they often tap or click buttons, type letters or numbers, speak, or move the device. Each of these actions provides input: data sent to a computer for a program to process.    1.1.B.3  Apps should provide clear feedback when they receive input, such as highlighting a button, showing a loading icon, playing a sound, vibrating, or displaying an error message. This feedback is a form of output that helps users know the app received the input, is working, and what step to take next.    1.1.B.4  Input often comes from a user’s direct actions, but it can also be captured automatically from sources such as sensors (like an accelerometer), location, time, or network signals. Apps may also receive audio or images from microphones and cameras, often through user actions (like a voice command or face scan). These inputs allow apps to provide features like maps, step counting, face filters, or recommendations.    1.1.B.5  In many apps, the program responds to events, such as button clicks, key presses, or sensor updates, by running specific code. Events are one way input is delivered to a program. An event signals that something happened, and an event handler processes the input and determines what happens next.    1.1.B.6  Outputs are what an app produces. Outputs may include text, images, sounds, or something the user feels, like a vibration. Some outputs are directly perceived by the user, while others are not, such as data written to a file or sent over a network.    1.1.B.7  Users can identify inputs and outputs by trying different actions in an app and observing what the app displays or does in response.     Learning Objectives Review   1.1.A  Determine the purpose and behavior of an app by interacting with it.    1.1.B  Identify inputs and outputs of an app while using it.    "
 },
 {
   "id": "topic-1-1-purpose-4-2",
   "level": "2",
   "url": "topic-1-1-purpose.html#topic-1-1-purpose-4-2",
-  "type": "Learning Objective",
-  "number": "1.1.1",
-  "title": "1.1.A.",
-  "body": " 1.1.A  Determine the purpose and behavior of an app by interacting with it.  "
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "App application "
 },
 {
   "id": "topic-1-1-purpose-4-3",
   "level": "2",
   "url": "topic-1-1-purpose.html#topic-1-1-purpose-4-3",
-  "type": "Learning Objective",
+  "type": "Essential Knowledge",
+  "number": "1.1.1",
+  "title": "1.1.A.1.",
+  "body": " 1.1.A.1  Applications (apps) are programs that run on many kinds of computing devices. Apps can run on smartphones, tablets, laptops, desktops, game consoles, and web browsers, and they are designed to help users accomplish tasks or goals.  "
+},
+{
+  "id": "topic-1-1-purpose-4-4",
+  "level": "2",
+  "url": "topic-1-1-purpose.html#topic-1-1-purpose-4-4",
+  "type": "Essential Knowledge",
   "number": "1.1.2",
-  "title": "1.1.B.",
-  "body": " 1.1.B  Identify inputs and outputs of an app while using it.  "
+  "title": "1.1.A.2.",
+  "body": " 1.1.A.2  People use apps to help solve real problems and accomplish everyday tasks, such as communicating, learning, navigating, creating and sharing media, staying organized, and being entertained.  "
+},
+{
+  "id": "topic-1-1-purpose-4-5",
+  "level": "2",
+  "url": "topic-1-1-purpose.html#topic-1-1-purpose-4-5",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "purpose "
+},
+{
+  "id": "app-purpose",
+  "level": "2",
+  "url": "topic-1-1-purpose.html#app-purpose",
+  "type": "Activity",
+  "number": "1.1.1",
+  "title": "App Purpose.",
+  "body": " App Purpose   What is the purpose of the Google Stopwatch app and how does it behave when you interact with it?    "
+},
+{
+  "id": "topic-1-1-purpose-4-9",
+  "level": "2",
+  "url": "topic-1-1-purpose.html#topic-1-1-purpose-4-9",
+  "type": "Essential Knowledge",
+  "number": "1.1.3",
+  "title": "1.1.A.3.",
+  "body": " 1.1.A.3  An app is successful when it uses information to produce an output that helps a user achieve a goal. An app’s value to the user depends on how well the results meet their needs.  "
+},
+{
+  "id": "topic-1-1-purpose-4-10",
+  "level": "2",
+  "url": "topic-1-1-purpose.html#topic-1-1-purpose-4-10",
+  "type": "Essential Knowledge",
+  "number": "1.1.4",
+  "title": "1.1.A.4.",
+  "body": " 1.1.A.4  Because people rely on apps for everyday tasks, app behavior matters. When an app is confusing, unreliable, or does not work as expected, users can become frustrated because it interrupts what they are trying to do.  "
+},
+{
+  "id": "bad-design",
+  "level": "2",
+  "url": "topic-1-1-purpose.html#bad-design",
+  "type": "Activity",
+  "number": "1.1.2",
+  "title": "",
+  "body": "  What are the issues with the Bad Date app and how does it behave when you interact with it? How could it be improved to better meet user needs and expectations?    "
+},
+{
+  "id": "topic-1-1-purpose-4-16",
+  "level": "2",
+  "url": "topic-1-1-purpose.html#topic-1-1-purpose-4-16",
+  "type": "Essential Knowledge",
+  "number": "1.1.5",
+  "title": "1.1.A.5.",
+  "body": " 1.1.A.5  An app’s behavior is what it does while it is running, including how it responds to user interactions. The behavior of an app is determined by its program code.  "
+},
+{
+  "id": "topic-1-1-purpose-4-17",
+  "level": "2",
+  "url": "topic-1-1-purpose.html#topic-1-1-purpose-4-17",
+  "type": "Essential Knowledge",
+  "number": "1.1.6",
+  "title": "1.1.A.6.",
+  "body": " 1.1.A.6  An app should behave as intended across a range of conditions, including different ways people may interact with it.  "
+},
+{
+  "id": "topic-1-1-purpose-4-18",
+  "level": "2",
+  "url": "topic-1-1-purpose.html#topic-1-1-purpose-4-18",
+  "type": "Essential Knowledge",
+  "number": "1.1.7",
+  "title": "1.1.A.7.",
+  "body": " 1.1.A.7  Users can understand an app’s purpose and behavior by using it and observing how it responds to their actions.  "
+},
+{
+  "id": "google-maps",
+  "level": "2",
+  "url": "topic-1-1-purpose.html#google-maps",
+  "type": "Activity",
+  "number": "1.1.3",
+  "title": "",
+  "body": "  Take a look at Google Maps . What is the purpose of Google Maps? People may interact with Google Maps in different ways. Describe the behavior of Google Maps including how you interact with it and how it responds to do two different tasks.    "
 },
 {
   "id": "topic-1-1-purpose-5-2",
   "level": "2",
   "url": "topic-1-1-purpose.html#topic-1-1-purpose-5-2",
   "type": "Essential Knowledge",
-  "number": "1.1.3",
-  "title": "1.1.A.1.",
-  "body": " 1.1.A.1  Applications (apps) are programs that run on many kinds of computing devices. Apps can run on smartphones, tablets, laptops, desktops, game consoles, and web browsers, and they are designed to help users accomplish tasks or goals.  "
+  "number": "1.1.8",
+  "title": "1.1.B.1.",
+  "body": " 1.1.B.1  Apps are designed to take in information from a variety of sources, process that information, and respond in useful ways.  "
 },
 {
   "id": "topic-1-1-purpose-5-3",
   "level": "2",
   "url": "topic-1-1-purpose.html#topic-1-1-purpose-5-3",
   "type": "Essential Knowledge",
-  "number": "1.1.4",
-  "title": "1.1.A.2.",
-  "body": " 1.1.A.2  People use apps to help solve real problems and accomplish everyday tasks, such as communicating, learning, navigating, creating and sharing media, staying organized, and being entertained.  "
+  "number": "1.1.9",
+  "title": "1.1.B.2.",
+  "body": " 1.1.B.2  When users interact with apps, they often tap or click buttons, type letters or numbers, speak, or move the device. Each of these actions provides input: data sent to a computer for a program to process.  "
 },
 {
   "id": "topic-1-1-purpose-5-4",
   "level": "2",
   "url": "topic-1-1-purpose.html#topic-1-1-purpose-5-4",
   "type": "Essential Knowledge",
-  "number": "1.1.5",
-  "title": "1.1.A.3.",
-  "body": " 1.1.A.3  An app is successful when it uses information to produce an output that helps a user achieve a goal. An app’s value to the user depends on how well the results meet their needs.  "
+  "number": "1.1.10",
+  "title": "1.1.B.3.",
+  "body": " 1.1.B.3  Apps should provide clear feedback when they receive input, such as highlighting a button, showing a loading icon, playing a sound, vibrating, or displaying an error message. This feedback is a form of output that helps users know the app received the input, is working, and what step to take next.  "
 },
 {
   "id": "topic-1-1-purpose-5-5",
   "level": "2",
   "url": "topic-1-1-purpose.html#topic-1-1-purpose-5-5",
   "type": "Essential Knowledge",
-  "number": "1.1.6",
-  "title": "1.1.A.4.",
-  "body": " 1.1.A.4  Because people rely on apps for everyday tasks, app behavior matters. When an app is confusing, unreliable, or does not work as expected, users can become frustrated because it interrupts what they are trying to do.  "
+  "number": "1.1.11",
+  "title": "1.1.B.4.",
+  "body": " 1.1.B.4  Input often comes from a user’s direct actions, but it can also be captured automatically from sources such as sensors (like an accelerometer), location, time, or network signals. Apps may also receive audio or images from microphones and cameras, often through user actions (like a voice command or face scan). These inputs allow apps to provide features like maps, step counting, face filters, or recommendations.  "
 },
 {
   "id": "topic-1-1-purpose-5-6",
   "level": "2",
   "url": "topic-1-1-purpose.html#topic-1-1-purpose-5-6",
   "type": "Essential Knowledge",
-  "number": "1.1.7",
-  "title": "1.1.A.5.",
-  "body": " 1.1.A.5  An app’s behavior is what it does while it is running, including how it responds to user interactions. The behavior of an app is determined by its program code.  "
+  "number": "1.1.12",
+  "title": "1.1.B.5.",
+  "body": " 1.1.B.5  In many apps, the program responds to events, such as button clicks, key presses, or sensor updates, by running specific code. Events are one way input is delivered to a program. An event signals that something happened, and an event handler processes the input and determines what happens next.  "
 },
 {
   "id": "topic-1-1-purpose-5-7",
   "level": "2",
   "url": "topic-1-1-purpose.html#topic-1-1-purpose-5-7",
   "type": "Essential Knowledge",
-  "number": "1.1.8",
-  "title": "1.1.A.6.",
-  "body": " 1.1.A.6  An app should behave as intended across a range of conditions, including different ways people may interact with it.  "
+  "number": "1.1.13",
+  "title": "1.1.B.6.",
+  "body": " 1.1.B.6  Outputs are what an app produces. Outputs may include text, images, sounds, or something the user feels, like a vibration. Some outputs are directly perceived by the user, while others are not, such as data written to a file or sent over a network.  "
 },
 {
   "id": "topic-1-1-purpose-5-8",
   "level": "2",
   "url": "topic-1-1-purpose.html#topic-1-1-purpose-5-8",
   "type": "Essential Knowledge",
-  "number": "1.1.9",
-  "title": "1.1.A.7.",
-  "body": " 1.1.A.7  Users can understand an app’s purpose and behavior by using it and observing how it responds to their actions.  "
-},
-{
-  "id": "topic-1-1-purpose-6-2",
-  "level": "2",
-  "url": "topic-1-1-purpose.html#topic-1-1-purpose-6-2",
-  "type": "Essential Knowledge",
-  "number": "1.1.10",
-  "title": "1.1.B.1.",
-  "body": " 1.1.B.1  Apps are designed to take in information from a variety of sources, process that information, and respond in useful ways.  "
-},
-{
-  "id": "topic-1-1-purpose-6-3",
-  "level": "2",
-  "url": "topic-1-1-purpose.html#topic-1-1-purpose-6-3",
-  "type": "Essential Knowledge",
-  "number": "1.1.11",
-  "title": "1.1.B.2.",
-  "body": " 1.1.B.2  When users interact with apps, they often tap or click buttons, type letters or numbers, speak, or move the device. Each of these actions provides input: data sent to a computer for a program to process.  "
-},
-{
-  "id": "topic-1-1-purpose-6-4",
-  "level": "2",
-  "url": "topic-1-1-purpose.html#topic-1-1-purpose-6-4",
-  "type": "Essential Knowledge",
-  "number": "1.1.12",
-  "title": "1.1.B.3.",
-  "body": " 1.1.B.3  Apps should provide clear feedback when they receive input, such as highlighting a button, showing a loading icon, playing a sound, vibrating, or displaying an error message. This feedback is a form of output that helps users know the app received the input, is working, and what step to take next.  "
-},
-{
-  "id": "topic-1-1-purpose-6-5",
-  "level": "2",
-  "url": "topic-1-1-purpose.html#topic-1-1-purpose-6-5",
-  "type": "Essential Knowledge",
-  "number": "1.1.13",
-  "title": "1.1.B.4.",
-  "body": " 1.1.B.4  Input often comes from a user’s direct actions, but it can also be captured automatically from sources such as sensors (like an accelerometer), location, time, or network signals. Apps may also receive audio or images from microphones and cameras, often through user actions (like a voice command or face scan). These inputs allow apps to provide features like maps, step counting, face filters, or recommendations.  "
-},
-{
-  "id": "topic-1-1-purpose-6-6",
-  "level": "2",
-  "url": "topic-1-1-purpose.html#topic-1-1-purpose-6-6",
-  "type": "Essential Knowledge",
   "number": "1.1.14",
-  "title": "1.1.B.5.",
-  "body": " 1.1.B.5  In many apps, the program responds to events, such as button clicks, key presses, or sensor updates, by running specific code. Events are one way input is delivered to a program. An event signals that something happened, and an event handler processes the input and determines what happens next.  "
-},
-{
-  "id": "topic-1-1-purpose-6-7",
-  "level": "2",
-  "url": "topic-1-1-purpose.html#topic-1-1-purpose-6-7",
-  "type": "Essential Knowledge",
-  "number": "1.1.15",
-  "title": "1.1.B.6.",
-  "body": " 1.1.B.6  Outputs are what an app produces. Outputs may include text, images, sounds, or something the user feels, like a vibration. Some outputs are directly perceived by the user, while others are not, such as data written to a file or sent over a network.  "
-},
-{
-  "id": "topic-1-1-purpose-6-8",
-  "level": "2",
-  "url": "topic-1-1-purpose.html#topic-1-1-purpose-6-8",
-  "type": "Essential Knowledge",
-  "number": "1.1.16",
   "title": "1.1.B.7.",
   "body": " 1.1.B.7  Users can identify inputs and outputs by trying different actions in an app and observing what the app displays or does in response.  "
+},
+{
+  "id": "LOs-1-1-2",
+  "level": "2",
+  "url": "topic-1-1-purpose.html#LOs-1-1-2",
+  "type": "Learning Objective",
+  "number": "1.1.15",
+  "title": "1.1.A.",
+  "body": " 1.1.A  Determine the purpose and behavior of an app by interacting with it.  "
+},
+{
+  "id": "LOs-1-1-3",
+  "level": "2",
+  "url": "topic-1-1-purpose.html#LOs-1-1-3",
+  "type": "Learning Objective",
+  "number": "1.1.16",
+  "title": "1.1.B.",
+  "body": " 1.1.B  Identify inputs and outputs of an app while using it.  "
 },
 {
   "id": "topic-1-2-collaboration",
@@ -2455,7 +2500,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "1.13",
   "title": "App Inventor Paint Pot Tutorial (Optional)",
-  "body": " App Inventor Paint Pot Tutorial (Optional)    Paint Pot is a \"finger painting\" app that simulates dipping your finger in a pot of paint then drawing with it on a canvas. The app uses buttons to change the paint colors and MIT App Inventor’s touch and drag event handlers to draw circles and lines on the canvas. Watch the intro video below ( TeacherTube )   In this tutorial, you will learn to:  follow a tutorial to create the PaintPot app  deepen your understanding of event-driven programming  learn how to use a variable to make a program more general   Language Objectives: you will be able to:  explain the result of programming statements that include 'variable'>variables and assignments  describe how a global variable is an abstraction  use target vocabulary, such as variable , assignment , expression , operator , and pseudocode while describing app features and User Interface with the support of concept definitions and vocabulary notes from this lesson       Paint Pot Tutorial Part 1  To get started, open MIT App Inventor with the Paint Pot Template and follow along with the following video ( TeacherTube ) or your teacher or the long handout or short handout section part 1 .     Paint Pot Tutorial Part 2  Watch the video tutorial below ( TeacherTube version ) or the the text version of the tutorial or the short handout section part 2 .     Paint Pot Enhancements  Now that you have a working version of the Paint Pot app, you can try out some enhancements to make it your own! Here are some ideas to get you started but feel free to come up with your own enhancements as well.   Add a button to support a 4th color option for the app.  Add an image of your choice to draw on instead of the cat image. Scroll down to the bottom of the properties window of the Designer View to find the Media section wher you can click on Upload File. Use the image as the Canvas background image.  The app currently has a ButtonPlus and ButtonMinus. But, we only completed the code for ButtonPlus. Now that you understand how to increment variables by 1, implement an algorithm for ButtonMinus that will subtract 1 from dotsize. Make sure you test your code! We will learn how to do \"if blocks\" in the next unit and can add tests to make sure the dot size doesn't go below 0 or above a maximum value.  Currently, if a user wants to use a larger dot and then use a smaller dot (or vice versus), they have to continually press the ButtonMinus (or ButtonPlus). If the current value of dotsize is 25, getting to a size of 4 would be pain. For easier use, add a button that resets the size of the dot (circle) back to its original value. (HINT: You’ll need a second variable here to remember the original value of the dotsize.)  Optional: Instead of using an existing image, take a photo with the camera and use that as the Canvas background image! (Hint: For this you’ll need to use a new Button, the Camera component from the Media drawer, and the Camera’s TakePicture command and the AfterPicture event handler where you can set the image returned by the camera as Canvas' background image.)  Optional: Add a Social\/Sharing component and a share button to email what is drawn on the canvas using the Sharing. ShareFile block with the Canvas.Save block . You will have to set up an email account on your tablet to use the share component. (This may not work yet on iOS devices).  Share your app with the class or a friend!     Paint Pot Reflection  After you have completed the Paint Pot tutorial and enhancements, reflect on your experience by answering the following questions:   Project Reflection 1   Describe the purpose of your app and the input and output of the app. What were the variables used in your app?      Project Reflection 2   Describe an error that you encountered while you were creating the app, and how you fixed your code to remove the bug. How did you test the app to make sure it was working correctly?      "
+  "body": " App Inventor Paint Pot Tutorial (Optional)    The first mobile app that you will create is called Paint Pot which is a \"finger painting\" app that simulates dipping your finger in a pot of paint then drawing with it on a canvas. The app uses buttons to change the paint colors and MIT App Inventor’s touch and drag event handlers to draw circles and lines on the canvas. Watch the intro video below ( TeacherTube )   In this tutorial, you will learn to:  follow a tutorial to create the PaintPot app  deepen your understanding of event-driven programming  learn how to use a variable to make a program more general   Language Objectives: you will be able to:  explain the result of programming statements that include variables and assignments  describe how a global variable is an abstraction  use target vocabulary, such as variable , assignment , expression , operator , and pseudocode while describing app features and User Interface with the support of concept definitions and vocabulary notes from this lesson       Paint Pot Tutorial Part 1  To get started, open MIT App Inventor with the Paint Pot Template and follow along with the following video ( TeacherTube ) or your teacher or the long handout or short handout section part 1 .     Paint Pot Tutorial Part 2  Watch the video tutorial below ( TeacherTube version ) or the the text version of the tutorial or the short handout section part 2 .     Paint Pot Enhancements  Now that you have a working version of the Paint Pot app, you can try out some enhancements to make it your own! Here are some ideas to get you started but feel free to come up with your own enhancements as well.   Add a button to support a 4th color option for the app.  Add an image of your choice to draw on instead of the cat image. Scroll down to the bottom of the properties window of the Designer View to find the Media section wher you can click on Upload File. Use the image as the Canvas background image.  The app currently has a ButtonPlus and ButtonMinus. But, we only completed the code for ButtonPlus. Now that you understand how to increment variables by 1, implement an algorithm for ButtonMinus that will subtract 1 from dotsize. Make sure you test your code! We will learn how to do \"if blocks\" in the next unit and can add tests to make sure the dot size doesn't go below 0 or above a maximum value.  Currently, if a user wants to use a larger dot and then use a smaller dot (or vice versus), they have to continually press the ButtonMinus (or ButtonPlus). If the current value of dotsize is 25, getting to a size of 4 would be pain. For easier use, add a button that resets the size of the dot (circle) back to its original value. (HINT: You’ll need a second variable here to remember the original value of the dotsize.)  Optional: Instead of using an existing image, take a photo with the camera and use that as the Canvas background image! (Hint: For this you’ll need to use a new Button, the Camera component from the Media drawer, and the Camera’s TakePicture command and the AfterPicture event handler where you can set the image returned by the camera as Canvas' background image.)  Optional: Add a Social\/Sharing component and a share button to email what is drawn on the canvas using the Sharing. ShareFile block with the Canvas.Save block . You will have to set up an email account on your tablet to use the share component. (This may not work yet on iOS devices).  Share your app with the class or a friend!     Paint Pot Reflection  After you have completed the Paint Pot tutorial and enhancements, reflect on your experience by answering the following questions:   Project Reflection 1   Describe the purpose of your app and the input and output of the app. What were the variables used in your app?      Project Reflection 2   Describe an error that you encountered while you were creating the app, and how you fixed your code to remove the bug. How did you test the app to make sure it was working correctly?      "
 },
 {
   "id": "unit1-appinventor-paint-3-3",
@@ -2464,7 +2509,7 @@ var ptx_lunr_docs = [
   "type": "Paragraph (with a defined term)",
   "number": "",
   "title": "",
-  "body": "variable 'variable'>variables assignments variable variable assignment expression operator pseudocode "
+  "body": "variable variables assignments variable variable assignment expression operator pseudocode "
 },
 {
   "id": "paint-reflection1",
