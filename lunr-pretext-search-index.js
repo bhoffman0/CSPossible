@@ -16,7 +16,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "1.1",
   "title": "Purpose and Behavior",
-  "body": "  Purpose and Behavior   Computer Science is an exciting field that is transforming the way we live and work. Watch the video below to learn more about how computers and software are changing the world.   In this lessons, we will explore the purpose and behavior of apps by interacting with them and observing their input and output.    Purpose and Behavior of Apps  Think about your favorite apps on your phone and their purpose. App is short for application , which is a program that runs on a computer or any computing device including your phone.   1.1.A.1  Applications (apps) are programs that run on many kinds of computing devices. Apps can run on smartphones, tablets, laptops, desktops, game consoles, and web browsers, and they are designed to help users accomplish tasks or goals.    1.1.A.2  People use apps to help solve real problems and accomplish everyday tasks, such as communicating, learning, navigating, creating and sharing media, staying organized, and being entertained.   An app's purpose is why it was created, its ultimate goal or the problem it solves. For example, the purpose of a texting app on a phone is to help us to communicate with each other.  Take a look at the Google Stopwatch or Github Stopwatch app below. Why would someone use this app? What is its purpose? What happens when you click the Start button? What happens when you click the Pause or Reset buttons? Try it out below.    App Purpose   What is the purpose of the Google Stopwatch app and how does it behave when you interact with it?      1.1.A.3  An app is successful when it uses information to produce an output that helps a user achieve a goal. An app’s value to the user depends on how well the results meet their needs.    1.1.A.4  Because people rely on apps for everyday tasks, app behavior matters. When an app is confusing, unreliable, or does not work as expected, users can become frustrated because it interrupts what they are trying to do.   Some apps are easy to use with clear purposes and behaviors, but sometimes apps and other designs can fail to meet user needs or expectations. Watch the following video about bad design choices.   Take a look at this app with bad design below or the userinyerface.com funny website. The purpose of the app is to accept your date of birth, but the app is not a successful design. Try to put in your birthdate. Is it frustrating to use?     What are the issues with the Bad Date app and how does it behave when you interact with it? How could it be improved to better meet user needs and expectations?      1.1.A.5  An app’s behavior is what it does while it is running, including how it responds to user interactions. The behavior of an app is determined by its program code.    1.1.A.6  An app should behave as intended across a range of conditions, including different ways people may interact with it.    1.1.A.7  Users can understand an app’s purpose and behavior by using it and observing how it responds to their actions.     Take a look at Google Maps . What is the purpose of Google Maps? People may interact with Google Maps in different ways. Describe the behavior of Google Maps including how you interact with it and how it responds to do two different tasks.       Inputs and Outputs  Watch the following video about what makes a computer a computer.    1.1.B.1  Apps are designed to take in information from a variety of sources, process that information, and respond in useful ways.   As seen in the video, all computing devices and the apps that run on them are created to receive input from users, store it as data, process the data, and produce output to communicate with users.   1.1.B.2  When users interact with apps, they often tap or click buttons, type letters or numbers, speak, or move the device. Each of these actions provides input : data sent to a computer for a program to process.    Input is data sent to a computer for processing by a program, and output is the data sent back from the program to the device. Input and output can come in many forms, such as tactile (for example touching a button or the device vibrating), audible (a sound), visual (an image), or text.    What are some examples of input and output in the Google Stopwatch app ? Can you think of any apps that use the tilting of a device or vibration as input or output?      1.1.B.3  Apps should provide clear feedback when they receive input, such as highlighting a button, showing a loading icon, playing a sound, vibrating, or displaying an error message. This feedback is a form of output that helps users know the app received the input, is working, and what step to take next.   The door design video above mentioned feedback in human-centered design, where feedback tells the user that something happened after their input.   1.1.B.4  Input often comes from a user’s direct actions, but it can also be captured automatically from sources such as sensors (like an accelerometer), location, time, or network signals. Apps may also receive audio or images from microphones and cameras, often through user actions (like a voice command or face scan). These inputs allow apps to provide features like maps, step counting, face filters, or recommendations.     Describe a device or app that uses input from a sensor or camera. If you cannot think of one, search online for examples.      1.1.B.5  In many apps, the program responds to events , such as button clicks, key presses, or sensor updates, by running specific code. Events are one way input is delivered to a program. An event signals that something happened, and an event handler processes the input and determines what happens next.   Most apps these days use event-driven programming , which means they display the user interface (UI) and wait for user events to trigger actions, for example for the user to touch a button. In event-driven programming, the code is attached to input such as button click and only run when triggered. The app's behavior is determined by the code that runs in response to the input.   1.1.B.6  Outputs are what an app produces. Outputs may include text, images, sounds, or something the user feels, like a vibration. Some outputs are directly perceived by the user, while others are not, such as data written to a file or sent over a network.    1.1.B.7  Users can identify inputs and outputs by trying different actions in an app and observing what the app displays or does in response.   Try the following pizza web app by typing in your name and choosing different options. Think about the inputs and outputs to the app.     Interact with the pizza app above. What are the inputs and outputs for this app?       Which of the following output types does the pizza app above use? Check all that apply.      text    The app prints out text output when the button is clicked.     vibration   This app cannot vibrate.      image    Pizza images are displayed as output if the user likes pizza.      sound    There is no sound with this app.      color    Yes, the background color changes as a result of user interactions.        Learning Objectives Review  After this lesson, you should be able to:   1.1.A  Determine the purpose and behavior of an app by interacting with it.    1.1.B  Identify inputs and outputs of an app while using it.     Vocabulary Review    Review the vocabulary in this lesson. Drag the vocabulary term from the left and drop it on its correct definition on the right. Click the \"Check Me\" button to see if you are correct.    Find the words in the lesson above and try again.     app  a program that runs on a computer or any computing device    purpose  why an app exists or its goal    behavior  what an app does when used    input  data sent to a computer for a program to process.    output  data sent back from a program to the device or user    user interface (UI)  the part of an app (for example buttons) that users directly interact with    event  a signal that something happened, such as a button click or key press    event handler  code that runs in response to an event      "
+  "body": "  Purpose and Behavior   Computer Science is an exciting field that is transforming the way we live and work. Watch the video below to learn more about how computers and software are changing the world.   In this lessons, we will explore the purpose and behavior of apps by interacting with them and observing their input and output.    Purpose and Behavior of Apps  Think about your favorite apps on your phone and their purpose. App is short for application , which is a program that runs on a computer or any computing device including your phone.   1.1.A.1  Applications (apps) are programs that run on many kinds of computing devices. Apps can run on smartphones, tablets, laptops, desktops, game consoles, and web browsers, and they are designed to help users accomplish tasks or goals.    1.1.A.2  People use apps to help solve real problems and accomplish everyday tasks, such as communicating, learning, navigating, creating and sharing media, staying organized, and being entertained.   An app's purpose is why it was created, its ultimate goal or the problem it solves. For example, the purpose of a texting app on a phone is to help us to communicate with each other.  Take a look at the Google Stopwatch or Github Stopwatch app below. Why would someone use this app? What is its purpose? What happens when you click the Start button? What happens when you click the Pause or Reset buttons? Try it out below.     What is the purpose of the Google Stopwatch app ?      To tell time    That would be a watch or clock app.      To time an event by counting down from a set amount of time    A timer counts down from a set amount of time. A stopwatch counts up from zero.      To measure how much time has passed starting from zero    Correct! A stopwatch keeps track of how much time has passed starting from zero, such as timing a race or an activity.      To perform calculations    Calculations are done with a calculator app, not a stopwatch.       1.1.A.3  An app is successful when it uses information to produce an output that helps a user achieve a goal. An app’s value to the user depends on how well the results meet their needs.    1.1.A.4  Because people rely on apps for everyday tasks, app behavior matters. When an app is confusing, unreliable, or does not work as expected, users can become frustrated because it interrupts what they are trying to do.   Some apps are easy to use with clear purposes and behaviors, but sometimes apps and other designs can fail to meet user needs or expectations. Watch the following video about bad design choices.   Take a look at this app with bad design below or the userinyerface.com funny website. The purpose of the app is to accept your date of birth, but the app is not a successful design. Try to put in your birthdate. Is it frustrating to use?     What are the issues with the Bad Date app and how does it behave when you interact with it? How could it be improved to better meet user needs and expectations?      1.1.A.5  An app’s behavior is what it does while it is running, including how it responds to user interactions. The behavior of an app is determined by its program code.    1.1.A.6  An app should behave as intended across a range of conditions, including different ways people may interact with it.    1.1.A.7  Users can understand an app’s purpose and behavior by using it and observing how it responds to their actions.     Take a look at Google Maps . What is the purpose of Google Maps? People may interact with Google Maps in different ways. Describe the behavior of Google Maps including how you interact with it and how it responds to do two different tasks.       Inputs and Outputs  Watch the following video about what makes a computer a computer.    1.1.B.1  Apps are designed to take in information from a variety of sources, process that information, and respond in useful ways.   As seen in the video, all computing devices and the apps that run on them are created to receive input from users, store it as data, process the data, and produce output to communicate with users.   1.1.B.2  When users interact with apps, they often tap or click buttons, type letters or numbers, speak, or move the device. Each of these actions provides input : data sent to a computer for a program to process.    Input is data sent to a computer for processing by a program, and output is the data sent back from the program to the device. Input and output can come in many forms, such as tactile (for example touching a button or the device vibrating), audible (a sound), visual (an image), or text.    Which of the following are examples of input and output in the Google Stopwatch app ?      Tapping the Start button    Correct! Tapping a button is user input.      The system time    The system time is used by the stopwatch app to calculate the elapsed time but it is not input or output to the user.      The elapsed time displayed on the screen    Correct! The app displays the elapsed time as output.     The color of the displayed time   The color of the displayed time is set by the app code but it is not input or output to the stopwatch app.      Pressing the reset button    Pressing the reset button is an input to the stopwatch app.       1.1.B.3  Apps should provide clear feedback when they receive input, such as highlighting a button, showing a loading icon, playing a sound, vibrating, or displaying an error message. This feedback is a form of output that helps users know the app received the input, is working, and what step to take next.   The door design video above mentioned feedback in human-centered design, where feedback tells the user that something happened after their input.   1.1.B.4  Input often comes from a user’s direct actions, but it can also be captured automatically from sources such as sensors (like an accelerometer), location, time, or network signals. Apps may also receive audio or images from microphones and cameras, often through user actions (like a voice command or face scan). These inputs allow apps to provide features like maps, step counting, face filters, or recommendations.     Which app below is most likely to use tilting the device (accelerometer) as an input or vibration as an output?      A car racing game    Yes, a car racing game could use tilting the phone to steer the car and phone vibration as output during a crash.      A calculator app that adds two numbers    A calculator typically uses taps as input and text as output, not tilt or vibration.      A tic tac toe game    Tic tac toe games mainly use touch input and visual output.      A weather app that displays today's forecast    Weather apps primarily display information on the screen rather than using tilt or vibration.        Describe a device or app that uses input from a sensor or camera. If you cannot think of one, search online for examples.      1.1.B.5  In many apps, the program responds to events , such as button clicks, key presses, or sensor updates, by running specific code. Events are one way input is delivered to a program. An event signals that something happened, and an event handler processes the input and determines what happens next.   Most apps these days use event-driven programming , which means they display the user interface (UI) and wait for user events to trigger actions, for example for the user to touch a button. In event-driven programming, the code is attached to input such as button click and only run when triggered. The app's behavior is determined by the code that runs in response to the input.   1.1.B.6  Outputs are what an app produces. Outputs may include text, images, sounds, or something the user feels, like a vibration. Some outputs are directly perceived by the user, while others are not, such as data written to a file or sent over a network.    1.1.B.7  Users can identify inputs and outputs by trying different actions in an app and observing what the app displays or does in response.   Try the following pizza web app by typing in your name and choosing different options. Think about the inputs and outputs to the app.     Interact with the pizza app above. What are the inputs and outputs for this app?       Which of the following output types does the pizza app above use? Check all that apply.      text    The app prints out text output when the button is clicked.     vibration   This app cannot vibrate.      image    Pizza images are displayed as output if the user likes pizza.      sound    There is no sound with this app.      color    Yes, the background color changes as a result of user interactions.        Learning Objectives Review  After this lesson, you should be able to:   1.1.A  Determine the purpose and behavior of an app by interacting with it.    1.1.B  Identify inputs and outputs of an app while using it.     Vocabulary Review    Review the vocabulary in this lesson. Drag the vocabulary term from the left and drop it on its correct definition on the right. Click the \"Check Me\" button to see if you are correct.    Find the words in the lesson above and try again.     app  a program that runs on a computer or any computing device    purpose  why an app exists or its goal    behavior  what an app does when used    input  data sent to a computer for a program to process.    output  data sent back from a program to the device or user    user interface (UI)  the part of an app (for example buttons) that users directly interact with    event  a signal that something happened, such as a button click or key press    event handler  code that runs in response to an event      "
 },
 {
   "id": "topic-1-1-purpose-4-2",
@@ -55,13 +55,13 @@ var ptx_lunr_docs = [
   "body": "purpose "
 },
 {
-  "id": "app-purpose",
+  "id": "stopwatchPurpose",
   "level": "2",
-  "url": "topic-1-1-purpose.html#app-purpose",
+  "url": "topic-1-1-purpose.html#stopwatchPurpose",
   "type": "Activity",
   "number": "1.1.1",
-  "title": "App Purpose.",
-  "body": " App Purpose   What is the purpose of the Google Stopwatch app and how does it behave when you interact with it?    "
+  "title": "",
+  "body": "  What is the purpose of the Google Stopwatch app ?      To tell time    That would be a watch or clock app.      To time an event by counting down from a set amount of time    A timer counts down from a set amount of time. A stopwatch counts up from zero.      To measure how much time has passed starting from zero    Correct! A stopwatch keeps track of how much time has passed starting from zero, such as timing a race or an activity.      To perform calculations    Calculations are done with a calculator app, not a stopwatch.     "
 },
 {
   "id": "topic-1-1-purpose-4-9",
@@ -163,13 +163,13 @@ var ptx_lunr_docs = [
   "body": "Input output "
 },
 {
-  "id": "input-output",
+  "id": "stopwatchIO",
   "level": "2",
-  "url": "topic-1-1-purpose.html#input-output",
+  "url": "topic-1-1-purpose.html#stopwatchIO",
   "type": "Activity",
   "number": "1.1.4",
   "title": "",
-  "body": "  What are some examples of input and output in the Google Stopwatch app ? Can you think of any apps that use the tilting of a device or vibration as input or output?    "
+  "body": "  Which of the following are examples of input and output in the Google Stopwatch app ?      Tapping the Start button    Correct! Tapping a button is user input.      The system time    The system time is used by the stopwatch app to calculate the elapsed time but it is not input or output to the user.      The elapsed time displayed on the screen    Correct! The app displays the elapsed time as output.     The color of the displayed time   The color of the displayed time is set by the app code but it is not input or output to the stopwatch app.      Pressing the reset button    Pressing the reset button is an input to the stopwatch app.     "
 },
 {
   "id": "topic-1-1-purpose-5-10",
@@ -190,45 +190,54 @@ var ptx_lunr_docs = [
   "body": " 1.1.B.4  Input often comes from a user’s direct actions, but it can also be captured automatically from sources such as sensors (like an accelerometer), location, time, or network signals. Apps may also receive audio or images from microphones and cameras, often through user actions (like a voice command or face scan). These inputs allow apps to provide features like maps, step counting, face filters, or recommendations.  "
 },
 {
+  "id": "tiltVibrationExample",
+  "level": "2",
+  "url": "topic-1-1-purpose.html#tiltVibrationExample",
+  "type": "Activity",
+  "number": "1.1.5",
+  "title": "",
+  "body": "  Which app below is most likely to use tilting the device (accelerometer) as an input or vibration as an output?      A car racing game    Yes, a car racing game could use tilting the phone to steer the car and phone vibration as output during a crash.      A calculator app that adds two numbers    A calculator typically uses taps as input and text as output, not tilt or vibration.      A tic tac toe game    Tic tac toe games mainly use touch input and visual output.      A weather app that displays today's forecast    Weather apps primarily display information on the screen rather than using tilt or vibration.     "
+},
+{
   "id": "automatic-input",
   "level": "2",
   "url": "topic-1-1-purpose.html#automatic-input",
   "type": "Activity",
-  "number": "1.1.5",
+  "number": "1.1.6",
   "title": "",
   "body": "  Describe a device or app that uses input from a sensor or camera. If you cannot think of one, search online for examples.    "
 },
 {
-  "id": "topic-1-1-purpose-5-14",
+  "id": "topic-1-1-purpose-5-15",
   "level": "2",
-  "url": "topic-1-1-purpose.html#topic-1-1-purpose-5-14",
+  "url": "topic-1-1-purpose.html#topic-1-1-purpose-5-15",
   "type": "Essential Knowledge",
   "number": "1.1.12",
   "title": "1.1.B.5.",
   "body": " 1.1.B.5  In many apps, the program responds to events , such as button clicks, key presses, or sensor updates, by running specific code. Events are one way input is delivered to a program. An event signals that something happened, and an event handler processes the input and determines what happens next.  "
 },
 {
-  "id": "topic-1-1-purpose-5-15",
+  "id": "topic-1-1-purpose-5-16",
   "level": "2",
-  "url": "topic-1-1-purpose.html#topic-1-1-purpose-5-15",
+  "url": "topic-1-1-purpose.html#topic-1-1-purpose-5-16",
   "type": "Paragraph (with a defined term)",
   "number": "",
   "title": "",
   "body": "event-driven programming user interface (UI) user events "
 },
 {
-  "id": "topic-1-1-purpose-5-16",
+  "id": "topic-1-1-purpose-5-17",
   "level": "2",
-  "url": "topic-1-1-purpose.html#topic-1-1-purpose-5-16",
+  "url": "topic-1-1-purpose.html#topic-1-1-purpose-5-17",
   "type": "Essential Knowledge",
   "number": "1.1.13",
   "title": "1.1.B.6.",
   "body": " 1.1.B.6  Outputs are what an app produces. Outputs may include text, images, sounds, or something the user feels, like a vibration. Some outputs are directly perceived by the user, while others are not, such as data written to a file or sent over a network.  "
 },
 {
-  "id": "topic-1-1-purpose-5-17",
+  "id": "topic-1-1-purpose-5-18",
   "level": "2",
-  "url": "topic-1-1-purpose.html#topic-1-1-purpose-5-17",
+  "url": "topic-1-1-purpose.html#topic-1-1-purpose-5-18",
   "type": "Essential Knowledge",
   "number": "1.1.14",
   "title": "1.1.B.7.",
@@ -239,7 +248,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "topic-1-1-purpose.html#pizzaAppIO",
   "type": "Activity",
-  "number": "1.1.6",
+  "number": "1.1.7",
   "title": "",
   "body": "  Interact with the pizza app above. What are the inputs and outputs for this app?    "
 },
@@ -248,7 +257,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "topic-1-1-purpose.html#pizzaAppOutputTypes",
   "type": "Activity",
-  "number": "1.1.7",
+  "number": "1.1.8",
   "title": "",
   "body": "  Which of the following output types does the pizza app above use? Check all that apply.      text    The app prints out text output when the button is clicked.     vibration   This app cannot vibrate.      image    Pizza images are displayed as output if the user likes pizza.      sound    There is no sound with this app.      color    Yes, the background color changes as a result of user interactions.     "
 },
@@ -275,7 +284,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "topic-1-1-purpose.html#vocab-IO",
   "type": "Activity",
-  "number": "1.1.8",
+  "number": "1.1.9",
   "title": "",
   "body": "  Review the vocabulary in this lesson. Drag the vocabulary term from the left and drop it on its correct definition on the right. Click the \"Check Me\" button to see if you are correct.    Find the words in the lesson above and try again.     app  a program that runs on a computer or any computing device    purpose  why an app exists or its goal    behavior  what an app does when used    input  data sent to a computer for a program to process.    output  data sent back from a program to the device or user    user interface (UI)  the part of an app (for example buttons) that users directly interact with    event  a signal that something happened, such as a button click or key press    event handler  code that runs in response to an event    "
 },
@@ -286,106 +295,214 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "1.2",
   "title": "Benefits of Collaboration",
-  "body": "  Benefits of Collaboration       Learning Objectives   1.2.A  Explain how apps and programs are improved through collaboration and user testing.    1.2.B  Explain how collaboration can reduce bias in apps.     Collaboration and User Testing   1.2.A.1  User testing with a variety of users helps programmers design an app with a clear purpose that is intuitive for its intended users and minimizes confusion.    1.2.A.2  Programmers can conduct user testing to understand how people use an app, including where users are confused or have unmet needs. Observing participants during development provides evidence programmers can use to refine the app’s purpose and design.    1.2.A.3  Working collaboratively on an app brings together a variety of talents and perspectives that can improve the final product. Teams can divide tasks, share ideas, and review and document decisions as they develop the app.    1.2.A.4  Working collaboratively gives programmers opportunities to share roles throughout development. Pair programming is one collaboration practice in which two programmers work together at one computer: one writes the code, while the other reviews the code as it is written, checks for errors, and keeps the bigger picture in mind. Partners switch roles frequently so both contribute to writing code and problem-solving.    1.2.A.5  Apps and programs are improved through an iterative process. Teams use feedback from user testing and collaboration to make changes and test again to verify an app more accurately meets user needs.     Reducing Bias through Collaboration   1.2.B.1  Bias occurs when an app consistently favors certain people, values, or outcomes over others. Bias can be harmful because it can make results less accurate for some users and can contribute to unfair treatment or unequal access.    1.2.B.2  Apps can reflect human bias when programmers’ assumptions, rules, or interface choices favor some users over others. Apps can also reflect data bias when the data used to train or inform the app is incomplete or unrepresentative of the people and situations the app is intended to work well for. Human bias and data bias often interact. Choices about what data to collect and how to label it can shape how an app behaves for different users.    1.2.B.3  Collaboration can help reduce bias by bringing multiple perspectives into design and testing. Teams can review design decisions and data together, look for missing perspectives, and gather feedback from a variety of users.    1.2.B.4  When potential bias is identified, teams can revise the rules, data, or design and then test again to check whether outcomes are more accurate and fair across different users and situations.    "
+  "body": "  Benefits of Collaboration   Almost all software is developed collaboratively in teams. Working with others can help programmers design better apps. In this topic, you will learn about the benefits of collaboration and user testing and how it can reduce bias in app development.     Collaboration   1.2.A.3  Working collaboratively on an app brings together a variety of talents and perspectives that can improve the final product. Teams can divide tasks, share ideas, and review and document decisions as they develop the app.   The following chart shows various roles on a software development team. There are many roles that don't require coding even on a software development team.     Match the software development team roles to their responsibilities. Which roles seem the most interesting to you? Do internet research to find out more about the roles that interest you.    Do internet research to find out more about the roles and try again.     Designer  creates the visual design and user experience of the app    Software Developer  writes the code for the app    Software Tester  tests the app to find bugs and usability issues    Project Manager  coordinates the team and keeps the project on track      1.2.A.4  Working collaboratively gives programmers opportunities to share roles throughout development. Pair programming is one collaboration practice in which two programmers work together at one computer: one writes the code, while the other reviews the code as it is written, checks for errors, and keeps the bigger picture in mind. Partners switch roles frequently so both contribute to writing code and problem-solving.   Watch the following video about Pair Programming. Try it out with your friends the next time you code!     What is one advantage of working collaboratively on an app?      Only one person needs to understand the project.    No, effective teams share knowledge so multiple people understand the project.      Collaboration eliminates the need for testing.    Testing is still an important part of software development, even when working as a team.      Different team members contribute different skills and perspectives.    Correct! Collaboration allows team members to combine their talents and ideas, often leading to a better final product.      Working alone is always faster than working with others.    Not necessarily. While teamwork requires communication, it often improves quality and allows tasks to be divided among team members.        During pair programming, the driver accidentally forgets an important step. The navigator notices the mistake immediately. What does this example demonstrate about pair programming?      It eliminates all programming errors.    Not quite. Pair programming can help find mistakes earlier, but it cannot guarantee that every error will be caught.      It helps catch mistakes earlier through collaboration.    Correct! The navigator reviews the code as it is written, making it more likely that mistakes will be noticed and corrected before they become larger problems.      It means the partners should switch roles.    While pair programming involves switching roles, the main benefit is the collaborative review of code.      It slows down development.    While pair programming may initially seem slower, it often leads to higher quality code and faster debugging in the long run.       Let's do a pair programming simulation! Work with a partner to write an algorithm for brushing your teeth. It must be precise enough for a robot to follow. One partner will be the driver and the other will be the navigator. The driver will write the steps while the navigator will check for mistakes and ask questions. After 2–3 minutes, switch roles. Write your algorithm below. Put *'s next to steps that were rewritten because the navigator made suggestions. Did having a partner help you write a better algorithm?      User Testing   1.2.A.1   User testing with a variety of users helps programmers design an app with a clear purpose that is intuitive for its intended users and minimizes confusion.    1.2.A.2  Programmers can conduct user testing to understand how people use an app, including where users are confused or have unmet needs. Observing participants during development provides evidence programmers can use to refine the app’s purpose and design.   Watch the following video about user testing and how it can help find bugs, give feedback, and improve apps. Try it out with your friends the next time you code!     Why do software developers perform user testing?      To guarantee the program has no bugs.    User testing can reveal problems, but it cannot guarantee that every bug has been found.      To replace collaboration among team members.    User testing complements collaboration rather than replacing it.      To make sure only certain people can use the app.    User testing makes sure your app works for all intended users.      To learn how well the app meets users' needs and identify improvements.    Correct! User feedback helps developers improve both the functionality and usability of an app.        Imagine that you are a user-tester for Runestone which the platform that this ebook is on. What are some things you would test to make sure the platform is easy to use? Did you find any tasks that were confusing or difficult to complete?       Iterative Process   1.2.A.5  Apps and programs are improved through an iterative process. Teams use feedback from user testing and collaboration to make changes and test again to verify an app more accurately meets user needs.   Software development teams use an iterative design process where they design, test, and revise their apps multiple times to improve the app's functionality and usability. The following diagram is an example of an iterative design process:     Which statement best describes an iterative design process?      Develop the app once and release it without changes.    Most software is improved through multiple rounds of revision.      Repeatedly design, test, revise, and test again to improve the app.    Correct! Iterative design uses multiple cycles of development and testing to better meet user needs.      Wait until the end of development before testing.    Testing and feedback are most useful throughout development so improvements can be made early and often.      Allow only one team member to make all design decisions.    Iterative design benefits from collaboration and input from multiple people, including users.        During testing, users struggle with an app's menu. According to the iterative design process, what should the development team do next?      Revise the menu and conduct another round of testing.    Correct! In an iterative design process, developers use user feedback to improve the app, then test again to see whether the changes were successful.      Stop testing because they have already tested the app.    Iterative design involves multiple rounds of testing and improvement until the app better meets users' needs.      Remove the menu entirely.    Removing the menu is not necessarily the best solution. The goal is to revise the design based on feedback and then test the revised version.      Release the app anyway.    If testing shows that users are still having difficulty, the team should continue improving the app before releasing it.        Reducing Bias through Collaboration   1.2.B.1   Bias occurs when an app consistently favors certain people, values, or outcomes over others. Bias can be harmful because it can make results less accurate for some users and can contribute to unfair treatment or unequal access.    1.2.B.2  Apps can reflect human bias when programmers’ assumptions, rules, or interface choices favor some users over others. Apps can also reflect data bias when the data used to train or inform the app is incomplete or unrepresentative of the people and situations the app is intended to work well for. Human bias and data bias often interact. Choices about what data to collect and how to label it can shape how an app behaves for different users.   Watch the following video to learn more about bias that can effect AI systems.    1.2.B.3  Collaboration can help reduce bias by bringing multiple perspectives into design and testing. Teams can review design decisions and data together, look for missing perspectives, and gather feedback from a variety of users.    1.2.B.4  When potential bias is identified, teams can revise the rules, data, or design and then test again to check whether outcomes are more accurate and fair across different users and situations.   Take a look at the following comic strip where a cat who is a user of an app is letting the dog developers know that the app doesn't work well for it, but the developers don't listen.     What is the bias in the comic strip above? Why do you think the app works for dogs but not cats? How could the developers have reduced bias in their app?       Learning Objectives Review   1.2.A  Explain how apps and programs are improved through collaboration and user testing.    1.2.B  Explain how collaboration can reduce bias in apps.     Vocabulary Review    Review the vocabulary in this lesson. Drag the vocabulary term from the left and drop it on its correct definition on the right. Click the \"Check Me\" button to see if you are correct.    Find the words in the lesson above and try again.     pair programming  a collaboration practice in which two programmers work together at one computer    user testing  testing an app with a variety of users    bias  a tendency to favor certain people, values, or outcomes over others    iterative design process  a circular process in which an app is designed, tested, revised, and tested again multiple times      "
 },
 {
-  "id": "topic-1-2-collaboration-4-2",
+  "id": "collaboration-2",
   "level": "2",
-  "url": "topic-1-2-collaboration.html#topic-1-2-collaboration-4-2",
-  "type": "Learning Objective",
+  "url": "topic-1-2-collaboration.html#collaboration-2",
+  "type": "Essential Knowledge",
   "number": "1.2.1",
-  "title": "1.2.A.",
-  "body": " 1.2.A  Explain how apps and programs are improved through collaboration and user testing.  "
+  "title": "1.2.A.3.",
+  "body": " 1.2.A.3  Working collaboratively on an app brings together a variety of talents and perspectives that can improve the final product. Teams can divide tasks, share ideas, and review and document decisions as they develop the app.  "
 },
 {
-  "id": "topic-1-2-collaboration-4-3",
+  "id": "dev-team-roles",
   "level": "2",
-  "url": "topic-1-2-collaboration.html#topic-1-2-collaboration-4-3",
-  "type": "Learning Objective",
+  "url": "topic-1-2-collaboration.html#dev-team-roles",
+  "type": "Activity",
+  "number": "1.2.1",
+  "title": "",
+  "body": "  Match the software development team roles to their responsibilities. Which roles seem the most interesting to you? Do internet research to find out more about the roles that interest you.    Do internet research to find out more about the roles and try again.     Designer  creates the visual design and user experience of the app    Software Developer  writes the code for the app    Software Tester  tests the app to find bugs and usability issues    Project Manager  coordinates the team and keeps the project on track    "
+},
+{
+  "id": "collaboration-6",
+  "level": "2",
+  "url": "topic-1-2-collaboration.html#collaboration-6",
+  "type": "Essential Knowledge",
   "number": "1.2.2",
-  "title": "1.2.B.",
-  "body": " 1.2.B  Explain how collaboration can reduce bias in apps.  "
+  "title": "1.2.A.4.",
+  "body": " 1.2.A.4  Working collaboratively gives programmers opportunities to share roles throughout development. Pair programming is one collaboration practice in which two programmers work together at one computer: one writes the code, while the other reviews the code as it is written, checks for errors, and keeps the bigger picture in mind. Partners switch roles frequently so both contribute to writing code and problem-solving.  "
 },
 {
-  "id": "topic-1-2-collaboration-5-2",
+  "id": "collaboration-benefit",
   "level": "2",
-  "url": "topic-1-2-collaboration.html#topic-1-2-collaboration-5-2",
+  "url": "topic-1-2-collaboration.html#collaboration-benefit",
+  "type": "Activity",
+  "number": "1.2.2",
+  "title": "",
+  "body": "  What is one advantage of working collaboratively on an app?      Only one person needs to understand the project.    No, effective teams share knowledge so multiple people understand the project.      Collaboration eliminates the need for testing.    Testing is still an important part of software development, even when working as a team.      Different team members contribute different skills and perspectives.    Correct! Collaboration allows team members to combine their talents and ideas, often leading to a better final product.      Working alone is always faster than working with others.    Not necessarily. While teamwork requires communication, it often improves quality and allows tasks to be divided among team members.     "
+},
+{
+  "id": "pair-programming-catch-errors",
+  "level": "2",
+  "url": "topic-1-2-collaboration.html#pair-programming-catch-errors",
+  "type": "Activity",
+  "number": "1.2.3",
+  "title": "",
+  "body": "  During pair programming, the driver accidentally forgets an important step. The navigator notices the mistake immediately. What does this example demonstrate about pair programming?      It eliminates all programming errors.    Not quite. Pair programming can help find mistakes earlier, but it cannot guarantee that every error will be caught.      It helps catch mistakes earlier through collaboration.    Correct! The navigator reviews the code as it is written, making it more likely that mistakes will be noticed and corrected before they become larger problems.      It means the partners should switch roles.    While pair programming involves switching roles, the main benefit is the collaborative review of code.      It slows down development.    While pair programming may initially seem slower, it often leads to higher quality code and faster debugging in the long run.     "
+},
+{
+  "id": "brush-teeth",
+  "level": "2",
+  "url": "topic-1-2-collaboration.html#brush-teeth",
+  "type": "Activity",
+  "number": "1.2.4",
+  "title": "",
+  "body": " Let's do a pair programming simulation! Work with a partner to write an algorithm for brushing your teeth. It must be precise enough for a robot to follow. One partner will be the driver and the other will be the navigator. The driver will write the steps while the navigator will check for mistakes and ask questions. After 2–3 minutes, switch roles. Write your algorithm below. Put *'s next to steps that were rewritten because the navigator made suggestions. Did having a partner help you write a better algorithm?   "
+},
+{
+  "id": "user-testing-2",
+  "level": "2",
+  "url": "topic-1-2-collaboration.html#user-testing-2",
   "type": "Essential Knowledge",
   "number": "1.2.3",
   "title": "1.2.A.1.",
-  "body": " 1.2.A.1  User testing with a variety of users helps programmers design an app with a clear purpose that is intuitive for its intended users and minimizes confusion.  "
+  "body": " 1.2.A.1   User testing with a variety of users helps programmers design an app with a clear purpose that is intuitive for its intended users and minimizes confusion.  "
 },
 {
-  "id": "topic-1-2-collaboration-5-3",
+  "id": "user-testing-3",
   "level": "2",
-  "url": "topic-1-2-collaboration.html#topic-1-2-collaboration-5-3",
+  "url": "topic-1-2-collaboration.html#user-testing-3",
   "type": "Essential Knowledge",
   "number": "1.2.4",
   "title": "1.2.A.2.",
   "body": " 1.2.A.2  Programmers can conduct user testing to understand how people use an app, including where users are confused or have unmet needs. Observing participants during development provides evidence programmers can use to refine the app’s purpose and design.  "
 },
 {
-  "id": "topic-1-2-collaboration-5-4",
+  "id": "user-testing-4",
   "level": "2",
-  "url": "topic-1-2-collaboration.html#topic-1-2-collaboration-5-4",
+  "url": "topic-1-2-collaboration.html#user-testing-4",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "user testing "
+},
+{
+  "id": "user-testing-mcq",
+  "level": "2",
+  "url": "topic-1-2-collaboration.html#user-testing-mcq",
+  "type": "Activity",
+  "number": "1.2.5",
+  "title": "",
+  "body": "  Why do software developers perform user testing?      To guarantee the program has no bugs.    User testing can reveal problems, but it cannot guarantee that every bug has been found.      To replace collaboration among team members.    User testing complements collaboration rather than replacing it.      To make sure only certain people can use the app.    User testing makes sure your app works for all intended users.      To learn how well the app meets users' needs and identify improvements.    Correct! User feedback helps developers improve both the functionality and usability of an app.     "
+},
+{
+  "id": "runestone-user-testing",
+  "level": "2",
+  "url": "topic-1-2-collaboration.html#runestone-user-testing",
+  "type": "Activity",
+  "number": "1.2.6",
+  "title": "",
+  "body": "  Imagine that you are a user-tester for Runestone which the platform that this ebook is on. What are some things you would test to make sure the platform is easy to use? Did you find any tasks that were confusing or difficult to complete?    "
+},
+{
+  "id": "iterative-process-2",
+  "level": "2",
+  "url": "topic-1-2-collaboration.html#iterative-process-2",
   "type": "Essential Knowledge",
   "number": "1.2.5",
-  "title": "1.2.A.3.",
-  "body": " 1.2.A.3  Working collaboratively on an app brings together a variety of talents and perspectives that can improve the final product. Teams can divide tasks, share ideas, and review and document decisions as they develop the app.  "
-},
-{
-  "id": "topic-1-2-collaboration-5-5",
-  "level": "2",
-  "url": "topic-1-2-collaboration.html#topic-1-2-collaboration-5-5",
-  "type": "Essential Knowledge",
-  "number": "1.2.6",
-  "title": "1.2.A.4.",
-  "body": " 1.2.A.4  Working collaboratively gives programmers opportunities to share roles throughout development. Pair programming is one collaboration practice in which two programmers work together at one computer: one writes the code, while the other reviews the code as it is written, checks for errors, and keeps the bigger picture in mind. Partners switch roles frequently so both contribute to writing code and problem-solving.  "
-},
-{
-  "id": "topic-1-2-collaboration-5-6",
-  "level": "2",
-  "url": "topic-1-2-collaboration.html#topic-1-2-collaboration-5-6",
-  "type": "Essential Knowledge",
-  "number": "1.2.7",
   "title": "1.2.A.5.",
   "body": " 1.2.A.5  Apps and programs are improved through an iterative process. Teams use feedback from user testing and collaboration to make changes and test again to verify an app more accurately meets user needs.  "
 },
 {
-  "id": "topic-1-2-collaboration-6-2",
+  "id": "iterative-process-3",
   "level": "2",
-  "url": "topic-1-2-collaboration.html#topic-1-2-collaboration-6-2",
-  "type": "Essential Knowledge",
-  "number": "1.2.8",
-  "title": "1.2.B.1.",
-  "body": " 1.2.B.1  Bias occurs when an app consistently favors certain people, values, or outcomes over others. Bias can be harmful because it can make results less accurate for some users and can contribute to unfair treatment or unequal access.  "
+  "url": "topic-1-2-collaboration.html#iterative-process-3",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "iterative design process "
 },
 {
-  "id": "topic-1-2-collaboration-6-3",
+  "id": "iterative-process",
   "level": "2",
-  "url": "topic-1-2-collaboration.html#topic-1-2-collaboration-6-3",
+  "url": "topic-1-2-collaboration.html#iterative-process",
+  "type": "Activity",
+  "number": "1.2.7",
+  "title": "",
+  "body": "  Which statement best describes an iterative design process?      Develop the app once and release it without changes.    Most software is improved through multiple rounds of revision.      Repeatedly design, test, revise, and test again to improve the app.    Correct! Iterative design uses multiple cycles of development and testing to better meet user needs.      Wait until the end of development before testing.    Testing and feedback are most useful throughout development so improvements can be made early and often.      Allow only one team member to make all design decisions.    Iterative design benefits from collaboration and input from multiple people, including users.     "
+},
+{
+  "id": "iterative-design-feedback",
+  "level": "2",
+  "url": "topic-1-2-collaboration.html#iterative-design-feedback",
+  "type": "Activity",
+  "number": "1.2.8",
+  "title": "",
+  "body": "  During testing, users struggle with an app's menu. According to the iterative design process, what should the development team do next?      Revise the menu and conduct another round of testing.    Correct! In an iterative design process, developers use user feedback to improve the app, then test again to see whether the changes were successful.      Stop testing because they have already tested the app.    Iterative design involves multiple rounds of testing and improvement until the app better meets users' needs.      Remove the menu entirely.    Removing the menu is not necessarily the best solution. The goal is to revise the design based on feedback and then test the revised version.      Release the app anyway.    If testing shows that users are still having difficulty, the team should continue improving the app before releasing it.     "
+},
+{
+  "id": "bias-2",
+  "level": "2",
+  "url": "topic-1-2-collaboration.html#bias-2",
   "type": "Essential Knowledge",
-  "number": "1.2.9",
+  "number": "1.2.6",
+  "title": "1.2.B.1.",
+  "body": " 1.2.B.1   Bias occurs when an app consistently favors certain people, values, or outcomes over others. Bias can be harmful because it can make results less accurate for some users and can contribute to unfair treatment or unequal access.  "
+},
+{
+  "id": "bias-3",
+  "level": "2",
+  "url": "topic-1-2-collaboration.html#bias-3",
+  "type": "Essential Knowledge",
+  "number": "1.2.7",
   "title": "1.2.B.2.",
   "body": " 1.2.B.2  Apps can reflect human bias when programmers’ assumptions, rules, or interface choices favor some users over others. Apps can also reflect data bias when the data used to train or inform the app is incomplete or unrepresentative of the people and situations the app is intended to work well for. Human bias and data bias often interact. Choices about what data to collect and how to label it can shape how an app behaves for different users.  "
 },
 {
-  "id": "topic-1-2-collaboration-6-4",
+  "id": "bias-6",
   "level": "2",
-  "url": "topic-1-2-collaboration.html#topic-1-2-collaboration-6-4",
+  "url": "topic-1-2-collaboration.html#bias-6",
   "type": "Essential Knowledge",
-  "number": "1.2.10",
+  "number": "1.2.8",
   "title": "1.2.B.3.",
   "body": " 1.2.B.3  Collaboration can help reduce bias by bringing multiple perspectives into design and testing. Teams can review design decisions and data together, look for missing perspectives, and gather feedback from a variety of users.  "
 },
 {
-  "id": "topic-1-2-collaboration-6-5",
+  "id": "bias-7",
   "level": "2",
-  "url": "topic-1-2-collaboration.html#topic-1-2-collaboration-6-5",
+  "url": "topic-1-2-collaboration.html#bias-7",
   "type": "Essential Knowledge",
-  "number": "1.2.11",
+  "number": "1.2.9",
   "title": "1.2.B.4.",
   "body": " 1.2.B.4  When potential bias is identified, teams can revise the rules, data, or design and then test again to check whether outcomes are more accurate and fair across different users and situations.  "
+},
+{
+  "id": "bias-cat-dog",
+  "level": "2",
+  "url": "topic-1-2-collaboration.html#bias-cat-dog",
+  "type": "Activity",
+  "number": "1.2.9",
+  "title": "",
+  "body": "  What is the bias in the comic strip above? Why do you think the app works for dogs but not cats? How could the developers have reduced bias in their app?    "
+},
+{
+  "id": "LOs-1-2-2",
+  "level": "2",
+  "url": "topic-1-2-collaboration.html#LOs-1-2-2",
+  "type": "Learning Objective",
+  "number": "1.2.10",
+  "title": "1.2.A.",
+  "body": " 1.2.A  Explain how apps and programs are improved through collaboration and user testing.  "
+},
+{
+  "id": "LOs-1-2-3",
+  "level": "2",
+  "url": "topic-1-2-collaboration.html#LOs-1-2-3",
+  "type": "Learning Objective",
+  "number": "1.2.11",
+  "title": "1.2.B.",
+  "body": " 1.2.B  Explain how collaboration can reduce bias in apps.  "
+},
+{
+  "id": "vocab-match-1-2",
+  "level": "2",
+  "url": "topic-1-2-collaboration.html#vocab-match-1-2",
+  "type": "Activity",
+  "number": "1.2.10",
+  "title": "",
+  "body": "  Review the vocabulary in this lesson. Drag the vocabulary term from the left and drop it on its correct definition on the right. Click the \"Check Me\" button to see if you are correct.    Find the words in the lesson above and try again.     pair programming  a collaboration practice in which two programmers work together at one computer    user testing  testing an app with a variety of users    bias  a tendency to favor certain people, values, or outcomes over others    iterative design process  a circular process in which an app is designed, tested, revised, and tested again multiple times    "
 },
 {
   "id": "topic-1-3-responsible-ai",
@@ -2059,7 +2176,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "1.8",
   "title": "Unit 1 Summary",
-  "body": " Unit 1 Summary  In Unit 1, we covered the following Learning Objectives:   1.1 Purpose and Behavior  1.1.A Determine the purpose and behavior of an app by interacting with it.  1.1.B Identify inputs and outputs of an app while using it.     1.2 Benefits of Collaboration  1.2.A Explain how apps and programs are improved through collaboration and user testing.  1.2.B Explain how collaboration can reduce bias in apps.    1.3 Responsible AI and Human Decision-Making  1.3.A Explain how human decisions shape the development, deployment, and maintenance of AI tools.  1.3.B Evaluate the appropriate level of automation or augmentation for a task.    1.4 Binary Representation  1.4.A Explain how computers store and process data as bits, and how those bits are represented as meaningful digital information for users.  1.4.B Explain why representing numbers with limited bits can produce inaccurate results.    1.5 Sequencing  1.5.A Represent an algorithm that uses sequencing using written steps or a flowchart.  1.5.B Develop code that runs sequentially, and determine the result of sequential statements.    1.6 Variables  1.6.A Identify the use of variables in an app while interacting with it.  1.6.B Develop code for assignment statements using variables, and determine the values that are stored in the variables as a result.  1.6.C Develop code to store and modify strings, and determine the output produced.    1.7 Mathematical Expressions  1.7.A Develop code using mathematical expressions, and determine the result of these expressions.  1.7.B Develop code to generate random numbers, and determine the possible values that could be produced as a result.     Review the following Unit 1 vocabulary:    1-1 Purpose and Behavior Vocabulary. Drag the vocabulary term from the left and drop it on its correct definition on the right. Click the \"Check Me\" button to see if you are correct.    Review the vocabulary in 1.1and try again.     app  a program that runs on a computer or any computing device    purpose  why an app exists or its goal    behavior  what an app does when used    input  data sent to a computer for a program to process.    output  data sent back from a program to the device or user    user interface (UI)  the part of an app (for example buttons) that users directly interact with    event  a signal that something happened, such as a button click or key press    event handler  code that runs in response to an event       1-4 Binary Vocabulary. Drag the vocabulary term from the left and drop it on its correct definition on the right. Click the \"Check Me\" button to see if you are correct.    Find the words in 1-4 and try again.     bit  A binary digit, either 0 or 1.    abstraction  The process of removing detail to focus on the essential characteristics of something.    encoding  Converting information into a specific format for storage or transmission.    roundoff error  The error that occurs when a number is approximated to fit in a fixed number of bits.    overflow error  The error that occurs when a number is too large to be represented within the given number of bits.       Review the vocabulary in 1-5 Sequencing. Drag the vocabulary term from the left and drop it on its correct definition on the right. Click the \"Check Me\" button to see if you are correct.    Find the words in 1-5 above and try again.     algorithm  Step by step instructions for solving a problem    sequencing  The default order of code that is run line-by-line from the top down    flowchart  Visual representation of an algorithm that uses shapes and arrows to show the steps    IDE  Software that provides tools for programmers to write, test, and debug code    syntax error  A mistake in the way code is written that prevents it from running correctly    debugging  The process of finding and fixing errors in code       Review the vocabulary in 1-6 Variables. Drag the vocabulary term from the left and drop it on its correct definition on the right. Click the \"Check Me\" button to see if you are correct.    Find the words in 1-6 and try again.     variable  a named storage location used to hold a value that can change while the program is running    program state  the set of values and information a program is storing at a specific moment    data types  numbers, strings, or booleans    string  an ordered sequence of characters used to represent text in a program    concatenation  joins two or more strings to create a new string    substring  part of an existing string       Review the vocabulary in 1-7 Expressions. Drag the vocabulary term from the left and drop it on its correct definition on the right. Click the \"Check Me\" button to see if you are correct.    Find the words in 1-7 and try again.     expression  combination of numbers, variables, and operators that represents a value    increment  to increase a variable's value, often by adding 1 to it    integer  a numeric data type that represents positive and negative whole numbers, including zero.    modulo (%)  operator that returns the remainder of a division operation    random.randint  Python function that generates a random integer between two specified values (inclusive)     The next lessons in this unit are for practicing Python coding. There are also some optional App Inventor coding projects.  "
+  "body": " Unit 1 Summary  In Unit 1, we covered the following Learning Objectives:   1.1 Purpose and Behavior  1.1.A Determine the purpose and behavior of an app by interacting with it.  1.1.B Identify inputs and outputs of an app while using it.     1.2 Benefits of Collaboration  1.2.A Explain how apps and programs are improved through collaboration and user testing.  1.2.B Explain how collaboration can reduce bias in apps.    1.3 Responsible AI and Human Decision-Making  1.3.A Explain how human decisions shape the development, deployment, and maintenance of AI tools.  1.3.B Evaluate the appropriate level of automation or augmentation for a task.    1.4 Binary Representation  1.4.A Explain how computers store and process data as bits, and how those bits are represented as meaningful digital information for users.  1.4.B Explain why representing numbers with limited bits can produce inaccurate results.    1.5 Sequencing  1.5.A Represent an algorithm that uses sequencing using written steps or a flowchart.  1.5.B Develop code that runs sequentially, and determine the result of sequential statements.    1.6 Variables  1.6.A Identify the use of variables in an app while interacting with it.  1.6.B Develop code for assignment statements using variables, and determine the values that are stored in the variables as a result.  1.6.C Develop code to store and modify strings, and determine the output produced.    1.7 Mathematical Expressions  1.7.A Develop code using mathematical expressions, and determine the result of these expressions.  1.7.B Develop code to generate random numbers, and determine the possible values that could be produced as a result.     Review the following Unit 1 vocabulary:    1-1 Purpose and Behavior Vocabulary. Drag the vocabulary term from the left and drop it on its correct definition on the right. Click the \"Check Me\" button to see if you are correct.    Review the vocabulary in 1.1 and try again.     app  a program that runs on a computer or any computing device    purpose  why an app exists or its goal    behavior  what an app does when used    input  data sent to a computer for a program to process.    output  data sent back from a program to the device or user    user interface (UI)  the part of an app (for example buttons) that users directly interact with    event  a signal that something happened, such as a button click or key press    event handler  code that runs in response to an event       1-2 Collaboration Vocabulary: Drag the vocabulary term from the left and drop it on its correct definition on the right. Click the \"Check Me\" button to see if you are correct.    Review the vocabulary in lesson 1.2 and try again.     pair programming  a collaboration practice in which two programmers work together at one computer    user testing  testing an app with a variety of users    bias  a tendency to favor certain people, values, or outcomes over others    iterative design process  a circular process in which an app is designed, tested, revised, and tested again multiple times       1-4 Binary Vocabulary: Drag the vocabulary term from the left and drop it on its correct definition on the right. Click the \"Check Me\" button to see if you are correct.    Find the words in 1-4 and try again.     bit  A binary digit, either 0 or 1.    abstraction  The process of removing detail to focus on the essential characteristics of something.    encoding  Converting information into a specific format for storage or transmission.    roundoff error  The error that occurs when a number is approximated to fit in a fixed number of bits.    overflow error  The error that occurs when a number is too large to be represented within the given number of bits.       Review the vocabulary in 1-5 Sequencing. Drag the vocabulary term from the left and drop it on its correct definition on the right. Click the \"Check Me\" button to see if you are correct.    Find the words in 1-5 above and try again.     algorithm  Step by step instructions for solving a problem    sequencing  The default order of code that is run line-by-line from the top down    flowchart  Visual representation of an algorithm that uses shapes and arrows to show the steps    IDE  Software that provides tools for programmers to write, test, and debug code    syntax error  A mistake in the way code is written that prevents it from running correctly    debugging  The process of finding and fixing errors in code       Review the vocabulary in 1-6 Variables. Drag the vocabulary term from the left and drop it on its correct definition on the right. Click the \"Check Me\" button to see if you are correct.    Find the words in 1-6 and try again.     variable  a named storage location used to hold a value that can change while the program is running    program state  the set of values and information a program is storing at a specific moment    data types  numbers, strings, or booleans    string  an ordered sequence of characters used to represent text in a program    concatenation  joins two or more strings to create a new string    substring  part of an existing string       Review the vocabulary in 1-7 Expressions. Drag the vocabulary term from the left and drop it on its correct definition on the right. Click the \"Check Me\" button to see if you are correct.    Find the words in 1-7 and try again.     expression  combination of numbers, variables, and operators that represents a value    increment  to increase a variable's value, often by adding 1 to it    integer  a numeric data type that represents positive and negative whole numbers, including zero.    modulo (%)  operator that returns the remainder of a division operation    random.randint  Python function that generates a random integer between two specified values (inclusive)     The next lessons in this unit are for practicing Python coding. There are also some optional App Inventor coding projects.  "
 },
 {
   "id": "vocab-IO-review",
@@ -2068,23 +2185,32 @@ var ptx_lunr_docs = [
   "type": "Activity",
   "number": "1.8.1",
   "title": "",
-  "body": "  1-1 Purpose and Behavior Vocabulary. Drag the vocabulary term from the left and drop it on its correct definition on the right. Click the \"Check Me\" button to see if you are correct.    Review the vocabulary in 1.1and try again.     app  a program that runs on a computer or any computing device    purpose  why an app exists or its goal    behavior  what an app does when used    input  data sent to a computer for a program to process.    output  data sent back from a program to the device or user    user interface (UI)  the part of an app (for example buttons) that users directly interact with    event  a signal that something happened, such as a button click or key press    event handler  code that runs in response to an event    "
+  "body": "  1-1 Purpose and Behavior Vocabulary. Drag the vocabulary term from the left and drop it on its correct definition on the right. Click the \"Check Me\" button to see if you are correct.    Review the vocabulary in 1.1 and try again.     app  a program that runs on a computer or any computing device    purpose  why an app exists or its goal    behavior  what an app does when used    input  data sent to a computer for a program to process.    output  data sent back from a program to the device or user    user interface (UI)  the part of an app (for example buttons) that users directly interact with    event  a signal that something happened, such as a button click or key press    event handler  code that runs in response to an event    "
+},
+{
+  "id": "vocab-1-2-review",
+  "level": "2",
+  "url": "unit1-summary.html#vocab-1-2-review",
+  "type": "Activity",
+  "number": "1.8.2",
+  "title": "",
+  "body": "  1-2 Collaboration Vocabulary: Drag the vocabulary term from the left and drop it on its correct definition on the right. Click the \"Check Me\" button to see if you are correct.    Review the vocabulary in lesson 1.2 and try again.     pair programming  a collaboration practice in which two programmers work together at one computer    user testing  testing an app with a variety of users    bias  a tendency to favor certain people, values, or outcomes over others    iterative design process  a circular process in which an app is designed, tested, revised, and tested again multiple times    "
 },
 {
   "id": "binary-vocab-review",
   "level": "2",
   "url": "unit1-summary.html#binary-vocab-review",
   "type": "Activity",
-  "number": "1.8.2",
+  "number": "1.8.3",
   "title": "",
-  "body": "  1-4 Binary Vocabulary. Drag the vocabulary term from the left and drop it on its correct definition on the right. Click the \"Check Me\" button to see if you are correct.    Find the words in 1-4 and try again.     bit  A binary digit, either 0 or 1.    abstraction  The process of removing detail to focus on the essential characteristics of something.    encoding  Converting information into a specific format for storage or transmission.    roundoff error  The error that occurs when a number is approximated to fit in a fixed number of bits.    overflow error  The error that occurs when a number is too large to be represented within the given number of bits.    "
+  "body": "  1-4 Binary Vocabulary: Drag the vocabulary term from the left and drop it on its correct definition on the right. Click the \"Check Me\" button to see if you are correct.    Find the words in 1-4 and try again.     bit  A binary digit, either 0 or 1.    abstraction  The process of removing detail to focus on the essential characteristics of something.    encoding  Converting information into a specific format for storage or transmission.    roundoff error  The error that occurs when a number is approximated to fit in a fixed number of bits.    overflow error  The error that occurs when a number is too large to be represented within the given number of bits.    "
 },
 {
   "id": "sequencing-vocab-review",
   "level": "2",
   "url": "unit1-summary.html#sequencing-vocab-review",
   "type": "Activity",
-  "number": "1.8.3",
+  "number": "1.8.4",
   "title": "",
   "body": "  Review the vocabulary in 1-5 Sequencing. Drag the vocabulary term from the left and drop it on its correct definition on the right. Click the \"Check Me\" button to see if you are correct.    Find the words in 1-5 above and try again.     algorithm  Step by step instructions for solving a problem    sequencing  The default order of code that is run line-by-line from the top down    flowchart  Visual representation of an algorithm that uses shapes and arrows to show the steps    IDE  Software that provides tools for programmers to write, test, and debug code    syntax error  A mistake in the way code is written that prevents it from running correctly    debugging  The process of finding and fixing errors in code    "
 },
@@ -2093,7 +2219,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "unit1-summary.html#vars-vocab-review",
   "type": "Activity",
-  "number": "1.8.4",
+  "number": "1.8.5",
   "title": "",
   "body": "  Review the vocabulary in 1-6 Variables. Drag the vocabulary term from the left and drop it on its correct definition on the right. Click the \"Check Me\" button to see if you are correct.    Find the words in 1-6 and try again.     variable  a named storage location used to hold a value that can change while the program is running    program state  the set of values and information a program is storing at a specific moment    data types  numbers, strings, or booleans    string  an ordered sequence of characters used to represent text in a program    concatenation  joins two or more strings to create a new string    substring  part of an existing string    "
 },
@@ -2102,7 +2228,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "unit1-summary.html#vocab-exprs-review",
   "type": "Activity",
-  "number": "1.8.5",
+  "number": "1.8.6",
   "title": "",
   "body": "  Review the vocabulary in 1-7 Expressions. Drag the vocabulary term from the left and drop it on its correct definition on the right. Click the \"Check Me\" button to see if you are correct.    Find the words in 1-7 and try again.     expression  combination of numbers, variables, and operators that represents a value    increment  to increase a variable's value, often by adding 1 to it    integer  a numeric data type that represents positive and negative whole numbers, including zero.    modulo (%)  operator that returns the remainder of a division operation    random.randint  Python function that generates a random integer between two specified values (inclusive)    "
 },
@@ -2611,13 +2737,1012 @@ var ptx_lunr_docs = [
   "body": " Project Reflection 2   Describe an error that you encountered while you were creating the app, and how you fixed your code to remove the bug. How did you test the app to make sure it was working correctly?    "
 },
 {
-  "id": "unit2",
+  "id": "topic-2-1-program-design-development",
   "level": "1",
-  "url": "unit2.html",
-  "type": "Unit",
-  "number": "2",
-  "title": "Building Solutions using Selection and Iteration",
-  "body": " Building Solutions using Selection and Iteration   This unit introduces students to selection for decision-making and iteration for repetition in code.     AP Exam Weighting:    Class Periods:    Time Estimate: 45 minutes per lesson    AP Classroom Progress Check Unit 2    AP Classroom Unit 2 Labs:       "
+  "url": "topic-2-1-program-design-development.html",
+  "type": "Section",
+  "number": "2.1",
+  "title": "Program Design and Development",
+  "body": "  Program Design and Development       Learning Objectives   2.1.A  Develop a program using an iterative or incremental process.    2.1.B  Design an app or program and its user interface based on user research and program requirements.    2.1.C  Describe the purpose and behavior of a code segment or program by writing documentation.    2.1.D  Determine when it is appropriate to reuse, cite, and share digital content.     The Development Process   2.1.A.1  Programmers use a development process to plan and build apps and programs that work well for the people who will use them. A typical process includes understanding the problem and the users, designing a solution, building a first version or prototype, testing it, and then reflecting on what worked and what needs improvement. These phases may occur in different orders and may be repeated.    2.1.A.2  An iterative development process involves revising a program based on feedback, testing, or reflection throughout development. This often requires returning to earlier phases to improve the design or behavior.    2.1.A.3  An incremental development process breaks a problem into smaller features and builds a program in steps. Each part is checked to ensure it works before it is combined into the whole.    2.1.A.4  Development processes often include creating and updating design documentation to help track decisions, guide what to build next, and support testing, debugging, maintenance, and improvement.    2.1.A.5  When developing programs with others, teams can use a defined workflow by assigning roles, sharing work, and keeping track of versions so changes can be reviewed and combined responsibly.    2.1.A.6  Programmers can gather evidence from users during development by observing where users get stuck or confused. This evidence can guide revisions that improve the usability of apps or programs.    2.1.A.7  Many apps and programs go through revisions and updates to stay useful for users. Maintaining a program involves making changes after a working version exists, such as fixing bugs, improving usability, or adapting the program as user needs or conditions change.     Design and User Research   2.1.B.1  Programmers often begin by identifying intended users and their goals rather than starting with a list of features. Focusing on users and goals helps teams prioritize features and design an app or program that meets real needs.    2.1.B.2  User research means learning from the people who will use an app or program. Programmers may gather information from intended users to understand what they need, what limits or challenges they have, and what matters most.    2.1.B.3  Program requirements describe what a program must do and how it should behave. Requirements may be based on user research and may include user interactions a program must support, information a user interface should display, and feedback the app or program should provide.    2.1.B.4  Programmers can use user stories to connect requirements to real tasks and to guide interface design and testing. User stories are hypothetical descriptions of who a user is, what they want to do, and why it is important. Teams may also represent user needs with use cases or storyboards, which show how someone would use the app or program step by step.    2.1.B.5  User research can be performed in multiple ways, such as surveys, interviews, direct observation, and user testing.    2.1.B.6  The design phase may include activities such as brainstorming and storyboarding, decomposing a problem into subproblems, creating diagrams or sketches of a user interface layout, and developing a testing strategy based on program requirements and user needs.     Documentation   2.1.C.1  Program documentation is a written description of the purpose and behavior of a code segment or program, including how it is intended to be used, how it accomplishes its task, and how it was developed.    2.1.C.2  Comments are a form of documentation included in code for humans to read. Comments do not affect how a program runs.    2.1.C.3  Not all programming environments support comments within the code. Documentation may also be written in other formats, such as design notes, a test plan, or a change log.    2.1.C.4  Documentation helps programmers understand code that has already been written. Clear descriptions of purpose and behavior make it easier for a programmer to understand and update code without having to figure out how it works.    2.1.C.5  Useful documentation may describe important details such as a program's overall purpose, key variables and algorithms, expected inputs, and expected outputs. Comments can clarify the purpose or behavior of specific abstractions or sections of code. Clear and concise documentation helps others understand, use, and update a program correctly.    2.1.C.6  Programmers should document a program throughout development to improve clarity, support collaboration, and record decisions and resources used, such as code written by others and AI tool use.     Reusing and Citing Digital Content   2.1.D.1  Programmers often reuse or build on existing code, images, sounds, and other digital content because it can save time, improve reliability, and help them meet user needs without reinventing common solutions. Because programmers often build with existing online tools and code, they should acknowledge code that is reused, adapted, or co-developed, including code from other people, online sources, or AI tools.    2.1.D.2  Digital works are considered the intellectual property of their copyright owner, who is often the work's creator but may be another person or organization. This means the copyright owner has legal control over the original work and can decide whether others may use, share, modify, or distribute it. To respect intellectual property, people should follow a work's license or obtain permission before reusing material, and provide attribution when required.    2.1.D.3  Digital content can be copied, edited, and shared quickly, which can make it harder to determine who owns it and what permissions are required. Content is also often shared online without crediting the creator or getting permission.    2.1.D.4  Despite how easy it is to share content online, presenting material created by someone else as your own is plagiarism. Using another person's work without permission or proper credit may have legal consequences.    2.1.D.5  Knowing how to reuse and cite digital content correctly helps programmers build projects more efficiently while avoiding plagiarism and misuse. Following reuse and attribution requirements helps others understand what was reused, where it came from, and what permissions apply, which supports transparency and responsible sharing.    2.1.D.6  Some licenses and tools make reuse easier by clearly stating permissions. Open source and Creative Commons licenses provide standardized terms that tell others how they may use, modify, and redistribute software or creative works.    2.1.D.7  License terms vary in what they allow and require. Some licenses require attribution, while others allow unrestricted reuse. Creative Commons Zero (CC0) allows creators to waive copyright restrictions to the extent possible so others can reuse the work.    2.1.D.8  To decide whether reuse or sharing is appropriate, people should identify the source and its license or permissions, follow any requirements, and avoid using material in ways the license does not allow.    "
+},
+{
+  "id": "topic-2-1-program-design-development-4-2",
+  "level": "2",
+  "url": "topic-2-1-program-design-development.html#topic-2-1-program-design-development-4-2",
+  "type": "Learning Objective",
+  "number": "2.1.1",
+  "title": "2.1.A.",
+  "body": " 2.1.A  Develop a program using an iterative or incremental process.  "
+},
+{
+  "id": "topic-2-1-program-design-development-4-3",
+  "level": "2",
+  "url": "topic-2-1-program-design-development.html#topic-2-1-program-design-development-4-3",
+  "type": "Learning Objective",
+  "number": "2.1.2",
+  "title": "2.1.B.",
+  "body": " 2.1.B  Design an app or program and its user interface based on user research and program requirements.  "
+},
+{
+  "id": "topic-2-1-program-design-development-4-4",
+  "level": "2",
+  "url": "topic-2-1-program-design-development.html#topic-2-1-program-design-development-4-4",
+  "type": "Learning Objective",
+  "number": "2.1.3",
+  "title": "2.1.C.",
+  "body": " 2.1.C  Describe the purpose and behavior of a code segment or program by writing documentation.  "
+},
+{
+  "id": "topic-2-1-program-design-development-4-5",
+  "level": "2",
+  "url": "topic-2-1-program-design-development.html#topic-2-1-program-design-development-4-5",
+  "type": "Learning Objective",
+  "number": "2.1.4",
+  "title": "2.1.D.",
+  "body": " 2.1.D  Determine when it is appropriate to reuse, cite, and share digital content.  "
+},
+{
+  "id": "topic-2-1-program-design-development-5-2",
+  "level": "2",
+  "url": "topic-2-1-program-design-development.html#topic-2-1-program-design-development-5-2",
+  "type": "Essential Knowledge",
+  "number": "2.1.5",
+  "title": "2.1.A.1.",
+  "body": " 2.1.A.1  Programmers use a development process to plan and build apps and programs that work well for the people who will use them. A typical process includes understanding the problem and the users, designing a solution, building a first version or prototype, testing it, and then reflecting on what worked and what needs improvement. These phases may occur in different orders and may be repeated.  "
+},
+{
+  "id": "topic-2-1-program-design-development-5-3",
+  "level": "2",
+  "url": "topic-2-1-program-design-development.html#topic-2-1-program-design-development-5-3",
+  "type": "Essential Knowledge",
+  "number": "2.1.6",
+  "title": "2.1.A.2.",
+  "body": " 2.1.A.2  An iterative development process involves revising a program based on feedback, testing, or reflection throughout development. This often requires returning to earlier phases to improve the design or behavior.  "
+},
+{
+  "id": "topic-2-1-program-design-development-5-4",
+  "level": "2",
+  "url": "topic-2-1-program-design-development.html#topic-2-1-program-design-development-5-4",
+  "type": "Essential Knowledge",
+  "number": "2.1.7",
+  "title": "2.1.A.3.",
+  "body": " 2.1.A.3  An incremental development process breaks a problem into smaller features and builds a program in steps. Each part is checked to ensure it works before it is combined into the whole.  "
+},
+{
+  "id": "topic-2-1-program-design-development-5-5",
+  "level": "2",
+  "url": "topic-2-1-program-design-development.html#topic-2-1-program-design-development-5-5",
+  "type": "Essential Knowledge",
+  "number": "2.1.8",
+  "title": "2.1.A.4.",
+  "body": " 2.1.A.4  Development processes often include creating and updating design documentation to help track decisions, guide what to build next, and support testing, debugging, maintenance, and improvement.  "
+},
+{
+  "id": "topic-2-1-program-design-development-5-6",
+  "level": "2",
+  "url": "topic-2-1-program-design-development.html#topic-2-1-program-design-development-5-6",
+  "type": "Essential Knowledge",
+  "number": "2.1.9",
+  "title": "2.1.A.5.",
+  "body": " 2.1.A.5  When developing programs with others, teams can use a defined workflow by assigning roles, sharing work, and keeping track of versions so changes can be reviewed and combined responsibly.  "
+},
+{
+  "id": "topic-2-1-program-design-development-5-7",
+  "level": "2",
+  "url": "topic-2-1-program-design-development.html#topic-2-1-program-design-development-5-7",
+  "type": "Essential Knowledge",
+  "number": "2.1.10",
+  "title": "2.1.A.6.",
+  "body": " 2.1.A.6  Programmers can gather evidence from users during development by observing where users get stuck or confused. This evidence can guide revisions that improve the usability of apps or programs.  "
+},
+{
+  "id": "topic-2-1-program-design-development-5-8",
+  "level": "2",
+  "url": "topic-2-1-program-design-development.html#topic-2-1-program-design-development-5-8",
+  "type": "Essential Knowledge",
+  "number": "2.1.11",
+  "title": "2.1.A.7.",
+  "body": " 2.1.A.7  Many apps and programs go through revisions and updates to stay useful for users. Maintaining a program involves making changes after a working version exists, such as fixing bugs, improving usability, or adapting the program as user needs or conditions change.  "
+},
+{
+  "id": "topic-2-1-program-design-development-6-2",
+  "level": "2",
+  "url": "topic-2-1-program-design-development.html#topic-2-1-program-design-development-6-2",
+  "type": "Essential Knowledge",
+  "number": "2.1.12",
+  "title": "2.1.B.1.",
+  "body": " 2.1.B.1  Programmers often begin by identifying intended users and their goals rather than starting with a list of features. Focusing on users and goals helps teams prioritize features and design an app or program that meets real needs.  "
+},
+{
+  "id": "topic-2-1-program-design-development-6-3",
+  "level": "2",
+  "url": "topic-2-1-program-design-development.html#topic-2-1-program-design-development-6-3",
+  "type": "Essential Knowledge",
+  "number": "2.1.13",
+  "title": "2.1.B.2.",
+  "body": " 2.1.B.2  User research means learning from the people who will use an app or program. Programmers may gather information from intended users to understand what they need, what limits or challenges they have, and what matters most.  "
+},
+{
+  "id": "topic-2-1-program-design-development-6-4",
+  "level": "2",
+  "url": "topic-2-1-program-design-development.html#topic-2-1-program-design-development-6-4",
+  "type": "Essential Knowledge",
+  "number": "2.1.14",
+  "title": "2.1.B.3.",
+  "body": " 2.1.B.3  Program requirements describe what a program must do and how it should behave. Requirements may be based on user research and may include user interactions a program must support, information a user interface should display, and feedback the app or program should provide.  "
+},
+{
+  "id": "topic-2-1-program-design-development-6-5",
+  "level": "2",
+  "url": "topic-2-1-program-design-development.html#topic-2-1-program-design-development-6-5",
+  "type": "Essential Knowledge",
+  "number": "2.1.15",
+  "title": "2.1.B.4.",
+  "body": " 2.1.B.4  Programmers can use user stories to connect requirements to real tasks and to guide interface design and testing. User stories are hypothetical descriptions of who a user is, what they want to do, and why it is important. Teams may also represent user needs with use cases or storyboards, which show how someone would use the app or program step by step.  "
+},
+{
+  "id": "topic-2-1-program-design-development-6-6",
+  "level": "2",
+  "url": "topic-2-1-program-design-development.html#topic-2-1-program-design-development-6-6",
+  "type": "Essential Knowledge",
+  "number": "2.1.16",
+  "title": "2.1.B.5.",
+  "body": " 2.1.B.5  User research can be performed in multiple ways, such as surveys, interviews, direct observation, and user testing.  "
+},
+{
+  "id": "topic-2-1-program-design-development-6-7",
+  "level": "2",
+  "url": "topic-2-1-program-design-development.html#topic-2-1-program-design-development-6-7",
+  "type": "Essential Knowledge",
+  "number": "2.1.17",
+  "title": "2.1.B.6.",
+  "body": " 2.1.B.6  The design phase may include activities such as brainstorming and storyboarding, decomposing a problem into subproblems, creating diagrams or sketches of a user interface layout, and developing a testing strategy based on program requirements and user needs.  "
+},
+{
+  "id": "topic-2-1-program-design-development-7-2",
+  "level": "2",
+  "url": "topic-2-1-program-design-development.html#topic-2-1-program-design-development-7-2",
+  "type": "Essential Knowledge",
+  "number": "2.1.18",
+  "title": "2.1.C.1.",
+  "body": " 2.1.C.1  Program documentation is a written description of the purpose and behavior of a code segment or program, including how it is intended to be used, how it accomplishes its task, and how it was developed.  "
+},
+{
+  "id": "topic-2-1-program-design-development-7-3",
+  "level": "2",
+  "url": "topic-2-1-program-design-development.html#topic-2-1-program-design-development-7-3",
+  "type": "Essential Knowledge",
+  "number": "2.1.19",
+  "title": "2.1.C.2.",
+  "body": " 2.1.C.2  Comments are a form of documentation included in code for humans to read. Comments do not affect how a program runs.  "
+},
+{
+  "id": "topic-2-1-program-design-development-7-4",
+  "level": "2",
+  "url": "topic-2-1-program-design-development.html#topic-2-1-program-design-development-7-4",
+  "type": "Essential Knowledge",
+  "number": "2.1.20",
+  "title": "2.1.C.3.",
+  "body": " 2.1.C.3  Not all programming environments support comments within the code. Documentation may also be written in other formats, such as design notes, a test plan, or a change log.  "
+},
+{
+  "id": "topic-2-1-program-design-development-7-5",
+  "level": "2",
+  "url": "topic-2-1-program-design-development.html#topic-2-1-program-design-development-7-5",
+  "type": "Essential Knowledge",
+  "number": "2.1.21",
+  "title": "2.1.C.4.",
+  "body": " 2.1.C.4  Documentation helps programmers understand code that has already been written. Clear descriptions of purpose and behavior make it easier for a programmer to understand and update code without having to figure out how it works.  "
+},
+{
+  "id": "topic-2-1-program-design-development-7-6",
+  "level": "2",
+  "url": "topic-2-1-program-design-development.html#topic-2-1-program-design-development-7-6",
+  "type": "Essential Knowledge",
+  "number": "2.1.22",
+  "title": "2.1.C.5.",
+  "body": " 2.1.C.5  Useful documentation may describe important details such as a program's overall purpose, key variables and algorithms, expected inputs, and expected outputs. Comments can clarify the purpose or behavior of specific abstractions or sections of code. Clear and concise documentation helps others understand, use, and update a program correctly.  "
+},
+{
+  "id": "topic-2-1-program-design-development-7-7",
+  "level": "2",
+  "url": "topic-2-1-program-design-development.html#topic-2-1-program-design-development-7-7",
+  "type": "Essential Knowledge",
+  "number": "2.1.23",
+  "title": "2.1.C.6.",
+  "body": " 2.1.C.6  Programmers should document a program throughout development to improve clarity, support collaboration, and record decisions and resources used, such as code written by others and AI tool use.  "
+},
+{
+  "id": "topic-2-1-program-design-development-8-2",
+  "level": "2",
+  "url": "topic-2-1-program-design-development.html#topic-2-1-program-design-development-8-2",
+  "type": "Essential Knowledge",
+  "number": "2.1.24",
+  "title": "2.1.D.1.",
+  "body": " 2.1.D.1  Programmers often reuse or build on existing code, images, sounds, and other digital content because it can save time, improve reliability, and help them meet user needs without reinventing common solutions. Because programmers often build with existing online tools and code, they should acknowledge code that is reused, adapted, or co-developed, including code from other people, online sources, or AI tools.  "
+},
+{
+  "id": "topic-2-1-program-design-development-8-3",
+  "level": "2",
+  "url": "topic-2-1-program-design-development.html#topic-2-1-program-design-development-8-3",
+  "type": "Essential Knowledge",
+  "number": "2.1.25",
+  "title": "2.1.D.2.",
+  "body": " 2.1.D.2  Digital works are considered the intellectual property of their copyright owner, who is often the work's creator but may be another person or organization. This means the copyright owner has legal control over the original work and can decide whether others may use, share, modify, or distribute it. To respect intellectual property, people should follow a work's license or obtain permission before reusing material, and provide attribution when required.  "
+},
+{
+  "id": "topic-2-1-program-design-development-8-4",
+  "level": "2",
+  "url": "topic-2-1-program-design-development.html#topic-2-1-program-design-development-8-4",
+  "type": "Essential Knowledge",
+  "number": "2.1.26",
+  "title": "2.1.D.3.",
+  "body": " 2.1.D.3  Digital content can be copied, edited, and shared quickly, which can make it harder to determine who owns it and what permissions are required. Content is also often shared online without crediting the creator or getting permission.  "
+},
+{
+  "id": "topic-2-1-program-design-development-8-5",
+  "level": "2",
+  "url": "topic-2-1-program-design-development.html#topic-2-1-program-design-development-8-5",
+  "type": "Essential Knowledge",
+  "number": "2.1.27",
+  "title": "2.1.D.4.",
+  "body": " 2.1.D.4  Despite how easy it is to share content online, presenting material created by someone else as your own is plagiarism. Using another person's work without permission or proper credit may have legal consequences.  "
+},
+{
+  "id": "topic-2-1-program-design-development-8-6",
+  "level": "2",
+  "url": "topic-2-1-program-design-development.html#topic-2-1-program-design-development-8-6",
+  "type": "Essential Knowledge",
+  "number": "2.1.28",
+  "title": "2.1.D.5.",
+  "body": " 2.1.D.5  Knowing how to reuse and cite digital content correctly helps programmers build projects more efficiently while avoiding plagiarism and misuse. Following reuse and attribution requirements helps others understand what was reused, where it came from, and what permissions apply, which supports transparency and responsible sharing.  "
+},
+{
+  "id": "topic-2-1-program-design-development-8-7",
+  "level": "2",
+  "url": "topic-2-1-program-design-development.html#topic-2-1-program-design-development-8-7",
+  "type": "Essential Knowledge",
+  "number": "2.1.29",
+  "title": "2.1.D.6.",
+  "body": " 2.1.D.6  Some licenses and tools make reuse easier by clearly stating permissions. Open source and Creative Commons licenses provide standardized terms that tell others how they may use, modify, and redistribute software or creative works.  "
+},
+{
+  "id": "topic-2-1-program-design-development-8-8",
+  "level": "2",
+  "url": "topic-2-1-program-design-development.html#topic-2-1-program-design-development-8-8",
+  "type": "Essential Knowledge",
+  "number": "2.1.30",
+  "title": "2.1.D.7.",
+  "body": " 2.1.D.7  License terms vary in what they allow and require. Some licenses require attribution, while others allow unrestricted reuse. Creative Commons Zero (CC0) allows creators to waive copyright restrictions to the extent possible so others can reuse the work.  "
+},
+{
+  "id": "topic-2-1-program-design-development-8-9",
+  "level": "2",
+  "url": "topic-2-1-program-design-development.html#topic-2-1-program-design-development-8-9",
+  "type": "Essential Knowledge",
+  "number": "2.1.31",
+  "title": "2.1.D.8.",
+  "body": " 2.1.D.8  To decide whether reuse or sharing is appropriate, people should identify the source and its license or permissions, follow any requirements, and avoid using material in ways the license does not allow.  "
+},
+{
+  "id": "topic-2-2-boolean-expressions",
+  "level": "1",
+  "url": "topic-2-2-boolean-expressions.html",
+  "type": "Section",
+  "number": "2.2",
+  "title": "Boolean Expressions",
+  "body": "  Boolean Expressions       Learning Objectives   2.2.A  Identify the use of Boolean expressions to control an app's behavior as you interact with the app.    2.2.B  Develop code using relational operators, and determine the result of relational expressions.    2.2.C  Develop code using logical operators, and determine the result of logical expressions.     Boolean Expressions and Decision Making   2.2.A.1  Apps often check conditions that have only two outcomes, such as whether a user is logged in, whether a checkbox is selected, or whether a password is correct.    2.2.A.2  Programs make decisions by evaluating conditions that result in a Boolean value. A Boolean value has two possible values: true or false.    2.2.A.3  Apps can use Boolean expressions to decide what happens next, such as showing a message, allowing access, or changing what a user sees. A Boolean expression is an expression that evaluates to either true or false.    2.2.A.4  Many Boolean expressions use comparisons, such as checking whether a score is high enough or whether an input meets a requirement like password length.     Relational Operators   2.2.B.1  Apps and programs often compare values to enforce rules, personalize experiences, and prevent mistakes. Relational operators allow programs to evaluate questions such as whether a value is too low or whether one value matches another.    2.2.B.2  Relational operators compare two values and produce a Boolean result.   The expression a == b evaluates to true when the values of a and b are equal, and evaluates to false otherwise.  The expression a > b evaluates to true when the value of a is greater than the value of b, and evaluates to false otherwise.  The expression a < b evaluates to true when the value of a is less than the value of b, and evaluates to false otherwise.  The expression a >= b evaluates to true when the value of a is greater than or equal to the value of b, and evaluates to false otherwise.  The expression a <= b evaluates to true when the value of a is less than or equal to the value of b, and evaluates to false otherwise.     2.2.B.3  The result of a relational expression can be determined by substituting the current values, including variable values, and evaluating whether the comparison is true or false.     Logical Operators   2.2.C.1  Apps and programs often combine multiple conditions to make decisions that feel predictable and personalized. Logical operators allow programs to answer questions such as whether all conditions are true, whether at least one condition is true, or whether a condition is not true. Logical operators can also support user-centered rules, such as allowing an action only when multiple conditions are met, like when all required fields are complete and the user agrees to terms.    2.2.C.2  Logical operators combine or modify Boolean values and produce a Boolean result.   The expression condition1 and condition2 evaluates to true when both conditions are true, and evaluates to false otherwise.  The expression condition1 or condition2 evaluates to true when at least one condition is true, and evaluates to false when both conditions are false.  The expression not condition evaluates to true when the condition is false, and evaluates to false when the condition is true.     2.2.C.3  The result of a logical expression can be determined by evaluating each condition and then applying not, and, and or to determine whether the overall expression is true or false. Logical expressions can include multiple conditions. Parentheses can be used to group conditions and make the intended order of evaluation clear when combining not, and, and or.    "
+},
+{
+  "id": "topic-2-2-boolean-expressions-4-2",
+  "level": "2",
+  "url": "topic-2-2-boolean-expressions.html#topic-2-2-boolean-expressions-4-2",
+  "type": "Learning Objective",
+  "number": "2.2.1",
+  "title": "2.2.A.",
+  "body": " 2.2.A  Identify the use of Boolean expressions to control an app's behavior as you interact with the app.  "
+},
+{
+  "id": "topic-2-2-boolean-expressions-4-3",
+  "level": "2",
+  "url": "topic-2-2-boolean-expressions.html#topic-2-2-boolean-expressions-4-3",
+  "type": "Learning Objective",
+  "number": "2.2.2",
+  "title": "2.2.B.",
+  "body": " 2.2.B  Develop code using relational operators, and determine the result of relational expressions.  "
+},
+{
+  "id": "topic-2-2-boolean-expressions-4-4",
+  "level": "2",
+  "url": "topic-2-2-boolean-expressions.html#topic-2-2-boolean-expressions-4-4",
+  "type": "Learning Objective",
+  "number": "2.2.3",
+  "title": "2.2.C.",
+  "body": " 2.2.C  Develop code using logical operators, and determine the result of logical expressions.  "
+},
+{
+  "id": "topic-2-2-boolean-expressions-5-2",
+  "level": "2",
+  "url": "topic-2-2-boolean-expressions.html#topic-2-2-boolean-expressions-5-2",
+  "type": "Essential Knowledge",
+  "number": "2.2.4",
+  "title": "2.2.A.1.",
+  "body": " 2.2.A.1  Apps often check conditions that have only two outcomes, such as whether a user is logged in, whether a checkbox is selected, or whether a password is correct.  "
+},
+{
+  "id": "topic-2-2-boolean-expressions-5-3",
+  "level": "2",
+  "url": "topic-2-2-boolean-expressions.html#topic-2-2-boolean-expressions-5-3",
+  "type": "Essential Knowledge",
+  "number": "2.2.5",
+  "title": "2.2.A.2.",
+  "body": " 2.2.A.2  Programs make decisions by evaluating conditions that result in a Boolean value. A Boolean value has two possible values: true or false.  "
+},
+{
+  "id": "topic-2-2-boolean-expressions-5-4",
+  "level": "2",
+  "url": "topic-2-2-boolean-expressions.html#topic-2-2-boolean-expressions-5-4",
+  "type": "Essential Knowledge",
+  "number": "2.2.6",
+  "title": "2.2.A.3.",
+  "body": " 2.2.A.3  Apps can use Boolean expressions to decide what happens next, such as showing a message, allowing access, or changing what a user sees. A Boolean expression is an expression that evaluates to either true or false.  "
+},
+{
+  "id": "topic-2-2-boolean-expressions-5-5",
+  "level": "2",
+  "url": "topic-2-2-boolean-expressions.html#topic-2-2-boolean-expressions-5-5",
+  "type": "Essential Knowledge",
+  "number": "2.2.7",
+  "title": "2.2.A.4.",
+  "body": " 2.2.A.4  Many Boolean expressions use comparisons, such as checking whether a score is high enough or whether an input meets a requirement like password length.  "
+},
+{
+  "id": "topic-2-2-boolean-expressions-6-2",
+  "level": "2",
+  "url": "topic-2-2-boolean-expressions.html#topic-2-2-boolean-expressions-6-2",
+  "type": "Essential Knowledge",
+  "number": "2.2.8",
+  "title": "2.2.B.1.",
+  "body": " 2.2.B.1  Apps and programs often compare values to enforce rules, personalize experiences, and prevent mistakes. Relational operators allow programs to evaluate questions such as whether a value is too low or whether one value matches another.  "
+},
+{
+  "id": "topic-2-2-boolean-expressions-6-3",
+  "level": "2",
+  "url": "topic-2-2-boolean-expressions.html#topic-2-2-boolean-expressions-6-3",
+  "type": "Essential Knowledge",
+  "number": "2.2.9",
+  "title": "2.2.B.2.",
+  "body": " 2.2.B.2  Relational operators compare two values and produce a Boolean result.   The expression a == b evaluates to true when the values of a and b are equal, and evaluates to false otherwise.  The expression a > b evaluates to true when the value of a is greater than the value of b, and evaluates to false otherwise.  The expression a < b evaluates to true when the value of a is less than the value of b, and evaluates to false otherwise.  The expression a >= b evaluates to true when the value of a is greater than or equal to the value of b, and evaluates to false otherwise.  The expression a <= b evaluates to true when the value of a is less than or equal to the value of b, and evaluates to false otherwise.   "
+},
+{
+  "id": "topic-2-2-boolean-expressions-6-4",
+  "level": "2",
+  "url": "topic-2-2-boolean-expressions.html#topic-2-2-boolean-expressions-6-4",
+  "type": "Essential Knowledge",
+  "number": "2.2.10",
+  "title": "2.2.B.3.",
+  "body": " 2.2.B.3  The result of a relational expression can be determined by substituting the current values, including variable values, and evaluating whether the comparison is true or false.  "
+},
+{
+  "id": "topic-2-2-boolean-expressions-7-2",
+  "level": "2",
+  "url": "topic-2-2-boolean-expressions.html#topic-2-2-boolean-expressions-7-2",
+  "type": "Essential Knowledge",
+  "number": "2.2.11",
+  "title": "2.2.C.1.",
+  "body": " 2.2.C.1  Apps and programs often combine multiple conditions to make decisions that feel predictable and personalized. Logical operators allow programs to answer questions such as whether all conditions are true, whether at least one condition is true, or whether a condition is not true. Logical operators can also support user-centered rules, such as allowing an action only when multiple conditions are met, like when all required fields are complete and the user agrees to terms.  "
+},
+{
+  "id": "topic-2-2-boolean-expressions-7-3",
+  "level": "2",
+  "url": "topic-2-2-boolean-expressions.html#topic-2-2-boolean-expressions-7-3",
+  "type": "Essential Knowledge",
+  "number": "2.2.12",
+  "title": "2.2.C.2.",
+  "body": " 2.2.C.2  Logical operators combine or modify Boolean values and produce a Boolean result.   The expression condition1 and condition2 evaluates to true when both conditions are true, and evaluates to false otherwise.  The expression condition1 or condition2 evaluates to true when at least one condition is true, and evaluates to false when both conditions are false.  The expression not condition evaluates to true when the condition is false, and evaluates to false when the condition is true.   "
+},
+{
+  "id": "topic-2-2-boolean-expressions-7-4",
+  "level": "2",
+  "url": "topic-2-2-boolean-expressions.html#topic-2-2-boolean-expressions-7-4",
+  "type": "Essential Knowledge",
+  "number": "2.2.13",
+  "title": "2.2.C.3.",
+  "body": " 2.2.C.3  The result of a logical expression can be determined by evaluating each condition and then applying not, and, and or to determine whether the overall expression is true or false. Logical expressions can include multiple conditions. Parentheses can be used to group conditions and make the intended order of evaluation clear when combining not, and, and or.  "
+},
+{
+  "id": "topic-2-3-selection",
+  "level": "1",
+  "url": "topic-2-3-selection.html",
+  "type": "Section",
+  "number": "2.3",
+  "title": "Selection",
+  "body": "  Selection       Learning Objectives   2.3.A  Represent an algorithm that includes selection using written steps or a flowchart.    2.3.B  Develop code using conditional statements, and determine the result of these statements.    2.3.C  Develop code using nested conditional statements, and determine the result of these statements.     Selection in Algorithms   2.3.A.1  Some tasks require making a choice based on a condition. Selection allows an algorithm to choose different steps depending on whether a condition is true or false.    2.3.A.2  Algorithms that use selection can be represented in ways people can read and follow, such as written steps or flowcharts.    2.3.A.3  Selection changes the path an algorithm follows. Different conditions can lead to different results because the algorithm may perform different steps based on the choice made.     Conditional Statements   2.3.B.1  Selection allows apps to respond differently depending on the information they receive. As a result, apps can handle user choices and provide helpful output instead of doing the same thing every time.    2.3.B.2  Programmers implement selection in code using conditional statements. Programmers use conditional statements to check a condition using a Boolean expression and run different code depending on the result.    2.3.B.3  An if-statement is a type of conditional statement used when a program needs to check a condition and take an action only when that condition is true. When the following code runs, the statements in block of statements are executed if condition evaluates to true. Otherwise, block of statements is skipped and the program continues.  if (condition) { <block of statements> }    2.3.B.4  An if-else statement is a type of conditional statement used when a program needs to choose between two different actions based on whether a condition is true or false. When the following code runs, the statements in the first block of statements execute if the condition evaluates to true. Otherwise, the statements in the second block of statements execute.  if (condition) { <first block of statements> } else { <second block of statements> }    2.3.B.5  Choosing between an if and an if-else statement depends on whether the program should act only when a condition is true or should take one of two actions.    2.3.B.6  The result of conditional statements can be determined by evaluating the conditions and tracing which statements execute, including any changes to variable values or output.    2.3.B.7  When multiple if-statements are written sequentially, each one is evaluated independently, so more than one block may execute if more than one condition is true.     Nested Conditional Statements   2.3.C.1  Apps often make layered decisions by checking a basic condition first and then checking a more specific condition. For example, an app might first check whether a user is logged in and then check whether the user has permission to access a feature. Nested conditionals allow programs to handle these multi-step checks.    2.3.C.2  A nested conditional is a conditional statement inside the block of another conditional statement. The inner conditional is evaluated only when the outer condition evaluates to true and execution reaches the inner conditional.    2.3.C.3  Nested conditional statements can be traced by evaluating each conditional statement's Boolean expression in order, following the branch of code that runs, and keeping track of any updates to variable values or output that is produced.    "
+},
+{
+  "id": "topic-2-3-selection-4-2",
+  "level": "2",
+  "url": "topic-2-3-selection.html#topic-2-3-selection-4-2",
+  "type": "Learning Objective",
+  "number": "2.3.1",
+  "title": "2.3.A.",
+  "body": " 2.3.A  Represent an algorithm that includes selection using written steps or a flowchart.  "
+},
+{
+  "id": "topic-2-3-selection-4-3",
+  "level": "2",
+  "url": "topic-2-3-selection.html#topic-2-3-selection-4-3",
+  "type": "Learning Objective",
+  "number": "2.3.2",
+  "title": "2.3.B.",
+  "body": " 2.3.B  Develop code using conditional statements, and determine the result of these statements.  "
+},
+{
+  "id": "topic-2-3-selection-4-4",
+  "level": "2",
+  "url": "topic-2-3-selection.html#topic-2-3-selection-4-4",
+  "type": "Learning Objective",
+  "number": "2.3.3",
+  "title": "2.3.C.",
+  "body": " 2.3.C  Develop code using nested conditional statements, and determine the result of these statements.  "
+},
+{
+  "id": "topic-2-3-selection-5-2",
+  "level": "2",
+  "url": "topic-2-3-selection.html#topic-2-3-selection-5-2",
+  "type": "Essential Knowledge",
+  "number": "2.3.4",
+  "title": "2.3.A.1.",
+  "body": " 2.3.A.1  Some tasks require making a choice based on a condition. Selection allows an algorithm to choose different steps depending on whether a condition is true or false.  "
+},
+{
+  "id": "topic-2-3-selection-5-3",
+  "level": "2",
+  "url": "topic-2-3-selection.html#topic-2-3-selection-5-3",
+  "type": "Essential Knowledge",
+  "number": "2.3.5",
+  "title": "2.3.A.2.",
+  "body": " 2.3.A.2  Algorithms that use selection can be represented in ways people can read and follow, such as written steps or flowcharts.  "
+},
+{
+  "id": "topic-2-3-selection-5-4",
+  "level": "2",
+  "url": "topic-2-3-selection.html#topic-2-3-selection-5-4",
+  "type": "Essential Knowledge",
+  "number": "2.3.6",
+  "title": "2.3.A.3.",
+  "body": " 2.3.A.3  Selection changes the path an algorithm follows. Different conditions can lead to different results because the algorithm may perform different steps based on the choice made.  "
+},
+{
+  "id": "topic-2-3-selection-6-2",
+  "level": "2",
+  "url": "topic-2-3-selection.html#topic-2-3-selection-6-2",
+  "type": "Essential Knowledge",
+  "number": "2.3.7",
+  "title": "2.3.B.1.",
+  "body": " 2.3.B.1  Selection allows apps to respond differently depending on the information they receive. As a result, apps can handle user choices and provide helpful output instead of doing the same thing every time.  "
+},
+{
+  "id": "topic-2-3-selection-6-3",
+  "level": "2",
+  "url": "topic-2-3-selection.html#topic-2-3-selection-6-3",
+  "type": "Essential Knowledge",
+  "number": "2.3.8",
+  "title": "2.3.B.2.",
+  "body": " 2.3.B.2  Programmers implement selection in code using conditional statements. Programmers use conditional statements to check a condition using a Boolean expression and run different code depending on the result.  "
+},
+{
+  "id": "topic-2-3-selection-6-4",
+  "level": "2",
+  "url": "topic-2-3-selection.html#topic-2-3-selection-6-4",
+  "type": "Essential Knowledge",
+  "number": "2.3.9",
+  "title": "2.3.B.3.",
+  "body": " 2.3.B.3  An if-statement is a type of conditional statement used when a program needs to check a condition and take an action only when that condition is true. When the following code runs, the statements in block of statements are executed if condition evaluates to true. Otherwise, block of statements is skipped and the program continues.  if (condition) { <block of statements> }  "
+},
+{
+  "id": "topic-2-3-selection-6-5",
+  "level": "2",
+  "url": "topic-2-3-selection.html#topic-2-3-selection-6-5",
+  "type": "Essential Knowledge",
+  "number": "2.3.10",
+  "title": "2.3.B.4.",
+  "body": " 2.3.B.4  An if-else statement is a type of conditional statement used when a program needs to choose between two different actions based on whether a condition is true or false. When the following code runs, the statements in the first block of statements execute if the condition evaluates to true. Otherwise, the statements in the second block of statements execute.  if (condition) { <first block of statements> } else { <second block of statements> }  "
+},
+{
+  "id": "topic-2-3-selection-6-6",
+  "level": "2",
+  "url": "topic-2-3-selection.html#topic-2-3-selection-6-6",
+  "type": "Essential Knowledge",
+  "number": "2.3.11",
+  "title": "2.3.B.5.",
+  "body": " 2.3.B.5  Choosing between an if and an if-else statement depends on whether the program should act only when a condition is true or should take one of two actions.  "
+},
+{
+  "id": "topic-2-3-selection-6-7",
+  "level": "2",
+  "url": "topic-2-3-selection.html#topic-2-3-selection-6-7",
+  "type": "Essential Knowledge",
+  "number": "2.3.12",
+  "title": "2.3.B.6.",
+  "body": " 2.3.B.6  The result of conditional statements can be determined by evaluating the conditions and tracing which statements execute, including any changes to variable values or output.  "
+},
+{
+  "id": "topic-2-3-selection-6-8",
+  "level": "2",
+  "url": "topic-2-3-selection.html#topic-2-3-selection-6-8",
+  "type": "Essential Knowledge",
+  "number": "2.3.13",
+  "title": "2.3.B.7.",
+  "body": " 2.3.B.7  When multiple if-statements are written sequentially, each one is evaluated independently, so more than one block may execute if more than one condition is true.  "
+},
+{
+  "id": "topic-2-3-selection-7-2",
+  "level": "2",
+  "url": "topic-2-3-selection.html#topic-2-3-selection-7-2",
+  "type": "Essential Knowledge",
+  "number": "2.3.14",
+  "title": "2.3.C.1.",
+  "body": " 2.3.C.1  Apps often make layered decisions by checking a basic condition first and then checking a more specific condition. For example, an app might first check whether a user is logged in and then check whether the user has permission to access a feature. Nested conditionals allow programs to handle these multi-step checks.  "
+},
+{
+  "id": "topic-2-3-selection-7-3",
+  "level": "2",
+  "url": "topic-2-3-selection.html#topic-2-3-selection-7-3",
+  "type": "Essential Knowledge",
+  "number": "2.3.15",
+  "title": "2.3.C.2.",
+  "body": " 2.3.C.2  A nested conditional is a conditional statement inside the block of another conditional statement. The inner conditional is evaluated only when the outer condition evaluates to true and execution reaches the inner conditional.  "
+},
+{
+  "id": "topic-2-3-selection-7-4",
+  "level": "2",
+  "url": "topic-2-3-selection.html#topic-2-3-selection-7-4",
+  "type": "Essential Knowledge",
+  "number": "2.3.16",
+  "title": "2.3.C.3.",
+  "body": " 2.3.C.3  Nested conditional statements can be traced by evaluating each conditional statement's Boolean expression in order, following the branch of code that runs, and keeping track of any updates to variable values or output that is produced.  "
+},
+{
+  "id": "topic-2-4-iteration",
+  "level": "1",
+  "url": "topic-2-4-iteration.html",
+  "type": "Section",
+  "number": "2.4",
+  "title": "Iteration",
+  "body": "  Iteration       Learning Objectives   2.4.A  Represent an algorithm that includes iteration using written steps or a flowchart.    2.4.B  Develop code using iteration, and determine the result of iteration statements.     Iteration in Algorithms   2.4.A.1  Some tasks require repeating steps multiple times, such as continuing until a goal is reached or repeating for each item in a collection of items. Iteration allows an algorithm to repeat a sequence of steps.    2.4.A.2  Algorithms that use iteration can be represented in ways people can read and follow, such as written steps or flowcharts.    2.4.A.3  When representing iteration, clearly state the repeated steps and the condition that determines whether repetition continues or ends.    2.4.A.4  Iteration allows an algorithm to solve problems, such as counting items or searching until a match is found, by repeating steps. The outcome depends on what happens during each repetition and on the stopping condition.     Loop Statements   2.4.B.1  Iteration allows programs to perform repeated actions without writing the same statements multiple times. Programs can repeat steps until a condition is met, continue updating while something is happening, or repeat actions across many items so the user does not have to do each step manually.    2.4.B.2  Programs use loops to perform iteration. Loop statements change the flow of a program by repeating a block of statements. A loop may run zero or more times depending on its condition or count.    2.4.B.3  A while loop is used when a program needs to repeat a set of statements as long as a condition remains true. When the following code runs, the statements in block of statements repeat while condition evaluates to true. When condition evaluates to false, the loop stops and the program continues.  while (condition) { <block of statements> }    2.4.B.4  In a while loop, the condition is checked before the loop body runs. If the condition evaluates to false initially, the loop body is not executed.    2.4.B.5  In a while loop, an infinite loop occurs when the condition never becomes false, so the loop never stops. Infinite loops can be avoided by updating values that affect the condition or adding a stopping condition.    2.4.B.6  A for loop is used when a program needs to repeat a set of statements a specific number of times. When the following code runs, the variable j is assigned the value of each integer in the range 0 to n - 1 sequentially. The code in block of statements is executed n times, once for each assignment of j.  for j in range(n) { <block of statements> }    2.4.B.7  A for loop is often used when the number of repetitions is known before the loop starts running, such as repeating a block a specific number of times or iterating through a specific range. A while loop is often used when the number of repetitions cannot be determined before the loop starts running and the loop should continue as long as a condition remains true.    2.4.B.8  The result of iteration statements can be determined by tracing the loop step by step, keeping track of how many times the loop runs and how variable values and output change each time.    "
+},
+{
+  "id": "topic-2-4-iteration-4-2",
+  "level": "2",
+  "url": "topic-2-4-iteration.html#topic-2-4-iteration-4-2",
+  "type": "Learning Objective",
+  "number": "2.4.1",
+  "title": "2.4.A.",
+  "body": " 2.4.A  Represent an algorithm that includes iteration using written steps or a flowchart.  "
+},
+{
+  "id": "topic-2-4-iteration-4-3",
+  "level": "2",
+  "url": "topic-2-4-iteration.html#topic-2-4-iteration-4-3",
+  "type": "Learning Objective",
+  "number": "2.4.2",
+  "title": "2.4.B.",
+  "body": " 2.4.B  Develop code using iteration, and determine the result of iteration statements.  "
+},
+{
+  "id": "topic-2-4-iteration-5-2",
+  "level": "2",
+  "url": "topic-2-4-iteration.html#topic-2-4-iteration-5-2",
+  "type": "Essential Knowledge",
+  "number": "2.4.3",
+  "title": "2.4.A.1.",
+  "body": " 2.4.A.1  Some tasks require repeating steps multiple times, such as continuing until a goal is reached or repeating for each item in a collection of items. Iteration allows an algorithm to repeat a sequence of steps.  "
+},
+{
+  "id": "topic-2-4-iteration-5-3",
+  "level": "2",
+  "url": "topic-2-4-iteration.html#topic-2-4-iteration-5-3",
+  "type": "Essential Knowledge",
+  "number": "2.4.4",
+  "title": "2.4.A.2.",
+  "body": " 2.4.A.2  Algorithms that use iteration can be represented in ways people can read and follow, such as written steps or flowcharts.  "
+},
+{
+  "id": "topic-2-4-iteration-5-4",
+  "level": "2",
+  "url": "topic-2-4-iteration.html#topic-2-4-iteration-5-4",
+  "type": "Essential Knowledge",
+  "number": "2.4.5",
+  "title": "2.4.A.3.",
+  "body": " 2.4.A.3  When representing iteration, clearly state the repeated steps and the condition that determines whether repetition continues or ends.  "
+},
+{
+  "id": "topic-2-4-iteration-5-5",
+  "level": "2",
+  "url": "topic-2-4-iteration.html#topic-2-4-iteration-5-5",
+  "type": "Essential Knowledge",
+  "number": "2.4.6",
+  "title": "2.4.A.4.",
+  "body": " 2.4.A.4  Iteration allows an algorithm to solve problems, such as counting items or searching until a match is found, by repeating steps. The outcome depends on what happens during each repetition and on the stopping condition.  "
+},
+{
+  "id": "topic-2-4-iteration-6-2",
+  "level": "2",
+  "url": "topic-2-4-iteration.html#topic-2-4-iteration-6-2",
+  "type": "Essential Knowledge",
+  "number": "2.4.7",
+  "title": "2.4.B.1.",
+  "body": " 2.4.B.1  Iteration allows programs to perform repeated actions without writing the same statements multiple times. Programs can repeat steps until a condition is met, continue updating while something is happening, or repeat actions across many items so the user does not have to do each step manually.  "
+},
+{
+  "id": "topic-2-4-iteration-6-3",
+  "level": "2",
+  "url": "topic-2-4-iteration.html#topic-2-4-iteration-6-3",
+  "type": "Essential Knowledge",
+  "number": "2.4.8",
+  "title": "2.4.B.2.",
+  "body": " 2.4.B.2  Programs use loops to perform iteration. Loop statements change the flow of a program by repeating a block of statements. A loop may run zero or more times depending on its condition or count.  "
+},
+{
+  "id": "topic-2-4-iteration-6-4",
+  "level": "2",
+  "url": "topic-2-4-iteration.html#topic-2-4-iteration-6-4",
+  "type": "Essential Knowledge",
+  "number": "2.4.9",
+  "title": "2.4.B.3.",
+  "body": " 2.4.B.3  A while loop is used when a program needs to repeat a set of statements as long as a condition remains true. When the following code runs, the statements in block of statements repeat while condition evaluates to true. When condition evaluates to false, the loop stops and the program continues.  while (condition) { <block of statements> }  "
+},
+{
+  "id": "topic-2-4-iteration-6-5",
+  "level": "2",
+  "url": "topic-2-4-iteration.html#topic-2-4-iteration-6-5",
+  "type": "Essential Knowledge",
+  "number": "2.4.10",
+  "title": "2.4.B.4.",
+  "body": " 2.4.B.4  In a while loop, the condition is checked before the loop body runs. If the condition evaluates to false initially, the loop body is not executed.  "
+},
+{
+  "id": "topic-2-4-iteration-6-6",
+  "level": "2",
+  "url": "topic-2-4-iteration.html#topic-2-4-iteration-6-6",
+  "type": "Essential Knowledge",
+  "number": "2.4.11",
+  "title": "2.4.B.5.",
+  "body": " 2.4.B.5  In a while loop, an infinite loop occurs when the condition never becomes false, so the loop never stops. Infinite loops can be avoided by updating values that affect the condition or adding a stopping condition.  "
+},
+{
+  "id": "topic-2-4-iteration-6-7",
+  "level": "2",
+  "url": "topic-2-4-iteration.html#topic-2-4-iteration-6-7",
+  "type": "Essential Knowledge",
+  "number": "2.4.12",
+  "title": "2.4.B.6.",
+  "body": " 2.4.B.6  A for loop is used when a program needs to repeat a set of statements a specific number of times. When the following code runs, the variable j is assigned the value of each integer in the range 0 to n - 1 sequentially. The code in block of statements is executed n times, once for each assignment of j.  for j in range(n) { <block of statements> }  "
+},
+{
+  "id": "topic-2-4-iteration-6-8",
+  "level": "2",
+  "url": "topic-2-4-iteration.html#topic-2-4-iteration-6-8",
+  "type": "Essential Knowledge",
+  "number": "2.4.13",
+  "title": "2.4.B.7.",
+  "body": " 2.4.B.7  A for loop is often used when the number of repetitions is known before the loop starts running, such as repeating a block a specific number of times or iterating through a specific range. A while loop is often used when the number of repetitions cannot be determined before the loop starts running and the loop should continue as long as a condition remains true.  "
+},
+{
+  "id": "topic-2-4-iteration-6-9",
+  "level": "2",
+  "url": "topic-2-4-iteration.html#topic-2-4-iteration-6-9",
+  "type": "Essential Knowledge",
+  "number": "2.4.14",
+  "title": "2.4.B.8.",
+  "body": " 2.4.B.8  The result of iteration statements can be determined by tracing the loop step by step, keeping track of how many times the loop runs and how variable values and output change each time.  "
+},
+{
+  "id": "topic-2-5-algorithm-development",
+  "level": "1",
+  "url": "topic-2-5-algorithm-development.html",
+  "type": "Section",
+  "number": "2.5",
+  "title": "Algorithm Development",
+  "body": "  Algorithm Development       Learning Objectives   2.5.A  Develop algorithms by building new solutions or by reusing and combining existing solutions.    2.5.B  Compare multiple algorithms to determine if they produce the same side effect or output.     Developing Algorithms   2.5.A.1  Algorithms use sequencing, selection, and iteration to organize steps, choose actions based on conditions, and repeat actions.    2.5.A.2  Programmers can develop an algorithm from scratch, or they can reuse, combine, or adapt existing algorithms to solve a problem.    2.5.A.3  Programmers often build new algorithms by reusing parts of known algorithms and adjusting them to fit a new problem, such as handling different inputs or producing a different output. They test the updated algorithm to confirm it meets its requirements.    2.5.A.4  Knowing common algorithms and patterns can make problem solving more efficient. Many algorithms reuse common patterns, such as:   finding the maximum or minimum value in a group of numbers  computing the sum or average of values  checking whether one integer is evenly divisible by another     2.5.A.5  Using well-understood algorithms as building blocks can reduce development time and support testing, debugging, and maintenance.    2.5.A.6  Programmers select, combine, and adapt algorithms to solve problems and meet user goals, especially as feedback or conditions change. For example, an app might combine algorithms to recommend content, plan a driving route, or calculate a total price with discounts and taxes.     Comparing Algorithms   2.5.B.1  There is often more than one way to solve a task. Different algorithms can use different steps, yet still produce the same output for the same inputs. By comparing algorithms, programmers can decide which approach is clearer, easier to maintain, or better suited to the situation.    2.5.B.2  When comparing algorithms, programmers consider both the output and any side effects.    2.5.B.3  A side effect occurs when an algorithm changes the program's state while it runs. For example, an algorithm may update a variable's value, add or remove an item from stored data, or change what the user sees on the screen.    2.5.B.4  Side effects can impact the user experience. An unintended side effect, such as an incorrect variable update, an unexpected screen change, or an inconsistent program state, can confuse or frustrate users.    2.5.B.5  Algorithms that look similar may behave differently with certain inputs or may produce different side effects. To determine whether two algorithms are equivalent, programmers compare their outputs and side effects using the same inputs, often by tracing the steps and tracking changes to variables and displayed output.    2.5.B.6  Some conditional statements can be rewritten as equivalent Boolean expressions, and some Boolean expressions can be rewritten as equivalent conditional statements, without changing the program's behavior.    2.5.B.7  Loops can often be written in different ways and still be equivalent. A for loop that repeats a fixed number of times can often be rewritten as a while loop that uses a counter variable. When comparing a for and while loop, programmers check that they repeat the same number of times, update variables the same way, and produce the same output.    "
+},
+{
+  "id": "topic-2-5-algorithm-development-4-2",
+  "level": "2",
+  "url": "topic-2-5-algorithm-development.html#topic-2-5-algorithm-development-4-2",
+  "type": "Learning Objective",
+  "number": "2.5.1",
+  "title": "2.5.A.",
+  "body": " 2.5.A  Develop algorithms by building new solutions or by reusing and combining existing solutions.  "
+},
+{
+  "id": "topic-2-5-algorithm-development-4-3",
+  "level": "2",
+  "url": "topic-2-5-algorithm-development.html#topic-2-5-algorithm-development-4-3",
+  "type": "Learning Objective",
+  "number": "2.5.2",
+  "title": "2.5.B.",
+  "body": " 2.5.B  Compare multiple algorithms to determine if they produce the same side effect or output.  "
+},
+{
+  "id": "topic-2-5-algorithm-development-5-2",
+  "level": "2",
+  "url": "topic-2-5-algorithm-development.html#topic-2-5-algorithm-development-5-2",
+  "type": "Essential Knowledge",
+  "number": "2.5.3",
+  "title": "2.5.A.1.",
+  "body": " 2.5.A.1  Algorithms use sequencing, selection, and iteration to organize steps, choose actions based on conditions, and repeat actions.  "
+},
+{
+  "id": "topic-2-5-algorithm-development-5-3",
+  "level": "2",
+  "url": "topic-2-5-algorithm-development.html#topic-2-5-algorithm-development-5-3",
+  "type": "Essential Knowledge",
+  "number": "2.5.4",
+  "title": "2.5.A.2.",
+  "body": " 2.5.A.2  Programmers can develop an algorithm from scratch, or they can reuse, combine, or adapt existing algorithms to solve a problem.  "
+},
+{
+  "id": "topic-2-5-algorithm-development-5-4",
+  "level": "2",
+  "url": "topic-2-5-algorithm-development.html#topic-2-5-algorithm-development-5-4",
+  "type": "Essential Knowledge",
+  "number": "2.5.5",
+  "title": "2.5.A.3.",
+  "body": " 2.5.A.3  Programmers often build new algorithms by reusing parts of known algorithms and adjusting them to fit a new problem, such as handling different inputs or producing a different output. They test the updated algorithm to confirm it meets its requirements.  "
+},
+{
+  "id": "topic-2-5-algorithm-development-5-5",
+  "level": "2",
+  "url": "topic-2-5-algorithm-development.html#topic-2-5-algorithm-development-5-5",
+  "type": "Essential Knowledge",
+  "number": "2.5.6",
+  "title": "2.5.A.4.",
+  "body": " 2.5.A.4  Knowing common algorithms and patterns can make problem solving more efficient. Many algorithms reuse common patterns, such as:   finding the maximum or minimum value in a group of numbers  computing the sum or average of values  checking whether one integer is evenly divisible by another   "
+},
+{
+  "id": "topic-2-5-algorithm-development-5-6",
+  "level": "2",
+  "url": "topic-2-5-algorithm-development.html#topic-2-5-algorithm-development-5-6",
+  "type": "Essential Knowledge",
+  "number": "2.5.7",
+  "title": "2.5.A.5.",
+  "body": " 2.5.A.5  Using well-understood algorithms as building blocks can reduce development time and support testing, debugging, and maintenance.  "
+},
+{
+  "id": "topic-2-5-algorithm-development-5-7",
+  "level": "2",
+  "url": "topic-2-5-algorithm-development.html#topic-2-5-algorithm-development-5-7",
+  "type": "Essential Knowledge",
+  "number": "2.5.8",
+  "title": "2.5.A.6.",
+  "body": " 2.5.A.6  Programmers select, combine, and adapt algorithms to solve problems and meet user goals, especially as feedback or conditions change. For example, an app might combine algorithms to recommend content, plan a driving route, or calculate a total price with discounts and taxes.  "
+},
+{
+  "id": "topic-2-5-algorithm-development-6-2",
+  "level": "2",
+  "url": "topic-2-5-algorithm-development.html#topic-2-5-algorithm-development-6-2",
+  "type": "Essential Knowledge",
+  "number": "2.5.9",
+  "title": "2.5.B.1.",
+  "body": " 2.5.B.1  There is often more than one way to solve a task. Different algorithms can use different steps, yet still produce the same output for the same inputs. By comparing algorithms, programmers can decide which approach is clearer, easier to maintain, or better suited to the situation.  "
+},
+{
+  "id": "topic-2-5-algorithm-development-6-3",
+  "level": "2",
+  "url": "topic-2-5-algorithm-development.html#topic-2-5-algorithm-development-6-3",
+  "type": "Essential Knowledge",
+  "number": "2.5.10",
+  "title": "2.5.B.2.",
+  "body": " 2.5.B.2  When comparing algorithms, programmers consider both the output and any side effects.  "
+},
+{
+  "id": "topic-2-5-algorithm-development-6-4",
+  "level": "2",
+  "url": "topic-2-5-algorithm-development.html#topic-2-5-algorithm-development-6-4",
+  "type": "Essential Knowledge",
+  "number": "2.5.11",
+  "title": "2.5.B.3.",
+  "body": " 2.5.B.3  A side effect occurs when an algorithm changes the program's state while it runs. For example, an algorithm may update a variable's value, add or remove an item from stored data, or change what the user sees on the screen.  "
+},
+{
+  "id": "topic-2-5-algorithm-development-6-5",
+  "level": "2",
+  "url": "topic-2-5-algorithm-development.html#topic-2-5-algorithm-development-6-5",
+  "type": "Essential Knowledge",
+  "number": "2.5.12",
+  "title": "2.5.B.4.",
+  "body": " 2.5.B.4  Side effects can impact the user experience. An unintended side effect, such as an incorrect variable update, an unexpected screen change, or an inconsistent program state, can confuse or frustrate users.  "
+},
+{
+  "id": "topic-2-5-algorithm-development-6-6",
+  "level": "2",
+  "url": "topic-2-5-algorithm-development.html#topic-2-5-algorithm-development-6-6",
+  "type": "Essential Knowledge",
+  "number": "2.5.13",
+  "title": "2.5.B.5.",
+  "body": " 2.5.B.5  Algorithms that look similar may behave differently with certain inputs or may produce different side effects. To determine whether two algorithms are equivalent, programmers compare their outputs and side effects using the same inputs, often by tracing the steps and tracking changes to variables and displayed output.  "
+},
+{
+  "id": "topic-2-5-algorithm-development-6-7",
+  "level": "2",
+  "url": "topic-2-5-algorithm-development.html#topic-2-5-algorithm-development-6-7",
+  "type": "Essential Knowledge",
+  "number": "2.5.14",
+  "title": "2.5.B.6.",
+  "body": " 2.5.B.6  Some conditional statements can be rewritten as equivalent Boolean expressions, and some Boolean expressions can be rewritten as equivalent conditional statements, without changing the program's behavior.  "
+},
+{
+  "id": "topic-2-5-algorithm-development-6-8",
+  "level": "2",
+  "url": "topic-2-5-algorithm-development.html#topic-2-5-algorithm-development-6-8",
+  "type": "Essential Knowledge",
+  "number": "2.5.15",
+  "title": "2.5.B.7.",
+  "body": " 2.5.B.7  Loops can often be written in different ways and still be equivalent. A for loop that repeats a fixed number of times can often be rewritten as a while loop that uses a counter variable. When comparing a for and while loop, programmers check that they repeat the same number of times, update variables the same way, and produce the same output.  "
+},
+{
+  "id": "topic-2-6-errors",
+  "level": "1",
+  "url": "topic-2-6-errors.html",
+  "type": "Section",
+  "number": "2.6",
+  "title": "Errors",
+  "body": "  Errors       Learning Objectives   2.6.A  Correct errors in programs.    2.6.B  Develop code for test cases that can be used to check the correctness of an algorithm.     Correcting Errors   2.6.A.1  Errors are a normal part of programming. As programmers develop code, they repeatedly encounter errors, identify their cause, and revise the program to correct them.    2.6.A.2  Programmers often discover errors through user testing or feedback, such as when users receive confusing messages, see inconsistent results, or cannot complete a task. Programmers use observations of what the user did and what the app displayed to clarify what the behavior should be for the user. To fix the error, they try to reproduce it by following the same user actions and inputs, which helps confirm the cause and verify that the correction solves the real user problem.    2.6.A.3  Knowing common types of errors helps programmers diagnose problems more quickly and choose effective strategies to fix them when they occur.    2.6.A.4  A logic error occurs when the program runs but produces incorrect or unexpected behavior because the algorithm or reasoning is incorrect.    2.6.A.5  A syntax error occurs when the code breaks the rules of the programming language, preventing the program from running as written.    2.6.A.6  A runtime error occurs while a program is executing when it encounters a situation it cannot handle, such as dividing by zero. Runtime errors may cause a program to stop running unless the error is handled. Programming languages define the specific runtime errors they produce.    2.6.A.7  Programmers use error messages to identify and correct problems because they describe what went wrong and often point to where it occurred. They may include the type of error, such as syntax or runtime, the line or location in the code, and details about the operation or value that caused the problem. Programmers use error messages to decide what to check first, make a targeted change, and then rerun the program to confirm the error is resolved.    2.6.A.8  Programmers trace a program's execution to determine how variable values change and which statements execute. They may trace manually or use debugging tools that step through code and display current variable values. Tracing helps identify where a program's behavior differs from what was expected and is especially useful for finding logic errors. It can also be used to determine what conditions led to a runtime error.    2.6.A.9  Programmers can add output statements to temporarily display intermediate values or messages while a program runs, such as printing variable values at key points. This helps confirm which parts of the code are executing and whether variables and conditions have the expected values. By comparing the observed output to the expected output, programmers can narrow down where the program's behavior first begins to differ from what was expected and identify the source of an error.    2.6.A.10  AI tools can support programmers in interpreting error messages, explaining what a piece of code is doing, and suggesting possible causes and fixes for unexpected behavior. Programmers can describe the expected vs. actual output and share relevant code so the tool can point out likely logic mistakes or recommend ways of making the code easier to trace. AI suggestions should be verified by running the program, checking results against requirements, and using other debugging methods, since AI-generated explanations or fixes may be incomplete or incorrect.     Testing and Test Cases   2.6.B.1  In the development process, testing uses defined inputs to check whether an algorithm or program produces the expected outcomes. Programmers compare actual results to expected results and use what they learn to revise the algorithm or program. A test case consists of a specific input and the expected output or behavior that should result from that input. AI tools can help suggest test cases and predict expected results, but programmers are responsible for validating expected outcomes and using test results to confirm correctness.    2.6.B.2  Programmers often derive test cases from user stories and user testing by translating real user tasks into inputs and expected outcomes, including what the user should see at each step. This helps ensure the algorithm is correct in ways that matter to users.    2.6.B.3  An effective set of test cases includes inputs that produce different expected outputs or behaviors, including typical, boundary, and invalid cases. Boundary test cases use values at or near important limits, such as the minimum and maximum allowed inputs or decision thresholds in conditional expressions. Invalid test cases may use values just beyond the allowed range to check how the program handles likely user mistakes.    2.6.B.4  Some algorithms appear correct for common inputs but fail for other inputs, so programmers test multiple cases that cover different paths through the algorithm, such as different branches of a conditional or different numbers of loop repetitions. AI tools can help identify distinct execution paths and suggest test cases for each, but programmers should confirm that the suggested tests actually reach those paths.    2.6.B.5  Testing reflects real users: people mistype, submit blanks, use unexpected values, click repeatedly, or do steps out of order. Including these inputs as test cases helps ensure the app or program responds clearly and consistently, including giving useful feedback when input is invalid.    "
+},
+{
+  "id": "topic-2-6-errors-4-2",
+  "level": "2",
+  "url": "topic-2-6-errors.html#topic-2-6-errors-4-2",
+  "type": "Learning Objective",
+  "number": "2.6.1",
+  "title": "2.6.A.",
+  "body": " 2.6.A  Correct errors in programs.  "
+},
+{
+  "id": "topic-2-6-errors-4-3",
+  "level": "2",
+  "url": "topic-2-6-errors.html#topic-2-6-errors-4-3",
+  "type": "Learning Objective",
+  "number": "2.6.2",
+  "title": "2.6.B.",
+  "body": " 2.6.B  Develop code for test cases that can be used to check the correctness of an algorithm.  "
+},
+{
+  "id": "topic-2-6-errors-5-2",
+  "level": "2",
+  "url": "topic-2-6-errors.html#topic-2-6-errors-5-2",
+  "type": "Essential Knowledge",
+  "number": "2.6.3",
+  "title": "2.6.A.1.",
+  "body": " 2.6.A.1  Errors are a normal part of programming. As programmers develop code, they repeatedly encounter errors, identify their cause, and revise the program to correct them.  "
+},
+{
+  "id": "topic-2-6-errors-5-3",
+  "level": "2",
+  "url": "topic-2-6-errors.html#topic-2-6-errors-5-3",
+  "type": "Essential Knowledge",
+  "number": "2.6.4",
+  "title": "2.6.A.2.",
+  "body": " 2.6.A.2  Programmers often discover errors through user testing or feedback, such as when users receive confusing messages, see inconsistent results, or cannot complete a task. Programmers use observations of what the user did and what the app displayed to clarify what the behavior should be for the user. To fix the error, they try to reproduce it by following the same user actions and inputs, which helps confirm the cause and verify that the correction solves the real user problem.  "
+},
+{
+  "id": "topic-2-6-errors-5-4",
+  "level": "2",
+  "url": "topic-2-6-errors.html#topic-2-6-errors-5-4",
+  "type": "Essential Knowledge",
+  "number": "2.6.5",
+  "title": "2.6.A.3.",
+  "body": " 2.6.A.3  Knowing common types of errors helps programmers diagnose problems more quickly and choose effective strategies to fix them when they occur.  "
+},
+{
+  "id": "topic-2-6-errors-5-5",
+  "level": "2",
+  "url": "topic-2-6-errors.html#topic-2-6-errors-5-5",
+  "type": "Essential Knowledge",
+  "number": "2.6.6",
+  "title": "2.6.A.4.",
+  "body": " 2.6.A.4  A logic error occurs when the program runs but produces incorrect or unexpected behavior because the algorithm or reasoning is incorrect.  "
+},
+{
+  "id": "topic-2-6-errors-5-6",
+  "level": "2",
+  "url": "topic-2-6-errors.html#topic-2-6-errors-5-6",
+  "type": "Essential Knowledge",
+  "number": "2.6.7",
+  "title": "2.6.A.5.",
+  "body": " 2.6.A.5  A syntax error occurs when the code breaks the rules of the programming language, preventing the program from running as written.  "
+},
+{
+  "id": "topic-2-6-errors-5-7",
+  "level": "2",
+  "url": "topic-2-6-errors.html#topic-2-6-errors-5-7",
+  "type": "Essential Knowledge",
+  "number": "2.6.8",
+  "title": "2.6.A.6.",
+  "body": " 2.6.A.6  A runtime error occurs while a program is executing when it encounters a situation it cannot handle, such as dividing by zero. Runtime errors may cause a program to stop running unless the error is handled. Programming languages define the specific runtime errors they produce.  "
+},
+{
+  "id": "topic-2-6-errors-5-8",
+  "level": "2",
+  "url": "topic-2-6-errors.html#topic-2-6-errors-5-8",
+  "type": "Essential Knowledge",
+  "number": "2.6.9",
+  "title": "2.6.A.7.",
+  "body": " 2.6.A.7  Programmers use error messages to identify and correct problems because they describe what went wrong and often point to where it occurred. They may include the type of error, such as syntax or runtime, the line or location in the code, and details about the operation or value that caused the problem. Programmers use error messages to decide what to check first, make a targeted change, and then rerun the program to confirm the error is resolved.  "
+},
+{
+  "id": "topic-2-6-errors-5-9",
+  "level": "2",
+  "url": "topic-2-6-errors.html#topic-2-6-errors-5-9",
+  "type": "Essential Knowledge",
+  "number": "2.6.10",
+  "title": "2.6.A.8.",
+  "body": " 2.6.A.8  Programmers trace a program's execution to determine how variable values change and which statements execute. They may trace manually or use debugging tools that step through code and display current variable values. Tracing helps identify where a program's behavior differs from what was expected and is especially useful for finding logic errors. It can also be used to determine what conditions led to a runtime error.  "
+},
+{
+  "id": "topic-2-6-errors-5-10",
+  "level": "2",
+  "url": "topic-2-6-errors.html#topic-2-6-errors-5-10",
+  "type": "Essential Knowledge",
+  "number": "2.6.11",
+  "title": "2.6.A.9.",
+  "body": " 2.6.A.9  Programmers can add output statements to temporarily display intermediate values or messages while a program runs, such as printing variable values at key points. This helps confirm which parts of the code are executing and whether variables and conditions have the expected values. By comparing the observed output to the expected output, programmers can narrow down where the program's behavior first begins to differ from what was expected and identify the source of an error.  "
+},
+{
+  "id": "topic-2-6-errors-5-11",
+  "level": "2",
+  "url": "topic-2-6-errors.html#topic-2-6-errors-5-11",
+  "type": "Essential Knowledge",
+  "number": "2.6.12",
+  "title": "2.6.A.10.",
+  "body": " 2.6.A.10  AI tools can support programmers in interpreting error messages, explaining what a piece of code is doing, and suggesting possible causes and fixes for unexpected behavior. Programmers can describe the expected vs. actual output and share relevant code so the tool can point out likely logic mistakes or recommend ways of making the code easier to trace. AI suggestions should be verified by running the program, checking results against requirements, and using other debugging methods, since AI-generated explanations or fixes may be incomplete or incorrect.  "
+},
+{
+  "id": "topic-2-6-errors-6-2",
+  "level": "2",
+  "url": "topic-2-6-errors.html#topic-2-6-errors-6-2",
+  "type": "Essential Knowledge",
+  "number": "2.6.13",
+  "title": "2.6.B.1.",
+  "body": " 2.6.B.1  In the development process, testing uses defined inputs to check whether an algorithm or program produces the expected outcomes. Programmers compare actual results to expected results and use what they learn to revise the algorithm or program. A test case consists of a specific input and the expected output or behavior that should result from that input. AI tools can help suggest test cases and predict expected results, but programmers are responsible for validating expected outcomes and using test results to confirm correctness.  "
+},
+{
+  "id": "topic-2-6-errors-6-3",
+  "level": "2",
+  "url": "topic-2-6-errors.html#topic-2-6-errors-6-3",
+  "type": "Essential Knowledge",
+  "number": "2.6.14",
+  "title": "2.6.B.2.",
+  "body": " 2.6.B.2  Programmers often derive test cases from user stories and user testing by translating real user tasks into inputs and expected outcomes, including what the user should see at each step. This helps ensure the algorithm is correct in ways that matter to users.  "
+},
+{
+  "id": "topic-2-6-errors-6-4",
+  "level": "2",
+  "url": "topic-2-6-errors.html#topic-2-6-errors-6-4",
+  "type": "Essential Knowledge",
+  "number": "2.6.15",
+  "title": "2.6.B.3.",
+  "body": " 2.6.B.3  An effective set of test cases includes inputs that produce different expected outputs or behaviors, including typical, boundary, and invalid cases. Boundary test cases use values at or near important limits, such as the minimum and maximum allowed inputs or decision thresholds in conditional expressions. Invalid test cases may use values just beyond the allowed range to check how the program handles likely user mistakes.  "
+},
+{
+  "id": "topic-2-6-errors-6-5",
+  "level": "2",
+  "url": "topic-2-6-errors.html#topic-2-6-errors-6-5",
+  "type": "Essential Knowledge",
+  "number": "2.6.16",
+  "title": "2.6.B.4.",
+  "body": " 2.6.B.4  Some algorithms appear correct for common inputs but fail for other inputs, so programmers test multiple cases that cover different paths through the algorithm, such as different branches of a conditional or different numbers of loop repetitions. AI tools can help identify distinct execution paths and suggest test cases for each, but programmers should confirm that the suggested tests actually reach those paths.  "
+},
+{
+  "id": "topic-2-6-errors-6-6",
+  "level": "2",
+  "url": "topic-2-6-errors.html#topic-2-6-errors-6-6",
+  "type": "Essential Knowledge",
+  "number": "2.6.17",
+  "title": "2.6.B.5.",
+  "body": " 2.6.B.5  Testing reflects real users: people mistype, submit blanks, use unexpected values, click repeatedly, or do steps out of order. Including these inputs as test cases helps ensure the app or program responds clearly and consistently, including giving useful feedback when input is invalid.  "
 },
 {
   "id": "unit3",
