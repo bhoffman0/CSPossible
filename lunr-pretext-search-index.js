@@ -511,178 +511,268 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "1.3",
   "title": "Responsible AI and Human Decision-Making",
-  "body": "  Responsible AI and Human Decision-Making       Learning Objectives   1.3.A  Explain how human decisions shape the development, deployment, and maintenance of AI tools.    1.3.B  Evaluate the appropriate level of automation or augmentation for a task.     Human Decisions in AI   1.3.A.1  AI tools can affect everyday choices such as what people watch, buy, and learn. Understanding the human decisions behind AI helps users evaluate outputs critically and helps developers design and maintain tools that are safer, more accurate, and more fair.    1.3.A.2  Artificial intelligence (AI) refers to computer systems that use data and patterns to perform tasks that are often associated with human intelligence, producing outputs such as predictions, recommendations, decisions, or generated content.    1.3.A.3  In AI systems, a model is the part of the system used to produce outputs from inputs. Models may follow rules created by people or learn patterns from data.    1.3.A.4  Many modern AI models are created by training on examples. The quality and representativeness of the training data can affect how accurate or fair the model’s outputs are.    1.3.A.5  Generative AI is a type of AI that creates new content, such as text, images, music, or code, based on patterns it has learned from examples. Some generative AI tools are powered by large language models (LLMs), which generate text by predicting likely sequences of words based on patterns learned from large collections of text.    1.3.A.6  Humans decide what happens with an AI tool’s output, including when to trust it, what actions to take based on it, and when a human should review or make the final decision.    1.3.A.7  When AI tools are used to create or transform content, humans must consider what content may be used and how outputs may be shared, including following licenses and giving attribution when required.    1.3.A.8  AI tools can generate realistic images, audio, or video that may be mistaken for authentic media (deepfakes). Humans must make decisions about safeguards, such as disclosure, verification, and responsible sharing, to reduce misinformation and harm.    1.3.A.9  Model drift occurs when a model’s performance changes over time because the real-world data or conditions it encounters shift, potentially making the model less accurate. AI systems should be monitored by humans to detect model drift. When drift is detected, humans can update data, adjust the model, or retrain the system to reduce inaccurate or harmful outcomes.    1.3.A.10  Developers can increase transparency by clearly describing an AI tool’s purpose, how it was developed, trained, and evaluated, and its limitations and appropriate uses. This allows users to make informed choices.     Automation and Augmentation   1.3.B.1  Decisions about automation and augmentation affect everyday experiences, such as recommendations, autocorrect suggestions, and navigation directions. Understanding whether a system is acting automatically or supporting human decision-making helps users decide how much to rely on its output and when they should verify it, especially when errors, bias, or other limitations could affect the result.    1.3.B.2  Automation allows computers to carry out tasks with limited human involvement, often making work faster, more consistent, and more efficient. Automated systems can handle routine tasks and, in some cases, more complex ones. They may still produce inaccurate results when inputs are ambiguous, conditions change, or unusual cases are not handled well.    1.3.B.3  Accuracy is the degree to which an output or code solution matches defined criteria for correctness, such as a program’s requirements or known correct outputs. Accuracy can be evaluated by testing with defined inputs and comparing actual results to expected results.    1.3.B.4  Augmentation uses tools or systems to support human work while humans remain responsible for decisions and outcomes. In some cases, augmentation involves AI, such as in human-in-the-loop systems where AI outputs are reviewed by humans to improve accuracy and accountability.    1.3.B.5  The appropriateness of automation or augmentation depends on the context and the consequences of error. Although automation can be faster, more consistent, or easier to scale, it may be less appropriate in situations that are high-stakes, ambiguous, or require human judgment, empathy, or discretion. In those situations, augmentation may be preferred so that humans remain responsible for the final decision.    1.3.B.6  Evaluating the appropriate level of automation or augmentation requires weighing benefits such as speed or efficiency against risks such as bias, inaccuracy, privacy, or overreliance, including how thresholds affect outcomes. It also means considering social, environmental, and economic trade-offs such as impacts on people, resource and energy use, costs, labor, and access.    1.3.B.7  Evaluating automation or augmentation should consider how the choice affects user experience, including trust, transparency, and whether users can reasonably decline or reduce automation, such as choosing manual controls or requesting human review when needed.    "
+  "body": "  Responsible AI and Human Decision-Making    Artificial Intelligence (AI) is becoming a big part of our lives and changing the way we work and learn. AI is a branch of computer science with the goal of building smarter machines to do tasks that typically require human intelligence. Watch the following video to learn more about the impacts of AI on society. In this lesson, we will learn about the importance of responsible AI use and human decision-making.     AI and Data   1.3.A.2   Artificial intelligence (AI) refers to computer systems that use data and patterns to perform tasks that are often associated with human intelligence, producing outputs such as predictions, recommendations, decisions, or generated content.   Try Google Quick Draw . The Quick Draw AI is trained on millions of drawings from people around the world to recognize and predict what you are drawing. Take a look at the data it uses. The following video introduces Quick Draw.     Based on how Google Quick Draw works, which best explains why it counts as an example of artificial intelligence?      It uses a database of pre-made drawings that it displays back to the user.    No. Quick Draw does not simply retrieve and display stored drawings. It analyzes the user's sketch and predicts what it represents.      It follows a fixed set of rules written by a programmer for every possible object.    No. AI systems like Quick Draw learn patterns from data rather than relying on explicit rules for every possible drawing.      It applies patterns learned from millions of drawings to predict what a new, unseen drawing represents.    Correct! Quick Draw is trained on a large dataset of drawings and uses the patterns it learned to make predictions about new sketches.      It randomly guesses an object name until the user confirms the correct one.    No. Quick Draw makes informed predictions based on patterns learned from its training data, not random guesses.        Suppose the Quick Draw training data contains thousands of drawings of cats but only a few drawings of armadillos. Which outcome is most likely?      The AI may recognize armadillos more accurately than cats.    No. With far fewer examples of armadillos, the AI is less likely to recognize them accurately.      The AI may recognize cats more accurately because it has learned from more examples.    Correct! AI systems generally perform better on categories that have more representative training data because they have learned more patterns from those examples.      The AI may recognize both equally well.    No. The amount and quality of training data can affect how accurately an AI recognizes different categories.      The AI may not recognize either animal.    No. The AI will still make a prediction, although it may be less accurate for objects with fewer training examples.       1.3.A.1  AI tools can affect everyday choices such as what people watch, buy, and learn. Understanding the human decisions behind AI helps users evaluate outputs critically and helps developers design and maintain tools that are safer, more accurate, and more fair.     Select all of the tools below that use AI.      A streaming service that recommends movies or TV shows based on what you have watched before.    Correct! Recommendation systems often use AI to predict what users are likely to enjoy.      An online store that suggests products you might want to buy based on your browsing or purchase history.    Correct! AI is commonly used to make personalized shopping recommendations.      A calculator that does mathematical calculations.    Not quite. A basic calculator follows predefined mathematical rules and does not use AI to make predictions or recommendations.      A simple photo-sharing app that allows you to post photos to share with friends.    Not quite. A simple photo-sharing app doesn't use AI to make predictions or recommendations, but more complex ones may use AI for features like facial recognition or content suggestions.     A social-media app that shows you posts based on your interests.   Correct! Social media platforms use AI to personalize content feeds learning from your preferences and behavior.        Google Quick Draw is trained on drawings submitted by people from around the world. Which objects are most likely to be drawn differently depending on a person's culture or where they live? These human factors affect the training data and can influence how well the AI recognizes different objects.      A house    Correct! Houses can have different shapes, roofs, building materials, and styles in different parts of the world.      A square    No, most people draw a square as a simple geometric shape, regardless of their culture or location.      A school bus    Correct! School buses look very different across countries. For example, the familiar yellow school bus is common in the United States but not in many other places.      An apple    Not quite. Although apples come in different varieties, people around the world generally draw them in similar ways.      A hat    Correct! Hats can vary significantly in style, color, and design across different cultures and regions.        Machine Learning and AI Models  Machine Learning (ML) is a type of AI that learns patterns from data. Machine learning has become so successful that AI has become another term for machine learning, even though AI is a broader field. Watch the following video to learn more about machine learning.   Take a look at the following diagram showing how an AI learns to recognize green apples by looking at many examples of apples that are labeled as green or not green. The set of patterns or rules that an AI learns is called the model . The model becomes more accurate as it is trained on more examples. Machine learning involves training and testing with data until the model is accurate enough for the task. Once we have a good model, we can use it to make predictions about new, unseen apples. The new apple is an input to the model, and the model produces an output that predicts whether the apple is green or not.    1.3.A.3  In AI systems, a model is the part of the system used to produce outputs from inputs. Models may follow rules created by people or learn patterns from data.    1.3.A.4  Many modern AI models are created by training on examples. The quality and representativeness of the training data can affect how accurate or fair the model’s outputs are.   In the next activity, you will use Google's Teachable Machine which makes it easy to train AI models without writing code. Watch the following video introducing Teachable Machine. You can train a model to recognize images, sounds, or poses. The model learns patterns from the examples you provide and can then make predictions about new inputs.    Teachable Machine    Go to Google Teachable Machine and click on Get Started.  If you have a webcam on your computer, try Image Project or Pose Project. You can also try the Image Project if you can download images on your computer, for example you could download this folder of cat and dog images . If you do not have a webcam or cannot download images, try the Audio Project which can use your computer's microphone to record sounds.  Categories: Teachable machine will learn to recognize two different categories of input. Decide which two categories you want to use. For example, you could train a model to recognize cats and dogs, or happy and sad faces, or pointing up and down or clapping and snapping sounds. Click on the pencil icon next to Class 1 and type in your first category and do the same for Class 2.  Data: Watch this short gather video on how to input your data. You will use your webcam or microphone or upload images to record at least 20 examples of your two categories.  Train: Once you have collected at least 20 examples for each category, click on the \"Train\" button to train your model. Watch this train video for more information.  Test: After training, you can test your model in the Preview area. Upload or record a new sample and see what your model predicts! You should use examples that are not in your training data and are difficult to guess. Under the uploaded sample, the model will tell you the percentage of confidence it has in its prediction of the category. For example, the model below thinks this image is a cat with 88% confidence. Did your model get it right? If not upload more training data and train again.   Reflection: Answer the following questions below. What categories did you choose? After training, how accurate was your model in the preview area and what kind of examples did it have difficulty with? How did your decisions about the categories and training data affect the model's accuracy and fairness?       The teachable machine does not require very many examples to learn your categories because it uses a technique called transfer learning , where it starts with a pre-trained model that is trained on the Imagenet dataset of millions of images with labels for 1000+ different classes which it then just tweaks to customize for your categories. However, the quality of data is crucial for a model's accuracy. There is a saying of \"Garbage in, garbage out\", where you cannot expect good results if you feed the model incomplete or biased data. There is also the danger of machine learning algorithms learning the wrong or unexpected things from the data, because that is not something we can control.    Adding more training data does not always improve an AI model. Which is the best explanation for this?      AI models stop learning after they have seen a certain number of examples.    No. AI models do not have a fixed limit on how many examples they can learn from.      If the additional data is inaccurate, repetitive, or does not represent the variety of real-world examples, the model may not improve.    Correct! The quality and diversity of the training data are just as important as the quantity.      Adding more data causes the AI to forget what it learned from earlier examples.    No. More data does not automatically cause an AI model to forget previous training examples.      AI models become less accurate whenever they are trained with more than one category of data.    No. AI models are often designed to recognize many categories. The issue is whether the training data is representative and of good quality.        Generative AI   1.3.A.5   Generative AI is a type of AI that creates new content, such as text, images, music, or code, based on patterns it has learned from examples. Some generative AI tools are powered by large language models (LLMs) , which generate text by predicting likely sequences of words based on patterns learned from large collections of text.  How chatbots and LLMs work: https:\/\/www.youtube.com\/watch?v=X-AWdfSFCHQ (7 mins, but good explantion) (shorter but not as good Generative AI video https:\/\/www.youtube.com\/watch?v=JO9MgO1Zp3E)  1.3.A.6  Humans decide what happens with an AI tool’s output, including when to trust it, what actions to take based on it, and when a human should review or make the final decision.    1.3.A.7  When AI tools are used to create or transform content, humans must consider what content may be used and how outputs may be shared, including following licenses and giving attribution when required.    1.3.A.8  AI tools can generate realistic images, audio, or video that may be mistaken for authentic media (deepfakes). Humans must make decisions about safeguards, such as disclosure, verification, and responsible sharing, to reduce misinformation and harm.    1.3.A.9   Model drift occurs when a model’s performance changes over time because the real-world data or conditions it encounters shift, potentially making the model less accurate. AI systems should be monitored by humans to detect model drift. When drift is detected, humans can update data, adjust the model, or retrain the system to reduce inaccurate or harmful outcomes.    1.3.A.10  Developers can increase transparency by clearly describing an AI tool’s purpose, how it was developed, trained, and evaluated, and its limitations and appropriate uses. This allows users to make informed choices.     Automation and Augmentation https:\/\/www.youtube.com\/shorts\/QagTKYVfF_k Replacing humans as agents vs Human in the loop self-driving car AI Automation Role: The AI acts autonomously without human approval (e.g., an automated chatbot resolving a routine billing error without human escalation). Goal: Maximize speed, scale, and cost reduction. Best Used For: High-volume, predictable, and low-risk tasks where speed takes priority. AI Augmentation Role: The AI surfaces insights, drafts material, or provides recommendations, while the human retains full accountability and control. Goal: Amplify human skills and prevent costly, automated errors. Best Used For: High-stakes, complex, or unstructured tasks that require ethics, empathy, and \"human-in-the-loop\" oversight  1.3.B.1  Decisions about automation and augmentation affect everyday experiences, such as recommendations, autocorrect suggestions, and navigation directions. Understanding whether a system is acting automatically or supporting human decision-making helps users decide how much to rely on its output and when they should verify it, especially when errors, bias, or other limitations could affect the result.    1.3.B.2  Automation allows computers to carry out tasks with limited human involvement, often making work faster, more consistent, and more efficient. Automated systems can handle routine tasks and, in some cases, more complex ones. They may still produce inaccurate results when inputs are ambiguous, conditions change, or unusual cases are not handled well.    1.3.B.3  Accuracy is the degree to which an output or code solution matches defined criteria for correctness, such as a program’s requirements or known correct outputs. Accuracy can be evaluated by testing with defined inputs and comparing actual results to expected results.    1.3.B.4  Augmentation uses tools or systems to support human work while humans remain responsible for decisions and outcomes. In some cases, augmentation involves AI, such as in human-in-the-loop systems where AI outputs are reviewed by humans to improve accuracy and accountability.    1.3.B.5  The appropriateness of automation or augmentation depends on the context and the consequences of error. Although automation can be faster, more consistent, or easier to scale, it may be less appropriate in situations that are high-stakes, ambiguous, or require human judgment, empathy, or discretion. In those situations, augmentation may be preferred so that humans remain responsible for the final decision.    1.3.B.6  Evaluating the appropriate level of automation or augmentation requires weighing benefits such as speed or efficiency against risks such as bias, inaccuracy, privacy, or overreliance, including how thresholds affect outcomes. It also means considering social, environmental, and economic trade-offs such as impacts on people, resource and energy use, costs, labor, and access.    1.3.B.7  Evaluating automation or augmentation should consider how the choice affects user experience, including trust, transparency, and whether users can reasonably decline or reduce automation, such as choosing manual controls or requesting human review when needed.     Learning Objectives Review  After this lesson, you will be able to:   1.3.A  Explain how human decisions shape the development, deployment, and maintenance of AI tools.    1.3.B  Evaluate the appropriate level of automation or augmentation for a task.    "
 },
 {
-  "id": "topic-1-3-responsible-ai-4-2",
+  "id": "topic-1-3-responsible-ai-3-1",
   "level": "2",
-  "url": "topic-1-3-responsible-ai.html#topic-1-3-responsible-ai-4-2",
-  "type": "Learning Objective",
-  "number": "1.3.1",
-  "title": "1.3.A.",
-  "body": " 1.3.A  Explain how human decisions shape the development, deployment, and maintenance of AI tools.  "
+  "url": "topic-1-3-responsible-ai.html#topic-1-3-responsible-ai-3-1",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "Artificial Intelligence (AI) "
 },
 {
-  "id": "topic-1-3-responsible-ai-4-3",
+  "id": "ai-data-2",
   "level": "2",
-  "url": "topic-1-3-responsible-ai.html#topic-1-3-responsible-ai-4-3",
-  "type": "Learning Objective",
-  "number": "1.3.2",
-  "title": "1.3.B.",
-  "body": " 1.3.B  Evaluate the appropriate level of automation or augmentation for a task.  "
-},
-{
-  "id": "topic-1-3-responsible-ai-5-2",
-  "level": "2",
-  "url": "topic-1-3-responsible-ai.html#topic-1-3-responsible-ai-5-2",
+  "url": "topic-1-3-responsible-ai.html#ai-data-2",
   "type": "Essential Knowledge",
-  "number": "1.3.3",
+  "number": "1.3.1",
+  "title": "1.3.A.2.",
+  "body": " 1.3.A.2   Artificial intelligence (AI) refers to computer systems that use data and patterns to perform tasks that are often associated with human intelligence, producing outputs such as predictions, recommendations, decisions, or generated content.  "
+},
+{
+  "id": "quickdraw-ai-example",
+  "level": "2",
+  "url": "topic-1-3-responsible-ai.html#quickdraw-ai-example",
+  "type": "Activity",
+  "number": "1.3.1",
+  "title": "",
+  "body": "  Based on how Google Quick Draw works, which best explains why it counts as an example of artificial intelligence?      It uses a database of pre-made drawings that it displays back to the user.    No. Quick Draw does not simply retrieve and display stored drawings. It analyzes the user's sketch and predicts what it represents.      It follows a fixed set of rules written by a programmer for every possible object.    No. AI systems like Quick Draw learn patterns from data rather than relying on explicit rules for every possible drawing.      It applies patterns learned from millions of drawings to predict what a new, unseen drawing represents.    Correct! Quick Draw is trained on a large dataset of drawings and uses the patterns it learned to make predictions about new sketches.      It randomly guesses an object name until the user confirms the correct one.    No. Quick Draw makes informed predictions based on patterns learned from its training data, not random guesses.     "
+},
+{
+  "id": "quickdraw-training-data",
+  "level": "2",
+  "url": "topic-1-3-responsible-ai.html#quickdraw-training-data",
+  "type": "Activity",
+  "number": "1.3.2",
+  "title": "",
+  "body": "  Suppose the Quick Draw training data contains thousands of drawings of cats but only a few drawings of armadillos. Which outcome is most likely?      The AI may recognize armadillos more accurately than cats.    No. With far fewer examples of armadillos, the AI is less likely to recognize them accurately.      The AI may recognize cats more accurately because it has learned from more examples.    Correct! AI systems generally perform better on categories that have more representative training data because they have learned more patterns from those examples.      The AI may recognize both equally well.    No. The amount and quality of training data can affect how accurately an AI recognizes different categories.      The AI may not recognize either animal.    No. The AI will still make a prediction, although it may be less accurate for objects with fewer training examples.     "
+},
+{
+  "id": "ai-data-7",
+  "level": "2",
+  "url": "topic-1-3-responsible-ai.html#ai-data-7",
+  "type": "Essential Knowledge",
+  "number": "1.3.2",
   "title": "1.3.A.1.",
   "body": " 1.3.A.1  AI tools can affect everyday choices such as what people watch, buy, and learn. Understanding the human decisions behind AI helps users evaluate outputs critically and helps developers design and maintain tools that are safer, more accurate, and more fair.  "
 },
 {
-  "id": "topic-1-3-responsible-ai-5-3",
+  "id": "ai-common-apps",
   "level": "2",
-  "url": "topic-1-3-responsible-ai.html#topic-1-3-responsible-ai-5-3",
-  "type": "Essential Knowledge",
-  "number": "1.3.4",
-  "title": "1.3.A.2.",
-  "body": " 1.3.A.2  Artificial intelligence (AI) refers to computer systems that use data and patterns to perform tasks that are often associated with human intelligence, producing outputs such as predictions, recommendations, decisions, or generated content.  "
+  "url": "topic-1-3-responsible-ai.html#ai-common-apps",
+  "type": "Activity",
+  "number": "1.3.3",
+  "title": "",
+  "body": "  Select all of the tools below that use AI.      A streaming service that recommends movies or TV shows based on what you have watched before.    Correct! Recommendation systems often use AI to predict what users are likely to enjoy.      An online store that suggests products you might want to buy based on your browsing or purchase history.    Correct! AI is commonly used to make personalized shopping recommendations.      A calculator that does mathematical calculations.    Not quite. A basic calculator follows predefined mathematical rules and does not use AI to make predictions or recommendations.      A simple photo-sharing app that allows you to post photos to share with friends.    Not quite. A simple photo-sharing app doesn't use AI to make predictions or recommendations, but more complex ones may use AI for features like facial recognition or content suggestions.     A social-media app that shows you posts based on your interests.   Correct! Social media platforms use AI to personalize content feeds learning from your preferences and behavior.     "
 },
 {
-  "id": "topic-1-3-responsible-ai-5-4",
+  "id": "quickdraw-cultural-influence",
   "level": "2",
-  "url": "topic-1-3-responsible-ai.html#topic-1-3-responsible-ai-5-4",
+  "url": "topic-1-3-responsible-ai.html#quickdraw-cultural-influence",
+  "type": "Activity",
+  "number": "1.3.4",
+  "title": "",
+  "body": "  Google Quick Draw is trained on drawings submitted by people from around the world. Which objects are most likely to be drawn differently depending on a person's culture or where they live? These human factors affect the training data and can influence how well the AI recognizes different objects.      A house    Correct! Houses can have different shapes, roofs, building materials, and styles in different parts of the world.      A square    No, most people draw a square as a simple geometric shape, regardless of their culture or location.      A school bus    Correct! School buses look very different across countries. For example, the familiar yellow school bus is common in the United States but not in many other places.      An apple    Not quite. Although apples come in different varieties, people around the world generally draw them in similar ways.      A hat    Correct! Hats can vary significantly in style, color, and design across different cultures and regions.     "
+},
+{
+  "id": "ai-models-2",
+  "level": "2",
+  "url": "topic-1-3-responsible-ai.html#ai-models-2",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "Machine Learning (ML) "
+},
+{
+  "id": "ai-models-4",
+  "level": "2",
+  "url": "topic-1-3-responsible-ai.html#ai-models-4",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "model "
+},
+{
+  "id": "ai-models-6",
+  "level": "2",
+  "url": "topic-1-3-responsible-ai.html#ai-models-6",
   "type": "Essential Knowledge",
-  "number": "1.3.5",
+  "number": "1.3.3",
   "title": "1.3.A.3.",
   "body": " 1.3.A.3  In AI systems, a model is the part of the system used to produce outputs from inputs. Models may follow rules created by people or learn patterns from data.  "
 },
 {
-  "id": "topic-1-3-responsible-ai-5-5",
+  "id": "ai-models-7",
   "level": "2",
-  "url": "topic-1-3-responsible-ai.html#topic-1-3-responsible-ai-5-5",
+  "url": "topic-1-3-responsible-ai.html#ai-models-7",
   "type": "Essential Knowledge",
-  "number": "1.3.6",
+  "number": "1.3.4",
   "title": "1.3.A.4.",
   "body": " 1.3.A.4  Many modern AI models are created by training on examples. The quality and representativeness of the training data can affect how accurate or fair the model’s outputs are.  "
 },
 {
-  "id": "topic-1-3-responsible-ai-5-6",
+  "id": "teachable-machine",
   "level": "2",
-  "url": "topic-1-3-responsible-ai.html#topic-1-3-responsible-ai-5-6",
-  "type": "Essential Knowledge",
-  "number": "1.3.7",
-  "title": "1.3.A.5.",
-  "body": " 1.3.A.5  Generative AI is a type of AI that creates new content, such as text, images, music, or code, based on patterns it has learned from examples. Some generative AI tools are powered by large language models (LLMs), which generate text by predicting likely sequences of words based on patterns learned from large collections of text.  "
+  "url": "topic-1-3-responsible-ai.html#teachable-machine",
+  "type": "Project",
+  "number": "1.3.5",
+  "title": "Teachable Machine.",
+  "body": " Teachable Machine    Go to Google Teachable Machine and click on Get Started.  If you have a webcam on your computer, try Image Project or Pose Project. You can also try the Image Project if you can download images on your computer, for example you could download this folder of cat and dog images . If you do not have a webcam or cannot download images, try the Audio Project which can use your computer's microphone to record sounds.  Categories: Teachable machine will learn to recognize two different categories of input. Decide which two categories you want to use. For example, you could train a model to recognize cats and dogs, or happy and sad faces, or pointing up and down or clapping and snapping sounds. Click on the pencil icon next to Class 1 and type in your first category and do the same for Class 2.  Data: Watch this short gather video on how to input your data. You will use your webcam or microphone or upload images to record at least 20 examples of your two categories.  Train: Once you have collected at least 20 examples for each category, click on the \"Train\" button to train your model. Watch this train video for more information.  Test: After training, you can test your model in the Preview area. Upload or record a new sample and see what your model predicts! You should use examples that are not in your training data and are difficult to guess. Under the uploaded sample, the model will tell you the percentage of confidence it has in its prediction of the category. For example, the model below thinks this image is a cat with 88% confidence. Did your model get it right? If not upload more training data and train again.   Reflection: Answer the following questions below. What categories did you choose? After training, how accurate was your model in the preview area and what kind of examples did it have difficulty with? How did your decisions about the categories and training data affect the model's accuracy and fairness?      "
 },
 {
-  "id": "topic-1-3-responsible-ai-5-7",
+  "id": "ai-models-11",
   "level": "2",
-  "url": "topic-1-3-responsible-ai.html#topic-1-3-responsible-ai-5-7",
+  "url": "topic-1-3-responsible-ai.html#ai-models-11",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "transfer learning "
+},
+{
+  "id": "training-data-quality",
+  "level": "2",
+  "url": "topic-1-3-responsible-ai.html#training-data-quality",
+  "type": "Activity",
+  "number": "1.3.6",
+  "title": "",
+  "body": "  Adding more training data does not always improve an AI model. Which is the best explanation for this?      AI models stop learning after they have seen a certain number of examples.    No. AI models do not have a fixed limit on how many examples they can learn from.      If the additional data is inaccurate, repetitive, or does not represent the variety of real-world examples, the model may not improve.    Correct! The quality and diversity of the training data are just as important as the quantity.      Adding more data causes the AI to forget what it learned from earlier examples.    No. More data does not automatically cause an AI model to forget previous training examples.      AI models become less accurate whenever they are trained with more than one category of data.    No. AI models are often designed to recognize many categories. The issue is whether the training data is representative and of good quality.     "
+},
+{
+  "id": "genAI-2",
+  "level": "2",
+  "url": "topic-1-3-responsible-ai.html#genAI-2",
   "type": "Essential Knowledge",
-  "number": "1.3.8",
+  "number": "1.3.5",
+  "title": "1.3.A.5.",
+  "body": " 1.3.A.5   Generative AI is a type of AI that creates new content, such as text, images, music, or code, based on patterns it has learned from examples. Some generative AI tools are powered by large language models (LLMs) , which generate text by predicting likely sequences of words based on patterns learned from large collections of text.  "
+},
+{
+  "id": "genAI-3",
+  "level": "2",
+  "url": "topic-1-3-responsible-ai.html#genAI-3",
+  "type": "Essential Knowledge",
+  "number": "1.3.6",
   "title": "1.3.A.6.",
   "body": " 1.3.A.6  Humans decide what happens with an AI tool’s output, including when to trust it, what actions to take based on it, and when a human should review or make the final decision.  "
 },
 {
-  "id": "topic-1-3-responsible-ai-5-8",
+  "id": "genAI-4",
   "level": "2",
-  "url": "topic-1-3-responsible-ai.html#topic-1-3-responsible-ai-5-8",
+  "url": "topic-1-3-responsible-ai.html#genAI-4",
   "type": "Essential Knowledge",
-  "number": "1.3.9",
+  "number": "1.3.7",
   "title": "1.3.A.7.",
   "body": " 1.3.A.7  When AI tools are used to create or transform content, humans must consider what content may be used and how outputs may be shared, including following licenses and giving attribution when required.  "
 },
 {
-  "id": "topic-1-3-responsible-ai-5-9",
+  "id": "genAI-5",
   "level": "2",
-  "url": "topic-1-3-responsible-ai.html#topic-1-3-responsible-ai-5-9",
+  "url": "topic-1-3-responsible-ai.html#genAI-5",
   "type": "Essential Knowledge",
-  "number": "1.3.10",
+  "number": "1.3.8",
   "title": "1.3.A.8.",
   "body": " 1.3.A.8  AI tools can generate realistic images, audio, or video that may be mistaken for authentic media (deepfakes). Humans must make decisions about safeguards, such as disclosure, verification, and responsible sharing, to reduce misinformation and harm.  "
 },
 {
-  "id": "topic-1-3-responsible-ai-5-10",
+  "id": "genAI-6",
   "level": "2",
-  "url": "topic-1-3-responsible-ai.html#topic-1-3-responsible-ai-5-10",
+  "url": "topic-1-3-responsible-ai.html#genAI-6",
   "type": "Essential Knowledge",
-  "number": "1.3.11",
+  "number": "1.3.9",
   "title": "1.3.A.9.",
-  "body": " 1.3.A.9  Model drift occurs when a model’s performance changes over time because the real-world data or conditions it encounters shift, potentially making the model less accurate. AI systems should be monitored by humans to detect model drift. When drift is detected, humans can update data, adjust the model, or retrain the system to reduce inaccurate or harmful outcomes.  "
+  "body": " 1.3.A.9   Model drift occurs when a model’s performance changes over time because the real-world data or conditions it encounters shift, potentially making the model less accurate. AI systems should be monitored by humans to detect model drift. When drift is detected, humans can update data, adjust the model, or retrain the system to reduce inaccurate or harmful outcomes.  "
 },
 {
-  "id": "topic-1-3-responsible-ai-5-11",
+  "id": "genAI-7",
   "level": "2",
-  "url": "topic-1-3-responsible-ai.html#topic-1-3-responsible-ai-5-11",
+  "url": "topic-1-3-responsible-ai.html#genAI-7",
   "type": "Essential Knowledge",
-  "number": "1.3.12",
+  "number": "1.3.10",
   "title": "1.3.A.10.",
   "body": " 1.3.A.10  Developers can increase transparency by clearly describing an AI tool’s purpose, how it was developed, trained, and evaluated, and its limitations and appropriate uses. This allows users to make informed choices.  "
 },
 {
-  "id": "topic-1-3-responsible-ai-6-2",
+  "id": "topic-1-3-responsible-ai-7-2",
   "level": "2",
-  "url": "topic-1-3-responsible-ai.html#topic-1-3-responsible-ai-6-2",
+  "url": "topic-1-3-responsible-ai.html#topic-1-3-responsible-ai-7-2",
   "type": "Essential Knowledge",
-  "number": "1.3.13",
+  "number": "1.3.11",
   "title": "1.3.B.1.",
   "body": " 1.3.B.1  Decisions about automation and augmentation affect everyday experiences, such as recommendations, autocorrect suggestions, and navigation directions. Understanding whether a system is acting automatically or supporting human decision-making helps users decide how much to rely on its output and when they should verify it, especially when errors, bias, or other limitations could affect the result.  "
 },
 {
-  "id": "topic-1-3-responsible-ai-6-3",
+  "id": "topic-1-3-responsible-ai-7-3",
   "level": "2",
-  "url": "topic-1-3-responsible-ai.html#topic-1-3-responsible-ai-6-3",
+  "url": "topic-1-3-responsible-ai.html#topic-1-3-responsible-ai-7-3",
   "type": "Essential Knowledge",
-  "number": "1.3.14",
+  "number": "1.3.12",
   "title": "1.3.B.2.",
   "body": " 1.3.B.2  Automation allows computers to carry out tasks with limited human involvement, often making work faster, more consistent, and more efficient. Automated systems can handle routine tasks and, in some cases, more complex ones. They may still produce inaccurate results when inputs are ambiguous, conditions change, or unusual cases are not handled well.  "
 },
 {
-  "id": "topic-1-3-responsible-ai-6-4",
+  "id": "topic-1-3-responsible-ai-7-4",
   "level": "2",
-  "url": "topic-1-3-responsible-ai.html#topic-1-3-responsible-ai-6-4",
+  "url": "topic-1-3-responsible-ai.html#topic-1-3-responsible-ai-7-4",
   "type": "Essential Knowledge",
-  "number": "1.3.15",
+  "number": "1.3.13",
   "title": "1.3.B.3.",
   "body": " 1.3.B.3  Accuracy is the degree to which an output or code solution matches defined criteria for correctness, such as a program’s requirements or known correct outputs. Accuracy can be evaluated by testing with defined inputs and comparing actual results to expected results.  "
 },
 {
-  "id": "topic-1-3-responsible-ai-6-5",
+  "id": "topic-1-3-responsible-ai-7-5",
   "level": "2",
-  "url": "topic-1-3-responsible-ai.html#topic-1-3-responsible-ai-6-5",
+  "url": "topic-1-3-responsible-ai.html#topic-1-3-responsible-ai-7-5",
   "type": "Essential Knowledge",
-  "number": "1.3.16",
+  "number": "1.3.14",
   "title": "1.3.B.4.",
   "body": " 1.3.B.4  Augmentation uses tools or systems to support human work while humans remain responsible for decisions and outcomes. In some cases, augmentation involves AI, such as in human-in-the-loop systems where AI outputs are reviewed by humans to improve accuracy and accountability.  "
 },
 {
-  "id": "topic-1-3-responsible-ai-6-6",
+  "id": "topic-1-3-responsible-ai-7-6",
   "level": "2",
-  "url": "topic-1-3-responsible-ai.html#topic-1-3-responsible-ai-6-6",
+  "url": "topic-1-3-responsible-ai.html#topic-1-3-responsible-ai-7-6",
   "type": "Essential Knowledge",
-  "number": "1.3.17",
+  "number": "1.3.15",
   "title": "1.3.B.5.",
   "body": " 1.3.B.5  The appropriateness of automation or augmentation depends on the context and the consequences of error. Although automation can be faster, more consistent, or easier to scale, it may be less appropriate in situations that are high-stakes, ambiguous, or require human judgment, empathy, or discretion. In those situations, augmentation may be preferred so that humans remain responsible for the final decision.  "
 },
 {
-  "id": "topic-1-3-responsible-ai-6-7",
+  "id": "topic-1-3-responsible-ai-7-7",
   "level": "2",
-  "url": "topic-1-3-responsible-ai.html#topic-1-3-responsible-ai-6-7",
+  "url": "topic-1-3-responsible-ai.html#topic-1-3-responsible-ai-7-7",
   "type": "Essential Knowledge",
-  "number": "1.3.18",
+  "number": "1.3.16",
   "title": "1.3.B.6.",
   "body": " 1.3.B.6  Evaluating the appropriate level of automation or augmentation requires weighing benefits such as speed or efficiency against risks such as bias, inaccuracy, privacy, or overreliance, including how thresholds affect outcomes. It also means considering social, environmental, and economic trade-offs such as impacts on people, resource and energy use, costs, labor, and access.  "
 },
 {
-  "id": "topic-1-3-responsible-ai-6-8",
+  "id": "topic-1-3-responsible-ai-7-8",
   "level": "2",
-  "url": "topic-1-3-responsible-ai.html#topic-1-3-responsible-ai-6-8",
+  "url": "topic-1-3-responsible-ai.html#topic-1-3-responsible-ai-7-8",
   "type": "Essential Knowledge",
-  "number": "1.3.19",
+  "number": "1.3.17",
   "title": "1.3.B.7.",
   "body": " 1.3.B.7  Evaluating automation or augmentation should consider how the choice affects user experience, including trust, transparency, and whether users can reasonably decline or reduce automation, such as choosing manual controls or requesting human review when needed.  "
+},
+{
+  "id": "topic-1-3-responsible-ai-8-3",
+  "level": "2",
+  "url": "topic-1-3-responsible-ai.html#topic-1-3-responsible-ai-8-3",
+  "type": "Learning Objective",
+  "number": "1.3.18",
+  "title": "1.3.A.",
+  "body": " 1.3.A  Explain how human decisions shape the development, deployment, and maintenance of AI tools.  "
+},
+{
+  "id": "topic-1-3-responsible-ai-8-4",
+  "level": "2",
+  "url": "topic-1-3-responsible-ai.html#topic-1-3-responsible-ai-8-4",
+  "type": "Learning Objective",
+  "number": "1.3.19",
+  "title": "1.3.B.",
+  "body": " 1.3.B  Evaluate the appropriate level of automation or augmentation for a task.  "
 },
 {
   "id": "topic-1-4-binary",

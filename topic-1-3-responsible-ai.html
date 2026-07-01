@@ -59,14 +59,14 @@ eBookConfig.enableScratchAC = true;
 eBookConfig.acDefaultLanguage = 'python';
 eBookConfig.build_info = "";
 eBookConfig.python3 = null;
-eBookConfig.runestone_version = '8.1.6';
+eBookConfig.runestone_version = '8.1.7';
 eBookConfig.jobehost = '';
 eBookConfig.proxyuri_runs = '';
 eBookConfig.proxyuri_files = '';
 eBookConfig.enable_chatcodes =  false;
 </script>
 <!--*** Runestone Services ***-->
-<script src="_static/prefix-runtime.53a23d1b65c1dce2.bundle.js"></script><script src="_static/prefix-713.de0ab26248766350.bundle.js"></script><script src="_static/prefix-runestone.4787412a251795e3.bundle.js"></script><link rel="stylesheet" type="text/css" href="_static/prefix-713.f43ced6a6134ea74.css">
+<script src="_static/prefix-runtime.917dfc3cfe0bb764.bundle.js"></script><script src="_static/prefix-713.de0ab26248766350.bundle.js"></script><script src="_static/prefix-runestone.39f982db166f319d.bundle.js"></script><link rel="stylesheet" type="text/css" href="_static/prefix-713.f43ced6a6134ea74.css">
 <link rel="stylesheet" type="text/css" href="_static/prefix-runestone.87414d180ebeebd6.css">
 <script src="_static/pretext/js/dist/lti_iframe_resizer.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.26.0/components/prism-core.min.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.26.0/plugins/autoloader/prism-autoloader.min.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.26.0/plugins/line-numbers/prism-line-numbers.min.js" integrity="sha512-dubtf8xMHSQlExGRQ5R7toxHLgSDZ0K7AunqPWHXmJQ8XyVIG19S1T95gBxlAeGOK02P4Da2RTnQz0Za0H0ebQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.26.0/plugins/line-highlight/prism-line-highlight.min.js" integrity="sha512-93uCmm0q+qO5Lb1huDqr7tywS8A2TFA+1/WHvyiWaK6/pvsFl6USnILagntBx8JnVbQH5s3n0vQZY6xNthNfKA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.9/lunr.min.js" integrity="sha512-4xUl/d6D6THrAnXAwGajXkoWaeMNwEKK4iNfq5DotEbLPAfk6FSxSP3ydNxqDgCw1c/0Z1Jg6L8h2j+++9BZmg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script><script src="lunr-pretext-search-index.js" async=""></script><script src="_static/pretext/js/dist/pretext_search.js"></script><!--knowl.js code controls Sage Cells within knowls--><script>sagecellEvalName='Evaluate (Sage)';
 </script>
@@ -125,9 +125,11 @@ eBookConfig.enable_chatcodes =  false;
 <li class="toc-item toc-section contains-active">
 <div class="toc-title-box"><a href="topic-1-3-responsible-ai.html" class="internal"><span class="codenumber">1.3</span> <span class="title">Responsible AI and Human Decision-Making</span></a></div>
 <ul class="structural toc-item-list active">
-<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="topic-1-3-responsible-ai.html#topic-1-3-responsible-ai-4" class="internal"><span class="codenumber">1.3.1</span> <span class="title">Learning Objectives</span></a></div></li>
-<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="topic-1-3-responsible-ai.html#topic-1-3-responsible-ai-5" class="internal"><span class="codenumber">1.3.2</span> <span class="title">Human Decisions in AI</span></a></div></li>
-<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="topic-1-3-responsible-ai.html#topic-1-3-responsible-ai-6" class="internal"><span class="codenumber">1.3.3</span> <span class="title">Automation and Augmentation</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="topic-1-3-responsible-ai.html#ai-data" class="internal"><span class="codenumber">1.3.1</span> <span class="title">AI and Data</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="topic-1-3-responsible-ai.html#ai-models" class="internal"><span class="codenumber">1.3.2</span> <span class="title">Machine Learning and AI Models</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="topic-1-3-responsible-ai.html#genAI" class="internal"><span class="codenumber">1.3.3</span> <span class="title">Generative AI</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="topic-1-3-responsible-ai.html#topic-1-3-responsible-ai-7" class="internal"><span class="codenumber">1.3.4</span> <span class="title">Automation and Augmentation</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="topic-1-3-responsible-ai.html#topic-1-3-responsible-ai-8" class="internal"><span class="codenumber">1.3.5</span> <span class="title">Learning Objectives Review</span></a></div></li>
 </ul>
 </li>
 <li class="toc-item toc-section">
@@ -276,157 +278,429 @@ eBookConfig.enable_chatcodes =  false;
 <span class="type">Section</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">1.3</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Responsible AI and Human Decision-Making</span>
 </h2>
 <div class="time">
-<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-clock" viewBox="0 0 16 16"><path d="M8 3.5a.5.5 0 0 0-1 0V9a.5.5 0 0 0 .252.434l3.5 2a.5.5 0 0 0 .496-.868L8 8.71V3.5z"></path><path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm7-8A7 7 0 1 1 1 8a7 7 0 0 1 14 0z"></path></svg><span>45 minutes</span>
+<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-clock" viewBox="0 0 16 16"><path d="M8 3.5a.5.5 0 0 0-1 0V9a.5.5 0 0 0 .252.434l3.5 2a.5.5 0 0 0 .496-.868L8 8.71V3.5z"></path><path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm7-8A7 7 0 1 1 1 8a7 7 0 0 1 14 0z"></path></svg><span>90 minutes</span>
 </div>
 <section class="introduction" id="topic-1-3-responsible-ai-3">
-<div class="para" id="topic-1-3-responsible-ai-3-1"><div class="autopermalink" data-description="Paragraph"><a href="#topic-1-3-responsible-ai-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div></div></section>
-<section class="subsection" id="topic-1-3-responsible-ai-4">
+<div class="para" id="topic-1-3-responsible-ai-3-1">
+<dfn class="terminology">Artificial Intelligence (AI)</dfn> is becoming a big part of our lives and changing the way we work and learn. AI is a branch of computer science with the goal of building smarter machines to do tasks that typically require human intelligence. Watch the following <a class="external" href="https://www.youtube.com/watch?v=ng4c1g3COfs" target="_blank">video</a> to learn more about the impacts of AI on society. In this lesson, we will learn about the importance of responsible AI use and human decision-making.<div class="autopermalink" data-description="Paragraph"><a href="#topic-1-3-responsible-ai-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="video-box" style="width: 100%;padding-top: 56.25%; margin-left: 0%; margin-right: 0%;"><iframe class="video" allowfullscreen="" src="https://www.youtube-nocookie.com/embed/ng4c1g3COfs?&amp;modestbranding=1&amp;rel=0" id="video-impacts-of-ai"></iframe></div></section>
+<section class="subsection" id="ai-data">
 <h3 class="heading hide-type">
-<span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">1.3.1</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Learning Objectives</span>
+<span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">1.3.1</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">AI and Data</span>
 </h3>
-<article class="remark remark-like" id="topic-1-3-responsible-ai-4-2"><h4 class="heading">
-<span class="type">Learning Objective</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">1.3.1</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">1.3.A.</span>
+<article class="note remark-like" id="ai-data-2"><h4 class="heading">
+<span class="type">Essential Knowledge</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">1.3.1</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">1.3.A.2.</span>
 </h4>
-<div class="para" id="topic-1-3-responsible-ai-4-2-2">Explain how human decisions shape the development, deployment, and maintenance of AI tools.<div class="autopermalink" data-description="Paragraph"><a href="#topic-1-3-responsible-ai-4-2-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="ai-data-2-2">
+<dfn class="terminology">Artificial intelligence (AI)</dfn> refers to computer systems that use data and patterns to perform tasks that are often associated with human intelligence, producing outputs such as predictions, recommendations, decisions, or generated content.<div class="autopermalink" data-description="Paragraph"><a href="#ai-data-2-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Learning Objective 1.3.1: 1.3.A"><a href="#topic-1-3-responsible-ai-4-2" title="Copy heading and permalink for Learning Objective 1.3.1: 1.3.A" aria-label="Copy heading and permalink for Learning Objective 1.3.1: 1.3.A">🔗</a></div>
+<div class="autopermalink" data-description="Essential Knowledge 1.3.1: 1.3.A.2"><a href="#ai-data-2" title="Copy heading and permalink for Essential Knowledge 1.3.1: 1.3.A.2" aria-label="Copy heading and permalink for Essential Knowledge 1.3.1: 1.3.A.2">🔗</a></div>
 </article>
-<article class="remark remark-like" id="topic-1-3-responsible-ai-4-3"><h4 class="heading">
-<span class="type">Learning Objective</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">1.3.2</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">1.3.B.</span>
-</h4>
-<div class="para" id="topic-1-3-responsible-ai-4-3-2">Evaluate the appropriate level of automation or augmentation for a task.<div class="autopermalink" data-description="Paragraph"><a href="#topic-1-3-responsible-ai-4-3-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="ai-data-3">Try <a class="external" href="https://quickdraw.withgoogle.com/" target="_blank">Google Quick Draw</a>. The Quick Draw AI is trained on millions of drawings from people around the world to recognize and predict what you are drawing. Take a look at <a class="external" href="https://quickdraw.withgoogle.com/data" target="_blank">the data</a> it uses. The following <a class="external" href="https://www.youtube.com/watch?v=X8v1GWzZYJ4" target="_blank">video</a> introduces Quick Draw.<div class="autopermalink" data-description="Paragraph"><a href="#ai-data-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Learning Objective 1.3.2: 1.3.B"><a href="#topic-1-3-responsible-ai-4-3" title="Copy heading and permalink for Learning Objective 1.3.2: 1.3.B" aria-label="Copy heading and permalink for Learning Objective 1.3.2: 1.3.B">🔗</a></div>
-</article><div class="autopermalink" data-description="Subsection 1.3.1: Learning Objectives"><a href="#topic-1-3-responsible-ai-4" title="Copy heading and permalink for Subsection 1.3.1: Learning Objectives" aria-label="Copy heading and permalink for Subsection 1.3.1: Learning Objectives">🔗</a></div>
+<div class="video-box" style="width: 100%;padding-top: 56.25%; margin-left: 0%; margin-right: 0%;"><iframe class="video" allowfullscreen="" src="https://www.youtube-nocookie.com/embed/X8v1GWzZYJ4?&amp;modestbranding=1&amp;rel=0" id="video-quick-draw"></iframe></div>
+<article class="activity project-like" id="quickdraw-ai-example"><h4 class="heading">
+<span class="type">Activity</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">1.3.1</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+</h4>
+<div class="ptx-runestone-container"><div class="runestone multiplechoice_section">
+<div class="exercise-statement">
+<div class="para" id="quickdraw-ai-example-1-1">Based on how Google Quick Draw works, which best explains why it counts as an example of artificial intelligence?<div class="autopermalink" data-description="Paragraph"><a href="#quickdraw-ai-example-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+</div>
+<ul data-component="multiplechoice" class="exercise-interactives" id="rs-quickdraw-ai-example" data-multipleanswers="false" data-random="">
+<li data-component="answer" id="rs-quickdraw-ai-example_opt_a">
+<div class="para" id="quickdraw-ai-example-2-1-1-1">It uses a database of pre-made drawings that it displays back to the user.</div>
+</li>
+<li data-component="feedback" id="rs-quickdraw-ai-example_opt_a">
+<div class="para" id="quickdraw-ai-example-2-1-2-1">No. Quick Draw does not simply retrieve and display stored drawings. It analyzes the user’s sketch and predicts what it represents.</div>
+</li>
+<li data-component="answer" id="rs-quickdraw-ai-example_opt_b">
+<div class="para" id="quickdraw-ai-example-2-2-1-1">It follows a fixed set of rules written by a programmer for every possible object.</div>
+</li>
+<li data-component="feedback" id="rs-quickdraw-ai-example_opt_b">
+<div class="para" id="quickdraw-ai-example-2-2-2-1">No. AI systems like Quick Draw learn patterns from data rather than relying on explicit rules for every possible drawing.</div>
+</li>
+<li data-component="answer" id="rs-quickdraw-ai-example_opt_c" data-correct="">
+<div class="para" id="quickdraw-ai-example-2-3-1-1">It applies patterns learned from millions of drawings to predict what a new, unseen drawing represents.</div>
+</li>
+<li data-component="feedback" id="rs-quickdraw-ai-example_opt_c">
+<div class="para" id="quickdraw-ai-example-2-3-2-1">Correct! Quick Draw is trained on a large dataset of drawings and uses the patterns it learned to make predictions about new sketches.</div>
+</li>
+<li data-component="answer" id="rs-quickdraw-ai-example_opt_d">
+<div class="para" id="quickdraw-ai-example-2-4-1-1">It randomly guesses an object name until the user confirms the correct one.</div>
+</li>
+<li data-component="feedback" id="rs-quickdraw-ai-example_opt_d">
+<div class="para" id="quickdraw-ai-example-2-4-2-1">No. Quick Draw makes informed predictions based on patterns learned from its training data, not random guesses.</div>
+</li>
+</ul>
+</div></div>
+<div class="autopermalink" data-description="Activity 1.3.1"><a href="#quickdraw-ai-example" title="Copy heading and permalink for Activity 1.3.1" aria-label="Copy heading and permalink for Activity 1.3.1">🔗</a></div>
+</article>
+<article class="activity project-like" id="quickdraw-training-data"><h4 class="heading">
+<span class="type">Activity</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">1.3.2</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+</h4>
+<div class="ptx-runestone-container"><div class="runestone multiplechoice_section">
+<div class="exercise-statement">
+<div class="para" id="quickdraw-training-data-1-1">Suppose the Quick Draw training data contains thousands of <a class="external" href="https://quickdraw.withgoogle.com/data/cat" target="_blank">drawings of cats</a> but only a few drawings of armadillos. Which outcome is most likely?<div class="autopermalink" data-description="Paragraph"><a href="#quickdraw-training-data-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+</div>
+<ul data-component="multiplechoice" class="exercise-interactives" id="rs-quickdraw-training-data" data-multipleanswers="false" data-random="">
+<li data-component="answer" id="rs-quickdraw-training-data_opt_a">
+<div class="para" id="quickdraw-training-data-2-1-1-1">The AI may recognize armadillos more accurately than cats.</div>
+</li>
+<li data-component="feedback" id="rs-quickdraw-training-data_opt_a">
+<div class="para" id="quickdraw-training-data-2-1-2-1">No. With far fewer examples of armadillos, the AI is less likely to recognize them accurately.</div>
+</li>
+<li data-component="answer" id="rs-quickdraw-training-data_opt_b" data-correct="">
+<div class="para" id="quickdraw-training-data-2-2-1-1">The AI may recognize cats more accurately because it has learned from more examples.</div>
+</li>
+<li data-component="feedback" id="rs-quickdraw-training-data_opt_b">
+<div class="para" id="quickdraw-training-data-2-2-2-1">Correct! AI systems generally perform better on categories that have more representative training data because they have learned more patterns from those examples.</div>
+</li>
+<li data-component="answer" id="rs-quickdraw-training-data_opt_c">
+<div class="para" id="quickdraw-training-data-2-3-1-1">The AI may recognize both equally well.</div>
+</li>
+<li data-component="feedback" id="rs-quickdraw-training-data_opt_c">
+<div class="para" id="quickdraw-training-data-2-3-2-1">No. The amount and quality of training data can affect how accurately an AI recognizes different categories.</div>
+</li>
+<li data-component="answer" id="rs-quickdraw-training-data_opt_d">
+<div class="para" id="quickdraw-training-data-2-4-1-1">The AI may not recognize either animal.</div>
+</li>
+<li data-component="feedback" id="rs-quickdraw-training-data_opt_d">
+<div class="para" id="quickdraw-training-data-2-4-2-1">No. The AI will still make a prediction, although it may be less accurate for objects with fewer training examples.</div>
+</li>
+</ul>
+</div></div>
+<div class="autopermalink" data-description="Activity 1.3.2"><a href="#quickdraw-training-data" title="Copy heading and permalink for Activity 1.3.2" aria-label="Copy heading and permalink for Activity 1.3.2">🔗</a></div>
+</article>
+<article class="note remark-like" id="ai-data-7"><h4 class="heading">
+<span class="type">Essential Knowledge</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">1.3.2</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">1.3.A.1.</span>
+</h4>
+<div class="para" id="ai-data-7-2">AI tools can affect everyday choices such as what people watch, buy, and learn. Understanding the human decisions behind AI helps users evaluate outputs critically and helps developers design and maintain tools that are safer, more accurate, and more fair.<div class="autopermalink" data-description="Paragraph"><a href="#ai-data-7-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Essential Knowledge 1.3.2: 1.3.A.1"><a href="#ai-data-7" title="Copy heading and permalink for Essential Knowledge 1.3.2: 1.3.A.1" aria-label="Copy heading and permalink for Essential Knowledge 1.3.2: 1.3.A.1">🔗</a></div>
+</article>
+<article class="activity project-like" id="ai-common-apps"><h4 class="heading">
+<span class="type">Activity</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">1.3.3</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+</h4>
+<div class="ptx-runestone-container"><div class="runestone multiplechoice_section">
+<div class="exercise-statement">
+<div class="para" id="ai-common-apps-1-1">Select all of the tools below that use AI.<div class="autopermalink" data-description="Paragraph"><a href="#ai-common-apps-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+</div>
+<ul data-component="multiplechoice" class="exercise-interactives" id="rs-ai-common-apps" data-multipleanswers="true" data-random="">
+<li data-component="answer" id="rs-ai-common-apps_opt_a" data-correct="">
+<div class="para" id="ai-common-apps-2-1-1-1">A streaming service that recommends movies or TV shows based on what you have watched before.</div>
+</li>
+<li data-component="feedback" id="rs-ai-common-apps_opt_a">
+<div class="para" id="ai-common-apps-2-1-2-1">Correct! Recommendation systems often use AI to predict what users are likely to enjoy.</div>
+</li>
+<li data-component="answer" id="rs-ai-common-apps_opt_b" data-correct="">
+<div class="para" id="ai-common-apps-2-2-1-1">An online store that suggests products you might want to buy based on your browsing or purchase history.</div>
+</li>
+<li data-component="feedback" id="rs-ai-common-apps_opt_b">
+<div class="para" id="ai-common-apps-2-2-2-1">Correct! AI is commonly used to make personalized shopping recommendations.</div>
+</li>
+<li data-component="answer" id="rs-ai-common-apps_opt_c">
+<div class="para" id="ai-common-apps-2-3-1-1">A calculator that does mathematical calculations.</div>
+</li>
+<li data-component="feedback" id="rs-ai-common-apps_opt_c">
+<div class="para" id="ai-common-apps-2-3-2-1">Not quite. A basic calculator follows predefined mathematical rules and does not use AI to make predictions or recommendations.</div>
+</li>
+<li data-component="answer" id="rs-ai-common-apps_opt_d">
+<div class="para" id="ai-common-apps-2-4-1-1">A simple photo-sharing app that allows you to post photos to share with friends.</div>
+</li>
+<li data-component="feedback" id="rs-ai-common-apps_opt_d">
+<div class="para" id="ai-common-apps-2-4-2-1">Not quite. A simple photo-sharing app doesn’t use AI to make predictions or recommendations, but more complex ones may use AI for features like facial recognition or content suggestions.</div>
+</li>
+<li data-component="answer" id="rs-ai-common-apps_opt_e" data-correct="">A social-media app that shows you posts based on your interests.</li>
+<li data-component="feedback" id="rs-ai-common-apps_opt_e">
+<div class="para" id="ai-common-apps-2-5-2-1">Correct! Social media platforms use AI to personalize content feeds learning from your preferences and behavior.</div>
+</li>
+</ul>
+</div></div>
+<div class="autopermalink" data-description="Activity 1.3.3"><a href="#ai-common-apps" title="Copy heading and permalink for Activity 1.3.3" aria-label="Copy heading and permalink for Activity 1.3.3">🔗</a></div>
+</article>
+<article class="activity project-like" id="quickdraw-cultural-influence"><h4 class="heading">
+<span class="type">Activity</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">1.3.4</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+</h4>
+<div class="ptx-runestone-container"><div class="runestone multiplechoice_section">
+<div class="exercise-statement">
+<div class="para" id="quickdraw-cultural-influence-1-1">Google Quick Draw is trained on drawings submitted by people from around the world. Which objects are <em class="emphasis">most likely</em> to be drawn differently depending on a person’s culture or where they live? These human factors affect the training data and can influence how well the AI recognizes different objects.<div class="autopermalink" data-description="Paragraph"><a href="#quickdraw-cultural-influence-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+</div>
+<ul data-component="multiplechoice" class="exercise-interactives" id="rs-quickdraw-cultural-influence" data-multipleanswers="true" data-random="">
+<li data-component="answer" id="rs-quickdraw-cultural-influence_opt_a" data-correct="">
+<div class="para" id="quickdraw-cultural-influence-2-1-1-1">A house</div>
+</li>
+<li data-component="feedback" id="rs-quickdraw-cultural-influence_opt_a">
+<div class="para" id="quickdraw-cultural-influence-2-1-2-1">Correct! Houses can have different shapes, roofs, building materials, and styles in different parts of the world.</div>
+</li>
+<li data-component="answer" id="rs-quickdraw-cultural-influence_opt_b">
+<div class="para" id="quickdraw-cultural-influence-2-2-1-1">A square</div>
+</li>
+<li data-component="feedback" id="rs-quickdraw-cultural-influence_opt_b">
+<div class="para" id="quickdraw-cultural-influence-2-2-2-1">No, most people draw a square as a simple geometric shape, regardless of their culture or location.</div>
+</li>
+<li data-component="answer" id="rs-quickdraw-cultural-influence_opt_c" data-correct="">
+<div class="para" id="quickdraw-cultural-influence-2-3-1-1">A school bus</div>
+</li>
+<li data-component="feedback" id="rs-quickdraw-cultural-influence_opt_c">
+<div class="para" id="quickdraw-cultural-influence-2-3-2-1">Correct! School buses look very different across countries. For example, the familiar yellow school bus is common in the United States but not in many other places.</div>
+</li>
+<li data-component="answer" id="rs-quickdraw-cultural-influence_opt_d">
+<div class="para" id="quickdraw-cultural-influence-2-4-1-1">An apple</div>
+</li>
+<li data-component="feedback" id="rs-quickdraw-cultural-influence_opt_d">
+<div class="para" id="quickdraw-cultural-influence-2-4-2-1">Not quite. Although apples come in different varieties, people around the world generally draw them in similar ways.</div>
+</li>
+<li data-component="answer" id="rs-quickdraw-cultural-influence_opt_e" data-correct="">
+<div class="para" id="quickdraw-cultural-influence-2-5-1-1">A hat</div>
+</li>
+<li data-component="feedback" id="rs-quickdraw-cultural-influence_opt_e">
+<div class="para" id="quickdraw-cultural-influence-2-5-2-1">Correct! Hats can vary significantly in style, color, and design across different cultures and regions.</div>
+</li>
+</ul>
+</div></div>
+<div class="autopermalink" data-description="Activity 1.3.4"><a href="#quickdraw-cultural-influence" title="Copy heading and permalink for Activity 1.3.4" aria-label="Copy heading and permalink for Activity 1.3.4">🔗</a></div>
+</article><div class="autopermalink" data-description="Subsection 1.3.1: AI and Data"><a href="#ai-data" title="Copy heading and permalink for Subsection 1.3.1: AI and Data" aria-label="Copy heading and permalink for Subsection 1.3.1: AI and Data">🔗</a></div>
 </section>
-<section class="subsection" id="topic-1-3-responsible-ai-5">
+<section class="subsection" id="ai-models">
 <h3 class="heading hide-type">
-<span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">1.3.2</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Human Decisions in AI</span>
+<span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">1.3.2</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Machine Learning and AI Models</span>
 </h3>
-<article class="note remark-like" id="topic-1-3-responsible-ai-5-2"><h4 class="heading">
-<span class="type">Essential Knowledge</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">1.3.3</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">1.3.A.1.</span>
-</h4>
-<div class="para" id="topic-1-3-responsible-ai-5-2-2">AI tools can affect everyday choices such as what people watch, buy, and learn. Understanding the human decisions behind AI helps users evaluate outputs critically and helps developers design and maintain tools that are safer, more accurate, and more fair.<div class="autopermalink" data-description="Paragraph"><a href="#topic-1-3-responsible-ai-5-2-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="ai-models-2">
+<dfn class="terminology">Machine Learning (ML)</dfn> is a type of AI that learns patterns from data. Machine learning has become so successful that AI has become another term for machine learning, even though AI is a broader field. Watch the following <a class="external" href="https://www.youtube.com/watch?v=KHbwOetbmbs" target="_blank">video</a> to learn more about machine learning.<div class="autopermalink" data-description="Paragraph"><a href="#ai-models-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Essential Knowledge 1.3.3: 1.3.A.1"><a href="#topic-1-3-responsible-ai-5-2" title="Copy heading and permalink for Essential Knowledge 1.3.3: 1.3.A.1" aria-label="Copy heading and permalink for Essential Knowledge 1.3.3: 1.3.A.1">🔗</a></div>
+<div class="video-box" style="width: 100%;padding-top: 56.25%; margin-left: 0%; margin-right: 0%;"><iframe class="video" allowfullscreen="" src="https://www.youtube-nocookie.com/embed/KHbwOetbmbs?&amp;modestbranding=1&amp;rel=0" id="video-machine-learning"></iframe></div>
+<div class="para" id="ai-models-4">Take a look at the following diagram showing how an AI learns to recognize green apples by looking at many examples of apples that are labeled as green or not green. The set of patterns or rules that an AI learns is called the <dfn class="terminology">model</dfn>. The model becomes more accurate as it is trained on more examples. Machine learning involves training and testing with data until the model is accurate enough for the task. Once we have a good model, we can use it to make predictions about new, unseen apples. The new apple is an input to the model, and the model produces an output that predicts whether the apple is green or not.<div class="autopermalink" data-description="Paragraph"><a href="#ai-models-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="image-box" style="width: 75%; margin-left: 12.5%; margin-right: 12.5%;"><img src="external/_static/Unit1images/apple-model.png" class="contained"></div>
+<article class="note remark-like" id="ai-models-6"><h4 class="heading">
+<span class="type">Essential Knowledge</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">1.3.3</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">1.3.A.3.</span>
+</h4>
+<div class="para" id="ai-models-6-2">In AI systems, a <dfn class="terminology">model</dfn> is the part of the system used to produce outputs from inputs. Models may follow rules created by people or learn patterns from data.<div class="autopermalink" data-description="Paragraph"><a href="#ai-models-6-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Essential Knowledge 1.3.3: 1.3.A.3"><a href="#ai-models-6" title="Copy heading and permalink for Essential Knowledge 1.3.3: 1.3.A.3" aria-label="Copy heading and permalink for Essential Knowledge 1.3.3: 1.3.A.3">🔗</a></div>
 </article>
-<article class="note remark-like" id="topic-1-3-responsible-ai-5-3"><h4 class="heading">
-<span class="type">Essential Knowledge</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">1.3.4</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">1.3.A.2.</span>
+<article class="note remark-like" id="ai-models-7"><h4 class="heading">
+<span class="type">Essential Knowledge</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">1.3.4</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">1.3.A.4.</span>
 </h4>
-<div class="para" id="topic-1-3-responsible-ai-5-3-2">Artificial intelligence (AI) refers to computer systems that use data and patterns to perform tasks that are often associated with human intelligence, producing outputs such as predictions, recommendations, decisions, or generated content.<div class="autopermalink" data-description="Paragraph"><a href="#topic-1-3-responsible-ai-5-3-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="ai-models-7-2">Many modern AI models are created by training on examples. The quality and representativeness of the training data can affect how accurate or fair the model’s outputs are.<div class="autopermalink" data-description="Paragraph"><a href="#ai-models-7-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Essential Knowledge 1.3.4: 1.3.A.2"><a href="#topic-1-3-responsible-ai-5-3" title="Copy heading and permalink for Essential Knowledge 1.3.4: 1.3.A.2" aria-label="Copy heading and permalink for Essential Knowledge 1.3.4: 1.3.A.2">🔗</a></div>
+<div class="autopermalink" data-description="Essential Knowledge 1.3.4: 1.3.A.4"><a href="#ai-models-7" title="Copy heading and permalink for Essential Knowledge 1.3.4: 1.3.A.4" aria-label="Copy heading and permalink for Essential Knowledge 1.3.4: 1.3.A.4">🔗</a></div>
 </article>
-<article class="note remark-like" id="topic-1-3-responsible-ai-5-4"><h4 class="heading">
-<span class="type">Essential Knowledge</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">1.3.5</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">1.3.A.3.</span>
-</h4>
-<div class="para" id="topic-1-3-responsible-ai-5-4-2">In AI systems, a model is the part of the system used to produce outputs from inputs. Models may follow rules created by people or learn patterns from data.<div class="autopermalink" data-description="Paragraph"><a href="#topic-1-3-responsible-ai-5-4-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="ai-models-8">In the next activity, you will use Google’s Teachable Machine which makes it easy to train AI models without writing code. Watch the following <a class="external" href="https://www.youtube.com/watch?v=T2qQGqZxkD0" target="_blank">video</a> introducing Teachable Machine. You can train a model to recognize images, sounds, or poses. The model learns patterns from the examples you provide and can then make predictions about new inputs.<div class="autopermalink" data-description="Paragraph"><a href="#ai-models-8" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Essential Knowledge 1.3.5: 1.3.A.3"><a href="#topic-1-3-responsible-ai-5-4" title="Copy heading and permalink for Essential Knowledge 1.3.5: 1.3.A.3" aria-label="Copy heading and permalink for Essential Knowledge 1.3.5: 1.3.A.3">🔗</a></div>
+<div class="video-box" style="width: 100%;padding-top: 56.25%; margin-left: 0%; margin-right: 0%;"><iframe class="video" allowfullscreen="" src="https://www.youtube-nocookie.com/embed/T2qQGqZxkD0?&amp;modestbranding=1&amp;rel=0" id="video-teachable-machine"></iframe></div>
+<article class="project project-like" id="teachable-machine"><h4 class="heading">
+<span class="type">Project</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">1.3.5</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Teachable Machine.</span>
+</h4>
+<div class="ptx-runestone-container"><div class="runestone shortanswer_section"><div data-component="shortanswer" data-question_label="" class="journal" data-mathjax="" id="rs-teachable-machine" data-placeholder="You can write here, and it will be saved on this device, but your response will not be graded.">
+<div class="para logical" id="teachable-machine-2-1">
+<ol class="decimal" id="teachable-machine-2-1-1">
+<li id="teachable-machine-2-1-1-1">
+<div class="para" id="p-derived-teachable-machine-2-1-1-1">Go to <a class="external" href="https://teachablemachine.withgoogle.com/" target="_blank">Google Teachable Machine</a> and click on Get Started.</div>
+<div class="autopermalink" data-description="Item 1"><a href="#teachable-machine-2-1-1-1" title="Copy heading and permalink for Item 1" aria-label="Copy heading and permalink for Item 1">🔗</a></div>
+</li>
+<li id="teachable-machine-2-1-1-2">
+<div class="para" id="p-derived-teachable-machine-2-1-1-2">If you have a webcam on your computer, try Image Project or Pose Project. You can also try the Image Project if you can download images on your computer, for example you could download this <a class="external" href="https://drive.google.com/drive/folders/1xCj0EW-pfvLG08LU9As6Vy8_cEMV4bcd?usp=drive_link" target="_blank">folder of cat and dog images</a>. If you do not have a webcam or cannot download images, try the Audio Project which can use your computer’s microphone to record sounds.</div>
+<div class="autopermalink" data-description="Item 2"><a href="#teachable-machine-2-1-1-2" title="Copy heading and permalink for Item 2" aria-label="Copy heading and permalink for Item 2">🔗</a></div>
+</li>
+<li id="teachable-machine-2-1-1-3">
+<div class="para" id="p-derived-teachable-machine-2-1-1-3">
+<dfn class="terminology">Categories:</dfn> Teachable machine will learn to recognize two different categories of input. Decide which two categories you want to use. For example, you could train a model to recognize cats and dogs, or happy and sad faces, or pointing up and down or clapping and snapping sounds. Click on the pencil icon next to Class 1 and type in your first category and do the same for Class 2.</div>
+<div class="autopermalink" data-description="Item 3"><a href="#teachable-machine-2-1-1-3" title="Copy heading and permalink for Item 3" aria-label="Copy heading and permalink for Item 3">🔗</a></div>
+</li>
+<li id="teachable-machine-2-1-1-4">
+<div class="para" id="p-derived-teachable-machine-2-1-1-4">
+<dfn class="terminology">Data:</dfn> Watch this short <a class="external" href="https://www.youtube.com/watch?v=DFBbSTvtpy4" target="_blank">gather video</a> on how to input your data. You will use your webcam or microphone or upload images to record at least 20 examples of your two categories.</div>
+<div class="autopermalink" data-description="Item 4"><a href="#teachable-machine-2-1-1-4" title="Copy heading and permalink for Item 4" aria-label="Copy heading and permalink for Item 4">🔗</a></div>
+</li>
+<li id="teachable-machine-2-1-1-5">
+<div class="para" id="p-derived-teachable-machine-2-1-1-5">
+<dfn class="terminology">Train:</dfn> Once you have collected at least 20 examples for each category, click on the "Train" button to train your model. Watch this <a class="external" href="https://www.youtube.com/watch?v=CO67EQ0ZWgA" target="_blank">train video</a> for more information.</div>
+<div class="autopermalink" data-description="Item 5"><a href="#teachable-machine-2-1-1-5" title="Copy heading and permalink for Item 5" aria-label="Copy heading and permalink for Item 5">🔗</a></div>
+</li>
+<li id="teachable-machine-2-1-1-6">
+<dfn class="terminology">Test:</dfn> After training, you can test your model in the Preview area. Upload or record a new sample and see what your model predicts! You should use examples that are not in your training data and are difficult to guess. Under the uploaded sample, the model will tell you the percentage of confidence it has in its prediction of the category. For example, the model below thinks this image is a cat with 88% confidence. Did your model get it right? If not upload more training data and train again. <div class="image-box" style="width: 30%; margin-left: 35%; margin-right: 35%;"><img src="external/_static/Unit1images/test-cat.png" class="contained"></div>
+<div class="autopermalink" data-description="Item 6"><a href="#teachable-machine-2-1-1-6" title="Copy heading and permalink for Item 6" aria-label="Copy heading and permalink for Item 6">🔗</a></div>
+</li>
+<li id="teachable-machine-2-1-1-7">
+<div class="para" id="p-derived-teachable-machine-2-1-1-7">
+<dfn class="terminology">Reflection:</dfn> Answer the following questions below. What categories did you choose? After training, how accurate was your model in the preview area and what kind of examples did it have difficulty with? How did your decisions about the categories and training data affect the model’s accuracy and fairness?</div>
+<div class="autopermalink" data-description="Item 7"><a href="#teachable-machine-2-1-1-7" title="Copy heading and permalink for Item 7" aria-label="Copy heading and permalink for Item 7">🔗</a></div>
+</li>
+</ol>
+<div class="autopermalink" data-description="Paragraph"><a href="#teachable-machine-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+</div></div></div>
+<div class="autopermalink" data-description="Project 1.3.5: Teachable Machine"><a href="#teachable-machine" title="Copy heading and permalink for Project 1.3.5: Teachable Machine" aria-label="Copy heading and permalink for Project 1.3.5: Teachable Machine">🔗</a></div>
 </article>
-<article class="note remark-like" id="topic-1-3-responsible-ai-5-5"><h4 class="heading">
-<span class="type">Essential Knowledge</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">1.3.6</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">1.3.A.4.</span>
-</h4>
-<div class="para" id="topic-1-3-responsible-ai-5-5-2">Many modern AI models are created by training on examples. The quality and representativeness of the training data can affect how accurate or fair the model’s outputs are.<div class="autopermalink" data-description="Paragraph"><a href="#topic-1-3-responsible-ai-5-5-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="ai-models-11">The teachable machine does not require very many examples to learn your categories because it uses a technique called <dfn class="terminology">transfer learning</dfn>, where it starts with a pre-trained model that is trained on the Imagenet dataset of millions of images with labels for 1000+ different classes which it then just tweaks to customize for your categories. However, the quality of data is crucial for a model’s accuracy. There is a saying of "Garbage in, garbage out", where you cannot expect good results if you feed the model incomplete or biased data. There is also the danger of machine learning algorithms learning the wrong or unexpected things from the data, because that is not something we can control.<div class="autopermalink" data-description="Paragraph"><a href="#ai-models-11" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Essential Knowledge 1.3.6: 1.3.A.4"><a href="#topic-1-3-responsible-ai-5-5" title="Copy heading and permalink for Essential Knowledge 1.3.6: 1.3.A.4" aria-label="Copy heading and permalink for Essential Knowledge 1.3.6: 1.3.A.4">🔗</a></div>
-</article>
-<article class="note remark-like" id="topic-1-3-responsible-ai-5-6"><h4 class="heading">
-<span class="type">Essential Knowledge</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">1.3.7</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">1.3.A.5.</span>
+<article class="activity project-like" id="training-data-quality"><h4 class="heading">
+<span class="type">Activity</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">1.3.6</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
 </h4>
-<div class="para" id="topic-1-3-responsible-ai-5-6-2">Generative AI is a type of AI that creates new content, such as text, images, music, or code, based on patterns it has learned from examples. Some generative AI tools are powered by large language models (LLMs), which generate text by predicting likely sequences of words based on patterns learned from large collections of text.<div class="autopermalink" data-description="Paragraph"><a href="#topic-1-3-responsible-ai-5-6-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="ptx-runestone-container"><div class="runestone multiplechoice_section">
+<div class="exercise-statement">
+<div class="para" id="training-data-quality-1-1">Adding more training data does not always improve an AI model. Which is the <em class="emphasis">best</em> explanation for this?<div class="autopermalink" data-description="Paragraph"><a href="#training-data-quality-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Essential Knowledge 1.3.7: 1.3.A.5"><a href="#topic-1-3-responsible-ai-5-6" title="Copy heading and permalink for Essential Knowledge 1.3.7: 1.3.A.5" aria-label="Copy heading and permalink for Essential Knowledge 1.3.7: 1.3.A.5">🔗</a></div>
-</article>
-<article class="note remark-like" id="topic-1-3-responsible-ai-5-7"><h4 class="heading">
-<span class="type">Essential Knowledge</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">1.3.8</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">1.3.A.6.</span>
-</h4>
-<div class="para" id="topic-1-3-responsible-ai-5-7-2">Humans decide what happens with an AI tool’s output, including when to trust it, what actions to take based on it, and when a human should review or make the final decision.<div class="autopermalink" data-description="Paragraph"><a href="#topic-1-3-responsible-ai-5-7-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Essential Knowledge 1.3.8: 1.3.A.6"><a href="#topic-1-3-responsible-ai-5-7" title="Copy heading and permalink for Essential Knowledge 1.3.8: 1.3.A.6" aria-label="Copy heading and permalink for Essential Knowledge 1.3.8: 1.3.A.6">🔗</a></div>
-</article>
-<article class="note remark-like" id="topic-1-3-responsible-ai-5-8"><h4 class="heading">
-<span class="type">Essential Knowledge</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">1.3.9</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">1.3.A.7.</span>
-</h4>
-<div class="para" id="topic-1-3-responsible-ai-5-8-2">When AI tools are used to create or transform content, humans must consider what content may be used and how outputs may be shared, including following licenses and giving attribution when required.<div class="autopermalink" data-description="Paragraph"><a href="#topic-1-3-responsible-ai-5-8-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div>
-<div class="autopermalink" data-description="Essential Knowledge 1.3.9: 1.3.A.7"><a href="#topic-1-3-responsible-ai-5-8" title="Copy heading and permalink for Essential Knowledge 1.3.9: 1.3.A.7" aria-label="Copy heading and permalink for Essential Knowledge 1.3.9: 1.3.A.7">🔗</a></div>
-</article>
-<article class="note remark-like" id="topic-1-3-responsible-ai-5-9"><h4 class="heading">
-<span class="type">Essential Knowledge</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">1.3.10</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">1.3.A.8.</span>
-</h4>
-<div class="para" id="topic-1-3-responsible-ai-5-9-2">AI tools can generate realistic images, audio, or video that may be mistaken for authentic media (deepfakes). Humans must make decisions about safeguards, such as disclosure, verification, and responsible sharing, to reduce misinformation and harm.<div class="autopermalink" data-description="Paragraph"><a href="#topic-1-3-responsible-ai-5-9-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div>
-<div class="autopermalink" data-description="Essential Knowledge 1.3.10: 1.3.A.8"><a href="#topic-1-3-responsible-ai-5-9" title="Copy heading and permalink for Essential Knowledge 1.3.10: 1.3.A.8" aria-label="Copy heading and permalink for Essential Knowledge 1.3.10: 1.3.A.8">🔗</a></div>
-</article>
-<article class="note remark-like" id="topic-1-3-responsible-ai-5-10"><h4 class="heading">
-<span class="type">Essential Knowledge</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">1.3.11</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">1.3.A.9.</span>
-</h4>
-<div class="para" id="topic-1-3-responsible-ai-5-10-2">Model drift occurs when a model’s performance changes over time because the real-world data or conditions it encounters shift, potentially making the model less accurate. AI systems should be monitored by humans to detect model drift. When drift is detected, humans can update data, adjust the model, or retrain the system to reduce inaccurate or harmful outcomes.<div class="autopermalink" data-description="Paragraph"><a href="#topic-1-3-responsible-ai-5-10-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div>
-<div class="autopermalink" data-description="Essential Knowledge 1.3.11: 1.3.A.9"><a href="#topic-1-3-responsible-ai-5-10" title="Copy heading and permalink for Essential Knowledge 1.3.11: 1.3.A.9" aria-label="Copy heading and permalink for Essential Knowledge 1.3.11: 1.3.A.9">🔗</a></div>
-</article>
-<article class="note remark-like" id="topic-1-3-responsible-ai-5-11"><h4 class="heading">
-<span class="type">Essential Knowledge</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">1.3.12</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">1.3.A.10.</span>
-</h4>
-<div class="para" id="topic-1-3-responsible-ai-5-11-2">Developers can increase transparency by clearly describing an AI tool’s purpose, how it was developed, trained, and evaluated, and its limitations and appropriate uses. This allows users to make informed choices.<div class="autopermalink" data-description="Paragraph"><a href="#topic-1-3-responsible-ai-5-11-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div>
-<div class="autopermalink" data-description="Essential Knowledge 1.3.12: 1.3.A.10"><a href="#topic-1-3-responsible-ai-5-11" title="Copy heading and permalink for Essential Knowledge 1.3.12: 1.3.A.10" aria-label="Copy heading and permalink for Essential Knowledge 1.3.12: 1.3.A.10">🔗</a></div>
-</article><div class="autopermalink" data-description="Subsection 1.3.2: Human Decisions in AI"><a href="#topic-1-3-responsible-ai-5" title="Copy heading and permalink for Subsection 1.3.2: Human Decisions in AI" aria-label="Copy heading and permalink for Subsection 1.3.2: Human Decisions in AI">🔗</a></div>
+<ul data-component="multiplechoice" class="exercise-interactives" id="rs-training-data-quality" data-multipleanswers="false" data-random="">
+<li data-component="answer" id="rs-training-data-quality_opt_a">
+<div class="para" id="training-data-quality-2-1-1-1">AI models stop learning after they have seen a certain number of examples.</div>
+</li>
+<li data-component="feedback" id="rs-training-data-quality_opt_a">
+<div class="para" id="training-data-quality-2-1-2-1">No. AI models do not have a fixed limit on how many examples they can learn from.</div>
+</li>
+<li data-component="answer" id="rs-training-data-quality_opt_b" data-correct="">
+<div class="para" id="training-data-quality-2-2-1-1">If the additional data is inaccurate, repetitive, or does not represent the variety of real-world examples, the model may not improve.</div>
+</li>
+<li data-component="feedback" id="rs-training-data-quality_opt_b">
+<div class="para" id="training-data-quality-2-2-2-1">Correct! The quality and diversity of the training data are just as important as the quantity.</div>
+</li>
+<li data-component="answer" id="rs-training-data-quality_opt_c">
+<div class="para" id="training-data-quality-2-3-1-1">Adding more data causes the AI to forget what it learned from earlier examples.</div>
+</li>
+<li data-component="feedback" id="rs-training-data-quality_opt_c">
+<div class="para" id="training-data-quality-2-3-2-1">No. More data does not automatically cause an AI model to forget previous training examples.</div>
+</li>
+<li data-component="answer" id="rs-training-data-quality_opt_d">
+<div class="para" id="training-data-quality-2-4-1-1">AI models become less accurate whenever they are trained with more than one category of data.</div>
+</li>
+<li data-component="feedback" id="rs-training-data-quality_opt_d">
+<div class="para" id="training-data-quality-2-4-2-1">No. AI models are often designed to recognize many categories. The issue is whether the training data is representative and of good quality.</div>
+</li>
+</ul>
+</div></div>
+<div class="autopermalink" data-description="Activity 1.3.6"><a href="#training-data-quality" title="Copy heading and permalink for Activity 1.3.6" aria-label="Copy heading and permalink for Activity 1.3.6">🔗</a></div>
+</article><div class="autopermalink" data-description="Subsection 1.3.2: Machine Learning and AI Models"><a href="#ai-models" title="Copy heading and permalink for Subsection 1.3.2: Machine Learning and AI Models" aria-label="Copy heading and permalink for Subsection 1.3.2: Machine Learning and AI Models">🔗</a></div>
 </section>
-<section class="subsection" id="topic-1-3-responsible-ai-6">
+<section class="subsection" id="genAI">
 <h3 class="heading hide-type">
-<span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">1.3.3</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Automation and Augmentation</span>
+<span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">1.3.3</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Generative AI</span>
 </h3>
-<article class="note remark-like" id="topic-1-3-responsible-ai-6-2"><h4 class="heading">
-<span class="type">Essential Knowledge</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">1.3.13</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">1.3.B.1.</span>
+<article class="note remark-like" id="genAI-2"><h4 class="heading">
+<span class="type">Essential Knowledge</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">1.3.5</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">1.3.A.5.</span>
 </h4>
-<div class="para" id="topic-1-3-responsible-ai-6-2-2">Decisions about automation and augmentation affect everyday experiences, such as recommendations, autocorrect suggestions, and navigation directions. Understanding whether a system is acting automatically or supporting human decision-making helps users decide how much to rely on its output and when they should verify it, especially when errors, bias, or other limitations could affect the result.<div class="autopermalink" data-description="Paragraph"><a href="#topic-1-3-responsible-ai-6-2-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="genAI-2-2">
+<dfn class="terminology">Generative AI</dfn> is a type of AI that creates new content, such as text, images, music, or code, based on patterns it has learned from examples. Some generative AI tools are powered by <dfn class="terminology">large language models (LLMs)</dfn>, which generate text by predicting likely sequences of words based on patterns learned from large collections of text.<div class="autopermalink" data-description="Paragraph"><a href="#genAI-2-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Essential Knowledge 1.3.13: 1.3.B.1"><a href="#topic-1-3-responsible-ai-6-2" title="Copy heading and permalink for Essential Knowledge 1.3.13: 1.3.B.1" aria-label="Copy heading and permalink for Essential Knowledge 1.3.13: 1.3.B.1">🔗</a></div>
+<div class="autopermalink" data-description="Essential Knowledge 1.3.5: 1.3.A.5"><a href="#genAI-2" title="Copy heading and permalink for Essential Knowledge 1.3.5: 1.3.A.5" aria-label="Copy heading and permalink for Essential Knowledge 1.3.5: 1.3.A.5">🔗</a></div>
 </article>
-<article class="note remark-like" id="topic-1-3-responsible-ai-6-3"><h4 class="heading">
-<span class="type">Essential Knowledge</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">1.3.14</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">1.3.B.2.</span>
+<article class="note remark-like" id="genAI-3"><h4 class="heading">
+<span class="type">Essential Knowledge</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">1.3.6</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">1.3.A.6.</span>
 </h4>
-<div class="para" id="topic-1-3-responsible-ai-6-3-2">Automation allows computers to carry out tasks with limited human involvement, often making work faster, more consistent, and more efficient. Automated systems can handle routine tasks and, in some cases, more complex ones. They may still produce inaccurate results when inputs are ambiguous, conditions change, or unusual cases are not handled well.<div class="autopermalink" data-description="Paragraph"><a href="#topic-1-3-responsible-ai-6-3-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="genAI-3-2">Humans decide what happens with an AI tool’s output, including when to trust it, what actions to take based on it, and when a human should review or make the final decision.<div class="autopermalink" data-description="Paragraph"><a href="#genAI-3-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Essential Knowledge 1.3.14: 1.3.B.2"><a href="#topic-1-3-responsible-ai-6-3" title="Copy heading and permalink for Essential Knowledge 1.3.14: 1.3.B.2" aria-label="Copy heading and permalink for Essential Knowledge 1.3.14: 1.3.B.2">🔗</a></div>
+<div class="autopermalink" data-description="Essential Knowledge 1.3.6: 1.3.A.6"><a href="#genAI-3" title="Copy heading and permalink for Essential Knowledge 1.3.6: 1.3.A.6" aria-label="Copy heading and permalink for Essential Knowledge 1.3.6: 1.3.A.6">🔗</a></div>
 </article>
-<article class="note remark-like" id="topic-1-3-responsible-ai-6-4"><h4 class="heading">
-<span class="type">Essential Knowledge</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">1.3.15</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">1.3.B.3.</span>
+<article class="note remark-like" id="genAI-4"><h4 class="heading">
+<span class="type">Essential Knowledge</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">1.3.7</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">1.3.A.7.</span>
 </h4>
-<div class="para" id="topic-1-3-responsible-ai-6-4-2">Accuracy is the degree to which an output or code solution matches defined criteria for correctness, such as a program’s requirements or known correct outputs. Accuracy can be evaluated by testing with defined inputs and comparing actual results to expected results.<div class="autopermalink" data-description="Paragraph"><a href="#topic-1-3-responsible-ai-6-4-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="genAI-4-2">When AI tools are used to create or transform content, humans must consider what content may be used and how outputs may be shared, including following licenses and giving attribution when required.<div class="autopermalink" data-description="Paragraph"><a href="#genAI-4-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Essential Knowledge 1.3.15: 1.3.B.3"><a href="#topic-1-3-responsible-ai-6-4" title="Copy heading and permalink for Essential Knowledge 1.3.15: 1.3.B.3" aria-label="Copy heading and permalink for Essential Knowledge 1.3.15: 1.3.B.3">🔗</a></div>
+<div class="autopermalink" data-description="Essential Knowledge 1.3.7: 1.3.A.7"><a href="#genAI-4" title="Copy heading and permalink for Essential Knowledge 1.3.7: 1.3.A.7" aria-label="Copy heading and permalink for Essential Knowledge 1.3.7: 1.3.A.7">🔗</a></div>
 </article>
-<article class="note remark-like" id="topic-1-3-responsible-ai-6-5"><h4 class="heading">
-<span class="type">Essential Knowledge</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">1.3.16</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">1.3.B.4.</span>
+<article class="note remark-like" id="genAI-5"><h4 class="heading">
+<span class="type">Essential Knowledge</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">1.3.8</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">1.3.A.8.</span>
 </h4>
-<div class="para" id="topic-1-3-responsible-ai-6-5-2">Augmentation uses tools or systems to support human work while humans remain responsible for decisions and outcomes. In some cases, augmentation involves AI, such as in human-in-the-loop systems where AI outputs are reviewed by humans to improve accuracy and accountability.<div class="autopermalink" data-description="Paragraph"><a href="#topic-1-3-responsible-ai-6-5-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="genAI-5-2">AI tools can generate realistic images, audio, or video that may be mistaken for authentic media (deepfakes). Humans must make decisions about safeguards, such as disclosure, verification, and responsible sharing, to reduce misinformation and harm.<div class="autopermalink" data-description="Paragraph"><a href="#genAI-5-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Essential Knowledge 1.3.16: 1.3.B.4"><a href="#topic-1-3-responsible-ai-6-5" title="Copy heading and permalink for Essential Knowledge 1.3.16: 1.3.B.4" aria-label="Copy heading and permalink for Essential Knowledge 1.3.16: 1.3.B.4">🔗</a></div>
+<div class="autopermalink" data-description="Essential Knowledge 1.3.8: 1.3.A.8"><a href="#genAI-5" title="Copy heading and permalink for Essential Knowledge 1.3.8: 1.3.A.8" aria-label="Copy heading and permalink for Essential Knowledge 1.3.8: 1.3.A.8">🔗</a></div>
 </article>
-<article class="note remark-like" id="topic-1-3-responsible-ai-6-6"><h4 class="heading">
-<span class="type">Essential Knowledge</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">1.3.17</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">1.3.B.5.</span>
+<article class="note remark-like" id="genAI-6"><h4 class="heading">
+<span class="type">Essential Knowledge</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">1.3.9</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">1.3.A.9.</span>
 </h4>
-<div class="para" id="topic-1-3-responsible-ai-6-6-2">The appropriateness of automation or augmentation depends on the context and the consequences of error. Although automation can be faster, more consistent, or easier to scale, it may be less appropriate in situations that are high-stakes, ambiguous, or require human judgment, empathy, or discretion. In those situations, augmentation may be preferred so that humans remain responsible for the final decision.<div class="autopermalink" data-description="Paragraph"><a href="#topic-1-3-responsible-ai-6-6-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="genAI-6-2">
+<dfn class="terminology">Model drift</dfn> occurs when a model’s performance changes over time because the real-world data or conditions it encounters shift, potentially making the model less accurate. AI systems should be monitored by humans to detect model drift. When drift is detected, humans can update data, adjust the model, or retrain the system to reduce inaccurate or harmful outcomes.<div class="autopermalink" data-description="Paragraph"><a href="#genAI-6-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Essential Knowledge 1.3.17: 1.3.B.5"><a href="#topic-1-3-responsible-ai-6-6" title="Copy heading and permalink for Essential Knowledge 1.3.17: 1.3.B.5" aria-label="Copy heading and permalink for Essential Knowledge 1.3.17: 1.3.B.5">🔗</a></div>
+<div class="autopermalink" data-description="Essential Knowledge 1.3.9: 1.3.A.9"><a href="#genAI-6" title="Copy heading and permalink for Essential Knowledge 1.3.9: 1.3.A.9" aria-label="Copy heading and permalink for Essential Knowledge 1.3.9: 1.3.A.9">🔗</a></div>
 </article>
-<article class="note remark-like" id="topic-1-3-responsible-ai-6-7"><h4 class="heading">
-<span class="type">Essential Knowledge</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">1.3.18</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">1.3.B.6.</span>
+<article class="note remark-like" id="genAI-7"><h4 class="heading">
+<span class="type">Essential Knowledge</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">1.3.10</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">1.3.A.10.</span>
 </h4>
-<div class="para" id="topic-1-3-responsible-ai-6-7-2">Evaluating the appropriate level of automation or augmentation requires weighing benefits such as speed or efficiency against risks such as bias, inaccuracy, privacy, or overreliance, including how thresholds affect outcomes. It also means considering social, environmental, and economic trade-offs such as impacts on people, resource and energy use, costs, labor, and access.<div class="autopermalink" data-description="Paragraph"><a href="#topic-1-3-responsible-ai-6-7-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="genAI-7-2">Developers can increase transparency by clearly describing an AI tool’s purpose, how it was developed, trained, and evaluated, and its limitations and appropriate uses. This allows users to make informed choices.<div class="autopermalink" data-description="Paragraph"><a href="#genAI-7-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Essential Knowledge 1.3.18: 1.3.B.6"><a href="#topic-1-3-responsible-ai-6-7" title="Copy heading and permalink for Essential Knowledge 1.3.18: 1.3.B.6" aria-label="Copy heading and permalink for Essential Knowledge 1.3.18: 1.3.B.6">🔗</a></div>
+<div class="autopermalink" data-description="Essential Knowledge 1.3.10: 1.3.A.10"><a href="#genAI-7" title="Copy heading and permalink for Essential Knowledge 1.3.10: 1.3.A.10" aria-label="Copy heading and permalink for Essential Knowledge 1.3.10: 1.3.A.10">🔗</a></div>
+</article><div class="autopermalink" data-description="Subsection 1.3.3: Generative AI"><a href="#genAI" title="Copy heading and permalink for Subsection 1.3.3: Generative AI" aria-label="Copy heading and permalink for Subsection 1.3.3: Generative AI">🔗</a></div>
+</section>
+<section class="subsection" id="topic-1-3-responsible-ai-7">
+<h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">1.3.4</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Automation and Augmentation</span>
+</h3>
+<article class="note remark-like" id="topic-1-3-responsible-ai-7-2"><h4 class="heading">
+<span class="type">Essential Knowledge</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">1.3.11</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">1.3.B.1.</span>
+</h4>
+<div class="para" id="topic-1-3-responsible-ai-7-2-2">Decisions about automation and augmentation affect everyday experiences, such as recommendations, autocorrect suggestions, and navigation directions. Understanding whether a system is acting automatically or supporting human decision-making helps users decide how much to rely on its output and when they should verify it, especially when errors, bias, or other limitations could affect the result.<div class="autopermalink" data-description="Paragraph"><a href="#topic-1-3-responsible-ai-7-2-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Essential Knowledge 1.3.11: 1.3.B.1"><a href="#topic-1-3-responsible-ai-7-2" title="Copy heading and permalink for Essential Knowledge 1.3.11: 1.3.B.1" aria-label="Copy heading and permalink for Essential Knowledge 1.3.11: 1.3.B.1">🔗</a></div>
 </article>
-<article class="note remark-like" id="topic-1-3-responsible-ai-6-8"><h4 class="heading">
-<span class="type">Essential Knowledge</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">1.3.19</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">1.3.B.7.</span>
+<article class="note remark-like" id="topic-1-3-responsible-ai-7-3"><h4 class="heading">
+<span class="type">Essential Knowledge</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">1.3.12</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">1.3.B.2.</span>
 </h4>
-<div class="para" id="topic-1-3-responsible-ai-6-8-2">Evaluating automation or augmentation should consider how the choice affects user experience, including trust, transparency, and whether users can reasonably decline or reduce automation, such as choosing manual controls or requesting human review when needed.<div class="autopermalink" data-description="Paragraph"><a href="#topic-1-3-responsible-ai-6-8-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="topic-1-3-responsible-ai-7-3-2">Automation allows computers to carry out tasks with limited human involvement, often making work faster, more consistent, and more efficient. Automated systems can handle routine tasks and, in some cases, more complex ones. They may still produce inaccurate results when inputs are ambiguous, conditions change, or unusual cases are not handled well.<div class="autopermalink" data-description="Paragraph"><a href="#topic-1-3-responsible-ai-7-3-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Essential Knowledge 1.3.19: 1.3.B.7"><a href="#topic-1-3-responsible-ai-6-8" title="Copy heading and permalink for Essential Knowledge 1.3.19: 1.3.B.7" aria-label="Copy heading and permalink for Essential Knowledge 1.3.19: 1.3.B.7">🔗</a></div>
-</article><div class="autopermalink" data-description="Subsection 1.3.3: Automation and Augmentation"><a href="#topic-1-3-responsible-ai-6" title="Copy heading and permalink for Subsection 1.3.3: Automation and Augmentation" aria-label="Copy heading and permalink for Subsection 1.3.3: Automation and Augmentation">🔗</a></div>
+<div class="autopermalink" data-description="Essential Knowledge 1.3.12: 1.3.B.2"><a href="#topic-1-3-responsible-ai-7-3" title="Copy heading and permalink for Essential Knowledge 1.3.12: 1.3.B.2" aria-label="Copy heading and permalink for Essential Knowledge 1.3.12: 1.3.B.2">🔗</a></div>
+</article>
+<article class="note remark-like" id="topic-1-3-responsible-ai-7-4"><h4 class="heading">
+<span class="type">Essential Knowledge</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">1.3.13</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">1.3.B.3.</span>
+</h4>
+<div class="para" id="topic-1-3-responsible-ai-7-4-2">Accuracy is the degree to which an output or code solution matches defined criteria for correctness, such as a program’s requirements or known correct outputs. Accuracy can be evaluated by testing with defined inputs and comparing actual results to expected results.<div class="autopermalink" data-description="Paragraph"><a href="#topic-1-3-responsible-ai-7-4-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Essential Knowledge 1.3.13: 1.3.B.3"><a href="#topic-1-3-responsible-ai-7-4" title="Copy heading and permalink for Essential Knowledge 1.3.13: 1.3.B.3" aria-label="Copy heading and permalink for Essential Knowledge 1.3.13: 1.3.B.3">🔗</a></div>
+</article>
+<article class="note remark-like" id="topic-1-3-responsible-ai-7-5"><h4 class="heading">
+<span class="type">Essential Knowledge</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">1.3.14</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">1.3.B.4.</span>
+</h4>
+<div class="para" id="topic-1-3-responsible-ai-7-5-2">Augmentation uses tools or systems to support human work while humans remain responsible for decisions and outcomes. In some cases, augmentation involves AI, such as in human-in-the-loop systems where AI outputs are reviewed by humans to improve accuracy and accountability.<div class="autopermalink" data-description="Paragraph"><a href="#topic-1-3-responsible-ai-7-5-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Essential Knowledge 1.3.14: 1.3.B.4"><a href="#topic-1-3-responsible-ai-7-5" title="Copy heading and permalink for Essential Knowledge 1.3.14: 1.3.B.4" aria-label="Copy heading and permalink for Essential Knowledge 1.3.14: 1.3.B.4">🔗</a></div>
+</article>
+<article class="note remark-like" id="topic-1-3-responsible-ai-7-6"><h4 class="heading">
+<span class="type">Essential Knowledge</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">1.3.15</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">1.3.B.5.</span>
+</h4>
+<div class="para" id="topic-1-3-responsible-ai-7-6-2">The appropriateness of automation or augmentation depends on the context and the consequences of error. Although automation can be faster, more consistent, or easier to scale, it may be less appropriate in situations that are high-stakes, ambiguous, or require human judgment, empathy, or discretion. In those situations, augmentation may be preferred so that humans remain responsible for the final decision.<div class="autopermalink" data-description="Paragraph"><a href="#topic-1-3-responsible-ai-7-6-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Essential Knowledge 1.3.15: 1.3.B.5"><a href="#topic-1-3-responsible-ai-7-6" title="Copy heading and permalink for Essential Knowledge 1.3.15: 1.3.B.5" aria-label="Copy heading and permalink for Essential Knowledge 1.3.15: 1.3.B.5">🔗</a></div>
+</article>
+<article class="note remark-like" id="topic-1-3-responsible-ai-7-7"><h4 class="heading">
+<span class="type">Essential Knowledge</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">1.3.16</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">1.3.B.6.</span>
+</h4>
+<div class="para" id="topic-1-3-responsible-ai-7-7-2">Evaluating the appropriate level of automation or augmentation requires weighing benefits such as speed or efficiency against risks such as bias, inaccuracy, privacy, or overreliance, including how thresholds affect outcomes. It also means considering social, environmental, and economic trade-offs such as impacts on people, resource and energy use, costs, labor, and access.<div class="autopermalink" data-description="Paragraph"><a href="#topic-1-3-responsible-ai-7-7-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Essential Knowledge 1.3.16: 1.3.B.6"><a href="#topic-1-3-responsible-ai-7-7" title="Copy heading and permalink for Essential Knowledge 1.3.16: 1.3.B.6" aria-label="Copy heading and permalink for Essential Knowledge 1.3.16: 1.3.B.6">🔗</a></div>
+</article>
+<article class="note remark-like" id="topic-1-3-responsible-ai-7-8"><h4 class="heading">
+<span class="type">Essential Knowledge</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">1.3.17</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">1.3.B.7.</span>
+</h4>
+<div class="para" id="topic-1-3-responsible-ai-7-8-2">Evaluating automation or augmentation should consider how the choice affects user experience, including trust, transparency, and whether users can reasonably decline or reduce automation, such as choosing manual controls or requesting human review when needed.<div class="autopermalink" data-description="Paragraph"><a href="#topic-1-3-responsible-ai-7-8-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Essential Knowledge 1.3.17: 1.3.B.7"><a href="#topic-1-3-responsible-ai-7-8" title="Copy heading and permalink for Essential Knowledge 1.3.17: 1.3.B.7" aria-label="Copy heading and permalink for Essential Knowledge 1.3.17: 1.3.B.7">🔗</a></div>
+</article><div class="autopermalink" data-description="Subsection 1.3.4: Automation and Augmentation"><a href="#topic-1-3-responsible-ai-7" title="Copy heading and permalink for Subsection 1.3.4: Automation and Augmentation" aria-label="Copy heading and permalink for Subsection 1.3.4: Automation and Augmentation">🔗</a></div>
+</section>
+<section class="subsection" id="topic-1-3-responsible-ai-8">
+<h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">1.3.5</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Learning Objectives Review</span>
+</h3>
+<div class="para" id="topic-1-3-responsible-ai-8-2">After this lesson, you will be able to:<div class="autopermalink" data-description="Paragraph"><a href="#topic-1-3-responsible-ai-8-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<article class="remark remark-like" id="topic-1-3-responsible-ai-8-3"><h4 class="heading">
+<span class="type">Learning Objective</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">1.3.18</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">1.3.A.</span>
+</h4>
+<div class="para" id="topic-1-3-responsible-ai-8-3-2">Explain how human decisions shape the development, deployment, and maintenance of AI tools.<div class="autopermalink" data-description="Paragraph"><a href="#topic-1-3-responsible-ai-8-3-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Learning Objective 1.3.18: 1.3.A"><a href="#topic-1-3-responsible-ai-8-3" title="Copy heading and permalink for Learning Objective 1.3.18: 1.3.A" aria-label="Copy heading and permalink for Learning Objective 1.3.18: 1.3.A">🔗</a></div>
+</article>
+<article class="remark remark-like" id="topic-1-3-responsible-ai-8-4"><h4 class="heading">
+<span class="type">Learning Objective</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">1.3.19</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">1.3.B.</span>
+</h4>
+<div class="para" id="topic-1-3-responsible-ai-8-4-2">Evaluate the appropriate level of automation or augmentation for a task.<div class="autopermalink" data-description="Paragraph"><a href="#topic-1-3-responsible-ai-8-4-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Learning Objective 1.3.19: 1.3.B"><a href="#topic-1-3-responsible-ai-8-4" title="Copy heading and permalink for Learning Objective 1.3.19: 1.3.B" aria-label="Copy heading and permalink for Learning Objective 1.3.19: 1.3.B">🔗</a></div>
+</article><div class="autopermalink" data-description="Subsection 1.3.5: Learning Objectives Review"><a href="#topic-1-3-responsible-ai-8" title="Copy heading and permalink for Subsection 1.3.5: Learning Objectives Review" aria-label="Copy heading and permalink for Subsection 1.3.5: Learning Objectives Review">🔗</a></div>
 </section><div class="autopermalink" data-description="Section 1.3: Responsible AI and Human Decision-Making"><a href="#topic-1-3-responsible-ai" title="Copy heading and permalink for Section 1.3: Responsible AI and Human Decision-Making" aria-label="Copy heading and permalink for Section 1.3: Responsible AI and Human Decision-Making">🔗</a></div>
 </section>
 </div>
