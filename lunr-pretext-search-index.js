@@ -16,39 +16,39 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "1.1",
   "title": "Purpose and Behavior",
-  "body": "  Purpose and Behavior   Computer Science is an exciting field that is transforming the way we live and work. Watch the video below to learn more about how computers and software are changing the world.   In this lessons, we will explore the purpose and behavior of apps by interacting with them and observing their input and output.    Purpose and Behavior of Apps  Think about your favorite apps on your phone and their purpose. App is short for application , which is a program that runs on a computer or any computing device including your phone.   1.1.A.1  Applications (apps) are programs that run on many kinds of computing devices. Apps can run on smartphones, tablets, laptops, desktops, game consoles, and web browsers, and they are designed to help users accomplish tasks or goals.    1.1.A.2  People use apps to help solve real problems and accomplish everyday tasks, such as communicating, learning, navigating, creating and sharing media, staying organized, and being entertained.   An app's purpose is why it was created, its ultimate goal or the problem it solves. For example, the purpose of a texting app on a phone is to help us to communicate with each other.  Take a look at the Google Stopwatch or Github Stopwatch app below. Why would someone use this app? What is its purpose? What happens when you click the Start button? What happens when you click the Pause or Reset buttons? Try it out below.     What is the purpose of the Google Stopwatch app ?      To tell time    That would be a watch or clock app.      To time an event by counting down from a set amount of time    A timer counts down from a set amount of time. A stopwatch counts up from zero.      To measure how much time has passed starting from zero    Correct! A stopwatch keeps track of how much time has passed starting from zero, such as timing a race or an activity.      To perform calculations    Calculations are done with a calculator app, not a stopwatch.       1.1.A.3  An app is successful when it uses information to produce an output that helps a user achieve a goal. An app’s value to the user depends on how well the results meet their needs.    1.1.A.4  Because people rely on apps for everyday tasks, app behavior matters. When an app is confusing, unreliable, or does not work as expected, users can become frustrated because it interrupts what they are trying to do.   Some apps are easy to use with clear purposes and behaviors, but sometimes apps and other designs can fail to meet user needs or expectations. Watch the following video about bad design choices.   Take a look at this app with bad design below or the userinyerface.com funny website. The purpose of the app is to accept your date of birth, but the app is not a successful design. Try to put in your birthdate. Is it frustrating to use?     What are the issues with the Bad Date app and how does it behave when you interact with it? How could it be improved to better meet user needs and expectations?      1.1.A.5  An app’s behavior is what it does while it is running, including how it responds to user interactions. The behavior of an app is determined by its program code.    1.1.A.6  An app should behave as intended across a range of conditions, including different ways people may interact with it.    1.1.A.7  Users can understand an app’s purpose and behavior by using it and observing how it responds to their actions.     Take a look at Google Maps . What is the purpose of Google Maps? People may interact with Google Maps in different ways. Describe the behavior of Google Maps including how you interact with it and how it responds to do two different tasks.       Inputs and Outputs  Watch the following video about what makes a computer a computer.    1.1.B.1  Apps are designed to take in information from a variety of sources, process that information, and respond in useful ways.   As seen in the video, all computing devices and the apps that run on them are created to receive input from users, store it as data, process the data, and produce output to communicate with users.   1.1.B.2  When users interact with apps, they often tap or click buttons, type letters or numbers, speak, or move the device. Each of these actions provides input : data sent to a computer for a program to process.    Input is data sent to a computer for processing by a program, and output is the data sent back from the program to the device. Input and output can come in many forms, such as tactile (for example touching a button or the device vibrating), audible (a sound), visual (an image), or text.    Which of the following are examples of input and output in the Google Stopwatch app ?      Tapping the Start button    Correct! Tapping a button is user input.      The system time    The system time is used by the stopwatch app to calculate the elapsed time but it is not input or output to the user.      The elapsed time displayed on the screen    Correct! The app displays the elapsed time as output.     The color of the displayed time   The color of the displayed time is set by the app code but it is not input or output to the stopwatch app.      Pressing the reset button    Pressing the reset button is an input to the stopwatch app.       1.1.B.3  Apps should provide clear feedback when they receive input, such as highlighting a button, showing a loading icon, playing a sound, vibrating, or displaying an error message. This feedback is a form of output that helps users know the app received the input, is working, and what step to take next.   The door design video above mentioned feedback in human-centered design, where feedback tells the user that something happened after their input.   1.1.B.4  Input often comes from a user’s direct actions, but it can also be captured automatically from sources such as sensors (like an accelerometer), location, time, or network signals. Apps may also receive audio or images from microphones and cameras, often through user actions (like a voice command or face scan). These inputs allow apps to provide features like maps, step counting, face filters, or recommendations.     Which app below is most likely to use tilting the device (accelerometer) as an input or vibration as an output?      A car racing game    Yes, a car racing game could use tilting the phone to steer the car and phone vibration as output during a crash.      A calculator app that adds two numbers    A calculator typically uses taps as input and text as output, not tilt or vibration.      A tic tac toe game    Tic tac toe games mainly use touch input and visual output.      A weather app that displays today's forecast    Weather apps primarily display information on the screen rather than using tilt or vibration.        Describe a device or app that uses input from a sensor or camera. If you cannot think of one, search online for examples.      1.1.B.5  In many apps, the program responds to events , such as button clicks, key presses, or sensor updates, by running specific code. Events are one way input is delivered to a program. An event signals that something happened, and an event handler processes the input and determines what happens next.   Most apps these days use event-driven programming , which means they display the user interface (UI) and wait for user events to trigger actions, for example for the user to touch a button. In event-driven programming, the code is attached to input such as button click and only run when triggered. The app's behavior is determined by the code that runs in response to the input.   1.1.B.6  Outputs are what an app produces. Outputs may include text, images, sounds, or something the user feels, like a vibration. Some outputs are directly perceived by the user, while others are not, such as data written to a file or sent over a network.    1.1.B.7  Users can identify inputs and outputs by trying different actions in an app and observing what the app displays or does in response.   Try the following pizza web app by typing in your name and choosing different options. Think about the inputs and outputs to the app.     Interact with the pizza app above. What are the inputs and outputs for this app?       Which of the following output types does the pizza app above use? Check all that apply.      text    The app prints out text output when the button is clicked.     vibration   This app cannot vibrate.      image    Pizza images are displayed as output if the user likes pizza.      sound    There is no sound with this app.      color    Yes, the background color changes as a result of user interactions.        Learning Objectives Review  After this lesson, you should be able to:   1.1.A  Determine the purpose and behavior of an app by interacting with it.    1.1.B  Identify inputs and outputs of an app while using it.     Vocabulary Review    Review the vocabulary in this lesson. Drag the vocabulary term from the left and drop it on its correct definition on the right. Click the \"Check Me\" button to see if you are correct.    Find the words in the lesson above and try again.     app  a program that runs on a computer or any computing device    purpose  why an app exists or its goal    behavior  what an app does when used    input  data sent to a computer for a program to process.    output  data sent back from a program to the device or user    user interface (UI)  the part of an app (for example buttons) that users directly interact with    event  a signal that something happened, such as a button click or key press    event handler  code that runs in response to an event      "
+  "body": "  Purpose and Behavior   Computer Science is an exciting field that is transforming the way we live and work. Watch the video below to learn more about how computers and software are changing the world.   In this lessons, we will explore the purpose and behavior of apps by interacting with them and observing their input and output.    Purpose and Behavior of Apps  purpose  behavior  app  Think about your favorite apps on your phone and their purpose. App is short for application , which is a program that runs on a computer or any computing device including your phone.   1.1.A.1  Applications (apps) are programs that run on many kinds of computing devices. Apps can run on smartphones, tablets, laptops, desktops, game consoles, and web browsers, and they are designed to help users accomplish tasks or goals.    1.1.A.2  People use apps to help solve real problems and accomplish everyday tasks, such as communicating, learning, navigating, creating and sharing media, staying organized, and being entertained.   An app's purpose is why it was created, its ultimate goal or the problem it solves. For example, the purpose of a texting app on a phone is to help us to communicate with each other.  Take a look at the Google Stopwatch or Github Stopwatch app below. Why would someone use this app? What is its purpose? What happens when you click the Start button? What happens when you click the Pause or Reset buttons? Try it out below.     What is the purpose of the Google Stopwatch app ?      To tell time    That would be a watch or clock app.      To time an event by counting down from a set amount of time    A timer counts down from a set amount of time. A stopwatch counts up from zero.      To measure how much time has passed starting from zero    Correct! A stopwatch keeps track of how much time has passed starting from zero, such as timing a race or an activity.      To perform calculations    Calculations are done with a calculator app, not a stopwatch.       1.1.A.3  An app is successful when it uses information to produce an output that helps a user achieve a goal. An app’s value to the user depends on how well the results meet their needs.    1.1.A.4  Because people rely on apps for everyday tasks, app behavior matters. When an app is confusing, unreliable, or does not work as expected, users can become frustrated because it interrupts what they are trying to do.   Some apps are easy to use with clear purposes and behaviors, but sometimes apps and other designs can fail to meet user needs or expectations. Watch the following video about bad design choices.   Take a look at this app with bad design below or the userinyerface.com funny website. The purpose of the app is to accept your date of birth, but the app is not a successful design. Try to put in your birthdate. Is it frustrating to use?     What are the issues with the Bad Date app and how does it behave when you interact with it? How could it be improved to better meet user needs and expectations?      1.1.A.5  An app’s behavior is what it does while it is running, including how it responds to user interactions. The behavior of an app is determined by its program code.    1.1.A.6  An app should behave as intended across a range of conditions, including different ways people may interact with it.    1.1.A.7  Users can understand an app’s purpose and behavior by using it and observing how it responds to their actions.     Take a look at Google Maps . What is the purpose of Google Maps? People may interact with Google Maps in different ways. Describe the behavior of Google Maps including how you interact with it and how it responds to do two different tasks.       Inputs and Outputs  input  output  user interface (UI)  event  event handler  Watch the following video about what makes a computer a computer.    1.1.B.1  Apps are designed to take in information from a variety of sources, process that information, and respond in useful ways.   As seen in the video, all computing devices and the apps that run on them are created to receive input from users, store it as data, process the data, and produce output to communicate with users.   1.1.B.2  When users interact with apps, they often tap or click buttons, type letters or numbers, speak, or move the device. Each of these actions provides input : data sent to a computer for a program to process.    Input is data sent to a computer for processing by a program, and output is the data sent back from the program to the device. Input and output can come in many forms, such as tactile (for example touching a button or the device vibrating), audible (a sound), visual (an image), or text.    Which of the following are examples of input and output in the Google Stopwatch app ?      Tapping the Start button    Correct! Tapping a button is user input.      The system time    The system time is used by the stopwatch app to calculate the elapsed time but it is not input or output to the user.      The elapsed time displayed on the screen    Correct! The app displays the elapsed time as output.     The color of the displayed time   The color of the displayed time is set by the app code but it is not input or output to the stopwatch app.      Pressing the reset button    Pressing the reset button is an input to the stopwatch app.       1.1.B.3  Apps should provide clear feedback when they receive input, such as highlighting a button, showing a loading icon, playing a sound, vibrating, or displaying an error message. This feedback is a form of output that helps users know the app received the input, is working, and what step to take next.   The door design video above mentioned feedback in human-centered design, where feedback tells the user that something happened after their input.   1.1.B.4  Input often comes from a user’s direct actions, but it can also be captured automatically from sources such as sensors (like an accelerometer), location, time, or network signals. Apps may also receive audio or images from microphones and cameras, often through user actions (like a voice command or face scan). These inputs allow apps to provide features like maps, step counting, face filters, or recommendations.     Which app below is most likely to use tilting the device (accelerometer) as an input or vibration as an output?      A car racing game    Yes, a car racing game could use tilting the phone to steer the car and phone vibration as output during a crash.      A calculator app that adds two numbers    A calculator typically uses taps as input and text as output, not tilt or vibration.      A tic tac toe game    Tic tac toe games mainly use touch input and visual output.      A weather app that displays today's forecast    Weather apps primarily display information on the screen rather than using tilt or vibration.        Describe a device or app that uses input from a sensor or camera. If you cannot think of one, search online for examples.      1.1.B.5  In many apps, the program responds to events , such as button clicks, key presses, or sensor updates, by running specific code. Events are one way input is delivered to a program. An event signals that something happened, and an event handler processes the input and determines what happens next.   Most apps these days use event-driven programming , which means they display the user interface (UI) and wait for user events to trigger actions, for example for the user to touch a button. In event-driven programming, the code is attached to input such as button click and only run when triggered. The app's behavior is determined by the code that runs in response to the input.   1.1.B.6  Outputs are what an app produces. Outputs may include text, images, sounds, or something the user feels, like a vibration. Some outputs are directly perceived by the user, while others are not, such as data written to a file or sent over a network.    1.1.B.7  Users can identify inputs and outputs by trying different actions in an app and observing what the app displays or does in response.   Try the following pizza web app by typing in your name and choosing different options. Think about the inputs and outputs to the app.     Interact with the pizza app above. What are the inputs and outputs for this app?       Which of the following output types does the pizza app above use? Check all that apply.      text    The app prints out text output when the button is clicked.     vibration   This app cannot vibrate.      image    Pizza images are displayed as output if the user likes pizza.      sound    There is no sound with this app.      color    Yes, the background color changes as a result of user interactions.        Learning Objectives Review  After this lesson, you should be able to:   1.1.A  Determine the purpose and behavior of an app by interacting with it.    1.1.B  Identify inputs and outputs of an app while using it.     Vocabulary Review    Review the vocabulary in this lesson. Drag the vocabulary term from the left and drop it on its correct definition on the right. Click the \"Check Me\" button to see if you are correct.    Find the words in the lesson above and try again.     app  a program that runs on a computer or any computing device    purpose  why an app exists or its goal    behavior  what an app does when used    input  data sent to a computer for a program to process.    output  data sent back from a program to the device or user    user interface (UI)  the part of an app (for example buttons) that users directly interact with    event  a signal that something happened, such as a button click or key press    event handler  code that runs in response to an event      "
 },
 {
-  "id": "topic-1-1-purpose-4-2",
+  "id": "topic-1-1-purpose-4-5",
   "level": "2",
-  "url": "topic-1-1-purpose.html#topic-1-1-purpose-4-2",
+  "url": "topic-1-1-purpose.html#topic-1-1-purpose-4-5",
   "type": "Paragraph (with a defined term)",
   "number": "",
   "title": "",
   "body": "App application "
 },
 {
-  "id": "topic-1-1-purpose-4-3",
+  "id": "topic-1-1-purpose-4-6",
   "level": "2",
-  "url": "topic-1-1-purpose.html#topic-1-1-purpose-4-3",
+  "url": "topic-1-1-purpose.html#topic-1-1-purpose-4-6",
   "type": "Essential Knowledge",
   "number": "1.1.1",
   "title": "1.1.A.1.",
   "body": " 1.1.A.1  Applications (apps) are programs that run on many kinds of computing devices. Apps can run on smartphones, tablets, laptops, desktops, game consoles, and web browsers, and they are designed to help users accomplish tasks or goals.  "
 },
 {
-  "id": "topic-1-1-purpose-4-4",
+  "id": "topic-1-1-purpose-4-7",
   "level": "2",
-  "url": "topic-1-1-purpose.html#topic-1-1-purpose-4-4",
+  "url": "topic-1-1-purpose.html#topic-1-1-purpose-4-7",
   "type": "Essential Knowledge",
   "number": "1.1.2",
   "title": "1.1.A.2.",
   "body": " 1.1.A.2  People use apps to help solve real problems and accomplish everyday tasks, such as communicating, learning, navigating, creating and sharing media, staying organized, and being entertained.  "
 },
 {
-  "id": "topic-1-1-purpose-4-5",
+  "id": "topic-1-1-purpose-4-8",
   "level": "2",
-  "url": "topic-1-1-purpose.html#topic-1-1-purpose-4-5",
+  "url": "topic-1-1-purpose.html#topic-1-1-purpose-4-8",
   "type": "Paragraph (with a defined term)",
   "number": "",
   "title": "",
@@ -64,18 +64,18 @@ var ptx_lunr_docs = [
   "body": "  What is the purpose of the Google Stopwatch app ?      To tell time    That would be a watch or clock app.      To time an event by counting down from a set amount of time    A timer counts down from a set amount of time. A stopwatch counts up from zero.      To measure how much time has passed starting from zero    Correct! A stopwatch keeps track of how much time has passed starting from zero, such as timing a race or an activity.      To perform calculations    Calculations are done with a calculator app, not a stopwatch.     "
 },
 {
-  "id": "topic-1-1-purpose-4-9",
+  "id": "topic-1-1-purpose-4-12",
   "level": "2",
-  "url": "topic-1-1-purpose.html#topic-1-1-purpose-4-9",
+  "url": "topic-1-1-purpose.html#topic-1-1-purpose-4-12",
   "type": "Essential Knowledge",
   "number": "1.1.3",
   "title": "1.1.A.3.",
   "body": " 1.1.A.3  An app is successful when it uses information to produce an output that helps a user achieve a goal. An app’s value to the user depends on how well the results meet their needs.  "
 },
 {
-  "id": "topic-1-1-purpose-4-10",
+  "id": "topic-1-1-purpose-4-13",
   "level": "2",
-  "url": "topic-1-1-purpose.html#topic-1-1-purpose-4-10",
+  "url": "topic-1-1-purpose.html#topic-1-1-purpose-4-13",
   "type": "Essential Knowledge",
   "number": "1.1.4",
   "title": "1.1.A.4.",
@@ -91,27 +91,27 @@ var ptx_lunr_docs = [
   "body": "  What are the issues with the Bad Date app and how does it behave when you interact with it? How could it be improved to better meet user needs and expectations?    "
 },
 {
-  "id": "topic-1-1-purpose-4-16",
+  "id": "topic-1-1-purpose-4-19",
   "level": "2",
-  "url": "topic-1-1-purpose.html#topic-1-1-purpose-4-16",
+  "url": "topic-1-1-purpose.html#topic-1-1-purpose-4-19",
   "type": "Essential Knowledge",
   "number": "1.1.5",
   "title": "1.1.A.5.",
   "body": " 1.1.A.5  An app’s behavior is what it does while it is running, including how it responds to user interactions. The behavior of an app is determined by its program code.  "
 },
 {
-  "id": "topic-1-1-purpose-4-17",
+  "id": "topic-1-1-purpose-4-20",
   "level": "2",
-  "url": "topic-1-1-purpose.html#topic-1-1-purpose-4-17",
+  "url": "topic-1-1-purpose.html#topic-1-1-purpose-4-20",
   "type": "Essential Knowledge",
   "number": "1.1.6",
   "title": "1.1.A.6.",
   "body": " 1.1.A.6  An app should behave as intended across a range of conditions, including different ways people may interact with it.  "
 },
 {
-  "id": "topic-1-1-purpose-4-18",
+  "id": "topic-1-1-purpose-4-21",
   "level": "2",
-  "url": "topic-1-1-purpose.html#topic-1-1-purpose-4-18",
+  "url": "topic-1-1-purpose.html#topic-1-1-purpose-4-21",
   "type": "Essential Knowledge",
   "number": "1.1.7",
   "title": "1.1.A.7.",
@@ -127,36 +127,36 @@ var ptx_lunr_docs = [
   "body": "  Take a look at Google Maps . What is the purpose of Google Maps? People may interact with Google Maps in different ways. Describe the behavior of Google Maps including how you interact with it and how it responds to do two different tasks.    "
 },
 {
-  "id": "topic-1-1-purpose-5-4",
+  "id": "topic-1-1-purpose-5-9",
   "level": "2",
-  "url": "topic-1-1-purpose.html#topic-1-1-purpose-5-4",
+  "url": "topic-1-1-purpose.html#topic-1-1-purpose-5-9",
   "type": "Essential Knowledge",
   "number": "1.1.8",
   "title": "1.1.B.1.",
   "body": " 1.1.B.1  Apps are designed to take in information from a variety of sources, process that information, and respond in useful ways.  "
 },
 {
-  "id": "topic-1-1-purpose-5-5",
+  "id": "topic-1-1-purpose-5-10",
   "level": "2",
-  "url": "topic-1-1-purpose.html#topic-1-1-purpose-5-5",
+  "url": "topic-1-1-purpose.html#topic-1-1-purpose-5-10",
   "type": "Paragraph (with a defined term)",
   "number": "",
   "title": "",
   "body": "input output "
 },
 {
-  "id": "topic-1-1-purpose-5-6",
+  "id": "topic-1-1-purpose-5-11",
   "level": "2",
-  "url": "topic-1-1-purpose.html#topic-1-1-purpose-5-6",
+  "url": "topic-1-1-purpose.html#topic-1-1-purpose-5-11",
   "type": "Essential Knowledge",
   "number": "1.1.9",
   "title": "1.1.B.2.",
   "body": " 1.1.B.2  When users interact with apps, they often tap or click buttons, type letters or numbers, speak, or move the device. Each of these actions provides input : data sent to a computer for a program to process.  "
 },
 {
-  "id": "topic-1-1-purpose-5-8",
+  "id": "topic-1-1-purpose-5-13",
   "level": "2",
-  "url": "topic-1-1-purpose.html#topic-1-1-purpose-5-8",
+  "url": "topic-1-1-purpose.html#topic-1-1-purpose-5-13",
   "type": "Paragraph (with a defined term)",
   "number": "",
   "title": "",
@@ -172,18 +172,18 @@ var ptx_lunr_docs = [
   "body": "  Which of the following are examples of input and output in the Google Stopwatch app ?      Tapping the Start button    Correct! Tapping a button is user input.      The system time    The system time is used by the stopwatch app to calculate the elapsed time but it is not input or output to the user.      The elapsed time displayed on the screen    Correct! The app displays the elapsed time as output.     The color of the displayed time   The color of the displayed time is set by the app code but it is not input or output to the stopwatch app.      Pressing the reset button    Pressing the reset button is an input to the stopwatch app.     "
 },
 {
-  "id": "topic-1-1-purpose-5-10",
+  "id": "topic-1-1-purpose-5-15",
   "level": "2",
-  "url": "topic-1-1-purpose.html#topic-1-1-purpose-5-10",
+  "url": "topic-1-1-purpose.html#topic-1-1-purpose-5-15",
   "type": "Essential Knowledge",
   "number": "1.1.10",
   "title": "1.1.B.3.",
   "body": " 1.1.B.3  Apps should provide clear feedback when they receive input, such as highlighting a button, showing a loading icon, playing a sound, vibrating, or displaying an error message. This feedback is a form of output that helps users know the app received the input, is working, and what step to take next.  "
 },
 {
-  "id": "topic-1-1-purpose-5-12",
+  "id": "topic-1-1-purpose-5-17",
   "level": "2",
-  "url": "topic-1-1-purpose.html#topic-1-1-purpose-5-12",
+  "url": "topic-1-1-purpose.html#topic-1-1-purpose-5-17",
   "type": "Essential Knowledge",
   "number": "1.1.11",
   "title": "1.1.B.4.",
@@ -208,36 +208,36 @@ var ptx_lunr_docs = [
   "body": "  Describe a device or app that uses input from a sensor or camera. If you cannot think of one, search online for examples.    "
 },
 {
-  "id": "topic-1-1-purpose-5-15",
+  "id": "topic-1-1-purpose-5-20",
   "level": "2",
-  "url": "topic-1-1-purpose.html#topic-1-1-purpose-5-15",
+  "url": "topic-1-1-purpose.html#topic-1-1-purpose-5-20",
   "type": "Essential Knowledge",
   "number": "1.1.12",
   "title": "1.1.B.5.",
   "body": " 1.1.B.5  In many apps, the program responds to events , such as button clicks, key presses, or sensor updates, by running specific code. Events are one way input is delivered to a program. An event signals that something happened, and an event handler processes the input and determines what happens next.  "
 },
 {
-  "id": "topic-1-1-purpose-5-16",
+  "id": "topic-1-1-purpose-5-21",
   "level": "2",
-  "url": "topic-1-1-purpose.html#topic-1-1-purpose-5-16",
+  "url": "topic-1-1-purpose.html#topic-1-1-purpose-5-21",
   "type": "Paragraph (with a defined term)",
   "number": "",
   "title": "",
   "body": "event-driven programming user interface (UI) user events "
 },
 {
-  "id": "topic-1-1-purpose-5-17",
+  "id": "topic-1-1-purpose-5-22",
   "level": "2",
-  "url": "topic-1-1-purpose.html#topic-1-1-purpose-5-17",
+  "url": "topic-1-1-purpose.html#topic-1-1-purpose-5-22",
   "type": "Essential Knowledge",
   "number": "1.1.13",
   "title": "1.1.B.6.",
   "body": " 1.1.B.6  Outputs are what an app produces. Outputs may include text, images, sounds, or something the user feels, like a vibration. Some outputs are directly perceived by the user, while others are not, such as data written to a file or sent over a network.  "
 },
 {
-  "id": "topic-1-1-purpose-5-18",
+  "id": "topic-1-1-purpose-5-23",
   "level": "2",
-  "url": "topic-1-1-purpose.html#topic-1-1-purpose-5-18",
+  "url": "topic-1-1-purpose.html#topic-1-1-purpose-5-23",
   "type": "Essential Knowledge",
   "number": "1.1.14",
   "title": "1.1.B.7.",
@@ -295,7 +295,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "1.2",
   "title": "Benefits of Collaboration",
-  "body": "  Benefits of Collaboration   Almost all software is developed collaboratively in teams. Working with others can help programmers design better apps. In this topic, you will learn about the benefits of collaboration and user testing and how it can reduce bias in app development.     Collaboration   1.2.A.3  Working collaboratively on an app brings together a variety of talents and perspectives that can improve the final product. Teams can divide tasks, share ideas, and review and document decisions as they develop the app.   The following chart shows various roles on a software development team. There are many roles that don't require coding even on a software development team.     Match the software development team roles to their responsibilities. Which roles seem the most interesting to you? Do internet research to find out more about the roles that interest you.    Do internet research to find out more about the roles and try again.     Designer  creates the visual design and user experience of the app    Software Developer  writes the code for the app    Software Tester  tests the app to find bugs and usability issues    Project Manager  coordinates the team and keeps the project on track      1.2.A.4  Working collaboratively gives programmers opportunities to share roles throughout development. Pair programming is one collaboration practice in which two programmers work together at one computer: one writes the code, while the other reviews the code as it is written, checks for errors, and keeps the bigger picture in mind. Partners switch roles frequently so both contribute to writing code and problem-solving.   Watch the following video about Pair Programming. Try it out with your friends the next time you code!     What is one advantage of working collaboratively on an app?      Only one person needs to understand the project.    No, effective teams share knowledge so multiple people understand the project.      Collaboration eliminates the need for testing.    Testing is still an important part of software development, even when working as a team.      Different team members contribute different skills and perspectives.    Correct! Collaboration allows team members to combine their talents and ideas, often leading to a better final product.      Working alone is always faster than working with others.    Not necessarily. While teamwork requires communication, it often improves quality and allows tasks to be divided among team members.        During pair programming, the driver accidentally forgets an important step. The navigator notices the mistake immediately. What does this example demonstrate about pair programming?      It eliminates all programming errors.    Not quite. Pair programming can help find mistakes earlier, but it cannot guarantee that every error will be caught.      It helps catch mistakes earlier through collaboration.    Correct! The navigator reviews the code as it is written, making it more likely that mistakes will be noticed and corrected before they become larger problems.      It means the partners should switch roles.    While pair programming involves switching roles, the main benefit is the collaborative review of code.      It slows down development.    While pair programming may initially seem slower, it often leads to higher quality code and faster debugging in the long run.       Let's do a pair programming simulation! Work with a partner to write an algorithm for brushing your teeth. It must be precise enough for a robot to follow. One partner will be the driver and the other will be the navigator. The driver will write the steps while the navigator will check for mistakes and ask questions. After 2–3 minutes, switch roles. Write your algorithm below. Put *'s next to steps that were rewritten because the navigator made suggestions. Did having a partner help you write a better algorithm?      User Testing   1.2.A.1   User testing with a variety of users helps programmers design an app with a clear purpose that is intuitive for its intended users and minimizes confusion.    1.2.A.2  Programmers can conduct user testing to understand how people use an app, including where users are confused or have unmet needs. Observing participants during development provides evidence programmers can use to refine the app’s purpose and design.   Watch the following video about user testing and how it can help find bugs, give feedback, and improve apps. Try it out with your friends the next time you code!     Why do software developers perform user testing?      To guarantee the program has no bugs.    User testing can reveal problems, but it cannot guarantee that every bug has been found.      To replace collaboration among team members.    User testing complements collaboration rather than replacing it.      To make sure only certain people can use the app.    User testing makes sure your app works for all intended users.      To learn how well the app meets users' needs and identify improvements.    Correct! User feedback helps developers improve both the functionality and usability of an app.        Imagine that you are a user-tester for Runestone which the platform that this ebook is on. What are some things you would test to make sure the platform is easy to use? Did you find any tasks that were confusing or difficult to complete?       Iterative Process   1.2.A.5  Apps and programs are improved through an iterative process. Teams use feedback from user testing and collaboration to make changes and test again to verify an app more accurately meets user needs.   Software development teams use an iterative design process where they design, test, and revise their apps multiple times to improve the app's functionality and usability. The following diagram is an example of an iterative design process:     Which statement best describes an iterative design process?      Develop the app once and release it without changes.    Most software is improved through multiple rounds of revision.      Repeatedly design, test, revise, and test again to improve the app.    Correct! Iterative design uses multiple cycles of development and testing to better meet user needs.      Wait until the end of development before testing.    Testing and feedback are most useful throughout development so improvements can be made early and often.      Allow only one team member to make all design decisions.    Iterative design benefits from collaboration and input from multiple people, including users.        During testing, users struggle with an app's menu. According to the iterative design process, what should the development team do next?      Revise the menu and conduct another round of testing.    Correct! In an iterative design process, developers use user feedback to improve the app, then test again to see whether the changes were successful.      Stop testing because they have already tested the app.    Iterative design involves multiple rounds of testing and improvement until the app better meets users' needs.      Remove the menu entirely.    Removing the menu is not necessarily the best solution. The goal is to revise the design based on feedback and then test the revised version.      Release the app anyway.    If testing shows that users are still having difficulty, the team should continue improving the app before releasing it.        Reducing Bias through Collaboration   1.2.B.1   Bias occurs when an app consistently favors certain people, values, or outcomes over others. Bias can be harmful because it can make results less accurate for some users and can contribute to unfair treatment or unequal access.    1.2.B.2  Apps can reflect human bias when programmers’ assumptions, rules, or interface choices favor some users over others. Apps can also reflect data bias when the data used to train or inform the app is incomplete or unrepresentative of the people and situations the app is intended to work well for. Human bias and data bias often interact. Choices about what data to collect and how to label it can shape how an app behaves for different users.   Watch the following video to learn more about bias that can effect AI systems.    1.2.B.3  Collaboration can help reduce bias by bringing multiple perspectives into design and testing. Teams can review design decisions and data together, look for missing perspectives, and gather feedback from a variety of users.    1.2.B.4  When potential bias is identified, teams can revise the rules, data, or design and then test again to check whether outcomes are more accurate and fair across different users and situations.   Take a look at the following comic strip where a cat who is a user of an app is letting the dog developers know that the app doesn't work well for it, but the developers don't listen.     What is the bias in the comic strip above? Why do you think the app works for dogs but not cats? How could the developers have reduced bias in their app?       Learning Objectives Review   1.2.A  Explain how apps and programs are improved through collaboration and user testing.    1.2.B  Explain how collaboration can reduce bias in apps.     Vocabulary Review    Review the vocabulary in this lesson. Drag the vocabulary term from the left and drop it on its correct definition on the right. Click the \"Check Me\" button to see if you are correct.    Find the words in the lesson above and try again.     pair programming  a collaboration practice in which two programmers work together at one computer    user testing  testing an app with a variety of users    bias  a tendency to favor certain people, values, or outcomes over others    iterative design process  a circular process in which an app is designed, tested, revised, and tested again multiple times      "
+  "body": "  Benefits of Collaboration  collaboration   Almost all software is developed collaboratively in teams. Working with others can help programmers design better apps. In this topic, you will learn about the benefits of collaboration and user testing and how it can reduce bias in app development.     Collaboration   1.2.A.3  Working collaboratively on an app brings together a variety of talents and perspectives that can improve the final product. Teams can divide tasks, share ideas, and review and document decisions as they develop the app.   The following chart shows various roles on a software development team. There are many roles that don't require coding even on a software development team.     Match the software development team roles to their responsibilities. Which roles seem the most interesting to you? Do internet research to find out more about the roles that interest you.    Do internet research to find out more about the roles and try again.     Designer  creates the visual design and user experience of the app    Software Developer  writes the code for the app    Software Tester  tests the app to find bugs and usability issues    Project Manager  coordinates the team and keeps the project on track     pair programming   1.2.A.4  Working collaboratively gives programmers opportunities to share roles throughout development. Pair programming is one collaboration practice in which two programmers work together at one computer: one writes the code, while the other reviews the code as it is written, checks for errors, and keeps the bigger picture in mind. Partners switch roles frequently so both contribute to writing code and problem-solving.   Watch the following video about Pair Programming. Try it out with your friends the next time you code!     What is one advantage of working collaboratively on an app?      Only one person needs to understand the project.    No, effective teams share knowledge so multiple people understand the project.      Collaboration eliminates the need for testing.    Testing is still an important part of software development, even when working as a team.      Different team members contribute different skills and perspectives.    Correct! Collaboration allows team members to combine their talents and ideas, often leading to a better final product.      Working alone is always faster than working with others.    Not necessarily. While teamwork requires communication, it often improves quality and allows tasks to be divided among team members.        During pair programming, the driver accidentally forgets an important step. The navigator notices the mistake immediately. What does this example demonstrate about pair programming?      It eliminates all programming errors.    Not quite. Pair programming can help find mistakes earlier, but it cannot guarantee that every error will be caught.      It helps catch mistakes earlier through collaboration.    Correct! The navigator reviews the code as it is written, making it more likely that mistakes will be noticed and corrected before they become larger problems.      It means the partners should switch roles.    While pair programming involves switching roles, the main benefit is the collaborative review of code.      It slows down development.    While pair programming may initially seem slower, it often leads to higher quality code and faster debugging in the long run.       Let's do a pair programming simulation! Work with a partner to write an algorithm for brushing your teeth. It must be precise enough for a robot to follow. One partner will be the driver and the other will be the navigator. The driver will write the steps while the navigator will check for mistakes and ask questions. After 2–3 minutes, switch roles. Write your algorithm below. Put *'s next to steps that were rewritten because the navigator made suggestions. Did having a partner help you write a better algorithm?      User Testing  user testing   1.2.A.1   User testing with a variety of users helps programmers design an app with a clear purpose that is intuitive for its intended users and minimizes confusion.    1.2.A.2  Programmers can conduct user testing to understand how people use an app, including where users are confused or have unmet needs. Observing participants during development provides evidence programmers can use to refine the app’s purpose and design.   Watch the following video about user testing and how it can help find bugs, give feedback, and improve apps. Try it out with your friends the next time you code!     Why do software developers perform user testing?      To guarantee the program has no bugs.    User testing can reveal problems, but it cannot guarantee that every bug has been found.      To replace collaboration among team members.    User testing complements collaboration rather than replacing it.      To make sure only certain people can use the app.    User testing makes sure your app works for all intended users.      To learn how well the app meets users' needs and identify improvements.    Correct! User feedback helps developers improve both the functionality and usability of an app.        Imagine that you are a user-tester for Runestone which the platform that this ebook is on. What are some things you would test to make sure the platform is easy to use? Did you find any tasks that were confusing or difficult to complete?       Iterative Process  iterative process   1.2.A.5  Apps and programs are improved through an iterative process. Teams use feedback from user testing and collaboration to make changes and test again to verify an app more accurately meets user needs.   Software development teams use an iterative design process where they design, test, and revise their apps multiple times to improve the app's functionality and usability. The following diagram is an example of an iterative design process:     Which statement best describes an iterative design process?      Develop the app once and release it without changes.    Most software is improved through multiple rounds of revision.      Repeatedly design, test, revise, and test again to improve the app.    Correct! Iterative design uses multiple cycles of development and testing to better meet user needs.      Wait until the end of development before testing.    Testing and feedback are most useful throughout development so improvements can be made early and often.      Allow only one team member to make all design decisions.    Iterative design benefits from collaboration and input from multiple people, including users.        During testing, users struggle with an app's menu. According to the iterative design process, what should the development team do next?      Revise the menu and conduct another round of testing.    Correct! In an iterative design process, developers use user feedback to improve the app, then test again to see whether the changes were successful.      Stop testing because they have already tested the app.    Iterative design involves multiple rounds of testing and improvement until the app better meets users' needs.      Remove the menu entirely.    Removing the menu is not necessarily the best solution. The goal is to revise the design based on feedback and then test the revised version.      Release the app anyway.    If testing shows that users are still having difficulty, the team should continue improving the app before releasing it.        Reducing Bias through Collaboration  bias   1.2.B.1   Bias occurs when an app consistently favors certain people, values, or outcomes over others. Bias can be harmful because it can make results less accurate for some users and can contribute to unfair treatment or unequal access.    1.2.B.2  Apps can reflect human bias when programmers’ assumptions, rules, or interface choices favor some users over others. Apps can also reflect data bias when the data used to train or inform the app is incomplete or unrepresentative of the people and situations the app is intended to work well for. Human bias and data bias often interact. Choices about what data to collect and how to label it can shape how an app behaves for different users.   Watch the following video to learn more about bias that can effect AI systems.    1.2.B.3  Collaboration can help reduce bias by bringing multiple perspectives into design and testing. Teams can review design decisions and data together, look for missing perspectives, and gather feedback from a variety of users.    1.2.B.4  When potential bias is identified, teams can revise the rules, data, or design and then test again to check whether outcomes are more accurate and fair across different users and situations.   Take a look at the following comic strip where a cat who is a user of an app is letting the dog developers know that the app doesn't work well for it, but the developers don't listen.     What is the bias in the comic strip above? Why do you think the app works for dogs but not cats? How could the developers have reduced bias in their app?       Learning Objectives Review   1.2.A  Explain how apps and programs are improved through collaboration and user testing.    1.2.B  Explain how collaboration can reduce bias in apps.     Vocabulary Review    Review the vocabulary in this lesson. Drag the vocabulary term from the left and drop it on its correct definition on the right. Click the \"Check Me\" button to see if you are correct.    Find the words in the lesson above and try again.     pair programming  a collaboration practice in which two programmers work together at one computer    user testing  testing an app with a variety of users    bias  a tendency to favor certain people, values, or outcomes over others    iterative design process  a circular process in which an app is designed, tested, revised, and tested again multiple times      "
 },
 {
   "id": "collaboration-2",
@@ -316,9 +316,9 @@ var ptx_lunr_docs = [
   "body": "  Match the software development team roles to their responsibilities. Which roles seem the most interesting to you? Do internet research to find out more about the roles that interest you.    Do internet research to find out more about the roles and try again.     Designer  creates the visual design and user experience of the app    Software Developer  writes the code for the app    Software Tester  tests the app to find bugs and usability issues    Project Manager  coordinates the team and keeps the project on track    "
 },
 {
-  "id": "collaboration-6",
+  "id": "collaboration-7",
   "level": "2",
-  "url": "topic-1-2-collaboration.html#collaboration-6",
+  "url": "topic-1-2-collaboration.html#collaboration-7",
   "type": "Essential Knowledge",
   "number": "1.2.2",
   "title": "1.2.A.4.",
@@ -352,27 +352,27 @@ var ptx_lunr_docs = [
   "body": " Let's do a pair programming simulation! Work with a partner to write an algorithm for brushing your teeth. It must be precise enough for a robot to follow. One partner will be the driver and the other will be the navigator. The driver will write the steps while the navigator will check for mistakes and ask questions. After 2–3 minutes, switch roles. Write your algorithm below. Put *'s next to steps that were rewritten because the navigator made suggestions. Did having a partner help you write a better algorithm?   "
 },
 {
-  "id": "user-testing-2",
+  "id": "user-testing-3",
   "level": "2",
-  "url": "topic-1-2-collaboration.html#user-testing-2",
+  "url": "topic-1-2-collaboration.html#user-testing-3",
   "type": "Essential Knowledge",
   "number": "1.2.3",
   "title": "1.2.A.1.",
   "body": " 1.2.A.1   User testing with a variety of users helps programmers design an app with a clear purpose that is intuitive for its intended users and minimizes confusion.  "
 },
 {
-  "id": "user-testing-3",
+  "id": "user-testing-4",
   "level": "2",
-  "url": "topic-1-2-collaboration.html#user-testing-3",
+  "url": "topic-1-2-collaboration.html#user-testing-4",
   "type": "Essential Knowledge",
   "number": "1.2.4",
   "title": "1.2.A.2.",
   "body": " 1.2.A.2  Programmers can conduct user testing to understand how people use an app, including where users are confused or have unmet needs. Observing participants during development provides evidence programmers can use to refine the app’s purpose and design.  "
 },
 {
-  "id": "user-testing-4",
+  "id": "user-testing-5",
   "level": "2",
-  "url": "topic-1-2-collaboration.html#user-testing-4",
+  "url": "topic-1-2-collaboration.html#user-testing-5",
   "type": "Paragraph (with a defined term)",
   "number": "",
   "title": "",
@@ -397,18 +397,18 @@ var ptx_lunr_docs = [
   "body": "  Imagine that you are a user-tester for Runestone which the platform that this ebook is on. What are some things you would test to make sure the platform is easy to use? Did you find any tasks that were confusing or difficult to complete?    "
 },
 {
-  "id": "iterative-process-2",
+  "id": "iterative-process-3",
   "level": "2",
-  "url": "topic-1-2-collaboration.html#iterative-process-2",
+  "url": "topic-1-2-collaboration.html#iterative-process-3",
   "type": "Essential Knowledge",
   "number": "1.2.5",
   "title": "1.2.A.5.",
   "body": " 1.2.A.5  Apps and programs are improved through an iterative process. Teams use feedback from user testing and collaboration to make changes and test again to verify an app more accurately meets user needs.  "
 },
 {
-  "id": "iterative-process-3",
+  "id": "iterative-process-4",
   "level": "2",
-  "url": "topic-1-2-collaboration.html#iterative-process-3",
+  "url": "topic-1-2-collaboration.html#iterative-process-4",
   "type": "Paragraph (with a defined term)",
   "number": "",
   "title": "",
@@ -433,36 +433,36 @@ var ptx_lunr_docs = [
   "body": "  During testing, users struggle with an app's menu. According to the iterative design process, what should the development team do next?      Revise the menu and conduct another round of testing.    Correct! In an iterative design process, developers use user feedback to improve the app, then test again to see whether the changes were successful.      Stop testing because they have already tested the app.    Iterative design involves multiple rounds of testing and improvement until the app better meets users' needs.      Remove the menu entirely.    Removing the menu is not necessarily the best solution. The goal is to revise the design based on feedback and then test the revised version.      Release the app anyway.    If testing shows that users are still having difficulty, the team should continue improving the app before releasing it.     "
 },
 {
-  "id": "bias-2",
+  "id": "bias-3",
   "level": "2",
-  "url": "topic-1-2-collaboration.html#bias-2",
+  "url": "topic-1-2-collaboration.html#bias-3",
   "type": "Essential Knowledge",
   "number": "1.2.6",
   "title": "1.2.B.1.",
   "body": " 1.2.B.1   Bias occurs when an app consistently favors certain people, values, or outcomes over others. Bias can be harmful because it can make results less accurate for some users and can contribute to unfair treatment or unequal access.  "
 },
 {
-  "id": "bias-3",
+  "id": "bias-4",
   "level": "2",
-  "url": "topic-1-2-collaboration.html#bias-3",
+  "url": "topic-1-2-collaboration.html#bias-4",
   "type": "Essential Knowledge",
   "number": "1.2.7",
   "title": "1.2.B.2.",
   "body": " 1.2.B.2  Apps can reflect human bias when programmers’ assumptions, rules, or interface choices favor some users over others. Apps can also reflect data bias when the data used to train or inform the app is incomplete or unrepresentative of the people and situations the app is intended to work well for. Human bias and data bias often interact. Choices about what data to collect and how to label it can shape how an app behaves for different users.  "
 },
 {
-  "id": "bias-6",
+  "id": "bias-7",
   "level": "2",
-  "url": "topic-1-2-collaboration.html#bias-6",
+  "url": "topic-1-2-collaboration.html#bias-7",
   "type": "Essential Knowledge",
   "number": "1.2.8",
   "title": "1.2.B.3.",
   "body": " 1.2.B.3  Collaboration can help reduce bias by bringing multiple perspectives into design and testing. Teams can review design decisions and data together, look for missing perspectives, and gather feedback from a variety of users.  "
 },
 {
-  "id": "bias-7",
+  "id": "bias-8",
   "level": "2",
-  "url": "topic-1-2-collaboration.html#bias-7",
+  "url": "topic-1-2-collaboration.html#bias-8",
   "type": "Essential Knowledge",
   "number": "1.2.9",
   "title": "1.2.B.4.",
@@ -511,12 +511,12 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "1.3",
   "title": "Responsible AI and Human Decision-Making",
-  "body": "  Responsible AI and Human Decision-Making    Artificial Intelligence (AI) is becoming a big part of our lives and changing the way we work and learn. AI is a branch of computer science with the goal of building smarter machines to do tasks that typically require human intelligence. Watch the following video to learn more about the impacts of AI on society. In this lesson, we will learn about the importance of responsible AI use and human decision-making.     AI and Data   1.3.A.2   Artificial intelligence (AI) refers to computer systems that use data and patterns to perform tasks that are often associated with human intelligence, producing outputs such as predictions, recommendations, decisions, or generated content.   Try Google Quick Draw . The Quick Draw AI is trained on millions of drawings from people around the world to recognize and predict what you are drawing. Take a look at the data it uses. The following video introduces Quick Draw.     Based on how Google Quick Draw works, which best explains why it counts as an example of artificial intelligence?      It uses a database of pre-made drawings that it displays back to the user.    No. Quick Draw does not simply retrieve and display stored drawings. It analyzes the user's sketch and predicts what it represents.      It follows a fixed set of rules written by a programmer for every possible object.    No. AI systems like Quick Draw learn patterns from data rather than relying on explicit rules for every possible drawing.      It applies patterns learned from millions of drawings to predict what a new, unseen drawing represents.    Correct! Quick Draw is trained on a large dataset of drawings and uses the patterns it learned to make predictions about new sketches.      It randomly guesses an object name until the user confirms the correct one.    No. Quick Draw makes informed predictions based on patterns learned from its training data, not random guesses.        Suppose the Quick Draw training data contains thousands of drawings of cats but only a few drawings of armadillos. Which outcome is most likely?      The AI may recognize armadillos more accurately than cats.    No. With far fewer examples of armadillos, the AI is less likely to recognize them accurately.      The AI may recognize cats more accurately because it has learned from more examples.    Correct! AI systems generally perform better on categories that have more representative training data because they have learned more patterns from those examples.      The AI may recognize both equally well.    No. The amount and quality of training data can affect how accurately an AI recognizes different categories.      The AI may not recognize either animal.    No. The AI will still make a prediction, although it may be less accurate for objects with fewer training examples.       1.3.A.1  AI tools can affect everyday choices such as what people watch, buy, and learn. Understanding the human decisions behind AI helps users evaluate outputs critically and helps developers design and maintain tools that are safer, more accurate, and more fair.     Select all of the tools below that use AI.      A streaming service that recommends movies or TV shows based on what you have watched before.    Correct! Recommendation systems often use AI to predict what users are likely to enjoy.      An online store that suggests products you might want to buy based on your browsing or purchase history.    Correct! AI is commonly used to make personalized shopping recommendations.      A calculator that does mathematical calculations.    Not quite. A basic calculator follows predefined mathematical rules and does not use AI to make predictions or recommendations.      A simple photo-sharing app that allows you to post photos to share with friends.    Not quite. A simple photo-sharing app doesn't use AI to make predictions or recommendations, but more complex ones may use AI for features like facial recognition or content suggestions.     A social-media app that shows you posts based on your interests.   Correct! Social media platforms use AI to personalize content feeds learning from your preferences and behavior.        Google Quick Draw is trained on drawings submitted by people from around the world. Which objects are most likely to be drawn differently depending on a person's culture or where they live? These human factors affect the training data and can influence how well the AI recognizes different objects.      A house    Correct! Houses can have different shapes, roofs, building materials, and styles in different parts of the world.      A square    No, most people draw a square as a simple geometric shape, regardless of their culture or location.      A school bus    Correct! School buses look very different across countries. For example, the familiar yellow school bus is common in the United States but not in many other places.      An apple    Not quite. Although apples come in different varieties, people around the world generally draw them in similar ways.      A hat    Correct! Hats can vary significantly in style, color, and design across different cultures and regions.        Machine Learning and AI Models  Machine Learning (ML) is a type of AI that learns patterns from data. Machine learning has become so successful that AI has become another term for machine learning, even though AI is a broader field. Watch the following video to learn more about machine learning.   Take a look at the following diagram showing how an AI learns to recognize green apples by looking at many examples of apples that are labeled as green or not green. The set of patterns or rules that an AI learns is called the model . The model becomes more accurate as it is trained on more examples. Machine learning involves training and testing with data until the model is accurate enough for the task. Once we have a good model, we can use it to make predictions about new, unseen apples. The new apple is an input to the model, and the model produces an output that predicts whether the apple is green or not.    1.3.A.3  In AI systems, a model is the part of the system used to produce outputs from inputs. Models may follow rules created by people or learn patterns from data.    1.3.A.4  Many modern AI models are created by training on examples. The quality and representativeness of the training data can affect how accurate or fair the model’s outputs are.   In the next activity, you will use Google's Teachable Machine which makes it easy to train AI models without writing code. Watch the following video introducing Teachable Machine. You can train a model to recognize images, sounds, or poses. The model learns patterns from the examples you provide and can then make predictions about new inputs.    Teachable Machine    Go to Google Teachable Machine and click on Get Started.  If you have a webcam on your computer, try Image Project or Pose Project. You can also try the Image Project if you can download images on your computer, for example you could download this folder of cat and dog images . If you do not have a webcam or cannot download images, try the Audio Project which can use your computer's microphone to record sounds.  Categories: Teachable machine will learn to recognize two different categories of input. Decide which two categories you want to use. For example, you could train a model to recognize cats and dogs, or happy and sad faces, or pointing up and down or clapping and snapping sounds. Click on the pencil icon next to Class 1 and type in your first category and do the same for Class 2.  Data: Watch this short gather video on how to input your data. You will use your webcam or microphone or upload images to record at least 20 examples of your two categories.  Train: Once you have collected at least 20 examples for each category, click on the \"Train\" button to train your model. Watch this train video for more information.  Test: After training, you can test your model in the Preview area. Upload or record a new sample and see what your model predicts! You should use examples that are not in your training data and are difficult to guess. Under the uploaded sample, the model will tell you the percentage of confidence it has in its prediction of the category. For example, the model below thinks this image is a cat with 88% confidence. Did your model get it right? If not upload more training data and train again.   Reflection: Answer the following questions below. What categories did you choose? After training, how accurate was your model in the preview area and what kind of examples did it have difficulty with? How did your decisions about the categories and training data affect the model's accuracy and fairness?       The teachable machine does not require very many examples to learn your categories because it uses a technique called transfer learning , where it starts with a pre-trained model that is trained on the Imagenet dataset of millions of images with labels for 1000+ different classes which it then just tweaks to customize for your categories. However, the quality of data is crucial for a model's accuracy. There is a saying of \"Garbage in, garbage out\", where you cannot expect good results if you feed the model incomplete or biased data. There is also the danger of machine learning algorithms learning the wrong or unexpected things from the data, because that is not something we can control.    Adding more training data does not always improve an AI model. Which is the best explanation for this?      AI models stop learning after they have seen a certain number of examples.    No. AI models do not have a fixed limit on how many examples they can learn from.      If the additional data is inaccurate, repetitive, or does not represent the variety of real-world examples, the model may not improve.    Correct! The quality and diversity of the training data are just as important as the quantity.      Adding more data causes the AI to forget what it learned from earlier examples.    No. More data does not automatically cause an AI model to forget previous training examples.      AI models become less accurate whenever they are trained with more than one category of data.    No. AI models are often designed to recognize many categories. The issue is whether the training data is representative and of good quality.        Generative AI   1.3.A.5   Generative AI is a type of AI that creates new content, such as text, images, music, or code, based on patterns it has learned from examples. Some generative AI tools are powered by large language models (LLMs) , which generate text by predicting likely sequences of words based on patterns learned from large collections of text.  How chatbots and LLMs work: https:\/\/www.youtube.com\/watch?v=X-AWdfSFCHQ (7 mins, but good explantion) (shorter but not as good Generative AI video https:\/\/www.youtube.com\/watch?v=JO9MgO1Zp3E)  1.3.A.6  Humans decide what happens with an AI tool’s output, including when to trust it, what actions to take based on it, and when a human should review or make the final decision.    1.3.A.7  When AI tools are used to create or transform content, humans must consider what content may be used and how outputs may be shared, including following licenses and giving attribution when required.    1.3.A.8  AI tools can generate realistic images, audio, or video that may be mistaken for authentic media (deepfakes). Humans must make decisions about safeguards, such as disclosure, verification, and responsible sharing, to reduce misinformation and harm.    1.3.A.9   Model drift occurs when a model’s performance changes over time because the real-world data or conditions it encounters shift, potentially making the model less accurate. AI systems should be monitored by humans to detect model drift. When drift is detected, humans can update data, adjust the model, or retrain the system to reduce inaccurate or harmful outcomes.    1.3.A.10  Developers can increase transparency by clearly describing an AI tool’s purpose, how it was developed, trained, and evaluated, and its limitations and appropriate uses. This allows users to make informed choices.     Automation and Augmentation https:\/\/www.youtube.com\/shorts\/QagTKYVfF_k Replacing humans as agents vs Human in the loop self-driving car AI Automation Role: The AI acts autonomously without human approval (e.g., an automated chatbot resolving a routine billing error without human escalation). Goal: Maximize speed, scale, and cost reduction. Best Used For: High-volume, predictable, and low-risk tasks where speed takes priority. AI Augmentation Role: The AI surfaces insights, drafts material, or provides recommendations, while the human retains full accountability and control. Goal: Amplify human skills and prevent costly, automated errors. Best Used For: High-stakes, complex, or unstructured tasks that require ethics, empathy, and \"human-in-the-loop\" oversight  1.3.B.1  Decisions about automation and augmentation affect everyday experiences, such as recommendations, autocorrect suggestions, and navigation directions. Understanding whether a system is acting automatically or supporting human decision-making helps users decide how much to rely on its output and when they should verify it, especially when errors, bias, or other limitations could affect the result.    1.3.B.2  Automation allows computers to carry out tasks with limited human involvement, often making work faster, more consistent, and more efficient. Automated systems can handle routine tasks and, in some cases, more complex ones. They may still produce inaccurate results when inputs are ambiguous, conditions change, or unusual cases are not handled well.    1.3.B.3  Accuracy is the degree to which an output or code solution matches defined criteria for correctness, such as a program’s requirements or known correct outputs. Accuracy can be evaluated by testing with defined inputs and comparing actual results to expected results.    1.3.B.4  Augmentation uses tools or systems to support human work while humans remain responsible for decisions and outcomes. In some cases, augmentation involves AI, such as in human-in-the-loop systems where AI outputs are reviewed by humans to improve accuracy and accountability.    1.3.B.5  The appropriateness of automation or augmentation depends on the context and the consequences of error. Although automation can be faster, more consistent, or easier to scale, it may be less appropriate in situations that are high-stakes, ambiguous, or require human judgment, empathy, or discretion. In those situations, augmentation may be preferred so that humans remain responsible for the final decision.    1.3.B.6  Evaluating the appropriate level of automation or augmentation requires weighing benefits such as speed or efficiency against risks such as bias, inaccuracy, privacy, or overreliance, including how thresholds affect outcomes. It also means considering social, environmental, and economic trade-offs such as impacts on people, resource and energy use, costs, labor, and access.    1.3.B.7  Evaluating automation or augmentation should consider how the choice affects user experience, including trust, transparency, and whether users can reasonably decline or reduce automation, such as choosing manual controls or requesting human review when needed.     Learning Objectives Review  After this lesson, you will be able to:   1.3.A  Explain how human decisions shape the development, deployment, and maintenance of AI tools.    1.3.B  Evaluate the appropriate level of automation or augmentation for a task.    "
+  "body": "  Responsible AI and Human Decision-Making  AI  Artificial Intelligence    Artificial Intelligence (AI) is becoming a big part of our lives and changing the way we work and learn. AI is a branch of computer science with the goal of building smarter machines to do tasks that typically require human intelligence. Watch the following video to learn more about the impacts of AI on society. In this lesson, we will learn about the importance of responsible AI use and human decision-making.     AI and Data   1.3.A.2   Artificial intelligence (AI) refers to computer systems that use data and patterns to perform tasks that are often associated with human intelligence, producing outputs such as predictions, recommendations, decisions, or generated content.   Try Google Quick Draw . The Quick Draw AI is trained on millions of drawings from people around the world to recognize and predict what you are drawing. Take a look at the data it uses. The following video introduces Quick Draw.     Based on how Google Quick Draw works, which best explains why it counts as an example of artificial intelligence?      It uses a database of pre-made drawings that it displays back to the user.    No. Quick Draw does not simply retrieve and display stored drawings. It analyzes the user's sketch and predicts what it represents.      It follows a fixed set of rules written by a programmer for every possible object.    No. AI systems like Quick Draw learn patterns from data rather than relying on explicit rules for every possible drawing.      It applies patterns learned from millions of drawings to predict what a new, unseen drawing represents.    Correct! Quick Draw is trained on a large dataset of drawings and uses the patterns it learned to make predictions about new sketches.      It randomly guesses an object name until the user confirms the correct one.    No. Quick Draw makes informed predictions based on patterns learned from its training data, not random guesses.        Suppose the Quick Draw training data contains thousands of drawings of cats but only a few drawings of armadillos. Which outcome is most likely?      The AI may recognize armadillos more accurately than cats.    No. With far fewer examples of armadillos, the AI is less likely to recognize them accurately.      The AI may recognize cats more accurately than armadillos.    Correct! AI systems generally perform better on categories that have more representative training data because they have learned more patterns from those examples.      The AI may recognize both equally well.    No. The amount and quality of training data can affect how accurately an AI recognizes different categories.      The AI may not recognize either animal.    No. The AI will still make a prediction, although it may be less accurate for objects with fewer training examples.       1.3.A.1  AI tools can affect everyday choices such as what people watch, buy, and learn. Understanding the human decisions behind AI helps users evaluate outputs critically and helps developers design and maintain tools that are safer, more accurate, and more fair.     Select all of the tools below that use AI.      A streaming service that recommends movies or TV shows based on what you have watched before.    Correct! Recommendation systems often use AI to predict what users are likely to enjoy.      An online store that suggests products you might want to buy based on your browsing or purchase history.    Correct! AI is commonly used to make personalized shopping recommendations.      A calculator that does mathematical calculations.    Not quite. A basic calculator follows predefined mathematical rules and does not use AI to make predictions or recommendations.      A simple photo-sharing app that allows you to post photos to share with friends.    Not quite. A simple photo-sharing app doesn't use AI to make predictions or recommendations, but more complex ones may use AI for features like facial recognition or content suggestions.     A social-media app that shows you posts based on your interests.   Correct! Social media platforms use AI to personalize content feeds learning from your preferences and behavior.        Google Quick Draw is trained on drawings submitted by people from around the world. Which objects are most likely to be drawn differently depending on a person's culture or where they live? These human factors affect the training data and can influence how well the AI recognizes different objects.      houses    Correct! Houses can have different shapes, roofs, building materials, and styles in different parts of the world.      squares    No, most people draw a square as a simple geometric shape, regardless of their culture or location.      school buses    Correct! School buses look very different across countries. For example, the familiar yellow school bus is common in the United States but not in many other places.      apples    Not quite. Although apples come in different varieties, people around the world generally draw them in similar ways.      hats    Correct! Hats can vary significantly in style, color, and design across different cultures and regions.        Machine Learning and AI Models  Machine Learning  AI Models  LLMs  Large Language Models  Teachable Machine  Machine Learning (ML) is a type of AI that learns patterns from data. Machine learning has become so successful that AI has become another term for machine learning, even though AI is a broader field. Watch the following video to learn more about machine learning.   Take a look at the following diagram showing how an AI learns to recognize green apples by looking at many examples of apples that are labeled as green or not green. The set of patterns or rules that an AI learns is called the model . The model becomes more accurate as it is trained on more examples. Machine learning involves training and testing with data until the model is accurate enough for the task. Once we have a good model, we can use it to make predictions about new, unseen apples. The new apple is an input to the model, and the model produces an output that predicts whether the apple is green or not.   For example, self-driving cars use AI models to recognize objects on the road and make decisions about how to drive. What objects do you see below that a self-driving car would need to recognize?    1.3.A.3  In AI systems, a model is the part of the system used to produce outputs from inputs. Models may follow rules created by people or learn patterns from data.    1.3.A.4  Many modern AI models are created by training on examples. The quality and representativeness of the training data can affect how accurate or fair the model’s outputs are.   In the next activity, you will use Google's Teachable Machine which makes it easy to train AI models without writing code. Watch the following video introducing Teachable Machine. You can train a model to recognize images, sounds, or poses. The model learns patterns from the examples you provide and can then make predictions about new inputs.    Teachable Machine    Go to Google Teachable Machine and click on Get Started.  If you have a webcam on your computer, try Image Project or Pose Project. You can also try the Image Project if you can download images on your computer, for example you could download this folder of cat and dog images . If you do not have a webcam or cannot download images, try the Audio Project which can use your computer's microphone to record sounds.  Categories: Teachable machine will learn to recognize two different categories of input. Decide which two categories you want to use. For example, you could train a model to recognize cats and dogs, or happy and sad faces, or pointing up and down or clapping and snapping sounds. Click on the pencil icon next to Class 1 and type in your first category and do the same for Class 2.  Data: Watch this short gather video on how to input your data. You will use your webcam or microphone or upload images to record at least 20 examples of your two categories.  Train: Once you have collected at least 20 examples for each category, click on the \"Train\" button to train your model. Watch this train video for more information.  Test: After training, you can test your model in the Preview area. Upload or record a new sample and see what your model predicts! You should use examples that are not in your training data and are difficult to guess. Under the uploaded sample, the model will tell you the percentage of confidence it has in its prediction of the category. For example, the model below thinks this image is a cat with 88% confidence. Did your model get it right? If not upload more training data and train again.   Reflection: Answer the following questions below. What categories did you choose? After training, how accurate was your model in the preview area and what kind of examples did it have difficulty with? How did your decisions about the categories and training data affect the model's accuracy and fairness?       The teachable machine does not require very many examples to learn your categories because it uses a technique called transfer learning , where it starts with a pre-trained model that is trained on the Imagenet dataset of millions of images with labels for 1000+ different classes which it then just tweaks to customize for your categories. However, the quality of data is crucial for a model's accuracy. There is a saying of \"Garbage in, garbage out\", where you cannot expect good results if you feed the model incomplete or biased data. There is also the danger of machine learning algorithms learning the wrong or unexpected things from the data, because that is not something we can control.    Adding more training data does not always improve an AI model. Which is the best explanation for this?      AI models stop learning after they have seen a certain number of examples.    No. AI models do not have a fixed limit on how many examples they can learn from.      If the additional data is inaccurate, repetitive, or does not represent the variety of real-world examples, the model may not improve.    Correct! The quality and diversity of the training data are just as important as the quantity.      Adding more data causes the AI to forget what it learned from earlier examples.    No. More data does not automatically cause an AI model to forget previous training examples.      AI models become less accurate whenever they are trained with more than one category of data.    No. AI models are often designed to recognize many categories. The issue is whether the training data is representative and of good quality.        Generative AI  Generative AI  Gen AI  ChatGPT  ChatGPT was publicly released by OpenAI in late 2022 and quickly went viral, attracting 1 million users within five days. Most people were not aware of AI before ChatGPT (GPT stands for Generative Pre-trained Transformer). This was a major turning point for AI technology and adoption. The Generative AI breakthrough was possible due to the massive growth of data available on the Internet for training, new machine learning algorithms, and the increase in processing power to run the algorithms and store the resulting model. ChatGPT, and others that followed like CoPilot, Claude, and Gemini, are examples of Generative AI (Gen AI) which is a type of AI trained on large amounts of data (most of the Internet) to create a large language model (LLM) that can generate content such as text or code in many languages. The same technology can be used to generate images, audio, and recently even some video content.    1.3.A.5   Generative AI is a type of AI that creates new content, such as text, images, music, or code, based on patterns it has learned from examples. Some generative AI tools are powered by large language models (LLMs) , which generate text by predicting likely sequences of words based on patterns learned from large collections of text.   Watch the following video (7 mins) to learn how chatbots and LLMs work:   Go to the How LLMs work website and scroll down through the tutorial. LLMs are like the autocomplete feature on your phone texting apps, but much better. They predict the next word or token based on the context and their training with a vast amount of data. For example, how would you finish the sentence \"AI is transforming the ...\"? Did you pick the same next word as the LLM below?     Scroll down to the bottom of the How LLMs work website to the Interactive Playground section. Type in the sentence fragment \"Gen AI uses a large language\" and click on Visualize. What word is predicted to be the next word with the highest probability?        Correct! In most cases, the LLM would see data with \"large language model\" occurring together.    What comes after large language?       1.3.A.6  Humans decide what happens with an AI tool’s output, including when to trust it, what actions to take based on it, and when a human should review or make the final decision.   AI hallucinations  It is important to remember that Generative AI is a fairly new technology; it is not perfect and can make mistakes. Common errors include hallucinations where the AI confidently invents fake information or sources often due to lack of accurate information in its training data. This is more likely to happen with languages or topics that are less common in the training data. Gen AI can also produce biased information if its training data is biased. It can also generate repetitive or long-winded text or struggle with arithmetic or complex logic. Users of Gen AI must critically evaluate the output and not blindly trust it, especially if it is being used for important decisions.    Which situation most requires a human to carefully review an AI system's output before acting on it?      Accepting a medical treatment recommended by an AI system.    Correct! Decisions involving health can have serious consequences. A human should carefully review AI recommendations before making a final decision.      Using AI to suggest a movie to watch.    Movie recommendations are generally low-risk, so they typically require less careful human review.      Using autocomplete while texting a friend.    Autocomplete may make small mistakes, but the consequences are usually minor.      Asking AI to generate ideas for a story.    Generating creative ideas is generally a low-risk use of AI. Humans still decide which ideas to use.        Which of the following are examples of a hallucinations produced by generative AI tools?      The AI confidently names several court cases that do not actually exist.    Correct! A hallucination occurs when an AI generates false information, such as made-up facts, while presenting them as if they are real.      The AI writes a story with repetitive sentences.    Incorrect. Repetitive writing is a limitation of some AI systems, but it is not a hallucination.      The AI generates a bibliography of books and articles where the dates of publication are incorrect.    Yes. Large language models sometimes make errors in generating information especially with specific names and numbers that are not common.      The AI generates a response more slowly than expected.    Incorrect. A slow response is a performance issue, not a hallucination.       1.3.A.7  When AI tools are used to create or transform content, humans must consider what content may be used and how outputs may be shared, including following licenses and giving attribution when required.     Can you use AI-generated content without attribution (without mentioning where it is from)?      No, because AI-generated content is always copyrighted.    Not necessarily. Copyright and licensing rules depend on the terms of use of the AI tool. Currently only human-created content is protected by copyright law, but some AI tools may have licensing or attribution requirements.      Yes, because AI tools always provide original work.    No, AI-generated content is not guaranteed to be completely original because it is based on existing work by humans and the AI tool you use may have licensing or attribution requirements.      No, some content may require permission or credit before it is shared.    Correct! When using AI-generated content, people should consider check whether the AI tool requires a license or attribution, and whether the place where it is being shared has any rules about using AI-generated content.      Yes, attribution is only required for printed books.    Incorrect. Attribution requirements can apply to many types of content, not just printed books.      deep fakes   1.3.A.8  AI tools can generate realistic images, audio, or video that may be mistaken for authentic media ( deepfakes ). Humans must make decisions about safeguards, such as disclosure, verification, and responsible sharing, to reduce misinformation and harm.     Which of the following images is real and not AI-generated? It's okay to try all the answers on this one!       Dog 1    Incorrect. This image was AI-generated.      Dog 2    Correct! This image is a real photograph of a dog.      Dog 3    Incorrect. This image was AI-generated.      Dog 4    Incorrect. This image was AI-generated.        Visit the Which One Is Real website and play one round of the Mixed or Images or Videos quiz. Try these together with a partner.  After you finish, answer the following questions:   What was your score?  Was it easier or harder than you expected to identify the AI-generated content?  Why is it important to verify realistic-looking images or videos before sharing them online?  What are some of the dangers with deepfakes?      model drift   1.3.A.9   Model drift occurs when a model’s performance changes over time because the real-world data or conditions it encounters shift, potentially making the model less accurate. AI systems should be monitored by humans to detect model drift. When drift is detected, humans can update data, adjust the model, or retrain the system to reduce inaccurate or harmful outcomes.     An AI model predicts traffic patterns for a city. After several new highways are built, the model's predictions become much less accurate. What is the best explanation and the most appropriate action to fix this issue?      The model has experienced model drift, so humans should update the training data and retrain the model.    Correct! Model drift occurs when changes in real-world conditions reduce a model's accuracy. Humans should monitor AI systems and update or retrain them when drift is detected.      The model has become corrupted, so it can no longer be used.    No, the decrease in accuracy is due to changes in real-world conditions, and the model can be still be fixed.      The model can still be used, but the city should publish a disclaimer about the model's limitations.    Although this is a good temporary measure, the underlying problems should still be addressed.      Unfortunately, they would need to start over to train the model with the new information.    The model is still useful and could be updated.       1.3.A.10  Developers can increase transparency by clearly describing an AI tool’s purpose, how it was developed, trained, and evaluated, and its limitations and appropriate uses. This allows users to make informed choices.     A company publicly explains that its chatbot was trained on customer support conversations, works best for common questions, and sometimes produces incorrect answers. Why is this information useful?      It increases transparency and helps users understand the chatbot's appropriate uses and limitations.    Correct! Explaining how an AI system was trained, what it is designed to do, and its limitations helps users make informed decisions about when and how to use it.      It guarantees every answer the chatbot gives is correct.    Incorrect. Even transparent AI systems can make mistakes. Transparency helps users understand the system, but it does not guarantee correct answers.      It prevents model drift.    Incorrect. Providing information about an AI system does not prevent model drift, which occurs when a model's performance changes because real-world data or conditions change over time.      It makes the chatbot respond faster.    Incorrect. Explaining how an AI system works does not affect its response speed.        Automation and Augmentation  Automation  Augmentation  Generative AI tools are designed to augment or help humans as partners to do a task. They respond to human prompts, assisting with tasks while remaining under human direction rather than acting autonomously. However, newer AI tools such as AI agents , agentic AI , or autonomous AI can plan and automate multi-step tasks with very little human supervision. Watch the following video to learn more about the differences between automation and augmentation.    1.3.B.2   Automation allows computers to carry out tasks with limited human involvement, often making work faster, more consistent, and more efficient. Automated systems can handle routine tasks and, in some cases, more complex ones. They may still produce inaccurate results when inputs are ambiguous, conditions change, or unusual cases are not handled well.    1.3.B.4   Augmentation uses tools or systems to support human work while humans remain responsible for decisions and outcomes. In some cases, augmentation involves AI, such as in human-in-the-loop systems where AI outputs are reviewed by humans to improve accuracy and accountability.   The following table summarizes the key differences between automation and augmentation:   AI Augmentation vs. AI Automation     AI Augmentation  AI Automation    Role:  make recommendations with human oversight and accountability  perform tasks autonomously with little or no human involvement    Goal:  Help humans to complete tasks  Fast and cheap automatic execution of tasks    Best for:  Complex and important decisions  Predictable and low-risk tasks       Decide whether each AI application is primarily an example of AI augmentation or AI automation . Drag each application on the left to the correct category name on the right. There will be 4 applications in each category.    Think about whether the AI is assisting a human or performing the task on its own.     Chatbots  AI coding assistant  AI that summarizes meeting notes  AI that suggests medical diagnoses  AI augmentation    Self-driving car that makes driving decisions  Warehouse robot that moves inventory to fullfill orders  Customer service agent that answers questions  Email agent that drafts and sends emails  AI automation      1.3.B.1  Decisions about automation and augmentation affect everyday experiences, such as recommendations, autocorrect suggestions, and navigation directions. Understanding whether a system is acting automatically or supporting human decision-making helps users decide how much to rely on its output and when they should verify it, especially when errors, bias, or other limitations could affect the result.    1.3.B.3   Accuracy is the degree to which an output or code solution matches defined criteria for correctness, such as a program’s requirements or known correct outputs. Accuracy can be evaluated by testing with defined inputs and comparing actual results to expected results.     A chatbot is given an AP CSP exam and answers 90 out of 100 questions correctly according to an answer key. Which of the following statements are true?      The chatbot is unbiased.    No. Accuracy measures how often the chatbot produces correct answers. A system can be accurate overall and still produce biased outputs.      The chatbot is 90% accurate.    Correct! If the chatbot answered 90 out of 100 questions correctly, its accuracy on this test is 90%.      The chatbot is always reliable.    No. A chatbot that is 90% accurate still produces incorrect answers about 10% of the time, so it is not always reliable.      The chatbot is fully automated.    No. The percentage of correct answers measures accuracy, not whether the chatbot operates autonomously.      Watch the following video about Reinforcement Learning from Human Feedback (RLHF) which is a type of Human-In-the-Loop (HITL) augmented machine-learning system where humans rate and rank the AI's results during training to improve accuracy and to teach the AI which responses are helpful, safe, and preferred by humans.    1.3.B.5  The appropriateness of automation or augmentation depends on the context and the consequences of error. Although automation can be faster, more consistent, or easier to scale, it may be less appropriate in situations that are high-stakes, ambiguous, or require human judgment, empathy, or discretion. In those situations, augmentation may be preferred so that humans remain responsible for the final decision.     In which situation is AI augmentation generally preferable to AI automation ?      Automatically filtering spam emails    No. This is typically a low-risk, high-volume task where full automation is appropriate.      Reordering office supplies    No. This is a routine, predictable task that is well suited for automation.      Assisting a doctor in diagnosing a patient    Correct. Medical diagnosis is high-stakes and requires human judgment, so AI is best used to support (augment) the decision-making process.      Turning lights on and off depending on occupancy and time    No. This is a simple, predictable control task that is well suited for automation.       1.3.B.6  Evaluating the appropriate level of automation or augmentation requires weighing benefits such as speed or efficiency against risks such as bias, inaccuracy, privacy, or overreliance, including how thresholds affect outcomes. It also means considering social, environmental, and economic trade-offs such as impacts on people, resource and energy use, costs, labor, and access.     A company wants to automate hiring decisions because it is faster and cheaper. Which concern should also be considered?      The company's electricity bill will go up.    No. Although energy use may be a consideration in some cases, it is not the primary concern in this scenario.      Automated decisions could introduce bias.    Correct! Automated hiring systems can unintentionally reflect or amplify bias in their training data or design, so fairness should be evaluated alongside efficiency.      Automating hiring decisions is illegal.    No. Automating hiring decisions is not illegal, although there are some ethical concerns.      Computers never make mistakes.    No. Automated systems can make mistakes, so their outputs should be evaluated, especially in high-stakes decisions like hiring.        AI automation offer many advantages, but it also has potential drawbacks. Drag each item on the left to the correct category name: Benefits or Drawbacks .    Think about whether each item is a positive outcome of using AI or a potential concern that should be considered.     Faster  Cheaper  Available all the time  Benefits    Possible bias or incorrect results  Possible job displacement  Energy use  Drawbacks      1.3.B.7  Evaluating automation or augmentation should consider how the choice affects user experience, including trust, transparency, and whether users can reasonably decline or reduce automation, such as choosing manual controls or requesting human review when needed.  ```xml id=\"h9v2cm\"   Which feature would most improve user trust in an automated system?      Increase the speed at which the system makes decisions.    No. Faster decisions may improve efficiency, but they do not necessarily make users trust the system more.      Provide a confidence score with each recommendation.    Confidence scores can help users interpret recommendations, but they do not give users the ability to challenge or verify important decisions.      Allow users to request human review of important decisions.    Correct! Allowing human review gives users greater control and helps build trust, especially when automated decisions have significant consequences.      Automatically apply every recommendation.    No. Automatically applying recommendations reduces user control, which can decrease trust, especially in high-stakes situations.        Learning Objectives Review  After this lesson, you will be able to:   1.3.A  Explain how human decisions shape the development, deployment, and maintenance of AI tools.    1.3.B  Evaluate the appropriate level of automation or augmentation for a task.     Vocabulary Review    Review the vocabulary in this lesson. Drag the vocabulary term from the left and drop it on its correct definition on the right. Click the \"Check Me\" button to see if you are correct.    Find the words in the lesson above and try again.     Artificial Intelligence (AI)  computer systems that use data and patterns to perform tasks that are often associated with human intelligence    Generative AI (Gen AI)  AI that creates new content, such as text, images, music, or code, based on patterns it has learned from examples    Large Language Model (LLM)  a type of AI model that is trained on large amounts of text data to generate human-like text    Machine Learning (ML)  algorithms that can learn from data    Model  the patterns or rules that an AI learns from data    Model Drift  decreased model performance because the real-world data or conditions it encounters shift    Automation  Computer systems that carry out tasks with limited human involvement    Augmentation  AI tools that support human work while humans remain responsible for decisions and outcomes    Human-In-the-Loop (HITL) training  AI training augmented with human feedback, where AI outputs are reviewed by humans to improve accuracy and accountability      "
 },
 {
-  "id": "topic-1-3-responsible-ai-3-1",
+  "id": "topic-1-3-responsible-ai-5-1",
   "level": "2",
-  "url": "topic-1-3-responsible-ai.html#topic-1-3-responsible-ai-3-1",
+  "url": "topic-1-3-responsible-ai.html#topic-1-3-responsible-ai-5-1",
   "type": "Paragraph (with a defined term)",
   "number": "",
   "title": "",
@@ -547,7 +547,7 @@ var ptx_lunr_docs = [
   "type": "Activity",
   "number": "1.3.2",
   "title": "",
-  "body": "  Suppose the Quick Draw training data contains thousands of drawings of cats but only a few drawings of armadillos. Which outcome is most likely?      The AI may recognize armadillos more accurately than cats.    No. With far fewer examples of armadillos, the AI is less likely to recognize them accurately.      The AI may recognize cats more accurately because it has learned from more examples.    Correct! AI systems generally perform better on categories that have more representative training data because they have learned more patterns from those examples.      The AI may recognize both equally well.    No. The amount and quality of training data can affect how accurately an AI recognizes different categories.      The AI may not recognize either animal.    No. The AI will still make a prediction, although it may be less accurate for objects with fewer training examples.     "
+  "body": "  Suppose the Quick Draw training data contains thousands of drawings of cats but only a few drawings of armadillos. Which outcome is most likely?      The AI may recognize armadillos more accurately than cats.    No. With far fewer examples of armadillos, the AI is less likely to recognize them accurately.      The AI may recognize cats more accurately than armadillos.    Correct! AI systems generally perform better on categories that have more representative training data because they have learned more patterns from those examples.      The AI may recognize both equally well.    No. The amount and quality of training data can affect how accurately an AI recognizes different categories.      The AI may not recognize either animal.    No. The AI will still make a prediction, although it may be less accurate for objects with fewer training examples.     "
 },
 {
   "id": "ai-data-7",
@@ -574,39 +574,39 @@ var ptx_lunr_docs = [
   "type": "Activity",
   "number": "1.3.4",
   "title": "",
-  "body": "  Google Quick Draw is trained on drawings submitted by people from around the world. Which objects are most likely to be drawn differently depending on a person's culture or where they live? These human factors affect the training data and can influence how well the AI recognizes different objects.      A house    Correct! Houses can have different shapes, roofs, building materials, and styles in different parts of the world.      A square    No, most people draw a square as a simple geometric shape, regardless of their culture or location.      A school bus    Correct! School buses look very different across countries. For example, the familiar yellow school bus is common in the United States but not in many other places.      An apple    Not quite. Although apples come in different varieties, people around the world generally draw them in similar ways.      A hat    Correct! Hats can vary significantly in style, color, and design across different cultures and regions.     "
+  "body": "  Google Quick Draw is trained on drawings submitted by people from around the world. Which objects are most likely to be drawn differently depending on a person's culture or where they live? These human factors affect the training data and can influence how well the AI recognizes different objects.      houses    Correct! Houses can have different shapes, roofs, building materials, and styles in different parts of the world.      squares    No, most people draw a square as a simple geometric shape, regardless of their culture or location.      school buses    Correct! School buses look very different across countries. For example, the familiar yellow school bus is common in the United States but not in many other places.      apples    Not quite. Although apples come in different varieties, people around the world generally draw them in similar ways.      hats    Correct! Hats can vary significantly in style, color, and design across different cultures and regions.     "
 },
 {
-  "id": "ai-models-2",
+  "id": "ai-models-7",
   "level": "2",
-  "url": "topic-1-3-responsible-ai.html#ai-models-2",
+  "url": "topic-1-3-responsible-ai.html#ai-models-7",
   "type": "Paragraph (with a defined term)",
   "number": "",
   "title": "",
   "body": "Machine Learning (ML) "
 },
 {
-  "id": "ai-models-4",
+  "id": "ai-models-9",
   "level": "2",
-  "url": "topic-1-3-responsible-ai.html#ai-models-4",
+  "url": "topic-1-3-responsible-ai.html#ai-models-9",
   "type": "Paragraph (with a defined term)",
   "number": "",
   "title": "",
   "body": "model "
 },
 {
-  "id": "ai-models-6",
+  "id": "ai-models-13",
   "level": "2",
-  "url": "topic-1-3-responsible-ai.html#ai-models-6",
+  "url": "topic-1-3-responsible-ai.html#ai-models-13",
   "type": "Essential Knowledge",
   "number": "1.3.3",
   "title": "1.3.A.3.",
   "body": " 1.3.A.3  In AI systems, a model is the part of the system used to produce outputs from inputs. Models may follow rules created by people or learn patterns from data.  "
 },
 {
-  "id": "ai-models-7",
+  "id": "ai-models-14",
   "level": "2",
-  "url": "topic-1-3-responsible-ai.html#ai-models-7",
+  "url": "topic-1-3-responsible-ai.html#ai-models-14",
   "type": "Essential Knowledge",
   "number": "1.3.4",
   "title": "1.3.A.4.",
@@ -622,9 +622,9 @@ var ptx_lunr_docs = [
   "body": " Teachable Machine    Go to Google Teachable Machine and click on Get Started.  If you have a webcam on your computer, try Image Project or Pose Project. You can also try the Image Project if you can download images on your computer, for example you could download this folder of cat and dog images . If you do not have a webcam or cannot download images, try the Audio Project which can use your computer's microphone to record sounds.  Categories: Teachable machine will learn to recognize two different categories of input. Decide which two categories you want to use. For example, you could train a model to recognize cats and dogs, or happy and sad faces, or pointing up and down or clapping and snapping sounds. Click on the pencil icon next to Class 1 and type in your first category and do the same for Class 2.  Data: Watch this short gather video on how to input your data. You will use your webcam or microphone or upload images to record at least 20 examples of your two categories.  Train: Once you have collected at least 20 examples for each category, click on the \"Train\" button to train your model. Watch this train video for more information.  Test: After training, you can test your model in the Preview area. Upload or record a new sample and see what your model predicts! You should use examples that are not in your training data and are difficult to guess. Under the uploaded sample, the model will tell you the percentage of confidence it has in its prediction of the category. For example, the model below thinks this image is a cat with 88% confidence. Did your model get it right? If not upload more training data and train again.   Reflection: Answer the following questions below. What categories did you choose? After training, how accurate was your model in the preview area and what kind of examples did it have difficulty with? How did your decisions about the categories and training data affect the model's accuracy and fairness?      "
 },
 {
-  "id": "ai-models-11",
+  "id": "ai-models-18",
   "level": "2",
-  "url": "topic-1-3-responsible-ai.html#ai-models-11",
+  "url": "topic-1-3-responsible-ai.html#ai-models-18",
   "type": "Paragraph (with a defined term)",
   "number": "",
   "title": "",
@@ -640,139 +640,319 @@ var ptx_lunr_docs = [
   "body": "  Adding more training data does not always improve an AI model. Which is the best explanation for this?      AI models stop learning after they have seen a certain number of examples.    No. AI models do not have a fixed limit on how many examples they can learn from.      If the additional data is inaccurate, repetitive, or does not represent the variety of real-world examples, the model may not improve.    Correct! The quality and diversity of the training data are just as important as the quantity.      Adding more data causes the AI to forget what it learned from earlier examples.    No. More data does not automatically cause an AI model to forget previous training examples.      AI models become less accurate whenever they are trained with more than one category of data.    No. AI models are often designed to recognize many categories. The issue is whether the training data is representative and of good quality.     "
 },
 {
-  "id": "genAI-2",
-  "level": "2",
-  "url": "topic-1-3-responsible-ai.html#genAI-2",
-  "type": "Essential Knowledge",
-  "number": "1.3.5",
-  "title": "1.3.A.5.",
-  "body": " 1.3.A.5   Generative AI is a type of AI that creates new content, such as text, images, music, or code, based on patterns it has learned from examples. Some generative AI tools are powered by large language models (LLMs) , which generate text by predicting likely sequences of words based on patterns learned from large collections of text.  "
-},
-{
-  "id": "genAI-3",
-  "level": "2",
-  "url": "topic-1-3-responsible-ai.html#genAI-3",
-  "type": "Essential Knowledge",
-  "number": "1.3.6",
-  "title": "1.3.A.6.",
-  "body": " 1.3.A.6  Humans decide what happens with an AI tool’s output, including when to trust it, what actions to take based on it, and when a human should review or make the final decision.  "
-},
-{
-  "id": "genAI-4",
-  "level": "2",
-  "url": "topic-1-3-responsible-ai.html#genAI-4",
-  "type": "Essential Knowledge",
-  "number": "1.3.7",
-  "title": "1.3.A.7.",
-  "body": " 1.3.A.7  When AI tools are used to create or transform content, humans must consider what content may be used and how outputs may be shared, including following licenses and giving attribution when required.  "
-},
-{
   "id": "genAI-5",
   "level": "2",
   "url": "topic-1-3-responsible-ai.html#genAI-5",
-  "type": "Essential Knowledge",
-  "number": "1.3.8",
-  "title": "1.3.A.8.",
-  "body": " 1.3.A.8  AI tools can generate realistic images, audio, or video that may be mistaken for authentic media (deepfakes). Humans must make decisions about safeguards, such as disclosure, verification, and responsible sharing, to reduce misinformation and harm.  "
-},
-{
-  "id": "genAI-6",
-  "level": "2",
-  "url": "topic-1-3-responsible-ai.html#genAI-6",
-  "type": "Essential Knowledge",
-  "number": "1.3.9",
-  "title": "1.3.A.9.",
-  "body": " 1.3.A.9   Model drift occurs when a model’s performance changes over time because the real-world data or conditions it encounters shift, potentially making the model less accurate. AI systems should be monitored by humans to detect model drift. When drift is detected, humans can update data, adjust the model, or retrain the system to reduce inaccurate or harmful outcomes.  "
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "Generative AI (Gen AI) large language model (LLM) "
 },
 {
   "id": "genAI-7",
   "level": "2",
   "url": "topic-1-3-responsible-ai.html#genAI-7",
   "type": "Essential Knowledge",
+  "number": "1.3.5",
+  "title": "1.3.A.5.",
+  "body": " 1.3.A.5   Generative AI is a type of AI that creates new content, such as text, images, music, or code, based on patterns it has learned from examples. Some generative AI tools are powered by large language models (LLMs) , which generate text by predicting likely sequences of words based on patterns learned from large collections of text.  "
+},
+{
+  "id": "llm-next-word-prediction",
+  "level": "2",
+  "url": "topic-1-3-responsible-ai.html#llm-next-word-prediction",
+  "type": "Activity",
+  "number": "1.3.7",
+  "title": "",
+  "body": "  Scroll down to the bottom of the How LLMs work website to the Interactive Playground section. Type in the sentence fragment \"Gen AI uses a large language\" and click on Visualize. What word is predicted to be the next word with the highest probability?        Correct! In most cases, the LLM would see data with \"large language model\" occurring together.    What comes after large language?     "
+},
+{
+  "id": "genAI-13",
+  "level": "2",
+  "url": "topic-1-3-responsible-ai.html#genAI-13",
+  "type": "Essential Knowledge",
+  "number": "1.3.6",
+  "title": "1.3.A.6.",
+  "body": " 1.3.A.6  Humans decide what happens with an AI tool’s output, including when to trust it, what actions to take based on it, and when a human should review or make the final decision.  "
+},
+{
+  "id": "genAI-15",
+  "level": "2",
+  "url": "topic-1-3-responsible-ai.html#genAI-15",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "hallucinations "
+},
+{
+  "id": "human-review-high-stakes",
+  "level": "2",
+  "url": "topic-1-3-responsible-ai.html#human-review-high-stakes",
+  "type": "Activity",
+  "number": "1.3.8",
+  "title": "",
+  "body": "  Which situation most requires a human to carefully review an AI system's output before acting on it?      Accepting a medical treatment recommended by an AI system.    Correct! Decisions involving health can have serious consequences. A human should carefully review AI recommendations before making a final decision.      Using AI to suggest a movie to watch.    Movie recommendations are generally low-risk, so they typically require less careful human review.      Using autocomplete while texting a friend.    Autocomplete may make small mistakes, but the consequences are usually minor.      Asking AI to generate ideas for a story.    Generating creative ideas is generally a low-risk use of AI. Humans still decide which ideas to use.     "
+},
+{
+  "id": "identify-ai-hallucination",
+  "level": "2",
+  "url": "topic-1-3-responsible-ai.html#identify-ai-hallucination",
+  "type": "Activity",
+  "number": "1.3.9",
+  "title": "",
+  "body": "  Which of the following are examples of a hallucinations produced by generative AI tools?      The AI confidently names several court cases that do not actually exist.    Correct! A hallucination occurs when an AI generates false information, such as made-up facts, while presenting them as if they are real.      The AI writes a story with repetitive sentences.    Incorrect. Repetitive writing is a limitation of some AI systems, but it is not a hallucination.      The AI generates a bibliography of books and articles where the dates of publication are incorrect.    Yes. Large language models sometimes make errors in generating information especially with specific names and numbers that are not common.      The AI generates a response more slowly than expected.    Incorrect. A slow response is a performance issue, not a hallucination.     "
+},
+{
+  "id": "genAI-18",
+  "level": "2",
+  "url": "topic-1-3-responsible-ai.html#genAI-18",
+  "type": "Essential Knowledge",
+  "number": "1.3.7",
+  "title": "1.3.A.7.",
+  "body": " 1.3.A.7  When AI tools are used to create or transform content, humans must consider what content may be used and how outputs may be shared, including following licenses and giving attribution when required.  "
+},
+{
+  "id": "licenses-and-attribution",
+  "level": "2",
+  "url": "topic-1-3-responsible-ai.html#licenses-and-attribution",
+  "type": "Activity",
+  "number": "1.3.10",
+  "title": "",
+  "body": "  Can you use AI-generated content without attribution (without mentioning where it is from)?      No, because AI-generated content is always copyrighted.    Not necessarily. Copyright and licensing rules depend on the terms of use of the AI tool. Currently only human-created content is protected by copyright law, but some AI tools may have licensing or attribution requirements.      Yes, because AI tools always provide original work.    No, AI-generated content is not guaranteed to be completely original because it is based on existing work by humans and the AI tool you use may have licensing or attribution requirements.      No, some content may require permission or credit before it is shared.    Correct! When using AI-generated content, people should consider check whether the AI tool requires a license or attribution, and whether the place where it is being shared has any rules about using AI-generated content.      Yes, attribution is only required for printed books.    Incorrect. Attribution requirements can apply to many types of content, not just printed books.     "
+},
+{
+  "id": "genAI-21",
+  "level": "2",
+  "url": "topic-1-3-responsible-ai.html#genAI-21",
+  "type": "Essential Knowledge",
+  "number": "1.3.8",
+  "title": "1.3.A.8.",
+  "body": " 1.3.A.8  AI tools can generate realistic images, audio, or video that may be mistaken for authentic media ( deepfakes ). Humans must make decisions about safeguards, such as disclosure, verification, and responsible sharing, to reduce misinformation and harm.  "
+},
+{
+  "id": "deepfakes-dogs",
+  "level": "2",
+  "url": "topic-1-3-responsible-ai.html#deepfakes-dogs",
+  "type": "Activity",
+  "number": "1.3.11",
+  "title": "",
+  "body": "  Which of the following images is real and not AI-generated? It's okay to try all the answers on this one!       Dog 1    Incorrect. This image was AI-generated.      Dog 2    Correct! This image is a real photograph of a dog.      Dog 3    Incorrect. This image was AI-generated.      Dog 4    Incorrect. This image was AI-generated.     "
+},
+{
+  "id": "deepfake-activity",
+  "level": "2",
+  "url": "topic-1-3-responsible-ai.html#deepfake-activity",
+  "type": "Project",
+  "number": "1.3.12",
+  "title": "",
+  "body": "  Visit the Which One Is Real website and play one round of the Mixed or Images or Videos quiz. Try these together with a partner.  After you finish, answer the following questions:   What was your score?  Was it easier or harder than you expected to identify the AI-generated content?  Why is it important to verify realistic-looking images or videos before sharing them online?  What are some of the dangers with deepfakes?     "
+},
+{
+  "id": "genAI-25",
+  "level": "2",
+  "url": "topic-1-3-responsible-ai.html#genAI-25",
+  "type": "Essential Knowledge",
+  "number": "1.3.9",
+  "title": "1.3.A.9.",
+  "body": " 1.3.A.9   Model drift occurs when a model’s performance changes over time because the real-world data or conditions it encounters shift, potentially making the model less accurate. AI systems should be monitored by humans to detect model drift. When drift is detected, humans can update data, adjust the model, or retrain the system to reduce inaccurate or harmful outcomes.  "
+},
+{
+  "id": "model-drift-response",
+  "level": "2",
+  "url": "topic-1-3-responsible-ai.html#model-drift-response",
+  "type": "Activity",
+  "number": "1.3.13",
+  "title": "",
+  "body": "  An AI model predicts traffic patterns for a city. After several new highways are built, the model's predictions become much less accurate. What is the best explanation and the most appropriate action to fix this issue?      The model has experienced model drift, so humans should update the training data and retrain the model.    Correct! Model drift occurs when changes in real-world conditions reduce a model's accuracy. Humans should monitor AI systems and update or retrain them when drift is detected.      The model has become corrupted, so it can no longer be used.    No, the decrease in accuracy is due to changes in real-world conditions, and the model can be still be fixed.      The model can still be used, but the city should publish a disclaimer about the model's limitations.    Although this is a good temporary measure, the underlying problems should still be addressed.      Unfortunately, they would need to start over to train the model with the new information.    The model is still useful and could be updated.     "
+},
+{
+  "id": "genAI-27",
+  "level": "2",
+  "url": "topic-1-3-responsible-ai.html#genAI-27",
+  "type": "Essential Knowledge",
   "number": "1.3.10",
   "title": "1.3.A.10.",
   "body": " 1.3.A.10  Developers can increase transparency by clearly describing an AI tool’s purpose, how it was developed, trained, and evaluated, and its limitations and appropriate uses. This allows users to make informed choices.  "
 },
 {
-  "id": "topic-1-3-responsible-ai-7-2",
+  "id": "ai-transparency",
   "level": "2",
-  "url": "topic-1-3-responsible-ai.html#topic-1-3-responsible-ai-7-2",
+  "url": "topic-1-3-responsible-ai.html#ai-transparency",
+  "type": "Activity",
+  "number": "1.3.14",
+  "title": "",
+  "body": "  A company publicly explains that its chatbot was trained on customer support conversations, works best for common questions, and sometimes produces incorrect answers. Why is this information useful?      It increases transparency and helps users understand the chatbot's appropriate uses and limitations.    Correct! Explaining how an AI system was trained, what it is designed to do, and its limitations helps users make informed decisions about when and how to use it.      It guarantees every answer the chatbot gives is correct.    Incorrect. Even transparent AI systems can make mistakes. Transparency helps users understand the system, but it does not guarantee correct answers.      It prevents model drift.    Incorrect. Providing information about an AI system does not prevent model drift, which occurs when a model's performance changes because real-world data or conditions change over time.      It makes the chatbot respond faster.    Incorrect. Explaining how an AI system works does not affect its response speed.     "
+},
+{
+  "id": "automation-augmentation-4",
+  "level": "2",
+  "url": "topic-1-3-responsible-ai.html#automation-augmentation-4",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "augment AI agents agentic AI autonomous AI "
+},
+{
+  "id": "automation-augmentation-6",
+  "level": "2",
+  "url": "topic-1-3-responsible-ai.html#automation-augmentation-6",
   "type": "Essential Knowledge",
   "number": "1.3.11",
+  "title": "1.3.B.2.",
+  "body": " 1.3.B.2   Automation allows computers to carry out tasks with limited human involvement, often making work faster, more consistent, and more efficient. Automated systems can handle routine tasks and, in some cases, more complex ones. They may still produce inaccurate results when inputs are ambiguous, conditions change, or unusual cases are not handled well.  "
+},
+{
+  "id": "automation-augmentation-7",
+  "level": "2",
+  "url": "topic-1-3-responsible-ai.html#automation-augmentation-7",
+  "type": "Essential Knowledge",
+  "number": "1.3.12",
+  "title": "1.3.B.4.",
+  "body": " 1.3.B.4   Augmentation uses tools or systems to support human work while humans remain responsible for decisions and outcomes. In some cases, augmentation involves AI, such as in human-in-the-loop systems where AI outputs are reviewed by humans to improve accuracy and accountability.  "
+},
+{
+  "id": "ai-augmentation-vs-automation",
+  "level": "2",
+  "url": "topic-1-3-responsible-ai.html#ai-augmentation-vs-automation",
+  "type": "Table",
+  "number": "1.3.13",
+  "title": "AI Augmentation vs. AI Automation",
+  "body": " AI Augmentation vs. AI Automation     AI Augmentation  AI Automation    Role:  make recommendations with human oversight and accountability  perform tasks autonomously with little or no human involvement    Goal:  Help humans to complete tasks  Fast and cheap automatic execution of tasks    Best for:  Complex and important decisions  Predictable and low-risk tasks    "
+},
+{
+  "id": "augmentation-vs-automation",
+  "level": "2",
+  "url": "topic-1-3-responsible-ai.html#augmentation-vs-automation",
+  "type": "Activity",
+  "number": "1.3.15",
+  "title": "",
+  "body": "  Decide whether each AI application is primarily an example of AI augmentation or AI automation . Drag each application on the left to the correct category name on the right. There will be 4 applications in each category.    Think about whether the AI is assisting a human or performing the task on its own.     Chatbots  AI coding assistant  AI that summarizes meeting notes  AI that suggests medical diagnoses  AI augmentation    Self-driving car that makes driving decisions  Warehouse robot that moves inventory to fullfill orders  Customer service agent that answers questions  Email agent that drafts and sends emails  AI automation    "
+},
+{
+  "id": "automation-augmentation-11",
+  "level": "2",
+  "url": "topic-1-3-responsible-ai.html#automation-augmentation-11",
+  "type": "Essential Knowledge",
+  "number": "1.3.14",
   "title": "1.3.B.1.",
   "body": " 1.3.B.1  Decisions about automation and augmentation affect everyday experiences, such as recommendations, autocorrect suggestions, and navigation directions. Understanding whether a system is acting automatically or supporting human decision-making helps users decide how much to rely on its output and when they should verify it, especially when errors, bias, or other limitations could affect the result.  "
 },
 {
-  "id": "topic-1-3-responsible-ai-7-3",
+  "id": "automation-augmentation-12",
   "level": "2",
-  "url": "topic-1-3-responsible-ai.html#topic-1-3-responsible-ai-7-3",
-  "type": "Essential Knowledge",
-  "number": "1.3.12",
-  "title": "1.3.B.2.",
-  "body": " 1.3.B.2  Automation allows computers to carry out tasks with limited human involvement, often making work faster, more consistent, and more efficient. Automated systems can handle routine tasks and, in some cases, more complex ones. They may still produce inaccurate results when inputs are ambiguous, conditions change, or unusual cases are not handled well.  "
-},
-{
-  "id": "topic-1-3-responsible-ai-7-4",
-  "level": "2",
-  "url": "topic-1-3-responsible-ai.html#topic-1-3-responsible-ai-7-4",
-  "type": "Essential Knowledge",
-  "number": "1.3.13",
-  "title": "1.3.B.3.",
-  "body": " 1.3.B.3  Accuracy is the degree to which an output or code solution matches defined criteria for correctness, such as a program’s requirements or known correct outputs. Accuracy can be evaluated by testing with defined inputs and comparing actual results to expected results.  "
-},
-{
-  "id": "topic-1-3-responsible-ai-7-5",
-  "level": "2",
-  "url": "topic-1-3-responsible-ai.html#topic-1-3-responsible-ai-7-5",
-  "type": "Essential Knowledge",
-  "number": "1.3.14",
-  "title": "1.3.B.4.",
-  "body": " 1.3.B.4  Augmentation uses tools or systems to support human work while humans remain responsible for decisions and outcomes. In some cases, augmentation involves AI, such as in human-in-the-loop systems where AI outputs are reviewed by humans to improve accuracy and accountability.  "
-},
-{
-  "id": "topic-1-3-responsible-ai-7-6",
-  "level": "2",
-  "url": "topic-1-3-responsible-ai.html#topic-1-3-responsible-ai-7-6",
+  "url": "topic-1-3-responsible-ai.html#automation-augmentation-12",
   "type": "Essential Knowledge",
   "number": "1.3.15",
+  "title": "1.3.B.3.",
+  "body": " 1.3.B.3   Accuracy is the degree to which an output or code solution matches defined criteria for correctness, such as a program’s requirements or known correct outputs. Accuracy can be evaluated by testing with defined inputs and comparing actual results to expected results.  "
+},
+{
+  "id": "accuracy-chatbot",
+  "level": "2",
+  "url": "topic-1-3-responsible-ai.html#accuracy-chatbot",
+  "type": "Activity",
+  "number": "1.3.16",
+  "title": "",
+  "body": "  A chatbot is given an AP CSP exam and answers 90 out of 100 questions correctly according to an answer key. Which of the following statements are true?      The chatbot is unbiased.    No. Accuracy measures how often the chatbot produces correct answers. A system can be accurate overall and still produce biased outputs.      The chatbot is 90% accurate.    Correct! If the chatbot answered 90 out of 100 questions correctly, its accuracy on this test is 90%.      The chatbot is always reliable.    No. A chatbot that is 90% accurate still produces incorrect answers about 10% of the time, so it is not always reliable.      The chatbot is fully automated.    No. The percentage of correct answers measures accuracy, not whether the chatbot operates autonomously.     "
+},
+{
+  "id": "automation-augmentation-14",
+  "level": "2",
+  "url": "topic-1-3-responsible-ai.html#automation-augmentation-14",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "Reinforcement Learning from Human Feedback (RLHF) Human-In-the-Loop (HITL) "
+},
+{
+  "id": "automation-augmentation-16",
+  "level": "2",
+  "url": "topic-1-3-responsible-ai.html#automation-augmentation-16",
+  "type": "Essential Knowledge",
+  "number": "1.3.16",
   "title": "1.3.B.5.",
   "body": " 1.3.B.5  The appropriateness of automation or augmentation depends on the context and the consequences of error. Although automation can be faster, more consistent, or easier to scale, it may be less appropriate in situations that are high-stakes, ambiguous, or require human judgment, empathy, or discretion. In those situations, augmentation may be preferred so that humans remain responsible for the final decision.  "
 },
 {
-  "id": "topic-1-3-responsible-ai-7-7",
+  "id": "augmentation-vs-automation-choice",
   "level": "2",
-  "url": "topic-1-3-responsible-ai.html#topic-1-3-responsible-ai-7-7",
+  "url": "topic-1-3-responsible-ai.html#augmentation-vs-automation-choice",
+  "type": "Activity",
+  "number": "1.3.17",
+  "title": "",
+  "body": "  In which situation is AI augmentation generally preferable to AI automation ?      Automatically filtering spam emails    No. This is typically a low-risk, high-volume task where full automation is appropriate.      Reordering office supplies    No. This is a routine, predictable task that is well suited for automation.      Assisting a doctor in diagnosing a patient    Correct. Medical diagnosis is high-stakes and requires human judgment, so AI is best used to support (augment) the decision-making process.      Turning lights on and off depending on occupancy and time    No. This is a simple, predictable control task that is well suited for automation.     "
+},
+{
+  "id": "automation-augmentation-18",
+  "level": "2",
+  "url": "topic-1-3-responsible-ai.html#automation-augmentation-18",
   "type": "Essential Knowledge",
-  "number": "1.3.16",
+  "number": "1.3.17",
   "title": "1.3.B.6.",
   "body": " 1.3.B.6  Evaluating the appropriate level of automation or augmentation requires weighing benefits such as speed or efficiency against risks such as bias, inaccuracy, privacy, or overreliance, including how thresholds affect outcomes. It also means considering social, environmental, and economic trade-offs such as impacts on people, resource and energy use, costs, labor, and access.  "
 },
 {
-  "id": "topic-1-3-responsible-ai-7-8",
+  "id": "automation-tradeoffs",
   "level": "2",
-  "url": "topic-1-3-responsible-ai.html#topic-1-3-responsible-ai-7-8",
+  "url": "topic-1-3-responsible-ai.html#automation-tradeoffs",
+  "type": "Activity",
+  "number": "1.3.18",
+  "title": "",
+  "body": "  A company wants to automate hiring decisions because it is faster and cheaper. Which concern should also be considered?      The company's electricity bill will go up.    No. Although energy use may be a consideration in some cases, it is not the primary concern in this scenario.      Automated decisions could introduce bias.    Correct! Automated hiring systems can unintentionally reflect or amplify bias in their training data or design, so fairness should be evaluated alongside efficiency.      Automating hiring decisions is illegal.    No. Automating hiring decisions is not illegal, although there are some ethical concerns.      Computers never make mistakes.    No. Automated systems can make mistakes, so their outputs should be evaluated, especially in high-stakes decisions like hiring.     "
+},
+{
+  "id": "ai-benefits-drawbacks",
+  "level": "2",
+  "url": "topic-1-3-responsible-ai.html#ai-benefits-drawbacks",
+  "type": "Activity",
+  "number": "1.3.19",
+  "title": "",
+  "body": "  AI automation offer many advantages, but it also has potential drawbacks. Drag each item on the left to the correct category name: Benefits or Drawbacks .    Think about whether each item is a positive outcome of using AI or a potential concern that should be considered.     Faster  Cheaper  Available all the time  Benefits    Possible bias or incorrect results  Possible job displacement  Energy use  Drawbacks    "
+},
+{
+  "id": "automation-augmentation-21",
+  "level": "2",
+  "url": "topic-1-3-responsible-ai.html#automation-augmentation-21",
   "type": "Essential Knowledge",
-  "number": "1.3.17",
+  "number": "1.3.18",
   "title": "1.3.B.7.",
   "body": " 1.3.B.7  Evaluating automation or augmentation should consider how the choice affects user experience, including trust, transparency, and whether users can reasonably decline or reduce automation, such as choosing manual controls or requesting human review when needed.  "
 },
 {
-  "id": "topic-1-3-responsible-ai-8-3",
+  "id": "user-trust-human-review",
   "level": "2",
-  "url": "topic-1-3-responsible-ai.html#topic-1-3-responsible-ai-8-3",
+  "url": "topic-1-3-responsible-ai.html#user-trust-human-review",
+  "type": "Activity",
+  "number": "1.3.20",
+  "title": "",
+  "body": "  Which feature would most improve user trust in an automated system?      Increase the speed at which the system makes decisions.    No. Faster decisions may improve efficiency, but they do not necessarily make users trust the system more.      Provide a confidence score with each recommendation.    Confidence scores can help users interpret recommendations, but they do not give users the ability to challenge or verify important decisions.      Allow users to request human review of important decisions.    Correct! Allowing human review gives users greater control and helps build trust, especially when automated decisions have significant consequences.      Automatically apply every recommendation.    No. Automatically applying recommendations reduces user control, which can decrease trust, especially in high-stakes situations.     "
+},
+{
+  "id": "topic-1-3-responsible-ai-10-3",
+  "level": "2",
+  "url": "topic-1-3-responsible-ai.html#topic-1-3-responsible-ai-10-3",
   "type": "Learning Objective",
-  "number": "1.3.18",
+  "number": "1.3.19",
   "title": "1.3.A.",
   "body": " 1.3.A  Explain how human decisions shape the development, deployment, and maintenance of AI tools.  "
 },
 {
-  "id": "topic-1-3-responsible-ai-8-4",
+  "id": "topic-1-3-responsible-ai-10-4",
   "level": "2",
-  "url": "topic-1-3-responsible-ai.html#topic-1-3-responsible-ai-8-4",
+  "url": "topic-1-3-responsible-ai.html#topic-1-3-responsible-ai-10-4",
   "type": "Learning Objective",
-  "number": "1.3.19",
+  "number": "1.3.20",
   "title": "1.3.B.",
   "body": " 1.3.B  Evaluate the appropriate level of automation or augmentation for a task.  "
+},
+{
+  "id": "vocab-AI",
+  "level": "2",
+  "url": "topic-1-3-responsible-ai.html#vocab-AI",
+  "type": "Activity",
+  "number": "1.3.21",
+  "title": "",
+  "body": "  Review the vocabulary in this lesson. Drag the vocabulary term from the left and drop it on its correct definition on the right. Click the \"Check Me\" button to see if you are correct.    Find the words in the lesson above and try again.     Artificial Intelligence (AI)  computer systems that use data and patterns to perform tasks that are often associated with human intelligence    Generative AI (Gen AI)  AI that creates new content, such as text, images, music, or code, based on patterns it has learned from examples    Large Language Model (LLM)  a type of AI model that is trained on large amounts of text data to generate human-like text    Machine Learning (ML)  algorithms that can learn from data    Model  the patterns or rules that an AI learns from data    Model Drift  decreased model performance because the real-world data or conditions it encounters shift    Automation  Computer systems that carry out tasks with limited human involvement    Augmentation  AI tools that support human work while humans remain responsible for decisions and outcomes    Human-In-the-Loop (HITL) training  AI training augmented with human feedback, where AI outputs are reviewed by humans to improve accuracy and accountability    "
 },
 {
   "id": "topic-1-4-binary",
@@ -2266,7 +2446,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "1.8",
   "title": "Unit 1 Summary",
-  "body": " Unit 1 Summary  In Unit 1, we covered the following Learning Objectives:   1.1 Purpose and Behavior  1.1.A Determine the purpose and behavior of an app by interacting with it.  1.1.B Identify inputs and outputs of an app while using it.     1.2 Benefits of Collaboration  1.2.A Explain how apps and programs are improved through collaboration and user testing.  1.2.B Explain how collaboration can reduce bias in apps.    1.3 Responsible AI and Human Decision-Making  1.3.A Explain how human decisions shape the development, deployment, and maintenance of AI tools.  1.3.B Evaluate the appropriate level of automation or augmentation for a task.    1.4 Binary Representation  1.4.A Explain how computers store and process data as bits, and how those bits are represented as meaningful digital information for users.  1.4.B Explain why representing numbers with limited bits can produce inaccurate results.    1.5 Sequencing  1.5.A Represent an algorithm that uses sequencing using written steps or a flowchart.  1.5.B Develop code that runs sequentially, and determine the result of sequential statements.    1.6 Variables  1.6.A Identify the use of variables in an app while interacting with it.  1.6.B Develop code for assignment statements using variables, and determine the values that are stored in the variables as a result.  1.6.C Develop code to store and modify strings, and determine the output produced.    1.7 Mathematical Expressions  1.7.A Develop code using mathematical expressions, and determine the result of these expressions.  1.7.B Develop code to generate random numbers, and determine the possible values that could be produced as a result.     Review the following Unit 1 vocabulary:    1-1 Purpose and Behavior Vocabulary. Drag the vocabulary term from the left and drop it on its correct definition on the right. Click the \"Check Me\" button to see if you are correct.    Review the vocabulary in 1.1 and try again.     app  a program that runs on a computer or any computing device    purpose  why an app exists or its goal    behavior  what an app does when used    input  data sent to a computer for a program to process.    output  data sent back from a program to the device or user    user interface (UI)  the part of an app (for example buttons) that users directly interact with    event  a signal that something happened, such as a button click or key press    event handler  code that runs in response to an event       1-2 Collaboration Vocabulary: Drag the vocabulary term from the left and drop it on its correct definition on the right. Click the \"Check Me\" button to see if you are correct.    Review the vocabulary in lesson 1.2 and try again.     pair programming  a collaboration practice in which two programmers work together at one computer    user testing  testing an app with a variety of users    bias  a tendency to favor certain people, values, or outcomes over others    iterative design process  a circular process in which an app is designed, tested, revised, and tested again multiple times       1-4 Binary Vocabulary: Drag the vocabulary term from the left and drop it on its correct definition on the right. Click the \"Check Me\" button to see if you are correct.    Find the words in 1-4 and try again.     bit  A binary digit, either 0 or 1.    abstraction  The process of removing detail to focus on the essential characteristics of something.    encoding  Converting information into a specific format for storage or transmission.    roundoff error  The error that occurs when a number is approximated to fit in a fixed number of bits.    overflow error  The error that occurs when a number is too large to be represented within the given number of bits.       Review the vocabulary in 1-5 Sequencing. Drag the vocabulary term from the left and drop it on its correct definition on the right. Click the \"Check Me\" button to see if you are correct.    Find the words in 1-5 above and try again.     algorithm  Step by step instructions for solving a problem    sequencing  The default order of code that is run line-by-line from the top down    flowchart  Visual representation of an algorithm that uses shapes and arrows to show the steps    IDE  Software that provides tools for programmers to write, test, and debug code    syntax error  A mistake in the way code is written that prevents it from running correctly    debugging  The process of finding and fixing errors in code       Review the vocabulary in 1-6 Variables. Drag the vocabulary term from the left and drop it on its correct definition on the right. Click the \"Check Me\" button to see if you are correct.    Find the words in 1-6 and try again.     variable  a named storage location used to hold a value that can change while the program is running    program state  the set of values and information a program is storing at a specific moment    data types  numbers, strings, or booleans    string  an ordered sequence of characters used to represent text in a program    concatenation  joins two or more strings to create a new string    substring  part of an existing string       Review the vocabulary in 1-7 Expressions. Drag the vocabulary term from the left and drop it on its correct definition on the right. Click the \"Check Me\" button to see if you are correct.    Find the words in 1-7 and try again.     expression  combination of numbers, variables, and operators that represents a value    increment  to increase a variable's value, often by adding 1 to it    integer  a numeric data type that represents positive and negative whole numbers, including zero.    modulo (%)  operator that returns the remainder of a division operation    random.randint  Python function that generates a random integer between two specified values (inclusive)     The next lessons in this unit are for practicing Python coding. There are also some optional App Inventor coding projects.  "
+  "body": " Unit 1 Summary  In Unit 1, we covered the following Learning Objectives:   1.1 Purpose and Behavior  1.1.A Determine the purpose and behavior of an app by interacting with it.  1.1.B Identify inputs and outputs of an app while using it.     1.2 Benefits of Collaboration  1.2.A Explain how apps and programs are improved through collaboration and user testing.  1.2.B Explain how collaboration can reduce bias in apps.    1.3 Responsible AI and Human Decision-Making  1.3.A Explain how human decisions shape the development, deployment, and maintenance of AI tools.  1.3.B Evaluate the appropriate level of automation or augmentation for a task.    1.4 Binary Representation  1.4.A Explain how computers store and process data as bits, and how those bits are represented as meaningful digital information for users.  1.4.B Explain why representing numbers with limited bits can produce inaccurate results.    1.5 Sequencing  1.5.A Represent an algorithm that uses sequencing using written steps or a flowchart.  1.5.B Develop code that runs sequentially, and determine the result of sequential statements.    1.6 Variables  1.6.A Identify the use of variables in an app while interacting with it.  1.6.B Develop code for assignment statements using variables, and determine the values that are stored in the variables as a result.  1.6.C Develop code to store and modify strings, and determine the output produced.    1.7 Mathematical Expressions  1.7.A Develop code using mathematical expressions, and determine the result of these expressions.  1.7.B Develop code to generate random numbers, and determine the possible values that could be produced as a result.     Review the following Unit 1 vocabulary:    1-1 Purpose and Behavior Vocabulary. Drag the vocabulary term from the left and drop it on its correct definition on the right. Click the \"Check Me\" button to see if you are correct.    Review the vocabulary in 1.1 and try again.     app  a program that runs on a computer or any computing device    purpose  why an app exists or its goal    behavior  what an app does when used    input  data sent to a computer for a program to process.    output  data sent back from a program to the device or user    user interface (UI)  the part of an app (for example buttons) that users directly interact with    event  a signal that something happened, such as a button click or key press    event handler  code that runs in response to an event       1-2 Collaboration Vocabulary: Drag the vocabulary term from the left and drop it on its correct definition on the right. Click the \"Check Me\" button to see if you are correct.    Review the vocabulary in lesson 1.2 and try again.     pair programming  a collaboration practice in which two programmers work together at one computer    user testing  testing an app with a variety of users    bias  a tendency to favor certain people, values, or outcomes over others    iterative design process  a circular process in which an app is designed, tested, revised, and tested again multiple times       1-3 AI Vocabulary: Drag the vocabulary term from the left and drop it on its correct definition on the right. Click the \"Check Me\" button to see if you are correct.    Review the vocabulary in lesson 1.3 and try again.     Artificial Intelligence (AI)  computer systems that use data and patterns to perform tasks that are often associated with human intelligence    Generative AI (Gen AI)  AI that creates new content, such as text, images, music, or code, based on patterns it has learned from examples    Large Language Model (LLM)  a type of AI model that is trained on large amounts of text data to generate human-like text    Machine Learning (ML)  algorithms that can learn from data    Model  the patterns or rules that an AI learns from data    Model Drift  decreased model performance because the real-world data or conditions it encounters shift    Automation  Computer systems that carry out tasks with limited human involvement    Augmentation  AI tools that support human work while humans remain responsible for decisions and outcomes    Human-In-the-Loop (HITL) training  AI training augmented with human feedback, where AI outputs are reviewed by humans to improve accuracy and accountability       1-4 Binary Vocabulary: Drag the vocabulary term from the left and drop it on its correct definition on the right. Click the \"Check Me\" button to see if you are correct.    Find the words in 1-4 and try again.     bit  A binary digit, either 0 or 1.    abstraction  The process of removing detail to focus on the essential characteristics of something.    encoding  Converting information into a specific format for storage or transmission.    roundoff error  The error that occurs when a number is approximated to fit in a fixed number of bits.    overflow error  The error that occurs when a number is too large to be represented within the given number of bits.       Review the vocabulary in 1-5 Sequencing. Drag the vocabulary term from the left and drop it on its correct definition on the right. Click the \"Check Me\" button to see if you are correct.    Find the words in 1-5 above and try again.     algorithm  Step by step instructions for solving a problem    sequencing  The default order of code that is run line-by-line from the top down    flowchart  Visual representation of an algorithm that uses shapes and arrows to show the steps    IDE  Software that provides tools for programmers to write, test, and debug code    syntax error  A mistake in the way code is written that prevents it from running correctly    debugging  The process of finding and fixing errors in code       Review the vocabulary in 1-6 Variables. Drag the vocabulary term from the left and drop it on its correct definition on the right. Click the \"Check Me\" button to see if you are correct.    Find the words in 1-6 and try again.     variable  a named storage location used to hold a value that can change while the program is running    program state  the set of values and information a program is storing at a specific moment    data types  numbers, strings, or booleans    string  an ordered sequence of characters used to represent text in a program    concatenation  joins two or more strings to create a new string    substring  part of an existing string       Review the vocabulary in 1-7 Expressions. Drag the vocabulary term from the left and drop it on its correct definition on the right. Click the \"Check Me\" button to see if you are correct.    Find the words in 1-7 and try again.     expression  combination of numbers, variables, and operators that represents a value    increment  to increase a variable's value, often by adding 1 to it    integer  a numeric data type that represents positive and negative whole numbers, including zero.    modulo (%)  operator that returns the remainder of a division operation    random.randint  Python function that generates a random integer between two specified values (inclusive)     The next lessons in this unit are for practicing Python coding. There are also some optional App Inventor coding projects.  "
 },
 {
   "id": "vocab-IO-review",
@@ -2287,11 +2467,20 @@ var ptx_lunr_docs = [
   "body": "  1-2 Collaboration Vocabulary: Drag the vocabulary term from the left and drop it on its correct definition on the right. Click the \"Check Me\" button to see if you are correct.    Review the vocabulary in lesson 1.2 and try again.     pair programming  a collaboration practice in which two programmers work together at one computer    user testing  testing an app with a variety of users    bias  a tendency to favor certain people, values, or outcomes over others    iterative design process  a circular process in which an app is designed, tested, revised, and tested again multiple times    "
 },
 {
+  "id": "vocab-AI-review",
+  "level": "2",
+  "url": "unit1-summary.html#vocab-AI-review",
+  "type": "Activity",
+  "number": "1.8.3",
+  "title": "",
+  "body": "  1-3 AI Vocabulary: Drag the vocabulary term from the left and drop it on its correct definition on the right. Click the \"Check Me\" button to see if you are correct.    Review the vocabulary in lesson 1.3 and try again.     Artificial Intelligence (AI)  computer systems that use data and patterns to perform tasks that are often associated with human intelligence    Generative AI (Gen AI)  AI that creates new content, such as text, images, music, or code, based on patterns it has learned from examples    Large Language Model (LLM)  a type of AI model that is trained on large amounts of text data to generate human-like text    Machine Learning (ML)  algorithms that can learn from data    Model  the patterns or rules that an AI learns from data    Model Drift  decreased model performance because the real-world data or conditions it encounters shift    Automation  Computer systems that carry out tasks with limited human involvement    Augmentation  AI tools that support human work while humans remain responsible for decisions and outcomes    Human-In-the-Loop (HITL) training  AI training augmented with human feedback, where AI outputs are reviewed by humans to improve accuracy and accountability    "
+},
+{
   "id": "binary-vocab-review",
   "level": "2",
   "url": "unit1-summary.html#binary-vocab-review",
   "type": "Activity",
-  "number": "1.8.3",
+  "number": "1.8.4",
   "title": "",
   "body": "  1-4 Binary Vocabulary: Drag the vocabulary term from the left and drop it on its correct definition on the right. Click the \"Check Me\" button to see if you are correct.    Find the words in 1-4 and try again.     bit  A binary digit, either 0 or 1.    abstraction  The process of removing detail to focus on the essential characteristics of something.    encoding  Converting information into a specific format for storage or transmission.    roundoff error  The error that occurs when a number is approximated to fit in a fixed number of bits.    overflow error  The error that occurs when a number is too large to be represented within the given number of bits.    "
 },
@@ -2300,7 +2489,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "unit1-summary.html#sequencing-vocab-review",
   "type": "Activity",
-  "number": "1.8.4",
+  "number": "1.8.5",
   "title": "",
   "body": "  Review the vocabulary in 1-5 Sequencing. Drag the vocabulary term from the left and drop it on its correct definition on the right. Click the \"Check Me\" button to see if you are correct.    Find the words in 1-5 above and try again.     algorithm  Step by step instructions for solving a problem    sequencing  The default order of code that is run line-by-line from the top down    flowchart  Visual representation of an algorithm that uses shapes and arrows to show the steps    IDE  Software that provides tools for programmers to write, test, and debug code    syntax error  A mistake in the way code is written that prevents it from running correctly    debugging  The process of finding and fixing errors in code    "
 },
@@ -2309,7 +2498,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "unit1-summary.html#vars-vocab-review",
   "type": "Activity",
-  "number": "1.8.5",
+  "number": "1.8.6",
   "title": "",
   "body": "  Review the vocabulary in 1-6 Variables. Drag the vocabulary term from the left and drop it on its correct definition on the right. Click the \"Check Me\" button to see if you are correct.    Find the words in 1-6 and try again.     variable  a named storage location used to hold a value that can change while the program is running    program state  the set of values and information a program is storing at a specific moment    data types  numbers, strings, or booleans    string  an ordered sequence of characters used to represent text in a program    concatenation  joins two or more strings to create a new string    substring  part of an existing string    "
 },
@@ -2318,7 +2507,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "unit1-summary.html#vocab-exprs-review",
   "type": "Activity",
-  "number": "1.8.6",
+  "number": "1.8.7",
   "title": "",
   "body": "  Review the vocabulary in 1-7 Expressions. Drag the vocabulary term from the left and drop it on its correct definition on the right. Click the \"Check Me\" button to see if you are correct.    Find the words in 1-7 and try again.     expression  combination of numbers, variables, and operators that represents a value    increment  to increase a variable's value, often by adding 1 to it    integer  a numeric data type that represents positive and negative whole numbers, including zero.    modulo (%)  operator that returns the remainder of a division operation    random.randint  Python function that generates a random integer between two specified values (inclusive)    "
 },
@@ -2788,7 +2977,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "1.12",
   "title": "App Inventor Setup (Optional)",
-  "body": " App Inventor Setup (Optional)    As part of AP CSP, your class may choose to develop mobile apps using the Mobile CSP curriculum for MIT's App Inventor . Imagine making an app that runs on your own phone! App Inventor is a visual block-based drag and drop programming environment that can be used to quickly build mobile apps with many advanced features. Watch the video about App Inventor below.   In this lesson, you will try an already-built App Inventor project and make sure that it runs with your mobile device or computer. App Inventor can be used with Android or iOS phones and tablets as well as Chromebooks . There is a new web-emulator coming soon for App Inventor to use on any computer even without a mobile device!    App Inventor Setup Steps   Click to open App Inventor with the App Inventor Template Welcome App (we recommend using the Chrome browser for this). You will need to log in with your Google (or App Inventor) account that you will use for this course. Once the project opens in App Inventor, an embedded tutorial on the left of this app will guide you through the setup directions which are also below.  If you need to come back to your project, you can go to appinventor.mit.edu and click the Create Apps button and login to find your project and open it again. App Inventor is an Integrated Development Environment (IDE) which means that all of the software tools needed to design, develop, and test a mobile app are integrated within the App Inventor platform.  When the project opens, you will be viewing the App Inventor Designer . The Designer is where you will design your app's User Interface . The app you are testing has a button with an image (which displays on start up), a couple of labels that display text and a Player component that will play an applause sound.   If English is not your first language, you can switch App Inventor to a different language by clicking on English at the top right of the screen  Now, switch to the Blocks Editor by clicking on Blocks in the top right-hand corner of your window.   The Blocks Editor is where all the coding happens. There are built-in blocks as well as blocks for any component that you add in the Designer window.   Notice that App Inventor blocks connect together like puzzle pieces. The blocks for this app will cause it to display a congratulatory message on your screen and play an applause sound on start up. When the button with the logo is clicked, the app will change the background color and say hello.  To connect your mobile device to App Inventor:   Make sure that both your computer and your phone or tablet are connected to the same wifi or that you are using a Chromebook.  Install the Android MIT AI2 Companion app or iOS MIT App Inventor Companion from the Play Store.  In App Inventor on your computer, click Connect and then select AI Companion . This will display a 6-letter code both as a barcode and as plain text. (Note: The 6-letter code will be a unique code and different from the one shown below)    On the companion app, either type in the 6-letter code and click the “Connect to App Inventor” button or scan the barcode. You should see the app on your device!   For set up instructions to use a USB connection instead of WiFi, please go here and follow steps 1-6.  There is a new web-emulator coming soon for App Inventor!  If everything is configured properly, you should see the Welcome app on your device or emulator. You should see a message and the Mobile CSP logo. You should also hear a round of applause for your great work! Try clicking on the logo too and changing some things like the notifier message or the background color as described in the embedded tutorial.  If the app is not running correctly, you may need to retrace your setup steps to make sure you performed all of the necessary steps. Make sure your mobile device and your computer are on the same WiFi or other network. If the app seems frozen, try Connect\/Reset Connection and then try Connect\/AI Companion again. See the Troubleshooting page or try another method of connecting your device such as USB or using the emulator .   "
+  "body": " App Inventor Setup (Optional)    App Inventor setup   As part of AP CSP, your class may choose to develop mobile apps using the Mobile CSP curriculum for MIT's App Inventor . Imagine making an app that runs on your own phone! App Inventor is a visual block-based drag and drop programming environment that can be used to quickly build mobile apps with many advanced features. Watch the video about App Inventor below.   In this lesson, you will try an already-built App Inventor project and make sure that it runs with your mobile device or computer. App Inventor can be used with Android or iOS phones and tablets as well as Chromebooks . There is a new web-emulator coming soon for App Inventor to use on any computer even without a mobile device!    App Inventor Setup Steps   Click to open App Inventor with the App Inventor Template Welcome App (we recommend using the Chrome browser for this). You will need to log in with your Google (or App Inventor) account that you will use for this course. Once the project opens in App Inventor, an embedded tutorial on the left of this app will guide you through the setup directions which are also below.  If you need to come back to your project, you can go to appinventor.mit.edu and click the Create Apps button and login to find your project and open it again. App Inventor is an Integrated Development Environment (IDE) which means that all of the software tools needed to design, develop, and test a mobile app are integrated within the App Inventor platform.  When the project opens, you will be viewing the App Inventor Designer . The Designer is where you will design your app's User Interface . The app you are testing has a button with an image (which displays on start up), a couple of labels that display text and a Player component that will play an applause sound.   If English is not your first language, you can switch App Inventor to a different language by clicking on English at the top right of the screen  Now, switch to the Blocks Editor by clicking on Blocks in the top right-hand corner of your window.   The Blocks Editor is where all the coding happens. There are built-in blocks as well as blocks for any component that you add in the Designer window.   Notice that App Inventor blocks connect together like puzzle pieces. The blocks for this app will cause it to display a congratulatory message on your screen and play an applause sound on start up. When the button with the logo is clicked, the app will change the background color and say hello.  To connect your mobile device to App Inventor:   Make sure that both your computer and your phone or tablet are connected to the same wifi or that you are using a Chromebook.  Install the Android MIT AI2 Companion app or iOS MIT App Inventor Companion from the Play Store.  In App Inventor on your computer, click Connect and then select AI Companion . This will display a 6-letter code both as a barcode and as plain text. (Note: The 6-letter code will be a unique code and different from the one shown below)    On the companion app, either type in the 6-letter code and click the “Connect to App Inventor” button or scan the barcode. You should see the app on your device!   For set up instructions to use a USB connection instead of WiFi, please go here and follow steps 1-6.  There is a new web-emulator coming soon for App Inventor!  If everything is configured properly, you should see the Welcome app on your device or emulator. You should see a message and the Mobile CSP logo. You should also hear a round of applause for your great work! Try clicking on the logo too and changing some things like the notifier message or the background color as described in the embedded tutorial.  If the app is not running correctly, you may need to retrace your setup steps to make sure you performed all of the necessary steps. Make sure your mobile device and your computer are on the same WiFi or other network. If the app seems frozen, try Connect\/Reset Connection and then try Connect\/AI Companion again. See the Troubleshooting page or try another method of connecting your device such as USB or using the emulator .   "
 },
 {
   "id": "unit1-appinventor-paint",
@@ -2797,12 +2986,12 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "1.13",
   "title": "App Inventor Paint Pot Tutorial (Optional)",
-  "body": " App Inventor Paint Pot Tutorial (Optional)    The first mobile app that you will create is called Paint Pot which is a \"finger painting\" app that simulates dipping your finger in a pot of paint then drawing with it on a canvas. The app uses buttons to change the paint colors and MIT App Inventor’s touch and drag event handlers to draw circles and lines on the canvas. Watch the intro video below ( TeacherTube )   In this tutorial, you will learn to:  follow a tutorial to create the PaintPot app  deepen your understanding of event-driven programming  learn how to use a variable to make a program more general   Language Objectives: you will be able to:  explain the result of programming statements that include variables and assignments  describe how a global variable is an abstraction  use target vocabulary, such as variable , assignment , expression , operator , and pseudocode while describing app features and User Interface with the support of concept definitions and vocabulary notes from this lesson       Paint Pot Tutorial Part 1  To get started, open MIT App Inventor with the Paint Pot Template and follow along with the following video ( TeacherTube ) or your teacher or the long handout or short handout section part 1 .     Paint Pot Tutorial Part 2  Watch the video tutorial below ( TeacherTube version ) or the the text version of the tutorial or the short handout section part 2 .     Paint Pot Enhancements  Now that you have a working version of the Paint Pot app, you can try out some enhancements to make it your own! Here are some ideas to get you started but feel free to come up with your own enhancements as well.   Add a button to support a 4th color option for the app.  Add an image of your choice to draw on instead of the cat image. Scroll down to the bottom of the properties window of the Designer View to find the Media section wher you can click on Upload File. Use the image as the Canvas background image.  The app currently has a ButtonPlus and ButtonMinus. But, we only completed the code for ButtonPlus. Now that you understand how to increment variables by 1, implement an algorithm for ButtonMinus that will subtract 1 from dotsize. Make sure you test your code! We will learn how to do \"if blocks\" in the next unit and can add tests to make sure the dot size doesn't go below 0 or above a maximum value.  Currently, if a user wants to use a larger dot and then use a smaller dot (or vice versus), they have to continually press the ButtonMinus (or ButtonPlus). If the current value of dotsize is 25, getting to a size of 4 would be pain. For easier use, add a button that resets the size of the dot (circle) back to its original value. (HINT: You’ll need a second variable here to remember the original value of the dotsize.)  Optional: Instead of using an existing image, take a photo with the camera and use that as the Canvas background image! (Hint: For this you’ll need to use a new Button, the Camera component from the Media drawer, and the Camera’s TakePicture command and the AfterPicture event handler where you can set the image returned by the camera as Canvas' background image.)  Optional: Add a Social\/Sharing component and a share button to email what is drawn on the canvas using the Sharing. ShareFile block with the Canvas.Save block . You will have to set up an email account on your tablet to use the share component. (This may not work yet on iOS devices).  Share your app with the class or a friend!     Paint Pot Reflection  After you have completed the Paint Pot tutorial and enhancements, reflect on your experience by answering the following questions:   Project Reflection 1   Describe the purpose of your app and the input and output of the app. What were the variables used in your app?      Project Reflection 2   Describe an error that you encountered while you were creating the app, and how you fixed your code to remove the bug. How did you test the app to make sure it was working correctly?      "
+  "body": " App Inventor Paint Pot Tutorial (Optional)    App Inventor Paint Pot   The first mobile app that you will create is called Paint Pot which is a \"finger painting\" app that simulates dipping your finger in a pot of paint then drawing with it on a canvas. The app uses buttons to change the paint colors and MIT App Inventor’s touch and drag event handlers to draw circles and lines on the canvas. Watch the intro video below ( TeacherTube )   In this tutorial, you will learn to:  follow a tutorial to create the PaintPot app  deepen your understanding of event-driven programming  learn how to use a variable to make a program more general   Language Objectives: you will be able to:  explain the result of programming statements that include variables and assignments  describe how a global variable is an abstraction  use target vocabulary, such as variable , assignment , expression , operator , and pseudocode while describing app features and User Interface with the support of concept definitions and vocabulary notes from this lesson       Paint Pot Tutorial Part 1  To get started, open MIT App Inventor with the Paint Pot Template and follow along with the following video ( TeacherTube ) or your teacher or the long handout or short handout section part 1 .     Paint Pot Tutorial Part 2  Watch the video tutorial below ( TeacherTube version ) or the the text version of the tutorial or the short handout section part 2 .     Paint Pot Enhancements  Now that you have a working version of the Paint Pot app, you can try out some enhancements to make it your own! Here are some ideas to get you started but feel free to come up with your own enhancements as well.   Add a button to support a 4th color option for the app.  Add an image of your choice to draw on instead of the cat image. Scroll down to the bottom of the properties window of the Designer View to find the Media section wher you can click on Upload File. Use the image as the Canvas background image.  The app currently has a ButtonPlus and ButtonMinus. But, we only completed the code for ButtonPlus. Now that you understand how to increment variables by 1, implement an algorithm for ButtonMinus that will subtract 1 from dotsize. Make sure you test your code! We will learn how to do \"if blocks\" in the next unit and can add tests to make sure the dot size doesn't go below 0 or above a maximum value.  Currently, if a user wants to use a larger dot and then use a smaller dot (or vice versus), they have to continually press the ButtonMinus (or ButtonPlus). If the current value of dotsize is 25, getting to a size of 4 would be pain. For easier use, add a button that resets the size of the dot (circle) back to its original value. (HINT: You’ll need a second variable here to remember the original value of the dotsize.)  Optional: Instead of using an existing image, take a photo with the camera and use that as the Canvas background image! (Hint: For this you’ll need to use a new Button, the Camera component from the Media drawer, and the Camera’s TakePicture command and the AfterPicture event handler where you can set the image returned by the camera as Canvas' background image.)  Optional: Add a Social\/Sharing component and a share button to email what is drawn on the canvas using the Sharing. ShareFile block with the Canvas.Save block . You will have to set up an email account on your tablet to use the share component. (This may not work yet on iOS devices).  Share your app with the class or a friend!     Paint Pot Reflection  After you have completed the Paint Pot tutorial and enhancements, reflect on your experience by answering the following questions:   Project Reflection 1   Describe the purpose of your app and the input and output of the app. What were the variables used in your app?      Project Reflection 2   Describe an error that you encountered while you were creating the app, and how you fixed your code to remove the bug. How did you test the app to make sure it was working correctly?      "
 },
 {
-  "id": "unit1-appinventor-paint-3-3",
+  "id": "unit1-appinventor-paint-4-3",
   "level": "2",
-  "url": "unit1-appinventor-paint.html#unit1-appinventor-paint-3-3",
+  "url": "unit1-appinventor-paint.html#unit1-appinventor-paint-4-3",
   "type": "Paragraph (with a defined term)",
   "number": "",
   "title": "",
