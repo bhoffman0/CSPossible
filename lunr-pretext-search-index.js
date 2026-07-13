@@ -295,7 +295,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "1.2",
   "title": "Benefits of Collaboration",
-  "body": "  Benefits of Collaboration  collaboration   Almost all software is developed collaboratively in teams. Working with others can help programmers design better apps. In this topic, you will learn about the benefits of collaboration and user testing and how it can reduce bias in app development.     Collaboration   1.2.A.3  Working collaboratively on an app brings together a variety of talents and perspectives that can improve the final product. Teams can divide tasks, share ideas, and review and document decisions as they develop the app.   The following chart shows various roles on a software development team. There are many roles that don't require coding even on a software development team.     Match the software development team roles to their responsibilities. Which roles seem the most interesting to you? Do internet research to find out more about the roles that interest you.    Do internet research to find out more about the roles and try again.     Designer  creates the visual design and user experience of the app    Software Developer  writes the code for the app    Software Tester  tests the app to find bugs and usability issues    Project Manager  coordinates the team and keeps the project on track     pair programming   1.2.A.4  Working collaboratively gives programmers opportunities to share roles throughout development. Pair programming is one collaboration practice in which two programmers work together at one computer: one writes the code, while the other reviews the code as it is written, checks for errors, and keeps the bigger picture in mind. Partners switch roles frequently so both contribute to writing code and problem-solving.   Watch the following video about Pair Programming. Try it out with your friends the next time you code!     What is one advantage of working collaboratively on an app?      Only one person needs to understand the project.    No, effective teams share knowledge so multiple people understand the project.      Collaboration eliminates the need for testing.    Testing is still an important part of software development, even when working as a team.      Different team members contribute different skills and perspectives.    Correct! Collaboration allows team members to combine their talents and ideas, often leading to a better final product.      Working alone is always faster than working with others.    Not necessarily. While teamwork requires communication, it often improves quality and allows tasks to be divided among team members.        During pair programming, the driver accidentally forgets an important step. The navigator notices the mistake immediately. What does this example demonstrate about pair programming?      It eliminates all programming errors.    Not quite. Pair programming can help find mistakes earlier, but it cannot guarantee that every error will be caught.      It helps catch mistakes earlier through collaboration.    Correct! The navigator reviews the code as it is written, making it more likely that mistakes will be noticed and corrected before they become larger problems.      It means the partners should switch roles.    While pair programming involves switching roles, the main benefit is the collaborative review of code.      It slows down development.    While pair programming may initially seem slower, it often leads to higher quality code and faster debugging in the long run.       Let's do a pair programming simulation! Work with a partner to write an algorithm for brushing your teeth. It must be precise enough for a robot to follow. One partner will be the driver and the other will be the navigator. The driver will write the steps while the navigator will check for mistakes and ask questions. After 2–3 minutes, switch roles. Write your algorithm below. Put *'s next to steps that were rewritten because the navigator made suggestions. Did having a partner help you write a better algorithm?      User Testing  user testing   1.2.A.1   User testing with a variety of users helps programmers design an app with a clear purpose that is intuitive for its intended users and minimizes confusion.    1.2.A.2  Programmers can conduct user testing to understand how people use an app, including where users are confused or have unmet needs. Observing participants during development provides evidence programmers can use to refine the app’s purpose and design.   Watch the following video about user testing and how it can help find bugs, give feedback, and improve apps. Try it out with your friends the next time you code!     Why do software developers perform user testing?      To guarantee the program has no bugs.    User testing can reveal problems, but it cannot guarantee that every bug has been found.      To replace collaboration among team members.    User testing complements collaboration rather than replacing it.      To make sure only certain people can use the app.    User testing makes sure your app works for all intended users.      To learn how well the app meets users' needs and identify improvements.    Correct! User feedback helps developers improve both the functionality and usability of an app.        Imagine that you are a user-tester for Runestone which the platform that this ebook is on. What are some things you would test to make sure the platform is easy to use? Did you find any tasks that were confusing or difficult to complete?       Iterative Process  iterative process   1.2.A.5  Apps and programs are improved through an iterative process. Teams use feedback from user testing and collaboration to make changes and test again to verify an app more accurately meets user needs.   Software development teams use an iterative design process where they design, test, and revise their apps multiple times to improve the app's functionality and usability. The following diagram is an example of an iterative design process:     Which statement best describes an iterative design process?      Develop the app once and release it without changes.    Most software is improved through multiple rounds of revision.      Repeatedly design, test, revise, and test again to improve the app.    Correct! Iterative design uses multiple cycles of development and testing to better meet user needs.      Wait until the end of development before testing.    Testing and feedback are most useful throughout development so improvements can be made early and often.      Allow only one team member to make all design decisions.    Iterative design benefits from collaboration and input from multiple people, including users.        During testing, users struggle with an app's menu. According to the iterative design process, what should the development team do next?      Revise the menu and conduct another round of testing.    Correct! In an iterative design process, developers use user feedback to improve the app, then test again to see whether the changes were successful.      Stop testing because they have already tested the app.    Iterative design involves multiple rounds of testing and improvement until the app better meets users' needs.      Remove the menu entirely.    Removing the menu is not necessarily the best solution. The goal is to revise the design based on feedback and then test the revised version.      Release the app anyway.    If testing shows that users are still having difficulty, the team should continue improving the app before releasing it.        Reducing Bias through Collaboration  bias   1.2.B.1   Bias occurs when an app consistently favors certain people, values, or outcomes over others. Bias can be harmful because it can make results less accurate for some users and can contribute to unfair treatment or unequal access.   Watch the following video to learn more about bias that can effect AI systems.    1.2.B.2  Apps can reflect human bias when programmers’ assumptions, rules, or interface choices favor some users over others. Apps can also reflect data bias when the data used to train or inform the app is incomplete or unrepresentative of the people and situations the app is intended to work well for. Human bias and data bias often interact. Choices about what data to collect and how to label it can shape how an app behaves for different users.     A company creates a face recognition app. The developers assume the app will mostly be used in bright lighting, so they design and test it that way. They also train the app using a dataset that contains mostly images of adults with lighter skin tones. Which statement best explains the biases in this app? This is an actual historical example pointed out by Joy Buolamwini from MIT in her Gender Shades project .      The app only shows human bias because the programmers made assumptions about lighting.    Not quite. The programmers' assumptions are an example of human bias , but the training data is also incomplete and unrepresentative, which is data bias .      The app only shows data bias because the training data is not representative.    Not quite. The dataset shows data bias , but the programmers' assumption about lighting is also an example of human bias .      The app shows both human bias and data bias because the programmers' assumptions influenced the design, and the training data is incomplete and unrepresentative.    Correct! The design choices reflect human bias , while the unrepresentative training data reflects data bias . These two types of bias often interact to affect how an app behaves for different users.      The app shows no bias because it was trained using real photos.    No. Even real-world data can be biased if it does not represent the people and situations the app is intended to work well for.       1.2.B.3  Collaboration can help reduce bias by bringing multiple perspectives into design and testing. Teams can review design decisions and data together, look for missing perspectives, and gather feedback from a variety of users.    1.2.B.4  When potential bias is identified, teams can revise the rules, data, or design and then test again to check whether outcomes are more accurate and fair across different users and situations.   Take a look at the following comic strip where a cat who is a user of an app is letting the dog developers know that the app doesn't work well for it, but the developers don't listen.     What is the bias in the comic strip above? Why do you think the app works for dogs but not cats? How could the developers have reduced bias in their app?       Learning Objectives Review   1.2.A  Explain how apps and programs are improved through collaboration and user testing.    1.2.B  Explain how collaboration can reduce bias in apps.     Vocabulary Review    Review the vocabulary in this lesson. Drag the vocabulary term from the left and drop it on its correct definition on the right. Click the \"Check Me\" button to see if you are correct.    Find the words in the lesson above and try again.     pair programming  a collaboration practice in which two programmers work together at one computer    user testing  testing an app with a variety of users    bias  a tendency to favor certain people, values, or outcomes over others    iterative design process  a circular process in which an app is designed, tested, revised, and tested again multiple times      "
+  "body": "  Benefits of Collaboration  collaboration   Almost all software is developed collaboratively in teams. Working with others can help programmers design better apps. In this topic, you will learn about the benefits of collaboration and user testing and how it can reduce bias in app development.     Collaboration   1.2.A.3  Working collaboratively on an app brings together a variety of talents and perspectives that can improve the final product. Teams can divide tasks, share ideas, and review and document decisions as they develop the app.   The following chart shows various roles on a software development team. There are many roles that don't require coding even on a software development team.     Match the software development team roles to their responsibilities. Which roles seem the most interesting to you? Do internet research to find out more about the roles that interest you.    Do internet research to find out more about the roles and try again.     Designer  creates the visual design and user experience of the app    Software Developer  writes the code for the app    Software Tester  tests the app to find bugs and usability issues    Project Manager  coordinates the team and keeps the project on track     pair programming   1.2.A.4  Working collaboratively gives programmers opportunities to share roles throughout development. Pair programming is one collaboration practice in which two programmers work together at one computer: one writes the code, while the other reviews the code as it is written, checks for errors, and keeps the bigger picture in mind. Partners switch roles frequently so both contribute to writing code and problem-solving.   Watch the following video about Pair Programming. Try it out with your friends the next time you code!     What is one advantage of working collaboratively on an app?      Only one person needs to understand the project.    No, effective teams share knowledge so multiple people understand the project.      Collaboration eliminates the need for testing.    Testing is still an important part of software development, even when working as a team.      Different team members contribute different skills and perspectives.    Correct! Collaboration allows team members to combine their talents and ideas, often leading to a better final product.      Working alone is always faster than working with others.    Not necessarily. While teamwork requires communication, it often improves quality and allows tasks to be divided among team members.        During pair programming, the driver accidentally forgets an important step. The navigator notices the mistake immediately. What does this example demonstrate about pair programming?      It eliminates all programming errors.    Not quite. Pair programming can help find mistakes earlier, but it cannot guarantee that every error will be caught.      It helps catch mistakes earlier through collaboration.    Correct! The navigator reviews the code as it is written, making it more likely that mistakes will be noticed and corrected before they become larger problems.      It means the partners should switch roles.    While pair programming involves switching roles, the main benefit is the collaborative review of code.      It slows down development.    While pair programming may initially seem slower, it often leads to higher quality code and faster debugging in the long run.       Let's do a pair programming simulation! Work with a partner to write an algorithm for brushing your teeth. It must be precise enough for a robot to follow. One partner will be the driver and the other will be the navigator. The driver will write the steps while the navigator will check for mistakes and ask questions. After 2–3 minutes, switch roles. Write your algorithm below. Put *'s next to steps that were rewritten because the navigator made suggestions. Did having a partner help you write a better algorithm?      User Testing  user testing   1.2.A.1   User testing with a variety of users helps programmers design an app with a clear purpose that is intuitive for its intended users and minimizes confusion.    1.2.A.2  Programmers can conduct user testing to understand how people use an app, including where users are confused or have unmet needs. Observing participants during development provides evidence programmers can use to refine the app’s purpose and design.   Watch the following video about user testing and how it can help find bugs, give feedback, and improve apps. Try it out with your friends the next time you code!     Why do software developers perform user testing?      To guarantee the program has no bugs.    User testing can reveal problems, but it cannot guarantee that every bug has been found.      To replace collaboration among team members.    User testing complements collaboration rather than replacing it.      To make sure only certain people can use the app.    User testing makes sure your app works for all intended users.      To learn how well the app meets users' needs and identify improvements.    Correct! User feedback helps developers improve both the functionality and usability of an app.        Imagine that you are a user-tester for Runestone, which is the platform this ebook is on. What are some things you would test to make sure the platform is easy to use? Did you find any tasks that were confusing or difficult to complete?       Iterative Process  iterative process   1.2.A.5  Apps and programs are improved through an iterative process. Teams use feedback from user testing and collaboration to make changes and test again to verify an app more accurately meets user needs.   Software development teams use an iterative design process where they design, test, and revise their apps multiple times to improve the app's functionality and usability. The following diagram is an example of an iterative design process:     Which statement best describes an iterative design process?      Develop the app once and release it without changes.    Most software is improved through multiple rounds of revision.      Repeatedly design, test, revise, and test again to improve the app.    Correct! Iterative design uses multiple cycles of development and testing to better meet user needs.      Wait until the end of development before testing.    Testing and feedback are most useful throughout development so improvements can be made early and often.      Allow only one team member to make all design decisions.    Iterative design benefits from collaboration and input from multiple people, including users.        During testing, users struggle with an app's menu. According to the iterative design process, what should the development team do next?      Revise the menu and conduct another round of testing.    Correct! In an iterative design process, developers use user feedback to improve the app, then test again to see whether the changes were successful.      Stop testing because they have already tested the app.    Iterative design involves multiple rounds of testing and improvement until the app better meets users' needs.      Remove the menu entirely.    Removing the menu is not necessarily the best solution. The goal is to revise the design based on feedback and then test the revised version.      Release the app anyway.    If testing shows that users are still having difficulty, the team should continue improving the app before releasing it.        Reducing Bias through Collaboration  bias   1.2.B.1   Bias occurs when an app consistently favors certain people, values, or outcomes over others. Bias can be harmful because it can make results less accurate for some users and can contribute to unfair treatment or unequal access.   Watch the following video to learn more about bias that can effect AI systems.    1.2.B.2  Apps can reflect human bias when programmers’ assumptions, rules, or interface choices favor some users over others. Apps can also reflect data bias when the data used to train or inform the app is incomplete or unrepresentative of the people and situations the app is intended to work well for. Human bias and data bias often interact. Choices about what data to collect and how to label it can shape how an app behaves for different users.     A company creates a face recognition app. The developers assume the app will mostly be used in bright lighting, so they design and test it that way. They also train the app using a dataset that contains mostly images of adults with lighter skin tones. Which statement best explains the biases in this app? This is an actual historical example pointed out by Joy Buolamwini from MIT in her Gender Shades project .      The app only shows human bias because the programmers made assumptions about lighting.    Not quite. The programmers' assumptions are an example of human bias , but the training data is also incomplete and unrepresentative, which is data bias .      The app only shows data bias because the training data is not representative.    Not quite. The dataset shows data bias , but the programmers' assumption about lighting is also an example of human bias .      The app shows both human bias and data bias because the programmers' assumptions influenced the design, and the training data is incomplete and unrepresentative.    Correct! The design choices reflect human bias , while the unrepresentative training data reflects data bias . These two types of bias often interact to affect how an app behaves for different users.      The app shows no bias because it was trained using real photos.    No. Even real-world data can be biased if it does not represent the people and situations the app is intended to work well for.       1.2.B.3  Collaboration can help reduce bias by bringing multiple perspectives into design and testing. Teams can review design decisions and data together, look for missing perspectives, and gather feedback from a variety of users.    1.2.B.4  When potential bias is identified, teams can revise the rules, data, or design and then test again to check whether outcomes are more accurate and fair across different users and situations.   Take a look at the following comic strip where a cat who is a user of an app is letting the dog developers know that the app doesn't work well for it, but the developers don't listen.     What is the bias in the comic strip above? Why do you think the app works for dogs but not cats? How could the developers have reduced bias in their app?       Learning Objectives Review   1.2.A  Explain how apps and programs are improved through collaboration and user testing.    1.2.B  Explain how collaboration can reduce bias in apps.     Vocabulary Review    Review the vocabulary in this lesson. Drag the vocabulary term from the left and drop it on its correct definition on the right. Click the \"Check Me\" button to see if you are correct.    Find the words in the lesson above and try again.     pair programming  a collaboration practice in which two programmers work together at one computer    user testing  testing an app with a variety of users    bias  a tendency to favor certain people, values, or outcomes over others    iterative design process  a circular process in which an app is designed, tested, revised, and tested again multiple times      "
 },
 {
   "id": "collaboration-2",
@@ -394,7 +394,7 @@ var ptx_lunr_docs = [
   "type": "Activity",
   "number": "1.2.6",
   "title": "",
-  "body": "  Imagine that you are a user-tester for Runestone which the platform that this ebook is on. What are some things you would test to make sure the platform is easy to use? Did you find any tasks that were confusing or difficult to complete?    "
+  "body": "  Imagine that you are a user-tester for Runestone, which is the platform this ebook is on. What are some things you would test to make sure the platform is easy to use? Did you find any tasks that were confusing or difficult to complete?    "
 },
 {
   "id": "iterative-process-3",
@@ -3319,124 +3319,277 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "2.2",
   "title": "Boolean Expressions",
-  "body": "  Boolean Expressions       Learning Objectives   2.2.A  Identify the use of Boolean expressions to control an app's behavior as you interact with the app.    2.2.B  Develop code using relational operators, and determine the result of relational expressions.    2.2.C  Develop code using logical operators, and determine the result of logical expressions.     Boolean Expressions and Decision Making   2.2.A.1  Apps often check conditions that have only two outcomes, such as whether a user is logged in, whether a checkbox is selected, or whether a password is correct.    2.2.A.2  Programs make decisions by evaluating conditions that result in a Boolean value. A Boolean value has two possible values: true or false.    2.2.A.3  Apps can use Boolean expressions to decide what happens next, such as showing a message, allowing access, or changing what a user sees. A Boolean expression is an expression that evaluates to either true or false.    2.2.A.4  Many Boolean expressions use comparisons, such as checking whether a score is high enough or whether an input meets a requirement like password length.     Relational Operators   2.2.B.1  Apps and programs often compare values to enforce rules, personalize experiences, and prevent mistakes. Relational operators allow programs to evaluate questions such as whether a value is too low or whether one value matches another.    2.2.B.2  Relational operators compare two values and produce a Boolean result.   The expression a == b evaluates to true when the values of a and b are equal, and evaluates to false otherwise.  The expression a > b evaluates to true when the value of a is greater than the value of b, and evaluates to false otherwise.  The expression a < b evaluates to true when the value of a is less than the value of b, and evaluates to false otherwise.  The expression a >= b evaluates to true when the value of a is greater than or equal to the value of b, and evaluates to false otherwise.  The expression a <= b evaluates to true when the value of a is less than or equal to the value of b, and evaluates to false otherwise.     2.2.B.3  The result of a relational expression can be determined by substituting the current values, including variable values, and evaluating whether the comparison is true or false.     Logical Operators   2.2.C.1  Apps and programs often combine multiple conditions to make decisions that feel predictable and personalized. Logical operators allow programs to answer questions such as whether all conditions are true, whether at least one condition is true, or whether a condition is not true. Logical operators can also support user-centered rules, such as allowing an action only when multiple conditions are met, like when all required fields are complete and the user agrees to terms.    2.2.C.2  Logical operators combine or modify Boolean values and produce a Boolean result.   The expression condition1 and condition2 evaluates to true when both conditions are true, and evaluates to false otherwise.  The expression condition1 or condition2 evaluates to true when at least one condition is true, and evaluates to false when both conditions are false.  The expression not condition evaluates to true when the condition is false, and evaluates to false when the condition is true.     2.2.C.3  The result of a logical expression can be determined by evaluating each condition and then applying not, and, and or to determine whether the overall expression is true or false. Logical expressions can include multiple conditions. Parentheses can be used to group conditions and make the intended order of evaluation clear when combining not, and, and or.    "
+  "body": "  Boolean Expressions  boolean  boolean expression   Apps are a lot more fun if they can respond to different user actions and decisions. For example, if you are playing a game, the app can check whether you have enough points to move to the next level. A social media app needs to ask you for your password and check that it is correct before allowing you to post a comment. Apps use Boolean expressions to make decisions based on true or false conditions, like in the flowchart below. In this lesson, you will learn how to use Boolean expressions in your code to change an app's behavior.     Boolean Expressions and Decision Making   2.2.A.1  Apps often check conditions that have only two outcomes, such as whether a user is logged in, whether a checkbox is selected, or whether a password is correct.    2.2.A.2  Programs make decisions by evaluating conditions that result in a Boolean value. A Boolean value has two possible values: true or false .   In Python, Boolean values are represented by the keywords True and False .    Try to guess what the code below will print out before you run it. Change didHomework to True and run again.    didHomework = False cleanedRoom = True print(\"I did everything?\", cleanedRoom and didHomework )  from unittest.gui import TestCaseGui class myTests(TestCaseGui): def test1(self): self.assertIn(\"True\",self.getOutput(),\"Change didHomework to True and run again.\") myTests().main()     2.2.A.3  Apps can use Boolean expressions to decide what happens next, such as showing a message, allowing access, or changing what a user sees. A Boolean expression is an expression that evaluates to either true or false.    2.2.A.4  Many Boolean expressions use comparisons, such as checking whether a score is high enough or whether an input meets a requirement like password length.   Let's think about the pizza web app again. It lets the user choose different options, and then chooses different outputs based on the user's choices.     Interact with the pizza app above. Which of the following are Boolean expressions (True or False) that the app uses to determine its output? Select all that apply.      User likes pizza    Yes, the app needs to check whether the user likes pizza to display it and pizza images in the output.      User's name is 10 characters long    The app doesn't care how long the user's name is.     User's age is not less than 0   This app doesn't care what the user types in for their age.      There is a favorite color    Yes, the app uses the favorite color value to change the background to that color.        Relational Operators  relational operator  <  >  ==  !=   2.2.B.1  Apps and programs often compare values to enforce rules, personalize experiences, and prevent mistakes. Relational operators allow programs to evaluate questions such as whether a value is too low or whether one value matches another.   Relational operators are operators like less than ( < ), greater than ( > ), and equal to ( == ) that compare two values or expressions. They are often used to compare a variable against a constant value or another variable or an expression. For example, the following Boolean expressions (which evaluate to true or false) can be used to see whether a number is positive or negative by seeing if it is greater than 0 or less than 0:   # Test if a number is positive (greater than 0) number > 0 # Test if a number is negative (less than 0) number < 0    2.2.B.2   Relational operators compare two values and produce a Boolean result.   Equals (==): The expression a == b evaluates to true when the values of a and b are equal, and evaluates to false otherwise.  Greater than (>): The expression a > b evaluates to true when the value of a is greater than the value of b, and evaluates to false otherwise.  Less than (<): The expression a < b evaluates to true when the value of a is less than the value of b, and evaluates to false otherwise.  Greater than or equal to (>=): The expression a >= b evaluates to true when the value of a is greater than or equal to the value of b, and evaluates to false otherwise.  Less than or equal to (<=): The expression a <= b evaluates to true when the value of a is less than or equal to the value of b, and evaluates to false otherwise.    The relational operators == and != (not equal) can be used to compare values for equality. They return True or False boolean values. In Python, they can be used to compare numbers, strings, and other data types. For string comparisons like \"hello\" != \"Hello\" , Python will check that each character is the same (including its case) in the two strings. Don't confuse = and == . One = sign changes the value of a variable. Two == equal signs are used to test if a variable holds a certain value, without changing its value!  The relational operators < and > can be used to compare values and determine whether one is less than or greater than the other. If you have trouble telling < and > apart, remember that less than sign ( < ) looks more like an L and always starts with the small pointy-end. To remember the correct order of the two characters in <= and >= , just write them in the same order you would say them in English: “less than or equal to” not “equal to or less than”.    Drag the boolean expression from the left and drop it on what it is testing on the right. Click the \"Check Me\" button to see if you are correct.    Review the relational operators above.     x > 0  x is positive    x == y  x equals y    x < 0  x is negative    x != y  x does not equal y    x < y  x is less than y    x > y  x is greater than y    x >= y  x is greater than or equal to y      2.2.B.3  The result of a relational expression can be determined by substituting the current values, including variable values, and evaluating whether the comparison is true or false.     Try to guess what the code below will print out before you run it. Note that 1 equal sign ( = ) is used for assigning a value and 2 equal signs ( == ) for testing values. Then, add 3 more lines of code that sets credit to 15 and prints out whether cost is equal to credit and whether cost is not equal to credit.    word1 = \"hello\" word2 = \"Hello\" # Will these print true or false? Capitalization matters! print(word1 == word2) cost = 15 cash = 12 # Will these print true or false? print(cost == cash) # Will these print true or false? print(cost != cash) # 1. Set credit to 15 # 2. Print whether cost is equal to credit # 3. Print whether cost is not equal to credit  from unittest.gui import TestCaseGui class myTests(TestCaseGui): def test1(self): self.assertIn(\"False\\nFalse\\nTrue\\nTrue\\nFalse\",self.getOutput(),\"Output\") self.assertIn(\"credit=15\",self.getEditorText().replace(\" \", \"\"), \"credit = 15\") myTests().main()      Try to guess what the code below will print out before you run it. Then, set cash to 15 and print the boolean expression for whether cost is less than or equal to cash.    cost = 15 cash = 12 # Will these print true or false? print(cost < cash) # Will these print true or false? print(cost > cash) # 1. Set cash to 15 # 2. Print whether cost is less than or equal to cash  from unittest.gui import TestCaseGui class myTests(TestCaseGui): def test1(self): self.assertIn(\"False\\nTrue\\nTrue\\n\",self.getOutput(),\"Output\") self.assertIn(\"<=\",self.getEditorText(), \"Use <=\") myTests().main()      What is printed after the following code executes?   apples = 5 bananas = 2 oranges = 3 print(apples >= oranges + bananas)       False    No, apples is 5 and oranges + bananas is 5, so they are greater than or equal to each other.      True    Correct! apples is 5 and oranges + bananas is 5, so they are greater than or equal to each other.      5    No, the expression evaluates to a Boolean value, True or False.      =    No, the expression evaluates to a Boolean value, True or False.        Logical Operators  logical operator  and  or  not  Logical operators like and , or , and not are used to combine Boolean expressions. For example, the following Boolean expression (which evaluates to true or false) can be used to see whether a number is between 1 and 10:   # Test if a number is between 1 and 10 number > 1 and number < 10    2.2.C.1  Apps and programs often combine multiple conditions to make decisions that feel predictable and personalized. Logical operators allow programs to answer questions such as whether all conditions are true, whether at least one condition is true, or whether a condition is not true. Logical operators can also support user-centered rules, such as allowing an action only when multiple conditions are met, like when all required fields are complete and the user agrees to terms.     Drag or click on the blocks you need to move them from the top section into the yellow area to create a boolean expression that tests for a number between -5 and 5 (including both). Number should be greater than or equal to -5 and less than or equal to 5. There are extra blocks that you don’t need.   Number should be greater than or equal to -5 and less than or equal to 5.    number >=    number >    -5 and    -5 or    number <=    number <    5      2.2.C.2  Logical operators combine or modify Boolean values and produce a Boolean result.   The expression condition1 and condition2 evaluates to true when both conditions are true, and evaluates to false otherwise.  The expression condition1 or condition2 evaluates to true when at least one condition is true, and evaluates to false when both conditions are false.  The expression not condition evaluates to true when the condition is false, and evaluates to false when the condition is true.    The operator and is used to combine two things and verify that BOTH are true. The operator or is used to verify that at least one is true. The operator not is used to see if something is not true. With numerical values, the and operator is often used to see if a number is in an range, for example to get a B grade, your grade must be between 80 and 90 (not including 90).    Try to guess what the code below will print out before you run it. Then, test for one more grade range using a logical operator.    grade = 80 # Will these print true or false? print(\"Did you get an A?\", grade >= 90 and grade < 100 ) print(\"Did you get an B?\", grade >= 80 and grade < 90 ) print(\"Did you get an A or a B?\", grade >= 90 or grade >= 80 ) print(\"Did you get a passing grade?\", not grade < 60 ) # print whether the student got a C using a logical operator  from unittest.gui import TestCaseGui class myTests(TestCaseGui): def test1(self): self.assertIn(\"< 80\",self.getEditorText(), \"Use < 80\") self.assertIn(\">= 70\",self.getEditorText(), \"Use >= 70\") myTests().main()      Given the code below, what are the values of x that will cause the code to print True ?   print( x < 0 or x >= 10)       0 to 10    No, because x has to be either negative or 10 or greater for the expression to be true.      1 to 10    No, because x has to be either negative or 10 or greater for the expression to be true.      negative values    That is partially correct. But what values would be true because they made ``x >= 10`` true?      negative values or 2+ digits    Correct! x has to be either negative or 10 or greater for the expression to be true. Any number 10 or greater has at least 2 digits.      In English, we often use an exclusive-or like in the sentence “do you want to be player 1 or player 2?” where you can’t be both player 1 and player 2. In programming, the or-operator is an inclusive-or which means that the whole expression is true if either one or the other or both conditions are true.   2.2.C.3  The result of a logical expression can be determined by evaluating each condition and then applying not, and, and or to determine whether the overall expression is true or false. Logical expressions can include multiple conditions. Parentheses can be used to group conditions and make the intended order of evaluation clear when combining not, and, and or.   For complex logical expressions, it helps to first figure out the values of each boolean expression and then put it together with the logical operators. For example, try to figure out the logical expression ((age >= 12) and (age <= 18)) or (occupation == \"student\") in the code below.   What is printed when you run this code? Try the CodeLens button to step through the code. Then, change the value of age to 19, try to guess the result, and run to check. Change the value of occupation and run again.    age = 15 occupation = \"student\" print(\"Eligible for discount?\", ((age >= 12) and (age <= 18)) or (occupation == \"student\") ) # Evaluate this in multiple steps # Is age >= 12? greater_than_12 = age >= 12 print(\"Is age >= 12?\", greater_than_12) # Is age <= 18? less_than_18 = age <= 18 print(\"Is age <= 18?\", less_than_18) # Is age between 12 and 18? age_between_12_and_18 = greater_than_12 and less_than_18 # Is occupation == \"student\"? is_student = occupation == \"student\" # Put it all together print(\"Eligible for discount?\", age_between_12_and_18 or is_student)  from unittest.gui import TestCaseGui class myTests(TestCaseGui): def test1(self): self.assertIn(\"True\",self.getOutput(),\"Output\") self.assertIn(\"19\",self.getEditorText(), \"Try changing the value of age to 19\") myTests().main()      Unplugged Logic Project  Do the following project in a group of 4 people. If you don't have a group, imagine that you are doing this activity with 3 other friends or family members and write down their names and ages. (Thank you to Jill Westerlund of Hoover High School and Art Lopez of Sweetwater High School for this activity suggestion).     Draw or print a Venn diagram of 4 intersecting circles.  Put each of the names of the 4 people in your group in a circle of the Venn Diagram (one name in each circle).  Write down the age of each person in your group in the circles. If two or more people are the same age, put the age in the intersecting parts of their circles.  Write a Boolean expression that compares the age of each person in the group using == , < , > , and , for example Ada’s age > Alan’s age and Alan’s age == Grace’s age.  Then, ask each person in your group their favorite food. If two or more people have the same favorite food, put the food in the intersecting parts of their circles.  Write a Boolean expression that compares the favorite foods in the group using == , != , and and , for example Ada’s favorite food pizza == Alan’s favorite food pizza and Alan’s favorite food != Grace’s favorite food.  Think of 1 more comparison and write it in the circles and as a Boolean expression.  Share the Boolean expressions with the class and type them in below.        Learning Objectives Review  After completing this lesson, you should be able to:   2.2.A  Identify the use of Boolean expressions to control an app's behavior as you interact with the app.    2.2.B  Develop code using relational operators, and determine the result of relational expressions.    2.2.C  Develop code using logical operators, and determine the result of logical expressions.     Vocabulary Review    Review the vocabulary in this lesson. Drag the vocabulary term from the left and drop it on its correct definition on the right. Click the \"Check Me\" button to see if you are correct.    Find the words in the lesson above and try again.     Boolean  a data type that can only have the values True or False    Boolean expression  an expression that evaluates to either True or False    relational operator  an operator like == or < that compares two values and returns True or False    logical operator  an operator like and , or , or not that combines Boolean expressions and returns True or False      "
 },
 {
-  "id": "topic-2-2-boolean-expressions-4-2",
+  "id": "topic-2-2-boolean-expressions-5-1",
   "level": "2",
-  "url": "topic-2-2-boolean-expressions.html#topic-2-2-boolean-expressions-4-2",
-  "type": "Learning Objective",
-  "number": "2.2.1",
-  "title": "2.2.A.",
-  "body": " 2.2.A  Identify the use of Boolean expressions to control an app's behavior as you interact with the app.  "
+  "url": "topic-2-2-boolean-expressions.html#topic-2-2-boolean-expressions-5-1",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "Boolean expressions "
 },
 {
-  "id": "topic-2-2-boolean-expressions-4-3",
+  "id": "decisions-2",
   "level": "2",
-  "url": "topic-2-2-boolean-expressions.html#topic-2-2-boolean-expressions-4-3",
-  "type": "Learning Objective",
-  "number": "2.2.2",
-  "title": "2.2.B.",
-  "body": " 2.2.B  Develop code using relational operators, and determine the result of relational expressions.  "
-},
-{
-  "id": "topic-2-2-boolean-expressions-4-4",
-  "level": "2",
-  "url": "topic-2-2-boolean-expressions.html#topic-2-2-boolean-expressions-4-4",
-  "type": "Learning Objective",
-  "number": "2.2.3",
-  "title": "2.2.C.",
-  "body": " 2.2.C  Develop code using logical operators, and determine the result of logical expressions.  "
-},
-{
-  "id": "topic-2-2-boolean-expressions-5-2",
-  "level": "2",
-  "url": "topic-2-2-boolean-expressions.html#topic-2-2-boolean-expressions-5-2",
+  "url": "topic-2-2-boolean-expressions.html#decisions-2",
   "type": "Essential Knowledge",
-  "number": "2.2.4",
+  "number": "2.2.1",
   "title": "2.2.A.1.",
   "body": " 2.2.A.1  Apps often check conditions that have only two outcomes, such as whether a user is logged in, whether a checkbox is selected, or whether a password is correct.  "
 },
 {
-  "id": "topic-2-2-boolean-expressions-5-3",
+  "id": "decisions-3",
   "level": "2",
-  "url": "topic-2-2-boolean-expressions.html#topic-2-2-boolean-expressions-5-3",
+  "url": "topic-2-2-boolean-expressions.html#decisions-3",
   "type": "Essential Knowledge",
-  "number": "2.2.5",
+  "number": "2.2.2",
   "title": "2.2.A.2.",
-  "body": " 2.2.A.2  Programs make decisions by evaluating conditions that result in a Boolean value. A Boolean value has two possible values: true or false.  "
+  "body": " 2.2.A.2  Programs make decisions by evaluating conditions that result in a Boolean value. A Boolean value has two possible values: true or false .  "
 },
 {
-  "id": "topic-2-2-boolean-expressions-5-4",
+  "id": "decisions-4",
   "level": "2",
-  "url": "topic-2-2-boolean-expressions.html#topic-2-2-boolean-expressions-5-4",
+  "url": "topic-2-2-boolean-expressions.html#decisions-4",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "Boolean values "
+},
+{
+  "id": "boolvalues0",
+  "level": "2",
+  "url": "topic-2-2-boolean-expressions.html#boolvalues0",
+  "type": "Activity",
+  "number": "2.2.1",
+  "title": "",
+  "body": "  Try to guess what the code below will print out before you run it. Change didHomework to True and run again.    didHomework = False cleanedRoom = True print(\"I did everything?\", cleanedRoom and didHomework )  from unittest.gui import TestCaseGui class myTests(TestCaseGui): def test1(self): self.assertIn(\"True\",self.getOutput(),\"Change didHomework to True and run again.\") myTests().main()   "
+},
+{
+  "id": "decisions-6",
+  "level": "2",
+  "url": "topic-2-2-boolean-expressions.html#decisions-6",
   "type": "Essential Knowledge",
-  "number": "2.2.6",
+  "number": "2.2.3",
   "title": "2.2.A.3.",
   "body": " 2.2.A.3  Apps can use Boolean expressions to decide what happens next, such as showing a message, allowing access, or changing what a user sees. A Boolean expression is an expression that evaluates to either true or false.  "
 },
 {
-  "id": "topic-2-2-boolean-expressions-5-5",
+  "id": "decisions-7",
   "level": "2",
-  "url": "topic-2-2-boolean-expressions.html#topic-2-2-boolean-expressions-5-5",
+  "url": "topic-2-2-boolean-expressions.html#decisions-7",
   "type": "Essential Knowledge",
-  "number": "2.2.7",
+  "number": "2.2.4",
   "title": "2.2.A.4.",
   "body": " 2.2.A.4  Many Boolean expressions use comparisons, such as checking whether a score is high enough or whether an input meets a requirement like password length.  "
 },
 {
-  "id": "topic-2-2-boolean-expressions-6-2",
+  "id": "pizzaAppBools",
   "level": "2",
-  "url": "topic-2-2-boolean-expressions.html#topic-2-2-boolean-expressions-6-2",
+  "url": "topic-2-2-boolean-expressions.html#pizzaAppBools",
+  "type": "Activity",
+  "number": "2.2.2",
+  "title": "",
+  "body": "  Interact with the pizza app above. Which of the following are Boolean expressions (True or False) that the app uses to determine its output? Select all that apply.      User likes pizza    Yes, the app needs to check whether the user likes pizza to display it and pizza images in the output.      User's name is 10 characters long    The app doesn't care how long the user's name is.     User's age is not less than 0   This app doesn't care what the user types in for their age.      There is a favorite color    Yes, the app uses the favorite color value to change the background to that color.     "
+},
+{
+  "id": "relational-operators-7",
+  "level": "2",
+  "url": "topic-2-2-boolean-expressions.html#relational-operators-7",
   "type": "Essential Knowledge",
-  "number": "2.2.8",
+  "number": "2.2.5",
   "title": "2.2.B.1.",
   "body": " 2.2.B.1  Apps and programs often compare values to enforce rules, personalize experiences, and prevent mistakes. Relational operators allow programs to evaluate questions such as whether a value is too low or whether one value matches another.  "
 },
 {
-  "id": "topic-2-2-boolean-expressions-6-3",
+  "id": "relational-operators-8",
   "level": "2",
-  "url": "topic-2-2-boolean-expressions.html#topic-2-2-boolean-expressions-6-3",
-  "type": "Essential Knowledge",
-  "number": "2.2.9",
-  "title": "2.2.B.2.",
-  "body": " 2.2.B.2  Relational operators compare two values and produce a Boolean result.   The expression a == b evaluates to true when the values of a and b are equal, and evaluates to false otherwise.  The expression a > b evaluates to true when the value of a is greater than the value of b, and evaluates to false otherwise.  The expression a < b evaluates to true when the value of a is less than the value of b, and evaluates to false otherwise.  The expression a >= b evaluates to true when the value of a is greater than or equal to the value of b, and evaluates to false otherwise.  The expression a <= b evaluates to true when the value of a is less than or equal to the value of b, and evaluates to false otherwise.   "
+  "url": "topic-2-2-boolean-expressions.html#relational-operators-8",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "Relational operators Boolean expressions "
 },
 {
-  "id": "topic-2-2-boolean-expressions-6-4",
+  "id": "relational-operators-10",
   "level": "2",
-  "url": "topic-2-2-boolean-expressions.html#topic-2-2-boolean-expressions-6-4",
+  "url": "topic-2-2-boolean-expressions.html#relational-operators-10",
   "type": "Essential Knowledge",
-  "number": "2.2.10",
+  "number": "2.2.6",
+  "title": "2.2.B.2.",
+  "body": " 2.2.B.2   Relational operators compare two values and produce a Boolean result.   Equals (==): The expression a == b evaluates to true when the values of a and b are equal, and evaluates to false otherwise.  Greater than (>): The expression a > b evaluates to true when the value of a is greater than the value of b, and evaluates to false otherwise.  Less than (<): The expression a < b evaluates to true when the value of a is less than the value of b, and evaluates to false otherwise.  Greater than or equal to (>=): The expression a >= b evaluates to true when the value of a is greater than or equal to the value of b, and evaluates to false otherwise.  Less than or equal to (<=): The expression a <= b evaluates to true when the value of a is less than or equal to the value of b, and evaluates to false otherwise.   "
+},
+{
+  "id": "BooleanExps",
+  "level": "2",
+  "url": "topic-2-2-boolean-expressions.html#BooleanExps",
+  "type": "Activity",
+  "number": "2.2.3",
+  "title": "",
+  "body": "  Drag the boolean expression from the left and drop it on what it is testing on the right. Click the \"Check Me\" button to see if you are correct.    Review the relational operators above.     x > 0  x is positive    x == y  x equals y    x < 0  x is negative    x != y  x does not equal y    x < y  x is less than y    x > y  x is greater than y    x >= y  x is greater than or equal to y    "
+},
+{
+  "id": "relational-operators-14",
+  "level": "2",
+  "url": "topic-2-2-boolean-expressions.html#relational-operators-14",
+  "type": "Essential Knowledge",
+  "number": "2.2.7",
   "title": "2.2.B.3.",
   "body": " 2.2.B.3  The result of a relational expression can be determined by substituting the current values, including variable values, and evaluating whether the comparison is true or false.  "
 },
 {
-  "id": "topic-2-2-boolean-expressions-7-2",
+  "id": "boolvalues1",
   "level": "2",
-  "url": "topic-2-2-boolean-expressions.html#topic-2-2-boolean-expressions-7-2",
+  "url": "topic-2-2-boolean-expressions.html#boolvalues1",
+  "type": "Activity",
+  "number": "2.2.4",
+  "title": "",
+  "body": "  Try to guess what the code below will print out before you run it. Note that 1 equal sign ( = ) is used for assigning a value and 2 equal signs ( == ) for testing values. Then, add 3 more lines of code that sets credit to 15 and prints out whether cost is equal to credit and whether cost is not equal to credit.    word1 = \"hello\" word2 = \"Hello\" # Will these print true or false? Capitalization matters! print(word1 == word2) cost = 15 cash = 12 # Will these print true or false? print(cost == cash) # Will these print true or false? print(cost != cash) # 1. Set credit to 15 # 2. Print whether cost is equal to credit # 3. Print whether cost is not equal to credit  from unittest.gui import TestCaseGui class myTests(TestCaseGui): def test1(self): self.assertIn(\"False\\nFalse\\nTrue\\nTrue\\nFalse\",self.getOutput(),\"Output\") self.assertIn(\"credit=15\",self.getEditorText().replace(\" \", \"\"), \"credit = 15\") myTests().main()   "
+},
+{
+  "id": "boolvalues2",
+  "level": "2",
+  "url": "topic-2-2-boolean-expressions.html#boolvalues2",
+  "type": "Activity",
+  "number": "2.2.5",
+  "title": "",
+  "body": "  Try to guess what the code below will print out before you run it. Then, set cash to 15 and print the boolean expression for whether cost is less than or equal to cash.    cost = 15 cash = 12 # Will these print true or false? print(cost < cash) # Will these print true or false? print(cost > cash) # 1. Set cash to 15 # 2. Print whether cost is less than or equal to cash  from unittest.gui import TestCaseGui class myTests(TestCaseGui): def test1(self): self.assertIn(\"False\\nTrue\\nTrue\\n\",self.getOutput(),\"Output\") self.assertIn(\"<=\",self.getEditorText(), \"Use <=\") myTests().main()   "
+},
+{
+  "id": "trace-bool-expr",
+  "level": "2",
+  "url": "topic-2-2-boolean-expressions.html#trace-bool-expr",
+  "type": "Activity",
+  "number": "2.2.6",
+  "title": "",
+  "body": "  What is printed after the following code executes?   apples = 5 bananas = 2 oranges = 3 print(apples >= oranges + bananas)       False    No, apples is 5 and oranges + bananas is 5, so they are greater than or equal to each other.      True    Correct! apples is 5 and oranges + bananas is 5, so they are greater than or equal to each other.      5    No, the expression evaluates to a Boolean value, True or False.      =    No, the expression evaluates to a Boolean value, True or False.     "
+},
+{
+  "id": "logical-operators-6",
+  "level": "2",
+  "url": "topic-2-2-boolean-expressions.html#logical-operators-6",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "Logical operators Boolean expression "
+},
+{
+  "id": "logical-operators-8",
+  "level": "2",
+  "url": "topic-2-2-boolean-expressions.html#logical-operators-8",
   "type": "Essential Knowledge",
-  "number": "2.2.11",
+  "number": "2.2.8",
   "title": "2.2.C.1.",
   "body": " 2.2.C.1  Apps and programs often combine multiple conditions to make decisions that feel predictable and personalized. Logical operators allow programs to answer questions such as whether all conditions are true, whether at least one condition is true, or whether a condition is not true. Logical operators can also support user-centered rules, such as allowing an action only when multiple conditions are met, like when all required fields are complete and the user agrees to terms.  "
 },
 {
-  "id": "topic-2-2-boolean-expressions-7-3",
+  "id": "mixedup-boolean",
   "level": "2",
-  "url": "topic-2-2-boolean-expressions.html#topic-2-2-boolean-expressions-7-3",
+  "url": "topic-2-2-boolean-expressions.html#mixedup-boolean",
+  "type": "Activity",
+  "number": "2.2.7",
+  "title": "",
+  "body": "  Drag or click on the blocks you need to move them from the top section into the yellow area to create a boolean expression that tests for a number between -5 and 5 (including both). Number should be greater than or equal to -5 and less than or equal to 5. There are extra blocks that you don’t need.   Number should be greater than or equal to -5 and less than or equal to 5.    number >=    number >    -5 and    -5 or    number <=    number <    5    "
+},
+{
+  "id": "logical-operators-10",
+  "level": "2",
+  "url": "topic-2-2-boolean-expressions.html#logical-operators-10",
   "type": "Essential Knowledge",
-  "number": "2.2.12",
+  "number": "2.2.9",
   "title": "2.2.C.2.",
   "body": " 2.2.C.2  Logical operators combine or modify Boolean values and produce a Boolean result.   The expression condition1 and condition2 evaluates to true when both conditions are true, and evaluates to false otherwise.  The expression condition1 or condition2 evaluates to true when at least one condition is true, and evaluates to false when both conditions are false.  The expression not condition evaluates to true when the condition is false, and evaluates to false when the condition is true.   "
 },
 {
-  "id": "topic-2-2-boolean-expressions-7-4",
+  "id": "logical-operators-11",
   "level": "2",
-  "url": "topic-2-2-boolean-expressions.html#topic-2-2-boolean-expressions-7-4",
+  "url": "topic-2-2-boolean-expressions.html#logical-operators-11",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "and "
+},
+{
+  "id": "logical-operators",
+  "level": "2",
+  "url": "topic-2-2-boolean-expressions.html#logical-operators",
+  "type": "Activity",
+  "number": "2.2.8",
+  "title": "",
+  "body": "  Try to guess what the code below will print out before you run it. Then, test for one more grade range using a logical operator.    grade = 80 # Will these print true or false? print(\"Did you get an A?\", grade >= 90 and grade < 100 ) print(\"Did you get an B?\", grade >= 80 and grade < 90 ) print(\"Did you get an A or a B?\", grade >= 90 or grade >= 80 ) print(\"Did you get a passing grade?\", not grade < 60 ) # print whether the student got a C using a logical operator  from unittest.gui import TestCaseGui class myTests(TestCaseGui): def test1(self): self.assertIn(\"< 80\",self.getEditorText(), \"Use < 80\") self.assertIn(\">= 70\",self.getEditorText(), \"Use >= 70\") myTests().main()   "
+},
+{
+  "id": "trace-logical-expr",
+  "level": "2",
+  "url": "topic-2-2-boolean-expressions.html#trace-logical-expr",
+  "type": "Activity",
+  "number": "2.2.9",
+  "title": "",
+  "body": "  Given the code below, what are the values of x that will cause the code to print True ?   print( x < 0 or x >= 10)       0 to 10    No, because x has to be either negative or 10 or greater for the expression to be true.      1 to 10    No, because x has to be either negative or 10 or greater for the expression to be true.      negative values    That is partially correct. But what values would be true because they made ``x >= 10`` true?      negative values or 2+ digits    Correct! x has to be either negative or 10 or greater for the expression to be true. Any number 10 or greater has at least 2 digits.     "
+},
+{
+  "id": "logical-operators-15",
+  "level": "2",
+  "url": "topic-2-2-boolean-expressions.html#logical-operators-15",
   "type": "Essential Knowledge",
-  "number": "2.2.13",
+  "number": "2.2.10",
   "title": "2.2.C.3.",
   "body": " 2.2.C.3  The result of a logical expression can be determined by evaluating each condition and then applying not, and, and or to determine whether the overall expression is true or false. Logical expressions can include multiple conditions. Parentheses can be used to group conditions and make the intended order of evaluation clear when combining not, and, and or.  "
+},
+{
+  "id": "trace-logical-expr2",
+  "level": "2",
+  "url": "topic-2-2-boolean-expressions.html#trace-logical-expr2",
+  "type": "Activity",
+  "number": "2.2.10",
+  "title": "",
+  "body": " What is printed when you run this code? Try the CodeLens button to step through the code. Then, change the value of age to 19, try to guess the result, and run to check. Change the value of occupation and run again.    age = 15 occupation = \"student\" print(\"Eligible for discount?\", ((age >= 12) and (age <= 18)) or (occupation == \"student\") ) # Evaluate this in multiple steps # Is age >= 12? greater_than_12 = age >= 12 print(\"Is age >= 12?\", greater_than_12) # Is age <= 18? less_than_18 = age <= 18 print(\"Is age <= 18?\", less_than_18) # Is age between 12 and 18? age_between_12_and_18 = greater_than_12 and less_than_18 # Is occupation == \"student\"? is_student = occupation == \"student\" # Put it all together print(\"Eligible for discount?\", age_between_12_and_18 or is_student)  from unittest.gui import TestCaseGui class myTests(TestCaseGui): def test1(self): self.assertIn(\"True\",self.getOutput(),\"Output\") self.assertIn(\"19\",self.getEditorText(), \"Try changing the value of age to 19\") myTests().main()   "
+},
+{
+  "id": "unplugged-venn-diagram",
+  "level": "2",
+  "url": "topic-2-2-boolean-expressions.html#unplugged-venn-diagram",
+  "type": "Project",
+  "number": "2.2.11",
+  "title": "",
+  "body": "   Draw or print a Venn diagram of 4 intersecting circles.  Put each of the names of the 4 people in your group in a circle of the Venn Diagram (one name in each circle).  Write down the age of each person in your group in the circles. If two or more people are the same age, put the age in the intersecting parts of their circles.  Write a Boolean expression that compares the age of each person in the group using == , < , > , and , for example Ada’s age > Alan’s age and Alan’s age == Grace’s age.  Then, ask each person in your group their favorite food. If two or more people have the same favorite food, put the food in the intersecting parts of their circles.  Write a Boolean expression that compares the favorite foods in the group using == , != , and and , for example Ada’s favorite food pizza == Alan’s favorite food pizza and Alan’s favorite food != Grace’s favorite food.  Think of 1 more comparison and write it in the circles and as a Boolean expression.  Share the Boolean expressions with the class and type them in below.     "
+},
+{
+  "id": "LOs-2-2-3",
+  "level": "2",
+  "url": "topic-2-2-boolean-expressions.html#LOs-2-2-3",
+  "type": "Learning Objective",
+  "number": "2.2.11",
+  "title": "2.2.A.",
+  "body": " 2.2.A  Identify the use of Boolean expressions to control an app's behavior as you interact with the app.  "
+},
+{
+  "id": "LOs-2-2-4",
+  "level": "2",
+  "url": "topic-2-2-boolean-expressions.html#LOs-2-2-4",
+  "type": "Learning Objective",
+  "number": "2.2.12",
+  "title": "2.2.B.",
+  "body": " 2.2.B  Develop code using relational operators, and determine the result of relational expressions.  "
+},
+{
+  "id": "LOs-2-2-5",
+  "level": "2",
+  "url": "topic-2-2-boolean-expressions.html#LOs-2-2-5",
+  "type": "Learning Objective",
+  "number": "2.2.13",
+  "title": "2.2.C.",
+  "body": " 2.2.C  Develop code using logical operators, and determine the result of logical expressions.  "
+},
+{
+  "id": "vocab-boolean",
+  "level": "2",
+  "url": "topic-2-2-boolean-expressions.html#vocab-boolean",
+  "type": "Activity",
+  "number": "2.2.12",
+  "title": "",
+  "body": "  Review the vocabulary in this lesson. Drag the vocabulary term from the left and drop it on its correct definition on the right. Click the \"Check Me\" button to see if you are correct.    Find the words in the lesson above and try again.     Boolean  a data type that can only have the values True or False    Boolean expression  an expression that evaluates to either True or False    relational operator  an operator like == or < that compares two values and returns True or False    logical operator  an operator like and , or , or not that combines Boolean expressions and returns True or False    "
 },
 {
   "id": "topic-2-3-selection",
@@ -3445,151 +3598,358 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "2.3",
   "title": "Selection",
-  "body": "  Selection       Learning Objectives   2.3.A  Represent an algorithm that includes selection using written steps or a flowchart.    2.3.B  Develop code using conditional statements, and determine the result of these statements.    2.3.C  Develop code using nested conditional statements, and determine the result of these statements.     Selection in Algorithms   2.3.A.1  Some tasks require making a choice based on a condition. Selection allows an algorithm to choose different steps depending on whether a condition is true or false.    2.3.A.2  Algorithms that use selection can be represented in ways people can read and follow, such as written steps or flowcharts.    2.3.A.3  Selection changes the path an algorithm follows. Different conditions can lead to different results because the algorithm may perform different steps based on the choice made.     Conditional Statements   2.3.B.1  Selection allows apps to respond differently depending on the information they receive. As a result, apps can handle user choices and provide helpful output instead of doing the same thing every time.    2.3.B.2  Programmers implement selection in code using conditional statements. Programmers use conditional statements to check a condition using a Boolean expression and run different code depending on the result.    2.3.B.3  An if-statement is a type of conditional statement used when a program needs to check a condition and take an action only when that condition is true. When the following code runs, the statements in block of statements are executed if condition evaluates to true. Otherwise, block of statements is skipped and the program continues.  if (condition) { <block of statements> }    2.3.B.4  An if-else statement is a type of conditional statement used when a program needs to choose between two different actions based on whether a condition is true or false. When the following code runs, the statements in the first block of statements execute if the condition evaluates to true. Otherwise, the statements in the second block of statements execute.  if (condition) { <first block of statements> } else { <second block of statements> }    2.3.B.5  Choosing between an if and an if-else statement depends on whether the program should act only when a condition is true or should take one of two actions.    2.3.B.6  The result of conditional statements can be determined by evaluating the conditions and tracing which statements execute, including any changes to variable values or output.    2.3.B.7  When multiple if-statements are written sequentially, each one is evaluated independently, so more than one block may execute if more than one condition is true.     Nested Conditional Statements   2.3.C.1  Apps often make layered decisions by checking a basic condition first and then checking a more specific condition. For example, an app might first check whether a user is logged in and then check whether the user has permission to access a feature. Nested conditionals allow programs to handle these multi-step checks.    2.3.C.2  A nested conditional is a conditional statement inside the block of another conditional statement. The inner conditional is evaluated only when the outer condition evaluates to true and execution reaches the inner conditional.    2.3.C.3  Nested conditional statements can be traced by evaluating each conditional statement's Boolean expression in order, following the branch of code that runs, and keeping track of any updates to variable values or output that is produced.    "
+  "body": "  Selection  selection  conditional  algorithm  flowchart   Up until now, we have been writing code one line at a time in sequence which then gets executed by the computer in that sequential order by default. However, we can create more complex algorithms that do not follow the default sequential order. The building blocks of algorithms are sequencing , selection , and repetition . In this lesson, we will learn to use selection to branch the code into different paths based on a condition. This allows us to create algorithms that can make decisions and respond to different situations.     Selection in Algorithms   2.3.A.1  Some tasks require making a choice based on a condition. Selection allows an algorithm to choose different steps depending on whether a condition is true or false.   Selection is making a choice based on a true or false decision. For example, every time you login, the system checks your password and either grants access or denies it based on whether the password is correct.    2.3.A.2  Algorithms that use selection can be represented in ways people can read and follow, such as written steps or flowcharts.   In flowcharts, selection is represented by a diamond shape with a condition inside. The flowchart branches into different paths based on the outcome of the condition.     Put the following steps of the algorithm in order.     If the homework is submitted on time:    Record it as On Time.    Else (Otherwise):    Record it as Late.      2.3.A.3  Selection changes the path an algorithm follows. Different conditions can lead to different results because the algorithm may perform different steps based on the choice made.   This more complex flowchart for choosing a pet. Which path would you choose in this flowchart?     Conditional Statements (If Statements)  if  if statement  conditional statement  conditionals   2.3.B.1  Selection allows apps to respond differently depending on the information they receive. As a result, apps can handle user choices and provide helpful output instead of doing the same thing every time.    2.3.B.2  Programmers implement selection in code using conditional statements . Programmers use conditional statements to check a condition using a Boolean expression and run different code depending on the result.    2.3.B.3  An if-statement is a type of conditional statement used when a program needs to check a condition and take an action only when that condition is true. When the following code runs, the statements in block of statements are executed if condition evaluates to true. Otherwise, block of statements is skipped and the program continues.  if (condition) { <block of statements> }   Almost all programming languages have a keyword called if which is used to implement selection (also called conditional statements). If-statements are followed by a block of statements that are only executed if the condition is true. In languages like C, C++, Java, JavaScript, and the AP Pseudocode above, the block of code is marked by using curly braces {}. But Python, uses colon (:) after the if condition and indentation to mark the block of statements under the if. The syntax for a Python if-statement is below:   if condition: block of statements   The condition in an if-statement is any Boolean expression (like we learned in the last lesson) that evaluates to either true or false, for example number > 0 . If you forget to indent the statements under the if statement, you will get an indentation error. Try it in the code below.    The following code asks for your name and then prints out a greeting. Run the code twice and enter \"Bart\" the first time, and your name another time. The code prints different things depending on the input! Change the code to check against your name instead of \"Bart\" and run again.    name = input(\"Enter your name: \") if name == \"Bart\": print(\"Welcome\", name) print(\"Good bye\", name)  from unittest.gui import TestCaseGui class myTests(TestCaseGui): def test1(self): self.assertNotIn(\"Bart\",self.getEditorText(), \"Change Bart to your name and run again!\") myTests().main()    in  Python also has a very useful operator called in that checks if a substring is inside a string. Try it in the code above instead of using \"==\" to check if part of your name is in the input string. For example,   if \"B\" in name: print(\"Welcome all names with B!\")     The following code checks if an inputted number is positive. Add another if statement to check if the number is negative. Run the code twice to test it once with a positive number and once with a negative number.    number = int(input(\"Enter a number: \")) if number > 0: print(\"The number is positive.\") # Add another if statement here to check if the number is negative # Make sure you to indent the print statement under the if statement  from unittest.gui import TestCaseGui class myTests(TestCaseGui): def test1(self): self.assertIn(\"< 0\",self.getEditorText(), \"Use < 0\") myTests().main()      Given the code below, what will be printed?   x = 10 if x >= 10: print(\"A\") print(\"B\")       A    Since 10 is greater than or equal to 10, A will be printed, but then the program continues running after the if statement, so more will be printed.      B    10 is greater than or equal to 10      A and B    Correct. Since 10 is greater than or equal to 10, A will be printed, but then the program continues running after the if statement, so B will also be printed.      Nothing    x which is 10 is greater than or equal to 10.        Given the code below, what will be printed?   x = 10 if x > 10: print(\"A\")       A    10 is not greater than 10      B    There is no print B statement in this code.      10    No, x is not printed.      Nothing    Since 10 is not greater than 10, nothing will be printed.        If-Else Statements  if-else statements  else   2.3.B.4  An if-else statement is a type of conditional statement used when a program needs to choose between two different actions based on whether a condition is true or false. When the following code runs, the statements in the first block of statements execute if the condition evaluates to true. Otherwise, the statements in the second block of statements execute.  if (condition) { <first block of statements> } else { <second block of statements> }   If you want to choose between two actions, use an if-else statement . Although curly braces are used in some programming languages, in Python, the syntax for an if-else statement uses a : and indentation like below:   if condition: first block of statements else: second block of statements   If the condition in an if-else statement is true, the first block of statements executes. If the condition is false, the second block of statements executes. In the activecode activity above, we wrote two if statements to check for positive and negative numbers, but we could have used an if-else statement to make the code more efficient.   if number > 0: print(\"The number is positive.\") else: print(\"The number is negative or 0.\")     The following program segment should ask whether the user wants to terminate the program and print out the appropriate statement based on the user’s response. The blocks have been mixed up and include extra blocks that aren’t needed in the solution. Drag the needed blocks from the left and put them in the correct order on the right. Make sure it is indented correctly!     response = input(\"Terminate the program (Y\/N)?\")     if response == \"Y\":    if response = \"Y\":     print(\"The program is now ending.\")    else:    print(\"The program will continue to run.\")     Remember to use == , not = , in the Boolean condition of an if statement to test a variable. One = assigns, two == tests!    Change the following code so that the if condition checks against your favorite color (for example, \"blue\"). Add an else statement that prints out \"That's not my favorite color. My favorite color is ...\" if the user enters a different color. Add another if\/else statement to check if their favorite ice cream flavor is your favorite flavor (for example, \"chocolate\"). If it is, print out \"That's my favorite flavor too!\", else print out \"That's not my favorite flavor. My favorite flavor is ...\"    favoriteColor = input(\"What is your favorite color? \") # change this to your favorite color and then add an else statement if favoriteColor == \"blue\": print(\"That's my favorite color too!\") # add an else favoriteFlavor = input(\"What is your favorite ice cream flavor? \") # Add an if\/else statement to check if their favorite flavor is your favorite flavor  from unittest.gui import TestCaseGui class myTests(TestCaseGui): def test1(self): # remove comments actual = \"\\n\".join( line for line in self.getEditorText().splitlines() if line.strip() and not line.lstrip().startswith(\"#\") ) input_count = actual.count(\"else\") self.assertGreaterEqual(input_count, 2, \"at least 2 else statements\") myTests().main()     2.3.B.5  Choosing between an if and an if-else statement depends on whether the program should act only when a condition is true or should take one of two actions.    2.3.B.6  The result of conditional statements can be determined by evaluating the conditions and tracing which statements execute, including any changes to variable values or output.   %  mod  even  odd    Given the code below, what will be printed if x = 9 ? In this code, mod ( % ) is used to check if a number is even or odd with the expression x % 2 == 0 , because when even numbers are divided by 2, there is no remainder, but odd numbers always have a remainder when divided by 2.   x = 9 if x % 2 == 0: print(\"Even\") else: print(\"Odd\")       Even    9 divided by 2 has a remainder of 1, not 0.      Odd    9 divided by 2 has a remainder so it is odd.      Even Odd    One or the other will be printed, not both.      Nothing    No, it will print Odd or Even.       2.3.B.7  When multiple if-statements are written sequentially, each one is evaluated independently, so more than one block may execute if more than one condition is true.     The following code checks a student's grade and prints out the letter grade. Run it to see that it prints both A and C for a grade of 90! This is because the second if statement is not quite right because 90 is >= 90 and 90 is >= 70. Fix the if statement for the C grade so that it only prints C if the grade is >= 70 and < 80. Then add another if statement to check for a D grade (60- up to 70) and another if statement to check for an F grade (0- up to 60). Test your code by changing the grade and running it multiple times to test every if statement.    grade = 90 if grade >= 90: print(\"A!\") if grade >= 80 and grade < 90: print(\"B!\") # Fix this if statement to check for a C grade (70-79) if grade >= 70: print(\"C!\") # Add another if statement to check for a D grade (60- up to 70) # Add another if statement to check for an F grade (less than 60)  from unittest.gui import TestCaseGui class myTests(TestCaseGui): def test1(self): self.assertIn(\"< 70\",self.getEditorText(), \"Use < 70\") self.assertIn(\">= 60\",self.getEditorText(), \"Use >= 60\") self.assertIn(\"< 60\",self.getEditorText(), \"Use < 60\") myTests().main()      Nested Conditional Statements   2.3.C.1  Apps often make layered decisions by checking a basic condition first and then checking a more specific condition. For example, an app might first check whether a user is logged in and then check whether the user has permission to access a feature. Nested conditionals allow programs to handle these multi-step checks.    2.3.C.2  A nested conditional is a conditional statement inside the block of another conditional statement. The inner conditional is evaluated only when the outer condition evaluates to true and execution reaches the inner conditional.   If statements can be nested inside other if statements forming nested conditionals . The inner if statement is only evaluated if the outer if statement's condition is true. For example, the following code which could be written with nested if statements or an and logical operator. Notice that in Python, the nested if statement is indented within the block of the outer if statement to indicate that it is inside it.   # Nested if statements if userLoggedIn: if userHasPermission: print(\"Access granted.\") # Or using an and logical operator if userLoggedIn and userHasPermission: print(\"Access granted.\")     The following code figures out a ticket price for a movie according to the user's age and the time at which the movie starts. Add a nested if statement to check for whether the movie is playing before 3 PM for a matinee discount. The movie theater opens at 1 PM, so don't worry about AM hours. The variables age and hour have been set for testing, but you can comment out those lines to use your input too.    age = int(input(\"Enter age:\")) hour = int(input(\"Enter PM hour (1-9):\")) # For testing age = 15 hour = 6 if age > 12: # Add a nested if statement to test hour # Set price to 12 if hour is less than 3, else set price to 15 else: price = 10 print(\"Ticket price:\", price, \"dollars.\")  from unittest.gui import TestCaseGui class myTests(TestCaseGui): def test1(self): # remove comments actual = \"\\n\".join( line for line in self.getEditorText().splitlines() if line.strip() and not line.lstrip().startswith(\"#\") ) input_count = actual.count(\"if\") self.assertGreaterEqual(input_count, 2, \"at least 2 if statements\") input_count = actual.count(\"else\") self.assertGreaterEqual(input_count, 2, \"at least 2 else statements\") self.assertIn(\"15\",self.getOutput(),\"Output when age is 15 and hour is 6 should be 15\") myTests().main()    Nested if statements inside of else blocks can be used to make multi-way selections. A single if-else statement allows us to select between 2 branches of code. But with nested if-else-if statements, we can make multiple branches. Python has a shortcut keyword for this called elif which stands for \"else if\". Here's an example of how it is used to chain together many conditions with the pattern if-elif-elif-...-else to branch the code into many directions. This is the same example of grade determination that we saw before, but this pattern of coding is shorter and easier to read. The extra tests for the maximum of each grade range is not needed because the tests are chained together. If the grade is not greater than or equal to 90, then it must be less than 90 when you reach the second test.   if grade >= 90: print(\"A\") elif grade >= 80: print(\"B\") elif grade >= 70: print(\"C\") elif grade >= 60: print(\"D\") else: print(\"F\")   Here is a flowchart showing the if-elif-else multiple branching.     Create code that sets the variable message to Hello if x is less than 2 , Hey if x is greater than 2 , and Hi otherwise.      if x < 2:    if x < 2:     message = \"Hello\"     elif x > 2:    else x > 2:     message = \"Hey\"    else:     message = \"Hi\"    message == \"Hi\"       2.3.C.3  Nested conditional statements can be traced by evaluating each conditional statement's Boolean expression in order, following the branch of code that runs, and keeping track of any updates to variable values or output that is produced.   Click on next to trace the execution of nested conditional statements.    Keep clicking on the Next button at the bottom of the code to see how the values of the variables change as you step through the running program. You can see interactive tracing in any Active Code exercise by clicking the CodeLens button.    grade = 50 if grade >= 90: print(\"A\") elif grade >= 80: print(\"B\") elif grade >= 70: print(\"C\") elif grade >= 60: print(\"D\") else: print(\"F\")      What does the following code print when x has been set to 5 and y is set to -10?   if x > 0 and y > 0: print(\"positive\") elif x > 0 or y > 0: print(\"positive1\") else: print(\"negative1\")       negative1    Not correct.      positive    This will only print positive if both x and y are positive.      Nothing    No, one of the conditions is true, so something will be printed.      positive1    Correct. Since x is positive, but y is negative, the or condition is true since at least 1 of them is positive, so positive1 will be printed.        Adventure Coding Challenge      This is a text adventure game that lets the user move in 4 different directions. Right now, it only lets the user move north. Add in elif statements to go in the directions of \"s\" for south, \"e\" for east, \"w\" for west, and an else statement that says \"You can't go in that direction\". Change the location of the adventure and add more nested if statements. Be creative!    print(\"Welcome to the Adventure Game! You are in a dark forest. Can you find your way out?\") direction = input(\"Which direction do you want to go? (n, s, e, w) \") if direction == \"n\": print(\"You head north but hear growling! You run back to where you started.\") # Add elif statements for the other directions and an else statement for invalid directions  from unittest.gui import TestCaseGui class myTests(TestCaseGui): def test1(self): # remove comments actual = \"\\n\".join( line for line in self.getEditorText().splitlines() if line.strip() and not line.lstrip().startswith(\"#\") ) input_count = actual.count(\"elif\") self.assertGreaterEqual(input_count, 3, \"at least 3 elif statements\") self.assertIn(\"else\", actual, \"Use an else statement for invalid directions\") myTests().main()      Learning Objectives Review   2.3.A  Represent an algorithm that includes selection using written steps or a flowchart.    2.3.B  Develop code using conditional statements, and determine the result of these statements.    2.3.C  Develop code using nested conditional statements, and determine the result of these statements.     Vocabulary Review    Review the vocabulary in this lesson. Drag the vocabulary term from the left and drop it on its correct definition on the right. Click the \"Check Me\" button to see if you are correct.    Find the words in the lesson above and try again.     selection  the process of choosing which statements to execute based on certain conditions    conditional statement  a statement that checks a condition and executes different code depending on whether the condition is true or false    else  a keyword used in conditional statements to specify code that should be executed if the condition is false    nested conditionals  conditional statements that are placed inside other conditional statements      "
 },
 {
-  "id": "topic-2-3-selection-4-2",
+  "id": "topic-2-3-selection-7-1",
   "level": "2",
-  "url": "topic-2-3-selection.html#topic-2-3-selection-4-2",
-  "type": "Learning Objective",
-  "number": "2.3.1",
-  "title": "2.3.A.",
-  "body": " 2.3.A  Represent an algorithm that includes selection using written steps or a flowchart.  "
+  "url": "topic-2-3-selection.html#topic-2-3-selection-7-1",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "sequencing selection repetition "
 },
 {
-  "id": "topic-2-3-selection-4-3",
+  "id": "topic-2-3-selection-8-2",
   "level": "2",
-  "url": "topic-2-3-selection.html#topic-2-3-selection-4-3",
-  "type": "Learning Objective",
-  "number": "2.3.2",
-  "title": "2.3.B.",
-  "body": " 2.3.B  Develop code using conditional statements, and determine the result of these statements.  "
-},
-{
-  "id": "topic-2-3-selection-4-4",
-  "level": "2",
-  "url": "topic-2-3-selection.html#topic-2-3-selection-4-4",
-  "type": "Learning Objective",
-  "number": "2.3.3",
-  "title": "2.3.C.",
-  "body": " 2.3.C  Develop code using nested conditional statements, and determine the result of these statements.  "
-},
-{
-  "id": "topic-2-3-selection-5-2",
-  "level": "2",
-  "url": "topic-2-3-selection.html#topic-2-3-selection-5-2",
+  "url": "topic-2-3-selection.html#topic-2-3-selection-8-2",
   "type": "Essential Knowledge",
-  "number": "2.3.4",
+  "number": "2.3.1",
   "title": "2.3.A.1.",
   "body": " 2.3.A.1  Some tasks require making a choice based on a condition. Selection allows an algorithm to choose different steps depending on whether a condition is true or false.  "
 },
 {
-  "id": "topic-2-3-selection-5-3",
+  "id": "topic-2-3-selection-8-3",
   "level": "2",
-  "url": "topic-2-3-selection.html#topic-2-3-selection-5-3",
+  "url": "topic-2-3-selection.html#topic-2-3-selection-8-3",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "Selection "
+},
+{
+  "id": "topic-2-3-selection-8-5",
+  "level": "2",
+  "url": "topic-2-3-selection.html#topic-2-3-selection-8-5",
   "type": "Essential Knowledge",
-  "number": "2.3.5",
+  "number": "2.3.2",
   "title": "2.3.A.2.",
   "body": " 2.3.A.2  Algorithms that use selection can be represented in ways people can read and follow, such as written steps or flowcharts.  "
 },
 {
-  "id": "topic-2-3-selection-5-4",
+  "id": "parsons-if",
   "level": "2",
-  "url": "topic-2-3-selection.html#topic-2-3-selection-5-4",
+  "url": "topic-2-3-selection.html#parsons-if",
+  "type": "Activity",
+  "number": "2.3.1",
+  "title": "",
+  "body": "  Put the following steps of the algorithm in order.     If the homework is submitted on time:    Record it as On Time.    Else (Otherwise):    Record it as Late.    "
+},
+{
+  "id": "topic-2-3-selection-8-9",
+  "level": "2",
+  "url": "topic-2-3-selection.html#topic-2-3-selection-8-9",
   "type": "Essential Knowledge",
-  "number": "2.3.6",
+  "number": "2.3.3",
   "title": "2.3.A.3.",
   "body": " 2.3.A.3  Selection changes the path an algorithm follows. Different conditions can lead to different results because the algorithm may perform different steps based on the choice made.  "
 },
 {
-  "id": "topic-2-3-selection-6-2",
+  "id": "if-statements-6",
   "level": "2",
-  "url": "topic-2-3-selection.html#topic-2-3-selection-6-2",
+  "url": "topic-2-3-selection.html#if-statements-6",
   "type": "Essential Knowledge",
-  "number": "2.3.7",
+  "number": "2.3.4",
   "title": "2.3.B.1.",
   "body": " 2.3.B.1  Selection allows apps to respond differently depending on the information they receive. As a result, apps can handle user choices and provide helpful output instead of doing the same thing every time.  "
 },
 {
-  "id": "topic-2-3-selection-6-3",
+  "id": "if-statements-7",
   "level": "2",
-  "url": "topic-2-3-selection.html#topic-2-3-selection-6-3",
+  "url": "topic-2-3-selection.html#if-statements-7",
   "type": "Essential Knowledge",
-  "number": "2.3.8",
+  "number": "2.3.5",
   "title": "2.3.B.2.",
-  "body": " 2.3.B.2  Programmers implement selection in code using conditional statements. Programmers use conditional statements to check a condition using a Boolean expression and run different code depending on the result.  "
+  "body": " 2.3.B.2  Programmers implement selection in code using conditional statements . Programmers use conditional statements to check a condition using a Boolean expression and run different code depending on the result.  "
 },
 {
-  "id": "topic-2-3-selection-6-4",
+  "id": "if-statements-8",
   "level": "2",
-  "url": "topic-2-3-selection.html#topic-2-3-selection-6-4",
+  "url": "topic-2-3-selection.html#if-statements-8",
   "type": "Essential Knowledge",
-  "number": "2.3.9",
+  "number": "2.3.6",
   "title": "2.3.B.3.",
   "body": " 2.3.B.3  An if-statement is a type of conditional statement used when a program needs to check a condition and take an action only when that condition is true. When the following code runs, the statements in block of statements are executed if condition evaluates to true. Otherwise, block of statements is skipped and the program continues.  if (condition) { <block of statements> }  "
 },
 {
-  "id": "topic-2-3-selection-6-5",
+  "id": "if-statements-9",
   "level": "2",
-  "url": "topic-2-3-selection.html#topic-2-3-selection-6-5",
+  "url": "topic-2-3-selection.html#if-statements-9",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "if "
+},
+{
+  "id": "if-statements-11",
+  "level": "2",
+  "url": "topic-2-3-selection.html#if-statements-11",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "condition Boolean "
+},
+{
+  "id": "if-name",
+  "level": "2",
+  "url": "topic-2-3-selection.html#if-name",
+  "type": "Activity",
+  "number": "2.3.2",
+  "title": "",
+  "body": "  The following code asks for your name and then prints out a greeting. Run the code twice and enter \"Bart\" the first time, and your name another time. The code prints different things depending on the input! Change the code to check against your name instead of \"Bart\" and run again.    name = input(\"Enter your name: \") if name == \"Bart\": print(\"Welcome\", name) print(\"Good bye\", name)  from unittest.gui import TestCaseGui class myTests(TestCaseGui): def test1(self): self.assertNotIn(\"Bart\",self.getEditorText(), \"Change Bart to your name and run again!\") myTests().main()   "
+},
+{
+  "id": "if-statements-14",
+  "level": "2",
+  "url": "topic-2-3-selection.html#if-statements-14",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "in "
+},
+{
+  "id": "positive-negative",
+  "level": "2",
+  "url": "topic-2-3-selection.html#positive-negative",
+  "type": "Activity",
+  "number": "2.3.3",
+  "title": "",
+  "body": "  The following code checks if an inputted number is positive. Add another if statement to check if the number is negative. Run the code twice to test it once with a positive number and once with a negative number.    number = int(input(\"Enter a number: \")) if number > 0: print(\"The number is positive.\") # Add another if statement here to check if the number is negative # Make sure you to indent the print statement under the if statement  from unittest.gui import TestCaseGui class myTests(TestCaseGui): def test1(self): self.assertIn(\"< 0\",self.getEditorText(), \"Use < 0\") myTests().main()   "
+},
+{
+  "id": "trace-if1",
+  "level": "2",
+  "url": "topic-2-3-selection.html#trace-if1",
+  "type": "Activity",
+  "number": "2.3.4",
+  "title": "",
+  "body": "  Given the code below, what will be printed?   x = 10 if x >= 10: print(\"A\") print(\"B\")       A    Since 10 is greater than or equal to 10, A will be printed, but then the program continues running after the if statement, so more will be printed.      B    10 is greater than or equal to 10      A and B    Correct. Since 10 is greater than or equal to 10, A will be printed, but then the program continues running after the if statement, so B will also be printed.      Nothing    x which is 10 is greater than or equal to 10.     "
+},
+{
+  "id": "trace-if2",
+  "level": "2",
+  "url": "topic-2-3-selection.html#trace-if2",
+  "type": "Activity",
+  "number": "2.3.5",
+  "title": "",
+  "body": "  Given the code below, what will be printed?   x = 10 if x > 10: print(\"A\")       A    10 is not greater than 10      B    There is no print B statement in this code.      10    No, x is not printed.      Nothing    Since 10 is not greater than 10, nothing will be printed.     "
+},
+{
+  "id": "if-else-4",
+  "level": "2",
+  "url": "topic-2-3-selection.html#if-else-4",
   "type": "Essential Knowledge",
-  "number": "2.3.10",
+  "number": "2.3.7",
   "title": "2.3.B.4.",
   "body": " 2.3.B.4  An if-else statement is a type of conditional statement used when a program needs to choose between two different actions based on whether a condition is true or false. When the following code runs, the statements in the first block of statements execute if the condition evaluates to true. Otherwise, the statements in the second block of statements execute.  if (condition) { <first block of statements> } else { <second block of statements> }  "
 },
 {
-  "id": "topic-2-3-selection-6-6",
+  "id": "if-else-5",
   "level": "2",
-  "url": "topic-2-3-selection.html#topic-2-3-selection-6-6",
+  "url": "topic-2-3-selection.html#if-else-5",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "if-else statement "
+},
+{
+  "id": "mixedup-if-else",
+  "level": "2",
+  "url": "topic-2-3-selection.html#mixedup-if-else",
+  "type": "Activity",
+  "number": "2.3.6",
+  "title": "",
+  "body": "  The following program segment should ask whether the user wants to terminate the program and print out the appropriate statement based on the user’s response. The blocks have been mixed up and include extra blocks that aren’t needed in the solution. Drag the needed blocks from the left and put them in the correct order on the right. Make sure it is indented correctly!     response = input(\"Terminate the program (Y\/N)?\")     if response == \"Y\":    if response = \"Y\":     print(\"The program is now ending.\")    else:    print(\"The program will continue to run.\")    "
+},
+{
+  "id": "if-else-activity",
+  "level": "2",
+  "url": "topic-2-3-selection.html#if-else-activity",
+  "type": "Activity",
+  "number": "2.3.7",
+  "title": "",
+  "body": "  Change the following code so that the if condition checks against your favorite color (for example, \"blue\"). Add an else statement that prints out \"That's not my favorite color. My favorite color is ...\" if the user enters a different color. Add another if\/else statement to check if their favorite ice cream flavor is your favorite flavor (for example, \"chocolate\"). If it is, print out \"That's my favorite flavor too!\", else print out \"That's not my favorite flavor. My favorite flavor is ...\"    favoriteColor = input(\"What is your favorite color? \") # change this to your favorite color and then add an else statement if favoriteColor == \"blue\": print(\"That's my favorite color too!\") # add an else favoriteFlavor = input(\"What is your favorite ice cream flavor? \") # Add an if\/else statement to check if their favorite flavor is your favorite flavor  from unittest.gui import TestCaseGui class myTests(TestCaseGui): def test1(self): # remove comments actual = \"\\n\".join( line for line in self.getEditorText().splitlines() if line.strip() and not line.lstrip().startswith(\"#\") ) input_count = actual.count(\"else\") self.assertGreaterEqual(input_count, 2, \"at least 2 else statements\") myTests().main()   "
+},
+{
+  "id": "if-else-12",
+  "level": "2",
+  "url": "topic-2-3-selection.html#if-else-12",
   "type": "Essential Knowledge",
-  "number": "2.3.11",
+  "number": "2.3.8",
   "title": "2.3.B.5.",
   "body": " 2.3.B.5  Choosing between an if and an if-else statement depends on whether the program should act only when a condition is true or should take one of two actions.  "
 },
 {
-  "id": "topic-2-3-selection-6-7",
+  "id": "if-else-13",
   "level": "2",
-  "url": "topic-2-3-selection.html#topic-2-3-selection-6-7",
+  "url": "topic-2-3-selection.html#if-else-13",
   "type": "Essential Knowledge",
-  "number": "2.3.12",
+  "number": "2.3.9",
   "title": "2.3.B.6.",
   "body": " 2.3.B.6  The result of conditional statements can be determined by evaluating the conditions and tracing which statements execute, including any changes to variable values or output.  "
 },
 {
-  "id": "topic-2-3-selection-6-8",
+  "id": "trace-if-else-even",
   "level": "2",
-  "url": "topic-2-3-selection.html#topic-2-3-selection-6-8",
+  "url": "topic-2-3-selection.html#trace-if-else-even",
+  "type": "Activity",
+  "number": "2.3.8",
+  "title": "",
+  "body": "  Given the code below, what will be printed if x = 9 ? In this code, mod ( % ) is used to check if a number is even or odd with the expression x % 2 == 0 , because when even numbers are divided by 2, there is no remainder, but odd numbers always have a remainder when divided by 2.   x = 9 if x % 2 == 0: print(\"Even\") else: print(\"Odd\")       Even    9 divided by 2 has a remainder of 1, not 0.      Odd    9 divided by 2 has a remainder so it is odd.      Even Odd    One or the other will be printed, not both.      Nothing    No, it will print Odd or Even.     "
+},
+{
+  "id": "if-else-19",
+  "level": "2",
+  "url": "topic-2-3-selection.html#if-else-19",
   "type": "Essential Knowledge",
-  "number": "2.3.13",
+  "number": "2.3.10",
   "title": "2.3.B.7.",
   "body": " 2.3.B.7  When multiple if-statements are written sequentially, each one is evaluated independently, so more than one block may execute if more than one condition is true.  "
 },
 {
-  "id": "topic-2-3-selection-7-2",
+  "id": "grades-separate-ifs",
   "level": "2",
-  "url": "topic-2-3-selection.html#topic-2-3-selection-7-2",
+  "url": "topic-2-3-selection.html#grades-separate-ifs",
+  "type": "Activity",
+  "number": "2.3.9",
+  "title": "",
+  "body": "  The following code checks a student's grade and prints out the letter grade. Run it to see that it prints both A and C for a grade of 90! This is because the second if statement is not quite right because 90 is >= 90 and 90 is >= 70. Fix the if statement for the C grade so that it only prints C if the grade is >= 70 and < 80. Then add another if statement to check for a D grade (60- up to 70) and another if statement to check for an F grade (0- up to 60). Test your code by changing the grade and running it multiple times to test every if statement.    grade = 90 if grade >= 90: print(\"A!\") if grade >= 80 and grade < 90: print(\"B!\") # Fix this if statement to check for a C grade (70-79) if grade >= 70: print(\"C!\") # Add another if statement to check for a D grade (60- up to 70) # Add another if statement to check for an F grade (less than 60)  from unittest.gui import TestCaseGui class myTests(TestCaseGui): def test1(self): self.assertIn(\"< 70\",self.getEditorText(), \"Use < 70\") self.assertIn(\">= 60\",self.getEditorText(), \"Use >= 60\") self.assertIn(\"< 60\",self.getEditorText(), \"Use < 60\") myTests().main()   "
+},
+{
+  "id": "nested-conditionals-2",
+  "level": "2",
+  "url": "topic-2-3-selection.html#nested-conditionals-2",
   "type": "Essential Knowledge",
-  "number": "2.3.14",
+  "number": "2.3.11",
   "title": "2.3.C.1.",
   "body": " 2.3.C.1  Apps often make layered decisions by checking a basic condition first and then checking a more specific condition. For example, an app might first check whether a user is logged in and then check whether the user has permission to access a feature. Nested conditionals allow programs to handle these multi-step checks.  "
 },
 {
-  "id": "topic-2-3-selection-7-3",
+  "id": "nested-conditionals-3",
   "level": "2",
-  "url": "topic-2-3-selection.html#topic-2-3-selection-7-3",
+  "url": "topic-2-3-selection.html#nested-conditionals-3",
   "type": "Essential Knowledge",
-  "number": "2.3.15",
+  "number": "2.3.12",
   "title": "2.3.C.2.",
   "body": " 2.3.C.2  A nested conditional is a conditional statement inside the block of another conditional statement. The inner conditional is evaluated only when the outer condition evaluates to true and execution reaches the inner conditional.  "
 },
 {
-  "id": "topic-2-3-selection-7-4",
+  "id": "nested-conditionals-4",
   "level": "2",
-  "url": "topic-2-3-selection.html#topic-2-3-selection-7-4",
+  "url": "topic-2-3-selection.html#nested-conditionals-4",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "nested conditionals "
+},
+{
+  "id": "nested-ifs",
+  "level": "2",
+  "url": "topic-2-3-selection.html#nested-ifs",
+  "type": "Activity",
+  "number": "2.3.10",
+  "title": "",
+  "body": "  The following code figures out a ticket price for a movie according to the user's age and the time at which the movie starts. Add a nested if statement to check for whether the movie is playing before 3 PM for a matinee discount. The movie theater opens at 1 PM, so don't worry about AM hours. The variables age and hour have been set for testing, but you can comment out those lines to use your input too.    age = int(input(\"Enter age:\")) hour = int(input(\"Enter PM hour (1-9):\")) # For testing age = 15 hour = 6 if age > 12: # Add a nested if statement to test hour # Set price to 12 if hour is less than 3, else set price to 15 else: price = 10 print(\"Ticket price:\", price, \"dollars.\")  from unittest.gui import TestCaseGui class myTests(TestCaseGui): def test1(self): # remove comments actual = \"\\n\".join( line for line in self.getEditorText().splitlines() if line.strip() and not line.lstrip().startswith(\"#\") ) input_count = actual.count(\"if\") self.assertGreaterEqual(input_count, 2, \"at least 2 if statements\") input_count = actual.count(\"else\") self.assertGreaterEqual(input_count, 2, \"at least 2 else statements\") self.assertIn(\"15\",self.getOutput(),\"Output when age is 15 and hour is 6 should be 15\") myTests().main()   "
+},
+{
+  "id": "nested-conditionals-7",
+  "level": "2",
+  "url": "topic-2-3-selection.html#nested-conditionals-7",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "elif "
+},
+{
+  "id": "cndtnl-mixed-hi",
+  "level": "2",
+  "url": "topic-2-3-selection.html#cndtnl-mixed-hi",
+  "type": "Activity",
+  "number": "2.3.11",
+  "title": "",
+  "body": "  Create code that sets the variable message to Hello if x is less than 2 , Hey if x is greater than 2 , and Hi otherwise.      if x < 2:    if x < 2:     message = \"Hello\"     elif x > 2:    else x > 2:     message = \"Hey\"    else:     message = \"Hi\"    message == \"Hi\"     "
+},
+{
+  "id": "nested-conditionals-12",
+  "level": "2",
+  "url": "topic-2-3-selection.html#nested-conditionals-12",
   "type": "Essential Knowledge",
-  "number": "2.3.16",
+  "number": "2.3.13",
   "title": "2.3.C.3.",
   "body": " 2.3.C.3  Nested conditional statements can be traced by evaluating each conditional statement's Boolean expression in order, following the branch of code that runs, and keeping track of any updates to variable values or output that is produced.  "
+},
+{
+  "id": "codelensNestedIfs",
+  "level": "2",
+  "url": "topic-2-3-selection.html#codelensNestedIfs",
+  "type": "Activity",
+  "number": "2.3.12",
+  "title": "",
+  "body": "  Keep clicking on the Next button at the bottom of the code to see how the values of the variables change as you step through the running program. You can see interactive tracing in any Active Code exercise by clicking the CodeLens button.    grade = 50 if grade >= 90: print(\"A\") elif grade >= 80: print(\"B\") elif grade >= 70: print(\"C\") elif grade >= 60: print(\"D\") else: print(\"F\")   "
+},
+{
+  "id": "trace-nested-ifs",
+  "level": "2",
+  "url": "topic-2-3-selection.html#trace-nested-ifs",
+  "type": "Activity",
+  "number": "2.3.13",
+  "title": "",
+  "body": "  What does the following code print when x has been set to 5 and y is set to -10?   if x > 0 and y > 0: print(\"positive\") elif x > 0 or y > 0: print(\"positive1\") else: print(\"negative1\")       negative1    Not correct.      positive    This will only print positive if both x and y are positive.      Nothing    No, one of the conditions is true, so something will be printed.      positive1    Correct. Since x is positive, but y is negative, the or condition is true since at least 1 of them is positive, so positive1 will be printed.     "
+},
+{
+  "id": "adventure-coding-challenge",
+  "level": "2",
+  "url": "topic-2-3-selection.html#adventure-coding-challenge",
+  "type": "Project",
+  "number": "2.3.14",
+  "title": "",
+  "body": "  This is a text adventure game that lets the user move in 4 different directions. Right now, it only lets the user move north. Add in elif statements to go in the directions of \"s\" for south, \"e\" for east, \"w\" for west, and an else statement that says \"You can't go in that direction\". Change the location of the adventure and add more nested if statements. Be creative!    print(\"Welcome to the Adventure Game! You are in a dark forest. Can you find your way out?\") direction = input(\"Which direction do you want to go? (n, s, e, w) \") if direction == \"n\": print(\"You head north but hear growling! You run back to where you started.\") # Add elif statements for the other directions and an else statement for invalid directions  from unittest.gui import TestCaseGui class myTests(TestCaseGui): def test1(self): # remove comments actual = \"\\n\".join( line for line in self.getEditorText().splitlines() if line.strip() and not line.lstrip().startswith(\"#\") ) input_count = actual.count(\"elif\") self.assertGreaterEqual(input_count, 3, \"at least 3 elif statements\") self.assertIn(\"else\", actual, \"Use an else statement for invalid directions\") myTests().main()   "
+},
+{
+  "id": "LOs-2-3-2",
+  "level": "2",
+  "url": "topic-2-3-selection.html#LOs-2-3-2",
+  "type": "Learning Objective",
+  "number": "2.3.14",
+  "title": "2.3.A.",
+  "body": " 2.3.A  Represent an algorithm that includes selection using written steps or a flowchart.  "
+},
+{
+  "id": "LOs-2-3-3",
+  "level": "2",
+  "url": "topic-2-3-selection.html#LOs-2-3-3",
+  "type": "Learning Objective",
+  "number": "2.3.15",
+  "title": "2.3.B.",
+  "body": " 2.3.B  Develop code using conditional statements, and determine the result of these statements.  "
+},
+{
+  "id": "LOs-2-3-4",
+  "level": "2",
+  "url": "topic-2-3-selection.html#LOs-2-3-4",
+  "type": "Learning Objective",
+  "number": "2.3.16",
+  "title": "2.3.C.",
+  "body": " 2.3.C  Develop code using nested conditional statements, and determine the result of these statements.  "
+},
+{
+  "id": "vocab-selection",
+  "level": "2",
+  "url": "topic-2-3-selection.html#vocab-selection",
+  "type": "Activity",
+  "number": "2.3.15",
+  "title": "",
+  "body": "  Review the vocabulary in this lesson. Drag the vocabulary term from the left and drop it on its correct definition on the right. Click the \"Check Me\" button to see if you are correct.    Find the words in the lesson above and try again.     selection  the process of choosing which statements to execute based on certain conditions    conditional statement  a statement that checks a condition and executes different code depending on whether the condition is true or false    else  a keyword used in conditional statements to specify code that should be executed if the condition is false    nested conditionals  conditional statements that are placed inside other conditional statements    "
 },
 {
   "id": "topic-2-4-iteration",
@@ -4048,7 +4408,7 @@ var ptx_lunr_docs = [
   "type": "Unit",
   "number": "3",
   "title": "Developing with Abstraction using Lists and Procedures",
-  "body": " Developing with Abstraction using Lists and Procedures   This unit introduces students to lists and procedures.     AP Exam Weighting:    Class Periods:    Time Estimate: 45 minutes per lesson    AP Classroom Progress Check Unit 3    AP Classroom Unit 3 Labs:       "
+  "body": " Developing with Abstraction using Lists and Procedures   This unit introduces students to lists and procedures.     AP Exam Weighting:    Instructional days: 14-17 days, Create Project: 7 days    Time Estimates: 45 minutes per lesson    AP Classroom Progress Checks: Unit 3    AP Classroom Unit 3 Labs: 3 Connect Tasks       "
 },
 {
   "id": "unit4",
@@ -4057,7 +4417,7 @@ var ptx_lunr_docs = [
   "type": "Unit",
   "number": "4",
   "title": "Making Data-Driven Decisions using the Internet and AI",
-  "body": " Making Data-Driven Decisions using the Internet and AI   This unit introduces students to the Internet, Data Processing, and AI.     AP Exam Weighting:    Class Periods:    Time Estimate: 45 minutes per lesson    AP Classroom Progress Check Unit 4    AP Classroom Unit 4 Labs:       "
+  "body": " Making Data-Driven Decisions using the Internet and AI   This unit introduces students to the Internet, Data Processing, and AI.     AP Exam Weighting:    Instructional days: 30 days, AI Design Project: 7 days    Time Estimate: 45 minutes per lesson    AP Classroom Progress Check Unit 4    AP Classroom Unit 4 Labs: 1 AI Lab, 3 Connect Tasks       "
 },
 {
   "id": "cspossible-9-1",
