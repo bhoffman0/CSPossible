@@ -36,7 +36,7 @@ htmlPresentation: false,
 <meta name="twitter:description" content="CSPossible is the newest AP CSP Python curriculum approved to meet the 2027-2028 College Board standards and an introductory college-level computer programming course in Python.">
 <meta property="og:description" content="CSPossible is the newest AP CSP Python curriculum approved to meet the 2027-2028 College Board standards and an introductory college-level computer programming course in Python.">
 <meta name="twitter:card" content="summary">
-<script src="_static/pretext/js/jquery.min.js"></script><script src="_static/pretext/js/dist/pretext-core.js?v=2.42"></script><!--** eBookCongig is necessary to configure interactive       **-->
+<script src="_static/pretext/js/jquery.min.js"></script><script src="_static/pretext/js/dist/pretext-core.js?v=2.44"></script><!--** eBookCongig is necessary to configure interactive       **-->
 <!--** Runestone components to run locally in reader's browser **-->
 <!--** No external communication:                              **-->
 <!--**     log level is 0, Runestone Services are disabled     **-->
@@ -59,36 +59,54 @@ eBookConfig.enableScratchAC = true;
 eBookConfig.acDefaultLanguage = 'python';
 eBookConfig.build_info = "";
 eBookConfig.python3 = null;
-eBookConfig.runestone_version = '8.1.11';
+eBookConfig.runestone_version = '8.1.14';
 eBookConfig.jobehost = '';
 eBookConfig.proxyuri_runs = '';
 eBookConfig.proxyuri_files = '';
 eBookConfig.enable_chatcodes =  false;
 </script>
 <!--*** Runestone Services ***-->
-<script src="_static/prefix-runtime.8b6d53d5a91823a0.bundle.js"></script><script src="_static/prefix-926.5c7038c8ef173faf.bundle.js"></script><script src="_static/prefix-runestone.2901d6466316ff22.bundle.js"></script><link rel="stylesheet" type="text/css" href="_static/prefix-926.229729d09512acc9.css">
+<script src="_static/prefix-runtime.cb5af2e851de3574.bundle.js"></script><script src="_static/prefix-926.5c7038c8ef173faf.bundle.js"></script><script src="_static/prefix-runestone.f51cd4153b45055d.bundle.js"></script><link rel="stylesheet" type="text/css" href="_static/prefix-926.229729d09512acc9.css">
 <link rel="stylesheet" type="text/css" href="_static/prefix-runestone.66fa8a682a32c0ac.css">
 <script src="_static/pretext/js/dist/lti_iframe_resizer.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.26.0/components/prism-core.min.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.26.0/plugins/autoloader/prism-autoloader.min.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.26.0/plugins/line-numbers/prism-line-numbers.min.js" integrity="sha512-dubtf8xMHSQlExGRQ5R7toxHLgSDZ0K7AunqPWHXmJQ8XyVIG19S1T95gBxlAeGOK02P4Da2RTnQz0Za0H0ebQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.26.0/plugins/line-highlight/prism-line-highlight.min.js" integrity="sha512-93uCmm0q+qO5Lb1huDqr7tywS8A2TFA+1/WHvyiWaK6/pvsFl6USnILagntBx8JnVbQH5s3n0vQZY6xNthNfKA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.9/lunr.min.js" integrity="sha512-4xUl/d6D6THrAnXAwGajXkoWaeMNwEKK4iNfq5DotEbLPAfk6FSxSP3ydNxqDgCw1c/0Z1Jg6L8h2j+++9BZmg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script><script src="lunr-pretext-search-index.js" async=""></script><script src="_static/pretext/js/dist/pretext_search.js"></script><!--knowl.js code controls Sage Cells within knowls--><script>sagecellEvalName='Evaluate (Sage)';
 </script>
 </head>
 <body id="cspossible" class="pretext book ignore-math">
-<a class="assistive" href="#ptx-content">Skip to main content</a><header id="ptx-masthead" class="ptx-masthead"><div class="ptx-banner">
+<a class="assistive" href="#ptx-content">Skip to main content</a><header id="ptx-masthead" class="ptx-masthead" role="banner"><div class="ptx-banner">
 <a id="logo-link" class="logo-link" target="_blank" href="http://localhost:8128/output/web/"></a><div class="title-container">
-<h1 class="heading"><a href="cspossible.html"><span class="title">CSPossible</span> <span class="subtitle">AP CSP 2027+ in Python</span></a></h1>
+<div class="heading ptx-banner-heading"><a href="cspossible.html"><span class="title">CSPossible</span> <span class="subtitle">AP CSP 2027+ in Python</span></a></div>
 <p class="byline"></p>
 </div>
 </div></header><nav id="ptx-navbar" class="ptx-navbar navbar"><div class="ptx-navbar-contents">
-<button class="toc-toggle button" title="Contents"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5d2;</span><span class="name">Contents</span></button><a class="index-button button" href="cspossible-9-1.html" title="Index"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe88e;</span><span class="name">Index</span></a><div class="ptx-search-box">
-<div class="ptx-search-widget"><button id="ptx-search-button" type="button" class="ptx-search-button button" title="Search book" commandfor="ptx-search-dialog" command="show-modal"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe8b6;</span><span class="name">Search Book</span></button></div>
-<dialog id="ptx-search-dialog" class="ptx-dialog ptx-search-dialog" closedby="closerequest"><div class="ptx-search-dialog-controls">
-<input aria-label="Search term" id="ptx-search-terms" class="ptx-search-terms" type="text" name="terms" placeholder="Search terms"><button aria-label="Close search" id="ptx-search-close" class="ptx-search-close" commandfor="ptx-search-dialog" command="close"><span class="material-symbols-outlined">close</span></button>
+<button id="ptx-toc-toggle" type="button" aria-controls="ptx-sidebar" class="toc-toggle button" title="Contents"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5d2;</span><span class="name">Contents</span></button><a class="index-button button" href="cspossible-9-1.html" title="Index"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe88e;</span><span class="name">Index</span></a><div class="ptx-search-box">
+<div class="ptx-search-widget"><button id="ptx-search-button" type="button" class="ptx-search-button button" title="Search Book"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe8b6;</span><span class="name">Search Book</span></button></div>
+<dialog id="ptx-search-dialog" class="ptx-dialog ptx-search-dialog"><div class="ptx-search-dialog-controls">
+<input aria-label="Search term" id="ptx-search-terms" class="ptx-search-terms" type="text" name="terms" placeholder="Search terms"><button aria-label="Close" id="ptx-search-close" class="ptx-search-close"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cd;</span></button>
 </div>
 <div id="ptx-search-status" class="ptx-search-status" aria-live="polite" aria-atomic="true"></div>
-<h2 class="ptx-search-results-heading">Search Results: </h2>
+<h2 class="heading ptx-search-results-heading">Search Results: </h2>
 <div id="ptx-search-empty" class="ptx-search-empty"><span>No results.</span></div>
 <ol id="ptx-search-results" class="ptx-search-results"></ol></dialog>
 </div>
-<span class="nav-other-controls"><button id="light-dark-button" class="light-dark-button button" title="Dark Mode"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe51c;</span><span class="name">Dark Mode</span></button></span><span class="treebuttons"><a class="previous-button button" href="topic-1-5-sequencing.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="up-button button" href="unit1.html" title="Up"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Up</span></a><a class="next-button button" href="topic-1-7-expressions.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a></span><span class="nav-runestone-controls"><button onclick="runestoneComponents.popupScratchAC()" class="activecode-toggle button" title="Open Scratch ActiveCode"><span class="icon material-symbols-outlined" aria-hidden="true">&#xf097;</span><span class="name">Scratch ActiveCode</span></button></span>
+<span class="nav-other-controls"><button id="ptx-readability-options-button" class="ptx-readability-options-button button" title="Readability settings"><span class="icon material-symbols-outlined" aria-hidden="true">&#xf6f1;</span><span class="name">Readability settings</span></button><dialog class="ptx-dialog ptx-readability-options-popup" id="ptx-readability-options-popup"><div class="ptx-readability-options-popup-controls">
+<h2 class="heading">Readability settings</h2>
+<button class="ptx-readability-options-close-button button" id="ptx-readability-options-close-button" title="Close"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cd;</span></button>
+</div>
+<div class="ptx-readability-options-group">
+<label class="ptx-readability-slider-label" for="ptx-readability-line-height"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe240;</span><span>Line height</span><output id="ptx-readability-line-height-value" for="ptx-readability-line-height">1.35</output></label><input type="range" id="ptx-readability-line-height" min="1.10" max="3" step="0.05" value="1.35">
+</div>
+<div class="ptx-readability-options-group">
+<label class="ptx-readability-slider-label" for="ptx-readability-font-size"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe245;</span><span>Content font size</span><output id="ptx-readability-font-size-value" for="ptx-readability-font-size">100%</output></label><input type="range" id="ptx-readability-font-size" min="0.8" max="1.5" step="0.05" value="1">
+</div>
+<fieldset class="ptx-readability-options-group ptx-readability-options-group-theme">
+<legend>Theme</legend>
+<label for="ptx-readability-theme-system"><input type="radio" name="ptx-readability-theme" id="ptx-readability-theme-system" value="system"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe1ab;</span><span>System</span></label><label for="ptx-readability-theme-light"><input type="radio" name="ptx-readability-theme" id="ptx-readability-theme-light" value="light"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe518;</span><span>Light</span></label><label for="ptx-readability-theme-dark"><input type="radio" name="ptx-readability-theme" id="ptx-readability-theme-dark" value="dark"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe51c;</span><span>Dark</span></label>
+</fieldset>
+<fieldset class="ptx-readability-options-group">
+<legend>Assistive technologies</legend>
+<label for="ptx-readability-accessible-permalinks"><input type="checkbox" id="ptx-readability-accessible-permalinks"><span>🔗</span><span>Expose permalinks</span></label>
+</fieldset>
+<div class="ptx-readability-options-group"><button type="button" class="ptx-readability-reset-button button" id="ptx-readability-reset-button"><span class="icon material-symbols-outlined" aria-hidden="true">&#xf053;</span><span class="name">Reset All</span></button></div></dialog></span><span class="treebuttons"><a class="previous-button button" href="topic-1-5-sequencing.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="up-button button" href="unit1.html" title="Up"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Up</span></a><a class="next-button button" href="topic-1-7-expressions.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a></span><span class="nav-runestone-controls"><button onclick="runestoneComponents.popupScratchAC()" class="activecode-toggle button" title="Scratch ActiveCode"><span class="icon material-symbols-outlined" aria-hidden="true">&#xf097;</span><span class="name">Scratch ActiveCode</span></button></span>
 </div></nav><div id="latex-macros" class="hidden-content process-math" style="display:none"><span class="process-math">\(
 \newcommand{\lt}{&lt;}
 \newcommand{\gt}{&gt;}
@@ -97,14 +115,14 @@ eBookConfig.enable_chatcodes =  false;
 \newcommand{\fillinmath}[1]{\mathchoice{\colorbox{fillinmathshade}{$\displaystyle     \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\textstyle        \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptstyle      \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptscriptstyle\phantom{\,#1\,}$}}}
 \)</span></div>
 <div class="ptx-page">
-<div id="ptx-sidebar" class="ptx-sidebar"><nav id="ptx-toc" class="ptx-toc depth3 focused" data-preexpanded-levels="0" data-max-levels="3"><ul class="structural toc-item-list contains-active">
+<div id="ptx-sidebar" role="complementary" class="ptx-sidebar"><nav id="ptx-toc" tabindex="-1" aria-label="Contents" class="ptx-toc depth3 focused" data-preexpanded-levels="0" data-max-levels="3"><ul class="structural toc-item-list contains-active">
 <li class="toc-item toc-chapter"><div class="toc-title-box"><a href="unit0.html" class="internal"><span class="codenumber">0</span> <span class="title">Getting Started</span></a></div></li>
 <li class="toc-item toc-chapter contains-active">
 <div class="toc-title-box"><a href="unit1.html" class="internal"><span class="codenumber">1</span> <span class="title">Creating Purposeful Apps and Programs</span></a></div>
-<ul class="structural toc-item-list contains-active">
+<ul class="structural toc-item-list contains-active" id="ptx-toc-group-unit1">
 <li class="toc-item toc-section">
 <div class="toc-title-box"><a href="topic-1-1-purpose.html" class="internal"><span class="codenumber">1.1</span> <span class="title">Purpose and Behavior</span></a></div>
-<ul class="structural toc-item-list">
+<ul id="ptx-toc-group-topic-1-1-purpose" class="structural toc-item-list">
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="topic-1-1-purpose.html#topic-1-1-purpose-4" class="internal"><span class="codenumber">1.1.1</span> <span class="title">Purpose and Behavior of Apps</span></a></div></li>
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="topic-1-1-purpose.html#topic-1-1-purpose-5" class="internal"><span class="codenumber">1.1.2</span> <span class="title">Inputs and Outputs</span></a></div></li>
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="topic-1-1-purpose.html#LOs-1-1" class="internal"><span class="codenumber">1.1.3</span> <span class="title">Learning Objectives Review</span></a></div></li>
@@ -113,7 +131,7 @@ eBookConfig.enable_chatcodes =  false;
 </li>
 <li class="toc-item toc-section">
 <div class="toc-title-box"><a href="topic-1-2-collaboration.html" class="internal"><span class="codenumber">1.2</span> <span class="title">Benefits of Collaboration</span></a></div>
-<ul class="structural toc-item-list">
+<ul id="ptx-toc-group-topic-1-2-collaboration" class="structural toc-item-list">
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="topic-1-2-collaboration.html#collaboration" class="internal"><span class="codenumber">1.2.1</span> <span class="title">Collaboration</span></a></div></li>
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="topic-1-2-collaboration.html#user-testing" class="internal"><span class="codenumber">1.2.2</span> <span class="title">User Testing</span></a></div></li>
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="topic-1-2-collaboration.html#iterative-process" class="internal"><span class="codenumber">1.2.3</span> <span class="title">Iterative Process</span></a></div></li>
@@ -124,7 +142,7 @@ eBookConfig.enable_chatcodes =  false;
 </li>
 <li class="toc-item toc-section">
 <div class="toc-title-box"><a href="topic-1-3-responsible-ai.html" class="internal"><span class="codenumber">1.3</span> <span class="title">Responsible AI and Human Decision-Making</span></a></div>
-<ul class="structural toc-item-list">
+<ul id="ptx-toc-group-topic-1-3-responsible-ai" class="structural toc-item-list">
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="topic-1-3-responsible-ai.html#ai-data" class="internal"><span class="codenumber">1.3.1</span> <span class="title">AI and Data</span></a></div></li>
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="topic-1-3-responsible-ai.html#ai-models" class="internal"><span class="codenumber">1.3.2</span> <span class="title">Machine Learning and AI Models</span></a></div></li>
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="topic-1-3-responsible-ai.html#teachable-machine" class="internal"><span class="codenumber">1.3.3</span> <span class="title">Teachable Machine Project</span></a></div></li>
@@ -136,7 +154,7 @@ eBookConfig.enable_chatcodes =  false;
 </li>
 <li class="toc-item toc-section">
 <div class="toc-title-box"><a href="topic-1-4-binary.html" class="internal"><span class="codenumber">1.4</span> <span class="title">Binary Representation</span></a></div>
-<ul class="structural toc-item-list">
+<ul id="ptx-toc-group-topic-1-4-binary" class="structural toc-item-list">
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="topic-1-4-binary.html#data-bits" class="internal"><span class="codenumber">1.4.1</span> <span class="title">Data and Bits</span></a></div></li>
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="topic-1-4-binary.html#binary" class="internal"><span class="codenumber">1.4.2</span> <span class="title">Binary Numbers</span></a></div></li>
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="topic-1-4-binary.html#abstraction" class="internal"><span class="codenumber">1.4.3</span> <span class="title">Abstraction</span></a></div></li>
@@ -148,7 +166,7 @@ eBookConfig.enable_chatcodes =  false;
 </li>
 <li class="toc-item toc-section">
 <div class="toc-title-box"><a href="topic-1-5-sequencing.html" class="internal"><span class="codenumber">1.5</span> <span class="title">Sequencing</span></a></div>
-<ul class="structural toc-item-list">
+<ul id="ptx-toc-group-topic-1-5-sequencing" class="structural toc-item-list">
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="topic-1-5-sequencing.html#sequencing" class="internal"><span class="codenumber">1.5.1</span> <span class="title">Sequencing in Written Steps and Flowcharts</span></a></div></li>
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="topic-1-5-sequencing.html#print" class="internal"><span class="codenumber">1.5.2</span> <span class="title">Python Output with <code class="code-inline tex2jax_ignore">print()</code></span></a></div></li>
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="topic-1-5-sequencing.html#sequencing-print" class="internal"><span class="codenumber">1.5.3</span> <span class="title">Sequencing in Code</span></a></div></li>
@@ -163,7 +181,7 @@ eBookConfig.enable_chatcodes =  false;
 </li>
 <li class="toc-item toc-section contains-active">
 <div class="toc-title-box"><a href="topic-1-6-variables.html" class="internal"><span class="codenumber">1.6</span> <span class="title">Variables</span></a></div>
-<ul class="structural toc-item-list active">
+<ul class="structural toc-item-list active" id="ptx-toc-group-topic-1-6-variables">
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="topic-1-6-variables.html#vars-in-apps" class="internal"><span class="codenumber">1.6.1</span> <span class="title">Identifying Variables in Apps</span></a></div></li>
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="topic-1-6-variables.html#python-vars" class="internal"><span class="codenumber">1.6.2</span> <span class="title">Variables in Python</span></a></div></li>
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="topic-1-6-variables.html#data-types" class="internal"><span class="codenumber">1.6.3</span> <span class="title">Data Types</span></a></div></li>
@@ -179,7 +197,7 @@ eBookConfig.enable_chatcodes =  false;
 </li>
 <li class="toc-item toc-section">
 <div class="toc-title-box"><a href="topic-1-7-expressions.html" class="internal"><span class="codenumber">1.7</span> <span class="title">Mathematical Expressions</span></a></div>
-<ul class="structural toc-item-list">
+<ul id="ptx-toc-group-topic-1-7-expressions" class="structural toc-item-list">
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="topic-1-7-expressions.html#expressions" class="internal"><span class="codenumber">1.7.1</span> <span class="title">Mathematical Expressions</span></a></div></li>
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="topic-1-7-expressions.html#updating-state" class="internal"><span class="codenumber">1.7.2</span> <span class="title">Updating State with Expressions</span></a></div></li>
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="topic-1-7-expressions.html#operators" class="internal"><span class="codenumber">1.7.3</span> <span class="title">Arithmetic Operators</span></a></div></li>
@@ -193,7 +211,7 @@ eBookConfig.enable_chatcodes =  false;
 </li>
 <li class="toc-item toc-section">
 <div class="toc-title-box"><a href="unit1-summary.html" class="internal"><span class="codenumber">1.8</span> <span class="title">Unit 1 Summary</span></a></div>
-<ul class="structural toc-item-list">
+<ul id="ptx-toc-group-unit1-summary" class="structural toc-item-list">
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="unit1-summary.html#unit1-summary-objectives" class="internal"><span class="codenumber">1.8.1</span> <span class="title">Unit 1 Learning Objectives</span></a></div></li>
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="unit1-summary.html#unit1-summary-vocab" class="internal"><span class="codenumber">1.8.2</span> <span class="title">Unit 1 Vocabulary</span></a></div></li>
 </ul>
@@ -203,11 +221,11 @@ eBookConfig.enable_chatcodes =  false;
 <li class="toc-item toc-section"><div class="toc-title-box"><a href="unit1-coding-practice.html" class="internal"><span class="codenumber">1.11</span> <span class="title">Unit 1 Coding Practice Exercises</span></a></div></li>
 <li class="toc-item toc-section">
 <div class="toc-title-box"><a href="unit1-appinventor-setup.html" class="internal"><span class="codenumber">1.12</span> <span class="title">App Inventor Setup (Optional)</span></a></div>
-<ul class="structural toc-item-list"><li class="toc-item toc-subsection"><div class="toc-title-box"><a href="unit1-appinventor-setup.html#unit1-appinventor-setup-steps" class="internal"><span class="codenumber">1.12.1</span> <span class="title">App Inventor Setup Steps</span></a></div></li></ul>
+<ul id="ptx-toc-group-unit1-appinventor-setup" class="structural toc-item-list"><li class="toc-item toc-subsection"><div class="toc-title-box"><a href="unit1-appinventor-setup.html#unit1-appinventor-setup-steps" class="internal"><span class="codenumber">1.12.1</span> <span class="title">App Inventor Setup Steps</span></a></div></li></ul>
 </li>
 <li class="toc-item toc-section">
 <div class="toc-title-box"><a href="unit1-appinventor-paint.html" class="internal"><span class="codenumber">1.13</span> <span class="title">App Inventor Paint Pot Tutorial (Optional)</span></a></div>
-<ul class="structural toc-item-list">
+<ul id="ptx-toc-group-unit1-appinventor-paint" class="structural toc-item-list">
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="unit1-appinventor-paint.html#paint-part1" class="internal"><span class="codenumber">1.13.1</span> <span class="title">Paint Pot Tutorial Part 1</span></a></div></li>
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="unit1-appinventor-paint.html#paint-part2" class="internal"><span class="codenumber">1.13.2</span> <span class="title">Paint Pot Tutorial Part 2</span></a></div></li>
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="unit1-appinventor-paint.html#paint-enhancements" class="internal"><span class="codenumber">1.13.3</span> <span class="title">Paint Pot Enhancements</span></a></div></li>
@@ -218,20 +236,22 @@ eBookConfig.enable_chatcodes =  false;
 </li>
 <li class="toc-item toc-chapter">
 <div class="toc-title-box"><a href="unit2.html" class="internal"><span class="codenumber">2</span> <span class="title">Building Solutions using Selection and Iteration</span></a></div>
-<ul class="structural toc-item-list">
+<ul id="ptx-toc-group-unit2" class="structural toc-item-list">
 <li class="toc-item toc-section">
 <div class="toc-title-box"><a href="topic-2-1-program-design-development.html" class="internal"><span class="codenumber">2.1</span> <span class="title">Program Design and Development</span></a></div>
-<ul class="structural toc-item-list">
-<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="topic-2-1-program-design-development.html#topic-2-1-program-design-development-4" class="internal"><span class="codenumber">2.1.1</span> <span class="title">Learning Objectives</span></a></div></li>
-<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="topic-2-1-program-design-development.html#topic-2-1-program-design-development-5" class="internal"><span class="codenumber">2.1.2</span> <span class="title">The Development Process</span></a></div></li>
-<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="topic-2-1-program-design-development.html#topic-2-1-program-design-development-6" class="internal"><span class="codenumber">2.1.3</span> <span class="title">Design and User Research</span></a></div></li>
-<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="topic-2-1-program-design-development.html#topic-2-1-program-design-development-7" class="internal"><span class="codenumber">2.1.4</span> <span class="title">Documentation</span></a></div></li>
-<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="topic-2-1-program-design-development.html#topic-2-1-program-design-development-8" class="internal"><span class="codenumber">2.1.5</span> <span class="title">Reusing and Citing Digital Content</span></a></div></li>
+<ul id="ptx-toc-group-topic-2-1-program-design-development" class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="topic-2-1-program-design-development.html#development-process" class="internal"><span class="codenumber">2.1.1</span> <span class="title">The Development Process</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="topic-2-1-program-design-development.html#design-thinking" class="internal"><span class="codenumber">2.1.2</span> <span class="title">Design Thinking</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="topic-2-1-program-design-development.html#user-research" class="internal"><span class="codenumber">2.1.3</span> <span class="title">User Research and Feedback</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="topic-2-1-program-design-development.html#documentation" class="internal"><span class="codenumber">2.1.4</span> <span class="title">Documentation</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="topic-2-1-program-design-development.html#topic-2-1-program-design-development-9" class="internal"><span class="codenumber">2.1.5</span> <span class="title">Reusing and Citing Digital Content</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="topic-2-1-program-design-development.html#LOs-2-1" class="internal"><span class="codenumber">2.1.6</span> <span class="title">Learning Objectives Review</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="topic-2-1-program-design-development.html#vocab-2-1" class="internal"><span class="codenumber">2.1.7</span> <span class="title">Vocabulary Review</span></a></div></li>
 </ul>
 </li>
 <li class="toc-item toc-section">
 <div class="toc-title-box"><a href="topic-2-2-boolean-expressions.html" class="internal"><span class="codenumber">2.2</span> <span class="title">Boolean Expressions</span></a></div>
-<ul class="structural toc-item-list">
+<ul id="ptx-toc-group-topic-2-2-boolean-expressions" class="structural toc-item-list">
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="topic-2-2-boolean-expressions.html#decisions" class="internal"><span class="codenumber">2.2.1</span> <span class="title">Boolean Expressions and Decision Making</span></a></div></li>
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="topic-2-2-boolean-expressions.html#relational-operators" class="internal"><span class="codenumber">2.2.2</span> <span class="title">Relational Operators</span></a></div></li>
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="topic-2-2-boolean-expressions.html#logical-operators" class="internal"><span class="codenumber">2.2.3</span> <span class="title">Logical Operators</span></a></div></li>
@@ -242,7 +262,7 @@ eBookConfig.enable_chatcodes =  false;
 </li>
 <li class="toc-item toc-section">
 <div class="toc-title-box"><a href="topic-2-3-selection.html" class="internal"><span class="codenumber">2.3</span> <span class="title">Selection</span></a></div>
-<ul class="structural toc-item-list">
+<ul id="ptx-toc-group-topic-2-3-selection" class="structural toc-item-list">
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="topic-2-3-selection.html#topic-2-3-selection-8" class="internal"><span class="codenumber">2.3.1</span> <span class="title">Selection in Algorithms</span></a></div></li>
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="topic-2-3-selection.html#if-statements" class="internal"><span class="codenumber">2.3.2</span> <span class="title">Conditional Statements (If Statements)</span></a></div></li>
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="topic-2-3-selection.html#if-else" class="internal"><span class="codenumber">2.3.3</span> <span class="title">If-Else Statements</span></a></div></li>
@@ -254,7 +274,7 @@ eBookConfig.enable_chatcodes =  false;
 </li>
 <li class="toc-item toc-section">
 <div class="toc-title-box"><a href="topic-2-4-iteration.html" class="internal"><span class="codenumber">2.4</span> <span class="title">Iteration</span></a></div>
-<ul class="structural toc-item-list">
+<ul id="ptx-toc-group-topic-2-4-iteration" class="structural toc-item-list">
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="topic-2-4-iteration.html#topic-2-4-iteration-4" class="internal"><span class="codenumber">2.4.1</span> <span class="title">Learning Objectives</span></a></div></li>
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="topic-2-4-iteration.html#topic-2-4-iteration-5" class="internal"><span class="codenumber">2.4.2</span> <span class="title">Iteration in Algorithms</span></a></div></li>
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="topic-2-4-iteration.html#topic-2-4-iteration-6" class="internal"><span class="codenumber">2.4.3</span> <span class="title">Loop Statements</span></a></div></li>
@@ -262,7 +282,7 @@ eBookConfig.enable_chatcodes =  false;
 </li>
 <li class="toc-item toc-section">
 <div class="toc-title-box"><a href="topic-2-5-algorithm-development.html" class="internal"><span class="codenumber">2.5</span> <span class="title">Algorithm Development</span></a></div>
-<ul class="structural toc-item-list">
+<ul id="ptx-toc-group-topic-2-5-algorithm-development" class="structural toc-item-list">
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="topic-2-5-algorithm-development.html#topic-2-5-algorithm-development-4" class="internal"><span class="codenumber">2.5.1</span> <span class="title">Learning Objectives</span></a></div></li>
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="topic-2-5-algorithm-development.html#topic-2-5-algorithm-development-5" class="internal"><span class="codenumber">2.5.2</span> <span class="title">Developing Algorithms</span></a></div></li>
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="topic-2-5-algorithm-development.html#topic-2-5-algorithm-development-6" class="internal"><span class="codenumber">2.5.3</span> <span class="title">Comparing Algorithms</span></a></div></li>
@@ -270,7 +290,7 @@ eBookConfig.enable_chatcodes =  false;
 </li>
 <li class="toc-item toc-section">
 <div class="toc-title-box"><a href="topic-2-6-errors.html" class="internal"><span class="codenumber">2.6</span> <span class="title">Errors</span></a></div>
-<ul class="structural toc-item-list">
+<ul id="ptx-toc-group-topic-2-6-errors" class="structural toc-item-list">
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="topic-2-6-errors.html#topic-2-6-errors-4" class="internal"><span class="codenumber">2.6.1</span> <span class="title">Learning Objectives</span></a></div></li>
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="topic-2-6-errors.html#topic-2-6-errors-5" class="internal"><span class="codenumber">2.6.2</span> <span class="title">Correcting Errors</span></a></div></li>
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="topic-2-6-errors.html#topic-2-6-errors-6" class="internal"><span class="codenumber">2.6.3</span> <span class="title">Testing and Test Cases</span></a></div></li>
@@ -278,7 +298,7 @@ eBookConfig.enable_chatcodes =  false;
 </li>
 <li class="toc-item toc-section">
 <div class="toc-title-box"><a href="unit2-summary.html" class="internal"><span class="codenumber">2.7</span> <span class="title">Unit 2 Summary</span></a></div>
-<ul class="structural toc-item-list">
+<ul id="ptx-toc-group-unit2-summary" class="structural toc-item-list">
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="unit2-summary.html#unit2-summary-objectives" class="internal"><span class="codenumber">2.7.1</span> <span class="title">Unit 2 Learning Objectives</span></a></div></li>
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="unit2-summary.html#unit2-summary-vocab" class="internal"><span class="codenumber">2.7.2</span> <span class="title">Unit 2 Vocabulary</span></a></div></li>
 </ul>
@@ -289,50 +309,50 @@ eBookConfig.enable_chatcodes =  false;
 <li class="toc-item toc-chapter"><div class="toc-title-box"><a href="unit4.html" class="internal"><span class="codenumber">4</span> <span class="title">Making Data-Driven Decisions using the Internet and AI</span></a></div></li>
 <li class="toc-item toc-backmatter">
 <div class="toc-title-box"><a href="cspossible-9.html" class="internal"><span class="title">Back Matter</span></a></div>
-<ul class="structural toc-item-list"><li class="toc-item toc-index"><div class="toc-title-box"><a href="cspossible-9-1.html" class="internal"><span class="title">Index</span></a></div></li></ul>
+<ul id="ptx-toc-group-cspossible-9" class="structural toc-item-list"><li class="toc-item toc-index"><div class="toc-title-box"><a href="cspossible-9-1.html" class="internal"><span class="title">Index</span></a></div></li></ul>
 </li>
 </ul></nav></div>
 <main class="ptx-main"><div id="ptx-content" class="ptx-content">
 <section class="section" id="topic-1-6-variables">
-<h2 class="heading hide-type">
+<h1 class="heading hide-type">
 <span class="type">Section</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">1.6</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Variables</span>
-</h2>
+</h1>
 <div class="time">
 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-clock" viewBox="0 0 16 16"><path d="M8 3.5a.5.5 0 0 0-1 0V9a.5.5 0 0 0 .252.434l3.5 2a.5.5 0 0 0 .496-.868L8 8.71V3.5z"></path><path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm7-8A7 7 0 1 1 1 8a7 7 0 0 1 14 0z"></path></svg><span>90 minutes</span>
 </div>
 <section class="introduction" id="topic-1-6-variables-4">
 <div class="para" id="topic-1-6-variables-4-1">
-<dfn class="terminology">Variables</dfn> are named memory locations that store values used by a program. These values can change or vary as the program runs. A variable is like a box with a label where different values can be put into the box. For example, when you interact with an app or game, there may be variables that store your name or your score, and these variables can be used by the app to customize how it behaves or the information it displays. In this section, you will learn how to identify variables in apps and how to use them in Python <code class="code-inline tex2jax_ignore">print</code> and <code class="code-inline tex2jax_ignore">input</code> statements.<div class="autopermalink" data-description="Paragraph"><a href="#topic-1-6-variables-4-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<dfn class="terminology">Variables</dfn> are named memory locations that store values used by a program. These values can change or vary as the program runs. A variable is like a box with a label where different values can be put into the box. For example, when you interact with an app or game, there may be variables that store your name or your score, and these variables can be used by the app to customize how it behaves or the information it displays. In this section, you will learn how to identify variables in apps and how to use them in Python <code class="code-inline tex2jax_ignore">print</code> and <code class="code-inline tex2jax_ignore">input</code> statements.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#topic-1-6-variables-4-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="image-box" style="width: 25%; margin-left: 37.5%; margin-right: 37.5%;"><img src="external/_static/Unit1images/variable-box.png" class="contained"></div></section>
 <section class="subsection" id="vars-in-apps">
-<h3 class="heading hide-type">
+<h2 class="heading hide-type">
 <span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">1.6.1</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Identifying Variables in Apps</span>
-</h3>
-<article class="note remark-like" id="vars-in-apps-2"><h4 class="heading">
+</h2>
+<article class="note remark-like" id="vars-in-apps-2"><h3 class="heading">
 <span class="type">Essential Knowledge</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">1.6.1</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">1.6.A.1.</span>
-</h4>
-<div class="para" id="vars-in-apps-2-2">A <dfn class="terminology">variable</dfn> is a named storage location used to hold a value that can change while the program is running. It is an abstraction that lets programmers use a name to represent a value.<div class="autopermalink" data-description="Paragraph"><a href="#vars-in-apps-2-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</h3>
+<div class="para" id="vars-in-apps-2-2">A <dfn class="terminology">variable</dfn> is a named storage location used to hold a value that can change while the program is running. It is an abstraction that lets programmers use a name to represent a value.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#vars-in-apps-2-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Essential Knowledge 1.6.1: 1.6.A.1"><a href="#vars-in-apps-2" title="Copy heading and permalink for Essential Knowledge 1.6.1: 1.6.A.1" aria-label="Copy heading and permalink for Essential Knowledge 1.6.1: 1.6.A.1">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Essential Knowledge 1.6.1: 1.6.A.1"><a tabindex="-1" href="#vars-in-apps-2" title="Copy heading and permalink for Essential Knowledge 1.6.1: 1.6.A.1" aria-label="Copy heading and permalink for Essential Knowledge 1.6.1: 1.6.A.1">🔗</a></div>
 </article>
-<article class="note remark-like" id="vars-in-apps-3"><h4 class="heading">
+<article class="note remark-like" id="vars-in-apps-3"><h3 class="heading">
 <span class="type">Essential Knowledge</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">1.6.2</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">1.6.A.2.</span>
-</h4>
-<div class="para" id="vars-in-apps-3-2">Apps use variables to keep track of changing information by updating their values as the user interacts with the app. Programs can then use a variable’s current value to decide what to do next and what feedback to provide, such as updating the screen, playing a sound, or triggering a vibration.<div class="autopermalink" data-description="Paragraph"><a href="#vars-in-apps-3-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</h3>
+<div class="para" id="vars-in-apps-3-2">Apps use variables to keep track of changing information by updating their values as the user interacts with the app. Programs can then use a variable’s current value to decide what to do next and what feedback to provide, such as updating the screen, playing a sound, or triggering a vibration.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#vars-in-apps-3-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Essential Knowledge 1.6.2: 1.6.A.2"><a href="#vars-in-apps-3" title="Copy heading and permalink for Essential Knowledge 1.6.2: 1.6.A.2" aria-label="Copy heading and permalink for Essential Knowledge 1.6.2: 1.6.A.2">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Essential Knowledge 1.6.2: 1.6.A.2"><a tabindex="-1" href="#vars-in-apps-3" title="Copy heading and permalink for Essential Knowledge 1.6.2: 1.6.A.2" aria-label="Copy heading and permalink for Essential Knowledge 1.6.2: 1.6.A.2">🔗</a></div>
 </article>
-<div class="para" id="vars-in-apps-4">Try the following pizza web app by typing in your name and choosing different options. Think about the inputs and outputs to the app. When you type in your name and other inputs, your information gets saved in <dfn class="terminology">variables</dfn> in the program. These values can then be used in the outputs of the app.<div class="autopermalink" data-description="Paragraph"><a href="#vars-in-apps-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="vars-in-apps-4">Try the following pizza web app by typing in your name and choosing different options. Think about the inputs and outputs to the app. When you type in your name and other inputs, your information gets saved in <dfn class="terminology">variables</dfn> in the program. These values can then be used in the outputs of the app.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#vars-in-apps-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="interactive-iframe-container"><iframe src="external/webapps/pizzaApp.html" id="vars-in-apps-5" style="width:600px; height:288px; display: block; "></iframe></div>
 <div class="interactive-iframe-container__opener"><a href="vars-in-apps-5.html" title="Open in new tab" aria-label="Open in new tab" target="_blank"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe89e;</span></a></div>
-<article class="activity project-like" id="pizzaAppVars"><h4 class="heading">
+<article class="activity project-like" id="pizzaAppVars"><h3 class="heading">
 <span class="type">Activity</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">1.6.1</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
-</h4>
+</h3>
 <div class="ptx-runestone-container"><div class="runestone multiplechoice_section">
 <div class="exercise-statement">
-<div class="para" id="pizzaAppVars-1-1">Interact with the pizza app above. Which of the following are variables that the app above might use to store information about the user.<div class="autopermalink" data-description="Paragraph"><a href="#pizzaAppVars-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="pizzaAppVars-1-1">Interact with the pizza app above. Which of the following are variables that the app above might use to store information about the user.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#pizzaAppVars-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 </div>
 <ul data-component="multiplechoice" class="exercise-interactives" id="rs-pizzaAppVars" data-multipleanswers="true" data-random="">
@@ -372,68 +392,68 @@ eBookConfig.enable_chatcodes =  false;
 </li>
 </ul>
 </div></div>
-<div class="autopermalink" data-description="Activity 1.6.1"><a href="#pizzaAppVars" title="Copy heading and permalink for Activity 1.6.1" aria-label="Copy heading and permalink for Activity 1.6.1">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Activity 1.6.1"><a tabindex="-1" href="#pizzaAppVars" title="Copy heading and permalink for Activity 1.6.1" aria-label="Copy heading and permalink for Activity 1.6.1">🔗</a></div>
 </article>
-<article class="note remark-like" id="vars-in-apps-9"><h4 class="heading">
+<article class="note remark-like" id="vars-in-apps-9"><h3 class="heading">
 <span class="type">Essential Knowledge</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">1.6.3</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">1.6.A.5.</span>
-</h4>
-<div class="para" id="vars-in-apps-9-2">Variables are often used to store information about the user or a program’s state, such as a username, a selected theme, a score, progress toward a goal, a shopping cart total, or whether notifications are on. The program can use the stored value to adjust its behavior or display the value to the user.<div class="autopermalink" data-description="Paragraph"><a href="#vars-in-apps-9-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</h3>
+<div class="para" id="vars-in-apps-9-2">Variables are often used to store information about the user or a program’s state, such as a username, a selected theme, a score, progress toward a goal, a shopping cart total, or whether notifications are on. The program can use the stored value to adjust its behavior or display the value to the user.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#vars-in-apps-9-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Essential Knowledge 1.6.3: 1.6.A.5"><a href="#vars-in-apps-9" title="Copy heading and permalink for Essential Knowledge 1.6.3: 1.6.A.5" aria-label="Copy heading and permalink for Essential Knowledge 1.6.3: 1.6.A.5">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Essential Knowledge 1.6.3: 1.6.A.5"><a tabindex="-1" href="#vars-in-apps-9" title="Copy heading and permalink for Essential Knowledge 1.6.3: 1.6.A.5" aria-label="Copy heading and permalink for Essential Knowledge 1.6.3: 1.6.A.5">🔗</a></div>
 </article>
-<article class="note remark-like" id="vars-in-apps-10"><h4 class="heading">
+<article class="note remark-like" id="vars-in-apps-10"><h3 class="heading">
 <span class="type">Essential Knowledge</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">1.6.4</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">1.6.A.6.</span>
-</h4>
+</h3>
 <div class="para" id="vars-in-apps-10-2">
-<dfn class="terminology">Program state</dfn> is the set of values and information a program is storing at a specific moment, including variable values and any inputs it is using. As the program runs, the state changes when inputs are received and variables are updated.<div class="autopermalink" data-description="Paragraph"><a href="#vars-in-apps-10-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<dfn class="terminology">Program state</dfn> is the set of values and information a program is storing at a specific moment, including variable values and any inputs it is using. As the program runs, the state changes when inputs are received and variables are updated.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#vars-in-apps-10-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Essential Knowledge 1.6.4: 1.6.A.6"><a href="#vars-in-apps-10" title="Copy heading and permalink for Essential Knowledge 1.6.4: 1.6.A.6" aria-label="Copy heading and permalink for Essential Knowledge 1.6.4: 1.6.A.6">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Essential Knowledge 1.6.4: 1.6.A.6"><a tabindex="-1" href="#vars-in-apps-10" title="Copy heading and permalink for Essential Knowledge 1.6.4: 1.6.A.6" aria-label="Copy heading and permalink for Essential Knowledge 1.6.4: 1.6.A.6">🔗</a></div>
 </article>
-<div class="para" id="vars-in-apps-11">Some video games keep a list of players with the highest scores in the game. Each entry in the list a snapshot of the <dfn class="terminology">program state</dfn> at a certain time. For example, the player with the name or initials "AKI" had a score of 12,000 at a certain point.<div class="autopermalink" data-description="Paragraph"><a href="#vars-in-apps-11" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="vars-in-apps-11">Some video games keep a list of players with the highest scores in the game. Each entry in the list a snapshot of the <dfn class="terminology">program state</dfn> at a certain time. For example, the player with the name or initials "AKI" had a score of 12,000 at a certain point.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#vars-in-apps-11" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="image-box" style="width: 30%; margin-left: 35%; margin-right: 35%;"><img src="external/_static/Unit1images/highScores.png" class="contained"></div>
-<article class="note remark-like" id="vars-in-apps-13"><h4 class="heading">
+<article class="note remark-like" id="vars-in-apps-13"><h3 class="heading">
 <span class="type">Essential Knowledge</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">1.6.5</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">1.6.A.7.</span>
-</h4>
-<div class="para" id="vars-in-apps-13-2">Users can infer the use of variables in an app by observing information that changes over time, such as counters, totals, settings, progress, or status, and reasoning about what values the app must store and update to produce those changes.<div class="autopermalink" data-description="Paragraph"><a href="#vars-in-apps-13-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</h3>
+<div class="para" id="vars-in-apps-13-2">Users can infer the use of variables in an app by observing information that changes over time, such as counters, totals, settings, progress, or status, and reasoning about what values the app must store and update to produce those changes.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#vars-in-apps-13-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Essential Knowledge 1.6.5: 1.6.A.7"><a href="#vars-in-apps-13" title="Copy heading and permalink for Essential Knowledge 1.6.5: 1.6.A.7" aria-label="Copy heading and permalink for Essential Knowledge 1.6.5: 1.6.A.7">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Essential Knowledge 1.6.5: 1.6.A.7"><a tabindex="-1" href="#vars-in-apps-13" title="Copy heading and permalink for Essential Knowledge 1.6.5: 1.6.A.7" aria-label="Copy heading and permalink for Essential Knowledge 1.6.5: 1.6.A.7">🔗</a></div>
 </article>
-<article class="activity project-like" id="program-state-score"><h4 class="heading">
+<article class="activity project-like" id="program-state-score"><h3 class="heading">
 <span class="type">Activity</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">1.6.2</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
-</h4>
+</h3>
 <div class="ptx-runestone-container"><div class="runestone">
 <div data-component="fillintheblank" class="fillintheblank" style="visibility: hidden;" id="rs-program-state-score"><script type="application/json">{
-"problemHtml": "\n<div class=\"para\" id=\"program-state-score-1-1\">Assume that you are playing a game that starts with the score at 0. As you play, you earn or lose the following points from your score. Each event below is a program state. What is your score in the last program state?<div class=\"autopermalink\" data-description=\"Paragraph\"><a href=\"#program-state-score-1-1\" title=\"Copy heading and permalink for Paragraph\" aria-label=\"Copy heading and permalink for Paragraph\">🔗<\/a><\/div><\/div><pre class=\"code-block tex2jax_ignore clipboardable\">Player earns 10 points.\nPlayer earns 5 points.\nPlayer loses 3 points.\nYour score is?\n<\/pre>\n<div class=\"para\" id=\"program-state-score-1-3\"><input type=\"text\" id=\"-blank1\"\/><div class=\"autopermalink\" data-description=\"Paragraph\"><a href=\"#program-state-score-1-3\" title=\"Copy heading and permalink for Paragraph\" aria-label=\"Copy heading and permalink for Paragraph\">🔗<\/a><\/div><\/div>",
+"problemHtml": "\n<div class=\"para\" id=\"program-state-score-1-1\">Assume that you are playing a game that starts with the score at 0. As you play, you earn or lose the following points from your score. Each event below is a program state. What is your score in the last program state?<div class=\"autopermalink\" aria-hidden=\"true\" data-description=\"Paragraph\"><a tabindex=\"-1\" href=\"#program-state-score-1-1\" title=\"Copy heading and permalink for Paragraph\" aria-label=\"Copy heading and permalink for Paragraph\">🔗<\/a><\/div><\/div><pre class=\"code-block tex2jax_ignore clipboardable\">Player earns 10 points.\nPlayer earns 5 points.\nPlayer loses 3 points.\nYour score is?\n<\/pre>\n<div class=\"para\" id=\"program-state-score-1-3\"><input type=\"text\" id=\"-blank1\"\/><div class=\"autopermalink\" aria-hidden=\"true\" data-description=\"Paragraph\"><a tabindex=\"-1\" href=\"#program-state-score-1-3\" title=\"Copy heading and permalink for Paragraph\" aria-label=\"Copy heading and permalink for Paragraph\">🔗<\/a><\/div><\/div>",
 "solutionHtml": "",
 "blankNames": {"blank1": 0},
-"feedbackArray": [[{"regex": "12", "feedback": "Correct!"}, {"regex": "^\\s*12\\s*$", "regexFlags": "", "feedback": "Correct! The score changes each time the variable is updated. The final score is 12."}, {"solution_code": "function() {\n    var testResults = new Array();\n    testResults[0] = 1;\n    return (testResults[0]);\n}()", "feedback": "\n<div class=\"para\" id=\"program-state-score-2-1-2-1-1\">Try tracing the value of <code class=\"code-inline tex2jax_ignore\">score<\/code> after each line:<\/div> \n<ul class=\"disc\" id=\"program-state-score-2-1-2-1-2\">\n<li id=\"program-state-score-2-1-2-1-2-1\"><div class=\"para\" id=\"p-derived-program-state-score-2-1-2-1-2-1\">Start: 0<\/div><div class=\"autopermalink\" data-description=\"Item\"><a href=\"#program-state-score-2-1-2-1-2-1\" title=\"Copy heading and permalink for Item\" aria-label=\"Copy heading and permalink for Item\">🔗<\/a><\/div><\/li>\n<li id=\"program-state-score-2-1-2-1-2-2\"><div class=\"para\" id=\"p-derived-program-state-score-2-1-2-1-2-2\">After adding 10: 10<\/div><div class=\"autopermalink\" data-description=\"Item\"><a href=\"#program-state-score-2-1-2-1-2-2\" title=\"Copy heading and permalink for Item\" aria-label=\"Copy heading and permalink for Item\">🔗<\/a><\/div><\/li>\n<li id=\"program-state-score-2-1-2-1-2-3\"><div class=\"para\" id=\"p-derived-program-state-score-2-1-2-1-2-3\">After adding 5: 15<\/div><div class=\"autopermalink\" data-description=\"Item\"><a href=\"#program-state-score-2-1-2-1-2-3\" title=\"Copy heading and permalink for Item\" aria-label=\"Copy heading and permalink for Item\">🔗<\/a><\/div><\/li>\n<li id=\"program-state-score-2-1-2-1-2-4\"><div class=\"para\" id=\"p-derived-program-state-score-2-1-2-1-2-4\">After subtracting 3 from 15: ?<\/div><div class=\"autopermalink\" data-description=\"Item\"><a href=\"#program-state-score-2-1-2-1-2-4\" title=\"Copy heading and permalink for Item\" aria-label=\"Copy heading and permalink for Item\">🔗<\/a><\/div><\/li><\/ul>"}, {"feedback": "Incorrect."}]]
+"feedbackArray": [[{"regex": "12", "feedback": "Correct!"}, {"regex": "^\\s*12\\s*$", "regexFlags": "", "feedback": "Correct! The score changes each time the variable is updated. The final score is 12."}, {"solution_code": "function() {\n    var testResults = new Array();\n    testResults[0] = 1;\n    return (testResults[0]);\n}()", "feedback": "\n<div class=\"para\" id=\"program-state-score-2-1-2-1-1\">Try tracing the value of <code class=\"code-inline tex2jax_ignore\">score<\/code> after each line:<\/div> \n<ul class=\"disc\" id=\"program-state-score-2-1-2-1-2\">\n<li id=\"program-state-score-2-1-2-1-2-1\"><div class=\"para\" id=\"p-derived-program-state-score-2-1-2-1-2-1\">Start: 0<\/div><div class=\"autopermalink\" aria-hidden=\"true\" data-description=\"Item\"><a tabindex=\"-1\" href=\"#program-state-score-2-1-2-1-2-1\" title=\"Copy heading and permalink for Item\" aria-label=\"Copy heading and permalink for Item\">🔗<\/a><\/div><\/li>\n<li id=\"program-state-score-2-1-2-1-2-2\"><div class=\"para\" id=\"p-derived-program-state-score-2-1-2-1-2-2\">After adding 10: 10<\/div><div class=\"autopermalink\" aria-hidden=\"true\" data-description=\"Item\"><a tabindex=\"-1\" href=\"#program-state-score-2-1-2-1-2-2\" title=\"Copy heading and permalink for Item\" aria-label=\"Copy heading and permalink for Item\">🔗<\/a><\/div><\/li>\n<li id=\"program-state-score-2-1-2-1-2-3\"><div class=\"para\" id=\"p-derived-program-state-score-2-1-2-1-2-3\">After adding 5: 15<\/div><div class=\"autopermalink\" aria-hidden=\"true\" data-description=\"Item\"><a tabindex=\"-1\" href=\"#program-state-score-2-1-2-1-2-3\" title=\"Copy heading and permalink for Item\" aria-label=\"Copy heading and permalink for Item\">🔗<\/a><\/div><\/li>\n<li id=\"program-state-score-2-1-2-1-2-4\"><div class=\"para\" id=\"p-derived-program-state-score-2-1-2-1-2-4\">After subtracting 3 from 15: ?<\/div><div class=\"autopermalink\" aria-hidden=\"true\" data-description=\"Item\"><a tabindex=\"-1\" href=\"#program-state-score-2-1-2-1-2-4\" title=\"Copy heading and permalink for Item\" aria-label=\"Copy heading and permalink for Item\">🔗<\/a><\/div><\/li><\/ul>"}, {"feedback": "Incorrect."}]]
 }</script></div>
 </div></div>
-<div class="autopermalink" data-description="Activity 1.6.2"><a href="#program-state-score" title="Copy heading and permalink for Activity 1.6.2" aria-label="Copy heading and permalink for Activity 1.6.2">🔗</a></div>
-</article><div class="autopermalink" data-description="Subsection 1.6.1: Identifying Variables in Apps"><a href="#vars-in-apps" title="Copy heading and permalink for Subsection 1.6.1: Identifying Variables in Apps" aria-label="Copy heading and permalink for Subsection 1.6.1: Identifying Variables in Apps">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Activity 1.6.2"><a tabindex="-1" href="#program-state-score" title="Copy heading and permalink for Activity 1.6.2" aria-label="Copy heading and permalink for Activity 1.6.2">🔗</a></div>
+</article><div class="autopermalink" aria-hidden="true" data-description="Subsection 1.6.1: Identifying Variables in Apps"><a tabindex="-1" href="#vars-in-apps" title="Copy heading and permalink for Subsection 1.6.1: Identifying Variables in Apps" aria-label="Copy heading and permalink for Subsection 1.6.1: Identifying Variables in Apps">🔗</a></div>
 </section>
 <section class="subsection" id="python-vars">
-<h3 class="heading hide-type">
+<h2 class="heading hide-type">
 <span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">1.6.2</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Variables in Python</span>
-</h3>
+</h2>
 <div class="para" id="python-vars-2">
-<dfn class="terminology">Variables</dfn> are names for memory locations that store values used in a program. In Python, a variable is created when a value is assigned to it. For example, the following code creates a variable named <code class="code-inline tex2jax_ignore">name</code> and assigns the value "Dani" to it and a variable named <code class="code-inline tex2jax_ignore">age</code> with the value 16. Note that text values like "Dani" are placed in quotes (""), but numbers like 16 are not.<div class="autopermalink" data-description="Paragraph"><a href="#python-vars-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<dfn class="terminology">Variables</dfn> are names for memory locations that store values used in a program. In Python, a variable is created when a value is assigned to it. For example, the following code creates a variable named <code class="code-inline tex2jax_ignore">name</code> and assigns the value "Dani" to it and a variable named <code class="code-inline tex2jax_ignore">age</code> with the value 16. Note that text values like "Dani" are placed in quotes (""), but numbers like 16 are not.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#python-vars-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="code-box"><pre class="program clipboardable"><code class="language-py"># variable = value
 name = "Dani"
 age = 16
 </code></pre></div>
-<div class="para" id="python-vars-4">In Python, multiple values can be printed out separated by commas. The variables, name and age, are never put inside quotes because we do not want to literally print the variable names; we want to print the values stored in the variables.<div class="autopermalink" data-description="Paragraph"><a href="#python-vars-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="python-vars-4">In Python, multiple values can be printed out separated by commas. The variables, name and age, are never put inside quotes because we do not want to literally print the variable names; we want to print the values stored in the variables.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#python-vars-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="code-box"><pre class="program clipboardable"><code class="language-py">print("Hello", name, "you are", age, "years old")
 </code></pre></div>
-<article class="activity project-like" id="printVars"><h4 class="heading">
+<article class="activity project-like" id="printVars"><h3 class="heading">
 <span class="type">Activity</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">1.6.3</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
-</h4>
+</h3>
 <div class="ptx-runestone-container"><div class="runestone explainer ac_section "><div data-component="activecode" id="rs-printVars">
 <div class="ac_question exercise-statement" id="rs-printVars_question">
-<div class="para" id="printVars-1-1">Run the following code. Change the variable values and run again.<div class="autopermalink" data-description="Paragraph"><a href="#printVars-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="printVars-1-1">Run the following code. Change the variable values and run again.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#printVars-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 </div>
 <textarea data-lang="python" data-audio="" data-coach="true" style="visibility: hidden;" id="rs-printVars_editor" data-question_label="" data-codelens="true" data-timelimit="25000">name = "Dani"
@@ -449,14 +469,14 @@ class myTests(TestCaseGui):
 myTests().main()
 </textarea>
 </div></div></div>
-<div class="autopermalink" data-description="Activity 1.6.3"><a href="#printVars" title="Copy heading and permalink for Activity 1.6.3" aria-label="Copy heading and permalink for Activity 1.6.3">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Activity 1.6.3"><a tabindex="-1" href="#printVars" title="Copy heading and permalink for Activity 1.6.3" aria-label="Copy heading and permalink for Activity 1.6.3">🔗</a></div>
 </article>
-<article class="activity project-like" id="mixedUpPrintVars"><h4 class="heading">
+<article class="activity project-like" id="mixedUpPrintVars"><h3 class="heading">
 <span class="type">Activity</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">1.6.4</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
-</h4>
+</h3>
 <div class="ptx-runestone-container"><div class="runestone hparsons_section"><div data-component="hparsons" class="hparsons_section" id="rs-mixedUpPrintVars">
 <div class="hp_question">
-<div class="para" id="mixedUpPrintVars-1-1">Drag or click on the blocks you need to move them from the top section into the yellow area to create a print statement with the variable <code class="code-inline tex2jax_ignore">name</code>. For example, if <code class="code-inline tex2jax_ignore">name = "Alex"</code>, it will print "Hello Alex!". There are extra blocks that you don’t need.<div class="autopermalink" data-description="Paragraph"><a href="#mixedUpPrintVars-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="mixedUpPrintVars-1-1">Drag or click on the blocks you need to move them from the top section into the yellow area to create a print statement with the variable <code class="code-inline tex2jax_ignore">name</code>. For example, if <code class="code-inline tex2jax_ignore">name = "Alex"</code>, it will print "Hello Alex!". There are extra blocks that you don’t need.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#mixedUpPrintVars-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 </div>
 <div class="hparsons"></div>
@@ -474,67 +494,67 @@ name
 "name"
 </textarea>
 </div></div></div>
-<div class="autopermalink" data-description="Activity 1.6.4"><a href="#mixedUpPrintVars" title="Copy heading and permalink for Activity 1.6.4" aria-label="Copy heading and permalink for Activity 1.6.4">🔗</a></div>
-</article><div class="autopermalink" data-description="Subsection 1.6.2: Variables in Python"><a href="#python-vars" title="Copy heading and permalink for Subsection 1.6.2: Variables in Python" aria-label="Copy heading and permalink for Subsection 1.6.2: Variables in Python">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Activity 1.6.4"><a tabindex="-1" href="#mixedUpPrintVars" title="Copy heading and permalink for Activity 1.6.4" aria-label="Copy heading and permalink for Activity 1.6.4">🔗</a></div>
+</article><div class="autopermalink" aria-hidden="true" data-description="Subsection 1.6.2: Variables in Python"><a tabindex="-1" href="#python-vars" title="Copy heading and permalink for Subsection 1.6.2: Variables in Python" aria-label="Copy heading and permalink for Subsection 1.6.2: Variables in Python">🔗</a></div>
 </section>
 <section class="subsection" id="data-types">
-<h3 class="heading hide-type">
+<h2 class="heading hide-type">
 <span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">1.6.3</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Data Types</span>
-</h3>
-<div class="para" id="data-types-4">The pizza app above stores lots of different types of data: the user’s name, their age, their favorite color, and whether they like pizza. The user’s name is text (which is called a <dfn class="terminology">string</dfn> in coding, but the age is a number. Whether they like pizza or not could be stored as a Boolean value of true or false (the type Boolean is named after the mathematician George Boole who invented symbolic logic). These are all different <dfn class="terminology">data types</dfn>.<div class="autopermalink" data-description="Paragraph"><a href="#data-types-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</h2>
+<div class="para" id="data-types-4">The pizza app above stores lots of different types of data: the user’s name, their age, their favorite color, and whether they like pizza. The user’s name is text (which is called a <dfn class="terminology">string</dfn> in coding, but the age is a number. Whether they like pizza or not could be stored as a Boolean value of true or false (the type Boolean is named after the mathematician George Boole who invented symbolic logic). These are all different <dfn class="terminology">data types</dfn>.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#data-types-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<article class="note remark-like" id="data-types-5"><h4 class="heading">
+<article class="note remark-like" id="data-types-5"><h3 class="heading">
 <span class="type">Essential Knowledge</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">1.6.6</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">1.6.A.3.</span>
-</h4>
-<div class="para" id="data-types-5-2">Every value in a program has a <dfn class="terminology">data type</dfn>, such as a number, Boolean, or string. Some programming languages require programmers to specify the type, while others determine it automatically by how the data is used.<div class="autopermalink" data-description="Paragraph"><a href="#data-types-5-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</h3>
+<div class="para" id="data-types-5-2">Every value in a program has a <dfn class="terminology">data type</dfn>, such as a number, Boolean, or string. Some programming languages require programmers to specify the type, while others determine it automatically by how the data is used.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#data-types-5-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Essential Knowledge 1.6.6: 1.6.A.3"><a href="#data-types-5" title="Copy heading and permalink for Essential Knowledge 1.6.6: 1.6.A.3" aria-label="Copy heading and permalink for Essential Knowledge 1.6.6: 1.6.A.3">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Essential Knowledge 1.6.6: 1.6.A.3"><a tabindex="-1" href="#data-types-5" title="Copy heading and permalink for Essential Knowledge 1.6.6: 1.6.A.3" aria-label="Copy heading and permalink for Essential Knowledge 1.6.6: 1.6.A.3">🔗</a></div>
 </article>
-<article class="note remark-like" id="data-types-6"><h4 class="heading">
+<article class="note remark-like" id="data-types-6"><h3 class="heading">
 <span class="type">Essential Knowledge</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">1.6.7</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">1.6.A.4.</span>
-</h4>
-<div class="para" id="data-types-6-2">The choice of data type depends on what a value represents. Values used to count or measure are best represented as numbers, values that record a true or false condition are best represented as Booleans, and values that store text are best represented as strings. The data type affects what operations can be performed on the variable and how accurately the output is represented in an app.<div class="autopermalink" data-description="Paragraph"><a href="#data-types-6-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</h3>
+<div class="para" id="data-types-6-2">The choice of data type depends on what a value represents. Values used to count or measure are best represented as numbers, values that record a true or false condition are best represented as Booleans, and values that store text are best represented as strings. The data type affects what operations can be performed on the variable and how accurately the output is represented in an app.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#data-types-6-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Essential Knowledge 1.6.7: 1.6.A.4"><a href="#data-types-6" title="Copy heading and permalink for Essential Knowledge 1.6.7: 1.6.A.4" aria-label="Copy heading and permalink for Essential Knowledge 1.6.7: 1.6.A.4">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Essential Knowledge 1.6.7: 1.6.A.4"><a tabindex="-1" href="#data-types-6" title="Copy heading and permalink for Essential Knowledge 1.6.7: 1.6.A.4" aria-label="Copy heading and permalink for Essential Knowledge 1.6.7: 1.6.A.4">🔗</a></div>
 </article>
-<div class="para" id="data-types-7">In some languages, you have to declare the data type of a variable, but in Python, the data type is assigned automatically depending on its value during run time. Python has several built-in data types, including:<div class="autopermalink" data-description="Paragraph"><a href="#data-types-7" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="data-types-7">In some languages, you have to declare the data type of a variable, but in Python, the data type is assigned automatically depending on its value during run time. Python has several built-in data types, including:<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#data-types-7" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <ul class="disc" id="data-types-8">
 <li id="data-types-8-1">
 <div class="para" id="p-derived-data-types-8-1">
 <dfn class="terminology">int</dfn> - for integers (whole numbers)</div>
-<div class="autopermalink" data-description="Item"><a href="#data-types-8-1" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Item"><a tabindex="-1" href="#data-types-8-1" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
 </li>
 <li id="data-types-8-2">
 <div class="para" id="p-derived-data-types-8-2">
 <dfn class="terminology">float</dfn> - for floating-point numbers (decimals)</div>
-<div class="autopermalink" data-description="Item"><a href="#data-types-8-2" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Item"><a tabindex="-1" href="#data-types-8-2" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
 </li>
 <li id="data-types-8-3">
 <div class="para" id="p-derived-data-types-8-3">
 <dfn class="terminology">str</dfn> - for strings (text)</div>
-<div class="autopermalink" data-description="Item"><a href="#data-types-8-3" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Item"><a tabindex="-1" href="#data-types-8-3" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
 </li>
 <li id="data-types-8-4">
 <div class="para" id="p-derived-data-types-8-4">
 <dfn class="terminology">bool</dfn> - for boolean values (True or False)</div>
-<div class="autopermalink" data-description="Item"><a href="#data-types-8-4" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Item"><a tabindex="-1" href="#data-types-8-4" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
 </li>
 </ul>
 <div class="code-box"><pre class="program clipboardable"><code class="language-py">name = "Dani"   # type string
 age = 16        # type int
 </code></pre></div>
-<div class="para" id="data-types-10">You can check the data type of a variable using the <code class="code-inline tex2jax_ignore">type()</code> function. For example:<div class="autopermalink" data-description="Paragraph"><a href="#data-types-10" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="data-types-10">You can check the data type of a variable using the <code class="code-inline tex2jax_ignore">type()</code> function. For example:<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#data-types-10" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="code-box"><pre class="program clipboardable"><code class="language-py">print(type(name)) # This will print str, for a string or text data type
 print(type(age)) # This will print int for an integer whole number
 </code></pre></div>
-<article class="activity project-like" id="dataTypes"><h4 class="heading">
+<article class="activity project-like" id="dataTypes"><h3 class="heading">
 <span class="type">Activity</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">1.6.5</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
-</h4>
+</h3>
 <div class="ptx-runestone-container"><div class="runestone explainer ac_section "><div data-component="activecode" id="rs-dataTypes">
 <div class="ac_question exercise-statement" id="rs-dataTypes_question">
-<div class="para" id="dataTypes-1-1">Run the following code to see the data types of the variables. Add another print to see the type of the last variable which is a number inside quotes. You’ll see that anything in quotes is a string, even if it is a number inside.<div class="autopermalink" data-description="Paragraph"><a href="#dataTypes-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="dataTypes-1-1">Run the following code to see the data types of the variables. Add another print to see the type of the last variable which is a number inside quotes. You’ll see that anything in quotes is a string, even if it is a number inside.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#dataTypes-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 </div>
 <textarea data-lang="python" data-audio="" data-coach="true" style="visibility: hidden;" id="rs-dataTypes_editor" data-question_label="" data-codelens="true" data-timelimit="25000">name = "Dani"
@@ -556,59 +576,59 @@ class myTests(TestCaseGui):
 myTests().main()
 </textarea>
 </div></div></div>
-<div class="autopermalink" data-description="Activity 1.6.5"><a href="#dataTypes" title="Copy heading and permalink for Activity 1.6.5" aria-label="Copy heading and permalink for Activity 1.6.5">🔗</a></div>
-</article><div class="autopermalink" data-description="Subsection 1.6.3: Data Types"><a href="#data-types" title="Copy heading and permalink for Subsection 1.6.3: Data Types" aria-label="Copy heading and permalink for Subsection 1.6.3: Data Types">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Activity 1.6.5"><a tabindex="-1" href="#dataTypes" title="Copy heading and permalink for Activity 1.6.5" aria-label="Copy heading and permalink for Activity 1.6.5">🔗</a></div>
+</article><div class="autopermalink" aria-hidden="true" data-description="Subsection 1.6.3: Data Types"><a tabindex="-1" href="#data-types" title="Copy heading and permalink for Subsection 1.6.3: Data Types" aria-label="Copy heading and permalink for Subsection 1.6.3: Data Types">🔗</a></div>
 </section>
 <section class="subsection" id="naming-vars">
-<h3 class="heading hide-type">
+<h2 class="heading hide-type">
 <span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">1.6.4</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Naming variables</span>
-</h3>
-<div class="para" id="naming-vars-3">Although you can name a variable almost anything you want, there are some rules and conventions to follow. In Python, variable names must follow these rules:<div class="autopermalink" data-description="Paragraph"><a href="#naming-vars-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</h2>
+<div class="para" id="naming-vars-3">Although you can name a variable almost anything you want, there are some rules and conventions to follow. In Python, variable names must follow these rules:<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#naming-vars-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="para logical" id="naming-vars-4">
 <ul class="disc" id="naming-vars-4-1">
 <li id="naming-vars-4-1-1">
-<div class="para" id="naming-vars-4-1-1-1">It must start with a letter or an underscore <code class="code-inline tex2jax_ignore">_</code>.<div class="autopermalink" data-description="Paragraph"><a href="#naming-vars-4-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="naming-vars-4-1-1-1">It must start with a letter or an underscore <code class="code-inline tex2jax_ignore">_</code>.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#naming-vars-4-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Item"><a href="#naming-vars-4-1-1" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Item"><a tabindex="-1" href="#naming-vars-4-1-1" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
 </li>
 <li id="naming-vars-4-1-2">
-<div class="para" id="naming-vars-4-1-2-1">It can contain digits, like <code class="code-inline tex2jax_ignore">1</code> or <code class="code-inline tex2jax_ignore">9</code>, but not as the first character.<div class="autopermalink" data-description="Paragraph"><a href="#naming-vars-4-1-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="naming-vars-4-1-2-1">It can contain digits, like <code class="code-inline tex2jax_ignore">1</code> or <code class="code-inline tex2jax_ignore">9</code>, but not as the first character.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#naming-vars-4-1-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Item"><a href="#naming-vars-4-1-2" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Item"><a tabindex="-1" href="#naming-vars-4-1-2" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
 </li>
 <li id="naming-vars-4-1-3">
-<div class="para" id="naming-vars-4-1-3-1">It cannot have spaces, or special symbols other than <code class="code-inline tex2jax_ignore">_</code><div class="autopermalink" data-description="Paragraph"><a href="#naming-vars-4-1-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="naming-vars-4-1-3-1">It cannot have spaces, or special symbols other than <code class="code-inline tex2jax_ignore">_</code><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#naming-vars-4-1-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Item"><a href="#naming-vars-4-1-3" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Item"><a tabindex="-1" href="#naming-vars-4-1-3" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
 </li>
 <li id="naming-vars-4-1-4">
 <div class="para" id="p-derived-naming-vars-4-1-4">It cannot be a Python <dfn class="terminology">keyword</dfn>. Keywords are words that have special meaning in the language(see below for examples).</div>
-<div class="autopermalink" data-description="Item"><a href="#naming-vars-4-1-4" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Item"><a tabindex="-1" href="#naming-vars-4-1-4" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
 </li>
 <li id="naming-vars-4-1-5">
-<div class="para" id="naming-vars-4-1-5-1">Case matters. A variable named <code class="code-inline tex2jax_ignore">result</code> is not the same as one named <code class="code-inline tex2jax_ignore">Result</code>.<div class="autopermalink" data-description="Paragraph"><a href="#naming-vars-4-1-5-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="naming-vars-4-1-5-1">Case matters. A variable named <code class="code-inline tex2jax_ignore">result</code> is not the same as one named <code class="code-inline tex2jax_ignore">Result</code>.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#naming-vars-4-1-5-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Item"><a href="#naming-vars-4-1-5" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Item"><a tabindex="-1" href="#naming-vars-4-1-5" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
 </li>
 <li id="naming-vars-4-1-6">
-<div class="para" id="naming-vars-4-1-6-1">Use meaningful variable names that describe what the variable holds, not letters like x,y,z.<div class="autopermalink" data-description="Paragraph"><a href="#naming-vars-4-1-6-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="naming-vars-4-1-6-1">Use meaningful variable names that describe what the variable holds, not letters like x,y,z.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#naming-vars-4-1-6-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Item"><a href="#naming-vars-4-1-6" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Item"><a tabindex="-1" href="#naming-vars-4-1-6" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
 </li>
 </ul>
-<div class="autopermalink" data-description="Paragraph"><a href="#naming-vars-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#naming-vars-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<article class="note remark-like" id="naming-vars-5"><h4 class="heading">
+<article class="note remark-like" id="naming-vars-5"><h3 class="heading">
 <span class="type">Essential Knowledge</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">1.6.8</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">1.6.B.3.</span>
-</h4>
-<div class="para" id="naming-vars-5-2">Using meaningful variable names improves readability and helps programmers understand what the stored values represent.<div class="autopermalink" data-description="Paragraph"><a href="#naming-vars-5-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</h3>
+<div class="para" id="naming-vars-5-2">Using meaningful variable names improves readability and helps programmers understand what the stored values represent.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#naming-vars-5-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Essential Knowledge 1.6.8: 1.6.B.3"><a href="#naming-vars-5" title="Copy heading and permalink for Essential Knowledge 1.6.8: 1.6.B.3" aria-label="Copy heading and permalink for Essential Knowledge 1.6.8: 1.6.B.3">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Essential Knowledge 1.6.8: 1.6.B.3"><a tabindex="-1" href="#naming-vars-5" title="Copy heading and permalink for Essential Knowledge 1.6.8: 1.6.B.3" aria-label="Copy heading and permalink for Essential Knowledge 1.6.8: 1.6.B.3">🔗</a></div>
 </article>
-<div class="para" id="naming-vars-6">Python has a few dozen keywords that you can’t use as variable names. Here is a list of the most common ones. If you ever have an error based on one of your variable names and do not know why, compare your name to this list to make sure you are not using a keyword as your variable name.<div class="autopermalink" data-description="Paragraph"><a href="#naming-vars-6" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="naming-vars-6">Python has a few dozen keywords that you can’t use as variable names. Here is a list of the most common ones. If you ever have an error based on one of your variable names and do not know why, compare your name to this list to make sure you are not using a keyword as your variable name.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#naming-vars-6" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<figure class="table table-like" id="python-keywords"><figcaption><span class="type">Table</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">1.6.9<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span>Python keywords<div class="autopermalink" data-description="Table 1.6.9: Python keywords"><a href="#python-keywords" title="Copy heading and permalink for Table 1.6.9: Python keywords" aria-label="Copy heading and permalink for Table 1.6.9: Python keywords">🔗</a></div></figcaption><div class="tabular-box natural-width"><table class="tabular">
+<figure class="table table-like" id="python-keywords"><figcaption><span class="type">Table</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">1.6.9<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span>Python keywords<div class="autopermalink" aria-hidden="true" data-description="Table 1.6.9: Python keywords"><a tabindex="-1" href="#python-keywords" title="Copy heading and permalink for Table 1.6.9: Python keywords" aria-label="Copy heading and permalink for Table 1.6.9: Python keywords">🔗</a></div></figcaption><div class="tabular-box natural-width"><table class="tabular">
 <tr>
 <td class="l m b0 r0 l0 t0 lines">and</td>
 <td class="l m b0 r0 l0 t0 lines">as</td>
@@ -659,12 +679,12 @@ myTests().main()
 </tr>
 </table></div>
 </figure>
-<article class="activity project-like" id="legalVarNames"><h4 class="heading">
+<article class="activity project-like" id="legalVarNames"><h3 class="heading">
 <span class="type">Activity</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">1.6.6</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
-</h4>
+</h3>
 <div class="ptx-runestone-container"><div class="runestone multiplechoice_section">
 <div class="exercise-statement">
-<div class="para" id="legalVarNames-1-1">Which of the following is <em class="emphasis">not</em> a legal variable name in Python?<div class="autopermalink" data-description="Paragraph"><a href="#legalVarNames-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="legalVarNames-1-1">Which of the following is <em class="emphasis">not</em> a legal variable name in Python?<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#legalVarNames-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 </div>
 <ul data-component="multiplechoice" class="exercise-interactives" id="rs-legalVarNames" data-multipleanswers="true" data-random="">
@@ -700,38 +720,38 @@ myTests().main()
 </li>
 </ul>
 </div></div>
-<div class="autopermalink" data-description="Activity 1.6.6"><a href="#legalVarNames" title="Copy heading and permalink for Activity 1.6.6" aria-label="Copy heading and permalink for Activity 1.6.6">🔗</a></div>
-</article><div class="autopermalink" data-description="Subsection 1.6.4: Naming variables"><a href="#naming-vars" title="Copy heading and permalink for Subsection 1.6.4: Naming variables" aria-label="Copy heading and permalink for Subsection 1.6.4: Naming variables">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Activity 1.6.6"><a tabindex="-1" href="#legalVarNames" title="Copy heading and permalink for Activity 1.6.6" aria-label="Copy heading and permalink for Activity 1.6.6">🔗</a></div>
+</article><div class="autopermalink" aria-hidden="true" data-description="Subsection 1.6.4: Naming variables"><a tabindex="-1" href="#naming-vars" title="Copy heading and permalink for Subsection 1.6.4: Naming variables" aria-label="Copy heading and permalink for Subsection 1.6.4: Naming variables">🔗</a></div>
 </section>
 <section class="subsection" id="assignment">
-<h3 class="heading hide-type">
+<h2 class="heading hide-type">
 <span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">1.6.5</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Variables and Assignment</span>
-</h3>
-<article class="note remark-like" id="assignment-3"><h4 class="heading">
+</h2>
+<article class="note remark-like" id="assignment-3"><h3 class="heading">
 <span class="type">Essential Knowledge</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">1.6.10</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">1.6.B.1.</span>
-</h4>
-<div class="para" id="assignment-3-2">The assignment operator <code class="code-inline tex2jax_ignore">=</code> allows a program to initialize or change the value stored in a variable. When the following code runs, <code class="code-inline tex2jax_ignore">expression</code> is evaluated, and the resulting value is stored in the variable <code class="code-inline tex2jax_ignore">a</code>. <code class="code-inline tex2jax_ignore">a = expression</code><div class="autopermalink" data-description="Paragraph"><a href="#assignment-3-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</h3>
+<div class="para" id="assignment-3-2">The assignment operator <code class="code-inline tex2jax_ignore">=</code> allows a program to initialize or change the value stored in a variable. When the following code runs, <code class="code-inline tex2jax_ignore">expression</code> is evaluated, and the resulting value is stored in the variable <code class="code-inline tex2jax_ignore">a</code>. <code class="code-inline tex2jax_ignore">a = expression</code><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#assignment-3-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Essential Knowledge 1.6.10: 1.6.B.1"><a href="#assignment-3" title="Copy heading and permalink for Essential Knowledge 1.6.10: 1.6.B.1" aria-label="Copy heading and permalink for Essential Knowledge 1.6.10: 1.6.B.1">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Essential Knowledge 1.6.10: 1.6.B.1"><a tabindex="-1" href="#assignment-3" title="Copy heading and permalink for Essential Knowledge 1.6.10: 1.6.B.1" aria-label="Copy heading and permalink for Essential Knowledge 1.6.10: 1.6.B.1">🔗</a></div>
 </article>
-<article class="note remark-like" id="assignment-4"><h4 class="heading">
+<article class="note remark-like" id="assignment-4"><h3 class="heading">
 <span class="type">Essential Knowledge</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">1.6.11</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">1.6.B.2.</span>
-</h4>
-<div class="para" id="assignment-4-2">Variables are initialized by assigning an initial value before they are used. After initialization, later statements can use the variable’s value and update it as the program runs.<div class="autopermalink" data-description="Paragraph"><a href="#assignment-4-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</h3>
+<div class="para" id="assignment-4-2">Variables are initialized by assigning an initial value before they are used. After initialization, later statements can use the variable’s value and update it as the program runs.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#assignment-4-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Essential Knowledge 1.6.11: 1.6.B.2"><a href="#assignment-4" title="Copy heading and permalink for Essential Knowledge 1.6.11: 1.6.B.2" aria-label="Copy heading and permalink for Essential Knowledge 1.6.11: 1.6.B.2">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Essential Knowledge 1.6.11: 1.6.B.2"><a tabindex="-1" href="#assignment-4" title="Copy heading and permalink for Essential Knowledge 1.6.11: 1.6.B.2" aria-label="Copy heading and permalink for Essential Knowledge 1.6.11: 1.6.B.2">🔗</a></div>
 </article>
-<div class="para" id="assignment-5">An <dfn class="terminology">assignment statement</dfn> assigns a value to a variable using the <dfn class="terminology">assignment</dfn> operator <code class="code-inline tex2jax_ignore">=</code>. The first assignment to a variable <dfn class="terminology">initializes</dfn> the variable to its first value. It can then be changed with other assignment statements. For example, the variable <code class="code-inline tex2jax_ignore">score</code> is initialized to 0 and then changes to 50 below. Note that the variable name must match exactly with the same capitalization and spelling to have it refer to the same variable.<div class="autopermalink" data-description="Paragraph"><a href="#assignment-5" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="assignment-5">An <dfn class="terminology">assignment statement</dfn> assigns a value to a variable using the <dfn class="terminology">assignment</dfn> operator <code class="code-inline tex2jax_ignore">=</code>. The first assignment to a variable <dfn class="terminology">initializes</dfn> the variable to its first value. It can then be changed with other assignment statements. For example, the variable <code class="code-inline tex2jax_ignore">score</code> is initialized to 0 and then changes to 50 below. Note that the variable name must match exactly with the same capitalization and spelling to have it refer to the same variable.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#assignment-5" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="code-box"><pre class="program clipboardable"><code class="language-py">score = 0
 score = 50
 </code></pre></div>
-<article class="activity project-like" id="varCaseSensitive"><h4 class="heading">
+<article class="activity project-like" id="varCaseSensitive"><h3 class="heading">
 <span class="type">Activity</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">1.6.7</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
-</h4>
+</h3>
 <div class="ptx-runestone-container"><div class="runestone explainer ac_section "><div data-component="activecode" id="rs-varCaseSensitive">
 <div class="ac_question exercise-statement" id="rs-varCaseSensitive_question">
-<div class="para" id="varCaseSensitive-1-1">Python variables are case sensitive so <code class="code-inline tex2jax_ignore">gameScore</code> and <code class="code-inline tex2jax_ignore">gamescore</code> are not the same. Run and fix the code below to use the right variable name.<div class="autopermalink" data-description="Paragraph"><a href="#varCaseSensitive-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="varCaseSensitive-1-1">Python variables are case sensitive so <code class="code-inline tex2jax_ignore">gameScore</code> and <code class="code-inline tex2jax_ignore">gamescore</code> are not the same. Run and fix the code below to use the right variable name.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#varCaseSensitive-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 </div>
 <textarea data-lang="python" data-audio="" data-coach="true" style="visibility: hidden;" id="rs-varCaseSensitive_editor" data-question_label="" data-codelens="true" data-timelimit="25000">gameScore = 0
@@ -748,98 +768,98 @@ class myTests(TestCaseGui):
 myTests().main()
 </textarea>
 </div></div></div>
-<div class="autopermalink" data-description="Activity 1.6.7"><a href="#varCaseSensitive" title="Copy heading and permalink for Activity 1.6.7" aria-label="Copy heading and permalink for Activity 1.6.7">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Activity 1.6.7"><a tabindex="-1" href="#varCaseSensitive" title="Copy heading and permalink for Activity 1.6.7" aria-label="Copy heading and permalink for Activity 1.6.7">🔗</a></div>
 </article>
-<article class="note remark-like" id="assignment-8"><h4 class="heading">
+<article class="note remark-like" id="assignment-8"><h3 class="heading">
 <span class="type">Essential Knowledge</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">1.6.12</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">1.6.B.4.</span>
-</h4>
-<div class="para" id="assignment-8-2">A variable stores its most recently assigned value.<div class="autopermalink" data-description="Paragraph"><a href="#assignment-8-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</h3>
+<div class="para" id="assignment-8-2">A variable stores its most recently assigned value.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#assignment-8-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Essential Knowledge 1.6.12: 1.6.B.4"><a href="#assignment-8" title="Copy heading and permalink for Essential Knowledge 1.6.12: 1.6.B.4" aria-label="Copy heading and permalink for Essential Knowledge 1.6.12: 1.6.B.4">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Essential Knowledge 1.6.12: 1.6.B.4"><a tabindex="-1" href="#assignment-8" title="Copy heading and permalink for Essential Knowledge 1.6.12: 1.6.B.4" aria-label="Copy heading and permalink for Essential Knowledge 1.6.12: 1.6.B.4">🔗</a></div>
 </article>
-<article class="note remark-like" id="assignment-9"><h4 class="heading">
+<article class="note remark-like" id="assignment-9"><h3 class="heading">
 <span class="type">Essential Knowledge</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">1.6.13</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">1.6.B.5.</span>
-</h4>
-<div class="para" id="assignment-9-2">The value stored in a variable after a sequence of assignment statements can be determined by tracing statements in order and updating the variable’s value after each assignment.<div class="autopermalink" data-description="Paragraph"><a href="#assignment-9-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</h3>
+<div class="para" id="assignment-9-2">The value stored in a variable after a sequence of assignment statements can be determined by tracing statements in order and updating the variable’s value after each assignment.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#assignment-9-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Essential Knowledge 1.6.13: 1.6.B.5"><a href="#assignment-9" title="Copy heading and permalink for Essential Knowledge 1.6.13: 1.6.B.5" aria-label="Copy heading and permalink for Essential Knowledge 1.6.13: 1.6.B.5">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Essential Knowledge 1.6.13: 1.6.B.5"><a tabindex="-1" href="#assignment-9" title="Copy heading and permalink for Essential Knowledge 1.6.13: 1.6.B.5" aria-label="Copy heading and permalink for Essential Knowledge 1.6.13: 1.6.B.5">🔗</a></div>
 </article>
-<article class="activity project-like" id="trace-score"><h4 class="heading">
+<article class="activity project-like" id="trace-score"><h3 class="heading">
 <span class="type">Activity</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">1.6.8</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
-</h4>
+</h3>
 <div class="ptx-runestone-container"><div class="runestone">
 <div data-component="fillintheblank" class="fillintheblank" style="visibility: hidden;" id="rs-trace-score"><script type="application/json">{
-"problemHtml": "\n<div class=\"para\" id=\"trace-score-1-1\">Trace the code below keeping track of the variables and their values. What is the value in the variable <code class=\"code-inline tex2jax_ignore\">score<\/code> after the code executes?<div class=\"autopermalink\" data-description=\"Paragraph\"><a href=\"#trace-score-1-1\" title=\"Copy heading and permalink for Paragraph\" aria-label=\"Copy heading and permalink for Paragraph\">🔗<\/a><\/div><\/div><div class=\"code-box\"><pre class=\"program clipboardable\"><code class=\"language-py\">score = 0\nname = \"user\"\nscore = 50\nName = \"user1\"\nScore = 100\n<\/code><\/pre><\/div>\n<div class=\"para\" id=\"trace-score-1-3\"><input type=\"text\" id=\"-blank1\"\/><div class=\"autopermalink\" data-description=\"Paragraph\"><a href=\"#trace-score-1-3\" title=\"Copy heading and permalink for Paragraph\" aria-label=\"Copy heading and permalink for Paragraph\">🔗<\/a><\/div><\/div>",
+"problemHtml": "\n<div class=\"para\" id=\"trace-score-1-1\">Trace the code below keeping track of the variables and their values. What is the value in the variable <code class=\"code-inline tex2jax_ignore\">score<\/code> after the code executes?<div class=\"autopermalink\" aria-hidden=\"true\" data-description=\"Paragraph\"><a tabindex=\"-1\" href=\"#trace-score-1-1\" title=\"Copy heading and permalink for Paragraph\" aria-label=\"Copy heading and permalink for Paragraph\">🔗<\/a><\/div><\/div><div class=\"code-box\"><pre class=\"program clipboardable\"><code class=\"language-py\">score = 0\nname = \"user\"\nscore = 50\nName = \"user1\"\nScore = 100\n<\/code><\/pre><\/div>\n<div class=\"para\" id=\"trace-score-1-3\"><input type=\"text\" id=\"-blank1\"\/><div class=\"autopermalink\" aria-hidden=\"true\" data-description=\"Paragraph\"><a tabindex=\"-1\" href=\"#trace-score-1-3\" title=\"Copy heading and permalink for Paragraph\" aria-label=\"Copy heading and permalink for Paragraph\">🔗<\/a><\/div><\/div>",
 "solutionHtml": "",
 "blankNames": {"blank1": 0},
 "feedbackArray": [[{"regex": "50", "feedback": "Correct!"}, {"regex": "^\\s*50\\s*$", "regexFlags": "", "feedback": "Correct! The variable <code class=\"code-inline tex2jax_ignore\">score<\/code> changes from 0 to 50. The last line of the code changes a different variable <code class=\"code-inline tex2jax_ignore\">Score<\/code> to 100."}, {"solution_code": "function() {\n    var testResults = new Array();\n    testResults[0] = 1;\n    return (testResults[0]);\n}()", "feedback": "\n<div class=\"para\" id=\"trace-score-2-1-2-1-1\">Remember that variable names have to match exactly including capitalization to refer to the same memory location.<\/div>"}, {"feedback": "Incorrect."}]]
 }</script></div>
 </div></div>
-<div class="autopermalink" data-description="Activity 1.6.8"><a href="#trace-score" title="Copy heading and permalink for Activity 1.6.8" aria-label="Copy heading and permalink for Activity 1.6.8">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Activity 1.6.8"><a tabindex="-1" href="#trace-score" title="Copy heading and permalink for Activity 1.6.8" aria-label="Copy heading and permalink for Activity 1.6.8">🔗</a></div>
 </article>
-<article class="note remark-like" id="assignment-11"><h4 class="heading">
+<article class="note remark-like" id="assignment-11"><h3 class="heading">
 <span class="type">Essential Knowledge</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">1.6.14</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">1.6.B.6.</span>
-</h4>
-<div class="para" id="assignment-11-2">Assignment statements are often used to update information an app remembers about the user or the program’s state, such as a score or setting, so the app responds appropriately as the user interacts with it.<div class="autopermalink" data-description="Paragraph"><a href="#assignment-11-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</h3>
+<div class="para" id="assignment-11-2">Assignment statements are often used to update information an app remembers about the user or the program’s state, such as a score or setting, so the app responds appropriately as the user interacts with it.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#assignment-11-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Essential Knowledge 1.6.14: 1.6.B.6"><a href="#assignment-11" title="Copy heading and permalink for Essential Knowledge 1.6.14: 1.6.B.6" aria-label="Copy heading and permalink for Essential Knowledge 1.6.14: 1.6.B.6">🔗</a></div>
-</article><div class="autopermalink" data-description="Subsection 1.6.5: Variables and Assignment"><a href="#assignment" title="Copy heading and permalink for Subsection 1.6.5: Variables and Assignment" aria-label="Copy heading and permalink for Subsection 1.6.5: Variables and Assignment">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Essential Knowledge 1.6.14: 1.6.B.6"><a tabindex="-1" href="#assignment-11" title="Copy heading and permalink for Essential Knowledge 1.6.14: 1.6.B.6" aria-label="Copy heading and permalink for Essential Knowledge 1.6.14: 1.6.B.6">🔗</a></div>
+</article><div class="autopermalink" aria-hidden="true" data-description="Subsection 1.6.5: Variables and Assignment"><a tabindex="-1" href="#assignment" title="Copy heading and permalink for Subsection 1.6.5: Variables and Assignment" aria-label="Copy heading and permalink for Subsection 1.6.5: Variables and Assignment">🔗</a></div>
 </section>
 <section class="subsection" id="strings">
-<h3 class="heading hide-type">
+<h2 class="heading hide-type">
 <span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">1.6.6</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Strings</span>
-</h3>
-<div class="para" id="strings-7">In coding, a <dfn class="terminology">string</dfn> is a sequence of characters surrounded by quotes (""). Imagine strings with lined up letter beads like below.<div class="autopermalink" data-description="Paragraph"><a href="#strings-7" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</h2>
+<div class="para" id="strings-7">In coding, a <dfn class="terminology">string</dfn> is a sequence of characters surrounded by quotes (""). Imagine strings with lined up letter beads like below.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#strings-7" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="image-box" style="width: 50%; margin-left: 25%; margin-right: 25%;"><img src="external/_static/Unit1images/strings.png" class="contained"></div>
-<article class="note remark-like" id="strings-9"><h4 class="heading">
+<article class="note remark-like" id="strings-9"><h3 class="heading">
 <span class="type">Essential Knowledge</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">1.6.15</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">1.6.C.1.</span>
-</h4>
-<div class="para" id="strings-9-2">A <dfn class="terminology">string</dfn> is an ordered sequence of characters used to represent text in a program.<div class="autopermalink" data-description="Paragraph"><a href="#strings-9-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</h3>
+<div class="para" id="strings-9-2">A <dfn class="terminology">string</dfn> is an ordered sequence of characters used to represent text in a program.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#strings-9-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Essential Knowledge 1.6.15: 1.6.C.1"><a href="#strings-9" title="Copy heading and permalink for Essential Knowledge 1.6.15: 1.6.C.1" aria-label="Copy heading and permalink for Essential Knowledge 1.6.15: 1.6.C.1">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Essential Knowledge 1.6.15: 1.6.C.1"><a tabindex="-1" href="#strings-9" title="Copy heading and permalink for Essential Knowledge 1.6.15: 1.6.C.1" aria-label="Copy heading and permalink for Essential Knowledge 1.6.15: 1.6.C.1">🔗</a></div>
 </article>
-<div class="para" id="strings-10">In the web app above, the text that the use types in like name was probably saved as strings.<div class="autopermalink" data-description="Paragraph"><a href="#strings-10" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="strings-10">In the web app above, the text that the use types in like name was probably saved as strings.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#strings-10" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<article class="note remark-like" id="strings-11"><h4 class="heading">
+<article class="note remark-like" id="strings-11"><h3 class="heading">
 <span class="type">Essential Knowledge</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">1.6.16</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">1.6.C.2.</span>
-</h4>
-<div class="para" id="strings-11-2">Apps often use strings to store and display user-facing information, such as names, messages, labels, or search terms.<div class="autopermalink" data-description="Paragraph"><a href="#strings-11-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</h3>
+<div class="para" id="strings-11-2">Apps often use strings to store and display user-facing information, such as names, messages, labels, or search terms.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#strings-11-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Essential Knowledge 1.6.16: 1.6.C.2"><a href="#strings-11" title="Copy heading and permalink for Essential Knowledge 1.6.16: 1.6.C.2" aria-label="Copy heading and permalink for Essential Knowledge 1.6.16: 1.6.C.2">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Essential Knowledge 1.6.16: 1.6.C.2"><a tabindex="-1" href="#strings-11" title="Copy heading and permalink for Essential Knowledge 1.6.16: 1.6.C.2" aria-label="Copy heading and permalink for Essential Knowledge 1.6.16: 1.6.C.2">🔗</a></div>
 </article>
-<article class="note remark-like" id="strings-12"><h4 class="heading">
+<article class="note remark-like" id="strings-12"><h3 class="heading">
 <span class="type">Essential Knowledge</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">1.6.17</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">1.6.C.3.</span>
-</h4>
-<div class="para" id="strings-12-2">To initialize a string variable, programmers assign it an initial text value or an <dfn class="terminology">empty string</dfn> before it is used so the program starts with a known value. An empty string has zero characters (<code class="code-inline tex2jax_ignore">""</code>). It is not the same as a string that contains spaces (<code class="code-inline tex2jax_ignore">" "</code>).<div class="autopermalink" data-description="Paragraph"><a href="#strings-12-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</h3>
+<div class="para" id="strings-12-2">To initialize a string variable, programmers assign it an initial text value or an <dfn class="terminology">empty string</dfn> before it is used so the program starts with a known value. An empty string has zero characters (<code class="code-inline tex2jax_ignore">""</code>). It is not the same as a string that contains spaces (<code class="code-inline tex2jax_ignore">" "</code>).<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#strings-12-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Essential Knowledge 1.6.17: 1.6.C.3"><a href="#strings-12" title="Copy heading and permalink for Essential Knowledge 1.6.17: 1.6.C.3" aria-label="Copy heading and permalink for Essential Knowledge 1.6.17: 1.6.C.3">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Essential Knowledge 1.6.17: 1.6.C.3"><a tabindex="-1" href="#strings-12" title="Copy heading and permalink for Essential Knowledge 1.6.17: 1.6.C.3" aria-label="Copy heading and permalink for Essential Knowledge 1.6.17: 1.6.C.3">🔗</a></div>
 </article>
-<div class="para" id="strings-13">Variables can be assigned values or an <dfn class="terminology">empty string</dfn> "" that will be filled in later. Python allows double quotes "" or single quotes ’ for string values.<div class="autopermalink" data-description="Paragraph"><a href="#strings-13" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="strings-13">Variables can be assigned values or an <dfn class="terminology">empty string</dfn> "" that will be filled in later. Python allows double quotes "" or single quotes ’ for string values.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#strings-13" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="code-box"><pre class="program clipboardable"><code class="language-py">name = "Sam"                 # double quotes
 email = 'sam@gmail.com'      # single quotes
 message = ""                 # empty string
 </code></pre></div>
-<article class="note remark-like" id="strings-15"><h4 class="heading">
+<article class="note remark-like" id="strings-15"><h3 class="heading">
 <span class="type">Essential Knowledge</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">1.6.18</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">1.6.C.4.</span>
-</h4>
-<div class="para" id="strings-15-2">String <dfn class="terminology">concatenation</dfn> joins two or more strings to create a new string, such as combining a greeting with a user’s name.<div class="autopermalink" data-description="Paragraph"><a href="#strings-15-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</h3>
+<div class="para" id="strings-15-2">String <dfn class="terminology">concatenation</dfn> joins two or more strings to create a new string, such as combining a greeting with a user’s name.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#strings-15-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Essential Knowledge 1.6.18: 1.6.C.4"><a href="#strings-15" title="Copy heading and permalink for Essential Knowledge 1.6.18: 1.6.C.4" aria-label="Copy heading and permalink for Essential Knowledge 1.6.18: 1.6.C.4">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Essential Knowledge 1.6.18: 1.6.C.4"><a tabindex="-1" href="#strings-15" title="Copy heading and permalink for Essential Knowledge 1.6.18: 1.6.C.4" aria-label="Copy heading and permalink for Essential Knowledge 1.6.18: 1.6.C.4">🔗</a></div>
 </article>
-<div class="para" id="strings-16">We can <dfn class="terminology">concatenate</dfn> or <dfn class="terminology">append</dfn> or add strings in Python using the operator <code class="code-inline tex2jax_ignore">+</code>, which can be used to add numbers or strings. Blank spaces are not automatically added when you use <code class="code-inline tex2jax_ignore">+</code> (unlike <code class="code-inline tex2jax_ignore">,</code>), so if you want a blank space, you  need to type it inside the quotes or add in a string with just a space in it <code class="code-inline tex2jax_ignore">" "</code> as shown below.<div class="autopermalink" data-description="Paragraph"><a href="#strings-16" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="strings-16">We can <dfn class="terminology">concatenate</dfn> or <dfn class="terminology">append</dfn> or add strings in Python using the operator <code class="code-inline tex2jax_ignore">+</code>, which can be used to add numbers or strings. Blank spaces are not automatically added when you use <code class="code-inline tex2jax_ignore">+</code> (unlike <code class="code-inline tex2jax_ignore">,</code>), so if you want a blank space, you  need to type it inside the quotes or add in a string with just a space in it <code class="code-inline tex2jax_ignore">" "</code> as shown below.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#strings-16" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="code-box"><pre class="program clipboardable"><code class="language-py">name = "Sam"
 message = "Hello " + name     # note the space after Hello
 print(message)
 </code></pre></div>
-<article class="activity project-like" id="concat"><h4 class="heading">
+<article class="activity project-like" id="concat"><h3 class="heading">
 <span class="type">Activity</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">1.6.9</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
-</h4>
+</h3>
 <div class="ptx-runestone-container"><div class="runestone explainer ac_section "><div data-component="activecode" id="rs-concat">
 <div class="ac_question exercise-statement" id="rs-concat_question">
-<div class="para" id="concat-1-1">Run the following code to see the smushed output. Fix the error by putting in an extra space and concatenate an <code class="code-inline tex2jax_ignore">!</code> at the end.<div class="autopermalink" data-description="Paragraph"><a href="#concat-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="concat-1-1">Run the following code to see the smushed output. Fix the error by putting in an extra space and concatenate an <code class="code-inline tex2jax_ignore">!</code> at the end.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#concat-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 </div>
 <textarea data-lang="python" data-audio="" data-coach="true" style="visibility: hidden;" id="rs-concat_editor" data-question_label="" data-codelens="true" data-timelimit="25000">first = 'Sam'
@@ -856,16 +876,16 @@ class myTests(TestCaseGui):
 myTests().main()
 </textarea>
 </div></div></div>
-<div class="autopermalink" data-description="Activity 1.6.9"><a href="#concat" title="Copy heading and permalink for Activity 1.6.9" aria-label="Copy heading and permalink for Activity 1.6.9">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Activity 1.6.9"><a tabindex="-1" href="#concat" title="Copy heading and permalink for Activity 1.6.9" aria-label="Copy heading and permalink for Activity 1.6.9">🔗</a></div>
 </article>
-<div class="para" id="strings-19">Since the operator <code class="code-inline tex2jax_ignore">+</code> is used to add numbers or concatenate strings in Python,  the interpreter will get confused and show an error if you use it to concatenate a string with a number. To concatenate the number with a string we need to convert the number into a string first. The <code class="code-inline tex2jax_ignore">str(num)</code> function will convert a number into a string. Another option is to use the <code class="code-inline tex2jax_ignore">,</code> instead of <code class="code-inline tex2jax_ignore">+</code> in print statements because that will print different data types with no problem, but it can only be used in print statements.<div class="autopermalink" data-description="Paragraph"><a href="#strings-19" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="strings-19">Since the operator <code class="code-inline tex2jax_ignore">+</code> is used to add numbers or concatenate strings in Python,  the interpreter will get confused and show an error if you use it to concatenate a string with a number. To concatenate the number with a string we need to convert the number into a string first. The <code class="code-inline tex2jax_ignore">str(num)</code> function will convert a number into a string. Another option is to use the <code class="code-inline tex2jax_ignore">,</code> instead of <code class="code-inline tex2jax_ignore">+</code> in print statements because that will print different data types with no problem, but it can only be used in print statements.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#strings-19" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<article class="activity project-like" id="concat-num-str"><h4 class="heading">
+<article class="activity project-like" id="concat-num-str"><h3 class="heading">
 <span class="type">Activity</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">1.6.10</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
-</h4>
+</h3>
 <div class="ptx-runestone-container"><div class="runestone explainer ac_section "><div data-component="activecode" id="rs-concat-num-str">
 <div class="ac_question exercise-statement" id="rs-concat-num-str_question">
-<div class="para" id="concat-num-str-1-1">Run the following code to see the error.  Fix the error by using <code class="code-inline tex2jax_ignore">str</code> to convert the number.<div class="autopermalink" data-description="Paragraph"><a href="#concat-num-str-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="concat-num-str-1-1">Run the following code to see the error.  Fix the error by using <code class="code-inline tex2jax_ignore">str</code> to convert the number.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#concat-num-str-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 </div>
 <textarea data-lang="python" data-audio="" data-coach="true" style="visibility: hidden;" id="rs-concat-num-str_editor" data-question_label="" data-codelens="true" data-timelimit="25000">name = "Sam"
@@ -880,30 +900,30 @@ class myTests(TestCaseGui):
 myTests().main()
 </textarea>
 </div></div></div>
-<div class="autopermalink" data-description="Activity 1.6.10"><a href="#concat-num-str" title="Copy heading and permalink for Activity 1.6.10" aria-label="Copy heading and permalink for Activity 1.6.10">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Activity 1.6.10"><a tabindex="-1" href="#concat-num-str" title="Copy heading and permalink for Activity 1.6.10" aria-label="Copy heading and permalink for Activity 1.6.10">🔗</a></div>
 </article>
-<article class="note remark-like" id="strings-21"><h4 class="heading">
+<article class="note remark-like" id="strings-21"><h3 class="heading">
 <span class="type">Essential Knowledge</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">1.6.19</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">1.6.C.5.</span>
-</h4>
-<div class="para" id="strings-21-2">A <dfn class="terminology">substring</dfn> is part of an existing string. Programs can create substrings to extract or use part of a text value, such as extracting the month from a date, reading a portion of a message, or checking for a word within a string.<div class="autopermalink" data-description="Paragraph"><a href="#strings-21-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</h3>
+<div class="para" id="strings-21-2">A <dfn class="terminology">substring</dfn> is part of an existing string. Programs can create substrings to extract or use part of a text value, such as extracting the month from a date, reading a portion of a message, or checking for a word within a string.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#strings-21-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Essential Knowledge 1.6.19: 1.6.C.5"><a href="#strings-21" title="Copy heading and permalink for Essential Knowledge 1.6.19: 1.6.C.5" aria-label="Copy heading and permalink for Essential Knowledge 1.6.19: 1.6.C.5">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Essential Knowledge 1.6.19: 1.6.C.5"><a tabindex="-1" href="#strings-21" title="Copy heading and permalink for Essential Knowledge 1.6.19: 1.6.C.5" aria-label="Copy heading and permalink for Essential Knowledge 1.6.19: 1.6.C.5">🔗</a></div>
 </article>
-<div class="para" id="strings-22">In Python, every character in a string is associated with an index starting with 0. Square brackets and an index can pull out any character from a string.<div class="autopermalink" data-description="Paragraph"><a href="#strings-22" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="strings-22">In Python, every character in a string is associated with an index starting with 0. Square brackets and an index can pull out any character from a string.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#strings-22" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="image-box" style="width: 60%; margin-left: 20%; margin-right: 20%;"><img src="external/_static/Unit1images/stringIndex.png" class="contained"></div>
-<div class="para" id="strings-24">Python has a special <dfn class="terminology">slicing</dfn> operator to pull out a <dfn class="terminology">substring</dfn> from a start index up to a end index (but not including the end index), <code class="code-inline tex2jax_ignore">message[start:end]</code>.<div class="autopermalink" data-description="Paragraph"><a href="#strings-24" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="strings-24">Python has a special <dfn class="terminology">slicing</dfn> operator to pull out a <dfn class="terminology">substring</dfn> from a start index up to a end index (but not including the end index), <code class="code-inline tex2jax_ignore">message[start:end]</code>.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#strings-24" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="code-box"><pre class="program clipboardable"><code class="language-py">message = "Python is fun!"
 letter = message[0]          # pull out 0th letter P
 substring = message[0:6]     # substring "Python" from index 0 up to index 6
 </code></pre></div>
-<article class="activity project-like" id="slicing0"><h4 class="heading">
+<article class="activity project-like" id="slicing0"><h3 class="heading">
 <span class="type">Activity</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">1.6.11</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
-</h4>
+</h3>
 <div class="ptx-runestone-container"><div class="runestone explainer ac_section "><div data-component="activecode" id="rs-slicing0">
 <div class="ac_question exercise-statement" id="rs-slicing0_question">
-<div class="para" id="slicing0-1-1">Run the following code to see examples of slicing. Add to the code to print another substring of <code class="code-inline tex2jax_ignore">message</code> that uses slicing to pull out the word "fun".<div class="autopermalink" data-description="Paragraph"><a href="#slicing0-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="slicing0-1-1">Run the following code to see examples of slicing. Add to the code to print another substring of <code class="code-inline tex2jax_ignore">message</code> that uses slicing to pull out the word "fun".<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#slicing0-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 </div>
 <textarea data-lang="python" data-audio="" data-coach="true" style="visibility: hidden;" id="rs-slicing0_editor" data-question_label="" data-codelens="true" data-timelimit="25000">message = "Python is fun!"
@@ -921,52 +941,52 @@ class myTests(TestCaseGui):
 myTests().main()
 </textarea>
 </div></div></div>
-<div class="autopermalink" data-description="Activity 1.6.11"><a href="#slicing0" title="Copy heading and permalink for Activity 1.6.11" aria-label="Copy heading and permalink for Activity 1.6.11">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Activity 1.6.11"><a tabindex="-1" href="#slicing0" title="Copy heading and permalink for Activity 1.6.11" aria-label="Copy heading and permalink for Activity 1.6.11">🔗</a></div>
 </article>
-<article class="note remark-like" id="strings-28"><h4 class="heading">
+<article class="note remark-like" id="strings-28"><h3 class="heading">
 <span class="type">Essential Knowledge</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">1.6.20</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">1.6.C.6.</span>
-</h4>
-<div class="para" id="strings-28-2">The output of code that uses string operations can be determined by tracing statements in order and keeping track of how string values change and what text is displayed.<div class="autopermalink" data-description="Paragraph"><a href="#strings-28-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</h3>
+<div class="para" id="strings-28-2">The output of code that uses string operations can be determined by tracing statements in order and keeping track of how string values change and what text is displayed.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#strings-28-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Essential Knowledge 1.6.20: 1.6.C.6"><a href="#strings-28" title="Copy heading and permalink for Essential Knowledge 1.6.20: 1.6.C.6" aria-label="Copy heading and permalink for Essential Knowledge 1.6.20: 1.6.C.6">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Essential Knowledge 1.6.20: 1.6.C.6"><a tabindex="-1" href="#strings-28" title="Copy heading and permalink for Essential Knowledge 1.6.20: 1.6.C.6" aria-label="Copy heading and permalink for Essential Knowledge 1.6.20: 1.6.C.6">🔗</a></div>
 </article>
-<article class="activity project-like" id="trace-slicing"><h4 class="heading">
+<article class="activity project-like" id="trace-slicing"><h3 class="heading">
 <span class="type">Activity</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">1.6.12</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
-</h4>
+</h3>
 <div class="ptx-runestone-container"><div class="runestone">
 <div data-component="fillintheblank" class="fillintheblank" style="visibility: hidden;" id="rs-trace-slicing"><script type="application/json">{
-"problemHtml": "\n<div class=\"para\" id=\"trace-slicing-1-1\">Trace the code below keeping track of the variables and their values. What is the value in the variable <code class=\"code-inline tex2jax_ignore\">score<\/code> after the code executes?<div class=\"autopermalink\" data-description=\"Paragraph\"><a href=\"#trace-slicing-1-1\" title=\"Copy heading and permalink for Paragraph\" aria-label=\"Copy heading and permalink for Paragraph\">🔗<\/a><\/div><\/div><div class=\"code-box\"><pre class=\"program clipboardable\"><code class=\"language-py\">message1 = \"Python is fun!\"\nmessage2 = \"Coding\"\nmessage3 = message2 + message1[6:13]\nprint(message3)\n<\/code><\/pre><\/div>\n<div class=\"para\" id=\"trace-slicing-1-3\"><input type=\"text\" id=\"-blank1\"\/><div class=\"autopermalink\" data-description=\"Paragraph\"><a href=\"#trace-slicing-1-3\" title=\"Copy heading and permalink for Paragraph\" aria-label=\"Copy heading and permalink for Paragraph\">🔗<\/a><\/div><\/div>",
+"problemHtml": "\n<div class=\"para\" id=\"trace-slicing-1-1\">Trace the code below keeping track of the variables and their values. What is the value in the variable <code class=\"code-inline tex2jax_ignore\">score<\/code> after the code executes?<div class=\"autopermalink\" aria-hidden=\"true\" data-description=\"Paragraph\"><a tabindex=\"-1\" href=\"#trace-slicing-1-1\" title=\"Copy heading and permalink for Paragraph\" aria-label=\"Copy heading and permalink for Paragraph\">🔗<\/a><\/div><\/div><div class=\"code-box\"><pre class=\"program clipboardable\"><code class=\"language-py\">message1 = \"Python is fun!\"\nmessage2 = \"Coding\"\nmessage3 = message2 + message1[6:13]\nprint(message3)\n<\/code><\/pre><\/div>\n<div class=\"para\" id=\"trace-slicing-1-3\"><input type=\"text\" id=\"-blank1\"\/><div class=\"autopermalink\" aria-hidden=\"true\" data-description=\"Paragraph\"><a tabindex=\"-1\" href=\"#trace-slicing-1-3\" title=\"Copy heading and permalink for Paragraph\" aria-label=\"Copy heading and permalink for Paragraph\">🔗<\/a><\/div><\/div>",
 "solutionHtml": "",
 "blankNames": {"blank1": 0},
 "feedbackArray": [[{"regex": "Coding is fun", "feedback": "Correct!"}, {"regex": "^\\s*Coding is fun\\s*$", "regexFlags": "", "feedback": "Correct!"}, {"solution_code": "function() {\n    var testResults = new Array();\n    testResults[0] = 1;\n    return (testResults[0]);\n}()", "feedback": "\n<div class=\"para\" id=\"trace-slicing-2-1-2-1-1\">The answer is 3 words separated by spaces. Remember that slicing is up to but not including the end index. Capitalization matters. You can try the code in an active coding area.<\/div>"}, {"feedback": "Incorrect."}]]
 }</script></div>
 </div></div>
-<div class="autopermalink" data-description="Activity 1.6.12"><a href="#trace-slicing" title="Copy heading and permalink for Activity 1.6.12" aria-label="Copy heading and permalink for Activity 1.6.12">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Activity 1.6.12"><a tabindex="-1" href="#trace-slicing" title="Copy heading and permalink for Activity 1.6.12" aria-label="Copy heading and permalink for Activity 1.6.12">🔗</a></div>
 </article>
-<article class="note remark-like" id="strings-30"><h4 class="heading">
+<article class="note remark-like" id="strings-30"><h3 class="heading">
 <span class="type">Essential Knowledge</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">1.6.21</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">1.6.C.7.</span>
-</h4>
-<div class="para" id="strings-30-2">To communicate clearly with users, programmers use strings to store and generate text that apps display, such as prompts, feedback messages, and personalized responses.<div class="autopermalink" data-description="Paragraph"><a href="#strings-30-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</h3>
+<div class="para" id="strings-30-2">To communicate clearly with users, programmers use strings to store and generate text that apps display, such as prompts, feedback messages, and personalized responses.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#strings-30-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Essential Knowledge 1.6.21: 1.6.C.7"><a href="#strings-30" title="Copy heading and permalink for Essential Knowledge 1.6.21: 1.6.C.7" aria-label="Copy heading and permalink for Essential Knowledge 1.6.21: 1.6.C.7">🔗</a></div>
-</article><div class="autopermalink" data-description="Subsection 1.6.6: Strings"><a href="#strings" title="Copy heading and permalink for Subsection 1.6.6: Strings" aria-label="Copy heading and permalink for Subsection 1.6.6: Strings">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Essential Knowledge 1.6.21: 1.6.C.7"><a tabindex="-1" href="#strings-30" title="Copy heading and permalink for Essential Knowledge 1.6.21: 1.6.C.7" aria-label="Copy heading and permalink for Essential Knowledge 1.6.21: 1.6.C.7">🔗</a></div>
+</article><div class="autopermalink" aria-hidden="true" data-description="Subsection 1.6.6: Strings"><a tabindex="-1" href="#strings" title="Copy heading and permalink for Subsection 1.6.6: Strings" aria-label="Copy heading and permalink for Subsection 1.6.6: Strings">🔗</a></div>
 </section>
 <section class="subsection" id="input">
-<h3 class="heading hide-type">
+<h2 class="heading hide-type">
 <span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">1.6.7</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Input</span>
-</h3>
-<div class="para" id="input-3">Python has an <dfn class="terminology">input</dfn> function that can be used to get input from the typed in by user. This input must be saved into a variable. This is another way to initialize or assign to a variable. The syntax for an input statement is:<div class="autopermalink" data-description="Paragraph"><a href="#input-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</h2>
+<div class="para" id="input-3">Python has an <dfn class="terminology">input</dfn> function that can be used to get input from the typed in by user. This input must be saved into a variable. This is another way to initialize or assign to a variable. The syntax for an input statement is:<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#input-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="code-box"><pre class="program clipboardable"><code class="language-py">variable_name = input("Input prompt or question? ")
 </code></pre></div>
-<div class="para" id="input-5">The following code will ask the user for their name and then print out a greeting. Try it out by clicking the "Run" button. Run it twice and put in different names! Does it work? Yes, that is the power of <dfn class="terminology">abstraction</dfn>! Our code is now more general or abstract and can work for any name! The input variable is an abstraction that can hold any name.<div class="autopermalink" data-description="Paragraph"><a href="#input-5" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="input-5">The following code will ask the user for their name and then print out a greeting. Try it out by clicking the "Run" button. Run it twice and put in different names! Does it work? Yes, that is the power of <dfn class="terminology">abstraction</dfn>! Our code is now more general or abstract and can work for any name! The input variable is an abstraction that can hold any name.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#input-5" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<article class="activity project-like" id="input1"><h4 class="heading">
+<article class="activity project-like" id="input1"><h3 class="heading">
 <span class="type">Activity</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">1.6.13</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
-</h4>
+</h3>
 <div class="ptx-runestone-container"><div class="runestone explainer ac_section "><div data-component="activecode" id="rs-input1">
 <div class="ac_question exercise-statement" id="rs-input1_question">
-<div class="para" id="input1-1-1">Run the following code. Enter your name in the pop up input box and then scroll down to see the output.<div class="autopermalink" data-description="Paragraph"><a href="#input1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="input1-1-1">Run the following code. Enter your name in the pop up input box and then scroll down to see the output.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#input1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 </div>
 <textarea data-lang="python" data-audio="" data-coach="true" style="visibility: hidden;" id="rs-input1_editor" data-question_label="" data-codelens="true" data-timelimit="25000">name = input("What is your name? ")
@@ -981,14 +1001,14 @@ class myTests(TestCaseGui):
 myTests().main()
 </textarea>
 </div></div></div>
-<div class="autopermalink" data-description="Activity 1.6.13"><a href="#input1" title="Copy heading and permalink for Activity 1.6.13" aria-label="Copy heading and permalink for Activity 1.6.13">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Activity 1.6.13"><a tabindex="-1" href="#input1" title="Copy heading and permalink for Activity 1.6.13" aria-label="Copy heading and permalink for Activity 1.6.13">🔗</a></div>
 </article>
-<article class="activity project-like" id="mixedUpInput"><h4 class="heading">
+<article class="activity project-like" id="mixedUpInput"><h3 class="heading">
 <span class="type">Activity</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">1.6.14</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
-</h4>
+</h3>
 <div class="ptx-runestone-container"><div class="runestone hparsons_section"><div data-component="hparsons" class="hparsons_section" id="rs-mixedUpInput">
 <div class="hp_question">
-<div class="para" id="mixedUpInput-1-1">Drag or click on the blocks you need to move them from the top section into the yellow area to create an input statement that will ask for the user’s age. There are extra blocks that you don’t need.<div class="autopermalink" data-description="Paragraph"><a href="#mixedUpInput-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="mixedUpInput-1-1">Drag or click on the blocks you need to move them from the top section into the yellow area to create an input statement that will ask for the user’s age. There are extra blocks that you don’t need.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#mixedUpInput-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 </div>
 <div class="hparsons"></div>
@@ -1002,25 +1022,25 @@ input
 )
 </textarea>
 </div></div></div>
-<div class="autopermalink" data-description="Activity 1.6.14"><a href="#mixedUpInput" title="Copy heading and permalink for Activity 1.6.14" aria-label="Copy heading and permalink for Activity 1.6.14">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Activity 1.6.14"><a tabindex="-1" href="#mixedUpInput" title="Copy heading and permalink for Activity 1.6.14" aria-label="Copy heading and permalink for Activity 1.6.14">🔗</a></div>
 </article>
-<div class="para" id="input-8">The <code class="code-inline tex2jax_ignore">input()</code> function in Python always returns a string, even if the user enters a number. For example, if the user enters "25", the variable will store the string "25", not the integer number 25. However, to do math with a number, as we will see in the next lesson, we need to store the value as a number rather than a string.<div class="autopermalink" data-description="Paragraph"><a href="#input-8" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="input-8">The <code class="code-inline tex2jax_ignore">input()</code> function in Python always returns a string, even if the user enters a number. For example, if the user enters "25", the variable will store the string "25", not the integer number 25. However, to do math with a number, as we will see in the next lesson, we need to store the value as a number rather than a string.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#input-8" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="para" id="input-9">To convert a string to an integer whole number or a floating point decimal number, use the <code class="code-inline tex2jax_ignore">int()</code> or <code class="code-inline tex2jax_ignore"> float()</code> functions. We will use these functions in the next lesson when performing calculations and making comparisons with user input. For example:<div class="autopermalink" data-description="Paragraph"><a href="#input-9" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="input-9">To convert a string to an integer whole number or a floating point decimal number, use the <code class="code-inline tex2jax_ignore">int()</code> or <code class="code-inline tex2jax_ignore"> float()</code> functions. We will use these functions in the next lesson when performing calculations and making comparisons with user input. For example:<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#input-9" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="code-box"><pre class="program clipboardable"><code class="language-py">ageStr = input("Enter your age: ")
 age = int(ageStr) # Convert the string to an integer
 </code></pre></div>
-<div class="para" id="input-11">To convert a number back into a string, you can use the <code class="code-inline tex2jax_ignore">str()</code> function. For example:<div class="autopermalink" data-description="Paragraph"><a href="#input-11" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="input-11">To convert a number back into a string, you can use the <code class="code-inline tex2jax_ignore">str()</code> function. For example:<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#input-11" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="code-box"><pre class="program clipboardable"><code class="language-py">ageString = str(age) # Convert the integer back to a string
 </code></pre></div>
-<article class="activity project-like" id="dataTypesDebug"><h4 class="heading">
+<article class="activity project-like" id="dataTypesDebug"><h3 class="heading">
 <span class="type">Activity</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">1.6.15</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
-</h4>
+</h3>
 <div class="ptx-runestone-container"><div class="runestone explainer ac_section "><div data-component="activecode" id="rs-dataTypesDebug">
 <div class="ac_question exercise-statement" id="rs-dataTypesDebug_question">
-<div class="para" id="dataTypesDebug-1-1">Run the following code to see that there are some errors caused by the data types. Try using int or str functions to convert the variables to the correct data type.<div class="autopermalink" data-description="Paragraph"><a href="#dataTypesDebug-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="dataTypesDebug-1-1">Run the following code to see that there are some errors caused by the data types. Try using int or str functions to convert the variables to the correct data type.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#dataTypesDebug-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 </div>
 <textarea data-lang="python" data-audio="" data-coach="true" style="visibility: hidden;" id="rs-dataTypesDebug_editor" data-question_label="" data-codelens="true" data-timelimit="25000">score = input("Input the initial score: ")
@@ -1047,21 +1067,21 @@ class myTests(TestCaseGui):
 myTests().main()
 </textarea>
 </div></div></div>
-<div class="autopermalink" data-description="Activity 1.6.15"><a href="#dataTypesDebug" title="Copy heading and permalink for Activity 1.6.15" aria-label="Copy heading and permalink for Activity 1.6.15">🔗</a></div>
-</article><div class="autopermalink" data-description="Subsection 1.6.7: Input"><a href="#input" title="Copy heading and permalink for Subsection 1.6.7: Input" aria-label="Copy heading and permalink for Subsection 1.6.7: Input">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Activity 1.6.15"><a tabindex="-1" href="#dataTypesDebug" title="Copy heading and permalink for Activity 1.6.15" aria-label="Copy heading and permalink for Activity 1.6.15">🔗</a></div>
+</article><div class="autopermalink" aria-hidden="true" data-description="Subsection 1.6.7: Input"><a tabindex="-1" href="#input" title="Copy heading and permalink for Subsection 1.6.7: Input" aria-label="Copy heading and permalink for Subsection 1.6.7: Input">🔗</a></div>
 </section>
 <section class="subsection" id="coding-challenge-madlibs-project">
-<h3 class="heading hide-type">
+<h2 class="heading hide-type">
 <span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">1.6.8</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Coding Challenge: Story Project</span>
-</h3>
-<div class="para" id="coding-challenge-madlibs-project-2">Let’s make a poem or a story using input and variables in Python. Ask the user to input different nouns and verbs, and weave together a story.<div class="autopermalink" data-description="Paragraph"><a href="#coding-challenge-madlibs-project-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</h2>
+<div class="para" id="coding-challenge-madlibs-project-2">Let’s make a poem or a story using input and variables in Python. Ask the user to input different nouns and verbs, and weave together a story.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#coding-challenge-madlibs-project-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<article class="project project-like" id="coding-challenge-story"><h4 class="heading">
+<article class="project project-like" id="coding-challenge-story"><h3 class="heading">
 <span class="type">Project</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">1.6.16</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Story.</span>
-</h4>
+</h3>
 <div class="ptx-runestone-container"><div class="runestone explainer ac_section "><div data-component="activecode" id="rs-coding-challenge-story">
 <div class="ac_question exercise-statement" id="rs-coding-challenge-story_question">
-<div class="para" id="coding-challenge-story-2-1">Finish the input statements below to ask the user for 2 colors and a food item. Run to see the silly poem. Then, ask the user for more input words and create your own poem or story using the variables in print statements.<div class="autopermalink" data-description="Paragraph"><a href="#coding-challenge-story-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="coding-challenge-story-2-1">Finish the input statements below to ask the user for 2 colors and a food item. Run to see the silly poem. Then, ask the user for more input words and create your own poem or story using the variables in print statements.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#coding-challenge-story-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 </div>
 <textarea data-lang="python" data-audio="" data-coach="true" style="visibility: hidden;" id="rs-coding-challenge-story_editor" data-question_label="" data-codelens="true" data-timelimit="25000"># Get user input
@@ -1093,27 +1113,27 @@ class myTests(TestCaseGui):
 myTests().main()
 </textarea>
 </div></div></div>
-<div class="autopermalink" data-description="Project 1.6.16: Story"><a href="#coding-challenge-story" title="Copy heading and permalink for Project 1.6.16: Story" aria-label="Copy heading and permalink for Project 1.6.16: Story">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Project 1.6.16: Story"><a tabindex="-1" href="#coding-challenge-story" title="Copy heading and permalink for Project 1.6.16: Story" aria-label="Copy heading and permalink for Project 1.6.16: Story">🔗</a></div>
 </article>
-<article class="activity project-like" id="varIO"><h4 class="heading">
+<article class="activity project-like" id="varIO"><h3 class="heading">
 <span class="type">Activity</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">1.6.17</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
-</h4>
+</h3>
 <div class="ptx-runestone-container"><div class="runestone">
 <div data-component="fillintheblank" class="fillintheblank" style="visibility: hidden;" id="rs-varIO"><script type="application/json">{
-"problemHtml": "\n<div class=\"para\" id=\"varIO-1-1\">Is the variable <code class=\"code-inline tex2jax_ignore\">color1<\/code> in the code above used for input or output?<div class=\"autopermalink\" data-description=\"Paragraph\"><a href=\"#varIO-1-1\" title=\"Copy heading and permalink for Paragraph\" aria-label=\"Copy heading and permalink for Paragraph\">🔗<\/a><\/div><\/div>\n<div class=\"para\" id=\"varIO-1-2\"><input type=\"text\" id=\"-blank1\"\/><div class=\"autopermalink\" data-description=\"Paragraph\"><a href=\"#varIO-1-2\" title=\"Copy heading and permalink for Paragraph\" aria-label=\"Copy heading and permalink for Paragraph\">🔗<\/a><\/div><\/div>",
+"problemHtml": "\n<div class=\"para\" id=\"varIO-1-1\">Is the variable <code class=\"code-inline tex2jax_ignore\">color1<\/code> in the code above used for input or output?<div class=\"autopermalink\" aria-hidden=\"true\" data-description=\"Paragraph\"><a tabindex=\"-1\" href=\"#varIO-1-1\" title=\"Copy heading and permalink for Paragraph\" aria-label=\"Copy heading and permalink for Paragraph\">🔗<\/a><\/div><\/div>\n<div class=\"para\" id=\"varIO-1-2\"><input type=\"text\" id=\"-blank1\"\/><div class=\"autopermalink\" aria-hidden=\"true\" data-description=\"Paragraph\"><a tabindex=\"-1\" href=\"#varIO-1-2\" title=\"Copy heading and permalink for Paragraph\" aria-label=\"Copy heading and permalink for Paragraph\">🔗<\/a><\/div><\/div>",
 "solutionHtml": "",
 "blankNames": {"blank1": 0},
 "feedbackArray": [[{"regex": "input", "feedback": "Correct!"}, {"regex": "^\\s*input\\s*$", "regexFlags": "i", "feedback": "Correct! All of the variables above are used for user input."}, {"solution_code": "function() {\n    var testResults = new Array();\n    testResults[0] = 1;\n    return (testResults[0]);\n}()", "feedback": "\n<div class=\"para\" id=\"varIO-2-1-2-1-1\">Incorrect, try again. Please type in input or output in lowercase letters.<\/div>"}, {"feedback": "Incorrect."}]]
 }</script></div>
 </div></div>
-<div class="autopermalink" data-description="Activity 1.6.17"><a href="#varIO" title="Copy heading and permalink for Activity 1.6.17" aria-label="Copy heading and permalink for Activity 1.6.17">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Activity 1.6.17"><a tabindex="-1" href="#varIO" title="Copy heading and permalink for Activity 1.6.17" aria-label="Copy heading and permalink for Activity 1.6.17">🔗</a></div>
 </article>
-<article class="activity project-like" id="var-data-type"><h4 class="heading">
+<article class="activity project-like" id="var-data-type"><h3 class="heading">
 <span class="type">Activity</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">1.6.18</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
-</h4>
+</h3>
 <div class="ptx-runestone-container"><div class="runestone multiplechoice_section">
 <div class="exercise-statement">
-<div class="para" id="var-data-type-1-1">What is the data type of the variable <code class="code-inline tex2jax_ignore">color1</code> in the code above?<div class="autopermalink" data-description="Paragraph"><a href="#var-data-type-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="var-data-type-1-1">What is the data type of the variable <code class="code-inline tex2jax_ignore">color1</code> in the code above?<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#var-data-type-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 </div>
 <ul data-component="multiplechoice" class="exercise-interactives" id="rs-var-data-type" data-multipleanswers="false" data-random="">
@@ -1143,63 +1163,63 @@ myTests().main()
 </li>
 </ul>
 </div></div>
-<div class="autopermalink" data-description="Activity 1.6.18"><a href="#var-data-type" title="Copy heading and permalink for Activity 1.6.18" aria-label="Copy heading and permalink for Activity 1.6.18">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Activity 1.6.18"><a tabindex="-1" href="#var-data-type" title="Copy heading and permalink for Activity 1.6.18" aria-label="Copy heading and permalink for Activity 1.6.18">🔗</a></div>
 </article>
-<article class="activity project-like" id="madlibs-reflection"><h4 class="heading">
+<article class="activity project-like" id="madlibs-reflection"><h3 class="heading">
 <span class="type">Activity</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">1.6.19</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Project Reflection.</span>
-</h4>
+</h3>
 <div class="ptx-runestone-container"><div class="runestone shortanswer_section"><div data-component="shortanswer" data-question_label="" class="journal" data-mathjax="" id="rs-madlibs-reflection" data-placeholder="You can write here, and it will be saved on this device, but your response will not be graded.">
-<div class="para" id="madlibs-reflection-2-1">Identify an input and an output for your program above.<div class="autopermalink" data-description="Paragraph"><a href="#madlibs-reflection-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="madlibs-reflection-2-1">Identify an input and an output for your program above.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#madlibs-reflection-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 </div></div></div>
-<div class="autopermalink" data-description="Activity 1.6.19: Project Reflection"><a href="#madlibs-reflection" title="Copy heading and permalink for Activity 1.6.19: Project Reflection" aria-label="Copy heading and permalink for Activity 1.6.19: Project Reflection">🔗</a></div>
-</article><div class="autopermalink" data-description="Subsection 1.6.8: Coding Challenge: Story Project"><a href="#coding-challenge-madlibs-project" title="Copy heading and permalink for Subsection 1.6.8: Coding Challenge: Story Project" aria-label="Copy heading and permalink for Subsection 1.6.8: Coding Challenge: Story Project">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Activity 1.6.19: Project Reflection"><a tabindex="-1" href="#madlibs-reflection" title="Copy heading and permalink for Activity 1.6.19: Project Reflection" aria-label="Copy heading and permalink for Activity 1.6.19: Project Reflection">🔗</a></div>
+</article><div class="autopermalink" aria-hidden="true" data-description="Subsection 1.6.8: Coding Challenge: Story Project"><a tabindex="-1" href="#coding-challenge-madlibs-project" title="Copy heading and permalink for Subsection 1.6.8: Coding Challenge: Story Project" aria-label="Copy heading and permalink for Subsection 1.6.8: Coding Challenge: Story Project">🔗</a></div>
 </section>
 <section class="subsection" id="LOs-1-6">
-<h3 class="heading hide-type">
+<h2 class="heading hide-type">
 <span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">1.6.9</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Learning Objectives Review</span>
-</h3>
-<div class="para" id="LOs-1-6-2">After this lesson, you should be able to:<div class="autopermalink" data-description="Paragraph"><a href="#LOs-1-6-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</h2>
+<div class="para" id="LOs-1-6-2">After this lesson, you should be able to:<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#LOs-1-6-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<article class="remark remark-like" id="LOs-1-6-3"><h4 class="heading">
+<article class="remark remark-like" id="LOs-1-6-3"><h3 class="heading">
 <span class="type">Learning Objective</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">1.6.22</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">1.6.A.</span>
-</h4>
-<div class="para" id="LOs-1-6-3-2">Identify the use of variables in an app while interacting with it.<div class="autopermalink" data-description="Paragraph"><a href="#LOs-1-6-3-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</h3>
+<div class="para" id="LOs-1-6-3-2">Identify the use of variables in an app while interacting with it.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#LOs-1-6-3-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Learning Objective 1.6.22: 1.6.A"><a href="#LOs-1-6-3" title="Copy heading and permalink for Learning Objective 1.6.22: 1.6.A" aria-label="Copy heading and permalink for Learning Objective 1.6.22: 1.6.A">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Learning Objective 1.6.22: 1.6.A"><a tabindex="-1" href="#LOs-1-6-3" title="Copy heading and permalink for Learning Objective 1.6.22: 1.6.A" aria-label="Copy heading and permalink for Learning Objective 1.6.22: 1.6.A">🔗</a></div>
 </article>
-<article class="remark remark-like" id="LOs-1-6-4"><h4 class="heading">
+<article class="remark remark-like" id="LOs-1-6-4"><h3 class="heading">
 <span class="type">Learning Objective</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">1.6.23</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">1.6.B.</span>
-</h4>
-<div class="para" id="LOs-1-6-4-2">Develop code for assignment statements using variables, and determine the values that are stored in the variables as a result.<div class="autopermalink" data-description="Paragraph"><a href="#LOs-1-6-4-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</h3>
+<div class="para" id="LOs-1-6-4-2">Develop code for assignment statements using variables, and determine the values that are stored in the variables as a result.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#LOs-1-6-4-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Learning Objective 1.6.23: 1.6.B"><a href="#LOs-1-6-4" title="Copy heading and permalink for Learning Objective 1.6.23: 1.6.B" aria-label="Copy heading and permalink for Learning Objective 1.6.23: 1.6.B">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Learning Objective 1.6.23: 1.6.B"><a tabindex="-1" href="#LOs-1-6-4" title="Copy heading and permalink for Learning Objective 1.6.23: 1.6.B" aria-label="Copy heading and permalink for Learning Objective 1.6.23: 1.6.B">🔗</a></div>
 </article>
-<article class="remark remark-like" id="LOs-1-6-5"><h4 class="heading">
+<article class="remark remark-like" id="LOs-1-6-5"><h3 class="heading">
 <span class="type">Learning Objective</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">1.6.24</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">1.6.C.</span>
-</h4>
-<div class="para" id="LOs-1-6-5-2">Develop code to store and modify strings, and determine the output produced.<div class="autopermalink" data-description="Paragraph"><a href="#LOs-1-6-5-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</h3>
+<div class="para" id="LOs-1-6-5-2">Develop code to store and modify strings, and determine the output produced.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#LOs-1-6-5-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Learning Objective 1.6.24: 1.6.C"><a href="#LOs-1-6-5" title="Copy heading and permalink for Learning Objective 1.6.24: 1.6.C" aria-label="Copy heading and permalink for Learning Objective 1.6.24: 1.6.C">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Learning Objective 1.6.24: 1.6.C"><a tabindex="-1" href="#LOs-1-6-5" title="Copy heading and permalink for Learning Objective 1.6.24: 1.6.C" aria-label="Copy heading and permalink for Learning Objective 1.6.24: 1.6.C">🔗</a></div>
 </article>
-<article class="remark remark-like" id="LOs-1-6-6"><h4 class="heading">
+<article class="remark remark-like" id="LOs-1-6-6"><h3 class="heading">
 <span class="type">Learning Objective</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">1.6.25</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Additional.</span>
-</h4>
-<div class="para" id="LOs-1-6-6-2">Write code using Python input and print statements.<div class="autopermalink" data-description="Paragraph"><a href="#LOs-1-6-6-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</h3>
+<div class="para" id="LOs-1-6-6-2">Write code using Python input and print statements.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#LOs-1-6-6-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Learning Objective 1.6.25: Additional"><a href="#LOs-1-6-6" title="Copy heading and permalink for Learning Objective 1.6.25: Additional" aria-label="Copy heading and permalink for Learning Objective 1.6.25: Additional">🔗</a></div>
-</article><div class="autopermalink" data-description="Subsection 1.6.9: Learning Objectives Review"><a href="#LOs-1-6" title="Copy heading and permalink for Subsection 1.6.9: Learning Objectives Review" aria-label="Copy heading and permalink for Subsection 1.6.9: Learning Objectives Review">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Learning Objective 1.6.25: Additional"><a tabindex="-1" href="#LOs-1-6-6" title="Copy heading and permalink for Learning Objective 1.6.25: Additional" aria-label="Copy heading and permalink for Learning Objective 1.6.25: Additional">🔗</a></div>
+</article><div class="autopermalink" aria-hidden="true" data-description="Subsection 1.6.9: Learning Objectives Review"><a tabindex="-1" href="#LOs-1-6" title="Copy heading and permalink for Subsection 1.6.9: Learning Objectives Review" aria-label="Copy heading and permalink for Subsection 1.6.9: Learning Objectives Review">🔗</a></div>
 </section>
 <section class="subsection" id="vocab-1-6">
-<h3 class="heading hide-type">
+<h2 class="heading hide-type">
 <span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">1.6.10</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Vocabulary Review</span>
-</h3>
-<article class="activity project-like" id="vars-vocab"><h4 class="heading">
+</h2>
+<article class="activity project-like" id="vars-vocab"><h3 class="heading">
 <span class="type">Activity</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">1.6.20</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
-</h4>
+</h3>
 <div class="ptx-runestone-container"><div class="runestone cardsort_section"><ul data-component="dragndrop" data-question_label="" style="visibility: hidden;" id="rs-vars-vocab">
 <span data-subcomponent="question">
-<div class="para" id="vars-vocab-1-1">Review the vocabulary in this lesson. Drag the vocabulary term from the left and drop it on its correct definition on the right. Click the "Check Me" button to see if you are correct.<div class="autopermalink" data-description="Paragraph"><a href="#vars-vocab-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="vars-vocab-1-1">Review the vocabulary in this lesson. Drag the vocabulary term from the left and drop it on its correct definition on the right. Click the "Check Me" button to see if you are correct.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#vars-vocab-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div></span><span data-subcomponent="feedback">
 <div class="para" id="vars-vocab-2-1">Find the words in the lesson above and try again.</div></span><li data-subcomponent="draggable" id="rs-vars-vocab_drag1" data-category="1">variable</li>
 <li data-subcomponent="dropzone" for="rs-vars-vocab_drag1" data-category="1">a named storage location used to hold a value that can change while the program is running</li>
@@ -1214,17 +1234,17 @@ myTests().main()
 <li data-subcomponent="draggable" id="rs-vars-vocab_drag6" data-category="6">substring</li>
 <li data-subcomponent="dropzone" for="rs-vars-vocab_drag6" data-category="6">part of an existing string</li>
 </ul></div></div>
-<div class="autopermalink" data-description="Activity 1.6.20"><a href="#vars-vocab" title="Copy heading and permalink for Activity 1.6.20" aria-label="Copy heading and permalink for Activity 1.6.20">🔗</a></div>
-</article><div class="autopermalink" data-description="Subsection 1.6.10: Vocabulary Review"><a href="#vocab-1-6" title="Copy heading and permalink for Subsection 1.6.10: Vocabulary Review" aria-label="Copy heading and permalink for Subsection 1.6.10: Vocabulary Review">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Activity 1.6.20"><a tabindex="-1" href="#vars-vocab" title="Copy heading and permalink for Activity 1.6.20" aria-label="Copy heading and permalink for Activity 1.6.20">🔗</a></div>
+</article><div class="autopermalink" aria-hidden="true" data-description="Subsection 1.6.10: Vocabulary Review"><a tabindex="-1" href="#vocab-1-6" title="Copy heading and permalink for Subsection 1.6.10: Vocabulary Review" aria-label="Copy heading and permalink for Subsection 1.6.10: Vocabulary Review">🔗</a></div>
 </section>
 <section class="subsection" id="appinventor-activity1">
-<h3 class="heading hide-type">
+<h2 class="heading hide-type">
 <span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">1.6.11</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">App Inventor Project</span>
-</h3>
-<div class="para" id="appinventor-activity1-2">If your class wants to create mobile apps using MIT’s App Inventor. do <a class="external" href="unit1-appinventor-paint.html" target="_blank">Paint Pot Tutorial Part 1</a>.<div class="autopermalink" data-description="Paragraph"><a href="#appinventor-activity1-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</h2>
+<div class="para" id="appinventor-activity1-2">If your class wants to create mobile apps using MIT’s App Inventor. do <a class="external" href="unit1-appinventor-paint.html" target="_blank">Paint Pot Tutorial Part 1</a>.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#appinventor-activity1-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Subsection 1.6.11: App Inventor Project"><a href="#appinventor-activity1" title="Copy heading and permalink for Subsection 1.6.11: App Inventor Project" aria-label="Copy heading and permalink for Subsection 1.6.11: App Inventor Project">🔗</a></div>
-</section><div class="autopermalink" data-description="Section 1.6: Variables"><a href="#topic-1-6-variables" title="Copy heading and permalink for Section 1.6: Variables" aria-label="Copy heading and permalink for Section 1.6: Variables">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Subsection 1.6.11: App Inventor Project"><a tabindex="-1" href="#appinventor-activity1" title="Copy heading and permalink for Subsection 1.6.11: App Inventor Project" aria-label="Copy heading and permalink for Subsection 1.6.11: App Inventor Project">🔗</a></div>
+</section><div class="autopermalink" aria-hidden="true" data-description="Section 1.6: Variables"><a tabindex="-1" href="#topic-1-6-variables" title="Copy heading and permalink for Section 1.6: Variables" aria-label="Copy heading and permalink for Section 1.6: Variables">🔗</a></div>
 </section>
 </div>
 <div id="ptx-content-footer" class="ptx-content-footer">

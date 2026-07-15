@@ -36,7 +36,7 @@ htmlPresentation: false,
 <meta name="twitter:description" content="CSPossible is the newest AP CSP Python curriculum approved to meet the 2027-2028 College Board standards and an introductory college-level computer programming course in Python.">
 <meta property="og:description" content="CSPossible is the newest AP CSP Python curriculum approved to meet the 2027-2028 College Board standards and an introductory college-level computer programming course in Python.">
 <meta name="twitter:card" content="summary">
-<script src="_static/pretext/js/jquery.min.js"></script><script src="_static/pretext/js/dist/pretext-core.js?v=2.42"></script><!--** eBookCongig is necessary to configure interactive       **-->
+<script src="_static/pretext/js/jquery.min.js"></script><script src="_static/pretext/js/dist/pretext-core.js?v=2.44"></script><!--** eBookCongig is necessary to configure interactive       **-->
 <!--** Runestone components to run locally in reader's browser **-->
 <!--** No external communication:                              **-->
 <!--**     log level is 0, Runestone Services are disabled     **-->
@@ -59,36 +59,54 @@ eBookConfig.enableScratchAC = true;
 eBookConfig.acDefaultLanguage = 'python';
 eBookConfig.build_info = "";
 eBookConfig.python3 = null;
-eBookConfig.runestone_version = '8.1.11';
+eBookConfig.runestone_version = '8.1.14';
 eBookConfig.jobehost = '';
 eBookConfig.proxyuri_runs = '';
 eBookConfig.proxyuri_files = '';
 eBookConfig.enable_chatcodes =  false;
 </script>
 <!--*** Runestone Services ***-->
-<script src="_static/prefix-runtime.8b6d53d5a91823a0.bundle.js"></script><script src="_static/prefix-926.5c7038c8ef173faf.bundle.js"></script><script src="_static/prefix-runestone.2901d6466316ff22.bundle.js"></script><link rel="stylesheet" type="text/css" href="_static/prefix-926.229729d09512acc9.css">
+<script src="_static/prefix-runtime.cb5af2e851de3574.bundle.js"></script><script src="_static/prefix-926.5c7038c8ef173faf.bundle.js"></script><script src="_static/prefix-runestone.f51cd4153b45055d.bundle.js"></script><link rel="stylesheet" type="text/css" href="_static/prefix-926.229729d09512acc9.css">
 <link rel="stylesheet" type="text/css" href="_static/prefix-runestone.66fa8a682a32c0ac.css">
 <script src="_static/pretext/js/dist/lti_iframe_resizer.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.26.0/components/prism-core.min.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.26.0/plugins/autoloader/prism-autoloader.min.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.26.0/plugins/line-numbers/prism-line-numbers.min.js" integrity="sha512-dubtf8xMHSQlExGRQ5R7toxHLgSDZ0K7AunqPWHXmJQ8XyVIG19S1T95gBxlAeGOK02P4Da2RTnQz0Za0H0ebQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.26.0/plugins/line-highlight/prism-line-highlight.min.js" integrity="sha512-93uCmm0q+qO5Lb1huDqr7tywS8A2TFA+1/WHvyiWaK6/pvsFl6USnILagntBx8JnVbQH5s3n0vQZY6xNthNfKA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.9/lunr.min.js" integrity="sha512-4xUl/d6D6THrAnXAwGajXkoWaeMNwEKK4iNfq5DotEbLPAfk6FSxSP3ydNxqDgCw1c/0Z1Jg6L8h2j+++9BZmg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script><script src="lunr-pretext-search-index.js" async=""></script><script src="_static/pretext/js/dist/pretext_search.js"></script><!--knowl.js code controls Sage Cells within knowls--><script>sagecellEvalName='Evaluate (Sage)';
 </script>
 </head>
 <body id="cspossible" class="pretext book ignore-math">
-<a class="assistive" href="#ptx-content">Skip to main content</a><header id="ptx-masthead" class="ptx-masthead"><div class="ptx-banner">
+<a class="assistive" href="#ptx-content">Skip to main content</a><header id="ptx-masthead" class="ptx-masthead" role="banner"><div class="ptx-banner">
 <a id="logo-link" class="logo-link" target="_blank" href="http://localhost:8128/output/web/"></a><div class="title-container">
-<h1 class="heading"><a href="cspossible.html"><span class="title">CSPossible</span> <span class="subtitle">AP CSP 2027+ in Python</span></a></h1>
+<div class="heading ptx-banner-heading"><a href="cspossible.html"><span class="title">CSPossible</span> <span class="subtitle">AP CSP 2027+ in Python</span></a></div>
 <p class="byline"></p>
 </div>
 </div></header><nav id="ptx-navbar" class="ptx-navbar navbar"><div class="ptx-navbar-contents">
-<button class="toc-toggle button" title="Contents"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5d2;</span><span class="name">Contents</span></button><a class="index-button button" href="cspossible-9-1.html" title="Index"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe88e;</span><span class="name">Index</span></a><div class="ptx-search-box">
-<div class="ptx-search-widget"><button id="ptx-search-button" type="button" class="ptx-search-button button" title="Search book" commandfor="ptx-search-dialog" command="show-modal"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe8b6;</span><span class="name">Search Book</span></button></div>
-<dialog id="ptx-search-dialog" class="ptx-dialog ptx-search-dialog" closedby="closerequest"><div class="ptx-search-dialog-controls">
-<input aria-label="Search term" id="ptx-search-terms" class="ptx-search-terms" type="text" name="terms" placeholder="Search terms"><button aria-label="Close search" id="ptx-search-close" class="ptx-search-close" commandfor="ptx-search-dialog" command="close"><span class="material-symbols-outlined">close</span></button>
+<button id="ptx-toc-toggle" type="button" aria-controls="ptx-sidebar" class="toc-toggle button" title="Contents"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5d2;</span><span class="name">Contents</span></button><a class="index-button button" href="cspossible-9-1.html" title="Index"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe88e;</span><span class="name">Index</span></a><div class="ptx-search-box">
+<div class="ptx-search-widget"><button id="ptx-search-button" type="button" class="ptx-search-button button" title="Search Book"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe8b6;</span><span class="name">Search Book</span></button></div>
+<dialog id="ptx-search-dialog" class="ptx-dialog ptx-search-dialog"><div class="ptx-search-dialog-controls">
+<input aria-label="Search term" id="ptx-search-terms" class="ptx-search-terms" type="text" name="terms" placeholder="Search terms"><button aria-label="Close" id="ptx-search-close" class="ptx-search-close"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cd;</span></button>
 </div>
 <div id="ptx-search-status" class="ptx-search-status" aria-live="polite" aria-atomic="true"></div>
-<h2 class="ptx-search-results-heading">Search Results: </h2>
+<h2 class="heading ptx-search-results-heading">Search Results: </h2>
 <div id="ptx-search-empty" class="ptx-search-empty"><span>No results.</span></div>
 <ol id="ptx-search-results" class="ptx-search-results"></ol></dialog>
 </div>
-<span class="nav-other-controls"><button id="light-dark-button" class="light-dark-button button" title="Dark Mode"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe51c;</span><span class="name">Dark Mode</span></button></span><span class="treebuttons"><a class="previous-button button" href="topic-1-6-variables.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="up-button button" href="unit1.html" title="Up"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Up</span></a><a class="next-button button" href="unit1-summary.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a></span><span class="nav-runestone-controls"><button onclick="runestoneComponents.popupScratchAC()" class="activecode-toggle button" title="Open Scratch ActiveCode"><span class="icon material-symbols-outlined" aria-hidden="true">&#xf097;</span><span class="name">Scratch ActiveCode</span></button></span>
+<span class="nav-other-controls"><button id="ptx-readability-options-button" class="ptx-readability-options-button button" title="Readability settings"><span class="icon material-symbols-outlined" aria-hidden="true">&#xf6f1;</span><span class="name">Readability settings</span></button><dialog class="ptx-dialog ptx-readability-options-popup" id="ptx-readability-options-popup"><div class="ptx-readability-options-popup-controls">
+<h2 class="heading">Readability settings</h2>
+<button class="ptx-readability-options-close-button button" id="ptx-readability-options-close-button" title="Close"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cd;</span></button>
+</div>
+<div class="ptx-readability-options-group">
+<label class="ptx-readability-slider-label" for="ptx-readability-line-height"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe240;</span><span>Line height</span><output id="ptx-readability-line-height-value" for="ptx-readability-line-height">1.35</output></label><input type="range" id="ptx-readability-line-height" min="1.10" max="3" step="0.05" value="1.35">
+</div>
+<div class="ptx-readability-options-group">
+<label class="ptx-readability-slider-label" for="ptx-readability-font-size"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe245;</span><span>Content font size</span><output id="ptx-readability-font-size-value" for="ptx-readability-font-size">100%</output></label><input type="range" id="ptx-readability-font-size" min="0.8" max="1.5" step="0.05" value="1">
+</div>
+<fieldset class="ptx-readability-options-group ptx-readability-options-group-theme">
+<legend>Theme</legend>
+<label for="ptx-readability-theme-system"><input type="radio" name="ptx-readability-theme" id="ptx-readability-theme-system" value="system"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe1ab;</span><span>System</span></label><label for="ptx-readability-theme-light"><input type="radio" name="ptx-readability-theme" id="ptx-readability-theme-light" value="light"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe518;</span><span>Light</span></label><label for="ptx-readability-theme-dark"><input type="radio" name="ptx-readability-theme" id="ptx-readability-theme-dark" value="dark"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe51c;</span><span>Dark</span></label>
+</fieldset>
+<fieldset class="ptx-readability-options-group">
+<legend>Assistive technologies</legend>
+<label for="ptx-readability-accessible-permalinks"><input type="checkbox" id="ptx-readability-accessible-permalinks"><span>🔗</span><span>Expose permalinks</span></label>
+</fieldset>
+<div class="ptx-readability-options-group"><button type="button" class="ptx-readability-reset-button button" id="ptx-readability-reset-button"><span class="icon material-symbols-outlined" aria-hidden="true">&#xf053;</span><span class="name">Reset All</span></button></div></dialog></span><span class="treebuttons"><a class="previous-button button" href="topic-1-6-variables.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="up-button button" href="unit1.html" title="Up"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Up</span></a><a class="next-button button" href="unit1-summary.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a></span><span class="nav-runestone-controls"><button onclick="runestoneComponents.popupScratchAC()" class="activecode-toggle button" title="Scratch ActiveCode"><span class="icon material-symbols-outlined" aria-hidden="true">&#xf097;</span><span class="name">Scratch ActiveCode</span></button></span>
 </div></nav><div id="latex-macros" class="hidden-content process-math" style="display:none"><span class="process-math">\(
 \newcommand{\lt}{&lt;}
 \newcommand{\gt}{&gt;}
@@ -97,14 +115,14 @@ eBookConfig.enable_chatcodes =  false;
 \newcommand{\fillinmath}[1]{\mathchoice{\colorbox{fillinmathshade}{$\displaystyle     \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\textstyle        \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptstyle      \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptscriptstyle\phantom{\,#1\,}$}}}
 \)</span></div>
 <div class="ptx-page">
-<div id="ptx-sidebar" class="ptx-sidebar"><nav id="ptx-toc" class="ptx-toc depth3 focused" data-preexpanded-levels="0" data-max-levels="3"><ul class="structural toc-item-list contains-active">
+<div id="ptx-sidebar" role="complementary" class="ptx-sidebar"><nav id="ptx-toc" tabindex="-1" aria-label="Contents" class="ptx-toc depth3 focused" data-preexpanded-levels="0" data-max-levels="3"><ul class="structural toc-item-list contains-active">
 <li class="toc-item toc-chapter"><div class="toc-title-box"><a href="unit0.html" class="internal"><span class="codenumber">0</span> <span class="title">Getting Started</span></a></div></li>
 <li class="toc-item toc-chapter contains-active">
 <div class="toc-title-box"><a href="unit1.html" class="internal"><span class="codenumber">1</span> <span class="title">Creating Purposeful Apps and Programs</span></a></div>
-<ul class="structural toc-item-list contains-active">
+<ul class="structural toc-item-list contains-active" id="ptx-toc-group-unit1">
 <li class="toc-item toc-section">
 <div class="toc-title-box"><a href="topic-1-1-purpose.html" class="internal"><span class="codenumber">1.1</span> <span class="title">Purpose and Behavior</span></a></div>
-<ul class="structural toc-item-list">
+<ul id="ptx-toc-group-topic-1-1-purpose" class="structural toc-item-list">
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="topic-1-1-purpose.html#topic-1-1-purpose-4" class="internal"><span class="codenumber">1.1.1</span> <span class="title">Purpose and Behavior of Apps</span></a></div></li>
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="topic-1-1-purpose.html#topic-1-1-purpose-5" class="internal"><span class="codenumber">1.1.2</span> <span class="title">Inputs and Outputs</span></a></div></li>
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="topic-1-1-purpose.html#LOs-1-1" class="internal"><span class="codenumber">1.1.3</span> <span class="title">Learning Objectives Review</span></a></div></li>
@@ -113,7 +131,7 @@ eBookConfig.enable_chatcodes =  false;
 </li>
 <li class="toc-item toc-section">
 <div class="toc-title-box"><a href="topic-1-2-collaboration.html" class="internal"><span class="codenumber">1.2</span> <span class="title">Benefits of Collaboration</span></a></div>
-<ul class="structural toc-item-list">
+<ul id="ptx-toc-group-topic-1-2-collaboration" class="structural toc-item-list">
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="topic-1-2-collaboration.html#collaboration" class="internal"><span class="codenumber">1.2.1</span> <span class="title">Collaboration</span></a></div></li>
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="topic-1-2-collaboration.html#user-testing" class="internal"><span class="codenumber">1.2.2</span> <span class="title">User Testing</span></a></div></li>
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="topic-1-2-collaboration.html#iterative-process" class="internal"><span class="codenumber">1.2.3</span> <span class="title">Iterative Process</span></a></div></li>
@@ -124,7 +142,7 @@ eBookConfig.enable_chatcodes =  false;
 </li>
 <li class="toc-item toc-section">
 <div class="toc-title-box"><a href="topic-1-3-responsible-ai.html" class="internal"><span class="codenumber">1.3</span> <span class="title">Responsible AI and Human Decision-Making</span></a></div>
-<ul class="structural toc-item-list">
+<ul id="ptx-toc-group-topic-1-3-responsible-ai" class="structural toc-item-list">
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="topic-1-3-responsible-ai.html#ai-data" class="internal"><span class="codenumber">1.3.1</span> <span class="title">AI and Data</span></a></div></li>
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="topic-1-3-responsible-ai.html#ai-models" class="internal"><span class="codenumber">1.3.2</span> <span class="title">Machine Learning and AI Models</span></a></div></li>
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="topic-1-3-responsible-ai.html#teachable-machine" class="internal"><span class="codenumber">1.3.3</span> <span class="title">Teachable Machine Project</span></a></div></li>
@@ -136,7 +154,7 @@ eBookConfig.enable_chatcodes =  false;
 </li>
 <li class="toc-item toc-section">
 <div class="toc-title-box"><a href="topic-1-4-binary.html" class="internal"><span class="codenumber">1.4</span> <span class="title">Binary Representation</span></a></div>
-<ul class="structural toc-item-list">
+<ul id="ptx-toc-group-topic-1-4-binary" class="structural toc-item-list">
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="topic-1-4-binary.html#data-bits" class="internal"><span class="codenumber">1.4.1</span> <span class="title">Data and Bits</span></a></div></li>
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="topic-1-4-binary.html#binary" class="internal"><span class="codenumber">1.4.2</span> <span class="title">Binary Numbers</span></a></div></li>
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="topic-1-4-binary.html#abstraction" class="internal"><span class="codenumber">1.4.3</span> <span class="title">Abstraction</span></a></div></li>
@@ -148,7 +166,7 @@ eBookConfig.enable_chatcodes =  false;
 </li>
 <li class="toc-item toc-section">
 <div class="toc-title-box"><a href="topic-1-5-sequencing.html" class="internal"><span class="codenumber">1.5</span> <span class="title">Sequencing</span></a></div>
-<ul class="structural toc-item-list">
+<ul id="ptx-toc-group-topic-1-5-sequencing" class="structural toc-item-list">
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="topic-1-5-sequencing.html#sequencing" class="internal"><span class="codenumber">1.5.1</span> <span class="title">Sequencing in Written Steps and Flowcharts</span></a></div></li>
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="topic-1-5-sequencing.html#print" class="internal"><span class="codenumber">1.5.2</span> <span class="title">Python Output with <code class="code-inline tex2jax_ignore">print()</code></span></a></div></li>
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="topic-1-5-sequencing.html#sequencing-print" class="internal"><span class="codenumber">1.5.3</span> <span class="title">Sequencing in Code</span></a></div></li>
@@ -163,7 +181,7 @@ eBookConfig.enable_chatcodes =  false;
 </li>
 <li class="toc-item toc-section">
 <div class="toc-title-box"><a href="topic-1-6-variables.html" class="internal"><span class="codenumber">1.6</span> <span class="title">Variables</span></a></div>
-<ul class="structural toc-item-list">
+<ul id="ptx-toc-group-topic-1-6-variables" class="structural toc-item-list">
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="topic-1-6-variables.html#vars-in-apps" class="internal"><span class="codenumber">1.6.1</span> <span class="title">Identifying Variables in Apps</span></a></div></li>
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="topic-1-6-variables.html#python-vars" class="internal"><span class="codenumber">1.6.2</span> <span class="title">Variables in Python</span></a></div></li>
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="topic-1-6-variables.html#data-types" class="internal"><span class="codenumber">1.6.3</span> <span class="title">Data Types</span></a></div></li>
@@ -179,7 +197,7 @@ eBookConfig.enable_chatcodes =  false;
 </li>
 <li class="toc-item toc-section contains-active">
 <div class="toc-title-box"><a href="topic-1-7-expressions.html" class="internal"><span class="codenumber">1.7</span> <span class="title">Mathematical Expressions</span></a></div>
-<ul class="structural toc-item-list active">
+<ul class="structural toc-item-list active" id="ptx-toc-group-topic-1-7-expressions">
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="topic-1-7-expressions.html#expressions" class="internal"><span class="codenumber">1.7.1</span> <span class="title">Mathematical Expressions</span></a></div></li>
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="topic-1-7-expressions.html#updating-state" class="internal"><span class="codenumber">1.7.2</span> <span class="title">Updating State with Expressions</span></a></div></li>
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="topic-1-7-expressions.html#operators" class="internal"><span class="codenumber">1.7.3</span> <span class="title">Arithmetic Operators</span></a></div></li>
@@ -193,7 +211,7 @@ eBookConfig.enable_chatcodes =  false;
 </li>
 <li class="toc-item toc-section">
 <div class="toc-title-box"><a href="unit1-summary.html" class="internal"><span class="codenumber">1.8</span> <span class="title">Unit 1 Summary</span></a></div>
-<ul class="structural toc-item-list">
+<ul id="ptx-toc-group-unit1-summary" class="structural toc-item-list">
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="unit1-summary.html#unit1-summary-objectives" class="internal"><span class="codenumber">1.8.1</span> <span class="title">Unit 1 Learning Objectives</span></a></div></li>
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="unit1-summary.html#unit1-summary-vocab" class="internal"><span class="codenumber">1.8.2</span> <span class="title">Unit 1 Vocabulary</span></a></div></li>
 </ul>
@@ -203,11 +221,11 @@ eBookConfig.enable_chatcodes =  false;
 <li class="toc-item toc-section"><div class="toc-title-box"><a href="unit1-coding-practice.html" class="internal"><span class="codenumber">1.11</span> <span class="title">Unit 1 Coding Practice Exercises</span></a></div></li>
 <li class="toc-item toc-section">
 <div class="toc-title-box"><a href="unit1-appinventor-setup.html" class="internal"><span class="codenumber">1.12</span> <span class="title">App Inventor Setup (Optional)</span></a></div>
-<ul class="structural toc-item-list"><li class="toc-item toc-subsection"><div class="toc-title-box"><a href="unit1-appinventor-setup.html#unit1-appinventor-setup-steps" class="internal"><span class="codenumber">1.12.1</span> <span class="title">App Inventor Setup Steps</span></a></div></li></ul>
+<ul id="ptx-toc-group-unit1-appinventor-setup" class="structural toc-item-list"><li class="toc-item toc-subsection"><div class="toc-title-box"><a href="unit1-appinventor-setup.html#unit1-appinventor-setup-steps" class="internal"><span class="codenumber">1.12.1</span> <span class="title">App Inventor Setup Steps</span></a></div></li></ul>
 </li>
 <li class="toc-item toc-section">
 <div class="toc-title-box"><a href="unit1-appinventor-paint.html" class="internal"><span class="codenumber">1.13</span> <span class="title">App Inventor Paint Pot Tutorial (Optional)</span></a></div>
-<ul class="structural toc-item-list">
+<ul id="ptx-toc-group-unit1-appinventor-paint" class="structural toc-item-list">
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="unit1-appinventor-paint.html#paint-part1" class="internal"><span class="codenumber">1.13.1</span> <span class="title">Paint Pot Tutorial Part 1</span></a></div></li>
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="unit1-appinventor-paint.html#paint-part2" class="internal"><span class="codenumber">1.13.2</span> <span class="title">Paint Pot Tutorial Part 2</span></a></div></li>
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="unit1-appinventor-paint.html#paint-enhancements" class="internal"><span class="codenumber">1.13.3</span> <span class="title">Paint Pot Enhancements</span></a></div></li>
@@ -218,20 +236,22 @@ eBookConfig.enable_chatcodes =  false;
 </li>
 <li class="toc-item toc-chapter">
 <div class="toc-title-box"><a href="unit2.html" class="internal"><span class="codenumber">2</span> <span class="title">Building Solutions using Selection and Iteration</span></a></div>
-<ul class="structural toc-item-list">
+<ul id="ptx-toc-group-unit2" class="structural toc-item-list">
 <li class="toc-item toc-section">
 <div class="toc-title-box"><a href="topic-2-1-program-design-development.html" class="internal"><span class="codenumber">2.1</span> <span class="title">Program Design and Development</span></a></div>
-<ul class="structural toc-item-list">
-<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="topic-2-1-program-design-development.html#topic-2-1-program-design-development-4" class="internal"><span class="codenumber">2.1.1</span> <span class="title">Learning Objectives</span></a></div></li>
-<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="topic-2-1-program-design-development.html#topic-2-1-program-design-development-5" class="internal"><span class="codenumber">2.1.2</span> <span class="title">The Development Process</span></a></div></li>
-<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="topic-2-1-program-design-development.html#topic-2-1-program-design-development-6" class="internal"><span class="codenumber">2.1.3</span> <span class="title">Design and User Research</span></a></div></li>
-<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="topic-2-1-program-design-development.html#topic-2-1-program-design-development-7" class="internal"><span class="codenumber">2.1.4</span> <span class="title">Documentation</span></a></div></li>
-<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="topic-2-1-program-design-development.html#topic-2-1-program-design-development-8" class="internal"><span class="codenumber">2.1.5</span> <span class="title">Reusing and Citing Digital Content</span></a></div></li>
+<ul id="ptx-toc-group-topic-2-1-program-design-development" class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="topic-2-1-program-design-development.html#development-process" class="internal"><span class="codenumber">2.1.1</span> <span class="title">The Development Process</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="topic-2-1-program-design-development.html#design-thinking" class="internal"><span class="codenumber">2.1.2</span> <span class="title">Design Thinking</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="topic-2-1-program-design-development.html#user-research" class="internal"><span class="codenumber">2.1.3</span> <span class="title">User Research and Feedback</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="topic-2-1-program-design-development.html#documentation" class="internal"><span class="codenumber">2.1.4</span> <span class="title">Documentation</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="topic-2-1-program-design-development.html#topic-2-1-program-design-development-9" class="internal"><span class="codenumber">2.1.5</span> <span class="title">Reusing and Citing Digital Content</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="topic-2-1-program-design-development.html#LOs-2-1" class="internal"><span class="codenumber">2.1.6</span> <span class="title">Learning Objectives Review</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="topic-2-1-program-design-development.html#vocab-2-1" class="internal"><span class="codenumber">2.1.7</span> <span class="title">Vocabulary Review</span></a></div></li>
 </ul>
 </li>
 <li class="toc-item toc-section">
 <div class="toc-title-box"><a href="topic-2-2-boolean-expressions.html" class="internal"><span class="codenumber">2.2</span> <span class="title">Boolean Expressions</span></a></div>
-<ul class="structural toc-item-list">
+<ul id="ptx-toc-group-topic-2-2-boolean-expressions" class="structural toc-item-list">
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="topic-2-2-boolean-expressions.html#decisions" class="internal"><span class="codenumber">2.2.1</span> <span class="title">Boolean Expressions and Decision Making</span></a></div></li>
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="topic-2-2-boolean-expressions.html#relational-operators" class="internal"><span class="codenumber">2.2.2</span> <span class="title">Relational Operators</span></a></div></li>
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="topic-2-2-boolean-expressions.html#logical-operators" class="internal"><span class="codenumber">2.2.3</span> <span class="title">Logical Operators</span></a></div></li>
@@ -242,7 +262,7 @@ eBookConfig.enable_chatcodes =  false;
 </li>
 <li class="toc-item toc-section">
 <div class="toc-title-box"><a href="topic-2-3-selection.html" class="internal"><span class="codenumber">2.3</span> <span class="title">Selection</span></a></div>
-<ul class="structural toc-item-list">
+<ul id="ptx-toc-group-topic-2-3-selection" class="structural toc-item-list">
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="topic-2-3-selection.html#topic-2-3-selection-8" class="internal"><span class="codenumber">2.3.1</span> <span class="title">Selection in Algorithms</span></a></div></li>
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="topic-2-3-selection.html#if-statements" class="internal"><span class="codenumber">2.3.2</span> <span class="title">Conditional Statements (If Statements)</span></a></div></li>
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="topic-2-3-selection.html#if-else" class="internal"><span class="codenumber">2.3.3</span> <span class="title">If-Else Statements</span></a></div></li>
@@ -254,7 +274,7 @@ eBookConfig.enable_chatcodes =  false;
 </li>
 <li class="toc-item toc-section">
 <div class="toc-title-box"><a href="topic-2-4-iteration.html" class="internal"><span class="codenumber">2.4</span> <span class="title">Iteration</span></a></div>
-<ul class="structural toc-item-list">
+<ul id="ptx-toc-group-topic-2-4-iteration" class="structural toc-item-list">
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="topic-2-4-iteration.html#topic-2-4-iteration-4" class="internal"><span class="codenumber">2.4.1</span> <span class="title">Learning Objectives</span></a></div></li>
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="topic-2-4-iteration.html#topic-2-4-iteration-5" class="internal"><span class="codenumber">2.4.2</span> <span class="title">Iteration in Algorithms</span></a></div></li>
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="topic-2-4-iteration.html#topic-2-4-iteration-6" class="internal"><span class="codenumber">2.4.3</span> <span class="title">Loop Statements</span></a></div></li>
@@ -262,7 +282,7 @@ eBookConfig.enable_chatcodes =  false;
 </li>
 <li class="toc-item toc-section">
 <div class="toc-title-box"><a href="topic-2-5-algorithm-development.html" class="internal"><span class="codenumber">2.5</span> <span class="title">Algorithm Development</span></a></div>
-<ul class="structural toc-item-list">
+<ul id="ptx-toc-group-topic-2-5-algorithm-development" class="structural toc-item-list">
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="topic-2-5-algorithm-development.html#topic-2-5-algorithm-development-4" class="internal"><span class="codenumber">2.5.1</span> <span class="title">Learning Objectives</span></a></div></li>
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="topic-2-5-algorithm-development.html#topic-2-5-algorithm-development-5" class="internal"><span class="codenumber">2.5.2</span> <span class="title">Developing Algorithms</span></a></div></li>
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="topic-2-5-algorithm-development.html#topic-2-5-algorithm-development-6" class="internal"><span class="codenumber">2.5.3</span> <span class="title">Comparing Algorithms</span></a></div></li>
@@ -270,7 +290,7 @@ eBookConfig.enable_chatcodes =  false;
 </li>
 <li class="toc-item toc-section">
 <div class="toc-title-box"><a href="topic-2-6-errors.html" class="internal"><span class="codenumber">2.6</span> <span class="title">Errors</span></a></div>
-<ul class="structural toc-item-list">
+<ul id="ptx-toc-group-topic-2-6-errors" class="structural toc-item-list">
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="topic-2-6-errors.html#topic-2-6-errors-4" class="internal"><span class="codenumber">2.6.1</span> <span class="title">Learning Objectives</span></a></div></li>
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="topic-2-6-errors.html#topic-2-6-errors-5" class="internal"><span class="codenumber">2.6.2</span> <span class="title">Correcting Errors</span></a></div></li>
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="topic-2-6-errors.html#topic-2-6-errors-6" class="internal"><span class="codenumber">2.6.3</span> <span class="title">Testing and Test Cases</span></a></div></li>
@@ -278,7 +298,7 @@ eBookConfig.enable_chatcodes =  false;
 </li>
 <li class="toc-item toc-section">
 <div class="toc-title-box"><a href="unit2-summary.html" class="internal"><span class="codenumber">2.7</span> <span class="title">Unit 2 Summary</span></a></div>
-<ul class="structural toc-item-list">
+<ul id="ptx-toc-group-unit2-summary" class="structural toc-item-list">
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="unit2-summary.html#unit2-summary-objectives" class="internal"><span class="codenumber">2.7.1</span> <span class="title">Unit 2 Learning Objectives</span></a></div></li>
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="unit2-summary.html#unit2-summary-vocab" class="internal"><span class="codenumber">2.7.2</span> <span class="title">Unit 2 Vocabulary</span></a></div></li>
 </ul>
@@ -289,70 +309,70 @@ eBookConfig.enable_chatcodes =  false;
 <li class="toc-item toc-chapter"><div class="toc-title-box"><a href="unit4.html" class="internal"><span class="codenumber">4</span> <span class="title">Making Data-Driven Decisions using the Internet and AI</span></a></div></li>
 <li class="toc-item toc-backmatter">
 <div class="toc-title-box"><a href="cspossible-9.html" class="internal"><span class="title">Back Matter</span></a></div>
-<ul class="structural toc-item-list"><li class="toc-item toc-index"><div class="toc-title-box"><a href="cspossible-9-1.html" class="internal"><span class="title">Index</span></a></div></li></ul>
+<ul id="ptx-toc-group-cspossible-9" class="structural toc-item-list"><li class="toc-item toc-index"><div class="toc-title-box"><a href="cspossible-9-1.html" class="internal"><span class="title">Index</span></a></div></li></ul>
 </li>
 </ul></nav></div>
 <main class="ptx-main"><div id="ptx-content" class="ptx-content">
 <section class="section" id="topic-1-7-expressions">
-<h2 class="heading hide-type">
+<h1 class="heading hide-type">
 <span class="type">Section</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">1.7</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Mathematical Expressions</span>
-</h2>
+</h1>
 <div class="time">
 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-clock" viewBox="0 0 16 16"><path d="M8 3.5a.5.5 0 0 0-1 0V9a.5.5 0 0 0 .252.434l3.5 2a.5.5 0 0 0 .496-.868L8 8.71V3.5z"></path><path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm7-8A7 7 0 1 1 1 8a7 7 0 0 1 14 0z"></path></svg><span>90 minutes</span>
 </div>
 <section class="introduction" id="topic-1-7-expressions-5">
 <div class="para" id="topic-1-7-expressions-5-1">Computers are very good at math! In this lesson, we’ll learn how to do math in Python using <dfn class="terminology">mathematical expressions</dfn> which are mathematical formulas that combine numbers, variables, and operators to calculate a value like <code class="code-inline tex2jax_ignore">width*height</code> below. <div class="image-box" style="width: 50%; margin-left: 25%; margin-right: 25%;"><img src="external/_static/Unit1images/computer-math.png" class="contained"></div>
-<div class="autopermalink" data-description="Paragraph"><a href="#topic-1-7-expressions-5-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#topic-1-7-expressions-5-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div></section>
 <section class="subsection" id="expressions">
-<h3 class="heading hide-type">
+<h2 class="heading hide-type">
 <span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">1.7.1</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Mathematical Expressions</span>
-</h3>
-<article class="note remark-like" id="expressions-2"><h4 class="heading">
+</h2>
+<article class="note remark-like" id="expressions-2"><h3 class="heading">
 <span class="type">Essential Knowledge</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">1.7.1</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">1.7.A.1.</span>
-</h4>
-<div class="para" id="expressions-2-2">Apps use mathematical expressions to calculate values that help users make decisions, such as prices, time estimates, or progress toward a goal.<div class="autopermalink" data-description="Paragraph"><a href="#expressions-2-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</h3>
+<div class="para" id="expressions-2-2">Apps use mathematical expressions to calculate values that help users make decisions, such as prices, time estimates, or progress toward a goal.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#expressions-2-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Essential Knowledge 1.7.1: 1.7.A.1"><a href="#expressions-2" title="Copy heading and permalink for Essential Knowledge 1.7.1: 1.7.A.1" aria-label="Copy heading and permalink for Essential Knowledge 1.7.1: 1.7.A.1">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Essential Knowledge 1.7.1: 1.7.A.1"><a tabindex="-1" href="#expressions-2" title="Copy heading and permalink for Essential Knowledge 1.7.1: 1.7.A.1" aria-label="Copy heading and permalink for Essential Knowledge 1.7.1: 1.7.A.1">🔗</a></div>
 </article>
-<div class="para" id="expressions-3">In the last lesson, we assigned values to variables like <code class="code-inline tex2jax_ignore">score = 0</code>, but the right side of an assignment statement can be more than just a simple value like 0. We can use <dfn class="terminology">expressions</dfn> which combine numbers, variables, and operators to calculate a value and assign it to the variable in an assignment statement like below.<div class="autopermalink" data-description="Paragraph"><a href="#expressions-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="expressions-3">In the last lesson, we assigned values to variables like <code class="code-inline tex2jax_ignore">score = 0</code>, but the right side of an assignment statement can be more than just a simple value like 0. We can use <dfn class="terminology">expressions</dfn> which combine numbers, variables, and operators to calculate a value and assign it to the variable in an assignment statement like below.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#expressions-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="image-box" style="width: 50%; margin-left: 25%; margin-right: 25%;"><img src="external/_static/Unit1images/assignment.png" class="contained"></div>
-<div class="para" id="expressions-5">This looks like a mathematical formula, but in coding, an assignment statement always has a single variable on the left side and an expression on the right side. The expression is evaluated and then assigned to the variable.<div class="autopermalink" data-description="Paragraph"><a href="#expressions-5" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="expressions-5">This looks like a mathematical formula, but in coding, an assignment statement always has a single variable on the left side and an expression on the right side. The expression is evaluated and then assigned to the variable.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#expressions-5" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<article class="activity project-like" id="trace-expr0"><h4 class="heading">
+<article class="activity project-like" id="trace-expr0"><h3 class="heading">
 <span class="type">Activity</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">1.7.1</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
-</h4>
+</h3>
 <div class="ptx-runestone-container"><div class="runestone">
 <div data-component="fillintheblank" class="fillintheblank" style="visibility: hidden;" id="rs-trace-expr0"><script type="application/json">{
-"problemHtml": "\n<div class=\"para\" id=\"trace-expr0-1-1\">If <code class=\"code-inline tex2jax_ignore\">points = 3<\/code>, what is the value of <code class=\"code-inline tex2jax_ignore\">score<\/code> after this assignment statement which multiplies points by 10 and adds 5?<div class=\"autopermalink\" data-description=\"Paragraph\"><a href=\"#trace-expr0-1-1\" title=\"Copy heading and permalink for Paragraph\" aria-label=\"Copy heading and permalink for Paragraph\">🔗<\/a><\/div><\/div><div class=\"code-box\"><pre class=\"program clipboardable\"><code class=\"language-py\">score = (10 * points) + 5\n<\/code><\/pre><\/div>\n<div class=\"para\" id=\"trace-expr0-1-3\"><input type=\"text\" id=\"-blank1\"\/><div class=\"autopermalink\" data-description=\"Paragraph\"><a href=\"#trace-expr0-1-3\" title=\"Copy heading and permalink for Paragraph\" aria-label=\"Copy heading and permalink for Paragraph\">🔗<\/a><\/div><\/div>",
+"problemHtml": "\n<div class=\"para\" id=\"trace-expr0-1-1\">If <code class=\"code-inline tex2jax_ignore\">points = 3<\/code>, what is the value of <code class=\"code-inline tex2jax_ignore\">score<\/code> after this assignment statement which multiplies points by 10 and adds 5?<div class=\"autopermalink\" aria-hidden=\"true\" data-description=\"Paragraph\"><a tabindex=\"-1\" href=\"#trace-expr0-1-1\" title=\"Copy heading and permalink for Paragraph\" aria-label=\"Copy heading and permalink for Paragraph\">🔗<\/a><\/div><\/div><div class=\"code-box\"><pre class=\"program clipboardable\"><code class=\"language-py\">score = (10 * points) + 5\n<\/code><\/pre><\/div>\n<div class=\"para\" id=\"trace-expr0-1-3\"><input type=\"text\" id=\"-blank1\"\/><div class=\"autopermalink\" aria-hidden=\"true\" data-description=\"Paragraph\"><a tabindex=\"-1\" href=\"#trace-expr0-1-3\" title=\"Copy heading and permalink for Paragraph\" aria-label=\"Copy heading and permalink for Paragraph\">🔗<\/a><\/div><\/div>",
 "solutionHtml": "",
 "blankNames": {"blank1": 0},
 "feedbackArray": [[{"regex": "35", "feedback": "Correct!"}, {"regex": "^\\s*35\\s*$", "regexFlags": "", "feedback": "Correct! <code class=\"code-inline tex2jax_ignore\">(10*3) + 5 = 35<\/code>"}, {"solution_code": "function() {\n    var testResults = new Array();\n    testResults[0] = 1;\n    return (testResults[0]);\n}()", "feedback": "\n<div class=\"para\" id=\"trace-expr0-2-1-2-1-1\">Incorrect, try again. What is (10 * 3) + 5?<\/div>"}, {"feedback": "Incorrect."}]]
 }</script></div>
 </div></div>
-<div class="autopermalink" data-description="Activity 1.7.1"><a href="#trace-expr0" title="Copy heading and permalink for Activity 1.7.1" aria-label="Copy heading and permalink for Activity 1.7.1">🔗</a></div>
-</article><div class="autopermalink" data-description="Subsection 1.7.1: Mathematical Expressions"><a href="#expressions" title="Copy heading and permalink for Subsection 1.7.1: Mathematical Expressions" aria-label="Copy heading and permalink for Subsection 1.7.1: Mathematical Expressions">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Activity 1.7.1"><a tabindex="-1" href="#trace-expr0" title="Copy heading and permalink for Activity 1.7.1" aria-label="Copy heading and permalink for Activity 1.7.1">🔗</a></div>
+</article><div class="autopermalink" aria-hidden="true" data-description="Subsection 1.7.1: Mathematical Expressions"><a tabindex="-1" href="#expressions" title="Copy heading and permalink for Subsection 1.7.1: Mathematical Expressions" aria-label="Copy heading and permalink for Subsection 1.7.1: Mathematical Expressions">🔗</a></div>
 </section>
 <section class="subsection" id="updating-state">
-<h3 class="heading hide-type">
+<h2 class="heading hide-type">
 <span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">1.7.2</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Updating State with Expressions</span>
-</h3>
-<article class="note remark-like" id="updating-state-2"><h4 class="heading">
+</h2>
+<article class="note remark-like" id="updating-state-2"><h3 class="heading">
 <span class="type">Essential Knowledge</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">1.7.2</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">1.7.A.2.</span>
-</h4>
-<div class="para" id="updating-state-2-2">Mathematical expressions can be used to update the state of a program by changing values stored in variables, such as scores, timers, levels, and resource usage.<div class="autopermalink" data-description="Paragraph"><a href="#updating-state-2-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</h3>
+<div class="para" id="updating-state-2-2">Mathematical expressions can be used to update the state of a program by changing values stored in variables, such as scores, timers, levels, and resource usage.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#updating-state-2-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Essential Knowledge 1.7.2: 1.7.A.2"><a href="#updating-state-2" title="Copy heading and permalink for Essential Knowledge 1.7.2: 1.7.A.2" aria-label="Copy heading and permalink for Essential Knowledge 1.7.2: 1.7.A.2">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Essential Knowledge 1.7.2: 1.7.A.2"><a tabindex="-1" href="#updating-state-2" title="Copy heading and permalink for Essential Knowledge 1.7.2: 1.7.A.2" aria-label="Copy heading and permalink for Essential Knowledge 1.7.2: 1.7.A.2">🔗</a></div>
 </article>
-<div class="para" id="updating-state-3">If you use a variable to keep score, you would probably <dfn class="terminology">increment</dfn> the score (add one to the current value) as the game progresses. You can do this by setting the variable to the current value of the variable plus one (<code class="code-inline tex2jax_ignore">score = score + 1</code>) as shown below. The formula would look strange in math class, but it makes sense in coding because it is assigning a new value to the variable on the left that comes from evaluating the arithmetic expression on the right. So, the score variable is set to the previous value of score plus 1.<div class="autopermalink" data-description="Paragraph"><a href="#updating-state-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="updating-state-3">If you use a variable to keep score, you would probably <dfn class="terminology">increment</dfn> the score (add one to the current value) as the game progresses. You can do this by setting the variable to the current value of the variable plus one (<code class="code-inline tex2jax_ignore">score = score + 1</code>) as shown below. The formula would look strange in math class, but it makes sense in coding because it is assigning a new value to the variable on the left that comes from evaluating the arithmetic expression on the right. So, the score variable is set to the previous value of score plus 1.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#updating-state-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<article class="activity project-like" id="incrementScore"><h4 class="heading">
+<article class="activity project-like" id="incrementScore"><h3 class="heading">
 <span class="type">Activity</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">1.7.2</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
-</h4>
+</h3>
 <div class="ptx-runestone-container"><div class="runestone explainer ac_section "><div data-component="activecode" id="rs-incrementScore">
 <div class="ac_question exercise-statement" id="rs-incrementScore_question">
-<div class="para" id="incrementScore-1-1">Try the code below to see how score is incremented by 1. Try substituting 2 instead of 1 to increment by 2.<div class="autopermalink" data-description="Paragraph"><a href="#incrementScore-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="incrementScore-1-1">Try the code below to see how score is incremented by 1. Try substituting 2 instead of 1 to increment by 2.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#incrementScore-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 </div>
 <textarea data-lang="python" data-audio="" data-coach="true" style="visibility: hidden;" id="rs-incrementScore_editor" data-question_label="" data-codelens="true" data-timelimit="25000">score = 10
@@ -369,33 +389,33 @@ class myTests(TestCaseGui):
 myTests().main()
 </textarea>
 </div></div></div>
-<div class="autopermalink" data-description="Activity 1.7.2"><a href="#incrementScore" title="Copy heading and permalink for Activity 1.7.2" aria-label="Copy heading and permalink for Activity 1.7.2">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Activity 1.7.2"><a tabindex="-1" href="#incrementScore" title="Copy heading and permalink for Activity 1.7.2" aria-label="Copy heading and permalink for Activity 1.7.2">🔗</a></div>
 </article>
-<article class="note remark-like" id="updating-state-5"><h4 class="heading">
+<article class="note remark-like" id="updating-state-5"><h3 class="heading">
 <span class="type">Essential Knowledge</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">1.7.3</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">1.7.A.3.</span>
-</h4>
-<div class="para" id="updating-state-5-2">An <dfn class="terminology">integer</dfn> is a numeric data type that represents positive and negative whole numbers, including zero. Integers are often used for counts or scores in a program.<div class="autopermalink" data-description="Paragraph"><a href="#updating-state-5-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</h3>
+<div class="para" id="updating-state-5-2">An <dfn class="terminology">integer</dfn> is a numeric data type that represents positive and negative whole numbers, including zero. Integers are often used for counts or scores in a program.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#updating-state-5-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Essential Knowledge 1.7.3: 1.7.A.3"><a href="#updating-state-5" title="Copy heading and permalink for Essential Knowledge 1.7.3: 1.7.A.3" aria-label="Copy heading and permalink for Essential Knowledge 1.7.3: 1.7.A.3">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Essential Knowledge 1.7.3: 1.7.A.3"><a tabindex="-1" href="#updating-state-5" title="Copy heading and permalink for Essential Knowledge 1.7.3: 1.7.A.3" aria-label="Copy heading and permalink for Essential Knowledge 1.7.3: 1.7.A.3">🔗</a></div>
 </article>
-<div class="para" id="updating-state-6">In Python, you do not need to indicate the data type of a variable, but variable that are assigned whole number values like <code class="code-inline tex2jax_ignore">score = 5</code> are automatically type <code class="code-inline tex2jax_ignore">int</code> for <dfn class="terminology">integer</dfn>.<div class="autopermalink" data-description="Paragraph"><a href="#updating-state-6" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="updating-state-6">In Python, you do not need to indicate the data type of a variable, but variable that are assigned whole number values like <code class="code-inline tex2jax_ignore">score = 5</code> are automatically type <code class="code-inline tex2jax_ignore">int</code> for <dfn class="terminology">integer</dfn>.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#updating-state-6" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Subsection 1.7.2: Updating State with Expressions"><a href="#updating-state" title="Copy heading and permalink for Subsection 1.7.2: Updating State with Expressions" aria-label="Copy heading and permalink for Subsection 1.7.2: Updating State with Expressions">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Subsection 1.7.2: Updating State with Expressions"><a tabindex="-1" href="#updating-state" title="Copy heading and permalink for Subsection 1.7.2: Updating State with Expressions" aria-label="Copy heading and permalink for Subsection 1.7.2: Updating State with Expressions">🔗</a></div>
 </section>
 <section class="subsection" id="operators">
-<h3 class="heading hide-type">
+<h2 class="heading hide-type">
 <span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">1.7.3</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Arithmetic Operators</span>
-</h3>
-<article class="note remark-like" id="operators-14"><h4 class="heading">
+</h2>
+<article class="note remark-like" id="operators-14"><h3 class="heading">
 <span class="type">Essential Knowledge</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">1.7.4</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">1.7.A.4.</span>
-</h4>
-<div class="para" id="operators-14-2">Arithmetic operators appear in most programming languages, but the notation used for those operations is determined by the language. Common arithmetic operators include addition <code class="code-inline tex2jax_ignore">+</code>, subtraction <code class="code-inline tex2jax_ignore">-</code>, multiplication <code class="code-inline tex2jax_ignore">*</code>, division <code class="code-inline tex2jax_ignore">/</code> and modulo <code class="code-inline tex2jax_ignore">%</code>.<div class="autopermalink" data-description="Paragraph"><a href="#operators-14-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</h3>
+<div class="para" id="operators-14-2">Arithmetic operators appear in most programming languages, but the notation used for those operations is determined by the language. Common arithmetic operators include addition <code class="code-inline tex2jax_ignore">+</code>, subtraction <code class="code-inline tex2jax_ignore">-</code>, multiplication <code class="code-inline tex2jax_ignore">*</code>, division <code class="code-inline tex2jax_ignore">/</code> and modulo <code class="code-inline tex2jax_ignore">%</code>.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#operators-14-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Essential Knowledge 1.7.4: 1.7.A.4"><a href="#operators-14" title="Copy heading and permalink for Essential Knowledge 1.7.4: 1.7.A.4" aria-label="Copy heading and permalink for Essential Knowledge 1.7.4: 1.7.A.4">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Essential Knowledge 1.7.4: 1.7.A.4"><a tabindex="-1" href="#operators-14" title="Copy heading and permalink for Essential Knowledge 1.7.4: 1.7.A.4" aria-label="Copy heading and permalink for Essential Knowledge 1.7.4: 1.7.A.4">🔗</a></div>
 </article>
-<div class="para" id="operators-15">Python uses the following basic arithmetic operators:<div class="autopermalink" data-description="Paragraph"><a href="#operators-15" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="operators-15">Python uses the following basic arithmetic operators:<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#operators-15" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<figure class="table table-like" id="basic-operators"><figcaption><span class="type">Table</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">1.7.5<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span>Python Basic Arithmetic Operators<div class="autopermalink" data-description="Table 1.7.5: Python Basic Arithmetic Operators"><a href="#basic-operators" title="Copy heading and permalink for Table 1.7.5: Python Basic Arithmetic Operators" aria-label="Copy heading and permalink for Table 1.7.5: Python Basic Arithmetic Operators">🔗</a></div></figcaption><div class="tabular-box natural-width"><table class="tabular">
+<figure class="table table-like" id="basic-operators"><figcaption><span class="type">Table</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">1.7.5<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span>Python Basic Arithmetic Operators<div class="autopermalink" aria-hidden="true" data-description="Table 1.7.5: Python Basic Arithmetic Operators"><a tabindex="-1" href="#basic-operators" title="Copy heading and permalink for Table 1.7.5: Python Basic Arithmetic Operators" aria-label="Copy heading and permalink for Table 1.7.5: Python Basic Arithmetic Operators">🔗</a></div></figcaption><div class="tabular-box natural-width"><table class="tabular">
 <tr class="header-horizontal">
 <th scope="col" class="l m b1 r0 l0 t0 lines">Operator</th>
 <th scope="col" class="l m b1 r0 l0 t0 lines">Meaning</th>
@@ -418,12 +438,12 @@ myTests().main()
 </tr>
 </table></div>
 </figure>
-<article class="activity project-like" id="operators"><h4 class="heading">
+<article class="activity project-like" id="operators"><h3 class="heading">
 <span class="type">Activity</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">1.7.3</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
-</h4>
+</h3>
 <div class="ptx-runestone-container"><div class="runestone explainer ac_section "><div data-component="activecode" id="rs-operators">
 <div class="ac_question exercise-statement" id="rs-operators_question">
-<div class="para" id="operators-1-1">Try the code below to see how the basic arithmetic operators work in Python. Add two more lines to the code as described.<div class="autopermalink" data-description="Paragraph"><a href="#operators-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="operators-1-1">Try the code below to see how the basic arithmetic operators work in Python. Add two more lines to the code as described.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#operators-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 </div>
 <textarea data-lang="python" data-audio="" data-coach="true" style="visibility: hidden;" id="rs-operators_editor" data-question_label="" data-codelens="true" data-timelimit="25000">print(10 + 5)
@@ -446,11 +466,11 @@ class myTests(TestCaseGui):
 myTests().main()
 </textarea>
 </div></div></div>
-<div class="autopermalink" data-description="Activity 1.7.3"><a href="#operators" title="Copy heading and permalink for Activity 1.7.3" aria-label="Copy heading and permalink for Activity 1.7.3">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Activity 1.7.3"><a tabindex="-1" href="#operators" title="Copy heading and permalink for Activity 1.7.3" aria-label="Copy heading and permalink for Activity 1.7.3">🔗</a></div>
 </article>
-<div class="para" id="operators-18">Python also has the following non-standard operators:<div class="autopermalink" data-description="Paragraph"><a href="#operators-18" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="operators-18">Python also has the following non-standard operators:<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#operators-18" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<figure class="table table-like" id="special-operators"><figcaption><span class="type">Table</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">1.7.6<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span>Python Special Operators<div class="autopermalink" data-description="Table 1.7.6: Python Special Operators"><a href="#special-operators" title="Copy heading and permalink for Table 1.7.6: Python Special Operators" aria-label="Copy heading and permalink for Table 1.7.6: Python Special Operators">🔗</a></div></figcaption><div class="tabular-box natural-width"><table class="tabular">
+<figure class="table table-like" id="special-operators"><figcaption><span class="type">Table</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">1.7.6<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span>Python Special Operators<div class="autopermalink" aria-hidden="true" data-description="Table 1.7.6: Python Special Operators"><a tabindex="-1" href="#special-operators" title="Copy heading and permalink for Table 1.7.6: Python Special Operators" aria-label="Copy heading and permalink for Table 1.7.6: Python Special Operators">🔗</a></div></figcaption><div class="tabular-box natural-width"><table class="tabular">
 <tr class="header-horizontal">
 <th scope="col" class="l m b1 r0 l0 t0 lines">Operator</th>
 <th scope="col" class="l m b1 r0 l0 t0 lines">Meaning</th>
@@ -469,21 +489,21 @@ myTests().main()
 </tr>
 </table></div>
 </figure>
-<article class="note remark-like" id="operators-20"><h4 class="heading">
+<article class="note remark-like" id="operators-20"><h3 class="heading">
 <span class="type">Essential Knowledge</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">1.7.7</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">1.7.A.5.</span>
-</h4>
-<div class="para" id="operators-20-2">The <dfn class="terminology">modulo</dfn> operation <code class="code-inline tex2jax_ignore">%</code> evaluates to the remainder when one integer is divided by another: <code class="code-inline tex2jax_ignore">a % b</code> is the remainder when <code class="code-inline tex2jax_ignore">a</code> is divided by <code class="code-inline tex2jax_ignore">b</code>. Modulo can be used to identify patterns in numbers, such as whether a number is even or odd, and to help format values in user-friendly ways, such as converting total minutes into hours and minutes.<div class="autopermalink" data-description="Paragraph"><a href="#operators-20-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</h3>
+<div class="para" id="operators-20-2">The <dfn class="terminology">modulo</dfn> operation <code class="code-inline tex2jax_ignore">%</code> evaluates to the remainder when one integer is divided by another: <code class="code-inline tex2jax_ignore">a % b</code> is the remainder when <code class="code-inline tex2jax_ignore">a</code> is divided by <code class="code-inline tex2jax_ignore">b</code>. Modulo can be used to identify patterns in numbers, such as whether a number is even or odd, and to help format values in user-friendly ways, such as converting total minutes into hours and minutes.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#operators-20-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Essential Knowledge 1.7.7: 1.7.A.5"><a href="#operators-20" title="Copy heading and permalink for Essential Knowledge 1.7.7: 1.7.A.5" aria-label="Copy heading and permalink for Essential Knowledge 1.7.7: 1.7.A.5">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Essential Knowledge 1.7.7: 1.7.A.5"><a tabindex="-1" href="#operators-20" title="Copy heading and permalink for Essential Knowledge 1.7.7: 1.7.A.5" aria-label="Copy heading and permalink for Essential Knowledge 1.7.7: 1.7.A.5">🔗</a></div>
 </article>
-<div class="para" id="operators-21">The <dfn class="terminology">modulo (mod)</dfn> or <dfn class="terminology">remainder operator</dfn> is very useful in coding. For example, it can be used to check if a number is even (divisible by 2) if it has no remainders when divided by 2. The expression <code class="code-inline tex2jax_ignore">5 % 2</code> is equal to 1, because 5 divided by 2 is equal to 2 with a remainder of 1 (since 2 * 2 = 4).<div class="autopermalink" data-description="Paragraph"><a href="#operators-21" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="operators-21">The <dfn class="terminology">modulo (mod)</dfn> or <dfn class="terminology">remainder operator</dfn> is very useful in coding. For example, it can be used to check if a number is even (divisible by 2) if it has no remainders when divided by 2. The expression <code class="code-inline tex2jax_ignore">5 % 2</code> is equal to 1, because 5 divided by 2 is equal to 2 with a remainder of 1 (since 2 * 2 = 4).<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#operators-21" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<article class="activity project-like" id="special-operators"><h4 class="heading">
+<article class="activity project-like" id="special-operators"><h3 class="heading">
 <span class="type">Activity</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">1.7.4</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
-</h4>
+</h3>
 <div class="ptx-runestone-container"><div class="runestone explainer ac_section "><div data-component="activecode" id="rs-special-operators">
 <div class="ac_question exercise-statement" id="rs-special-operators_question">
-<div class="para" id="special-operators-1-1">Try the code below to see how the special arithmetic operators work in Python. Compare the result of 5/2 and 5//2 and the remainder 5%2. Add 1 more line to the code as described.<div class="autopermalink" data-description="Paragraph"><a href="#special-operators-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="special-operators-1-1">Try the code below to see how the special arithmetic operators work in Python. Compare the result of 5/2 and 5//2 and the remainder 5%2. Add 1 more line to the code as described.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#special-operators-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 </div>
 <textarea data-lang="python" data-audio="" data-coach="true" style="visibility: hidden;" id="rs-special-operators_editor" data-question_label="" data-codelens="true" data-timelimit="25000">print("5 / 2 = ", 5 / 2)
@@ -503,14 +523,14 @@ class myTests(TestCaseGui):
 myTests().main()
 </textarea>
 </div></div></div>
-<div class="autopermalink" data-description="Activity 1.7.4"><a href="#special-operators" title="Copy heading and permalink for Activity 1.7.4" aria-label="Copy heading and permalink for Activity 1.7.4">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Activity 1.7.4"><a tabindex="-1" href="#special-operators" title="Copy heading and permalink for Activity 1.7.4" aria-label="Copy heading and permalink for Activity 1.7.4">🔗</a></div>
 </article>
-<article class="activity project-like" id="mod-exercise"><h4 class="heading">
+<article class="activity project-like" id="mod-exercise"><h3 class="heading">
 <span class="type">Activity</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">1.7.5</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
-</h4>
+</h3>
 <div class="ptx-runestone-container"><div class="runestone multiplechoice_section">
 <div class="exercise-statement">
-<div class="para" id="mod-exercise-1-1">What is the result of <code class="code-inline tex2jax_ignore">2 % 6</code>?<div class="autopermalink" data-description="Paragraph"><a href="#mod-exercise-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="mod-exercise-1-1">What is the result of <code class="code-inline tex2jax_ignore">2 % 6</code>?<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#mod-exercise-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 </div>
 <ul data-component="multiplechoice" class="exercise-interactives" id="rs-mod-exercise" data-multipleanswers="false" data-random="">
@@ -540,25 +560,25 @@ myTests().main()
 </li>
 </ul>
 </div></div>
-<div class="autopermalink" data-description="Activity 1.7.5"><a href="#mod-exercise" title="Copy heading and permalink for Activity 1.7.5" aria-label="Copy heading and permalink for Activity 1.7.5">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Activity 1.7.5"><a tabindex="-1" href="#mod-exercise" title="Copy heading and permalink for Activity 1.7.5" aria-label="Copy heading and permalink for Activity 1.7.5">🔗</a></div>
 </article>
-<div class="para" id="operators-24">If you have a smaller number divided by a larger number the remainder is always the smaller number.<div class="autopermalink" data-description="Paragraph"><a href="#operators-24" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="operators-24">If you have a smaller number divided by a larger number the remainder is always the smaller number.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#operators-24" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<article class="note remark-like" id="operators-25"><h4 class="heading">
+<article class="note remark-like" id="operators-25"><h3 class="heading">
 <span class="type">Essential Knowledge</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">1.7.8</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">1.7.A.6.</span>
-</h4>
-<div class="para" id="operators-25-2">Expressions enclosed in parentheses are evaluated first. Then, multiplication <code class="code-inline tex2jax_ignore">*</code>, division <code class="code-inline tex2jax_ignore">/</code>, and modulo <code class="code-inline tex2jax_ignore">%</code> operations are evaluated from left to right. Then, addition <code class="code-inline tex2jax_ignore">+</code> and subtraction <code class="code-inline tex2jax_ignore">-</code> operations are evaluated from left to right.<div class="autopermalink" data-description="Paragraph"><a href="#operators-25-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</h3>
+<div class="para" id="operators-25-2">Expressions enclosed in parentheses are evaluated first. Then, multiplication <code class="code-inline tex2jax_ignore">*</code>, division <code class="code-inline tex2jax_ignore">/</code>, and modulo <code class="code-inline tex2jax_ignore">%</code> operations are evaluated from left to right. Then, addition <code class="code-inline tex2jax_ignore">+</code> and subtraction <code class="code-inline tex2jax_ignore">-</code> operations are evaluated from left to right.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#operators-25-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Essential Knowledge 1.7.8: 1.7.A.6"><a href="#operators-25" title="Copy heading and permalink for Essential Knowledge 1.7.8: 1.7.A.6" aria-label="Copy heading and permalink for Essential Knowledge 1.7.8: 1.7.A.6">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Essential Knowledge 1.7.8: 1.7.A.6"><a tabindex="-1" href="#operators-25" title="Copy heading and permalink for Essential Knowledge 1.7.8: 1.7.A.6" aria-label="Copy heading and permalink for Essential Knowledge 1.7.8: 1.7.A.6">🔗</a></div>
 </article>
-<div class="para" id="operators-26">When compound expressions are evaluated, operator precedence rules are used, just like when we do math, so that multiplication *, division /, and remainder % are done before addition + and subtraction -. However, anything in parentheses is done first. The PEMDAS acronym can help you remember the order of operations: Parentheses, Exponents, Multiplication and Division, Addition and Subtraction (from left to right). It doesn’t hurt to put in extra parentheses if you are unsure as to what will be done first or just to make it more clear.<div class="autopermalink" data-description="Paragraph"><a href="#operators-26" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="operators-26">When compound expressions are evaluated, operator precedence rules are used, just like when we do math, so that multiplication *, division /, and remainder % are done before addition + and subtraction -. However, anything in parentheses is done first. The PEMDAS acronym can help you remember the order of operations: Parentheses, Exponents, Multiplication and Division, Addition and Subtraction (from left to right). It doesn’t hurt to put in extra parentheses if you are unsure as to what will be done first or just to make it more clear.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#operators-26" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<article class="activity project-like" id="pemdas"><h4 class="heading">
+<article class="activity project-like" id="pemdas"><h3 class="heading">
 <span class="type">Activity</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">1.7.6</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
-</h4>
+</h3>
 <div class="ptx-runestone-container"><div class="runestone multiplechoice_section">
 <div class="exercise-statement">
-<div class="para" id="pemdas-1-1">What is the result of <code class="code-inline tex2jax_ignore">1 + 3 * (2 + 1)</code>?<div class="autopermalink" data-description="Paragraph"><a href="#pemdas-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="pemdas-1-1">What is the result of <code class="code-inline tex2jax_ignore">1 + 3 * (2 + 1)</code>?<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#pemdas-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 </div>
 <ul data-component="multiplechoice" class="exercise-interactives" id="rs-pemdas" data-multipleanswers="false" data-random="">
@@ -588,47 +608,47 @@ myTests().main()
 </li>
 </ul>
 </div></div>
-<div class="autopermalink" data-description="Activity 1.7.6"><a href="#pemdas" title="Copy heading and permalink for Activity 1.7.6" aria-label="Copy heading and permalink for Activity 1.7.6">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Activity 1.7.6"><a tabindex="-1" href="#pemdas" title="Copy heading and permalink for Activity 1.7.6" aria-label="Copy heading and permalink for Activity 1.7.6">🔗</a></div>
 </article>
-<div class="para" id="operators-29">Compound assignment operators <code class="code-inline tex2jax_ignore">+=</code>, <code class="code-inline tex2jax_ignore">-=</code>, <code class="code-inline tex2jax_ignore">*=</code>, <code class="code-inline tex2jax_ignore">/=</code>, and <code class="code-inline tex2jax_ignore">%=</code> are shortcuts that do a math operation and assignment in one step. For example, <code class="code-inline tex2jax_ignore">x += 1</code> adds 1 to the current value of <code class="code-inline tex2jax_ignore">x</code> and assigns the result back to <code class="code-inline tex2jax_ignore">x</code>. It is the same as <code class="code-inline tex2jax_ignore">x = x + 1</code>. This pattern is possible with any operator put in front of the <code class="code-inline tex2jax_ignore">=</code> sign.<div class="autopermalink" data-description="Paragraph"><a href="#operators-29" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="operators-29">Compound assignment operators <code class="code-inline tex2jax_ignore">+=</code>, <code class="code-inline tex2jax_ignore">-=</code>, <code class="code-inline tex2jax_ignore">*=</code>, <code class="code-inline tex2jax_ignore">/=</code>, and <code class="code-inline tex2jax_ignore">%=</code> are shortcuts that do a math operation and assignment in one step. For example, <code class="code-inline tex2jax_ignore">x += 1</code> adds 1 to the current value of <code class="code-inline tex2jax_ignore">x</code> and assigns the result back to <code class="code-inline tex2jax_ignore">x</code>. It is the same as <code class="code-inline tex2jax_ignore">x = x + 1</code>. This pattern is possible with any operator put in front of the <code class="code-inline tex2jax_ignore">=</code> sign.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#operators-29" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<article class="note remark-like" id="operators-30"><h4 class="heading">
+<article class="note remark-like" id="operators-30"><h3 class="heading">
 <span class="type">Essential Knowledge</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">1.7.9</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">1.7.A.7.</span>
-</h4>
-<div class="para" id="operators-30-2">The result of a mathematical expression can be determined by evaluating it step by step using the order of operations and operators.<div class="autopermalink" data-description="Paragraph"><a href="#operators-30-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</h3>
+<div class="para" id="operators-30-2">The result of a mathematical expression can be determined by evaluating it step by step using the order of operations and operators.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#operators-30-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Essential Knowledge 1.7.9: 1.7.A.7"><a href="#operators-30" title="Copy heading and permalink for Essential Knowledge 1.7.9: 1.7.A.7" aria-label="Copy heading and permalink for Essential Knowledge 1.7.9: 1.7.A.7">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Essential Knowledge 1.7.9: 1.7.A.7"><a tabindex="-1" href="#operators-30" title="Copy heading and permalink for Essential Knowledge 1.7.9: 1.7.A.7" aria-label="Copy heading and permalink for Essential Knowledge 1.7.9: 1.7.A.7">🔗</a></div>
 </article>
-<article class="note remark-like" id="operators-31"><h4 class="heading">
+<article class="note remark-like" id="operators-31"><h3 class="heading">
 <span class="type">Essential Knowledge</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">1.7.10</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">1.7.A.8.</span>
-</h4>
-<div class="para" id="operators-31-2">Mathematical expressions can include variables. To determine the result, substitute the current values of variables and then evaluate the expression using the order of operations.<div class="autopermalink" data-description="Paragraph"><a href="#operators-31-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</h3>
+<div class="para" id="operators-31-2">Mathematical expressions can include variables. To determine the result, substitute the current values of variables and then evaluate the expression using the order of operations.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#operators-31-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Essential Knowledge 1.7.10: 1.7.A.8"><a href="#operators-31" title="Copy heading and permalink for Essential Knowledge 1.7.10: 1.7.A.8" aria-label="Copy heading and permalink for Essential Knowledge 1.7.10: 1.7.A.8">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Essential Knowledge 1.7.10: 1.7.A.8"><a tabindex="-1" href="#operators-31" title="Copy heading and permalink for Essential Knowledge 1.7.10: 1.7.A.8" aria-label="Copy heading and permalink for Essential Knowledge 1.7.10: 1.7.A.8">🔗</a></div>
 </article>
-<div class="para" id="operators-32">When tracing through code with expressions, always remember to evaluate the right-hand side of the assignment first, then assign the result to the variable on the left-hand side. You can practice and check your answers by adding <code class="code-inline tex2jax_ignore">print</code> statements to show the variables or click on the "Show CodeLens" button on any Active Code exercise to turn on the interactive tracing tool called CodeLens as seen below. This is a tool called <a class="external" href="https://pythontutor.com" target="_blank">Python Tutor</a> that is built into Runestone.<div class="autopermalink" data-description="Paragraph"><a href="#operators-32" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="operators-32">When tracing through code with expressions, always remember to evaluate the right-hand side of the assignment first, then assign the result to the variable on the left-hand side. You can practice and check your answers by adding <code class="code-inline tex2jax_ignore">print</code> statements to show the variables or click on the "Show CodeLens" button on any Active Code exercise to turn on the interactive tracing tool called CodeLens as seen below. This is a tool called <a class="external" href="https://pythontutor.com" target="_blank">Python Tutor</a> that is built into Runestone.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#operators-32" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<article class="activity project-like" id="codelensAsgn"><h4 class="heading">
+<article class="activity project-like" id="codelensAsgn"><h3 class="heading">
 <span class="type">Activity</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">1.7.7</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
-</h4>
+</h3>
 <div class="ptx-runestone-container"><div class="runestone codelens">
 <div class="cd_section" data-component="codelens" data-question_label="">
 <div class="exercise-statement">
-<div class="para" id="codelensAsgn-1-1">Keep clicking on the Next button at the bottom of the code to see how the values of the variables change as you step through the running program. You can see interactive tracing in any Active Code exercise by clicking the CodeLens button.<div class="autopermalink" data-description="Paragraph"><a href="#codelensAsgn-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="codelensAsgn-1-1">Keep clicking on the Next button at the bottom of the code to see how the values of the variables change as you step through the running program. You can see interactive tracing in any Active Code exercise by clicking the CodeLens button.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#codelensAsgn-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 </div>
 <div class="pytutorVisualizer exercise-interactive" id="rs-codelensAsgn" data-params='{"embeddedMode": true, "lang": "python", "jumpToEnd": false}'></div>
 </div>
 <script src="generated/trace/codelensAsgn.js"> </script>
 </div></div>
-<div class="autopermalink" data-description="Activity 1.7.7"><a href="#codelensAsgn" title="Copy heading and permalink for Activity 1.7.7" aria-label="Copy heading and permalink for Activity 1.7.7">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Activity 1.7.7"><a tabindex="-1" href="#codelensAsgn" title="Copy heading and permalink for Activity 1.7.7" aria-label="Copy heading and permalink for Activity 1.7.7">🔗</a></div>
 </article>
-<article class="activity project-like" id="trace-expr"><h4 class="heading">
+<article class="activity project-like" id="trace-expr"><h3 class="heading">
 <span class="type">Activity</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">1.7.8</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
-</h4>
+</h3>
 <div class="ptx-runestone-container"><div class="runestone multiplechoice_section">
 <div class="exercise-statement">
-<div class="para" id="trace-expr-1-1">What are the values of x and y after the following code executes? Remember to evaluate the right hand side of = first and then assign the result to the variable on the left side. You can step through this code by clicking on this <a class="external" href="https://pythontutor.com/visualize.html#code=x%20%3D%202%0Ay%20%3D%2010%0Ax%20%3D%20y%0Ax%20%3D%20x%20%2B%201%0Ay%20%3D%20y%20*%203&amp;curInstr=5&amp;mode=display&amp;origin=opt-frontend.js\&amp;py=311" target="_blank">visualizer link</a>.<div class="autopermalink" data-description="Paragraph"><a href="#trace-expr-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="trace-expr-1-1">What are the values of x and y after the following code executes? Remember to evaluate the right hand side of = first and then assign the result to the variable on the left side. You can step through this code by clicking on this <a class="external" href="https://pythontutor.com/visualize.html#code=x%20%3D%202%0Ay%20%3D%2010%0Ax%20%3D%20y%0Ax%20%3D%20x%20%2B%201%0Ay%20%3D%20y%20*%203&amp;curInstr=5&amp;mode=display&amp;origin=opt-frontend.js\&amp;py=311" target="_blank">visualizer link</a>.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#trace-expr-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div> <div class="code-box"><pre class="program clipboardable"><code class="language-py">a = 2
 b = 10
 a = b
@@ -663,26 +683,26 @@ b = b * 3
 </li>
 </ul>
 </div></div>
-<div class="autopermalink" data-description="Activity 1.7.8"><a href="#trace-expr" title="Copy heading and permalink for Activity 1.7.8" aria-label="Copy heading and permalink for Activity 1.7.8">🔗</a></div>
-</article><div class="autopermalink" data-description="Subsection 1.7.3: Arithmetic Operators"><a href="#operators" title="Copy heading and permalink for Subsection 1.7.3: Arithmetic Operators" aria-label="Copy heading and permalink for Subsection 1.7.3: Arithmetic Operators">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Activity 1.7.8"><a tabindex="-1" href="#trace-expr" title="Copy heading and permalink for Activity 1.7.8" aria-label="Copy heading and permalink for Activity 1.7.8">🔗</a></div>
+</article><div class="autopermalink" aria-hidden="true" data-description="Subsection 1.7.3: Arithmetic Operators"><a tabindex="-1" href="#operators" title="Copy heading and permalink for Subsection 1.7.3: Arithmetic Operators" aria-label="Copy heading and permalink for Subsection 1.7.3: Arithmetic Operators">🔗</a></div>
 </section>
 <section class="subsection" id="input-math">
-<h3 class="heading hide-type">
+<h2 class="heading hide-type">
 <span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">1.7.4</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Input and Math</span>
-</h3>
-<div class="para" id="input-math-3">When you use the <code class="code-inline tex2jax_ignore">input()</code> command to get input from a user, the value is always treated as a string, even if the user types in a number. If you want to use that input in a mathematical expression, you need to convert it to a number first using the <code class="code-inline tex2jax_ignore">int()</code> command for integers or <code class="code-inline tex2jax_ignore">float()</code> command for decimal numbers. For example:<div class="autopermalink" data-description="Paragraph"><a href="#input-math-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</h2>
+<div class="para" id="input-math-3">When you use the <code class="code-inline tex2jax_ignore">input()</code> command to get input from a user, the value is always treated as a string, even if the user types in a number. If you want to use that input in a mathematical expression, you need to convert it to a number first using the <code class="code-inline tex2jax_ignore">int()</code> command for integers or <code class="code-inline tex2jax_ignore">float()</code> command for decimal numbers. For example:<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#input-math-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="code-box"><pre class="program clipboardable"><code class="language-py">ageStr = input("How old are you? ")
 age = int(ageStr)
 # Now we can do math with the age variable since it is an int instead of a string
 print("Next year you will be", age + 1, "years old.")
 </code></pre></div>
-<article class="activity project-like" id="input-math"><h4 class="heading">
+<article class="activity project-like" id="input-math"><h3 class="heading">
 <span class="type">Activity</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">1.7.9</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
-</h4>
+</h3>
 <div class="ptx-runestone-container"><div class="runestone explainer ac_section "><div data-component="activecode" id="rs-input-math">
 <div class="ac_question exercise-statement" id="rs-input-math_question">
-<div class="para" id="input-math-1-1">Try the code below to see that there is an error when you try to do math with a string. Then, fix the code by converting the input to an int before doing the math.<div class="autopermalink" data-description="Paragraph"><a href="#input-math-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="input-math-1-1">Try the code below to see that there is an error when you try to do math with a string. Then, fix the code by converting the input to an int before doing the math.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#input-math-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 </div>
 <textarea data-lang="python" data-audio="" data-coach="true" style="visibility: hidden;" id="rs-input-math_editor" data-question_label="" data-codelens="true" data-timelimit="25000">ageStr = input("How old are you? ")
@@ -699,14 +719,34 @@ class myTests(TestCaseGui):
 myTests().main()
 </textarea>
 </div></div></div>
-<div class="autopermalink" data-description="Activity 1.7.9"><a href="#input-math" title="Copy heading and permalink for Activity 1.7.9" aria-label="Copy heading and permalink for Activity 1.7.9">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Activity 1.7.9"><a tabindex="-1" href="#input-math" title="Copy heading and permalink for Activity 1.7.9" aria-label="Copy heading and permalink for Activity 1.7.9">🔗</a></div>
 </article>
-<article class="activity project-like" id="calculate-hours"><h4 class="heading">
+<article class="activity project-like" id="mixedUpMath"><h3 class="heading">
 <span class="type">Activity</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">1.7.10</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
-</h4>
+</h3>
+<div class="ptx-runestone-container"><div class="runestone parsons_section" style="max-width: none;"><div data-component="parsons" class="parsons" id="rs-mixedUpMath">
+<div class="parsons_question parsons-text">
+<div class="para" id="mixedUpMath-1-1">The following program segment should calculate the number of hours and then the remaining minutes in 150 minutes, but the blocks are mixed up. For example, if there are 150 minutes, then that is 2 hours and a remainder of 30 minutes.  Remember that <code class="code-inline tex2jax_ignore">//</code> in Python is integer division that returns a whole number, <code class="code-inline tex2jax_ignore">/</code> is float division, and <code class="code-inline tex2jax_ignore">%</code> is the remainder operator. Drag the blocks from the left and put them in the correct order on the right. There will be 2 extra blocks that you will not use. Click the <em class="emphasis">Check Me</em> button to check your solution.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#mixedUpMath-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+</div>
+<pre class="parsonsblocks" data-question_label="" style="visibility: hidden;" data-language="python" data-adaptive="true" data-noindent="false">minutes = 150
+---
+hours = minutes // 60
+---
+hours = minutes / 60 #paired
+---
+remainingMinutes = minutes % 60
+---
+remainingMinutes = minutes / 60 #paired</pre>
+</div></div></div>
+<div class="autopermalink" aria-hidden="true" data-description="Activity 1.7.10"><a tabindex="-1" href="#mixedUpMath" title="Copy heading and permalink for Activity 1.7.10" aria-label="Copy heading and permalink for Activity 1.7.10">🔗</a></div>
+</article>
+<article class="activity project-like" id="calculate-hours"><h3 class="heading">
+<span class="type">Activity</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">1.7.11</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+</h3>
 <div class="ptx-runestone-container"><div class="runestone explainer ac_section "><div data-component="activecode" id="rs-calculate-hours">
 <div class="ac_question exercise-statement" id="rs-calculate-hours_question">
-<div class="para" id="calculate-hours-1-1">Write a program that asks the user for the number of minutes they have spent in class and then calculate the number of hours, remaining minutes, and seconds. Fill in the formulas for 1, 2, and 3 below.<div class="autopermalink" data-description="Paragraph"><a href="#calculate-hours-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="calculate-hours-1-1">Write a program that asks the user for the number of minutes they have spent in class and then calculate the number of hours, remaining minutes, and seconds. Fill in the formulas for 1, 2, and 3 below.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#calculate-hours-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 </div>
 <textarea data-lang="python" data-audio="" data-coach="true" style="visibility: hidden;" id="rs-calculate-hours_editor" data-question_label="" data-codelens="true" data-timelimit="25000"># 1. Ask the user for the number of minutes they have spent in class
@@ -735,50 +775,50 @@ class myTests(TestCaseGui):
 myTests().main()
 </textarea>
 </div></div></div>
-<div class="autopermalink" data-description="Activity 1.7.10"><a href="#calculate-hours" title="Copy heading and permalink for Activity 1.7.10" aria-label="Copy heading and permalink for Activity 1.7.10">🔗</a></div>
-</article><div class="autopermalink" data-description="Subsection 1.7.4: Input and Math"><a href="#input-math" title="Copy heading and permalink for Subsection 1.7.4: Input and Math" aria-label="Copy heading and permalink for Subsection 1.7.4: Input and Math">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Activity 1.7.11"><a tabindex="-1" href="#calculate-hours" title="Copy heading and permalink for Activity 1.7.11" aria-label="Copy heading and permalink for Activity 1.7.11">🔗</a></div>
+</article><div class="autopermalink" aria-hidden="true" data-description="Subsection 1.7.4: Input and Math"><a tabindex="-1" href="#input-math" title="Copy heading and permalink for Subsection 1.7.4: Input and Math" aria-label="Copy heading and permalink for Subsection 1.7.4: Input and Math">🔗</a></div>
 </section>
 <section class="subsection" id="random-numbers">
-<h3 class="heading hide-type">
+<h2 class="heading hide-type">
 <span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">1.7.5</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Random Numbers</span>
-</h3>
-<article class="note remark-like" id="random-numbers-4"><h4 class="heading">
+</h2>
+<article class="note remark-like" id="random-numbers-4"><h3 class="heading">
 <span class="type">Essential Knowledge</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">1.7.11</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">1.7.B.1.</span>
-</h4>
-<div class="para" id="random-numbers-4-2">Apps use random number generation to create variety and unpredictability, such as in games, simulations, or randomly generated prompts.<div class="autopermalink" data-description="Paragraph"><a href="#random-numbers-4-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</h3>
+<div class="para" id="random-numbers-4-2">Apps use random number generation to create variety and unpredictability, such as in games, simulations, or randomly generated prompts.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#random-numbers-4-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Essential Knowledge 1.7.11: 1.7.B.1"><a href="#random-numbers-4" title="Copy heading and permalink for Essential Knowledge 1.7.11: 1.7.B.1" aria-label="Copy heading and permalink for Essential Knowledge 1.7.11: 1.7.B.1">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Essential Knowledge 1.7.11: 1.7.B.1"><a tabindex="-1" href="#random-numbers-4" title="Copy heading and permalink for Essential Knowledge 1.7.11: 1.7.B.1" aria-label="Copy heading and permalink for Essential Knowledge 1.7.11: 1.7.B.1">🔗</a></div>
 </article>
-<div class="para" id="random-numbers-5">Games would be boring if the same thing happened each time you played the game. Random numbers can be used in games to generate different actions or outcomes each time the game is played. Try a game app on your phone or computer and try to identify where random numbers are used. If you roll dice or flip a coin or if the enemies in the game do not always act the same way, then random numbers are likely being used.<div class="autopermalink" data-description="Paragraph"><a href="#random-numbers-5" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="random-numbers-5">Games would be boring if the same thing happened each time you played the game. Random numbers can be used in games to generate different actions or outcomes each time the game is played. Try a game app on your phone or computer and try to identify where random numbers are used. If you roll dice or flip a coin or if the enemies in the game do not always act the same way, then random numbers are likely being used.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#random-numbers-5" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<article class="note remark-like" id="random-numbers-6"><h4 class="heading">
+<article class="note remark-like" id="random-numbers-6"><h3 class="heading">
 <span class="type">Essential Knowledge</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">1.7.12</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">1.7.B.2.</span>
-</h4>
-<div class="para" id="random-numbers-6-2">Random values can support variation in app behavior, such as shuffling a playlist, selecting a random item, or assigning outcomes like rolling a die.<div class="autopermalink" data-description="Paragraph"><a href="#random-numbers-6-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</h3>
+<div class="para" id="random-numbers-6-2">Random values can support variation in app behavior, such as shuffling a playlist, selecting a random item, or assigning outcomes like rolling a die.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#random-numbers-6-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Essential Knowledge 1.7.12: 1.7.B.2"><a href="#random-numbers-6" title="Copy heading and permalink for Essential Knowledge 1.7.12: 1.7.B.2" aria-label="Copy heading and permalink for Essential Knowledge 1.7.12: 1.7.B.2">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Essential Knowledge 1.7.12: 1.7.B.2"><a tabindex="-1" href="#random-numbers-6" title="Copy heading and permalink for Essential Knowledge 1.7.12: 1.7.B.2" aria-label="Copy heading and permalink for Essential Knowledge 1.7.12: 1.7.B.2">🔗</a></div>
 </article>
-<article class="note remark-like" id="random-numbers-7"><h4 class="heading">
+<article class="note remark-like" id="random-numbers-7"><h3 class="heading">
 <span class="type">Essential Knowledge</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">1.7.13</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">1.7.B.3.</span>
-</h4>
-<div class="para" id="random-numbers-7-2">Programmers can determine the set of possible values produced by a random command by identifying the endpoints and whether they are included. When the following code runs, a random integer from <code class="code-inline tex2jax_ignore">a</code> to <code class="code-inline tex2jax_ignore">b</code>, including <code class="code-inline tex2jax_ignore">a</code> and <code class="code-inline tex2jax_ignore">b</code>, is generated and returned. Each result is equally likely to occur. The possible results of <code class="code-inline tex2jax_ignore">random(a, b)</code> are all integers from <code class="code-inline tex2jax_ignore">a</code> through <code class="code-inline tex2jax_ignore">b</code>. <code class="code-inline tex2jax_ignore">random(a, b)</code><div class="autopermalink" data-description="Paragraph"><a href="#random-numbers-7-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</h3>
+<div class="para" id="random-numbers-7-2">Programmers can determine the set of possible values produced by a random command by identifying the endpoints and whether they are included. When the following code runs, a random integer from <code class="code-inline tex2jax_ignore">a</code> to <code class="code-inline tex2jax_ignore">b</code>, including <code class="code-inline tex2jax_ignore">a</code> and <code class="code-inline tex2jax_ignore">b</code>, is generated and returned. Each result is equally likely to occur. The possible results of <code class="code-inline tex2jax_ignore">random(a, b)</code> are all integers from <code class="code-inline tex2jax_ignore">a</code> through <code class="code-inline tex2jax_ignore">b</code>. <code class="code-inline tex2jax_ignore">random(a, b)</code><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#random-numbers-7-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Essential Knowledge 1.7.13: 1.7.B.3"><a href="#random-numbers-7" title="Copy heading and permalink for Essential Knowledge 1.7.13: 1.7.B.3" aria-label="Copy heading and permalink for Essential Knowledge 1.7.13: 1.7.B.3">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Essential Knowledge 1.7.13: 1.7.B.3"><a tabindex="-1" href="#random-numbers-7" title="Copy heading and permalink for Essential Knowledge 1.7.13: 1.7.B.3" aria-label="Copy heading and permalink for Essential Knowledge 1.7.13: 1.7.B.3">🔗</a></div>
 </article>
-<div class="para" id="random-numbers-8">In Python, there is a library called <code class="code-inline tex2jax_ignore">random</code> that can be imported and used to generate random values. Use <code class="code-inline tex2jax_ignore">random.randint(start, end)</code> to generate a random integer from <code class="code-inline tex2jax_ignore">start</code> to <code class="code-inline tex2jax_ignore">end</code>, including both endpoints. For example:<div class="autopermalink" data-description="Paragraph"><a href="#random-numbers-8" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="random-numbers-8">In Python, there is a library called <code class="code-inline tex2jax_ignore">random</code> that can be imported and used to generate random values. Use <code class="code-inline tex2jax_ignore">random.randint(start, end)</code> to generate a random integer from <code class="code-inline tex2jax_ignore">start</code> to <code class="code-inline tex2jax_ignore">end</code>, including both endpoints. For example:<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#random-numbers-8" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="code-box"><pre class="program clipboardable"><code class="language-py">import random
 # pick a random number from 0 to 10
 r = random.randint(0, 10)
 </code></pre></div>
-<div class="para" id="random-numbers-10">Try running the program below a few times to see that it generates different random numbers each time it runs.<div class="autopermalink" data-description="Paragraph"><a href="#random-numbers-10" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="random-numbers-10">Try running the program below a few times to see that it generates different random numbers each time it runs.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#random-numbers-10" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<article class="activity project-like" id="random-num-gen"><h4 class="heading">
-<span class="type">Activity</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">1.7.11</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
-</h4>
+<article class="activity project-like" id="random-num-gen"><h3 class="heading">
+<span class="type">Activity</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">1.7.12</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+</h3>
 <div class="ptx-runestone-container"><div class="runestone explainer ac_section "><div data-component="activecode" id="rs-random-num-gen">
 <div class="ac_question exercise-statement" id="rs-random-num-gen_question">
-<div class="para" id="random-num-gen-1-1">Try the code below to see how to generate random numbers in Python. Run it a few times to see that it generates different random numbers each time. Then, generate another random number from -10 to 10.<div class="autopermalink" data-description="Paragraph"><a href="#random-num-gen-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="random-num-gen-1-1">Try the code below to see how to generate random numbers in Python. Run it a few times to see that it generates different random numbers each time. Then, generate another random number from -10 to 10.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#random-num-gen-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 </div>
 <textarea data-lang="python" data-audio="" data-coach="true" style="visibility: hidden;" id="rs-random-num-gen_editor" data-question_label="" data-codelens="true" data-timelimit="25000">import random
@@ -797,32 +837,32 @@ class myTests(TestCaseGui):
 myTests().main()
 </textarea>
 </div></div></div>
-<div class="autopermalink" data-description="Activity 1.7.11"><a href="#random-num-gen" title="Copy heading and permalink for Activity 1.7.11" aria-label="Copy heading and permalink for Activity 1.7.11">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Activity 1.7.12"><a tabindex="-1" href="#random-num-gen" title="Copy heading and permalink for Activity 1.7.12" aria-label="Copy heading and permalink for Activity 1.7.12">🔗</a></div>
 </article>
-<article class="note remark-like" id="random-numbers-12"><h4 class="heading">
+<article class="note remark-like" id="random-numbers-12"><h3 class="heading">
 <span class="type">Essential Knowledge</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">1.7.14</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">1.7.B.4.</span>
-</h4>
-<div class="para" id="random-numbers-12-2">When a program uses random number generation, the same code can produce different results each time it runs.<div class="autopermalink" data-description="Paragraph"><a href="#random-numbers-12-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</h3>
+<div class="para" id="random-numbers-12-2">When a program uses random number generation, the same code can produce different results each time it runs.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#random-numbers-12-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Essential Knowledge 1.7.14: 1.7.B.4"><a href="#random-numbers-12" title="Copy heading and permalink for Essential Knowledge 1.7.14: 1.7.B.4" aria-label="Copy heading and permalink for Essential Knowledge 1.7.14: 1.7.B.4">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Essential Knowledge 1.7.14: 1.7.B.4"><a tabindex="-1" href="#random-numbers-12" title="Copy heading and permalink for Essential Knowledge 1.7.14: 1.7.B.4" aria-label="Copy heading and permalink for Essential Knowledge 1.7.14: 1.7.B.4">🔗</a></div>
 </article>
-<div class="para" id="random-numbers-13">Computers can’t usually generate truly random numbers without measuring something that is random (like static noise on radio frequencies or lava lamps). If they don’t have access to something like that, they must rely on generating <dfn class="terminology">pseudorandom</dfn> numbers that look random even though they are created using a mathematical formula. Python takes the system time as the seed or starting point (since it is always changing) and then uses a mathematical formula to generate the next random number each time we ask for one.<div class="autopermalink" data-description="Paragraph"><a href="#random-numbers-13" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="random-numbers-13">Computers can’t usually generate truly random numbers without measuring something that is random (like static noise on radio frequencies or lava lamps). If they don’t have access to something like that, they must rely on generating <dfn class="terminology">pseudorandom</dfn> numbers that look random even though they are created using a mathematical formula. Python takes the system time as the seed or starting point (since it is always changing) and then uses a mathematical formula to generate the next random number each time we ask for one.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#random-numbers-13" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Subsection 1.7.5: Random Numbers"><a href="#random-numbers" title="Copy heading and permalink for Subsection 1.7.5: Random Numbers" aria-label="Copy heading and permalink for Subsection 1.7.5: Random Numbers">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Subsection 1.7.5: Random Numbers"><a tabindex="-1" href="#random-numbers" title="Copy heading and permalink for Subsection 1.7.5: Random Numbers" aria-label="Copy heading and permalink for Subsection 1.7.5: Random Numbers">🔗</a></div>
 </section>
 <section class="subsection" id="coding-challenge-random-turtle-project">
-<h3 class="heading hide-type">
+<h2 class="heading hide-type">
 <span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">1.7.6</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Coding Challenge: Random Turtle Project</span>
-</h3>
-<div class="para" id="coding-challenge-random-turtle-project-2">Let’s practice with turtles drawing with random colors and random movements. Colors on computers and on the web can be set using RGB (red, green, blue) values that range from 0 to 255 (which can be saved in 8 bits). Try the <a class="external" href="https://www.google.com/search?q=colorpicker" target="_blank">Google color picker</a> and look at the RGB values for different colors below the selected color.  Any color can be made by mixing different amounts of red, green, and blue light. Mixing light is different than mixing paint, so when you mix red, green, and blue light, you get white light.<div class="autopermalink" data-description="Paragraph"><a href="#coding-challenge-random-turtle-project-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</h2>
+<div class="para" id="coding-challenge-random-turtle-project-2">Let’s practice with turtles drawing with random colors and random movements. Colors on computers and on the web can be set using RGB (red, green, blue) values that range from 0 to 255 (which can be saved in 8 bits). Try the <a class="external" href="https://www.google.com/search?q=colorpicker" target="_blank">Google color picker</a> and look at the RGB values for different colors below the selected color.  Any color can be made by mixing different amounts of red, green, and blue light. Mixing light is different than mixing paint, so when you mix red, green, and blue light, you get white light.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#coding-challenge-random-turtle-project-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="image-box" style="width: 40%; margin-left: 30%; margin-right: 30%;"><img src="external/_static/Unit1images/RGB.png" class="contained"></div>
-<article class="activity project-like" id="rgb-color"><h4 class="heading">
-<span class="type">Activity</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">1.7.12</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
-</h4>
+<article class="activity project-like" id="rgb-color"><h3 class="heading">
+<span class="type">Activity</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">1.7.13</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+</h3>
 <div class="ptx-runestone-container"><div class="runestone multiplechoice_section">
 <div class="exercise-statement">
-<div class="para" id="rgb-color-1-1">What RGB values do you need to make black? Try the <a class="external" href="https://www.google.com/search?q=colorpicker" target="_blank">Google color picker</a> to test.<div class="autopermalink" data-description="Paragraph"><a href="#rgb-color-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="rgb-color-1-1">What RGB values do you need to make black? Try the <a class="external" href="https://www.google.com/search?q=colorpicker" target="_blank">Google color picker</a> to test.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#rgb-color-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 </div>
 <ul data-component="multiplechoice" class="exercise-interactives" id="rs-rgb-color" data-multipleanswers="false" data-random="">
@@ -852,14 +892,14 @@ myTests().main()
 </li>
 </ul>
 </div></div>
-<div class="autopermalink" data-description="Activity 1.7.12"><a href="#rgb-color" title="Copy heading and permalink for Activity 1.7.12" aria-label="Copy heading and permalink for Activity 1.7.12">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Activity 1.7.13"><a tabindex="-1" href="#rgb-color" title="Copy heading and permalink for Activity 1.7.13" aria-label="Copy heading and permalink for Activity 1.7.13">🔗</a></div>
 </article>
-<article class="activity project-like" id="rand-predict"><h4 class="heading">
-<span class="type">Activity</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">1.7.13</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
-</h4>
+<article class="activity project-like" id="rand-predict"><h3 class="heading">
+<span class="type">Activity</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">1.7.14</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+</h3>
 <div class="ptx-runestone-container"><div class="runestone multiplechoice_section">
 <div class="exercise-statement">
-<div class="para" id="rand-predict-1-1">The assignment statement <code class="code-inline tex2jax_ignore">x = random.randint(-200, 200)</code> can be used to generate a random x-coordinate for a turtle, because it is initially placed at coordinates (0, 0) and can move 200 pixels to the right to 200 or left to -200. Which of the following numbers cannot be generated by this expression?<div class="autopermalink" data-description="Paragraph"><a href="#rand-predict-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="rand-predict-1-1">The assignment statement <code class="code-inline tex2jax_ignore">x = random.randint(-200, 200)</code> can be used to generate a random x-coordinate for a turtle, because it is initially placed at coordinates (0, 0) and can move 200 pixels to the right to 200 or left to -200. Which of the following numbers cannot be generated by this expression?<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#rand-predict-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 </div>
 <ul data-component="multiplechoice" class="exercise-interactives" id="rs-rand-predict" data-multipleanswers="false" data-random="">
@@ -889,14 +929,14 @@ myTests().main()
 </li>
 </ul>
 </div></div>
-<div class="autopermalink" data-description="Activity 1.7.13"><a href="#rand-predict" title="Copy heading and permalink for Activity 1.7.13" aria-label="Copy heading and permalink for Activity 1.7.13">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Activity 1.7.14"><a tabindex="-1" href="#rand-predict" title="Copy heading and permalink for Activity 1.7.14" aria-label="Copy heading and permalink for Activity 1.7.14">🔗</a></div>
 </article>
-<article class="project project-like" id="coding-challenge-random-turtle"><h4 class="heading">
-<span class="type">Project</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">1.7.14</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Random Turtle Project.</span>
-</h4>
+<article class="project project-like" id="coding-challenge-random-turtle"><h3 class="heading">
+<span class="type">Project</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">1.7.15</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Random Turtle Project.</span>
+</h3>
 <div class="ptx-runestone-container"><div class="runestone explainer ac_section "><div data-component="activecode" id="rs-coding-challenge-random-turtle">
 <div class="ac_question exercise-statement" id="rs-coding-challenge-random-turtle_question">
-<div class="para" id="coding-challenge-random-turtle-2-1">In the code below, you will use random numbers to set the background color, pen color, and turtle coordinates. Right now it uses default colors. Change the lines of code that say "# Change these to use random.randint". Run the code a few times to see that it generates different random colors and movements each time it runs.<div class="autopermalink" data-description="Paragraph"><a href="#coding-challenge-random-turtle-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="coding-challenge-random-turtle-2-1">In the code below, you will use random numbers to set the background color, pen color, and turtle coordinates. Right now it uses default colors. Change the lines of code that say "# Change these to use random.randint". Run the code a few times to see that it generates different random colors and movements each time it runs.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#coding-challenge-random-turtle-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 </div>
 <textarea data-lang="python" data-audio="" data-coach="true" style="visibility: hidden;" id="rs-coding-challenge-random-turtle_editor" data-question_label="" data-codelens="true" data-timelimit="25000">import turtle
@@ -945,49 +985,49 @@ class myTests(TestCaseGui):
 myTests().main()
 </textarea>
 </div></div></div>
-<div class="autopermalink" data-description="Project 1.7.14: Random Turtle Project"><a href="#coding-challenge-random-turtle" title="Copy heading and permalink for Project 1.7.14: Random Turtle Project" aria-label="Copy heading and permalink for Project 1.7.14: Random Turtle Project">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Project 1.7.15: Random Turtle Project"><a tabindex="-1" href="#coding-challenge-random-turtle" title="Copy heading and permalink for Project 1.7.15: Random Turtle Project" aria-label="Copy heading and permalink for Project 1.7.15: Random Turtle Project">🔗</a></div>
 </article>
-<article class="activity project-like" id="turtle-rand-reflection"><h4 class="heading">
-<span class="type">Activity</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">1.7.15</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Project Reflection.</span>
-</h4>
+<article class="activity project-like" id="turtle-rand-reflection"><h3 class="heading">
+<span class="type">Activity</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">1.7.16</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Project Reflection.</span>
+</h3>
 <div class="ptx-runestone-container"><div class="runestone shortanswer_section"><div data-component="shortanswer" data-question_label="" class="journal" data-mathjax="" id="rs-turtle-rand-reflection" data-placeholder="You can write here, and it will be saved on this device, but your response will not be graded.">
-<div class="para" id="turtle-rand-reflection-2-1">Describe how you used random numbers in your turtle project. What was the range of random numbers you used for the RGB values and the x, y coordinates? How did the random numbers enhance the project?<div class="autopermalink" data-description="Paragraph"><a href="#turtle-rand-reflection-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="turtle-rand-reflection-2-1">Describe how you used random numbers in your turtle project. What was the range of random numbers you used for the RGB values and the x, y coordinates? How did the random numbers enhance the project?<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#turtle-rand-reflection-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 </div></div></div>
-<div class="autopermalink" data-description="Activity 1.7.15: Project Reflection"><a href="#turtle-rand-reflection" title="Copy heading and permalink for Activity 1.7.15: Project Reflection" aria-label="Copy heading and permalink for Activity 1.7.15: Project Reflection">🔗</a></div>
-</article><div class="autopermalink" data-description="Subsection 1.7.6: Coding Challenge: Random Turtle Project"><a href="#coding-challenge-random-turtle-project" title="Copy heading and permalink for Subsection 1.7.6: Coding Challenge: Random Turtle Project" aria-label="Copy heading and permalink for Subsection 1.7.6: Coding Challenge: Random Turtle Project">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Activity 1.7.16: Project Reflection"><a tabindex="-1" href="#turtle-rand-reflection" title="Copy heading and permalink for Activity 1.7.16: Project Reflection" aria-label="Copy heading and permalink for Activity 1.7.16: Project Reflection">🔗</a></div>
+</article><div class="autopermalink" aria-hidden="true" data-description="Subsection 1.7.6: Coding Challenge: Random Turtle Project"><a tabindex="-1" href="#coding-challenge-random-turtle-project" title="Copy heading and permalink for Subsection 1.7.6: Coding Challenge: Random Turtle Project" aria-label="Copy heading and permalink for Subsection 1.7.6: Coding Challenge: Random Turtle Project">🔗</a></div>
 </section>
 <section class="subsection" id="LOs-1-7">
-<h3 class="heading hide-type">
+<h2 class="heading hide-type">
 <span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">1.7.7</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Learning Objectives Review</span>
-</h3>
-<div class="para" id="LOs-1-7-2">After this lesson, you should be able to:<div class="autopermalink" data-description="Paragraph"><a href="#LOs-1-7-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</h2>
+<div class="para" id="LOs-1-7-2">After this lesson, you should be able to:<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#LOs-1-7-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<article class="remark remark-like" id="LOs-1-7-3"><h4 class="heading">
+<article class="remark remark-like" id="LOs-1-7-3"><h3 class="heading">
 <span class="type">Learning Objective</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">1.7.15</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">1.7.A.</span>
-</h4>
-<div class="para" id="LOs-1-7-3-2">Develop code using mathematical expressions, and determine the result of these expressions.<div class="autopermalink" data-description="Paragraph"><a href="#LOs-1-7-3-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</h3>
+<div class="para" id="LOs-1-7-3-2">Develop code using mathematical expressions, and determine the result of these expressions.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#LOs-1-7-3-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Learning Objective 1.7.15: 1.7.A"><a href="#LOs-1-7-3" title="Copy heading and permalink for Learning Objective 1.7.15: 1.7.A" aria-label="Copy heading and permalink for Learning Objective 1.7.15: 1.7.A">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Learning Objective 1.7.15: 1.7.A"><a tabindex="-1" href="#LOs-1-7-3" title="Copy heading and permalink for Learning Objective 1.7.15: 1.7.A" aria-label="Copy heading and permalink for Learning Objective 1.7.15: 1.7.A">🔗</a></div>
 </article>
-<article class="remark remark-like" id="LOs-1-7-4"><h4 class="heading">
+<article class="remark remark-like" id="LOs-1-7-4"><h3 class="heading">
 <span class="type">Learning Objective</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">1.7.16</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">1.7.B.</span>
-</h4>
-<div class="para" id="LOs-1-7-4-2">Develop code to generate random numbers, and determine the possible values that could be produced as a result.<div class="autopermalink" data-description="Paragraph"><a href="#LOs-1-7-4-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</h3>
+<div class="para" id="LOs-1-7-4-2">Develop code to generate random numbers, and determine the possible values that could be produced as a result.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#LOs-1-7-4-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Learning Objective 1.7.16: 1.7.B"><a href="#LOs-1-7-4" title="Copy heading and permalink for Learning Objective 1.7.16: 1.7.B" aria-label="Copy heading and permalink for Learning Objective 1.7.16: 1.7.B">🔗</a></div>
-</article><div class="autopermalink" data-description="Subsection 1.7.7: Learning Objectives Review"><a href="#LOs-1-7" title="Copy heading and permalink for Subsection 1.7.7: Learning Objectives Review" aria-label="Copy heading and permalink for Subsection 1.7.7: Learning Objectives Review">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Learning Objective 1.7.16: 1.7.B"><a tabindex="-1" href="#LOs-1-7-4" title="Copy heading and permalink for Learning Objective 1.7.16: 1.7.B" aria-label="Copy heading and permalink for Learning Objective 1.7.16: 1.7.B">🔗</a></div>
+</article><div class="autopermalink" aria-hidden="true" data-description="Subsection 1.7.7: Learning Objectives Review"><a tabindex="-1" href="#LOs-1-7" title="Copy heading and permalink for Subsection 1.7.7: Learning Objectives Review" aria-label="Copy heading and permalink for Subsection 1.7.7: Learning Objectives Review">🔗</a></div>
 </section>
 <section class="subsection" id="vocab-1-7">
-<h3 class="heading hide-type">
+<h2 class="heading hide-type">
 <span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">1.7.8</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Vocabulary Review</span>
+</h2>
+<article class="activity project-like" id="vocab-exprs"><h3 class="heading">
+<span class="type">Activity</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">1.7.17</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
 </h3>
-<article class="activity project-like" id="vocab-exprs"><h4 class="heading">
-<span class="type">Activity</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">1.7.16</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
-</h4>
 <div class="ptx-runestone-container"><div class="runestone cardsort_section"><ul data-component="dragndrop" data-question_label="" style="visibility: hidden;" id="rs-vocab-exprs">
 <span data-subcomponent="question">
-<div class="para" id="vocab-exprs-1-1">Review the vocabulary in this lesson. Drag the vocabulary term from the left and drop it on its correct definition on the right. Click the "Check Me" button to see if you are correct.<div class="autopermalink" data-description="Paragraph"><a href="#vocab-exprs-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="vocab-exprs-1-1">Review the vocabulary in this lesson. Drag the vocabulary term from the left and drop it on its correct definition on the right. Click the "Check Me" button to see if you are correct.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#vocab-exprs-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div></span><span data-subcomponent="feedback">
 <div class="para" id="vocab-exprs-2-1">Find the words in the lesson above and try again.</div></span><li data-subcomponent="draggable" id="rs-vocab-exprs_drag1" data-category="1">expression</li>
 <li data-subcomponent="dropzone" for="rs-vocab-exprs_drag1" data-category="1">combination of numbers, variables, and operators that represents a value</li>
@@ -1000,17 +1040,17 @@ myTests().main()
 <li data-subcomponent="draggable" id="rs-vocab-exprs_drag5" data-category="5">random.randint</li>
 <li data-subcomponent="dropzone" for="rs-vocab-exprs_drag5" data-category="5">Python function that generates a random integer between two specified values (inclusive)</li>
 </ul></div></div>
-<div class="autopermalink" data-description="Activity 1.7.16"><a href="#vocab-exprs" title="Copy heading and permalink for Activity 1.7.16" aria-label="Copy heading and permalink for Activity 1.7.16">🔗</a></div>
-</article><div class="autopermalink" data-description="Subsection 1.7.8: Vocabulary Review"><a href="#vocab-1-7" title="Copy heading and permalink for Subsection 1.7.8: Vocabulary Review" aria-label="Copy heading and permalink for Subsection 1.7.8: Vocabulary Review">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Activity 1.7.17"><a tabindex="-1" href="#vocab-exprs" title="Copy heading and permalink for Activity 1.7.17" aria-label="Copy heading and permalink for Activity 1.7.17">🔗</a></div>
+</article><div class="autopermalink" aria-hidden="true" data-description="Subsection 1.7.8: Vocabulary Review"><a tabindex="-1" href="#vocab-1-7" title="Copy heading and permalink for Subsection 1.7.8: Vocabulary Review" aria-label="Copy heading and permalink for Subsection 1.7.8: Vocabulary Review">🔗</a></div>
 </section>
 <section class="subsection" id="appinventor-activity2">
-<h3 class="heading hide-type">
+<h2 class="heading hide-type">
 <span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">1.7.9</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">App Inventor Project Continued</span>
-</h3>
-<div class="para" id="appinventor-activity2-2">If your class wants to create mobile apps using MIT’s App Inventor. finish the <a class="external" href="unit1-appinventor-paint.html" target="_blank">Paint Pot Tutorial</a> part 2 and enhancements.<div class="autopermalink" data-description="Paragraph"><a href="#appinventor-activity2-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</h2>
+<div class="para" id="appinventor-activity2-2">If your class wants to create mobile apps using MIT’s App Inventor. finish the <a class="external" href="unit1-appinventor-paint.html" target="_blank">Paint Pot Tutorial</a> part 2 and enhancements.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#appinventor-activity2-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Subsection 1.7.9: App Inventor Project Continued"><a href="#appinventor-activity2" title="Copy heading and permalink for Subsection 1.7.9: App Inventor Project Continued" aria-label="Copy heading and permalink for Subsection 1.7.9: App Inventor Project Continued">🔗</a></div>
-</section><div class="autopermalink" data-description="Section 1.7: Mathematical Expressions"><a href="#topic-1-7-expressions" title="Copy heading and permalink for Section 1.7: Mathematical Expressions" aria-label="Copy heading and permalink for Section 1.7: Mathematical Expressions">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Subsection 1.7.9: App Inventor Project Continued"><a tabindex="-1" href="#appinventor-activity2" title="Copy heading and permalink for Subsection 1.7.9: App Inventor Project Continued" aria-label="Copy heading and permalink for Subsection 1.7.9: App Inventor Project Continued">🔗</a></div>
+</section><div class="autopermalink" aria-hidden="true" data-description="Section 1.7: Mathematical Expressions"><a tabindex="-1" href="#topic-1-7-expressions" title="Copy heading and permalink for Section 1.7: Mathematical Expressions" aria-label="Copy heading and permalink for Section 1.7: Mathematical Expressions">🔗</a></div>
 </section>
 </div>
 <div id="ptx-content-footer" class="ptx-content-footer">

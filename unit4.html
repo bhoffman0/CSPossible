@@ -36,7 +36,7 @@ htmlPresentation: false,
 <meta name="twitter:description" content="CSPossible is the newest AP CSP Python curriculum approved to meet the 2027-2028 College Board standards and an introductory college-level computer programming course in Python.">
 <meta property="og:description" content="CSPossible is the newest AP CSP Python curriculum approved to meet the 2027-2028 College Board standards and an introductory college-level computer programming course in Python.">
 <meta name="twitter:card" content="summary">
-<script src="_static/pretext/js/jquery.min.js"></script><script src="_static/pretext/js/dist/pretext-core.js?v=2.42"></script><!--** eBookCongig is necessary to configure interactive       **-->
+<script src="_static/pretext/js/jquery.min.js"></script><script src="_static/pretext/js/dist/pretext-core.js?v=2.44"></script><!--** eBookCongig is necessary to configure interactive       **-->
 <!--** Runestone components to run locally in reader's browser **-->
 <!--** No external communication:                              **-->
 <!--**     log level is 0, Runestone Services are disabled     **-->
@@ -59,36 +59,54 @@ eBookConfig.enableScratchAC = true;
 eBookConfig.acDefaultLanguage = 'python';
 eBookConfig.build_info = "";
 eBookConfig.python3 = null;
-eBookConfig.runestone_version = '8.1.11';
+eBookConfig.runestone_version = '8.1.14';
 eBookConfig.jobehost = '';
 eBookConfig.proxyuri_runs = '';
 eBookConfig.proxyuri_files = '';
 eBookConfig.enable_chatcodes =  false;
 </script>
 <!--*** Runestone Services ***-->
-<script src="_static/prefix-runtime.8b6d53d5a91823a0.bundle.js"></script><script src="_static/prefix-926.5c7038c8ef173faf.bundle.js"></script><script src="_static/prefix-runestone.2901d6466316ff22.bundle.js"></script><link rel="stylesheet" type="text/css" href="_static/prefix-926.229729d09512acc9.css">
+<script src="_static/prefix-runtime.cb5af2e851de3574.bundle.js"></script><script src="_static/prefix-926.5c7038c8ef173faf.bundle.js"></script><script src="_static/prefix-runestone.f51cd4153b45055d.bundle.js"></script><link rel="stylesheet" type="text/css" href="_static/prefix-926.229729d09512acc9.css">
 <link rel="stylesheet" type="text/css" href="_static/prefix-runestone.66fa8a682a32c0ac.css">
 <script src="_static/pretext/js/dist/lti_iframe_resizer.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.26.0/components/prism-core.min.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.26.0/plugins/autoloader/prism-autoloader.min.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.26.0/plugins/line-numbers/prism-line-numbers.min.js" integrity="sha512-dubtf8xMHSQlExGRQ5R7toxHLgSDZ0K7AunqPWHXmJQ8XyVIG19S1T95gBxlAeGOK02P4Da2RTnQz0Za0H0ebQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.26.0/plugins/line-highlight/prism-line-highlight.min.js" integrity="sha512-93uCmm0q+qO5Lb1huDqr7tywS8A2TFA+1/WHvyiWaK6/pvsFl6USnILagntBx8JnVbQH5s3n0vQZY6xNthNfKA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.9/lunr.min.js" integrity="sha512-4xUl/d6D6THrAnXAwGajXkoWaeMNwEKK4iNfq5DotEbLPAfk6FSxSP3ydNxqDgCw1c/0Z1Jg6L8h2j+++9BZmg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script><script src="lunr-pretext-search-index.js" async=""></script><script src="_static/pretext/js/dist/pretext_search.js"></script><!--knowl.js code controls Sage Cells within knowls--><script>sagecellEvalName='Evaluate (Sage)';
 </script>
 </head>
 <body id="cspossible" class="pretext book ignore-math">
-<a class="assistive" href="#ptx-content">Skip to main content</a><header id="ptx-masthead" class="ptx-masthead"><div class="ptx-banner">
+<a class="assistive" href="#ptx-content">Skip to main content</a><header id="ptx-masthead" class="ptx-masthead" role="banner"><div class="ptx-banner">
 <a id="logo-link" class="logo-link" target="_blank" href="http://localhost:8128/output/web/"></a><div class="title-container">
-<h1 class="heading"><a href="cspossible.html"><span class="title">CSPossible</span> <span class="subtitle">AP CSP 2027+ in Python</span></a></h1>
+<div class="heading ptx-banner-heading"><a href="cspossible.html"><span class="title">CSPossible</span> <span class="subtitle">AP CSP 2027+ in Python</span></a></div>
 <p class="byline"></p>
 </div>
 </div></header><nav id="ptx-navbar" class="ptx-navbar navbar"><div class="ptx-navbar-contents">
-<button class="toc-toggle button" title="Contents"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5d2;</span><span class="name">Contents</span></button><a class="index-button button" href="cspossible-9-1.html" title="Index"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe88e;</span><span class="name">Index</span></a><div class="ptx-search-box">
-<div class="ptx-search-widget"><button id="ptx-search-button" type="button" class="ptx-search-button button" title="Search book" commandfor="ptx-search-dialog" command="show-modal"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe8b6;</span><span class="name">Search Book</span></button></div>
-<dialog id="ptx-search-dialog" class="ptx-dialog ptx-search-dialog" closedby="closerequest"><div class="ptx-search-dialog-controls">
-<input aria-label="Search term" id="ptx-search-terms" class="ptx-search-terms" type="text" name="terms" placeholder="Search terms"><button aria-label="Close search" id="ptx-search-close" class="ptx-search-close" commandfor="ptx-search-dialog" command="close"><span class="material-symbols-outlined">close</span></button>
+<button id="ptx-toc-toggle" type="button" aria-controls="ptx-sidebar" class="toc-toggle button" title="Contents"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5d2;</span><span class="name">Contents</span></button><a class="index-button button" href="cspossible-9-1.html" title="Index"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe88e;</span><span class="name">Index</span></a><div class="ptx-search-box">
+<div class="ptx-search-widget"><button id="ptx-search-button" type="button" class="ptx-search-button button" title="Search Book"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe8b6;</span><span class="name">Search Book</span></button></div>
+<dialog id="ptx-search-dialog" class="ptx-dialog ptx-search-dialog"><div class="ptx-search-dialog-controls">
+<input aria-label="Search term" id="ptx-search-terms" class="ptx-search-terms" type="text" name="terms" placeholder="Search terms"><button aria-label="Close" id="ptx-search-close" class="ptx-search-close"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cd;</span></button>
 </div>
 <div id="ptx-search-status" class="ptx-search-status" aria-live="polite" aria-atomic="true"></div>
-<h2 class="ptx-search-results-heading">Search Results: </h2>
+<h2 class="heading ptx-search-results-heading">Search Results: </h2>
 <div id="ptx-search-empty" class="ptx-search-empty"><span>No results.</span></div>
 <ol id="ptx-search-results" class="ptx-search-results"></ol></dialog>
 </div>
-<span class="nav-other-controls"><button id="light-dark-button" class="light-dark-button button" title="Dark Mode"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe51c;</span><span class="name">Dark Mode</span></button></span><span class="treebuttons"><a class="previous-button button" href="unit3.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="up-button button" href="cspossible.html" title="Up"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Up</span></a><a class="next-button button" href="cspossible-9.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a></span><span class="nav-runestone-controls"><button onclick="runestoneComponents.popupScratchAC()" class="activecode-toggle button" title="Open Scratch ActiveCode"><span class="icon material-symbols-outlined" aria-hidden="true">&#xf097;</span><span class="name">Scratch ActiveCode</span></button></span>
+<span class="nav-other-controls"><button id="ptx-readability-options-button" class="ptx-readability-options-button button" title="Readability settings"><span class="icon material-symbols-outlined" aria-hidden="true">&#xf6f1;</span><span class="name">Readability settings</span></button><dialog class="ptx-dialog ptx-readability-options-popup" id="ptx-readability-options-popup"><div class="ptx-readability-options-popup-controls">
+<h2 class="heading">Readability settings</h2>
+<button class="ptx-readability-options-close-button button" id="ptx-readability-options-close-button" title="Close"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cd;</span></button>
+</div>
+<div class="ptx-readability-options-group">
+<label class="ptx-readability-slider-label" for="ptx-readability-line-height"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe240;</span><span>Line height</span><output id="ptx-readability-line-height-value" for="ptx-readability-line-height">1.35</output></label><input type="range" id="ptx-readability-line-height" min="1.10" max="3" step="0.05" value="1.35">
+</div>
+<div class="ptx-readability-options-group">
+<label class="ptx-readability-slider-label" for="ptx-readability-font-size"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe245;</span><span>Content font size</span><output id="ptx-readability-font-size-value" for="ptx-readability-font-size">100%</output></label><input type="range" id="ptx-readability-font-size" min="0.8" max="1.5" step="0.05" value="1">
+</div>
+<fieldset class="ptx-readability-options-group ptx-readability-options-group-theme">
+<legend>Theme</legend>
+<label for="ptx-readability-theme-system"><input type="radio" name="ptx-readability-theme" id="ptx-readability-theme-system" value="system"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe1ab;</span><span>System</span></label><label for="ptx-readability-theme-light"><input type="radio" name="ptx-readability-theme" id="ptx-readability-theme-light" value="light"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe518;</span><span>Light</span></label><label for="ptx-readability-theme-dark"><input type="radio" name="ptx-readability-theme" id="ptx-readability-theme-dark" value="dark"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe51c;</span><span>Dark</span></label>
+</fieldset>
+<fieldset class="ptx-readability-options-group">
+<legend>Assistive technologies</legend>
+<label for="ptx-readability-accessible-permalinks"><input type="checkbox" id="ptx-readability-accessible-permalinks"><span>🔗</span><span>Expose permalinks</span></label>
+</fieldset>
+<div class="ptx-readability-options-group"><button type="button" class="ptx-readability-reset-button button" id="ptx-readability-reset-button"><span class="icon material-symbols-outlined" aria-hidden="true">&#xf053;</span><span class="name">Reset All</span></button></div></dialog></span><span class="treebuttons"><a class="previous-button button" href="unit3.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="up-button button" href="cspossible.html" title="Up"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Up</span></a><a class="next-button button" href="cspossible-9.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a></span><span class="nav-runestone-controls"><button onclick="runestoneComponents.popupScratchAC()" class="activecode-toggle button" title="Scratch ActiveCode"><span class="icon material-symbols-outlined" aria-hidden="true">&#xf097;</span><span class="name">Scratch ActiveCode</span></button></span>
 </div></nav><div id="latex-macros" class="hidden-content process-math" style="display:none"><span class="process-math">\(
 \newcommand{\lt}{&lt;}
 \newcommand{\gt}{&gt;}
@@ -97,14 +115,14 @@ eBookConfig.enable_chatcodes =  false;
 \newcommand{\fillinmath}[1]{\mathchoice{\colorbox{fillinmathshade}{$\displaystyle     \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\textstyle        \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptstyle      \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptscriptstyle\phantom{\,#1\,}$}}}
 \)</span></div>
 <div class="ptx-page">
-<div id="ptx-sidebar" class="ptx-sidebar"><nav id="ptx-toc" class="ptx-toc depth3 focused" data-preexpanded-levels="0" data-max-levels="3"><ul class="structural toc-item-list contains-active">
+<div id="ptx-sidebar" role="complementary" class="ptx-sidebar"><nav id="ptx-toc" tabindex="-1" aria-label="Contents" class="ptx-toc depth3 focused" data-preexpanded-levels="0" data-max-levels="3"><ul class="structural toc-item-list contains-active">
 <li class="toc-item toc-chapter"><div class="toc-title-box"><a href="unit0.html" class="internal"><span class="codenumber">0</span> <span class="title">Getting Started</span></a></div></li>
 <li class="toc-item toc-chapter">
 <div class="toc-title-box"><a href="unit1.html" class="internal"><span class="codenumber">1</span> <span class="title">Creating Purposeful Apps and Programs</span></a></div>
-<ul class="structural toc-item-list">
+<ul id="ptx-toc-group-unit1" class="structural toc-item-list">
 <li class="toc-item toc-section">
 <div class="toc-title-box"><a href="topic-1-1-purpose.html" class="internal"><span class="codenumber">1.1</span> <span class="title">Purpose and Behavior</span></a></div>
-<ul class="structural toc-item-list">
+<ul id="ptx-toc-group-topic-1-1-purpose" class="structural toc-item-list">
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="topic-1-1-purpose.html#topic-1-1-purpose-4" class="internal"><span class="codenumber">1.1.1</span> <span class="title">Purpose and Behavior of Apps</span></a></div></li>
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="topic-1-1-purpose.html#topic-1-1-purpose-5" class="internal"><span class="codenumber">1.1.2</span> <span class="title">Inputs and Outputs</span></a></div></li>
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="topic-1-1-purpose.html#LOs-1-1" class="internal"><span class="codenumber">1.1.3</span> <span class="title">Learning Objectives Review</span></a></div></li>
@@ -113,7 +131,7 @@ eBookConfig.enable_chatcodes =  false;
 </li>
 <li class="toc-item toc-section">
 <div class="toc-title-box"><a href="topic-1-2-collaboration.html" class="internal"><span class="codenumber">1.2</span> <span class="title">Benefits of Collaboration</span></a></div>
-<ul class="structural toc-item-list">
+<ul id="ptx-toc-group-topic-1-2-collaboration" class="structural toc-item-list">
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="topic-1-2-collaboration.html#collaboration" class="internal"><span class="codenumber">1.2.1</span> <span class="title">Collaboration</span></a></div></li>
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="topic-1-2-collaboration.html#user-testing" class="internal"><span class="codenumber">1.2.2</span> <span class="title">User Testing</span></a></div></li>
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="topic-1-2-collaboration.html#iterative-process" class="internal"><span class="codenumber">1.2.3</span> <span class="title">Iterative Process</span></a></div></li>
@@ -124,7 +142,7 @@ eBookConfig.enable_chatcodes =  false;
 </li>
 <li class="toc-item toc-section">
 <div class="toc-title-box"><a href="topic-1-3-responsible-ai.html" class="internal"><span class="codenumber">1.3</span> <span class="title">Responsible AI and Human Decision-Making</span></a></div>
-<ul class="structural toc-item-list">
+<ul id="ptx-toc-group-topic-1-3-responsible-ai" class="structural toc-item-list">
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="topic-1-3-responsible-ai.html#ai-data" class="internal"><span class="codenumber">1.3.1</span> <span class="title">AI and Data</span></a></div></li>
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="topic-1-3-responsible-ai.html#ai-models" class="internal"><span class="codenumber">1.3.2</span> <span class="title">Machine Learning and AI Models</span></a></div></li>
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="topic-1-3-responsible-ai.html#teachable-machine" class="internal"><span class="codenumber">1.3.3</span> <span class="title">Teachable Machine Project</span></a></div></li>
@@ -136,7 +154,7 @@ eBookConfig.enable_chatcodes =  false;
 </li>
 <li class="toc-item toc-section">
 <div class="toc-title-box"><a href="topic-1-4-binary.html" class="internal"><span class="codenumber">1.4</span> <span class="title">Binary Representation</span></a></div>
-<ul class="structural toc-item-list">
+<ul id="ptx-toc-group-topic-1-4-binary" class="structural toc-item-list">
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="topic-1-4-binary.html#data-bits" class="internal"><span class="codenumber">1.4.1</span> <span class="title">Data and Bits</span></a></div></li>
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="topic-1-4-binary.html#binary" class="internal"><span class="codenumber">1.4.2</span> <span class="title">Binary Numbers</span></a></div></li>
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="topic-1-4-binary.html#abstraction" class="internal"><span class="codenumber">1.4.3</span> <span class="title">Abstraction</span></a></div></li>
@@ -148,7 +166,7 @@ eBookConfig.enable_chatcodes =  false;
 </li>
 <li class="toc-item toc-section">
 <div class="toc-title-box"><a href="topic-1-5-sequencing.html" class="internal"><span class="codenumber">1.5</span> <span class="title">Sequencing</span></a></div>
-<ul class="structural toc-item-list">
+<ul id="ptx-toc-group-topic-1-5-sequencing" class="structural toc-item-list">
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="topic-1-5-sequencing.html#sequencing" class="internal"><span class="codenumber">1.5.1</span> <span class="title">Sequencing in Written Steps and Flowcharts</span></a></div></li>
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="topic-1-5-sequencing.html#print" class="internal"><span class="codenumber">1.5.2</span> <span class="title">Python Output with <code class="code-inline tex2jax_ignore">print()</code></span></a></div></li>
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="topic-1-5-sequencing.html#sequencing-print" class="internal"><span class="codenumber">1.5.3</span> <span class="title">Sequencing in Code</span></a></div></li>
@@ -163,7 +181,7 @@ eBookConfig.enable_chatcodes =  false;
 </li>
 <li class="toc-item toc-section">
 <div class="toc-title-box"><a href="topic-1-6-variables.html" class="internal"><span class="codenumber">1.6</span> <span class="title">Variables</span></a></div>
-<ul class="structural toc-item-list">
+<ul id="ptx-toc-group-topic-1-6-variables" class="structural toc-item-list">
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="topic-1-6-variables.html#vars-in-apps" class="internal"><span class="codenumber">1.6.1</span> <span class="title">Identifying Variables in Apps</span></a></div></li>
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="topic-1-6-variables.html#python-vars" class="internal"><span class="codenumber">1.6.2</span> <span class="title">Variables in Python</span></a></div></li>
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="topic-1-6-variables.html#data-types" class="internal"><span class="codenumber">1.6.3</span> <span class="title">Data Types</span></a></div></li>
@@ -179,7 +197,7 @@ eBookConfig.enable_chatcodes =  false;
 </li>
 <li class="toc-item toc-section">
 <div class="toc-title-box"><a href="topic-1-7-expressions.html" class="internal"><span class="codenumber">1.7</span> <span class="title">Mathematical Expressions</span></a></div>
-<ul class="structural toc-item-list">
+<ul id="ptx-toc-group-topic-1-7-expressions" class="structural toc-item-list">
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="topic-1-7-expressions.html#expressions" class="internal"><span class="codenumber">1.7.1</span> <span class="title">Mathematical Expressions</span></a></div></li>
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="topic-1-7-expressions.html#updating-state" class="internal"><span class="codenumber">1.7.2</span> <span class="title">Updating State with Expressions</span></a></div></li>
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="topic-1-7-expressions.html#operators" class="internal"><span class="codenumber">1.7.3</span> <span class="title">Arithmetic Operators</span></a></div></li>
@@ -193,7 +211,7 @@ eBookConfig.enable_chatcodes =  false;
 </li>
 <li class="toc-item toc-section">
 <div class="toc-title-box"><a href="unit1-summary.html" class="internal"><span class="codenumber">1.8</span> <span class="title">Unit 1 Summary</span></a></div>
-<ul class="structural toc-item-list">
+<ul id="ptx-toc-group-unit1-summary" class="structural toc-item-list">
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="unit1-summary.html#unit1-summary-objectives" class="internal"><span class="codenumber">1.8.1</span> <span class="title">Unit 1 Learning Objectives</span></a></div></li>
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="unit1-summary.html#unit1-summary-vocab" class="internal"><span class="codenumber">1.8.2</span> <span class="title">Unit 1 Vocabulary</span></a></div></li>
 </ul>
@@ -203,11 +221,11 @@ eBookConfig.enable_chatcodes =  false;
 <li class="toc-item toc-section"><div class="toc-title-box"><a href="unit1-coding-practice.html" class="internal"><span class="codenumber">1.11</span> <span class="title">Unit 1 Coding Practice Exercises</span></a></div></li>
 <li class="toc-item toc-section">
 <div class="toc-title-box"><a href="unit1-appinventor-setup.html" class="internal"><span class="codenumber">1.12</span> <span class="title">App Inventor Setup (Optional)</span></a></div>
-<ul class="structural toc-item-list"><li class="toc-item toc-subsection"><div class="toc-title-box"><a href="unit1-appinventor-setup.html#unit1-appinventor-setup-steps" class="internal"><span class="codenumber">1.12.1</span> <span class="title">App Inventor Setup Steps</span></a></div></li></ul>
+<ul id="ptx-toc-group-unit1-appinventor-setup" class="structural toc-item-list"><li class="toc-item toc-subsection"><div class="toc-title-box"><a href="unit1-appinventor-setup.html#unit1-appinventor-setup-steps" class="internal"><span class="codenumber">1.12.1</span> <span class="title">App Inventor Setup Steps</span></a></div></li></ul>
 </li>
 <li class="toc-item toc-section">
 <div class="toc-title-box"><a href="unit1-appinventor-paint.html" class="internal"><span class="codenumber">1.13</span> <span class="title">App Inventor Paint Pot Tutorial (Optional)</span></a></div>
-<ul class="structural toc-item-list">
+<ul id="ptx-toc-group-unit1-appinventor-paint" class="structural toc-item-list">
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="unit1-appinventor-paint.html#paint-part1" class="internal"><span class="codenumber">1.13.1</span> <span class="title">Paint Pot Tutorial Part 1</span></a></div></li>
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="unit1-appinventor-paint.html#paint-part2" class="internal"><span class="codenumber">1.13.2</span> <span class="title">Paint Pot Tutorial Part 2</span></a></div></li>
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="unit1-appinventor-paint.html#paint-enhancements" class="internal"><span class="codenumber">1.13.3</span> <span class="title">Paint Pot Enhancements</span></a></div></li>
@@ -218,20 +236,22 @@ eBookConfig.enable_chatcodes =  false;
 </li>
 <li class="toc-item toc-chapter">
 <div class="toc-title-box"><a href="unit2.html" class="internal"><span class="codenumber">2</span> <span class="title">Building Solutions using Selection and Iteration</span></a></div>
-<ul class="structural toc-item-list">
+<ul id="ptx-toc-group-unit2" class="structural toc-item-list">
 <li class="toc-item toc-section">
 <div class="toc-title-box"><a href="topic-2-1-program-design-development.html" class="internal"><span class="codenumber">2.1</span> <span class="title">Program Design and Development</span></a></div>
-<ul class="structural toc-item-list">
-<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="topic-2-1-program-design-development.html#topic-2-1-program-design-development-4" class="internal"><span class="codenumber">2.1.1</span> <span class="title">Learning Objectives</span></a></div></li>
-<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="topic-2-1-program-design-development.html#topic-2-1-program-design-development-5" class="internal"><span class="codenumber">2.1.2</span> <span class="title">The Development Process</span></a></div></li>
-<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="topic-2-1-program-design-development.html#topic-2-1-program-design-development-6" class="internal"><span class="codenumber">2.1.3</span> <span class="title">Design and User Research</span></a></div></li>
-<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="topic-2-1-program-design-development.html#topic-2-1-program-design-development-7" class="internal"><span class="codenumber">2.1.4</span> <span class="title">Documentation</span></a></div></li>
-<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="topic-2-1-program-design-development.html#topic-2-1-program-design-development-8" class="internal"><span class="codenumber">2.1.5</span> <span class="title">Reusing and Citing Digital Content</span></a></div></li>
+<ul id="ptx-toc-group-topic-2-1-program-design-development" class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="topic-2-1-program-design-development.html#development-process" class="internal"><span class="codenumber">2.1.1</span> <span class="title">The Development Process</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="topic-2-1-program-design-development.html#design-thinking" class="internal"><span class="codenumber">2.1.2</span> <span class="title">Design Thinking</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="topic-2-1-program-design-development.html#user-research" class="internal"><span class="codenumber">2.1.3</span> <span class="title">User Research and Feedback</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="topic-2-1-program-design-development.html#documentation" class="internal"><span class="codenumber">2.1.4</span> <span class="title">Documentation</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="topic-2-1-program-design-development.html#topic-2-1-program-design-development-9" class="internal"><span class="codenumber">2.1.5</span> <span class="title">Reusing and Citing Digital Content</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="topic-2-1-program-design-development.html#LOs-2-1" class="internal"><span class="codenumber">2.1.6</span> <span class="title">Learning Objectives Review</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="topic-2-1-program-design-development.html#vocab-2-1" class="internal"><span class="codenumber">2.1.7</span> <span class="title">Vocabulary Review</span></a></div></li>
 </ul>
 </li>
 <li class="toc-item toc-section">
 <div class="toc-title-box"><a href="topic-2-2-boolean-expressions.html" class="internal"><span class="codenumber">2.2</span> <span class="title">Boolean Expressions</span></a></div>
-<ul class="structural toc-item-list">
+<ul id="ptx-toc-group-topic-2-2-boolean-expressions" class="structural toc-item-list">
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="topic-2-2-boolean-expressions.html#decisions" class="internal"><span class="codenumber">2.2.1</span> <span class="title">Boolean Expressions and Decision Making</span></a></div></li>
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="topic-2-2-boolean-expressions.html#relational-operators" class="internal"><span class="codenumber">2.2.2</span> <span class="title">Relational Operators</span></a></div></li>
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="topic-2-2-boolean-expressions.html#logical-operators" class="internal"><span class="codenumber">2.2.3</span> <span class="title">Logical Operators</span></a></div></li>
@@ -242,7 +262,7 @@ eBookConfig.enable_chatcodes =  false;
 </li>
 <li class="toc-item toc-section">
 <div class="toc-title-box"><a href="topic-2-3-selection.html" class="internal"><span class="codenumber">2.3</span> <span class="title">Selection</span></a></div>
-<ul class="structural toc-item-list">
+<ul id="ptx-toc-group-topic-2-3-selection" class="structural toc-item-list">
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="topic-2-3-selection.html#topic-2-3-selection-8" class="internal"><span class="codenumber">2.3.1</span> <span class="title">Selection in Algorithms</span></a></div></li>
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="topic-2-3-selection.html#if-statements" class="internal"><span class="codenumber">2.3.2</span> <span class="title">Conditional Statements (If Statements)</span></a></div></li>
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="topic-2-3-selection.html#if-else" class="internal"><span class="codenumber">2.3.3</span> <span class="title">If-Else Statements</span></a></div></li>
@@ -254,7 +274,7 @@ eBookConfig.enable_chatcodes =  false;
 </li>
 <li class="toc-item toc-section">
 <div class="toc-title-box"><a href="topic-2-4-iteration.html" class="internal"><span class="codenumber">2.4</span> <span class="title">Iteration</span></a></div>
-<ul class="structural toc-item-list">
+<ul id="ptx-toc-group-topic-2-4-iteration" class="structural toc-item-list">
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="topic-2-4-iteration.html#topic-2-4-iteration-4" class="internal"><span class="codenumber">2.4.1</span> <span class="title">Learning Objectives</span></a></div></li>
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="topic-2-4-iteration.html#topic-2-4-iteration-5" class="internal"><span class="codenumber">2.4.2</span> <span class="title">Iteration in Algorithms</span></a></div></li>
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="topic-2-4-iteration.html#topic-2-4-iteration-6" class="internal"><span class="codenumber">2.4.3</span> <span class="title">Loop Statements</span></a></div></li>
@@ -262,7 +282,7 @@ eBookConfig.enable_chatcodes =  false;
 </li>
 <li class="toc-item toc-section">
 <div class="toc-title-box"><a href="topic-2-5-algorithm-development.html" class="internal"><span class="codenumber">2.5</span> <span class="title">Algorithm Development</span></a></div>
-<ul class="structural toc-item-list">
+<ul id="ptx-toc-group-topic-2-5-algorithm-development" class="structural toc-item-list">
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="topic-2-5-algorithm-development.html#topic-2-5-algorithm-development-4" class="internal"><span class="codenumber">2.5.1</span> <span class="title">Learning Objectives</span></a></div></li>
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="topic-2-5-algorithm-development.html#topic-2-5-algorithm-development-5" class="internal"><span class="codenumber">2.5.2</span> <span class="title">Developing Algorithms</span></a></div></li>
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="topic-2-5-algorithm-development.html#topic-2-5-algorithm-development-6" class="internal"><span class="codenumber">2.5.3</span> <span class="title">Comparing Algorithms</span></a></div></li>
@@ -270,7 +290,7 @@ eBookConfig.enable_chatcodes =  false;
 </li>
 <li class="toc-item toc-section">
 <div class="toc-title-box"><a href="topic-2-6-errors.html" class="internal"><span class="codenumber">2.6</span> <span class="title">Errors</span></a></div>
-<ul class="structural toc-item-list">
+<ul id="ptx-toc-group-topic-2-6-errors" class="structural toc-item-list">
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="topic-2-6-errors.html#topic-2-6-errors-4" class="internal"><span class="codenumber">2.6.1</span> <span class="title">Learning Objectives</span></a></div></li>
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="topic-2-6-errors.html#topic-2-6-errors-5" class="internal"><span class="codenumber">2.6.2</span> <span class="title">Correcting Errors</span></a></div></li>
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="topic-2-6-errors.html#topic-2-6-errors-6" class="internal"><span class="codenumber">2.6.3</span> <span class="title">Testing and Test Cases</span></a></div></li>
@@ -278,7 +298,7 @@ eBookConfig.enable_chatcodes =  false;
 </li>
 <li class="toc-item toc-section">
 <div class="toc-title-box"><a href="unit2-summary.html" class="internal"><span class="codenumber">2.7</span> <span class="title">Unit 2 Summary</span></a></div>
-<ul class="structural toc-item-list">
+<ul id="ptx-toc-group-unit2-summary" class="structural toc-item-list">
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="unit2-summary.html#unit2-summary-objectives" class="internal"><span class="codenumber">2.7.1</span> <span class="title">Unit 2 Learning Objectives</span></a></div></li>
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="unit2-summary.html#unit2-summary-vocab" class="internal"><span class="codenumber">2.7.2</span> <span class="title">Unit 2 Vocabulary</span></a></div></li>
 </ul>
@@ -289,47 +309,47 @@ eBookConfig.enable_chatcodes =  false;
 <li class="toc-item toc-chapter active"><div class="toc-title-box"><a href="unit4.html" class="internal"><span class="codenumber">4</span> <span class="title">Making Data-Driven Decisions using the Internet and AI</span></a></div></li>
 <li class="toc-item toc-backmatter">
 <div class="toc-title-box"><a href="cspossible-9.html" class="internal"><span class="title">Back Matter</span></a></div>
-<ul class="structural toc-item-list"><li class="toc-item toc-index"><div class="toc-title-box"><a href="cspossible-9-1.html" class="internal"><span class="title">Index</span></a></div></li></ul>
+<ul id="ptx-toc-group-cspossible-9" class="structural toc-item-list"><li class="toc-item toc-index"><div class="toc-title-box"><a href="cspossible-9-1.html" class="internal"><span class="title">Index</span></a></div></li></ul>
 </li>
 </ul></nav></div>
 <main class="ptx-main"><div id="ptx-content" class="ptx-content">
 <section class="chapter" id="unit4">
-<h2 class="heading">
+<h1 class="heading">
 <span class="type">Unit</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">4</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Making Data-Driven Decisions using the Internet and AI</span>
-</h2>
+</h1>
 <section class="introduction" id="unit4-2">
-<div class="para" id="unit4-2-1">This unit introduces students to the Internet, Data Processing, and AI.<div class="autopermalink" data-description="Paragraph"><a href="#unit4-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="unit4-2-1">This unit introduces students to the Internet, Data Processing, and AI.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#unit4-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="para logical" id="unit4-2-2">
 <ul class="disc" id="unit4-2-2-1">
 <li id="unit4-2-2-1-1">
-<div class="para" id="unit4-2-2-1-1-1">AP Exam Weighting:<div class="autopermalink" data-description="Paragraph"><a href="#unit4-2-2-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="unit4-2-2-1-1-1">AP Exam Weighting:<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#unit4-2-2-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Item"><a href="#unit4-2-2-1-1" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Item"><a tabindex="-1" href="#unit4-2-2-1-1" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
 </li>
 <li id="unit4-2-2-1-2">
-<div class="para" id="unit4-2-2-1-2-1">Instructional days: 30 days, AI Design Project: 7 days<div class="autopermalink" data-description="Paragraph"><a href="#unit4-2-2-1-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="unit4-2-2-1-2-1">Instructional days: 30 days, AI Design Project: 7 days<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#unit4-2-2-1-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Item"><a href="#unit4-2-2-1-2" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Item"><a tabindex="-1" href="#unit4-2-2-1-2" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
 </li>
 <li id="unit4-2-2-1-3">
-<div class="para" id="unit4-2-2-1-3-1">Time Estimate: 45 minutes per lesson<div class="autopermalink" data-description="Paragraph"><a href="#unit4-2-2-1-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="unit4-2-2-1-3-1">Time Estimate: 45 minutes per lesson<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#unit4-2-2-1-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Item"><a href="#unit4-2-2-1-3" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Item"><a tabindex="-1" href="#unit4-2-2-1-3" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
 </li>
 <li id="unit4-2-2-1-4">
-<div class="para" id="unit4-2-2-1-4-1">AP Classroom Progress Check Unit 4<div class="autopermalink" data-description="Paragraph"><a href="#unit4-2-2-1-4-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="unit4-2-2-1-4-1">AP Classroom Progress Check Unit 4<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#unit4-2-2-1-4-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Item"><a href="#unit4-2-2-1-4" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Item"><a tabindex="-1" href="#unit4-2-2-1-4" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
 </li>
 <li id="unit4-2-2-1-5">
-<div class="para" id="unit4-2-2-1-5-1">AP Classroom Unit 4 Labs: 1 AI Lab, 3 Connect Tasks<div class="autopermalink" data-description="Paragraph"><a href="#unit4-2-2-1-5-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="unit4-2-2-1-5-1">AP Classroom Unit 4 Labs: 1 AI Lab, 3 Connect Tasks<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#unit4-2-2-1-5-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Item"><a href="#unit4-2-2-1-5" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Item"><a tabindex="-1" href="#unit4-2-2-1-5" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
 </li>
 </ul>
-<div class="autopermalink" data-description="Paragraph"><a href="#unit4-2-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div></section><div class="autopermalink" data-description="Unit 4: Making Data-Driven Decisions using the Internet and AI"><a href="#unit4" title="Copy heading and permalink for Unit 4: Making Data-Driven Decisions using the Internet and AI" aria-label="Copy heading and permalink for Unit 4: Making Data-Driven Decisions using the Internet and AI">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#unit4-2-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div></section><div class="autopermalink" aria-hidden="true" data-description="Unit 4: Making Data-Driven Decisions using the Internet and AI"><a tabindex="-1" href="#unit4" title="Copy heading and permalink for Unit 4: Making Data-Driven Decisions using the Internet and AI" aria-label="Copy heading and permalink for Unit 4: Making Data-Driven Decisions using the Internet and AI">🔗</a></div>
 </section>
 </div>
 <div id="ptx-content-footer" class="ptx-content-footer">
