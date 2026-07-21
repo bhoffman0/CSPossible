@@ -653,7 +653,7 @@ myTests().main()
 </h3>
 <div class="ptx-runestone-container"><div class="runestone parsons_section" style="max-width: none;"><div data-component="parsons" class="parsons" id="rs-print_evens_for_loop">
 <div class="parsons_question parsons-text">
-<div class="para" id="print_evens_for_loop-1-1">The following has the correct code blocks to print out all the even numbers between 0 and 10 (including 10) using a for loop, but the code is mixed up and there are 3 extra blocks. Drag the blocks from the left into the correct order on the right and indent them correctly.  You will be told if any of the blocks are in the wrong order or not indented correctly when you click the “Check Me” button.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#print_evens_for_loop-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="print_evens_for_loop-1-1">The following has the correct code blocks to print out all the even numbers between 0 and 10 (including 10) using a for loop, but the code is mixed up and there are 3 extra blocks that you don’t need. Drag the blocks from the left into the correct order on the right (except the 3 extra blocks)and indent them correctly. You will be told if any of the blocks are in the wrong order or not indented correctly when you click the “Check Me” button.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#print_evens_for_loop-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 </div>
 <pre class="parsonsblocks" data-question_label="" style="visibility: hidden;" data-language="python" data-adaptive="true" data-noindent="false">count = 0 #distractor
@@ -721,7 +721,7 @@ tina.penup()
 tina.goto(-150,150) # move turtle up
 tina.pendown()
 
-# Change this code to use a for loop to make tina go forward and turn
+# Change this code to use a for-loop to make tina go forward and turn
 tina.forward(100)
 tina.right(90)
 tina.forward(100)
@@ -837,14 +837,14 @@ myTests().main()
 </div>
 <div class="autopermalink" aria-hidden="true" data-description="Essential Knowledge 2.4.10: 2.4.B.5"><a tabindex="-1" href="#common-loop-errors-8" title="Copy heading and permalink for Essential Knowledge 2.4.10: 2.4.B.5" aria-label="Copy heading and permalink for Essential Knowledge 2.4.10: 2.4.B.5">🔗</a></div>
 </article>
-<div class="para" id="common-loop-errors-9">One common error with loops is to accidentally create an <dfn class="terminology">infinite loop</dfn>. An infinite loop is one that never stops because the Boolean condition is always true.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#common-loop-errors-9" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="common-loop-errors-9">One common mistake with loops is to accidentally create an <dfn class="terminology">infinite loop</dfn> which is a loop that never stops because the Boolean condition is always true.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#common-loop-errors-9" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="para" id="common-loop-errors-10">Sometimes we will write an infinite loop on purpose like this:<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#common-loop-errors-10" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="common-loop-errors-10">We could create an infinite loop on purpose like below where the loop condition is always true and never changes:<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#common-loop-errors-10" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="code-box"><pre class="program clipboardable"><code class="language-py">while True:
     print("This is a loop that never ends!")
 </code></pre></div>
-<div class="para" id="common-loop-errors-12">But if we create an infinite loop by accident, our program may seem to get stuck. For example look at the loop below. Does it have all 3 steps of creating a loop? Try it in the active code below to see an infinite loop in action.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#common-loop-errors-12" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="common-loop-errors-12">Most of the time, infinite loops happens by accident. When this happens, your program may appear to freeze because it keeps repeating the same instructions forever. For example look at the loop below. Does it have all 3 steps of creating a loop? Try it in the active code below to see an infinite loop in action.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#common-loop-errors-12" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="code-box"><pre class="program clipboardable"><code class="language-py">i = 0
 while i &lt; 10:
@@ -917,7 +917,7 @@ myTests().main()
 </div></div></div>
 <div class="autopermalink" aria-hidden="true" data-description="Activity 2.4.14"><a tabindex="-1" href="#forloopfromwhile" title="Copy heading and permalink for Activity 2.4.14" aria-label="Copy heading and permalink for Activity 2.4.14">🔗</a></div>
 </article>
-<div class="para" id="while-vs-for-6">While loops are useful when you don’t know how many times you want to repeat a block of code.  It is often used for an <dfn class="terminology">input-controlled</dfn> loop where the user’s input indicates when to stop, like below.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#while-vs-for-6" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="while-vs-for-6">While loops are useful when you don’t know how many times you want to repeat a block of code.  It is often used for an <dfn class="terminology">input-controlled loop</dfn> where the user’s input indicates when to stop, like below.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#while-vs-for-6" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <article class="activity project-like" id="input-controlled-while-loop"><h3 class="heading">
 <span class="type">Activity</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">2.4.15</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
@@ -961,34 +961,277 @@ myTests().main()
 <article class="note remark-like" id="tracing-loops-2"><h3 class="heading">
 <span class="type">Essential Knowledge</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">2.4.12</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">2.4.B.8.</span>
 </h3>
-<div class="para" id="tracing-loops-2-2">The result of iteration statements can be determined by tracing the loop step by step, keeping track of how many times the loop runs and how variable values and output change each time.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#tracing-loops-2-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="tracing-loops-2-2">The result of iteration statements can be determined by <dfn class="terminology">tracing</dfn> the loop step by step, keeping track of how many times the loop runs and how variable values and output change each time.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#tracing-loops-2-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="autopermalink" aria-hidden="true" data-description="Essential Knowledge 2.4.12: 2.4.B.8"><a tabindex="-1" href="#tracing-loops-2" title="Copy heading and permalink for Essential Knowledge 2.4.12: 2.4.B.8" aria-label="Copy heading and permalink for Essential Knowledge 2.4.12: 2.4.B.8">🔗</a></div>
+</article>
+<div class="para" id="tracing-loops-3">
+<dfn class="terminology">Tracing</dfn> is a technique where you follow the code line by line, keeping track of the variables and output, as if you were a computer.  This can be used to find bugs in your code, check that your program works correctly, or understand what a program does. The Code Lens feature in the active code activities help you to trace code by showing the variables as you run each line of code. But you can also trace code on paper!<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#tracing-loops-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="tracing-loops-4">A <dfn class="terminology">trace table</dfn> helps you to keep track on paper of what happens as the code runs. Create a column for each variable, and record its value each time it changes. Some trace tables also include columns for the current line number and any output the program produces. By the end of the trace, you can clearly see how the values changed throughout the program.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#tracing-loops-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="tracing-loops-5">Here is a simple algorithm that adds x to the total every time through the loop which is executed 3 times.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#tracing-loops-5" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="code-box"><pre class="program clipboardable"><code class="language-py">x = 2
+total = 0
+for j in range(3)
+{
+   total = total + x
+}
+print(total)
+</code></pre></div>
+<div class="para" id="tracing-loops-7">Try tracing through the code and see if your results match the trace table below:<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#tracing-loops-7" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<figure class="table table-like" id="tracing-table"><figcaption><span class="type">Table</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">2.4.13<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span>Python keywords<div class="autopermalink" aria-hidden="true" data-description="Table 2.4.13: Python keywords"><a tabindex="-1" href="#tracing-table" title="Copy heading and permalink for Table 2.4.13: Python keywords" aria-label="Copy heading and permalink for Table 2.4.13: Python keywords">🔗</a></div></figcaption><div class="tabular-box natural-width"><table class="tabular">
+<tr class="header-horizontal">
+<th scope="col" class="l m b1 r0 l0 t0 lines">x</th>
+<th scope="col" class="l m b1 r0 l0 t0 lines">j</th>
+<th scope="col" class="l m b1 r0 l0 t0 lines">total</th>
+<th scope="col" class="l m b1 r0 l0 t0 lines">output</th>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">2</td>
+<td class="l m b0 r0 l0 t0 lines"></td>
+<td class="l m b0 r0 l0 t0 lines"></td>
+<td class="l m b0 r0 l0 t0 lines"></td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines"></td>
+<td class="l m b0 r0 l0 t0 lines">0</td>
+<td class="l m b0 r0 l0 t0 lines">2</td>
+<td class="l m b0 r0 l0 t0 lines"></td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines"></td>
+<td class="l m b0 r0 l0 t0 lines">1</td>
+<td class="l m b0 r0 l0 t0 lines">4</td>
+<td class="l m b0 r0 l0 t0 lines"></td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines"></td>
+<td class="l m b0 r0 l0 t0 lines">2</td>
+<td class="l m b0 r0 l0 t0 lines">6</td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines"></td>
+<td class="l m b0 r0 l0 t0 lines"></td>
+<td class="l m b0 r0 l0 t0 lines"></td>
+<td class="l m b0 r0 l0 t0 lines">6</td>
+</tr>
+</table></div>
+</figure>
+<article class="activity project-like" id="tracing-loops"><h3 class="heading">
+<span class="type">Activity</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">2.4.16</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+</h3>
+<div class="ptx-runestone-container"><div class="runestone shortanswer_section"><div data-component="shortanswer" data-question_label="" class="journal" data-mathjax="" id="rs-tracing-loops" data-placeholder="You can write here, and it will be saved on this device, but your response will not be graded.">
+<div class="para" id="tracing-loops-1-1">Trace the following code and type in a trace table that shows the values of the variables x and total and the output below.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#tracing-loops-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div> <div class="code-box"><pre class="program clipboardable"><code class="language-py">x = 10
+total = 100
+for j in range(4)
+{
+    total = total - x
+}
+print(total)
+</code></pre></div>
+</div></div></div>
+<div class="autopermalink" aria-hidden="true" data-description="Activity 2.4.16"><a tabindex="-1" href="#tracing-loops" title="Copy heading and permalink for Activity 2.4.16" aria-label="Copy heading and permalink for Activity 2.4.16">🔗</a></div>
+</article>
+<article class="activity project-like" id="countLoopOutput"><h3 class="heading">
+<span class="type">Activity</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">2.4.17</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+</h3>
+<div class="ptx-runestone-container"><div class="runestone multiplechoice_section">
+<div class="exercise-statement">
+<div class="para" id="countLoopOutput-1-1">How many times will this pseudocode print a *? Create a trace table to help you figure it out. Work in pairs if possible. Remember that <code class="code-inline tex2jax_ignore">% 2</code> checks if there is a remainder when dividing by 2 to determine if a number is even or odd.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#countLoopOutput-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div> <div class="code-box"><pre class="program clipboardable"><code class="language-none">for i in range(10)
+{
+    if (i % 2 == 0)
+    {
+        print("*")
+    }
+}
+</code></pre></div>
+</div>
+<ul data-component="multiplechoice" class="exercise-interactives" id="rs-countLoopOutput" data-multipleanswers="false" data-random="">
+<li data-component="answer" id="rs-countLoopOutput_opt_a">
+<div class="para" id="countLoopOutput-2-1-1-1">3</div>
+</li>
+<li data-component="feedback" id="rs-countLoopOutput_opt_a">
+<div class="para" id="countLoopOutput-2-1-2-1">Not quite. The values 0, 2, 4, 6, and 8 satisfy the condition.</div>
+</li>
+<li data-component="answer" id="rs-countLoopOutput_opt_b" data-correct="">
+<div class="para" id="countLoopOutput-2-2-1-1">5</div>
+</li>
+<li data-component="feedback" id="rs-countLoopOutput_opt_b">
+<div class="para" id="countLoopOutput-2-2-2-1">Correct! The loop prints a * when i is 0, 2, 4, 6, and 8.</div>
+</li>
+<li data-component="answer" id="rs-countLoopOutput_opt_c">
+<div class="para" id="countLoopOutput-2-3-1-1">10</div>
+</li>
+<li data-component="feedback" id="rs-countLoopOutput_opt_c">
+<div class="para" id="countLoopOutput-2-3-2-1">The loop runs 10 times, but it only prints a * when the condition is true.</div>
+</li>
+<li data-component="answer" id="rs-countLoopOutput_opt_d">
+<div class="para" id="countLoopOutput-2-4-1-1">0</div>
+</li>
+<li data-component="feedback" id="rs-countLoopOutput_opt_d">
+<div class="para" id="countLoopOutput-2-4-2-1">The loop runs 10 times, but it only prints a * when the condition is true.</div>
+</li>
+</ul>
+</div></div>
+<div class="autopermalink" aria-hidden="true" data-description="Activity 2.4.17"><a tabindex="-1" href="#countLoopOutput" title="Copy heading and permalink for Activity 2.4.17" aria-label="Copy heading and permalink for Activity 2.4.17">🔗</a></div>
 </article><div class="autopermalink" aria-hidden="true" data-description="Subsection 2.4.8: Tracing Loops"><a tabindex="-1" href="#tracing-loops" title="Copy heading and permalink for Subsection 2.4.8: Tracing Loops" aria-label="Copy heading and permalink for Subsection 2.4.8: Tracing Loops">🔗</a></div>
 </section>
 <section class="subsection" id="coding-challenge-picture-lab">
 <h2 class="heading hide-type">
 <span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">2.4.9</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Coding Challenge Picture Lab</span>
 </h2>
-<div class="autopermalink" aria-hidden="true" data-description="Subsection 2.4.9: Coding Challenge Picture Lab"><a tabindex="-1" href="#coding-challenge-picture-lab" title="Copy heading and permalink for Subsection 2.4.9: Coding Challenge Picture Lab" aria-label="Copy heading and permalink for Subsection 2.4.9: Coding Challenge Picture Lab">🔗</a></div>
+<div class="para" id="coding-challenge-picture-lab-2">A digital image is made up of <dfn class="terminology">pixels</dfn> (short for picture elements) which are small squares of color. Each pixel has a color value that is made up of a combination of red, green, and blue (RGB) values, each ranging from 0 to 255. Try the <a class="external" href="https://rgbcolorpicker.com/" target="_blank">RGB Color Picker</a> to create different colors from RGB values.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#coding-challenge-picture-lab-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="image-box" style="width: 25%; margin-left: 37.5%; margin-right: 37.5%;"><img src="external/_static/Unit2images/pixels.png" class="contained"></div>
+<div class="para" id="coding-challenge-picture-lab-4">We can load an image into our code and use a loop to visit and manipulate each pixel in an image.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#coding-challenge-picture-lab-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="code-box"><pre class="program clipboardable"><code class="language-py"># Loop through the pixels of the image img
+for p in img.getPixels():
+
+    # get the rgb values of the pixel p
+    r = p.getRed()
+    g = p.getGreen()
+    b = p.getBlue()
+    print("Pixel RGB values:", r, g, b)
+
+    # change the pixel p by erasing red values
+    p.setRed(0)
+    # update the image
+    img.updatePixel(p)
+</code></pre></div>
+<div class="para" id="coding-challenge-picture-lab-6">In the project below, you will see an image loaded in of a student in a red t-shirt. The given code changes the background color of the image. Your challenge is to change her hair color and t-shirt color to other colors. You will need to use if-statements inside the loop to look for specific colors using their rgb values, and then setting them to another color. Here is what the original image looks like.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#coding-challenge-picture-lab-6" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="runestone datafile">
+<div class="datafile_caption"><code class="code-inline tex2jax_ignore">Data: </code></div>
+<img data-component="datafile" data-isimage="true" id="rs-student" data-filename="" src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAgAAAQABAAD/2wBDAAgGBgcGBQgHBwcJCQgKDBQNDAsLDBkSEw8UHRofHh0aHBwgJC4nICIsIxwcKDcpLDAxNDQ0Hyc5PTgyPC4zNDL/2wBDAQkJCQwLDBgNDRgyIRwhMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjL/wAARCADwAPgDASIAAhEBAxEB/8QAHwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUFBAQAAAF9AQIDAAQRBRIhMUEGE1FhByJxFDKBkaEII0KxwRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqDhIWGh4iJipKTlJWWl5iZmqKjpKWmp6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uHi4+Tl5ufo6erx8vP09fb3+Pn6/8QAHwEAAwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoL/8QAtREAAgECBAQDBAcFBAQAAQJ3AAECAxEEBSExBhJBUQdhcRMiMoEIFEKRobHBCSMzUvAVYnLRChYkNOEl8RcYGRomJygpKjU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6goOEhYaHiImKkpOUlZaXmJmaoqOkpaanqKmqsrO0tba3uLm6wsPExcbHyMnK0tPU1dbX2Nna4uPk5ebn6Onq8vP09fb3+Pn6/9oADAMBAAIRAxEAPwD3+iiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAopMjOM81zfiTx1onhdMXtxunxkQR8uR647D3oA6WivAtf+OupTu0Wi2S26dpH+ZiPx4FcZP8SvFt5JvbW7qMk8bH2j/wAdwKm47H1hRXyla/EnxhbSsw1yZyBnErbs/ga7HSPjjq8UwTU7OCVcDIHyn6g59PWncLHvlFcf4Z+I+h+JLgWizLb3rDKwyN94exwAT7V2FMQUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABSEgAknAHU0teY/FXx2dCtDpdhJi8lX52U8oD0A9/8AP0TdhpXKfxJ+KC6Ssmk6NKBc9JZh/B7D3/z9PA7rUJbqZ5rmR3ZzuZnOSx+pqleXMk0zNI+5z6nNVt7scgEe/epSvqxt20RbNxGhwY9+B901Mb9fJ2iBRjgZHP8AL61VVIkTLgSEjJyTkflTYiDysiA5HDAgfnV2JuXEuWlGxoFcEcAADH6VHmTdmMyDHQGnbJkYMVUfTv7ikTejMQpOemBRYCa3uTvDKdjg+vT6f4V614D+LVzpgSy124a4sVwokcFpI8/7WfmA7j8q8j8kmXfGcIwwfUGpJExGWXDIVBPA6/T8aWwH2bYajaapZxXdjcJPbyjKSRnINWa+U/h34/n8GasBJJLLp05/f256Ef31/wBofrjHuPqPT7+21OxhvLSUS28yh43HcGgCzRRRTAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAy/EWtQ+H9EudQmx+7X5F/vMeAPzr5D8Sa5catqk11NMZJZGJZvf2r1L42eMTPfLotpKPJgz5u09X/+sDXiWdzFz0FRu7lbKwwjbjPJ781YhUCJnlkKQr97aOT9KiUnJP8AKrtpZm+kiUhgi8n0z/8AqqnJRV2JRcnZFKOeIsQlu3B4LH+Yq8hEhXfGpL/3RycfyrqbPw3DPGMgHuOOa0l8IRGQHnAzkGud4unex0LCVNzko7KQqVVSVB4B7n/Jp40e5eNsBhjqcH9K9K0jwzHGAzgvhsZxjI7Z+lbc+jRIhKQgA84x+tRLEvoaxwqe54wumyGWNQhzkqcdaakDW5lVWK9c+tel3emxxzMyxhTnI4x261lX2nh7ZwI1LhSOnY1lHGXdmXLBWV0eeSoY5zuUsg/u8frXuXwV8UqqNoc0+6JiWt1Y8oerA+3cH3rxq/iWORoxkYOAo7+lXNEnFnqlrewObe8jcOj8bCR2Yeh9a7k7q5wNWdj7EorP0jUE1PSrW+hZWjmQEgMGwe4BHBwcitCrJCiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKz9bv10zR7m6Y42IcYPP1/Dr+FaFeb/GbVmsfCRto2AadgpHf2x+tKTshxV2fN+vagdS1e7ujkK8hYAnOMnpzWaeIVH945OadOp3+WPX8zSSYDYzwo60kDBEyo7ZNdXokAO0Ad65tAfNRCOVHX8K7HQkAEXHPWufEv3Tpwy947GxtBGigAD3rVigGQSAKq2gO1cfrWpGo4yK8l7nrp6F+zEcYw3atLyY5It3J45rGV9o471YhlcLjdwexNdMKtlZmEqd3dGfqNum4kD8KwJk5OBXSXqls5FYkykMflxxXNP4jpj8J55rVoBdSsMgAlsba51Ljyr1CxKqBtCgcfjXp9/pguLaeTZ8wQjPQdOP1xXklyNk5UDKjg4HIr18NLmgeJiYcsz6R+CmufatKu9GkY5tmE0IJ/5Zt2/Aj/x6vV6+WvhF4iGh+L7VZ2xb3AMBPpuxj8MgV9SAhlBHQ8iuhGDFooopiCiiigAooooAKKKKACiiigAooooAKKKKACiiigArw347Xg+1WVsJASqlyo6jjAP6mvcq+afjHdm48UTgAAR/u8jv3/8AZhUT6IuHU8tA3y59TmklBIf5eSf5VIq7WxjoATikILSRjpucD8zTvqKxrxQwPGkkYzKSd5/QYrq9Etm2xkLwK5nS02iX/Zz+ldJpd/qDRKtnYO+P4nGM1y1by2OujaOrO6tYuAa0o0GOlcCdc1u1f97BHGAfu4zj/P0rotF8RNdqY7uPy5exHAI/GuOWHktTrjXT0Nw9elSxllGcUxXWQcc1l61qj2VsyRFRI3AJPT3qFB33NHM0Lq+s4f8Aj4uooz33MBWU2oaXPL5UV7DI56AMP5151Nf2JvA148tw7t1QhQT9SenNbVnqXhW6CW7W4jJ4+Z9wJ9cgmtZYdWu7mUcQ72VjuobES2F2hwQ0fFfP99FtuZdy5O9v519E6LY2dhEIYJnYTJkIz7gK8f8AEHh91h1C4VHVo5pGU44IBNdNCUYRscteLqSuY/hkC51i2smyGmJjjIPSQjCc+m7GfbNfXfhe+bUvC+m3jsWea3RmJ9cc18a6JLJDq9tLE2JIpldTjOCDnpX2J4Qx/wAIzbYAALSEAHIALsQPyxXX1OPoblFFFUIKKKKACiiigAooooAKKKKACiiigAooooAKKKKAAnAzXyz8RC02sNM7sWnkkcgg4KhiAR+R6elfT945jsZ3HVY2I/KvmP4mMIvEUtuDlbWJY1JPf0x9Sayqbo0hszgo8vNJnsQD+v8AhSIu6aD/AHwP1ptqx3tFzuwWJ98GpYVLTwYU483P9aHoNanQ+GtpYlxnJPXvya29R1C5QRW9hL5IZsSSAZKj1rE8MhTLIMjIkYD6f5Ndfa6Ssp3rxJnPNck5qMrs7KcXKNkc/ceD9audTFul0tzBOFMdxIW2pkjJJzgEDIO73wM4rQ1fQb/w3eyNY3BudPRgCzyDIz6DOSPcDFdLbaOsZG6JCR3xz9frTtTgVbGSMr97rnvRPFRkrJFQwrjd3Lvg64fVIYS/VvlOaj1vSo7wXLPuLAYXA6DvTvBe2KeGNQOJBjHatm6YR38hHTea5JO3veZ0xj08jzCfwlpWqQRRmVobiJ2LPsLbwfUDHP8A9etSDwvpapp1taW0jC3y0k8mFd2PPboM9s9u/Wu8k8NwXRFzbqoZuq461YGliztyzRc44IrplVq8ljBUqXPfqY+nW62+oQIhOAe5zWP4ih+xaDqkpjXDLcsCfU7v8/Wuhshu1WLsc1xPxA1H7Po95HJcRGKfckUfBdpN3PboAc+34iueknKKXdmtSycn2R5p4cspdQ1y3toE3ySOAFHc5r7SsYFtrRIUACrnGPqa+Yfgpo66j4uWZ2K/Z9rrjPJzn+QNfUqDagHoK9hbnjPYWiiiqEFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFAEdwgkt5EPRlIr5h+Jsdx/bOoX6odskrcqMDYNqA/jn9RX1CwypHqK8e+LehomgzSoGwoVAcdi0X9cVE1sy4PdHzzaPslV+mM1pq6QwwSEfdfP1Gcfyz+VUdQtW065ubZmV2hldCVOQcHGQfSmzyiSyYZOQyj/ANCNJq44uxueH5Ut9TiZp0ImkKhA2T06/oK9U09Ocg4FfP0Vw9veR3CcMjhx9Qc17zo97Fc6dDcIQQ6hvzrjxVOyO3C1L6HTwRbsAnt3rG8VBoYFESAu+cCrUeqRQoWLcCuU1rxBO2sJOEDxJGUCNwOep+vArkpxO2b0Oo8LR+XJbM4AJIZs9q2dbjVbsmCRWD/N8vOM1wth4mWML5kY5+6FHT2rU+1a3fSxvawRQwHA3SDJ+uKuUXZxFFq6kjo7XUbi3WNWOFPStO41ATQAHHTk1j3XFuqKQNo4z6+tZqalhdp6jioc5RXLcfJGTvY2dOjDXxk7JzXzPqlyL7Wb67HSa4kkH4sT/Wvoi51H+yvCWranvVHjtnZC3TdjCj8SRXzdChYgAcmvQwkOWmeZi5c1Sx9Ffs96aItE1G/OcyyKg/DP+fxr2euV+HWhN4e8E6fZyqFnKeZKMYwx9ffGBXVV1R2OV7hRRRTEFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABXHfEnTzfeDdRVCAwhZ+mc7SrcfgtdjXI+ONSW309oB8zEYC9dzHoD7f41M3aLZUVdo+UdaDSXTzsSxmG8k9yep/PNZW8+Tj866bXLIw3s8LLt8mQqQTnA7Dj64rmXXYGX0NTB3RU1ZlaQY5rvvAethrdtLlf50+aLnqO4/D+tcFJ92pLOeS0uY7iJyrowIIoqwU42HRqezmpHtVx5gt2liO5gRwTjNZMl7ayAR3dvNEx4BK5BPpkU/R9WXULUMcB8fOtaSunIdQcdfevMj7rs0eu/es0U9N1DSLSfzMRsUOCJmK/zxXQw+JdxC2UJnU8KI42cf99DiqkN7bQn52XBGMkVaj1uIKYrfLsx+7EnStGovU6Iwio7kkl3q+oRyoYYbXHQu24n8Aen41StvN80xzsGkJ+8o4NXws7Q5C7Qfeq0SLHN5srcZA+vsK57qUrLYzemqML4oa+tp4ftdAgb95dbZp/aNT8o/Fhn/AID71W+FHgG41jxFDc30DC1tCJZg/GW/gTHqcbiPQe4q/N4Zn8TfE4p9naVhDE0QH3EXaAXY/wB1T2BBJIxXvfhzw/a+HNKWztgCcl5H2gF2PUnH9OAAAAAAK9aC91JHiVH7zbNZV2qFHYYpaKK1MgooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKbJIsSF3OAKAGzSrBE0jnAAry3xdqnlS3E2N0kalgWHyozcDJ6Dgk9+cenG/wCK9dvYLUtar5ZX5hkZOPU9h7Zzn2rwbxNqN9PcNHcTXBDHLByfmbpn69awqTu+VG9OFlzMytTvftUss7uHZ1AJx1HI/pXMXI/efpWiZM/JnoAOfrVO4Qbsn8acNBT1M91wMUw54UdasSoFCj2zUaAb+la3MrHT6LO8e1kJDCu0sb9LgBJMK/8AOuC0wlQCK6O3cEZzg+tefWjqepRl7tjr4NPsZX3Sgn2zxW/ZtYWke2KKJcegrz4Xk0Y+V/wNMa+vJTtRsH1Arn5W+p0qUUdzqWtQRoQpB7BR1J9KzYIZZSLifqfuqOi1W0XSWLie4y79fm7VuXQCKAB+NYt20Ra1PQ/CgtRptpcRRILsuYpWXhnGO/rjj6c111eLwXMv2B44ZpYplGUaKQo3uMjseP09Kv8Ahfx1qWns2n6pKdQjC77a4c4kdfRj3IyOcc5r1YYiKirnmfU51JtQ37HrNFcbafEXTnOy9t5bdi2MqfMX8Twf0rprLVbDUow9ndwzAjOFbkfUdRW0asJ/CzKtg8RQ1qQa/L7y5RRRWhzBRRRQAUUUUAFFFFABRRRQAUUUUAFFFBOBk9KACoLoxrCWlkREXkl2wPxNcn4i8ax2oe2sCHfGDNngfT/GvOL/AFG6u1fzJ3Ynnk1zVMTGDstT2cHktauuaT5Ua3jfxkdN1ZYNN+y3ESAM8jpuDMewOeAP8a8h8Q6nLqV41xMka7ugjQKAM9ABWtfiW5uArKabNon2q2wRhscVze31uzveTybcYLb8Tg/Odrgn3x9amcOxAIPWtqfQWtAW2Z96iiiEkRUjD571v7aL1RxTyupC6luYlyjMSx7CoIk5BrpTppa3BxnIrKS3zGABzVxqqRz4rBSoKLfUt6euMZ6VtREoeOtZNmCBgjkcGtmCIyEVz1NxUti1EplYDFdFpmmKuGZcn1NVrGwbarY9zW/ArJ1U8Vxzn0R2Qj1LiKIowAOtRTAODnFPD5IzTvL4B7msGaFFXaNsiq1wCLaGVcbkfIx/dzj+RrQniCpgcM5wo/z+f4VWvLcLYPGvACbQPwwK0U9LDo3VaMl3KzOrTgNjD/L+PUf1qLc0UgAJUg9c0xiflPcMOn1p1wwLEj9KD7HlsdRpXj3VdLhW3Z47mJeFEwJKj0ByD+ea6GH4pWxAE2nsp7lZcj+VeWliSTTGyF469a3jiKkVZM82tlGErPmlDXy0/I+gNM8R6dqaDy5ljl6GNzg59vWtavAUvJEiQgkHAxXSaL4zvbFkRpPMizyj8jFdVPGX0meDi+H5RvKi/kz1qiqGlatb6taiaA4P8SHqpq/Xammro+dnCUJOMlZoKKKKZIUUUUAFFFFADZJFijaR2CooLMT2ArznxZ4s+0TeRp9y32cLh8cbj/PFaXjHxTFDBNp1q2ZTlJW6YHoK8vnlycg1xYit9mJ9Jk+W8376qvT/ADJZp2kJJPWoGJIzUW/PtQG9T2rhZ9ZCKQjW0buGIPB61OFAHQYqINyB6Gps8YzioNGVby3WWBlwM1kx6RGYj5i9/St4jPfJpm0HJpptEuMZbozI7FRDtwCRx/hXP3WmG3vmG35G+YV2I+Rt38JGDTp7OOcDIHqDVRqOLOPMsGsTSSjutv8AI4+OwO9WC4HQ1s2dptdeK047FEQgqcEVJD5cbgScDPDdqUq1z5ZUHB2Zu6VZKyBWGM1oTWaoOB0qPS3VVAJ4q/cSoVwMfXFZKzVzR3TsZqW2Wq2lqQm4ioRdpbHOMk1HPqUzptXILcA+lJOK3BqTAxK8zSHouVX+p/p+BrM1dlWNU4+duR7D/wCvircl0sMS7jhVGADWDdXJnlLk49OegoTuz0cuwkqlVTeyGO+Np7ZqFmLHPrTgpbnBx7/zqRUUcHFWj6VkSxHv1qUxZXgZNP8AlBHTNSIAx4IoJvYikBCL2GKEbac06Yfd+lQO20deppha6Ox8Jaw9hqUJLfu2O1x6ivX+tfP9pKY54MHnjP1zXumlTfaNKtZO5jAP1HH9K9HBy0cT43iCgozjVXXQuUUUV2nzgUUUUAFc94n8Rx6PatFEwN2w4H9weprQ1rVodHsHuJCC5GI0P8R/wrxvVdSmv7uWad90jHJNc9etyKy3PXyvL3iZ8817q/Ep31088zSOSzMckk9TVBm9ae7AnGaiPI4zXmtn29OCirITtQDng0wHa2B36U7IyOaRoiUZIyT3qRQ2O+BUSN2IqcZAzipG3qN3leT2pplGOKkYDpTNik4IHNADd6k45BpySmMjb8y/3en5U0xKSaNij/61Fh3LKSrIDsb8D1pySKjfPGCO4qkYxnOOR6HBFODyAfeyPcZxUuJlUw1Kr8SN+1vrCLClpI17blzg+nHb/P0sT6lZhflnBP8Aut/hXL+bIxIKR4PXLf8A1qQSMMr1PUZPb/63+e9Jo5HlVG97v71/kbE1/BvBBZx7CmS6vJL8qxImBtDHkgfy/wAj0rKBlY52oFHffzn6UvlseXkJ9ccZ/rSUbGtPL8PF6q9u4+WQu5LuWb06mmrCXO5xgdl/xp8YVfugZPU+tOLD/IqkjtvZWiJtUetJtHWjeOwpCR3piHhU/wAmpolXJAB6VW3KBUsZcIzqfu9vagl7CTDp9aozHMiL71dnZXjEq9DVJxm9jGf4c0GkNjRtdrXsIY/KGUH29a9m8HzmfQI8nJViP6/1rxS3b97I2R8oOB65/wD1/pXrXgKbOnvEeu1Wx/n8K68I/fPnOIad8PftY7CiiivTPiwpCQoJJAA5JNLXEeNfEYijbS7WT52H79l7D+7/AI/l61E5qEbsunBzlZHOeMfEEeq6kUgP7qEbUOfv+prkJG3H0I6H+lXJofNXjhux9KzmJDFGGHHUevuK8mc+eVz7TKasIwVB79PMjLZJB4PcUzcVJ4NPkO5cnIwOD1xUJcq67hyOD3yPWpPcasOLAr6A00N379KY/wAu5eOGGPxpQRvwBQS2WIuT15+lWFPX17ZqKIYXPr0qVQ2D2FHQlvUUg/Wm+9OYdsmmnPapNBBjsPzoyfajp3ozjAH50ABxjj+dIenNOzn6Ui9cdqBjB1GOtIyk4xjI5Bx0NPwO9IRkbe1IYux1hhZ1AEq7wqtnHJHJ/Cj71S3F3dXhRru5luHRdqtJjIHXHAHcn86hzQZ0lNQXPuPHBophbrzSA5xjvQWOwO5pwwewNMA55FSL6DpTAUBRVm2GXIHB7VXHTt+VTwcSDHegiWxUuY2hZ8f6uTt/dNVIzvui3UKg/X/IrevYt1o7BRlRuP0HX9K56H5Y2wRuf/DH9KbRdGfMmXbfmMf7bZx3/wA8133hTVksLlN5yrtsIH90DGa4KNthXAOF6VpWMzrKpUktnAA5qqc+V3RyY3DqvTcZbHvIIIBByD0Ioqhoi3S6TALtSsu37p6gdgfeivZTurn5zOPLJxvexmeKfEsejWxggYNeyD5R/cHqf6V5ZLI0sjSSMWZjkknrUl5cy3d7LPNIXkZySTVduteViKzm/I9XD0FBeYu41XurdbhP7rjlWHUGps4/pSda5b6nVYxHdo38u4AQ9n7H/Clkj3qy+v8AP1Hoa0biBJ0Kuuc1VgsZYpAkT+YnZG7fQ1rF3PWw2ZyguWtqu5nHf5yrKM46uB6eoqdIskBWUswLAZ5Iz1r0TQvh7JqMUd3czG3iOCF2ZZh3xz+tbfizwFa3WhRtpMQivbAPLFhcmYkchj1LHHH5dK6VQm43M6mcYdVVCL369jyqKTK9eR2qYNnrVBJ3cF3TZKrFZE6YYVajeUn5gFGOKwaPVjK5Ky/5NN5I/GnDcQN3PrSFQKg6E7jSPSjHHXI70YOKMCgoMCg8ml70e1IBMGm7Rn2p+ce31o5xyDSGNxxz2pPxNOI75ppA6fyoGJ3yc5oxg9aXHf8AnQBnNABjvUijpSbemeacvSmIkAxT487xjrmmqCx4OBVhIWxlVzQZydi7OUjs5ZJfuCIlvpjmuTtgxAODtB78Zrpb12OmmKVvLWVfkk7AjsfY4rFsrWW4A8tf3ePvdB/9eqnsZ0KkKcZSm7DowxPqeldv4BtYxr8TyIrMFbbu5wcHmufislt09W/vdPyrpvBBx4hh57N/6CarDu9RHhZrmMqtOUKekfzPUaKKK9k+QP/Z">
+</div>
+<article class="project project-like" id="picture-lab"><h3 class="heading">
+<span class="type">Project</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">2.4.18</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+</h3>
+<div class="ptx-runestone-container"><div class="runestone explainer ac_section "><div data-component="activecode" id="rs-picture-lab">
+<div class="ac_question exercise-statement" id="rs-picture-lab_question">
+<div class="para" id="picture-lab-1-1">Work in pairs for this project if possible. Run the following code to see how it changes the white background of the image to purple/violet with high red and blue values. The original image has a white background like above. Try changing the background color to another color inside the if statement. Look at <a class="external" href="https://rgbcolorpicker.com/" target="_blank">RGB Color Picker</a> to create different colors and find their RGB values. Then, add another if statement inside the loop to change the color of the student’s hair to another color. For an additional challenge, try changing the color of the student’s t-shirt to another color with an if statement that looks for red. You will need to use an if statement inside the loop to look for the red pixels. The red pixels probably have a high red value (for example greater than 200) and low green and blue values (for example less than 100). After changing the t-shirt color, try changing the background color or the hair color.  You can also try loading in a different image with a full image link like <a class="external" href="https://images.pexels.com/photos/17502401/pexels-photo-17502401.jpeg" target="_blank">"https://images.pexels.com/photos/17502401/pexels-photo-17502401.jpeg"</a> instead of "student.jpg".<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#picture-lab-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+</div>
+<textarea data-lang="python" data-audio="" data-coach="true" style="visibility: hidden;" id="rs-picture-lab_editor" data-question_label="" data-codelens="true" data-timelimit="25000">from image import *
+
+# CREATE AN IMAGE FROM A FILE
+img = Image("student.jpg")
+
+# LOOP THROUGH ALL PIXELS
+for p in img.getPixels():
+    r = p.getRed()
+    g = p.getGreen()
+    b = p.getBlue()
+
+    # RGB values close to (0,0,0) are black
+    # and close to (255,255,255) are white
+    if r &gt; 230 and g &gt; 230 and b &gt; 230:
+       # CHANGE THE IMAGE
+       p.setBlue(255)
+       p.setRed(255)
+       p.setGreen(0)
+       img.updatePixel(p)
+
+# WRITE YOUR OWN LOOPS and IF STATEMENTS BELOW TO CHANGE THE HAIR COLOR 
+# AND T-SHIRT COLOR
+
+
+
+# SHOW THE CHANGED IMAGE
+window = ImageWin(img.getWidth(),img.getHeight())
+img.draw(window)
+====
+from unittest.gui import TestCaseGui
+
+class myTests(TestCaseGui):
+  def test1(self):
+    input_count = self.getEditorText().count("for ")
+    self.assertGreaterEqual(input_count, 3, "At least 3 for loops used")
+    input_count = self.getEditorText().count("if ")
+    self.assertGreaterEqual(input_count, 3, "At least 3 if statements used")
+    self.assertIn("&lt;",self.getEditorText(), "&lt; use to check for low values for black or red checks")
+
+myTests().main()
+</textarea>
+</div></div></div>
+<div class="autopermalink" aria-hidden="true" data-description="Project 2.4.18"><a tabindex="-1" href="#picture-lab" title="Copy heading and permalink for Project 2.4.18" aria-label="Copy heading and permalink for Project 2.4.18">🔗</a></div>
+</article>
+<article class="activity project-like" id="loop-algorithm-reflection"><h3 class="heading">
+<span class="type">Activity</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">2.4.19</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Project Reflection on Algorithm.</span>
+</h3>
+<div class="ptx-runestone-container"><div class="runestone shortanswer_section"><div data-component="shortanswer" data-question_label="" class="journal" data-mathjax="" id="rs-loop-algorithm-reflection" data-placeholder="You can write here, and it will be saved on this device, but your response will not be graded.">
+<div class="para logical" id="loop-algorithm-reflection-2-1">
+<div class="para">Identify an iteration statement that you wrote on your own in your project. Explain how it works:</div>
+<ol class="decimal" id="loop-algorithm-reflection-2-1-1">
+<li id="loop-algorithm-reflection-2-1-1-1">
+<div class="para" id="p-derived-loop-algorithm-reflection-2-1-1-1">What is the purpose of the loop?</div>
+<div class="autopermalink" aria-hidden="true" data-description="Item 1"><a tabindex="-1" href="#loop-algorithm-reflection-2-1-1-1" title="Copy heading and permalink for Item 1" aria-label="Copy heading and permalink for Item 1">🔗</a></div>
+</li>
+<li id="loop-algorithm-reflection-2-1-1-2">
+<div class="para" id="p-derived-loop-algorithm-reflection-2-1-1-2">What is the loop variable?</div>
+<div class="autopermalink" aria-hidden="true" data-description="Item 2"><a tabindex="-1" href="#loop-algorithm-reflection-2-1-1-2" title="Copy heading and permalink for Item 2" aria-label="Copy heading and permalink for Item 2">🔗</a></div>
+</li>
+<li id="loop-algorithm-reflection-2-1-1-3">
+<div class="para" id="p-derived-loop-algorithm-reflection-2-1-1-3">How many times does the loop run? When does it stop?</div>
+<div class="autopermalink" aria-hidden="true" data-description="Item 3"><a tabindex="-1" href="#loop-algorithm-reflection-2-1-1-3" title="Copy heading and permalink for Item 3" aria-label="Copy heading and permalink for Item 3">🔗</a></div>
+</li>
+<li id="loop-algorithm-reflection-2-1-1-4">
+<div class="para" id="p-derived-loop-algorithm-reflection-2-1-1-4">If you have a selection statement inside the loop, describe how its condition works and what happens when the condition is true or false.</div>
+<div class="autopermalink" aria-hidden="true" data-description="Item 4"><a tabindex="-1" href="#loop-algorithm-reflection-2-1-1-4" title="Copy heading and permalink for Item 4" aria-label="Copy heading and permalink for Item 4">🔗</a></div>
+</li>
+</ol>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#loop-algorithm-reflection-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+</div></div></div>
+<div class="autopermalink" aria-hidden="true" data-description="Activity 2.4.19: Project Reflection on Algorithm"><a tabindex="-1" href="#loop-algorithm-reflection" title="Copy heading and permalink for Activity 2.4.19: Project Reflection on Algorithm" aria-label="Copy heading and permalink for Activity 2.4.19: Project Reflection on Algorithm">🔗</a></div>
+</article>
+<article class="activity project-like" id="loop-error-reflection"><h3 class="heading">
+<span class="type">Activity</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">2.4.20</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Project Reflection on Errors.</span>
+</h3>
+<div class="ptx-runestone-container"><div class="runestone shortanswer_section"><div data-component="shortanswer" data-question_label="" class="journal" data-mathjax="" id="rs-loop-error-reflection" data-placeholder="You can write here, and it will be saved on this device, but your response will not be graded.">
+<div class="para" id="loop-error-reflection-2-1">Describe a logic error (especially in the condition of the if statements) that you made in your project code above.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#loop-error-reflection-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div> 
+<ul class="disc" id="loop-error-reflection-2-2">
+<li id="loop-error-reflection-2-2-1">
+<div class="para" id="p-derived-loop-error-reflection-2-2-1">Describe the program behavior resulting from this error.</div>
+<div class="autopermalink" aria-hidden="true" data-description="Item"><a tabindex="-1" href="#loop-error-reflection-2-2-1" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="loop-error-reflection-2-2-2">
+<div class="para" id="p-derived-loop-error-reflection-2-2-2">Describe how you found the error and how you fixed it.</div>
+<div class="autopermalink" aria-hidden="true" data-description="Item"><a tabindex="-1" href="#loop-error-reflection-2-2-2" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="loop-error-reflection-2-2-3">
+<div class="para" id="p-derived-loop-error-reflection-2-2-3">If you have access to a genAI system, try asking it about a bug you encountered and describe how it could be used to help find and fix bugs like this.</div>
+<div class="autopermalink" aria-hidden="true" data-description="Item"><a tabindex="-1" href="#loop-error-reflection-2-2-3" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+</ul>
+</div></div></div>
+<div class="autopermalink" aria-hidden="true" data-description="Activity 2.4.20: Project Reflection on Errors"><a tabindex="-1" href="#loop-error-reflection" title="Copy heading and permalink for Activity 2.4.20: Project Reflection on Errors" aria-label="Copy heading and permalink for Activity 2.4.20: Project Reflection on Errors">🔗</a></div>
+</article><div class="autopermalink" aria-hidden="true" data-description="Subsection 2.4.9: Coding Challenge Picture Lab"><a tabindex="-1" href="#coding-challenge-picture-lab" title="Copy heading and permalink for Subsection 2.4.9: Coding Challenge Picture Lab" aria-label="Copy heading and permalink for Subsection 2.4.9: Coding Challenge Picture Lab">🔗</a></div>
 </section>
 <section class="subsection" id="LOs-2-4">
 <h2 class="heading hide-type">
 <span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">2.4.10</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Learning Objectives Review</span>
 </h2>
 <article class="remark remark-like" id="LOs-2-4-2"><h3 class="heading">
-<span class="type">Learning Objective</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">2.4.13</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">2.4.A.</span>
+<span class="type">Learning Objective</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">2.4.14</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">2.4.A.</span>
 </h3>
 <div class="para" id="LOs-2-4-2-2">Represent an algorithm that includes iteration using written steps or a flowchart.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#LOs-2-4-2-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" aria-hidden="true" data-description="Learning Objective 2.4.13: 2.4.A"><a tabindex="-1" href="#LOs-2-4-2" title="Copy heading and permalink for Learning Objective 2.4.13: 2.4.A" aria-label="Copy heading and permalink for Learning Objective 2.4.13: 2.4.A">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Learning Objective 2.4.14: 2.4.A"><a tabindex="-1" href="#LOs-2-4-2" title="Copy heading and permalink for Learning Objective 2.4.14: 2.4.A" aria-label="Copy heading and permalink for Learning Objective 2.4.14: 2.4.A">🔗</a></div>
 </article>
 <article class="remark remark-like" id="LOs-2-4-3"><h3 class="heading">
-<span class="type">Learning Objective</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">2.4.14</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">2.4.B.</span>
+<span class="type">Learning Objective</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">2.4.15</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">2.4.B.</span>
 </h3>
 <div class="para" id="LOs-2-4-3-2">Develop code using iteration, and determine the result of iteration statements.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#LOs-2-4-3-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" aria-hidden="true" data-description="Learning Objective 2.4.14: 2.4.B"><a tabindex="-1" href="#LOs-2-4-3" title="Copy heading and permalink for Learning Objective 2.4.14: 2.4.B" aria-label="Copy heading and permalink for Learning Objective 2.4.14: 2.4.B">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Learning Objective 2.4.15: 2.4.B"><a tabindex="-1" href="#LOs-2-4-3" title="Copy heading and permalink for Learning Objective 2.4.15: 2.4.B" aria-label="Copy heading and permalink for Learning Objective 2.4.15: 2.4.B">🔗</a></div>
 </article><div class="autopermalink" aria-hidden="true" data-description="Subsection 2.4.10: Learning Objectives Review"><a tabindex="-1" href="#LOs-2-4" title="Copy heading and permalink for Subsection 2.4.10: Learning Objectives Review" aria-label="Copy heading and permalink for Subsection 2.4.10: Learning Objectives Review">🔗</a></div>
 </section>
 <section class="subsection" id="vocab-2-4">
@@ -996,7 +1239,7 @@ myTests().main()
 <span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">2.4.11</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Vocabulary Review</span>
 </h2>
 <article class="activity project-like" id="vocab-loops"><h3 class="heading">
-<span class="type">Activity</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">2.4.16</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+<span class="type">Activity</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">2.4.21</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
 </h3>
 <div class="ptx-runestone-container"><div class="runestone cardsort_section"><ul data-component="dragndrop" data-question_label="" style="visibility: hidden;" id="rs-vocab-loops">
 <span data-subcomponent="question">
@@ -1004,8 +1247,18 @@ myTests().main()
 </div></span><span data-subcomponent="feedback">
 <div class="para" id="vocab-loops-2-1">Find the words in the lesson above and try again.</div></span><li data-subcomponent="draggable" id="rs-vocab-loops_drag1" data-category="1">iteration</li>
 <li data-subcomponent="dropzone" for="rs-vocab-loops_drag1" data-category="1">repetition of a sequence of instructions</li>
+<li data-subcomponent="draggable" id="rs-vocab-loops_drag2" data-category="2">while loop</li>
+<li data-subcomponent="dropzone" for="rs-vocab-loops_drag2" data-category="2">a type of loop that continues as long as a condition is true</li>
+<li data-subcomponent="draggable" id="rs-vocab-loops_drag3" data-category="3">for loop</li>
+<li data-subcomponent="dropzone" for="rs-vocab-loops_drag3" data-category="3">a type of loop that repeats a set of statements a specific number of times</li>
+<li data-subcomponent="draggable" id="rs-vocab-loops_drag4" data-category="4">loop variable</li>
+<li data-subcomponent="dropzone" for="rs-vocab-loops_drag4" data-category="4">a variable that is used to control the number of iterations in a loop</li>
+<li data-subcomponent="draggable" id="rs-vocab-loops_drag5" data-category="5">infinite loop</li>
+<li data-subcomponent="dropzone" for="rs-vocab-loops_drag5" data-category="5">a loop that never ends</li>
+<li data-subcomponent="draggable" id="rs-vocab-loops_drag6" data-category="6">tracing</li>
+<li data-subcomponent="dropzone" for="rs-vocab-loops_drag6" data-category="6">the process of following the line by line keeping track of the variables and output.</li>
 </ul></div></div>
-<div class="autopermalink" aria-hidden="true" data-description="Activity 2.4.16"><a tabindex="-1" href="#vocab-loops" title="Copy heading and permalink for Activity 2.4.16" aria-label="Copy heading and permalink for Activity 2.4.16">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Activity 2.4.21"><a tabindex="-1" href="#vocab-loops" title="Copy heading and permalink for Activity 2.4.21" aria-label="Copy heading and permalink for Activity 2.4.21">🔗</a></div>
 </article><div class="autopermalink" aria-hidden="true" data-description="Subsection 2.4.11: Vocabulary Review"><a tabindex="-1" href="#vocab-2-4" title="Copy heading and permalink for Subsection 2.4.11: Vocabulary Review" aria-label="Copy heading and permalink for Subsection 2.4.11: Vocabulary Review">🔗</a></div>
 </section><div class="autopermalink" aria-hidden="true" data-description="Section 2.4: Iteration (Loops)"><a tabindex="-1" href="#topic-2-4-iteration" title="Copy heading and permalink for Section 2.4: Iteration (Loops)" aria-label="Copy heading and permalink for Section 2.4: Iteration (Loops)">🔗</a></div>
 </section>
