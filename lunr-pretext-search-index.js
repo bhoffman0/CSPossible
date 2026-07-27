@@ -4993,160 +4993,286 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "2.6",
   "title": "Errors",
-  "body": "  Errors       Learning Objectives   2.6.A  Correct errors in programs.    2.6.B  Develop code for test cases that can be used to check the correctness of an algorithm.     Correcting Errors   2.6.A.1  Errors are a normal part of programming. As programmers develop code, they repeatedly encounter errors, identify their cause, and revise the program to correct them.    2.6.A.2  Programmers often discover errors through user testing or feedback, such as when users receive confusing messages, see inconsistent results, or cannot complete a task. Programmers use observations of what the user did and what the app displayed to clarify what the behavior should be for the user. To fix the error, they try to reproduce it by following the same user actions and inputs, which helps confirm the cause and verify that the correction solves the real user problem.    2.6.A.3  Knowing common types of errors helps programmers diagnose problems more quickly and choose effective strategies to fix them when they occur.    2.6.A.4  A logic error occurs when the program runs but produces incorrect or unexpected behavior because the algorithm or reasoning is incorrect.    2.6.A.5  A syntax error occurs when the code breaks the rules of the programming language, preventing the program from running as written.    2.6.A.6  A runtime error occurs while a program is executing when it encounters a situation it cannot handle, such as dividing by zero. Runtime errors may cause a program to stop running unless the error is handled. Programming languages define the specific runtime errors they produce.    2.6.A.7  Programmers use error messages to identify and correct problems because they describe what went wrong and often point to where it occurred. They may include the type of error, such as syntax or runtime, the line or location in the code, and details about the operation or value that caused the problem. Programmers use error messages to decide what to check first, make a targeted change, and then rerun the program to confirm the error is resolved.    2.6.A.8  Programmers trace a program's execution to determine how variable values change and which statements execute. They may trace manually or use debugging tools that step through code and display current variable values. Tracing helps identify where a program's behavior differs from what was expected and is especially useful for finding logic errors. It can also be used to determine what conditions led to a runtime error.    2.6.A.9  Programmers can add output statements to temporarily display intermediate values or messages while a program runs, such as printing variable values at key points. This helps confirm which parts of the code are executing and whether variables and conditions have the expected values. By comparing the observed output to the expected output, programmers can narrow down where the program's behavior first begins to differ from what was expected and identify the source of an error.    2.6.A.10  AI tools can support programmers in interpreting error messages, explaining what a piece of code is doing, and suggesting possible causes and fixes for unexpected behavior. Programmers can describe the expected vs. actual output and share relevant code so the tool can point out likely logic mistakes or recommend ways of making the code easier to trace. AI suggestions should be verified by running the program, checking results against requirements, and using other debugging methods, since AI-generated explanations or fixes may be incomplete or incorrect.     Testing and Test Cases   2.6.B.1  In the development process, testing uses defined inputs to check whether an algorithm or program produces the expected outcomes. Programmers compare actual results to expected results and use what they learn to revise the algorithm or program. A test case consists of a specific input and the expected output or behavior that should result from that input. AI tools can help suggest test cases and predict expected results, but programmers are responsible for validating expected outcomes and using test results to confirm correctness.    2.6.B.2  Programmers often derive test cases from user stories and user testing by translating real user tasks into inputs and expected outcomes, including what the user should see at each step. This helps ensure the algorithm is correct in ways that matter to users.    2.6.B.3  An effective set of test cases includes inputs that produce different expected outputs or behaviors, including typical, boundary, and invalid cases. Boundary test cases use values at or near important limits, such as the minimum and maximum allowed inputs or decision thresholds in conditional expressions. Invalid test cases may use values just beyond the allowed range to check how the program handles likely user mistakes.    2.6.B.4  Some algorithms appear correct for common inputs but fail for other inputs, so programmers test multiple cases that cover different paths through the algorithm, such as different branches of a conditional or different numbers of loop repetitions. AI tools can help identify distinct execution paths and suggest test cases for each, but programmers should confirm that the suggested tests actually reach those paths.    2.6.B.5  Testing reflects real users: people mistype, submit blanks, use unexpected values, click repeatedly, or do steps out of order. Including these inputs as test cases helps ensure the app or program responds clearly and consistently, including giving useful feedback when input is invalid.    "
+  "body": "  Errors   Debugging is a normal part of coding. It can be frustrating at times, but you will get better at it with practice! Watch the following video to see that all coders get bugs.     Correcting Errors   2.6.A.1  Errors are a normal part of programming. As programmers develop code, they repeatedly encounter errors, identify their cause, and revise the program to correct them.   One of the first documented computer bugs was discovered by an early computer science pioneer Grace Hopper , and it was a moth that flew into a panel of a large computer in 1947! Grace Hopper debugged the computer and pasted the actual bug in her logbook.   Grace Hopper’s log showing a real bug, 1947.     2.6.A.2  Programmers often discover errors through user testing or feedback, such as when users receive confusing messages, see inconsistent results, or cannot complete a task. Programmers use observations of what the user did and what the app displayed to clarify what the behavior should be for the user. To fix the error, they try to reproduce it by following the same user actions and inputs, which helps confirm the cause and verify that the correction solves the real user problem.   Everyone who codes encounters bugs or errors in their programs. Sometimes the user of your program will report the problem and the programmer will have to figure out what went wrong.   2.6.A.3  Knowing common types of errors helps programmers diagnose problems more quickly and choose effective strategies to fix them when they occur.   syntax error   2.6.A.5  A syntax error occurs when the code breaks the rules of the programming language, preventing the program from running as written.   When you are coding, the most common type of error is a syntax error , which means that you didn't write the Python code correctly. For example, if you forget to close a parenthesis or use the wrong indentation, you will get a syntax error reported by the Python interpreter.  The Python interpreter tries to run your code, but if your code has syntax errors , you will see error messages displayed below the code. The error messages will tell the line number of the error and the type of error. The error messages are not always easy to understand and sometimes the actual error is before the line reported, but that is where the interpreter crashed on your code. Try to debug the code below. Read the error messages underneath to help you. Here are some common syntax errors to look for:   Check for missing or extra parentheses, brackets, or quotation marks.  Check for missing colons at the end of a line that starts a new block of code.  Check for incorrect indentation.  Check for misspelled keywords or variable names.    2.6.A.7  Programmers use error messages to identify and correct problems because they describe what went wrong and often point to where it occurred. They may include the type of error, such as syntax or runtime, the line or location in the code, and details about the operation or value that caused the problem. Programmers use error messages to decide what to check first, make a targeted change, and then rerun the program to confirm the error is resolved.     Debug the code below. Read the error messages underneath to help you.    Print(\"Hello World  from unittest.gui import TestCaseGui class myTests(TestCaseGui): def test1(self): self.assertIn(\"Hello world\",self.getOutput(), \"Check output\") myTests().main()    logic error   2.6.A.4  A logic error occurs when the program runs but produces incorrect or unexpected behavior because the algorithm or reasoning is incorrect.   Some errors cannot be detected by the interpreter. These are called logic errors or run-time errors . Logic errors occur when the program runs, but the output is not what you expected. For example, a programmer might have made a math mistake so the wrong value is calculated. Logic errors can be detected by testing the program with specific data to see if it produces the expected outcome.    The following code has a logic error. It is supposed to calculate the average of three scores. Try running it and you will see that it does not give the correct answer. Fix the math operator in the code to correct the logic error and run to test.    score1 = 100 score2 = 95 score3 = 90 average = (score1 + score2 + score3) * 3 print(\"The average score is\", average)  from unittest.gui import TestCaseGui class myTests(TestCaseGui): def test1(self): self.assertIn(\"95\",self.getOutput(), \"The average should be 95\") self.assertIn(\"\/\",self.getEditorText(), \"Use \/ instead of * to calculate the average\") myTests().main()    runtime error   2.6.A.6  A runtime error occurs while a program is executing when it encounters a situation it cannot handle, such as dividing by zero. Runtime errors may cause a program to stop running unless the error is handled. Programming languages define the specific runtime errors they produce.    Run-time errors occur when the program is running by something unexpected, such as dividing by zero or trying to read from a file that doesn’t exist.    Run the following code to see the run-time error of dividing by zero (which is not allowed). Fix the code to correct the run-time error and run to test.    score1 = 100 score2 = 95 score3 = 90 average = (score1 + score2 + score3) \/ 0 print(\"The average score is\", average)  from unittest.gui import TestCaseGui class myTests(TestCaseGui): def test1(self): self.assertIn(\"95\",self.getOutput(), \"The average should be 95\") self.assertIn(\"3\",self.getEditorText(), \"Divide by 3 instead of 0 to calculate the average\") myTests().main()     2.6.A.8  Programmers trace a program's execution to determine how variable values change and which statements execute. They may trace manually or use debugging tools that step through code and display current variable values. Tracing helps identify where a program's behavior differs from what was expected and is especially useful for finding logic errors. It can also be used to determine what conditions led to a runtime error.   Tracing is a great way to debug code, especially with logic or runtime errors. To trace code, pretend you are the computer and go through each line of code step by step, keeping track of the values of variables as you go. The Code Lens button in the active code exercises can help you to debug your code. It is based on the Python Tutor website. Try using the Code Lens button or the Python Tutor tool to trace the code in the debugging exercises above.   2.6.A.9  Programmers can add output statements to temporarily display intermediate values or messages while a program runs, such as printing variable values at key points. This helps confirm which parts of the code are executing and whether variables and conditions have the expected values. By comparing the observed output to the expected output, programmers can narrow down where the program's behavior first begins to differ from what was expected and identify the source of an error.   Another way to keep track of what is happening in your code is to add print statements to display the values of variables at key points in the program. Try it below.    The following code has a logic error. The loop is supposed to total the numbers 0 through 5, but it only adds 0 through 4. Add a print statement inside the loop to display the value of the variable number at each iteration. Then run the code to see what is happening and fix the logic error.    total = 0 for number in range(5): # Add print number to help you to debug the code total += number print(\"Total:\", total)  from unittest.gui import TestCaseGui class myTests(TestCaseGui): def test1(self): self.assertIn(\"15\",self.getOutput(), \"The total should be 15\") self.assertIn(\"range(6)\",self.getEditorText(), \"Change the range to 6 to include 5 in the total\") self.assertIn(\"print(number)\",self.getEditorText(), \"Add print(number) in the loop\") myTests().main()     2.6.A.10  AI tools can support programmers in interpreting error messages, explaining what a piece of code is doing, and suggesting possible causes and fixes for unexpected behavior. Programmers can describe the expected vs. actual output and share relevant code so the tool can point out likely logic mistakes or recommend ways of making the code easier to trace. AI suggestions should be verified by running the program, checking results against requirements, and using other debugging methods, since AI-generated explanations or fixes may be incomplete or incorrect.   If you get stuck trying to find the bugs, sometimes another pair of eyes really helps. Ask a friend if you get stuck or try explaining your code line by line to someone or even a rubber duck. Rubber duck debugging is a lot of fun! This site also has a virtual rubber duck AI tool that can help you. You can also use AI tools to help you debug your code, but remember that the AI tool may not always be correct, so you should always check the suggestions and test your code.     Testing and Test Cases  test cases   2.6.B.1  In the development process, testing uses defined inputs to check whether an algorithm or program produces the expected outcomes. Programmers compare actual results to expected results and use what they learn to revise the algorithm or program. A test case consists of a specific input and the expected output or behavior that should result from that input. AI tools can help suggest test cases and predict expected results, but programmers are responsible for validating expected outcomes and using test results to confirm correctness.    2.6.B.2  Programmers often derive test cases from user stories and user testing by translating real user tasks into inputs and expected outcomes, including what the user should see at each step. This helps ensure the algorithm is correct in ways that matter to users.   test plan  When testing code, programmers create test cases with specific inputs and expected outputs. They run the code with the test case inputs and compare the actual output to the expected output. If the actual output does not match the expected output, then there is a bug in the code that needs to be fixed. A test plan with a table like the one below can be used to record the testing results for a program.  Test Cases    Test Case  Input  Expected Output  Actual Output       2.6.B.3  An effective set of test cases includes inputs that produce different expected outputs or behaviors, including typical, boundary, and invalid cases. Boundary test cases use values at or near important limits, such as the minimum and maximum allowed inputs or decision thresholds in conditional expressions. Invalid test cases may use values just beyond the allowed range to check how the program handles likely user mistakes.   In code with selection statements, it is important to test each branch of the conditional to ensure that the program behaves correctly for all possible inputs. With loops, it is important to use boundary test cases to test the loop's behavior at the limits of its range. Invalid test cases with inputs just beyond the limits of the conditions for selection or loops should also be tested.   2.6.B.4  Some algorithms appear correct for common inputs but fail for other inputs, so programmers test multiple cases that cover different paths through the algorithm, such as different branches of a conditional or different numbers of loop repetitions. AI tools can help identify distinct execution paths and suggest test cases for each, but programmers should confirm that the suggested tests actually reach those paths.    2.6.B.5  Testing reflects real users: people mistype, submit blanks, use unexpected values, click repeatedly, or do steps out of order. Including these inputs as test cases helps ensure the app or program responds clearly and consistently, including giving useful feedback when input is invalid.     POGIL Test Plans  POGIL group activity test plans  projects test plans  Work in POGIL groups to test the following programs with test plans ( What is POGIL , POGIL Role Cards ).  Try the code below which has some logic errors. Use the test plan in the table in the activity below to test it. After you have filled in the actual output column, you can fix the code by changing \"if\" to \"elif\" after the first \"if\" to chain all the conditions together. This would be a good exercise to do in pairs or POGIL groups.   score = int(input(\"Enter a score: \")) if score >= 90: grade = \"A\" if score >= 80: grade = \"B\" if score >= 70: grade = \"C\" if score >= 60: grade = \"D\" else: grade = \"F\" print(grade)    Selection Test Cases   Run the code above following the test plan below. Fill in the actual output column of the table. This code has some logic errors.    Test Case  Input  Expected Output  Actual Output    Grade A  90  A      Grade B  80  B      Grade C  70  C      Grade D  60  D      Grade F  0  F      Invalid  2000  Error     Invalid  -200  Error            Correct!    Run the original code with the input to see the output.       Correct!    Run the original code with the input to see the output.       Correct!    Run the original code with the input to see the output.       Correct!    Run the original code with the input to see the output.       Correct!    Run the original code with the input to see the output.       Correct!    Run the original code with the input to see the output.       Correct!    Run the original code with the input to see the output.      Run the following code with a loop using the test cases in the activity below:   value = int(input(\"Enter a number (-1 to stop): \")) while value != -1: if value == 7: print(\"lucky number!\") else: print(\"You entered\", value) # 3. Update the loop variable with new input! value = int(input(\"Enter a another number (-1 to stop): \")) print(\"Done!\")    Loop Test Plan  Run the code above following the test plan below. Fill in the actual output column of the table.   Test Cases    Test Case  Input  Expected Output  Actual Output    0 repetitions  -1  Done!      1 repetition 7  7 -1  lucky number!      1 repetition not 7  5 -1  You entered 5            Correct!    Run the original code with the input to see the output.       Correct!    Run the original code with the input to see the output.       Correct!    Run the original code with the input to see the output.        Learning Objectives   2.6.A  Correct errors in programs.    2.6.B  Develop code for test cases that can be used to check the correctness of an algorithm.     Vocabulary Review    Review the vocabulary in this lesson. Drag the vocabulary term from the left and drop it on its correct definition on the right. Click the \"Check Me\" button to see if you are correct.    Find the words in the lesson above and try again.     syntax error  an error caught by the interpreter because the rules of the programming language were not followed    logic error  an error in the code that causes it to produce incorrect results although it runs    runtime error  an error that occurs while the program is running    test cases  inputs used to check the correctness of an algorithm      "
 },
 {
-  "id": "topic-2-6-errors-4-2",
+  "id": "correcting-errors-2",
   "level": "2",
-  "url": "topic-2-6-errors.html#topic-2-6-errors-4-2",
-  "type": "Learning Objective",
-  "number": "2.6.1",
-  "title": "2.6.A.",
-  "body": " 2.6.A  Correct errors in programs.  "
-},
-{
-  "id": "topic-2-6-errors-4-3",
-  "level": "2",
-  "url": "topic-2-6-errors.html#topic-2-6-errors-4-3",
-  "type": "Learning Objective",
-  "number": "2.6.2",
-  "title": "2.6.B.",
-  "body": " 2.6.B  Develop code for test cases that can be used to check the correctness of an algorithm.  "
-},
-{
-  "id": "topic-2-6-errors-5-2",
-  "level": "2",
-  "url": "topic-2-6-errors.html#topic-2-6-errors-5-2",
+  "url": "topic-2-6-errors.html#correcting-errors-2",
   "type": "Essential Knowledge",
-  "number": "2.6.3",
+  "number": "2.6.1",
   "title": "2.6.A.1.",
   "body": " 2.6.A.1  Errors are a normal part of programming. As programmers develop code, they repeatedly encounter errors, identify their cause, and revise the program to correct them.  "
 },
 {
-  "id": "topic-2-6-errors-5-3",
+  "id": "correcting-errors-4",
   "level": "2",
-  "url": "topic-2-6-errors.html#topic-2-6-errors-5-3",
+  "url": "topic-2-6-errors.html#correcting-errors-4",
+  "type": "Figure",
+  "number": "2.6.2",
+  "title": "",
+  "body": " Grace Hopper’s log showing a real bug, 1947.   "
+},
+{
+  "id": "correcting-errors-5",
+  "level": "2",
+  "url": "topic-2-6-errors.html#correcting-errors-5",
   "type": "Essential Knowledge",
-  "number": "2.6.4",
+  "number": "2.6.3",
   "title": "2.6.A.2.",
   "body": " 2.6.A.2  Programmers often discover errors through user testing or feedback, such as when users receive confusing messages, see inconsistent results, or cannot complete a task. Programmers use observations of what the user did and what the app displayed to clarify what the behavior should be for the user. To fix the error, they try to reproduce it by following the same user actions and inputs, which helps confirm the cause and verify that the correction solves the real user problem.  "
 },
 {
-  "id": "topic-2-6-errors-5-4",
+  "id": "correcting-errors-7",
   "level": "2",
-  "url": "topic-2-6-errors.html#topic-2-6-errors-5-4",
+  "url": "topic-2-6-errors.html#correcting-errors-7",
   "type": "Essential Knowledge",
-  "number": "2.6.5",
+  "number": "2.6.4",
   "title": "2.6.A.3.",
   "body": " 2.6.A.3  Knowing common types of errors helps programmers diagnose problems more quickly and choose effective strategies to fix them when they occur.  "
 },
 {
-  "id": "topic-2-6-errors-5-5",
+  "id": "correcting-errors-9",
   "level": "2",
-  "url": "topic-2-6-errors.html#topic-2-6-errors-5-5",
+  "url": "topic-2-6-errors.html#correcting-errors-9",
   "type": "Essential Knowledge",
-  "number": "2.6.6",
-  "title": "2.6.A.4.",
-  "body": " 2.6.A.4  A logic error occurs when the program runs but produces incorrect or unexpected behavior because the algorithm or reasoning is incorrect.  "
-},
-{
-  "id": "topic-2-6-errors-5-6",
-  "level": "2",
-  "url": "topic-2-6-errors.html#topic-2-6-errors-5-6",
-  "type": "Essential Knowledge",
-  "number": "2.6.7",
+  "number": "2.6.5",
   "title": "2.6.A.5.",
   "body": " 2.6.A.5  A syntax error occurs when the code breaks the rules of the programming language, preventing the program from running as written.  "
 },
 {
-  "id": "topic-2-6-errors-5-7",
+  "id": "correcting-errors-10",
   "level": "2",
-  "url": "topic-2-6-errors.html#topic-2-6-errors-5-7",
+  "url": "topic-2-6-errors.html#correcting-errors-10",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "syntax error "
+},
+{
+  "id": "correcting-errors-11",
+  "level": "2",
+  "url": "topic-2-6-errors.html#correcting-errors-11",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "syntax errors "
+},
+{
+  "id": "correcting-errors-13",
+  "level": "2",
+  "url": "topic-2-6-errors.html#correcting-errors-13",
+  "type": "Essential Knowledge",
+  "number": "2.6.6",
+  "title": "2.6.A.7.",
+  "body": " 2.6.A.7  Programmers use error messages to identify and correct problems because they describe what went wrong and often point to where it occurred. They may include the type of error, such as syntax or runtime, the line or location in the code, and details about the operation or value that caused the problem. Programmers use error messages to decide what to check first, make a targeted change, and then rerun the program to confirm the error is resolved.  "
+},
+{
+  "id": "debug-syntax-error",
+  "level": "2",
+  "url": "topic-2-6-errors.html#debug-syntax-error",
+  "type": "Activity",
+  "number": "2.6.1",
+  "title": "",
+  "body": "  Debug the code below. Read the error messages underneath to help you.    Print(\"Hello World  from unittest.gui import TestCaseGui class myTests(TestCaseGui): def test1(self): self.assertIn(\"Hello world\",self.getOutput(), \"Check output\") myTests().main()   "
+},
+{
+  "id": "correcting-errors-16",
+  "level": "2",
+  "url": "topic-2-6-errors.html#correcting-errors-16",
+  "type": "Essential Knowledge",
+  "number": "2.6.7",
+  "title": "2.6.A.4.",
+  "body": " 2.6.A.4  A logic error occurs when the program runs but produces incorrect or unexpected behavior because the algorithm or reasoning is incorrect.  "
+},
+{
+  "id": "correcting-errors-17",
+  "level": "2",
+  "url": "topic-2-6-errors.html#correcting-errors-17",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "logic errors run-time errors "
+},
+{
+  "id": "debug-logic-error",
+  "level": "2",
+  "url": "topic-2-6-errors.html#debug-logic-error",
+  "type": "Activity",
+  "number": "2.6.2",
+  "title": "",
+  "body": "  The following code has a logic error. It is supposed to calculate the average of three scores. Try running it and you will see that it does not give the correct answer. Fix the math operator in the code to correct the logic error and run to test.    score1 = 100 score2 = 95 score3 = 90 average = (score1 + score2 + score3) * 3 print(\"The average score is\", average)  from unittest.gui import TestCaseGui class myTests(TestCaseGui): def test1(self): self.assertIn(\"95\",self.getOutput(), \"The average should be 95\") self.assertIn(\"\/\",self.getEditorText(), \"Use \/ instead of * to calculate the average\") myTests().main()   "
+},
+{
+  "id": "correcting-errors-20",
+  "level": "2",
+  "url": "topic-2-6-errors.html#correcting-errors-20",
   "type": "Essential Knowledge",
   "number": "2.6.8",
   "title": "2.6.A.6.",
   "body": " 2.6.A.6  A runtime error occurs while a program is executing when it encounters a situation it cannot handle, such as dividing by zero. Runtime errors may cause a program to stop running unless the error is handled. Programming languages define the specific runtime errors they produce.  "
 },
 {
-  "id": "topic-2-6-errors-5-8",
+  "id": "correcting-errors-21",
   "level": "2",
-  "url": "topic-2-6-errors.html#topic-2-6-errors-5-8",
-  "type": "Essential Knowledge",
-  "number": "2.6.9",
-  "title": "2.6.A.7.",
-  "body": " 2.6.A.7  Programmers use error messages to identify and correct problems because they describe what went wrong and often point to where it occurred. They may include the type of error, such as syntax or runtime, the line or location in the code, and details about the operation or value that caused the problem. Programmers use error messages to decide what to check first, make a targeted change, and then rerun the program to confirm the error is resolved.  "
+  "url": "topic-2-6-errors.html#correcting-errors-21",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "Run-time errors "
 },
 {
-  "id": "topic-2-6-errors-5-9",
+  "id": "debug-runtime-error",
   "level": "2",
-  "url": "topic-2-6-errors.html#topic-2-6-errors-5-9",
+  "url": "topic-2-6-errors.html#debug-runtime-error",
+  "type": "Activity",
+  "number": "2.6.3",
+  "title": "",
+  "body": "  Run the following code to see the run-time error of dividing by zero (which is not allowed). Fix the code to correct the run-time error and run to test.    score1 = 100 score2 = 95 score3 = 90 average = (score1 + score2 + score3) \/ 0 print(\"The average score is\", average)  from unittest.gui import TestCaseGui class myTests(TestCaseGui): def test1(self): self.assertIn(\"95\",self.getOutput(), \"The average should be 95\") self.assertIn(\"3\",self.getEditorText(), \"Divide by 3 instead of 0 to calculate the average\") myTests().main()   "
+},
+{
+  "id": "correcting-errors-23",
+  "level": "2",
+  "url": "topic-2-6-errors.html#correcting-errors-23",
   "type": "Essential Knowledge",
-  "number": "2.6.10",
+  "number": "2.6.9",
   "title": "2.6.A.8.",
   "body": " 2.6.A.8  Programmers trace a program's execution to determine how variable values change and which statements execute. They may trace manually or use debugging tools that step through code and display current variable values. Tracing helps identify where a program's behavior differs from what was expected and is especially useful for finding logic errors. It can also be used to determine what conditions led to a runtime error.  "
 },
 {
-  "id": "topic-2-6-errors-5-10",
+  "id": "correcting-errors-25",
   "level": "2",
-  "url": "topic-2-6-errors.html#topic-2-6-errors-5-10",
+  "url": "topic-2-6-errors.html#correcting-errors-25",
   "type": "Essential Knowledge",
-  "number": "2.6.11",
+  "number": "2.6.10",
   "title": "2.6.A.9.",
   "body": " 2.6.A.9  Programmers can add output statements to temporarily display intermediate values or messages while a program runs, such as printing variable values at key points. This helps confirm which parts of the code are executing and whether variables and conditions have the expected values. By comparing the observed output to the expected output, programmers can narrow down where the program's behavior first begins to differ from what was expected and identify the source of an error.  "
 },
 {
-  "id": "topic-2-6-errors-5-11",
+  "id": "debug-with-print",
   "level": "2",
-  "url": "topic-2-6-errors.html#topic-2-6-errors-5-11",
+  "url": "topic-2-6-errors.html#debug-with-print",
+  "type": "Activity",
+  "number": "2.6.4",
+  "title": "",
+  "body": "  The following code has a logic error. The loop is supposed to total the numbers 0 through 5, but it only adds 0 through 4. Add a print statement inside the loop to display the value of the variable number at each iteration. Then run the code to see what is happening and fix the logic error.    total = 0 for number in range(5): # Add print number to help you to debug the code total += number print(\"Total:\", total)  from unittest.gui import TestCaseGui class myTests(TestCaseGui): def test1(self): self.assertIn(\"15\",self.getOutput(), \"The total should be 15\") self.assertIn(\"range(6)\",self.getEditorText(), \"Change the range to 6 to include 5 in the total\") self.assertIn(\"print(number)\",self.getEditorText(), \"Add print(number) in the loop\") myTests().main()   "
+},
+{
+  "id": "correcting-errors-28",
+  "level": "2",
+  "url": "topic-2-6-errors.html#correcting-errors-28",
   "type": "Essential Knowledge",
-  "number": "2.6.12",
+  "number": "2.6.11",
   "title": "2.6.A.10.",
   "body": " 2.6.A.10  AI tools can support programmers in interpreting error messages, explaining what a piece of code is doing, and suggesting possible causes and fixes for unexpected behavior. Programmers can describe the expected vs. actual output and share relevant code so the tool can point out likely logic mistakes or recommend ways of making the code easier to trace. AI suggestions should be verified by running the program, checking results against requirements, and using other debugging methods, since AI-generated explanations or fixes may be incomplete or incorrect.  "
 },
 {
-  "id": "topic-2-6-errors-6-2",
+  "id": "topic-2-6-errors-5-3",
   "level": "2",
-  "url": "topic-2-6-errors.html#topic-2-6-errors-6-2",
+  "url": "topic-2-6-errors.html#topic-2-6-errors-5-3",
   "type": "Essential Knowledge",
-  "number": "2.6.13",
+  "number": "2.6.12",
   "title": "2.6.B.1.",
   "body": " 2.6.B.1  In the development process, testing uses defined inputs to check whether an algorithm or program produces the expected outcomes. Programmers compare actual results to expected results and use what they learn to revise the algorithm or program. A test case consists of a specific input and the expected output or behavior that should result from that input. AI tools can help suggest test cases and predict expected results, but programmers are responsible for validating expected outcomes and using test results to confirm correctness.  "
 },
 {
-  "id": "topic-2-6-errors-6-3",
+  "id": "topic-2-6-errors-5-4",
   "level": "2",
-  "url": "topic-2-6-errors.html#topic-2-6-errors-6-3",
+  "url": "topic-2-6-errors.html#topic-2-6-errors-5-4",
   "type": "Essential Knowledge",
-  "number": "2.6.14",
+  "number": "2.6.13",
   "title": "2.6.B.2.",
   "body": " 2.6.B.2  Programmers often derive test cases from user stories and user testing by translating real user tasks into inputs and expected outcomes, including what the user should see at each step. This helps ensure the algorithm is correct in ways that matter to users.  "
 },
 {
-  "id": "topic-2-6-errors-6-4",
+  "id": "test-cases",
   "level": "2",
-  "url": "topic-2-6-errors.html#topic-2-6-errors-6-4",
+  "url": "topic-2-6-errors.html#test-cases",
+  "type": "Table",
+  "number": "2.6.14",
+  "title": "Test Cases",
+  "body": " Test Cases    Test Case  Input  Expected Output  Actual Output    "
+},
+{
+  "id": "topic-2-6-errors-5-7",
+  "level": "2",
+  "url": "topic-2-6-errors.html#topic-2-6-errors-5-7",
   "type": "Essential Knowledge",
   "number": "2.6.15",
   "title": "2.6.B.3.",
   "body": " 2.6.B.3  An effective set of test cases includes inputs that produce different expected outputs or behaviors, including typical, boundary, and invalid cases. Boundary test cases use values at or near important limits, such as the minimum and maximum allowed inputs or decision thresholds in conditional expressions. Invalid test cases may use values just beyond the allowed range to check how the program handles likely user mistakes.  "
 },
 {
-  "id": "topic-2-6-errors-6-5",
+  "id": "topic-2-6-errors-5-8",
   "level": "2",
-  "url": "topic-2-6-errors.html#topic-2-6-errors-6-5",
+  "url": "topic-2-6-errors.html#topic-2-6-errors-5-8",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "boundary test cases "
+},
+{
+  "id": "topic-2-6-errors-5-9",
+  "level": "2",
+  "url": "topic-2-6-errors.html#topic-2-6-errors-5-9",
   "type": "Essential Knowledge",
   "number": "2.6.16",
   "title": "2.6.B.4.",
   "body": " 2.6.B.4  Some algorithms appear correct for common inputs but fail for other inputs, so programmers test multiple cases that cover different paths through the algorithm, such as different branches of a conditional or different numbers of loop repetitions. AI tools can help identify distinct execution paths and suggest test cases for each, but programmers should confirm that the suggested tests actually reach those paths.  "
 },
 {
-  "id": "topic-2-6-errors-6-6",
+  "id": "topic-2-6-errors-5-10",
   "level": "2",
-  "url": "topic-2-6-errors.html#topic-2-6-errors-6-6",
+  "url": "topic-2-6-errors.html#topic-2-6-errors-5-10",
   "type": "Essential Knowledge",
   "number": "2.6.17",
   "title": "2.6.B.5.",
   "body": " 2.6.B.5  Testing reflects real users: people mistype, submit blanks, use unexpected values, click repeatedly, or do steps out of order. Including these inputs as test cases helps ensure the app or program responds clearly and consistently, including giving useful feedback when input is invalid.  "
+},
+{
+  "id": "selection-test-cases",
+  "level": "2",
+  "url": "topic-2-6-errors.html#selection-test-cases",
+  "type": "Activity",
+  "number": "2.6.5",
+  "title": "Selection Test Cases.",
+  "body": " Selection Test Cases   Run the code above following the test plan below. Fill in the actual output column of the table. This code has some logic errors.    Test Case  Input  Expected Output  Actual Output    Grade A  90  A      Grade B  80  B      Grade C  70  C      Grade D  60  D      Grade F  0  F      Invalid  2000  Error     Invalid  -200  Error            Correct!    Run the original code with the input to see the output.       Correct!    Run the original code with the input to see the output.       Correct!    Run the original code with the input to see the output.       Correct!    Run the original code with the input to see the output.       Correct!    Run the original code with the input to see the output.       Correct!    Run the original code with the input to see the output.       Correct!    Run the original code with the input to see the output.     "
+},
+{
+  "id": "loop-test-cases",
+  "level": "2",
+  "url": "topic-2-6-errors.html#loop-test-cases",
+  "type": "Activity",
+  "number": "2.6.6",
+  "title": "Loop Test Plan.",
+  "body": " Loop Test Plan  Run the code above following the test plan below. Fill in the actual output column of the table.   Test Cases    Test Case  Input  Expected Output  Actual Output    0 repetitions  -1  Done!      1 repetition 7  7 -1  lucky number!      1 repetition not 7  5 -1  You entered 5            Correct!    Run the original code with the input to see the output.       Correct!    Run the original code with the input to see the output.       Correct!    Run the original code with the input to see the output.     "
+},
+{
+  "id": "LOs-2-6-2",
+  "level": "2",
+  "url": "topic-2-6-errors.html#LOs-2-6-2",
+  "type": "Learning Objective",
+  "number": "2.6.20",
+  "title": "2.6.A.",
+  "body": " 2.6.A  Correct errors in programs.  "
+},
+{
+  "id": "LOs-2-6-3",
+  "level": "2",
+  "url": "topic-2-6-errors.html#LOs-2-6-3",
+  "type": "Learning Objective",
+  "number": "2.6.21",
+  "title": "2.6.B.",
+  "body": " 2.6.B  Develop code for test cases that can be used to check the correctness of an algorithm.  "
+},
+{
+  "id": "vocab-errors",
+  "level": "2",
+  "url": "topic-2-6-errors.html#vocab-errors",
+  "type": "Activity",
+  "number": "2.6.7",
+  "title": "",
+  "body": "  Review the vocabulary in this lesson. Drag the vocabulary term from the left and drop it on its correct definition on the right. Click the \"Check Me\" button to see if you are correct.    Find the words in the lesson above and try again.     syntax error  an error caught by the interpreter because the rules of the programming language were not followed    logic error  an error in the code that causes it to produce incorrect results although it runs    runtime error  an error that occurs while the program is running    test cases  inputs used to check the correctness of an algorithm    "
 },
 {
   "id": "unit2-summary",
