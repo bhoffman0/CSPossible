@@ -6139,22 +6139,1903 @@ var ptx_lunr_docs = [
   "body": " Project Reflection 3   Describe a selection statement that you used in your app. What was the condition and what happened when the condition was true or false? How did you test both branches of the selection statement to make sure it was working correctly?    "
 },
 {
-  "id": "unit3",
+  "id": "topic-3-1-lists",
   "level": "1",
-  "url": "unit3.html",
-  "type": "Unit",
-  "number": "3",
-  "title": "Developing with Abstraction using Lists and Procedures",
-  "body": " Developing with Abstraction using Lists and Procedures   This unit introduces students to lists and procedures.     AP Exam Weighting:    Instructional days: 14-17 days, Create Project: 7 days    Time Estimates: 45 minutes per lesson    AP Classroom Progress Checks: Unit 3    AP Classroom Unit 3 Labs: 3 Connect Tasks       "
+  "url": "topic-3-1-lists.html",
+  "type": "Section",
+  "number": "3.1",
+  "title": "Lists",
+  "body": "  Lists  lists   Quick Links:   In this topic, we use lists to store related values, manipulate list contents, traverse lists with iteration, and explain how data abstraction manages complexity.    Storing Values in Lists   3.1.A.1  A data collection is a way to store multiple related values together so a program can treat them as one unit, such as storing multiple names, scores, or messages. Different programming languages support different kinds of collections, such as lists, arrays, or dictionaries.    3.1.A.2  Data collections help programs support user-facing features that involve many items, such as a list of saved favorites, recent searches, or a playlist. Storing related values in one variable makes it easier to manage, update, and process the information as users interact with an app.    3.1.A.3  A value stored inside a data collection is an element. Programs can work with the entire collection of items as one unit or with individual elements.    3.1.A.4  In a list, elements are stored in an ordered sequence, meaning the position of each element matters (first, second, third, etc.). When the following code runs, a list called aList contains the elements v1, v2, v3 , and so on.  aList = [v1, v2, v3, ...]    3.1.A.5  Lists can start empty, which allows a program to collect information, such as items a user adds, results found during a search, or responses entered in a form. When the following code runs, an empty list is assigned to aList .  aList = [ ]    3.1.A.6  Lists can be built over time by adding new elements, often as the user enters information or the program collects it. When the following code runs, value is added to the end of aList and the length of aList is increased by 1.  aList.append(value)    3.1.A.7  An index is a number used to reference a specific element by position in a list or in a string. Many programming languages use zero-based indexing, meaning the first element is at index 0, the second at index 1, and so on.    3.1.A.8  Programs can access a specific list element using its index. This allows programs to read or use stored values in a list. When the following code runs, the element in aList at index j is accessed.  aList[j]    3.1.A.9  Lists support apps that respond to users by remembering and reusing information. For example, a music app can store a user's queued songs in a list. Each time the user taps \"Add to Queue,\" the song title is appended to the list, and the app uses the list to display the upcoming songs in order and play the next track.     Manipulating Lists   3.1.B.1  Programmers sometimes make a copy of a list so they can modify the copy, such as removing or reordering elements, while keeping the original list unchanged. Preserving the original list can make a program easier to understand, test, and debug because the program can still refer back to the original data if needed. When the following code runs, a copy of the list bList is assigned to the list aList .  aList = bList    3.1.B.2  Elements in a list can be changed to different values, which allows a program to update stored information without rebuilding the entire list. When the following code runs, the value of x is assigned to the element at index j in aList . The previous value at that index is overwritten, and the length of the list does not change.  aList[j] = x    3.1.B.3  The length of a list can change while a program runs as elements are added or removed. Knowing the length of a list helps programmers write code that works correctly as the list changes. When the following code runs, it evaluates to the number of items in aList .  length(aList)    3.1.B.4  Elements can be inserted at particular positions in a list, which allows a program to keep items in a meaningful order, such as priority or ranking, as new information is added. When the following code runs, any elements at indices greater than or equal to j are shifted so that their indices are increased by 1 and value is placed at index j . The length of the list is increased by 1.  aList.insert(j, value)    3.1.B.5  Elements at particular positions can be removed from a list, which allows a program to delete outdated, incorrect, or unwanted information while keeping the remaining elements usable. When the following code runs, the element at index j is removed and the elements after it shift one position so that their indices are decreased by 1. The length of the list is decreased by 1.  aList.remove(j)    3.1.B.6  To select a random element from a list, a program can generate a random index and use it to access an element. This allows for features like selecting a random song from a playlist, choosing a random prompt in a game, or assigning a random partner from a list of names. In programming languages that use zero-based indexing, if aList has length(aList) items, the valid indices are 0 through length(aList) - 1 . When the following code runs, the program generates one of the valid indices with equal likelihood and accesses the element at that index.  aList[random(0, length(aList) - 1)]    3.1.B.7  Apps often update lists in response to user actions. Adding or removing items supports user goals such as saving favorites, managing a to-do list, updating a roster, or keeping a recent-search history. Programmers choose list operations that match how users expect information to change as they interact with the app.    3.1.B.8  To determine what output a program produces after list operations, programmers trace statements in order and update the list after each step. This includes tracking how element positions change when items are inserted or removed and using the updated list to determine what values are accessed or displayed next.    3.1.B.9  List operations that use an index depend on the index being valid for the current list. When a program accesses, updates, inserts, or removes using an index, programmers must consider the current length of the list and how earlier operations may have shifted element positions. In many programming languages, using an index that is outside the allowed range produces an error and may cause the program to stop.     Traversing Lists with Iteration   3.1.C.1  Traversing a list is often used to accomplish a goal, such as counting elements that meet a condition, finding a value (like a maximum), computing a total or average, or building an output (such as a message that includes all elements that match a rule).    3.1.C.2  Traversals often update an accumulator variable, such as a count or total, each time an element is processed.    3.1.C.3  Iteration statements can be used to traverse a list, which allows a program to process each element in order without writing repeated code for every element. When the following code runs, the variable item is assigned the value of each element of aList sequentially, in order, from the first element to the last element. The code in block of statements is executed once for each element in aList .  for item in aList { <block of statements> }    3.1.C.4  A linear or sequential search checks elements in order until the desired value is found or the list ends. Programs often store the index where a match was found or store a Boolean value to indicate whether a match was found.    3.1.C.5  Traversing a list can be a complete traversal, where every element is accessed, or a partial traversal, where only some elements are examined. Some partial traversals stop early when a goal is reached, such as finding the first match in a search, which may require fewer steps than traversing the entire list.    3.1.C.6  Traversing a list supports user-facing features like calculating a total in a shopping cart, counting votes in a poll, or checking whether a username is already taken. Programmers choose complete vs. partial traversal based on whether a user needs to check every element or find a particular match in the list.    3.1.C.7  To determine the result of a traversal, programmers trace the loop and track how variables update each time an element is processed.     Data Abstraction with Lists   3.1.D.1  Data abstraction manages complexity by allowing programmers to use data based on its name and purpose without needing to focus on how the data is represented. This separation helps programmers reason about what the data represents and what operations can be done with it.    3.1.D.2  A list is a type of data abstraction because it allows many related values to be treated as a single variable. Instead of writing code for many individual variables, programmers can use the list's name to perform the same kinds of operations on its elements, such as accessing, updating, inserting, removing, or traversing.    3.1.D.3  Using data abstractions such as lists can make programs easier to develop, read, test, and maintain because the same algorithm can often work even when the amount of data changes. When elements are added or removed, the code structure often stays the same.    3.1.D.4  Data abstraction makes it easier to adapt a program as user needs change (for example, handling more saved favorites, more songs on a playlist, or more messages) without redesigning the entire program.    3.1.D.5  Data abstraction reduces complexity by reducing duplication in code. For example, using a single list and a loop can process any number of elements, instead of requiring many separate variables and repeated statements. This means fewer places to update code during development, which lowers the chance of errors.     Learning Objectives Review   3.1.A  Develop code that stores multiple related values in a single variable.    3.1.B  Develop code to manipulate a list, and determine the result produced.    3.1.C  Develop code using iteration statements to traverse a list, and determine the result produced.    3.1.D  Explain how the use of data abstraction manages complexity in program code.     Vocabulary Review   "
 },
 {
-  "id": "unit4",
+  "id": "storing-values-in-lists-2",
+  "level": "2",
+  "url": "topic-3-1-lists.html#storing-values-in-lists-2",
+  "type": "Essential Knowledge",
+  "number": "3.1.1",
+  "title": "3.1.A.1.",
+  "body": " 3.1.A.1  A data collection is a way to store multiple related values together so a program can treat them as one unit, such as storing multiple names, scores, or messages. Different programming languages support different kinds of collections, such as lists, arrays, or dictionaries.  "
+},
+{
+  "id": "storing-values-in-lists-3",
+  "level": "2",
+  "url": "topic-3-1-lists.html#storing-values-in-lists-3",
+  "type": "Essential Knowledge",
+  "number": "3.1.2",
+  "title": "3.1.A.2.",
+  "body": " 3.1.A.2  Data collections help programs support user-facing features that involve many items, such as a list of saved favorites, recent searches, or a playlist. Storing related values in one variable makes it easier to manage, update, and process the information as users interact with an app.  "
+},
+{
+  "id": "storing-values-in-lists-4",
+  "level": "2",
+  "url": "topic-3-1-lists.html#storing-values-in-lists-4",
+  "type": "Essential Knowledge",
+  "number": "3.1.3",
+  "title": "3.1.A.3.",
+  "body": " 3.1.A.3  A value stored inside a data collection is an element. Programs can work with the entire collection of items as one unit or with individual elements.  "
+},
+{
+  "id": "storing-values-in-lists-5",
+  "level": "2",
+  "url": "topic-3-1-lists.html#storing-values-in-lists-5",
+  "type": "Essential Knowledge",
+  "number": "3.1.4",
+  "title": "3.1.A.4.",
+  "body": " 3.1.A.4  In a list, elements are stored in an ordered sequence, meaning the position of each element matters (first, second, third, etc.). When the following code runs, a list called aList contains the elements v1, v2, v3 , and so on.  aList = [v1, v2, v3, ...]  "
+},
+{
+  "id": "storing-values-in-lists-6",
+  "level": "2",
+  "url": "topic-3-1-lists.html#storing-values-in-lists-6",
+  "type": "Essential Knowledge",
+  "number": "3.1.5",
+  "title": "3.1.A.5.",
+  "body": " 3.1.A.5  Lists can start empty, which allows a program to collect information, such as items a user adds, results found during a search, or responses entered in a form. When the following code runs, an empty list is assigned to aList .  aList = [ ]  "
+},
+{
+  "id": "storing-values-in-lists-7",
+  "level": "2",
+  "url": "topic-3-1-lists.html#storing-values-in-lists-7",
+  "type": "Essential Knowledge",
+  "number": "3.1.6",
+  "title": "3.1.A.6.",
+  "body": " 3.1.A.6  Lists can be built over time by adding new elements, often as the user enters information or the program collects it. When the following code runs, value is added to the end of aList and the length of aList is increased by 1.  aList.append(value)  "
+},
+{
+  "id": "storing-values-in-lists-8",
+  "level": "2",
+  "url": "topic-3-1-lists.html#storing-values-in-lists-8",
+  "type": "Essential Knowledge",
+  "number": "3.1.7",
+  "title": "3.1.A.7.",
+  "body": " 3.1.A.7  An index is a number used to reference a specific element by position in a list or in a string. Many programming languages use zero-based indexing, meaning the first element is at index 0, the second at index 1, and so on.  "
+},
+{
+  "id": "storing-values-in-lists-9",
+  "level": "2",
+  "url": "topic-3-1-lists.html#storing-values-in-lists-9",
+  "type": "Essential Knowledge",
+  "number": "3.1.8",
+  "title": "3.1.A.8.",
+  "body": " 3.1.A.8  Programs can access a specific list element using its index. This allows programs to read or use stored values in a list. When the following code runs, the element in aList at index j is accessed.  aList[j]  "
+},
+{
+  "id": "storing-values-in-lists-10",
+  "level": "2",
+  "url": "topic-3-1-lists.html#storing-values-in-lists-10",
+  "type": "Essential Knowledge",
+  "number": "3.1.9",
+  "title": "3.1.A.9.",
+  "body": " 3.1.A.9  Lists support apps that respond to users by remembering and reusing information. For example, a music app can store a user's queued songs in a list. Each time the user taps \"Add to Queue,\" the song title is appended to the list, and the app uses the list to display the upcoming songs in order and play the next track.  "
+},
+{
+  "id": "manipulating-lists-2",
+  "level": "2",
+  "url": "topic-3-1-lists.html#manipulating-lists-2",
+  "type": "Essential Knowledge",
+  "number": "3.1.10",
+  "title": "3.1.B.1.",
+  "body": " 3.1.B.1  Programmers sometimes make a copy of a list so they can modify the copy, such as removing or reordering elements, while keeping the original list unchanged. Preserving the original list can make a program easier to understand, test, and debug because the program can still refer back to the original data if needed. When the following code runs, a copy of the list bList is assigned to the list aList .  aList = bList  "
+},
+{
+  "id": "manipulating-lists-3",
+  "level": "2",
+  "url": "topic-3-1-lists.html#manipulating-lists-3",
+  "type": "Essential Knowledge",
+  "number": "3.1.11",
+  "title": "3.1.B.2.",
+  "body": " 3.1.B.2  Elements in a list can be changed to different values, which allows a program to update stored information without rebuilding the entire list. When the following code runs, the value of x is assigned to the element at index j in aList . The previous value at that index is overwritten, and the length of the list does not change.  aList[j] = x  "
+},
+{
+  "id": "manipulating-lists-4",
+  "level": "2",
+  "url": "topic-3-1-lists.html#manipulating-lists-4",
+  "type": "Essential Knowledge",
+  "number": "3.1.12",
+  "title": "3.1.B.3.",
+  "body": " 3.1.B.3  The length of a list can change while a program runs as elements are added or removed. Knowing the length of a list helps programmers write code that works correctly as the list changes. When the following code runs, it evaluates to the number of items in aList .  length(aList)  "
+},
+{
+  "id": "manipulating-lists-5",
+  "level": "2",
+  "url": "topic-3-1-lists.html#manipulating-lists-5",
+  "type": "Essential Knowledge",
+  "number": "3.1.13",
+  "title": "3.1.B.4.",
+  "body": " 3.1.B.4  Elements can be inserted at particular positions in a list, which allows a program to keep items in a meaningful order, such as priority or ranking, as new information is added. When the following code runs, any elements at indices greater than or equal to j are shifted so that their indices are increased by 1 and value is placed at index j . The length of the list is increased by 1.  aList.insert(j, value)  "
+},
+{
+  "id": "manipulating-lists-6",
+  "level": "2",
+  "url": "topic-3-1-lists.html#manipulating-lists-6",
+  "type": "Essential Knowledge",
+  "number": "3.1.14",
+  "title": "3.1.B.5.",
+  "body": " 3.1.B.5  Elements at particular positions can be removed from a list, which allows a program to delete outdated, incorrect, or unwanted information while keeping the remaining elements usable. When the following code runs, the element at index j is removed and the elements after it shift one position so that their indices are decreased by 1. The length of the list is decreased by 1.  aList.remove(j)  "
+},
+{
+  "id": "manipulating-lists-7",
+  "level": "2",
+  "url": "topic-3-1-lists.html#manipulating-lists-7",
+  "type": "Essential Knowledge",
+  "number": "3.1.15",
+  "title": "3.1.B.6.",
+  "body": " 3.1.B.6  To select a random element from a list, a program can generate a random index and use it to access an element. This allows for features like selecting a random song from a playlist, choosing a random prompt in a game, or assigning a random partner from a list of names. In programming languages that use zero-based indexing, if aList has length(aList) items, the valid indices are 0 through length(aList) - 1 . When the following code runs, the program generates one of the valid indices with equal likelihood and accesses the element at that index.  aList[random(0, length(aList) - 1)]  "
+},
+{
+  "id": "manipulating-lists-8",
+  "level": "2",
+  "url": "topic-3-1-lists.html#manipulating-lists-8",
+  "type": "Essential Knowledge",
+  "number": "3.1.16",
+  "title": "3.1.B.7.",
+  "body": " 3.1.B.7  Apps often update lists in response to user actions. Adding or removing items supports user goals such as saving favorites, managing a to-do list, updating a roster, or keeping a recent-search history. Programmers choose list operations that match how users expect information to change as they interact with the app.  "
+},
+{
+  "id": "manipulating-lists-9",
+  "level": "2",
+  "url": "topic-3-1-lists.html#manipulating-lists-9",
+  "type": "Essential Knowledge",
+  "number": "3.1.17",
+  "title": "3.1.B.8.",
+  "body": " 3.1.B.8  To determine what output a program produces after list operations, programmers trace statements in order and update the list after each step. This includes tracking how element positions change when items are inserted or removed and using the updated list to determine what values are accessed or displayed next.  "
+},
+{
+  "id": "manipulating-lists-10",
+  "level": "2",
+  "url": "topic-3-1-lists.html#manipulating-lists-10",
+  "type": "Essential Knowledge",
+  "number": "3.1.18",
+  "title": "3.1.B.9.",
+  "body": " 3.1.B.9  List operations that use an index depend on the index being valid for the current list. When a program accesses, updates, inserts, or removes using an index, programmers must consider the current length of the list and how earlier operations may have shifted element positions. In many programming languages, using an index that is outside the allowed range produces an error and may cause the program to stop.  "
+},
+{
+  "id": "traversing-lists-2",
+  "level": "2",
+  "url": "topic-3-1-lists.html#traversing-lists-2",
+  "type": "Essential Knowledge",
+  "number": "3.1.19",
+  "title": "3.1.C.1.",
+  "body": " 3.1.C.1  Traversing a list is often used to accomplish a goal, such as counting elements that meet a condition, finding a value (like a maximum), computing a total or average, or building an output (such as a message that includes all elements that match a rule).  "
+},
+{
+  "id": "traversing-lists-3",
+  "level": "2",
+  "url": "topic-3-1-lists.html#traversing-lists-3",
+  "type": "Essential Knowledge",
+  "number": "3.1.20",
+  "title": "3.1.C.2.",
+  "body": " 3.1.C.2  Traversals often update an accumulator variable, such as a count or total, each time an element is processed.  "
+},
+{
+  "id": "traversing-lists-4",
+  "level": "2",
+  "url": "topic-3-1-lists.html#traversing-lists-4",
+  "type": "Essential Knowledge",
+  "number": "3.1.21",
+  "title": "3.1.C.3.",
+  "body": " 3.1.C.3  Iteration statements can be used to traverse a list, which allows a program to process each element in order without writing repeated code for every element. When the following code runs, the variable item is assigned the value of each element of aList sequentially, in order, from the first element to the last element. The code in block of statements is executed once for each element in aList .  for item in aList { <block of statements> }  "
+},
+{
+  "id": "traversing-lists-5",
+  "level": "2",
+  "url": "topic-3-1-lists.html#traversing-lists-5",
+  "type": "Essential Knowledge",
+  "number": "3.1.22",
+  "title": "3.1.C.4.",
+  "body": " 3.1.C.4  A linear or sequential search checks elements in order until the desired value is found or the list ends. Programs often store the index where a match was found or store a Boolean value to indicate whether a match was found.  "
+},
+{
+  "id": "traversing-lists-6",
+  "level": "2",
+  "url": "topic-3-1-lists.html#traversing-lists-6",
+  "type": "Essential Knowledge",
+  "number": "3.1.23",
+  "title": "3.1.C.5.",
+  "body": " 3.1.C.5  Traversing a list can be a complete traversal, where every element is accessed, or a partial traversal, where only some elements are examined. Some partial traversals stop early when a goal is reached, such as finding the first match in a search, which may require fewer steps than traversing the entire list.  "
+},
+{
+  "id": "traversing-lists-7",
+  "level": "2",
+  "url": "topic-3-1-lists.html#traversing-lists-7",
+  "type": "Essential Knowledge",
+  "number": "3.1.24",
+  "title": "3.1.C.6.",
+  "body": " 3.1.C.6  Traversing a list supports user-facing features like calculating a total in a shopping cart, counting votes in a poll, or checking whether a username is already taken. Programmers choose complete vs. partial traversal based on whether a user needs to check every element or find a particular match in the list.  "
+},
+{
+  "id": "traversing-lists-8",
+  "level": "2",
+  "url": "topic-3-1-lists.html#traversing-lists-8",
+  "type": "Essential Knowledge",
+  "number": "3.1.25",
+  "title": "3.1.C.7.",
+  "body": " 3.1.C.7  To determine the result of a traversal, programmers trace the loop and track how variables update each time an element is processed.  "
+},
+{
+  "id": "data-abstraction-with-lists-2",
+  "level": "2",
+  "url": "topic-3-1-lists.html#data-abstraction-with-lists-2",
+  "type": "Essential Knowledge",
+  "number": "3.1.26",
+  "title": "3.1.D.1.",
+  "body": " 3.1.D.1  Data abstraction manages complexity by allowing programmers to use data based on its name and purpose without needing to focus on how the data is represented. This separation helps programmers reason about what the data represents and what operations can be done with it.  "
+},
+{
+  "id": "data-abstraction-with-lists-3",
+  "level": "2",
+  "url": "topic-3-1-lists.html#data-abstraction-with-lists-3",
+  "type": "Essential Knowledge",
+  "number": "3.1.27",
+  "title": "3.1.D.2.",
+  "body": " 3.1.D.2  A list is a type of data abstraction because it allows many related values to be treated as a single variable. Instead of writing code for many individual variables, programmers can use the list's name to perform the same kinds of operations on its elements, such as accessing, updating, inserting, removing, or traversing.  "
+},
+{
+  "id": "data-abstraction-with-lists-4",
+  "level": "2",
+  "url": "topic-3-1-lists.html#data-abstraction-with-lists-4",
+  "type": "Essential Knowledge",
+  "number": "3.1.28",
+  "title": "3.1.D.3.",
+  "body": " 3.1.D.3  Using data abstractions such as lists can make programs easier to develop, read, test, and maintain because the same algorithm can often work even when the amount of data changes. When elements are added or removed, the code structure often stays the same.  "
+},
+{
+  "id": "data-abstraction-with-lists-5",
+  "level": "2",
+  "url": "topic-3-1-lists.html#data-abstraction-with-lists-5",
+  "type": "Essential Knowledge",
+  "number": "3.1.29",
+  "title": "3.1.D.4.",
+  "body": " 3.1.D.4  Data abstraction makes it easier to adapt a program as user needs change (for example, handling more saved favorites, more songs on a playlist, or more messages) without redesigning the entire program.  "
+},
+{
+  "id": "data-abstraction-with-lists-6",
+  "level": "2",
+  "url": "topic-3-1-lists.html#data-abstraction-with-lists-6",
+  "type": "Essential Knowledge",
+  "number": "3.1.30",
+  "title": "3.1.D.5.",
+  "body": " 3.1.D.5  Data abstraction reduces complexity by reducing duplication in code. For example, using a single list and a loop can process any number of elements, instead of requiring many separate variables and repeated statements. This means fewer places to update code during development, which lowers the chance of errors.  "
+},
+{
+  "id": "LOs-3-1-2",
+  "level": "2",
+  "url": "topic-3-1-lists.html#LOs-3-1-2",
+  "type": "Learning Objective",
+  "number": "3.1.31",
+  "title": "3.1.A.",
+  "body": " 3.1.A  Develop code that stores multiple related values in a single variable.  "
+},
+{
+  "id": "LOs-3-1-3",
+  "level": "2",
+  "url": "topic-3-1-lists.html#LOs-3-1-3",
+  "type": "Learning Objective",
+  "number": "3.1.32",
+  "title": "3.1.B.",
+  "body": " 3.1.B  Develop code to manipulate a list, and determine the result produced.  "
+},
+{
+  "id": "LOs-3-1-4",
+  "level": "2",
+  "url": "topic-3-1-lists.html#LOs-3-1-4",
+  "type": "Learning Objective",
+  "number": "3.1.33",
+  "title": "3.1.C.",
+  "body": " 3.1.C  Develop code using iteration statements to traverse a list, and determine the result produced.  "
+},
+{
+  "id": "LOs-3-1-5",
+  "level": "2",
+  "url": "topic-3-1-lists.html#LOs-3-1-5",
+  "type": "Learning Objective",
+  "number": "3.1.34",
+  "title": "3.1.D.",
+  "body": " 3.1.D  Explain how the use of data abstraction manages complexity in program code.  "
+},
+{
+  "id": "topic-3-2-procedures",
   "level": "1",
-  "url": "unit4.html",
-  "type": "Unit",
-  "number": "4",
-  "title": "Making Data-Driven Decisions using the Internet and AI",
-  "body": " Making Data-Driven Decisions using the Internet and AI   This unit introduces students to the Internet, Data Processing, and AI.     AP Exam Weighting:    Instructional days: 30 days, AI Design Project: 7 days    Time Estimate: 45 minutes per lesson    AP Classroom Progress Check Unit 4    AP Classroom Unit 4 Labs: 1 AI Lab, 3 Connect Tasks       "
+  "url": "topic-3-2-procedures.html",
+  "type": "Section",
+  "number": "3.2",
+  "title": "Procedures",
+  "body": "  Procedures  procedures   Quick Links:   In this topic, we develop code with procedures, trace procedure calls, and explain how procedural abstraction helps manage complexity.    Defining Procedures   3.2.A.1  A procedure is a named group of programming instructions that performs a task. Using procedures helps programmers organize code, avoid unnecessary code, and make programs easier to read, test, and update. Procedures may also be called functions or methods depending on the programming language.    3.2.A.2  If a procedure does not need any input information to complete its intended task, it can be defined with its name followed by parentheses and a block of statements. Each time the procedure is called, the statements in the procedure execute, and then the program continues with the next statement after the call.    3.2.A.3  Procedures can use parameters to receive input. A parameter is a variable name listed in the procedure definition. An argument is the actual value provided when the procedure is called.    3.2.A.4  A procedure may not need parameters when it always performs the same steps with no changing input (for example, displaying an instructions screen or resetting a game to a default starting state). Procedures need parameters when they need input information to complete the intended task. If a procedure should work for many different inputs (for example, greeting different users or calculating totals for different numbers), parameters make it flexible and reusable because the program can pass different arguments each time it is called. Using parameters when input varies helps avoid duplicating code and keeps the program easier to update.    3.2.A.5  Procedures with parameters make it easier to adapt an app's behavior or output to different users and situations without rewriting code. A single procedure with parameters can generate many clear, personalized messages for different users by using different argument values each time it is called.    3.2.A.6  A procedure is defined with a name and a list of zero or more parameters. When the following code runs, a procedure named pName is defined with zero or more parameters ( p1, p2, ... ). When the procedure is called, the statements in <block of statements> execute.  procedure pName(p1, p2, ...) { <block of statements> }    3.2.A.7  Some procedures use a return statement to send a result back to the part of the program that called the procedure, which allows the returned value to be stored in a variable, used in an expression, or displayed as output. The return statement ends the procedure immediately, even if more statements appear later in the procedure. When the following code runs in the body of a procedure, the value of expression is returned to the place in the program where the procedure was called.  return expression    3.2.A.8  Some procedures perform an action, such as displaying output or updating variables, and do not return a value. Other procedures compute a value and use a return statement so the result can be used elsewhere in the program.    3.2.A.9  Defining a procedure creates the named steps, but the code inside runs only when the procedure is called.     Procedure Calls   3.2.B.1  Calling a procedure runs a named sequence of steps, which helps programs reuse code and keep the overall program easier to read and follow.    3.2.B.2  A procedure is called by using its name in a statement so the program runs the steps stored in that procedure. When the call happens, the program pauses the current sequence of statements, executes the procedure's instructions, and then resumes at the next statement after the call.    3.2.B.3  In a procedure call, the values inside the parentheses are arguments. When the call runs, each argument value is assigned to the matching parameter in the procedure definition. This allows the same procedure to run with different input values. When the following code runs, a1 is assigned to the first parameter and a2 is assigned to the second parameter before the procedure's statements execute.  pName(a1, a2)    3.2.B.4  A procedure can also be called with no arguments (empty parentheses) when it has no parameters. The number of arguments in a call must match the number of parameters in the procedure definition.    3.2.B.5  To determine the result of a procedure call, programmers trace the call by matching arguments to parameters, stepping through the procedure's statements in order, tracking any variable updates and outputs, and then returning to where the procedure was called to continue program execution.    3.2.B.6  If a procedure returns a value, the procedure call evaluates to that value. The returned value can be stored in a variable, used in an expression, or displayed as output. If a procedure does not return a value, the call is used to perform actions such as updating variable values or producing output.     Procedural Abstraction   3.2.C.1  Procedural abstraction manages complexity by grouping related code into named procedures that can be called from other parts of a program.    3.2.C.2  Procedural abstraction allows programmers to use a procedure by knowing what it does without needing to know how it works internally. Programmers often use built-in procedures, such as print or random , by relying on the procedure's name, purpose, and expected behavior while the implementation details stay hidden.    3.2.C.3  Procedural abstraction helps manage complexity by breaking a large problem into smaller subproblems and creating procedures to solve each part.    3.2.C.4  The subdivision of a program into smaller, independent procedures or components is called modularity. Modularity helps programmers focus on one part at a time and makes programs easier to build, test, and revise.    3.2.C.5  Procedural abstraction supports code reuse by extracting shared behavior into a single procedure instead of duplicating code in multiple places.    3.2.C.6  Using parameters generalizes a procedure so it can be reused with different inputs, allowing one procedure to handle many situations without rewriting code.    3.2.C.7  Procedural abstraction allows programmers to change a procedure's internal steps (for example, to improve efficiency or fix a bug) without changing the rest of the program. This makes larger programs easier to maintain because updates can be made in one place.    3.2.C.8  Using procedural abstraction improves readability because the rest of the program can call procedures with descriptive names, so the overall steps of the program are easier to understand at a glance.     Learning Objectives Review   3.2.A  Develop code to define procedures with and without parameters.    3.2.B  Develop code for procedure calls, and determine the result of procedure calls.    3.2.C  Explain how the use of procedural abstraction manages complexity in a program.     Vocabulary Review   "
+},
+{
+  "id": "defining-procedures-2",
+  "level": "2",
+  "url": "topic-3-2-procedures.html#defining-procedures-2",
+  "type": "Essential Knowledge",
+  "number": "3.2.1",
+  "title": "3.2.A.1.",
+  "body": " 3.2.A.1  A procedure is a named group of programming instructions that performs a task. Using procedures helps programmers organize code, avoid unnecessary code, and make programs easier to read, test, and update. Procedures may also be called functions or methods depending on the programming language.  "
+},
+{
+  "id": "defining-procedures-3",
+  "level": "2",
+  "url": "topic-3-2-procedures.html#defining-procedures-3",
+  "type": "Essential Knowledge",
+  "number": "3.2.2",
+  "title": "3.2.A.2.",
+  "body": " 3.2.A.2  If a procedure does not need any input information to complete its intended task, it can be defined with its name followed by parentheses and a block of statements. Each time the procedure is called, the statements in the procedure execute, and then the program continues with the next statement after the call.  "
+},
+{
+  "id": "defining-procedures-4",
+  "level": "2",
+  "url": "topic-3-2-procedures.html#defining-procedures-4",
+  "type": "Essential Knowledge",
+  "number": "3.2.3",
+  "title": "3.2.A.3.",
+  "body": " 3.2.A.3  Procedures can use parameters to receive input. A parameter is a variable name listed in the procedure definition. An argument is the actual value provided when the procedure is called.  "
+},
+{
+  "id": "defining-procedures-5",
+  "level": "2",
+  "url": "topic-3-2-procedures.html#defining-procedures-5",
+  "type": "Essential Knowledge",
+  "number": "3.2.4",
+  "title": "3.2.A.4.",
+  "body": " 3.2.A.4  A procedure may not need parameters when it always performs the same steps with no changing input (for example, displaying an instructions screen or resetting a game to a default starting state). Procedures need parameters when they need input information to complete the intended task. If a procedure should work for many different inputs (for example, greeting different users or calculating totals for different numbers), parameters make it flexible and reusable because the program can pass different arguments each time it is called. Using parameters when input varies helps avoid duplicating code and keeps the program easier to update.  "
+},
+{
+  "id": "defining-procedures-6",
+  "level": "2",
+  "url": "topic-3-2-procedures.html#defining-procedures-6",
+  "type": "Essential Knowledge",
+  "number": "3.2.5",
+  "title": "3.2.A.5.",
+  "body": " 3.2.A.5  Procedures with parameters make it easier to adapt an app's behavior or output to different users and situations without rewriting code. A single procedure with parameters can generate many clear, personalized messages for different users by using different argument values each time it is called.  "
+},
+{
+  "id": "defining-procedures-7",
+  "level": "2",
+  "url": "topic-3-2-procedures.html#defining-procedures-7",
+  "type": "Essential Knowledge",
+  "number": "3.2.6",
+  "title": "3.2.A.6.",
+  "body": " 3.2.A.6  A procedure is defined with a name and a list of zero or more parameters. When the following code runs, a procedure named pName is defined with zero or more parameters ( p1, p2, ... ). When the procedure is called, the statements in <block of statements> execute.  procedure pName(p1, p2, ...) { <block of statements> }  "
+},
+{
+  "id": "defining-procedures-8",
+  "level": "2",
+  "url": "topic-3-2-procedures.html#defining-procedures-8",
+  "type": "Essential Knowledge",
+  "number": "3.2.7",
+  "title": "3.2.A.7.",
+  "body": " 3.2.A.7  Some procedures use a return statement to send a result back to the part of the program that called the procedure, which allows the returned value to be stored in a variable, used in an expression, or displayed as output. The return statement ends the procedure immediately, even if more statements appear later in the procedure. When the following code runs in the body of a procedure, the value of expression is returned to the place in the program where the procedure was called.  return expression  "
+},
+{
+  "id": "defining-procedures-9",
+  "level": "2",
+  "url": "topic-3-2-procedures.html#defining-procedures-9",
+  "type": "Essential Knowledge",
+  "number": "3.2.8",
+  "title": "3.2.A.8.",
+  "body": " 3.2.A.8  Some procedures perform an action, such as displaying output or updating variables, and do not return a value. Other procedures compute a value and use a return statement so the result can be used elsewhere in the program.  "
+},
+{
+  "id": "defining-procedures-10",
+  "level": "2",
+  "url": "topic-3-2-procedures.html#defining-procedures-10",
+  "type": "Essential Knowledge",
+  "number": "3.2.9",
+  "title": "3.2.A.9.",
+  "body": " 3.2.A.9  Defining a procedure creates the named steps, but the code inside runs only when the procedure is called.  "
+},
+{
+  "id": "procedure-calls-2",
+  "level": "2",
+  "url": "topic-3-2-procedures.html#procedure-calls-2",
+  "type": "Essential Knowledge",
+  "number": "3.2.10",
+  "title": "3.2.B.1.",
+  "body": " 3.2.B.1  Calling a procedure runs a named sequence of steps, which helps programs reuse code and keep the overall program easier to read and follow.  "
+},
+{
+  "id": "procedure-calls-3",
+  "level": "2",
+  "url": "topic-3-2-procedures.html#procedure-calls-3",
+  "type": "Essential Knowledge",
+  "number": "3.2.11",
+  "title": "3.2.B.2.",
+  "body": " 3.2.B.2  A procedure is called by using its name in a statement so the program runs the steps stored in that procedure. When the call happens, the program pauses the current sequence of statements, executes the procedure's instructions, and then resumes at the next statement after the call.  "
+},
+{
+  "id": "procedure-calls-4",
+  "level": "2",
+  "url": "topic-3-2-procedures.html#procedure-calls-4",
+  "type": "Essential Knowledge",
+  "number": "3.2.12",
+  "title": "3.2.B.3.",
+  "body": " 3.2.B.3  In a procedure call, the values inside the parentheses are arguments. When the call runs, each argument value is assigned to the matching parameter in the procedure definition. This allows the same procedure to run with different input values. When the following code runs, a1 is assigned to the first parameter and a2 is assigned to the second parameter before the procedure's statements execute.  pName(a1, a2)  "
+},
+{
+  "id": "procedure-calls-5",
+  "level": "2",
+  "url": "topic-3-2-procedures.html#procedure-calls-5",
+  "type": "Essential Knowledge",
+  "number": "3.2.13",
+  "title": "3.2.B.4.",
+  "body": " 3.2.B.4  A procedure can also be called with no arguments (empty parentheses) when it has no parameters. The number of arguments in a call must match the number of parameters in the procedure definition.  "
+},
+{
+  "id": "procedure-calls-6",
+  "level": "2",
+  "url": "topic-3-2-procedures.html#procedure-calls-6",
+  "type": "Essential Knowledge",
+  "number": "3.2.14",
+  "title": "3.2.B.5.",
+  "body": " 3.2.B.5  To determine the result of a procedure call, programmers trace the call by matching arguments to parameters, stepping through the procedure's statements in order, tracking any variable updates and outputs, and then returning to where the procedure was called to continue program execution.  "
+},
+{
+  "id": "procedure-calls-7",
+  "level": "2",
+  "url": "topic-3-2-procedures.html#procedure-calls-7",
+  "type": "Essential Knowledge",
+  "number": "3.2.15",
+  "title": "3.2.B.6.",
+  "body": " 3.2.B.6  If a procedure returns a value, the procedure call evaluates to that value. The returned value can be stored in a variable, used in an expression, or displayed as output. If a procedure does not return a value, the call is used to perform actions such as updating variable values or producing output.  "
+},
+{
+  "id": "procedural-abstraction-2",
+  "level": "2",
+  "url": "topic-3-2-procedures.html#procedural-abstraction-2",
+  "type": "Essential Knowledge",
+  "number": "3.2.16",
+  "title": "3.2.C.1.",
+  "body": " 3.2.C.1  Procedural abstraction manages complexity by grouping related code into named procedures that can be called from other parts of a program.  "
+},
+{
+  "id": "procedural-abstraction-3",
+  "level": "2",
+  "url": "topic-3-2-procedures.html#procedural-abstraction-3",
+  "type": "Essential Knowledge",
+  "number": "3.2.17",
+  "title": "3.2.C.2.",
+  "body": " 3.2.C.2  Procedural abstraction allows programmers to use a procedure by knowing what it does without needing to know how it works internally. Programmers often use built-in procedures, such as print or random , by relying on the procedure's name, purpose, and expected behavior while the implementation details stay hidden.  "
+},
+{
+  "id": "procedural-abstraction-4",
+  "level": "2",
+  "url": "topic-3-2-procedures.html#procedural-abstraction-4",
+  "type": "Essential Knowledge",
+  "number": "3.2.18",
+  "title": "3.2.C.3.",
+  "body": " 3.2.C.3  Procedural abstraction helps manage complexity by breaking a large problem into smaller subproblems and creating procedures to solve each part.  "
+},
+{
+  "id": "procedural-abstraction-5",
+  "level": "2",
+  "url": "topic-3-2-procedures.html#procedural-abstraction-5",
+  "type": "Essential Knowledge",
+  "number": "3.2.19",
+  "title": "3.2.C.4.",
+  "body": " 3.2.C.4  The subdivision of a program into smaller, independent procedures or components is called modularity. Modularity helps programmers focus on one part at a time and makes programs easier to build, test, and revise.  "
+},
+{
+  "id": "procedural-abstraction-6",
+  "level": "2",
+  "url": "topic-3-2-procedures.html#procedural-abstraction-6",
+  "type": "Essential Knowledge",
+  "number": "3.2.20",
+  "title": "3.2.C.5.",
+  "body": " 3.2.C.5  Procedural abstraction supports code reuse by extracting shared behavior into a single procedure instead of duplicating code in multiple places.  "
+},
+{
+  "id": "procedural-abstraction-7",
+  "level": "2",
+  "url": "topic-3-2-procedures.html#procedural-abstraction-7",
+  "type": "Essential Knowledge",
+  "number": "3.2.21",
+  "title": "3.2.C.6.",
+  "body": " 3.2.C.6  Using parameters generalizes a procedure so it can be reused with different inputs, allowing one procedure to handle many situations without rewriting code.  "
+},
+{
+  "id": "procedural-abstraction-8",
+  "level": "2",
+  "url": "topic-3-2-procedures.html#procedural-abstraction-8",
+  "type": "Essential Knowledge",
+  "number": "3.2.22",
+  "title": "3.2.C.7.",
+  "body": " 3.2.C.7  Procedural abstraction allows programmers to change a procedure's internal steps (for example, to improve efficiency or fix a bug) without changing the rest of the program. This makes larger programs easier to maintain because updates can be made in one place.  "
+},
+{
+  "id": "procedural-abstraction-9",
+  "level": "2",
+  "url": "topic-3-2-procedures.html#procedural-abstraction-9",
+  "type": "Essential Knowledge",
+  "number": "3.2.23",
+  "title": "3.2.C.8.",
+  "body": " 3.2.C.8  Using procedural abstraction improves readability because the rest of the program can call procedures with descriptive names, so the overall steps of the program are easier to understand at a glance.  "
+},
+{
+  "id": "LOs-3-2-2",
+  "level": "2",
+  "url": "topic-3-2-procedures.html#LOs-3-2-2",
+  "type": "Learning Objective",
+  "number": "3.2.24",
+  "title": "3.2.A.",
+  "body": " 3.2.A  Develop code to define procedures with and without parameters.  "
+},
+{
+  "id": "LOs-3-2-3",
+  "level": "2",
+  "url": "topic-3-2-procedures.html#LOs-3-2-3",
+  "type": "Learning Objective",
+  "number": "3.2.25",
+  "title": "3.2.B.",
+  "body": " 3.2.B  Develop code for procedure calls, and determine the result of procedure calls.  "
+},
+{
+  "id": "LOs-3-2-4",
+  "level": "2",
+  "url": "topic-3-2-procedures.html#LOs-3-2-4",
+  "type": "Learning Objective",
+  "number": "3.2.26",
+  "title": "3.2.C.",
+  "body": " 3.2.C  Explain how the use of procedural abstraction manages complexity in a program.  "
+},
+{
+  "id": "topic-3-3-libraries",
+  "level": "1",
+  "url": "topic-3-3-libraries.html",
+  "type": "Section",
+  "number": "3.3",
+  "title": "Using Existing Code and Libraries",
+  "body": "  Using Existing Code and Libraries  libraries   Quick Links:   In this unit, we will learn how to use existing code and libraries.    Libraries   3.3.A.1  A software library is a collection of prewritten procedures that programmers can use to add features to a program without writing everything from scratch (for example, drawing graphics, working with data, or generating random values).    3.3.A.2  Existing code segments can come from internal sources (your own prior projects or your team’s code) or external sources (libraries, sample code, or online repositories). Reusing code can save time and reduce errors when the code is well-tested and well-understood.    3.3.A.3  Libraries and reusable code simplify complex tasks by providing procedures that handle common problems, allowing programmers to focus on the parts of the program that are unique to their users and goals.     Application Programming Interfaces (APIs)   3.3.A.4  An application programming interface (API) is a set of rules that specifies how one piece of software can interact with another. An API describes what inputs are accepted, what output is returned (if any), and what side effects may occur.    3.3.A.5  Library documentation describes the API and is necessary for correct use. Programmers use documentation to learn required inputs, possible outputs, examples, limitations, and common errors.    3.3.A.6  Selecting appropriate libraries or code segments requires checking whether they fit the program’s purpose and user needs, are compatible with the programming environment, come from a trustworthy source, and are licensed for reuse.    3.3.A.7  When using existing code, programmers test how reused procedures work within their own program. They compare actual results to expected results using both typical inputs and boundary cases to confirm the integration works as intended.     Learning Objectives Review   3.3.A  Develop code using appropriate libraries or existing code segments to create a program.     Vocabulary Review   "
+},
+{
+  "id": "libraries-2",
+  "level": "2",
+  "url": "topic-3-3-libraries.html#libraries-2",
+  "type": "Essential Knowledge",
+  "number": "3.3.1",
+  "title": "3.3.A.1.",
+  "body": " 3.3.A.1  A software library is a collection of prewritten procedures that programmers can use to add features to a program without writing everything from scratch (for example, drawing graphics, working with data, or generating random values).  "
+},
+{
+  "id": "libraries-3",
+  "level": "2",
+  "url": "topic-3-3-libraries.html#libraries-3",
+  "type": "Essential Knowledge",
+  "number": "3.3.2",
+  "title": "3.3.A.2.",
+  "body": " 3.3.A.2  Existing code segments can come from internal sources (your own prior projects or your team’s code) or external sources (libraries, sample code, or online repositories). Reusing code can save time and reduce errors when the code is well-tested and well-understood.  "
+},
+{
+  "id": "libraries-4",
+  "level": "2",
+  "url": "topic-3-3-libraries.html#libraries-4",
+  "type": "Essential Knowledge",
+  "number": "3.3.3",
+  "title": "3.3.A.3.",
+  "body": " 3.3.A.3  Libraries and reusable code simplify complex tasks by providing procedures that handle common problems, allowing programmers to focus on the parts of the program that are unique to their users and goals.  "
+},
+{
+  "id": "apis-2",
+  "level": "2",
+  "url": "topic-3-3-libraries.html#apis-2",
+  "type": "Essential Knowledge",
+  "number": "3.3.4",
+  "title": "3.3.A.4.",
+  "body": " 3.3.A.4  An application programming interface (API) is a set of rules that specifies how one piece of software can interact with another. An API describes what inputs are accepted, what output is returned (if any), and what side effects may occur.  "
+},
+{
+  "id": "apis-3",
+  "level": "2",
+  "url": "topic-3-3-libraries.html#apis-3",
+  "type": "Essential Knowledge",
+  "number": "3.3.5",
+  "title": "3.3.A.5.",
+  "body": " 3.3.A.5  Library documentation describes the API and is necessary for correct use. Programmers use documentation to learn required inputs, possible outputs, examples, limitations, and common errors.  "
+},
+{
+  "id": "apis-4",
+  "level": "2",
+  "url": "topic-3-3-libraries.html#apis-4",
+  "type": "Essential Knowledge",
+  "number": "3.3.6",
+  "title": "3.3.A.6.",
+  "body": " 3.3.A.6  Selecting appropriate libraries or code segments requires checking whether they fit the program’s purpose and user needs, are compatible with the programming environment, come from a trustworthy source, and are licensed for reuse.  "
+},
+{
+  "id": "apis-5",
+  "level": "2",
+  "url": "topic-3-3-libraries.html#apis-5",
+  "type": "Essential Knowledge",
+  "number": "3.3.7",
+  "title": "3.3.A.7.",
+  "body": " 3.3.A.7  When using existing code, programmers test how reused procedures work within their own program. They compare actual results to expected results using both typical inputs and boundary cases to confirm the integration works as intended.  "
+},
+{
+  "id": "LOs-3-3-2",
+  "level": "2",
+  "url": "topic-3-3-libraries.html#LOs-3-3-2",
+  "type": "Learning Objective",
+  "number": "3.3.8",
+  "title": "3.3.A.",
+  "body": " 3.3.A  Develop code using appropriate libraries or existing code segments to create a program.  "
+},
+{
+  "id": "topic-4-1-internet",
+  "level": "1",
+  "url": "topic-4-1-internet.html",
+  "type": "Section",
+  "number": "4.1",
+  "title": "The Internet",
+  "body": "  The Internet  internet   Quick Links:   In this topic, we explain how the Internet exchanges data, scales to demand, and remains functional through packets, dynamic routing, and redundancy.    Internet Protocols and Scale   4.1.A.1  The Internet is a global network of networks that communicates using standardized protocols.    4.1.A.2  A protocol is an agreed-upon set of rules for communication, such as how data is formatted, sent, received, or acknowledged so different devices and networks can work together reliably.    4.1.A.3  Because Internet protocols are open and nonproprietary (not owned or controlled by a single company), devices and networks from different companies can communicate and exchange data. This makes widespread connectivity possible and allows new devices and networks to join the Internet without relying on proprietary systems (owned or controlled by one company).    4.1.A.4  Devices access the Internet by connecting to a local network (like home or school Wi-Fi) or directly to a cellular provider's network. In both cases, the connection is carried by an Internet service provider (ISP) to the broader Internet.    4.1.A.5  The Internet was designed to be scalable, meaning it can expand over time to meet demand. Scalability is a system's ability to grow or change to meet new demands, such as more users, more devices, or higher traffic, while continuing to function efficiently and reliably.     Network Communication and User Experience   4.1.B.1  A networked computing device, such as a computer, tablet, server, router, or smart sensor, is a physical artifact that can run programs and can send and\/or receive data over a network.    4.1.B.2  A computing system is a group of computing devices and programs that work together to accomplish a shared purpose. A messaging service may rely on an app on a phone, a Wi-Fi router, and cloud servers working together to send and receive messages.    4.1.B.3  A computer network is a group of interconnected computing devices that communicate by sending and receiving data. It is a type of computing system because multiple devices coordinate to exchange data and provide services.    4.1.B.4  Data sent across a network typically travels through multiple intermediate devices, such as switches and routers, before reaching its destination. A path from sender to receiver is the sequence of directly connected devices that the data follows from start to finish.    4.1.B.5  Bandwidth commonly refers to the maximum rate at which data can be transmitted over a connection, usually measured in bits per second. More available bandwidth generally allows higher data rates. Higher data-rate bandwidth can support faster downloads and higher-quality streaming.    4.1.B.6  Latency is the time it takes for data to travel from one device to another across a network. Latency is typically measured in milliseconds. High latency creates noticeable delays, like slow page loads, lag in video calls, or delayed responses in online games, even if bandwidth is high.    4.1.B.7  Network conditions shape user experience. When bandwidth is limited, latency is high, or networks are congested, apps may lag, buffer, or fail to load. Developers design for these situations by reducing file sizes, loading content in chunks, saving progress, and showing clear status messages like \"Loading...\" or \"Try again.\"    4.1.B.8  Understanding bandwidth, latency, and routing helps programmers design apps that stay usable under common situations such as crowded public Wi-Fi, weak cellular signals, or unreliable connections, so users can complete tasks reliably or receive clear feedback when connectivity prevents it.     Fault Tolerance and Network Failure   4.1.C.1  Data sent over the Internet is broken into smaller pieces called packets. Sending data as packets lets routers send each packet along available paths, and the receiving device reassembles the data at the destination, which improves efficiency.    4.1.C.2  A packet contains a chunk of data (part of a message) and metadata (information such as where it came from and where it is going). This metadata helps networks route packets to the correct destination and may help the receiving device reassemble the original data.    4.1.C.3  Packets may arrive out of order, be delayed, or fail to arrive. Certain Internet protocols help handle these situations by organizing packets correctly and requesting missing data when needed.    4.1.C.4  Routing is the process of selecting a path for data to travel from a sender to a receiver. Routing on the Internet is usually dynamic, meaning data can take different paths when network conditions change, especially when links or devices fail or become unavailable.    4.1.C.5  The Internet is designed to be fault-tolerant, meaning it can continue to function even when some devices or connections fail. This matters because failures happen regularly, and fault tolerance helps users continue to access information.    4.1.C.6  Redundancy is the inclusion of extra components or alternate paths that can reduce the impact of failure when part of a system stops working. Redundancy often requires additional resources, but it increases reliability.    4.1.C.7  Because data is sent as packets and routing is dynamic, packets can be redirected when a path fails. Redundant routes can allow the network to continue delivering data even if some devices or connections stop working.    4.1.C.8  To predict the impact of a failure, identify the intermediate devices and connections used along a path. If removing one device or connection leaves no remaining path between the sender and receiver, that failure can stop communication. Redundancy reduces this risk by providing alternate paths.     Learning Objectives Review   4.1.A  Explain how the Internet exchanges data and scales with demand.    4.1.B  Explain how computing devices communicate in a network, and how network conditions affect communication and user experience.    4.1.C  Explain how network failures can occur, and how fault-tolerant networks use packets, dynamic routing, and redundancy to keep communication working.     Vocabulary Review   "
+},
+{
+  "id": "internet-protocols-and-scale-2",
+  "level": "2",
+  "url": "topic-4-1-internet.html#internet-protocols-and-scale-2",
+  "type": "Essential Knowledge",
+  "number": "4.1.1",
+  "title": "4.1.A.1.",
+  "body": " 4.1.A.1  The Internet is a global network of networks that communicates using standardized protocols.  "
+},
+{
+  "id": "internet-protocols-and-scale-3",
+  "level": "2",
+  "url": "topic-4-1-internet.html#internet-protocols-and-scale-3",
+  "type": "Essential Knowledge",
+  "number": "4.1.2",
+  "title": "4.1.A.2.",
+  "body": " 4.1.A.2  A protocol is an agreed-upon set of rules for communication, such as how data is formatted, sent, received, or acknowledged so different devices and networks can work together reliably.  "
+},
+{
+  "id": "internet-protocols-and-scale-4",
+  "level": "2",
+  "url": "topic-4-1-internet.html#internet-protocols-and-scale-4",
+  "type": "Essential Knowledge",
+  "number": "4.1.3",
+  "title": "4.1.A.3.",
+  "body": " 4.1.A.3  Because Internet protocols are open and nonproprietary (not owned or controlled by a single company), devices and networks from different companies can communicate and exchange data. This makes widespread connectivity possible and allows new devices and networks to join the Internet without relying on proprietary systems (owned or controlled by one company).  "
+},
+{
+  "id": "internet-protocols-and-scale-5",
+  "level": "2",
+  "url": "topic-4-1-internet.html#internet-protocols-and-scale-5",
+  "type": "Essential Knowledge",
+  "number": "4.1.4",
+  "title": "4.1.A.4.",
+  "body": " 4.1.A.4  Devices access the Internet by connecting to a local network (like home or school Wi-Fi) or directly to a cellular provider's network. In both cases, the connection is carried by an Internet service provider (ISP) to the broader Internet.  "
+},
+{
+  "id": "internet-protocols-and-scale-6",
+  "level": "2",
+  "url": "topic-4-1-internet.html#internet-protocols-and-scale-6",
+  "type": "Essential Knowledge",
+  "number": "4.1.5",
+  "title": "4.1.A.5.",
+  "body": " 4.1.A.5  The Internet was designed to be scalable, meaning it can expand over time to meet demand. Scalability is a system's ability to grow or change to meet new demands, such as more users, more devices, or higher traffic, while continuing to function efficiently and reliably.  "
+},
+{
+  "id": "network-communication-and-conditions-2",
+  "level": "2",
+  "url": "topic-4-1-internet.html#network-communication-and-conditions-2",
+  "type": "Essential Knowledge",
+  "number": "4.1.6",
+  "title": "4.1.B.1.",
+  "body": " 4.1.B.1  A networked computing device, such as a computer, tablet, server, router, or smart sensor, is a physical artifact that can run programs and can send and\/or receive data over a network.  "
+},
+{
+  "id": "network-communication-and-conditions-3",
+  "level": "2",
+  "url": "topic-4-1-internet.html#network-communication-and-conditions-3",
+  "type": "Essential Knowledge",
+  "number": "4.1.7",
+  "title": "4.1.B.2.",
+  "body": " 4.1.B.2  A computing system is a group of computing devices and programs that work together to accomplish a shared purpose. A messaging service may rely on an app on a phone, a Wi-Fi router, and cloud servers working together to send and receive messages.  "
+},
+{
+  "id": "network-communication-and-conditions-4",
+  "level": "2",
+  "url": "topic-4-1-internet.html#network-communication-and-conditions-4",
+  "type": "Essential Knowledge",
+  "number": "4.1.8",
+  "title": "4.1.B.3.",
+  "body": " 4.1.B.3  A computer network is a group of interconnected computing devices that communicate by sending and receiving data. It is a type of computing system because multiple devices coordinate to exchange data and provide services.  "
+},
+{
+  "id": "network-communication-and-conditions-5",
+  "level": "2",
+  "url": "topic-4-1-internet.html#network-communication-and-conditions-5",
+  "type": "Essential Knowledge",
+  "number": "4.1.9",
+  "title": "4.1.B.4.",
+  "body": " 4.1.B.4  Data sent across a network typically travels through multiple intermediate devices, such as switches and routers, before reaching its destination. A path from sender to receiver is the sequence of directly connected devices that the data follows from start to finish.  "
+},
+{
+  "id": "network-communication-and-conditions-6",
+  "level": "2",
+  "url": "topic-4-1-internet.html#network-communication-and-conditions-6",
+  "type": "Essential Knowledge",
+  "number": "4.1.10",
+  "title": "4.1.B.5.",
+  "body": " 4.1.B.5  Bandwidth commonly refers to the maximum rate at which data can be transmitted over a connection, usually measured in bits per second. More available bandwidth generally allows higher data rates. Higher data-rate bandwidth can support faster downloads and higher-quality streaming.  "
+},
+{
+  "id": "network-communication-and-conditions-7",
+  "level": "2",
+  "url": "topic-4-1-internet.html#network-communication-and-conditions-7",
+  "type": "Essential Knowledge",
+  "number": "4.1.11",
+  "title": "4.1.B.6.",
+  "body": " 4.1.B.6  Latency is the time it takes for data to travel from one device to another across a network. Latency is typically measured in milliseconds. High latency creates noticeable delays, like slow page loads, lag in video calls, or delayed responses in online games, even if bandwidth is high.  "
+},
+{
+  "id": "network-communication-and-conditions-8",
+  "level": "2",
+  "url": "topic-4-1-internet.html#network-communication-and-conditions-8",
+  "type": "Essential Knowledge",
+  "number": "4.1.12",
+  "title": "4.1.B.7.",
+  "body": " 4.1.B.7  Network conditions shape user experience. When bandwidth is limited, latency is high, or networks are congested, apps may lag, buffer, or fail to load. Developers design for these situations by reducing file sizes, loading content in chunks, saving progress, and showing clear status messages like \"Loading...\" or \"Try again.\"  "
+},
+{
+  "id": "network-communication-and-conditions-9",
+  "level": "2",
+  "url": "topic-4-1-internet.html#network-communication-and-conditions-9",
+  "type": "Essential Knowledge",
+  "number": "4.1.13",
+  "title": "4.1.B.8.",
+  "body": " 4.1.B.8  Understanding bandwidth, latency, and routing helps programmers design apps that stay usable under common situations such as crowded public Wi-Fi, weak cellular signals, or unreliable connections, so users can complete tasks reliably or receive clear feedback when connectivity prevents it.  "
+},
+{
+  "id": "fault-tolerance-and-failure-2",
+  "level": "2",
+  "url": "topic-4-1-internet.html#fault-tolerance-and-failure-2",
+  "type": "Essential Knowledge",
+  "number": "4.1.14",
+  "title": "4.1.C.1.",
+  "body": " 4.1.C.1  Data sent over the Internet is broken into smaller pieces called packets. Sending data as packets lets routers send each packet along available paths, and the receiving device reassembles the data at the destination, which improves efficiency.  "
+},
+{
+  "id": "fault-tolerance-and-failure-3",
+  "level": "2",
+  "url": "topic-4-1-internet.html#fault-tolerance-and-failure-3",
+  "type": "Essential Knowledge",
+  "number": "4.1.15",
+  "title": "4.1.C.2.",
+  "body": " 4.1.C.2  A packet contains a chunk of data (part of a message) and metadata (information such as where it came from and where it is going). This metadata helps networks route packets to the correct destination and may help the receiving device reassemble the original data.  "
+},
+{
+  "id": "fault-tolerance-and-failure-4",
+  "level": "2",
+  "url": "topic-4-1-internet.html#fault-tolerance-and-failure-4",
+  "type": "Essential Knowledge",
+  "number": "4.1.16",
+  "title": "4.1.C.3.",
+  "body": " 4.1.C.3  Packets may arrive out of order, be delayed, or fail to arrive. Certain Internet protocols help handle these situations by organizing packets correctly and requesting missing data when needed.  "
+},
+{
+  "id": "fault-tolerance-and-failure-5",
+  "level": "2",
+  "url": "topic-4-1-internet.html#fault-tolerance-and-failure-5",
+  "type": "Essential Knowledge",
+  "number": "4.1.17",
+  "title": "4.1.C.4.",
+  "body": " 4.1.C.4  Routing is the process of selecting a path for data to travel from a sender to a receiver. Routing on the Internet is usually dynamic, meaning data can take different paths when network conditions change, especially when links or devices fail or become unavailable.  "
+},
+{
+  "id": "fault-tolerance-and-failure-6",
+  "level": "2",
+  "url": "topic-4-1-internet.html#fault-tolerance-and-failure-6",
+  "type": "Essential Knowledge",
+  "number": "4.1.18",
+  "title": "4.1.C.5.",
+  "body": " 4.1.C.5  The Internet is designed to be fault-tolerant, meaning it can continue to function even when some devices or connections fail. This matters because failures happen regularly, and fault tolerance helps users continue to access information.  "
+},
+{
+  "id": "fault-tolerance-and-failure-7",
+  "level": "2",
+  "url": "topic-4-1-internet.html#fault-tolerance-and-failure-7",
+  "type": "Essential Knowledge",
+  "number": "4.1.19",
+  "title": "4.1.C.6.",
+  "body": " 4.1.C.6  Redundancy is the inclusion of extra components or alternate paths that can reduce the impact of failure when part of a system stops working. Redundancy often requires additional resources, but it increases reliability.  "
+},
+{
+  "id": "fault-tolerance-and-failure-8",
+  "level": "2",
+  "url": "topic-4-1-internet.html#fault-tolerance-and-failure-8",
+  "type": "Essential Knowledge",
+  "number": "4.1.20",
+  "title": "4.1.C.7.",
+  "body": " 4.1.C.7  Because data is sent as packets and routing is dynamic, packets can be redirected when a path fails. Redundant routes can allow the network to continue delivering data even if some devices or connections stop working.  "
+},
+{
+  "id": "fault-tolerance-and-failure-9",
+  "level": "2",
+  "url": "topic-4-1-internet.html#fault-tolerance-and-failure-9",
+  "type": "Essential Knowledge",
+  "number": "4.1.21",
+  "title": "4.1.C.8.",
+  "body": " 4.1.C.8  To predict the impact of a failure, identify the intermediate devices and connections used along a path. If removing one device or connection leaves no remaining path between the sender and receiver, that failure can stop communication. Redundancy reduces this risk by providing alternate paths.  "
+},
+{
+  "id": "LOs-4-1-2",
+  "level": "2",
+  "url": "topic-4-1-internet.html#LOs-4-1-2",
+  "type": "Learning Objective",
+  "number": "4.1.22",
+  "title": "4.1.A.",
+  "body": " 4.1.A  Explain how the Internet exchanges data and scales with demand.  "
+},
+{
+  "id": "LOs-4-1-3",
+  "level": "2",
+  "url": "topic-4-1-internet.html#LOs-4-1-3",
+  "type": "Learning Objective",
+  "number": "4.1.23",
+  "title": "4.1.B.",
+  "body": " 4.1.B  Explain how computing devices communicate in a network, and how network conditions affect communication and user experience.  "
+},
+{
+  "id": "LOs-4-1-4",
+  "level": "2",
+  "url": "topic-4-1-internet.html#LOs-4-1-4",
+  "type": "Learning Objective",
+  "number": "4.1.24",
+  "title": "4.1.C.",
+  "body": " 4.1.C  Explain how network failures can occur, and how fault-tolerant networks use packets, dynamic routing, and redundancy to keep communication working.  "
+},
+{
+  "id": "topic-4-2-effects",
+  "level": "1",
+  "url": "topic-4-2-effects.html",
+  "type": "Section",
+  "number": "4.2",
+  "title": "Effects of Technology",
+  "body": "  Effects of Technology  effects-of-technology   Quick Links:   In this topic, we analyze how technology can create both benefits and harms, including effects beyond intended use.    Beneficial and Harmful Effects   4.2.A.1  Technology is created and used by people, and human choices shape how it affects others.    4.2.A.2  When a new technology is adopted, it often changes how people complete tasks by making some actions easier, faster, or more convenient, which sometimes changes habits and expectations.    4.2.A.3  A new technology can have both beneficial and harmful effects depending on the user, the situation, and what the person values. The same person may view an effect as beneficial in one context and harmful in another.    4.2.A.4  Advances in technology can increase creativity and capabilities in many fields (e.g., medicine, engineering, communication, and the arts). They can also create risks when tools are misused to cause harm, when people over-rely on outputs without checking accuracy, when misinformation spreads faster or seems more believable, or when unequal access limits opportunities and widens gaps in education, jobs, or services.     Impacts Beyond Intended Purpose   4.2.B.1  Digital tools are often used in ways their creators did not intend, especially when users adapt features for new goals or when the tool spreads to new contexts.    4.2.B.2  Technologies can have impacts beyond their intended use because they can change people's behavior, what information is shared, and who has access to opportunities or influence.    4.2.B.3  As technologies spread, they can also create unequal impacts. The digital divide refers to differences in access to computing devices and the Internet based on socioeconomic, geographic, or demographic factors.    4.2.B.4  The digital divide affects both groups and individuals by shaping who can participate fully in digital spaces and benefit from technology. It can be affected by the actions of individuals, organizations, and governments.    4.2.B.5  Because impacts can be uneven, responsible developers consider who may be unable to access or use the technology and who may be negatively affected by its design or use. They design features and supports to reduce barriers to access, usability, and participation.    4.2.B.6  Developers cannot predict every future use of a tool or system, especially once it is widely shared. However, they can anticipate likely risks, test with real users, and update the system over time as new impacts appear.    4.2.B.7  Technology tools can have effects beyond their main purpose. When many people use a tool, its features can reshape habits, relationships, and opportunities in ways that were not planned or predicted. Recognizing these broader effects helps people make more informed choices about how they use a tool and helps developers revise designs more responsibly.     Learning Objectives Review   4.2.A  Explain how effects of technology can be both beneficial and harmful.    4.2.B  Explain how technology can have an impact beyond its intended purpose.     Vocabulary Review   "
+},
+{
+  "id": "beneficial-and-harmful-effects-2",
+  "level": "2",
+  "url": "topic-4-2-effects.html#beneficial-and-harmful-effects-2",
+  "type": "Essential Knowledge",
+  "number": "4.2.1",
+  "title": "4.2.A.1.",
+  "body": " 4.2.A.1  Technology is created and used by people, and human choices shape how it affects others.  "
+},
+{
+  "id": "beneficial-and-harmful-effects-3",
+  "level": "2",
+  "url": "topic-4-2-effects.html#beneficial-and-harmful-effects-3",
+  "type": "Essential Knowledge",
+  "number": "4.2.2",
+  "title": "4.2.A.2.",
+  "body": " 4.2.A.2  When a new technology is adopted, it often changes how people complete tasks by making some actions easier, faster, or more convenient, which sometimes changes habits and expectations.  "
+},
+{
+  "id": "beneficial-and-harmful-effects-4",
+  "level": "2",
+  "url": "topic-4-2-effects.html#beneficial-and-harmful-effects-4",
+  "type": "Essential Knowledge",
+  "number": "4.2.3",
+  "title": "4.2.A.3.",
+  "body": " 4.2.A.3  A new technology can have both beneficial and harmful effects depending on the user, the situation, and what the person values. The same person may view an effect as beneficial in one context and harmful in another.  "
+},
+{
+  "id": "beneficial-and-harmful-effects-5",
+  "level": "2",
+  "url": "topic-4-2-effects.html#beneficial-and-harmful-effects-5",
+  "type": "Essential Knowledge",
+  "number": "4.2.4",
+  "title": "4.2.A.4.",
+  "body": " 4.2.A.4  Advances in technology can increase creativity and capabilities in many fields (e.g., medicine, engineering, communication, and the arts). They can also create risks when tools are misused to cause harm, when people over-rely on outputs without checking accuracy, when misinformation spreads faster or seems more believable, or when unequal access limits opportunities and widens gaps in education, jobs, or services.  "
+},
+{
+  "id": "impacts-beyond-intended-purpose-2",
+  "level": "2",
+  "url": "topic-4-2-effects.html#impacts-beyond-intended-purpose-2",
+  "type": "Essential Knowledge",
+  "number": "4.2.5",
+  "title": "4.2.B.1.",
+  "body": " 4.2.B.1  Digital tools are often used in ways their creators did not intend, especially when users adapt features for new goals or when the tool spreads to new contexts.  "
+},
+{
+  "id": "impacts-beyond-intended-purpose-3",
+  "level": "2",
+  "url": "topic-4-2-effects.html#impacts-beyond-intended-purpose-3",
+  "type": "Essential Knowledge",
+  "number": "4.2.6",
+  "title": "4.2.B.2.",
+  "body": " 4.2.B.2  Technologies can have impacts beyond their intended use because they can change people's behavior, what information is shared, and who has access to opportunities or influence.  "
+},
+{
+  "id": "impacts-beyond-intended-purpose-4",
+  "level": "2",
+  "url": "topic-4-2-effects.html#impacts-beyond-intended-purpose-4",
+  "type": "Essential Knowledge",
+  "number": "4.2.7",
+  "title": "4.2.B.3.",
+  "body": " 4.2.B.3  As technologies spread, they can also create unequal impacts. The digital divide refers to differences in access to computing devices and the Internet based on socioeconomic, geographic, or demographic factors.  "
+},
+{
+  "id": "impacts-beyond-intended-purpose-5",
+  "level": "2",
+  "url": "topic-4-2-effects.html#impacts-beyond-intended-purpose-5",
+  "type": "Essential Knowledge",
+  "number": "4.2.8",
+  "title": "4.2.B.4.",
+  "body": " 4.2.B.4  The digital divide affects both groups and individuals by shaping who can participate fully in digital spaces and benefit from technology. It can be affected by the actions of individuals, organizations, and governments.  "
+},
+{
+  "id": "impacts-beyond-intended-purpose-6",
+  "level": "2",
+  "url": "topic-4-2-effects.html#impacts-beyond-intended-purpose-6",
+  "type": "Essential Knowledge",
+  "number": "4.2.9",
+  "title": "4.2.B.5.",
+  "body": " 4.2.B.5  Because impacts can be uneven, responsible developers consider who may be unable to access or use the technology and who may be negatively affected by its design or use. They design features and supports to reduce barriers to access, usability, and participation.  "
+},
+{
+  "id": "impacts-beyond-intended-purpose-7",
+  "level": "2",
+  "url": "topic-4-2-effects.html#impacts-beyond-intended-purpose-7",
+  "type": "Essential Knowledge",
+  "number": "4.2.10",
+  "title": "4.2.B.6.",
+  "body": " 4.2.B.6  Developers cannot predict every future use of a tool or system, especially once it is widely shared. However, they can anticipate likely risks, test with real users, and update the system over time as new impacts appear.  "
+},
+{
+  "id": "impacts-beyond-intended-purpose-8",
+  "level": "2",
+  "url": "topic-4-2-effects.html#impacts-beyond-intended-purpose-8",
+  "type": "Essential Knowledge",
+  "number": "4.2.11",
+  "title": "4.2.B.7.",
+  "body": " 4.2.B.7  Technology tools can have effects beyond their main purpose. When many people use a tool, its features can reshape habits, relationships, and opportunities in ways that were not planned or predicted. Recognizing these broader effects helps people make more informed choices about how they use a tool and helps developers revise designs more responsibly.  "
+},
+{
+  "id": "LOs-4-2-2",
+  "level": "2",
+  "url": "topic-4-2-effects.html#LOs-4-2-2",
+  "type": "Learning Objective",
+  "number": "4.2.12",
+  "title": "4.2.A.",
+  "body": " 4.2.A  Explain how effects of technology can be both beneficial and harmful.  "
+},
+{
+  "id": "LOs-4-2-3",
+  "level": "2",
+  "url": "topic-4-2-effects.html#LOs-4-2-3",
+  "type": "Learning Objective",
+  "number": "4.2.13",
+  "title": "4.2.B.",
+  "body": " 4.2.B  Explain how technology can have an impact beyond its intended purpose.  "
+},
+{
+  "id": "topic-4-3-privacy-security",
+  "level": "1",
+  "url": "topic-4-3-privacy-security.html",
+  "type": "Section",
+  "number": "4.3",
+  "title": "Privacy and Security",
+  "body": "  Privacy and Security  privacy-security   Quick Links:   In this topic, we examine how personal data is collected, how systems can be compromised, and how digital systems and information can be protected.    Data Collection, Tracking, and Privacy Risks   4.3.A.1  Websites, apps, and devices can collect data about user activity, including searches, clicks, page views, purchases, and device information. Some systems also collect or infer location and other details based on signals from the device or network.    4.3.A.2  Collected activity data can be used to personalize experiences, such as search results or recommendations, and may also be used for advertising or analytics, depending on user settings, company practices, and applicable laws.    4.3.A.3  Cookies are small pieces of data that a website stores in a user's browser or device to remember information such as login status, preferences, or items in a shopping cart.    4.3.A.4  Cookies and other identifiers can be used to recognize a user across visits and, in some cases, across different sites or apps, enabling measurement, personalization, and targeted advertising.    4.3.A.5  Geolocation data estimates or identifies a device's physical location. It can enable useful services, like navigation or nearby results, but can also reveal sensitive patterns, such as where someone lives, goes to school, works, or spends time.    4.3.A.6  Data from different sources, such as geolocation, browsing history, app activity, purchases, and social media, can be aggregated to create a detailed profile of an individual. Even if a single data point seems harmless, combining many points can reveal identity, habits, and relationships.    4.3.A.7  Some data is personally identifiable information (PII). Some PII is directly identifying, like a name or phone number, and some becomes identifying when combined with other data. Examples include: full name, phone number, email address, Social Security number, government ID numbers, precise location, and biometrics.    4.3.A.8  Privacy risks increase when data is stored, shared, or reused beyond the user's expectations. Once information is posted or shared digitally, it can be copied, forwarded, or saved by others, making it difficult to fully control or remove.     How Systems and Information Can Be Compromised   4.3.B.1  A data breach occurs when sensitive data is accessed, disclosed, or stolen by an unauthorized party, often because data was stored insecurely, shared improperly, or protected by weak security controls.    4.3.B.2  When PII is exposed in a data breach, individuals may be at risk of harms such as identity theft, account takeover, or fraud, especially if the data can be used to impersonate them or access their accounts.    4.3.B.3  Reusing the same password across multiple accounts increases the risk of account compromise because, if one account's password is exposed, an adversary can try the same username and password on other services to gain unauthorized access.    4.3.B.4  Social engineering is a strategy adversaries use to compromise systems by targeting people rather than exploiting a technical weakness. An adversary influences a user into taking an action that compromises security, often by impersonating a trusted source or creating urgency, fear, or curiosity.    4.3.B.5  Phishing is a type of social engineering in which an adversary attempts to influence a user into revealing personal information, such as passwords or verification codes. Adversaries can use that information to access accounts, financial services, or other protected systems.    4.3.B.6  Unsolicited emails, attachments, links, and forms can be used to gain unauthorized access by influencing a user into opening a file, entering information, or installing harmful software. These messages may come from unknown senders or from accounts that appear familiar because they were compromised.    4.3.B.7  Malicious links can be disguised to look trustworthy, such as by using misleading text, shortened URLs, or look-alike website addresses, leading users to fake pages or unsafe downloads.    4.3.B.8  Email is not inherently private. Email messages can be forwarded, stored, intercepted, or accessed by people other than the sender and receiver, which can expose sensitive information if an account or message is accessed by an unauthorized party.    4.3.B.9  Malware is software designed to harm a device or enable unauthorized access, such as by stealing data, monitoring user activity, or controlling parts of the system. Malware can be installed through unsafe downloads, malicious attachments, or compromised websites.    4.3.B.10  Adversaries often focus on moments when users are rushed or confused such as with urgent \"account locked\" messages. These situations increase the chance a user will click a link, share information, or approve access without noticing warning signs.     Protecting Digital Systems and Information   4.3.C.1  Authentication is how a system verifies a user's identity, such as with passwords, passkeys, or biometrics. Strong authentication can reduce unauthorized access to devices and accounts.    4.3.C.2  Multifactor authentication (MFA) requires two or more different pieces of evidence, typically in at least two of the following categories: knowledge (something a user knows), possession (something a user has), and biometrics (something a user is). MFA adds protection because an attacker must compromise multiple factors, not just a single password, to access an account.    4.3.C.3  Encryption encodes data so it cannot be read without a key. Decryption decodes it so it can be read. Encryption helps protect data stored on devices and sent over networks.    4.3.C.4  End-to-end encryption is a method of secure communication in which data are encrypted on the sender's device and can only be decrypted on the intended recipient's device, so services that transmit or store the data along the way cannot read the contents without the decryption key.    4.3.C.5  Systems can be compromised when adversaries exploit software flaws. Installing software updates helps reduce risk by fixing known vulnerabilities that adversaries may target.    4.3.C.6  Malware scanning tools can help detect or block some malicious software, reducing the chance that a device is infected or controlled without the user's knowledge.    4.3.C.7  Apps and websites sometimes request permissions like access to location, contacts, microphone, camera, or photos. Reviewing and limiting permissions helps protect privacy and reduces the chance of misuse if an app is untrustworthy or becomes compromised.    4.3.C.8  Security measures reduce risk in different ways: authentication and MFA limit who can access an account, encryption limits who can read data if it is intercepted or stolen, updates reduce known weaknesses adversaries exploit, and permissions limit what an app can access. No single measure prevents all compromise, so systems often use multiple protections together.     Learning Objectives Review   4.3.A  Explain how personal data is collected, tracked, and aggregated in digital systems, and how these practices can create privacy risks.    4.3.B  Explain how digital systems and information can be compromised.    4.3.C  Explain how digital systems and information can be protected.     Vocabulary Review   "
+},
+{
+  "id": "data-collection-and-privacy-risks-2",
+  "level": "2",
+  "url": "topic-4-3-privacy-security.html#data-collection-and-privacy-risks-2",
+  "type": "Essential Knowledge",
+  "number": "4.3.1",
+  "title": "4.3.A.1.",
+  "body": " 4.3.A.1  Websites, apps, and devices can collect data about user activity, including searches, clicks, page views, purchases, and device information. Some systems also collect or infer location and other details based on signals from the device or network.  "
+},
+{
+  "id": "data-collection-and-privacy-risks-3",
+  "level": "2",
+  "url": "topic-4-3-privacy-security.html#data-collection-and-privacy-risks-3",
+  "type": "Essential Knowledge",
+  "number": "4.3.2",
+  "title": "4.3.A.2.",
+  "body": " 4.3.A.2  Collected activity data can be used to personalize experiences, such as search results or recommendations, and may also be used for advertising or analytics, depending on user settings, company practices, and applicable laws.  "
+},
+{
+  "id": "data-collection-and-privacy-risks-4",
+  "level": "2",
+  "url": "topic-4-3-privacy-security.html#data-collection-and-privacy-risks-4",
+  "type": "Essential Knowledge",
+  "number": "4.3.3",
+  "title": "4.3.A.3.",
+  "body": " 4.3.A.3  Cookies are small pieces of data that a website stores in a user's browser or device to remember information such as login status, preferences, or items in a shopping cart.  "
+},
+{
+  "id": "data-collection-and-privacy-risks-5",
+  "level": "2",
+  "url": "topic-4-3-privacy-security.html#data-collection-and-privacy-risks-5",
+  "type": "Essential Knowledge",
+  "number": "4.3.4",
+  "title": "4.3.A.4.",
+  "body": " 4.3.A.4  Cookies and other identifiers can be used to recognize a user across visits and, in some cases, across different sites or apps, enabling measurement, personalization, and targeted advertising.  "
+},
+{
+  "id": "data-collection-and-privacy-risks-6",
+  "level": "2",
+  "url": "topic-4-3-privacy-security.html#data-collection-and-privacy-risks-6",
+  "type": "Essential Knowledge",
+  "number": "4.3.5",
+  "title": "4.3.A.5.",
+  "body": " 4.3.A.5  Geolocation data estimates or identifies a device's physical location. It can enable useful services, like navigation or nearby results, but can also reveal sensitive patterns, such as where someone lives, goes to school, works, or spends time.  "
+},
+{
+  "id": "data-collection-and-privacy-risks-7",
+  "level": "2",
+  "url": "topic-4-3-privacy-security.html#data-collection-and-privacy-risks-7",
+  "type": "Essential Knowledge",
+  "number": "4.3.6",
+  "title": "4.3.A.6.",
+  "body": " 4.3.A.6  Data from different sources, such as geolocation, browsing history, app activity, purchases, and social media, can be aggregated to create a detailed profile of an individual. Even if a single data point seems harmless, combining many points can reveal identity, habits, and relationships.  "
+},
+{
+  "id": "data-collection-and-privacy-risks-8",
+  "level": "2",
+  "url": "topic-4-3-privacy-security.html#data-collection-and-privacy-risks-8",
+  "type": "Essential Knowledge",
+  "number": "4.3.7",
+  "title": "4.3.A.7.",
+  "body": " 4.3.A.7  Some data is personally identifiable information (PII). Some PII is directly identifying, like a name or phone number, and some becomes identifying when combined with other data. Examples include: full name, phone number, email address, Social Security number, government ID numbers, precise location, and biometrics.  "
+},
+{
+  "id": "data-collection-and-privacy-risks-9",
+  "level": "2",
+  "url": "topic-4-3-privacy-security.html#data-collection-and-privacy-risks-9",
+  "type": "Essential Knowledge",
+  "number": "4.3.8",
+  "title": "4.3.A.8.",
+  "body": " 4.3.A.8  Privacy risks increase when data is stored, shared, or reused beyond the user's expectations. Once information is posted or shared digitally, it can be copied, forwarded, or saved by others, making it difficult to fully control or remove.  "
+},
+{
+  "id": "how-systems-are-compromised-2",
+  "level": "2",
+  "url": "topic-4-3-privacy-security.html#how-systems-are-compromised-2",
+  "type": "Essential Knowledge",
+  "number": "4.3.9",
+  "title": "4.3.B.1.",
+  "body": " 4.3.B.1  A data breach occurs when sensitive data is accessed, disclosed, or stolen by an unauthorized party, often because data was stored insecurely, shared improperly, or protected by weak security controls.  "
+},
+{
+  "id": "how-systems-are-compromised-3",
+  "level": "2",
+  "url": "topic-4-3-privacy-security.html#how-systems-are-compromised-3",
+  "type": "Essential Knowledge",
+  "number": "4.3.10",
+  "title": "4.3.B.2.",
+  "body": " 4.3.B.2  When PII is exposed in a data breach, individuals may be at risk of harms such as identity theft, account takeover, or fraud, especially if the data can be used to impersonate them or access their accounts.  "
+},
+{
+  "id": "how-systems-are-compromised-4",
+  "level": "2",
+  "url": "topic-4-3-privacy-security.html#how-systems-are-compromised-4",
+  "type": "Essential Knowledge",
+  "number": "4.3.11",
+  "title": "4.3.B.3.",
+  "body": " 4.3.B.3  Reusing the same password across multiple accounts increases the risk of account compromise because, if one account's password is exposed, an adversary can try the same username and password on other services to gain unauthorized access.  "
+},
+{
+  "id": "how-systems-are-compromised-5",
+  "level": "2",
+  "url": "topic-4-3-privacy-security.html#how-systems-are-compromised-5",
+  "type": "Essential Knowledge",
+  "number": "4.3.12",
+  "title": "4.3.B.4.",
+  "body": " 4.3.B.4  Social engineering is a strategy adversaries use to compromise systems by targeting people rather than exploiting a technical weakness. An adversary influences a user into taking an action that compromises security, often by impersonating a trusted source or creating urgency, fear, or curiosity.  "
+},
+{
+  "id": "how-systems-are-compromised-6",
+  "level": "2",
+  "url": "topic-4-3-privacy-security.html#how-systems-are-compromised-6",
+  "type": "Essential Knowledge",
+  "number": "4.3.13",
+  "title": "4.3.B.5.",
+  "body": " 4.3.B.5  Phishing is a type of social engineering in which an adversary attempts to influence a user into revealing personal information, such as passwords or verification codes. Adversaries can use that information to access accounts, financial services, or other protected systems.  "
+},
+{
+  "id": "how-systems-are-compromised-7",
+  "level": "2",
+  "url": "topic-4-3-privacy-security.html#how-systems-are-compromised-7",
+  "type": "Essential Knowledge",
+  "number": "4.3.14",
+  "title": "4.3.B.6.",
+  "body": " 4.3.B.6  Unsolicited emails, attachments, links, and forms can be used to gain unauthorized access by influencing a user into opening a file, entering information, or installing harmful software. These messages may come from unknown senders or from accounts that appear familiar because they were compromised.  "
+},
+{
+  "id": "how-systems-are-compromised-8",
+  "level": "2",
+  "url": "topic-4-3-privacy-security.html#how-systems-are-compromised-8",
+  "type": "Essential Knowledge",
+  "number": "4.3.15",
+  "title": "4.3.B.7.",
+  "body": " 4.3.B.7  Malicious links can be disguised to look trustworthy, such as by using misleading text, shortened URLs, or look-alike website addresses, leading users to fake pages or unsafe downloads.  "
+},
+{
+  "id": "how-systems-are-compromised-9",
+  "level": "2",
+  "url": "topic-4-3-privacy-security.html#how-systems-are-compromised-9",
+  "type": "Essential Knowledge",
+  "number": "4.3.16",
+  "title": "4.3.B.8.",
+  "body": " 4.3.B.8  Email is not inherently private. Email messages can be forwarded, stored, intercepted, or accessed by people other than the sender and receiver, which can expose sensitive information if an account or message is accessed by an unauthorized party.  "
+},
+{
+  "id": "how-systems-are-compromised-10",
+  "level": "2",
+  "url": "topic-4-3-privacy-security.html#how-systems-are-compromised-10",
+  "type": "Essential Knowledge",
+  "number": "4.3.17",
+  "title": "4.3.B.9.",
+  "body": " 4.3.B.9  Malware is software designed to harm a device or enable unauthorized access, such as by stealing data, monitoring user activity, or controlling parts of the system. Malware can be installed through unsafe downloads, malicious attachments, or compromised websites.  "
+},
+{
+  "id": "how-systems-are-compromised-11",
+  "level": "2",
+  "url": "topic-4-3-privacy-security.html#how-systems-are-compromised-11",
+  "type": "Essential Knowledge",
+  "number": "4.3.18",
+  "title": "4.3.B.10.",
+  "body": " 4.3.B.10  Adversaries often focus on moments when users are rushed or confused such as with urgent \"account locked\" messages. These situations increase the chance a user will click a link, share information, or approve access without noticing warning signs.  "
+},
+{
+  "id": "protecting-digital-systems-2",
+  "level": "2",
+  "url": "topic-4-3-privacy-security.html#protecting-digital-systems-2",
+  "type": "Essential Knowledge",
+  "number": "4.3.19",
+  "title": "4.3.C.1.",
+  "body": " 4.3.C.1  Authentication is how a system verifies a user's identity, such as with passwords, passkeys, or biometrics. Strong authentication can reduce unauthorized access to devices and accounts.  "
+},
+{
+  "id": "protecting-digital-systems-3",
+  "level": "2",
+  "url": "topic-4-3-privacy-security.html#protecting-digital-systems-3",
+  "type": "Essential Knowledge",
+  "number": "4.3.20",
+  "title": "4.3.C.2.",
+  "body": " 4.3.C.2  Multifactor authentication (MFA) requires two or more different pieces of evidence, typically in at least two of the following categories: knowledge (something a user knows), possession (something a user has), and biometrics (something a user is). MFA adds protection because an attacker must compromise multiple factors, not just a single password, to access an account.  "
+},
+{
+  "id": "protecting-digital-systems-4",
+  "level": "2",
+  "url": "topic-4-3-privacy-security.html#protecting-digital-systems-4",
+  "type": "Essential Knowledge",
+  "number": "4.3.21",
+  "title": "4.3.C.3.",
+  "body": " 4.3.C.3  Encryption encodes data so it cannot be read without a key. Decryption decodes it so it can be read. Encryption helps protect data stored on devices and sent over networks.  "
+},
+{
+  "id": "protecting-digital-systems-5",
+  "level": "2",
+  "url": "topic-4-3-privacy-security.html#protecting-digital-systems-5",
+  "type": "Essential Knowledge",
+  "number": "4.3.22",
+  "title": "4.3.C.4.",
+  "body": " 4.3.C.4  End-to-end encryption is a method of secure communication in which data are encrypted on the sender's device and can only be decrypted on the intended recipient's device, so services that transmit or store the data along the way cannot read the contents without the decryption key.  "
+},
+{
+  "id": "protecting-digital-systems-6",
+  "level": "2",
+  "url": "topic-4-3-privacy-security.html#protecting-digital-systems-6",
+  "type": "Essential Knowledge",
+  "number": "4.3.23",
+  "title": "4.3.C.5.",
+  "body": " 4.3.C.5  Systems can be compromised when adversaries exploit software flaws. Installing software updates helps reduce risk by fixing known vulnerabilities that adversaries may target.  "
+},
+{
+  "id": "protecting-digital-systems-7",
+  "level": "2",
+  "url": "topic-4-3-privacy-security.html#protecting-digital-systems-7",
+  "type": "Essential Knowledge",
+  "number": "4.3.24",
+  "title": "4.3.C.6.",
+  "body": " 4.3.C.6  Malware scanning tools can help detect or block some malicious software, reducing the chance that a device is infected or controlled without the user's knowledge.  "
+},
+{
+  "id": "protecting-digital-systems-8",
+  "level": "2",
+  "url": "topic-4-3-privacy-security.html#protecting-digital-systems-8",
+  "type": "Essential Knowledge",
+  "number": "4.3.25",
+  "title": "4.3.C.7.",
+  "body": " 4.3.C.7  Apps and websites sometimes request permissions like access to location, contacts, microphone, camera, or photos. Reviewing and limiting permissions helps protect privacy and reduces the chance of misuse if an app is untrustworthy or becomes compromised.  "
+},
+{
+  "id": "protecting-digital-systems-9",
+  "level": "2",
+  "url": "topic-4-3-privacy-security.html#protecting-digital-systems-9",
+  "type": "Essential Knowledge",
+  "number": "4.3.26",
+  "title": "4.3.C.8.",
+  "body": " 4.3.C.8  Security measures reduce risk in different ways: authentication and MFA limit who can access an account, encryption limits who can read data if it is intercepted or stolen, updates reduce known weaknesses adversaries exploit, and permissions limit what an app can access. No single measure prevents all compromise, so systems often use multiple protections together.  "
+},
+{
+  "id": "LOs-4-3-2",
+  "level": "2",
+  "url": "topic-4-3-privacy-security.html#LOs-4-3-2",
+  "type": "Learning Objective",
+  "number": "4.3.27",
+  "title": "4.3.A.",
+  "body": " 4.3.A  Explain how personal data is collected, tracked, and aggregated in digital systems, and how these practices can create privacy risks.  "
+},
+{
+  "id": "LOs-4-3-3",
+  "level": "2",
+  "url": "topic-4-3-privacy-security.html#LOs-4-3-3",
+  "type": "Learning Objective",
+  "number": "4.3.28",
+  "title": "4.3.B.",
+  "body": " 4.3.B  Explain how digital systems and information can be compromised.  "
+},
+{
+  "id": "LOs-4-3-4",
+  "level": "2",
+  "url": "topic-4-3-privacy-security.html#LOs-4-3-4",
+  "type": "Learning Objective",
+  "number": "4.3.29",
+  "title": "4.3.C.",
+  "body": " 4.3.C  Explain how digital systems and information can be protected.  "
+},
+{
+  "id": "topic-4-4-data-analysis",
+  "level": "1",
+  "url": "topic-4-4-data-analysis.html",
+  "type": "Section",
+  "number": "4.4",
+  "title": "Data Analysis",
+  "body": "  Data Analysis  data-analysis   Quick Links:   In this topic, we analyze how people learn from data and metadata, and how programmers design algorithms and code for data analysis.    What People Can Learn from Data   4.4.A.1  People use data-driven features every day, such as feeds, dashboards, recommendations, and filters. Many apps generate annual profiles by organizing a user's activity into categories such as top items, totals, and trends over time, revealing patterns in how the user engaged with the app.    4.4.A.2  Data are raw values or observations. Information is what people learn from data after analyzing it to identify patterns or meaning. One common process is to collect or select data, clean it if needed, then transform, filter, aggregate, and visualize it to answer questions and reveal patterns.    4.4.A.3  Depending on how data is collected, it may not be uniform. When people enter data into an open text field, they may represent the same idea in different ways (using abbreviations, different spellings, or different capitalization). Real-world data is often messy because people use different terms, type differently, or make mistakes.    4.4.A.4  Cleaning data is the process of making data more consistent and usable without changing its meaning, such as standardizing equivalent entries like \"1\/5,\" \"01-05,\" and \"Jan 5\" to a single agreed-upon date format.    4.4.A.5  Filtering data keeps only the items that meet a condition so patterns are easier to see, such as filtering for trips under ten miles or survey responses that selected \"strongly agree\".    4.4.A.6  Aggregating data combines many values into a summary, such as counting how many items meet a condition or computing a total or average. Comparing data values can identify key results, such as finding the maximum or minimum value or determining which category occurs most often.    4.4.A.7  Visualizations, such as tables, charts, and graphs, communicate insights by making trends and comparisons easier to notice than raw data alone. Different visual formats highlight different patterns.    4.4.A.8  Tools like spreadsheets can efficiently organize data, apply filters, sort records, and compute summaries, making it easier to explore patterns quickly.    4.4.A.9  Programmers should choose data processes and visualizations that match user goals and avoid misleading conclusions. This includes using clear labels, selecting a visualization that fits the type of data and the question being asked, and ensuring filters match what users want to compare.     What People Can Learn from Metadata   4.4.B.1  Metadata are data about data. They describe properties of a digital item, such as when it was created, who created it, where it came from, its type or format, its size, or what device or app produced it.    4.4.B.2  Changing metadata does not change the primary data. Editing a photo's date taken, for instance, does not alter the image itself. However, changing metadata can affect how the data is searched, sorted, grouped, or interpreted.    4.4.B.3  Metadata helps systems find, organize, and manage information by providing labels and structure, such as titles, tags, categories, timestamps, or file types.    4.4.B.4  Metadata adds context that makes data more useful for analysis, such as identifying the source of information, when it was recorded, or settings used to collect it, which helps people and programs compare data and interpret results more accurately.    4.4.B.5  People can use metadata to detect patterns or support conclusions without examining the full content, such as how often events occur or how items can be grouped or filtered.    4.4.B.6  Programmers use metadata to support user tasks such as sorting by most recent, filtering by location, and organizing items into groups like favorites. Clear metadata and labels help users find what they need quickly and reduce confusion or mistakes.     Algorithms and Code for Data Analysis   4.4.C.1  Programs can analyze data to reveal patterns, such as counts, totals, averages, trends, comparisons, and unusual values. This helps people answer questions and make decisions based on evidence.    4.4.C.2  To analyze data with a program, programmers often begin by stating a question or goal and defining what counts as relevant data and correct output. They then choose processes that match the goal, such as transforming values, filtering records, combining values to compute summaries, or comparing items to find a best match or extreme.    4.4.C.3  Programmers verify extracted information by checking sample rows, comparing against a small hand-checked subset, and confirming that filters and transformations match intended results and the conclusions match the data.    4.4.C.4  Many data analysis programs follow a common pattern: traverse a data set, apply a condition to keep or skip items, update an accumulator (such as a count, total, or maximum), and then produce output (a summary value, a new filtered collection, or a visualization-ready result).     Learning Objectives Review   4.4.A  Determine what people can learn from analyzing data.    4.4.B  Determine what people can learn from metadata.    4.4.C  Develop algorithms and code to analyze data.     Vocabulary Review   "
+},
+{
+  "id": "learning-from-data-2",
+  "level": "2",
+  "url": "topic-4-4-data-analysis.html#learning-from-data-2",
+  "type": "Essential Knowledge",
+  "number": "4.4.1",
+  "title": "4.4.A.1.",
+  "body": " 4.4.A.1  People use data-driven features every day, such as feeds, dashboards, recommendations, and filters. Many apps generate annual profiles by organizing a user's activity into categories such as top items, totals, and trends over time, revealing patterns in how the user engaged with the app.  "
+},
+{
+  "id": "learning-from-data-3",
+  "level": "2",
+  "url": "topic-4-4-data-analysis.html#learning-from-data-3",
+  "type": "Essential Knowledge",
+  "number": "4.4.2",
+  "title": "4.4.A.2.",
+  "body": " 4.4.A.2  Data are raw values or observations. Information is what people learn from data after analyzing it to identify patterns or meaning. One common process is to collect or select data, clean it if needed, then transform, filter, aggregate, and visualize it to answer questions and reveal patterns.  "
+},
+{
+  "id": "learning-from-data-4",
+  "level": "2",
+  "url": "topic-4-4-data-analysis.html#learning-from-data-4",
+  "type": "Essential Knowledge",
+  "number": "4.4.3",
+  "title": "4.4.A.3.",
+  "body": " 4.4.A.3  Depending on how data is collected, it may not be uniform. When people enter data into an open text field, they may represent the same idea in different ways (using abbreviations, different spellings, or different capitalization). Real-world data is often messy because people use different terms, type differently, or make mistakes.  "
+},
+{
+  "id": "learning-from-data-5",
+  "level": "2",
+  "url": "topic-4-4-data-analysis.html#learning-from-data-5",
+  "type": "Essential Knowledge",
+  "number": "4.4.4",
+  "title": "4.4.A.4.",
+  "body": " 4.4.A.4  Cleaning data is the process of making data more consistent and usable without changing its meaning, such as standardizing equivalent entries like \"1\/5,\" \"01-05,\" and \"Jan 5\" to a single agreed-upon date format.  "
+},
+{
+  "id": "learning-from-data-6",
+  "level": "2",
+  "url": "topic-4-4-data-analysis.html#learning-from-data-6",
+  "type": "Essential Knowledge",
+  "number": "4.4.5",
+  "title": "4.4.A.5.",
+  "body": " 4.4.A.5  Filtering data keeps only the items that meet a condition so patterns are easier to see, such as filtering for trips under ten miles or survey responses that selected \"strongly agree\".  "
+},
+{
+  "id": "learning-from-data-7",
+  "level": "2",
+  "url": "topic-4-4-data-analysis.html#learning-from-data-7",
+  "type": "Essential Knowledge",
+  "number": "4.4.6",
+  "title": "4.4.A.6.",
+  "body": " 4.4.A.6  Aggregating data combines many values into a summary, such as counting how many items meet a condition or computing a total or average. Comparing data values can identify key results, such as finding the maximum or minimum value or determining which category occurs most often.  "
+},
+{
+  "id": "learning-from-data-8",
+  "level": "2",
+  "url": "topic-4-4-data-analysis.html#learning-from-data-8",
+  "type": "Essential Knowledge",
+  "number": "4.4.7",
+  "title": "4.4.A.7.",
+  "body": " 4.4.A.7  Visualizations, such as tables, charts, and graphs, communicate insights by making trends and comparisons easier to notice than raw data alone. Different visual formats highlight different patterns.  "
+},
+{
+  "id": "learning-from-data-9",
+  "level": "2",
+  "url": "topic-4-4-data-analysis.html#learning-from-data-9",
+  "type": "Essential Knowledge",
+  "number": "4.4.8",
+  "title": "4.4.A.8.",
+  "body": " 4.4.A.8  Tools like spreadsheets can efficiently organize data, apply filters, sort records, and compute summaries, making it easier to explore patterns quickly.  "
+},
+{
+  "id": "learning-from-data-10",
+  "level": "2",
+  "url": "topic-4-4-data-analysis.html#learning-from-data-10",
+  "type": "Essential Knowledge",
+  "number": "4.4.9",
+  "title": "4.4.A.9.",
+  "body": " 4.4.A.9  Programmers should choose data processes and visualizations that match user goals and avoid misleading conclusions. This includes using clear labels, selecting a visualization that fits the type of data and the question being asked, and ensuring filters match what users want to compare.  "
+},
+{
+  "id": "learning-from-metadata-2",
+  "level": "2",
+  "url": "topic-4-4-data-analysis.html#learning-from-metadata-2",
+  "type": "Essential Knowledge",
+  "number": "4.4.10",
+  "title": "4.4.B.1.",
+  "body": " 4.4.B.1  Metadata are data about data. They describe properties of a digital item, such as when it was created, who created it, where it came from, its type or format, its size, or what device or app produced it.  "
+},
+{
+  "id": "learning-from-metadata-3",
+  "level": "2",
+  "url": "topic-4-4-data-analysis.html#learning-from-metadata-3",
+  "type": "Essential Knowledge",
+  "number": "4.4.11",
+  "title": "4.4.B.2.",
+  "body": " 4.4.B.2  Changing metadata does not change the primary data. Editing a photo's date taken, for instance, does not alter the image itself. However, changing metadata can affect how the data is searched, sorted, grouped, or interpreted.  "
+},
+{
+  "id": "learning-from-metadata-4",
+  "level": "2",
+  "url": "topic-4-4-data-analysis.html#learning-from-metadata-4",
+  "type": "Essential Knowledge",
+  "number": "4.4.12",
+  "title": "4.4.B.3.",
+  "body": " 4.4.B.3  Metadata helps systems find, organize, and manage information by providing labels and structure, such as titles, tags, categories, timestamps, or file types.  "
+},
+{
+  "id": "learning-from-metadata-5",
+  "level": "2",
+  "url": "topic-4-4-data-analysis.html#learning-from-metadata-5",
+  "type": "Essential Knowledge",
+  "number": "4.4.13",
+  "title": "4.4.B.4.",
+  "body": " 4.4.B.4  Metadata adds context that makes data more useful for analysis, such as identifying the source of information, when it was recorded, or settings used to collect it, which helps people and programs compare data and interpret results more accurately.  "
+},
+{
+  "id": "learning-from-metadata-6",
+  "level": "2",
+  "url": "topic-4-4-data-analysis.html#learning-from-metadata-6",
+  "type": "Essential Knowledge",
+  "number": "4.4.14",
+  "title": "4.4.B.5.",
+  "body": " 4.4.B.5  People can use metadata to detect patterns or support conclusions without examining the full content, such as how often events occur or how items can be grouped or filtered.  "
+},
+{
+  "id": "learning-from-metadata-7",
+  "level": "2",
+  "url": "topic-4-4-data-analysis.html#learning-from-metadata-7",
+  "type": "Essential Knowledge",
+  "number": "4.4.15",
+  "title": "4.4.B.6.",
+  "body": " 4.4.B.6  Programmers use metadata to support user tasks such as sorting by most recent, filtering by location, and organizing items into groups like favorites. Clear metadata and labels help users find what they need quickly and reduce confusion or mistakes.  "
+},
+{
+  "id": "algorithms-for-data-analysis-2",
+  "level": "2",
+  "url": "topic-4-4-data-analysis.html#algorithms-for-data-analysis-2",
+  "type": "Essential Knowledge",
+  "number": "4.4.16",
+  "title": "4.4.C.1.",
+  "body": " 4.4.C.1  Programs can analyze data to reveal patterns, such as counts, totals, averages, trends, comparisons, and unusual values. This helps people answer questions and make decisions based on evidence.  "
+},
+{
+  "id": "algorithms-for-data-analysis-3",
+  "level": "2",
+  "url": "topic-4-4-data-analysis.html#algorithms-for-data-analysis-3",
+  "type": "Essential Knowledge",
+  "number": "4.4.17",
+  "title": "4.4.C.2.",
+  "body": " 4.4.C.2  To analyze data with a program, programmers often begin by stating a question or goal and defining what counts as relevant data and correct output. They then choose processes that match the goal, such as transforming values, filtering records, combining values to compute summaries, or comparing items to find a best match or extreme.  "
+},
+{
+  "id": "algorithms-for-data-analysis-4",
+  "level": "2",
+  "url": "topic-4-4-data-analysis.html#algorithms-for-data-analysis-4",
+  "type": "Essential Knowledge",
+  "number": "4.4.18",
+  "title": "4.4.C.3.",
+  "body": " 4.4.C.3  Programmers verify extracted information by checking sample rows, comparing against a small hand-checked subset, and confirming that filters and transformations match intended results and the conclusions match the data.  "
+},
+{
+  "id": "algorithms-for-data-analysis-5",
+  "level": "2",
+  "url": "topic-4-4-data-analysis.html#algorithms-for-data-analysis-5",
+  "type": "Essential Knowledge",
+  "number": "4.4.19",
+  "title": "4.4.C.4.",
+  "body": " 4.4.C.4  Many data analysis programs follow a common pattern: traverse a data set, apply a condition to keep or skip items, update an accumulator (such as a count, total, or maximum), and then produce output (a summary value, a new filtered collection, or a visualization-ready result).  "
+},
+{
+  "id": "LOs-4-4-2",
+  "level": "2",
+  "url": "topic-4-4-data-analysis.html#LOs-4-4-2",
+  "type": "Learning Objective",
+  "number": "4.4.20",
+  "title": "4.4.A.",
+  "body": " 4.4.A  Determine what people can learn from analyzing data.  "
+},
+{
+  "id": "LOs-4-4-3",
+  "level": "2",
+  "url": "topic-4-4-data-analysis.html#LOs-4-4-3",
+  "type": "Learning Objective",
+  "number": "4.4.21",
+  "title": "4.4.B.",
+  "body": " 4.4.B  Determine what people can learn from metadata.  "
+},
+{
+  "id": "LOs-4-4-4",
+  "level": "2",
+  "url": "topic-4-4-data-analysis.html#LOs-4-4-4",
+  "type": "Learning Objective",
+  "number": "4.4.22",
+  "title": "4.4.C.",
+  "body": " 4.4.C  Develop algorithms and code to analyze data.  "
+},
+{
+  "id": "topic-4-5-ai-algorithm-development",
+  "level": "1",
+  "url": "topic-4-5-ai-algorithm-development.html",
+  "type": "Section",
+  "number": "4.5",
+  "title": "AI Algorithm Development",
+  "body": "  AI Algorithm Development  ai-algorithm-development   Quick Links:   In this topic, we compare deterministic and probabilistic algorithms and evaluate strengths and limitations of rule-based systems and data-trained AI models.    Deterministic and Probabilistic Algorithms   4.5.A.1  Many tools people use every day include both predictable steps and best-guess behavior. A calculator performing arithmetic produces the same output every time for the same input. Statistical AI systems (like spam filters and chatbots) use probability to choose what output is most likely under uncertainty, which means they can still make mistakes even when they behave consistently. Understanding these differences helps users decide when results should be checked or verified.    4.5.A.2  A deterministic algorithm produces the same output every time it is given the same input, so its behavior is predictable and repeatable.    4.5.A.3  A probabilistic algorithm makes decisions based on likelihoods rather than fixed rules. Because it models uncertainty, it may produce outputs that include a confidence score or probability estimate. For a given input, the system will often produce the same result when the model and decision threshold stay the same, but the outcome can change if the threshold is adjusted or the model is updated.    4.5.A.4  Probabilistic algorithms are often used for problems where inputs are incomplete, variable, or ambiguous and there is no single clear rule-based solution, such as recognizing objects in images, interpreting speech, filtering spam, or generating text. Because these systems make best-guess decisions, programmers evaluate them by testing performance across many examples and checking how often outputs are accurate, useful, and reliable for the intended context.    4.5.A.5  Testing deterministic and probabilistic algorithms requires different approaches. Deterministic algorithms can be checked with fixed expected outputs, while probabilistic algorithms are evaluated by testing performance across many examples and checking whether outputs meet success criteria for the intended context.     Rule-Based Systems vs. Trained AI Models   4.5.B.1  AI systems can produce outputs using different approaches, such as rule-based systems and models trained on data. Each approach has different strengths and limitations, so the best choice depends on the task, available data, and the need for transparency.    4.5.B.2  Rule-based systems use explicit rules created by people. They are predictable and easier to test, but can struggle with complex real-world situations that are variable, ambiguous, or hard to capture with rules, such as identifying spam messages that change over time. A spam filter that relies only on fixed keyword rules may miss new scams or incorrectly flag legitimate messages because the same words can appear in both spam and non-spam messages.    4.5.B.3  Some AI models use mathematical relationships to estimate likelihoods and make a best guess when information is uncertain or incomplete. They can be transparent and consistent, but their accuracy depends on whether the model's assumptions fit the real situation. A weather forecast model might estimate the chance of rain based on pressure, humidity, and past patterns.    4.5.B.4  Machine learning models learn patterns from training data to make predictions, classify inputs, or generate outputs. They can perform well on complex pattern-based tasks, but results depend heavily on the quality and representativeness of the training data, and it may be difficult to explain why a particular output was produced. For example, an image classifier trained mostly on bright, high-quality photos may perform poorly on blurry or low-light images.    4.5.B.5  Choosing between rule-based systems and AI models trained on data depends on the task and constraints, such as the type of output needed, acceptable error rate, speed, cost, and whether people need a clear explanation of how the result was produced.    4.5.B.6  People interact with AI-enabled features every day, such as autocorrect, recommendations, spam filters, and face unlock. These tools produce outputs in different ways: some follow fixed rules, and others use models trained on data to estimate the most likely result. Rule-driven tools usually produce more predictable outputs. Model-driven tools may produce outputs that are uncertain, context-dependent, or affected by changes to data, settings, or the model itself.     Learning Objectives Review   4.5.A  Describe the differences between deterministic algorithms and probabilistic algorithms.    4.5.B  Compare the strengths and limitations of rule-based systems and AI models trained on data.     Vocabulary Review   "
+},
+{
+  "id": "deterministic-vs-probabilistic-2",
+  "level": "2",
+  "url": "topic-4-5-ai-algorithm-development.html#deterministic-vs-probabilistic-2",
+  "type": "Essential Knowledge",
+  "number": "4.5.1",
+  "title": "4.5.A.1.",
+  "body": " 4.5.A.1  Many tools people use every day include both predictable steps and best-guess behavior. A calculator performing arithmetic produces the same output every time for the same input. Statistical AI systems (like spam filters and chatbots) use probability to choose what output is most likely under uncertainty, which means they can still make mistakes even when they behave consistently. Understanding these differences helps users decide when results should be checked or verified.  "
+},
+{
+  "id": "deterministic-vs-probabilistic-3",
+  "level": "2",
+  "url": "topic-4-5-ai-algorithm-development.html#deterministic-vs-probabilistic-3",
+  "type": "Essential Knowledge",
+  "number": "4.5.2",
+  "title": "4.5.A.2.",
+  "body": " 4.5.A.2  A deterministic algorithm produces the same output every time it is given the same input, so its behavior is predictable and repeatable.  "
+},
+{
+  "id": "deterministic-vs-probabilistic-4",
+  "level": "2",
+  "url": "topic-4-5-ai-algorithm-development.html#deterministic-vs-probabilistic-4",
+  "type": "Essential Knowledge",
+  "number": "4.5.3",
+  "title": "4.5.A.3.",
+  "body": " 4.5.A.3  A probabilistic algorithm makes decisions based on likelihoods rather than fixed rules. Because it models uncertainty, it may produce outputs that include a confidence score or probability estimate. For a given input, the system will often produce the same result when the model and decision threshold stay the same, but the outcome can change if the threshold is adjusted or the model is updated.  "
+},
+{
+  "id": "deterministic-vs-probabilistic-5",
+  "level": "2",
+  "url": "topic-4-5-ai-algorithm-development.html#deterministic-vs-probabilistic-5",
+  "type": "Essential Knowledge",
+  "number": "4.5.4",
+  "title": "4.5.A.4.",
+  "body": " 4.5.A.4  Probabilistic algorithms are often used for problems where inputs are incomplete, variable, or ambiguous and there is no single clear rule-based solution, such as recognizing objects in images, interpreting speech, filtering spam, or generating text. Because these systems make best-guess decisions, programmers evaluate them by testing performance across many examples and checking how often outputs are accurate, useful, and reliable for the intended context.  "
+},
+{
+  "id": "deterministic-vs-probabilistic-6",
+  "level": "2",
+  "url": "topic-4-5-ai-algorithm-development.html#deterministic-vs-probabilistic-6",
+  "type": "Essential Knowledge",
+  "number": "4.5.5",
+  "title": "4.5.A.5.",
+  "body": " 4.5.A.5  Testing deterministic and probabilistic algorithms requires different approaches. Deterministic algorithms can be checked with fixed expected outputs, while probabilistic algorithms are evaluated by testing performance across many examples and checking whether outputs meet success criteria for the intended context.  "
+},
+{
+  "id": "rule-based-vs-trained-models-2",
+  "level": "2",
+  "url": "topic-4-5-ai-algorithm-development.html#rule-based-vs-trained-models-2",
+  "type": "Essential Knowledge",
+  "number": "4.5.6",
+  "title": "4.5.B.1.",
+  "body": " 4.5.B.1  AI systems can produce outputs using different approaches, such as rule-based systems and models trained on data. Each approach has different strengths and limitations, so the best choice depends on the task, available data, and the need for transparency.  "
+},
+{
+  "id": "rule-based-vs-trained-models-3",
+  "level": "2",
+  "url": "topic-4-5-ai-algorithm-development.html#rule-based-vs-trained-models-3",
+  "type": "Essential Knowledge",
+  "number": "4.5.7",
+  "title": "4.5.B.2.",
+  "body": " 4.5.B.2  Rule-based systems use explicit rules created by people. They are predictable and easier to test, but can struggle with complex real-world situations that are variable, ambiguous, or hard to capture with rules, such as identifying spam messages that change over time. A spam filter that relies only on fixed keyword rules may miss new scams or incorrectly flag legitimate messages because the same words can appear in both spam and non-spam messages.  "
+},
+{
+  "id": "rule-based-vs-trained-models-4",
+  "level": "2",
+  "url": "topic-4-5-ai-algorithm-development.html#rule-based-vs-trained-models-4",
+  "type": "Essential Knowledge",
+  "number": "4.5.8",
+  "title": "4.5.B.3.",
+  "body": " 4.5.B.3  Some AI models use mathematical relationships to estimate likelihoods and make a best guess when information is uncertain or incomplete. They can be transparent and consistent, but their accuracy depends on whether the model's assumptions fit the real situation. A weather forecast model might estimate the chance of rain based on pressure, humidity, and past patterns.  "
+},
+{
+  "id": "rule-based-vs-trained-models-5",
+  "level": "2",
+  "url": "topic-4-5-ai-algorithm-development.html#rule-based-vs-trained-models-5",
+  "type": "Essential Knowledge",
+  "number": "4.5.9",
+  "title": "4.5.B.4.",
+  "body": " 4.5.B.4  Machine learning models learn patterns from training data to make predictions, classify inputs, or generate outputs. They can perform well on complex pattern-based tasks, but results depend heavily on the quality and representativeness of the training data, and it may be difficult to explain why a particular output was produced. For example, an image classifier trained mostly on bright, high-quality photos may perform poorly on blurry or low-light images.  "
+},
+{
+  "id": "rule-based-vs-trained-models-6",
+  "level": "2",
+  "url": "topic-4-5-ai-algorithm-development.html#rule-based-vs-trained-models-6",
+  "type": "Essential Knowledge",
+  "number": "4.5.10",
+  "title": "4.5.B.5.",
+  "body": " 4.5.B.5  Choosing between rule-based systems and AI models trained on data depends on the task and constraints, such as the type of output needed, acceptable error rate, speed, cost, and whether people need a clear explanation of how the result was produced.  "
+},
+{
+  "id": "rule-based-vs-trained-models-7",
+  "level": "2",
+  "url": "topic-4-5-ai-algorithm-development.html#rule-based-vs-trained-models-7",
+  "type": "Essential Knowledge",
+  "number": "4.5.11",
+  "title": "4.5.B.6.",
+  "body": " 4.5.B.6  People interact with AI-enabled features every day, such as autocorrect, recommendations, spam filters, and face unlock. These tools produce outputs in different ways: some follow fixed rules, and others use models trained on data to estimate the most likely result. Rule-driven tools usually produce more predictable outputs. Model-driven tools may produce outputs that are uncertain, context-dependent, or affected by changes to data, settings, or the model itself.  "
+},
+{
+  "id": "LOs-4-5-2",
+  "level": "2",
+  "url": "topic-4-5-ai-algorithm-development.html#LOs-4-5-2",
+  "type": "Learning Objective",
+  "number": "4.5.12",
+  "title": "4.5.A.",
+  "body": " 4.5.A  Describe the differences between deterministic algorithms and probabilistic algorithms.  "
+},
+{
+  "id": "LOs-4-5-3",
+  "level": "2",
+  "url": "topic-4-5-ai-algorithm-development.html#LOs-4-5-3",
+  "type": "Learning Objective",
+  "number": "4.5.13",
+  "title": "4.5.B.",
+  "body": " 4.5.B  Compare the strengths and limitations of rule-based systems and AI models trained on data.  "
+},
+{
+  "id": "topic-4-6-ai-ethics",
+  "level": "1",
+  "url": "topic-4-6-ai-ethics.html",
+  "type": "Section",
+  "number": "4.6",
+  "title": "Ethics and Effects of AI",
+  "body": "  Ethics and Effects of AI  ai-ethics-effects   Quick Links:   In this topic, we evaluate AI systems with ethical design criteria and explain how AI impacts society, the economy, and culture.    Evaluating AI with Ethical Design Criteria   4.6.A.1  Ethical design uses criteria to evaluate AI systems, including fairness, transparency, privacy, safety, and accountability. Developers use these criteria to guide choices about data, model behavior, user experience, and safeguards.    4.6.A.2  Developers use evidence to evaluate whether a system is meeting ethical design criteria. Methods include testing performance across different groups and contexts, reviewing how data is collected and used, observing users to identify confusion or barriers, and examining how the system's outputs are used in decision making.    4.6.A.3  Ethical design often involves trade-offs, such as how personalization can conflict with privacy. Developers should document decisions, explain constraints, and choose designs that reduce risk and protect users.    4.6.A.4  Developers assess impacts before deployment and revise designs based on user feedback, then continue monitoring after release because real-world use can reveal new issues or model drift.    4.6.A.5  Documentation and testing support accountability by making it clear what the system does, what data it relies on, what limitations it has, and what safeguards or human review steps are in place when the risks are high.    4.6.A.6  To evaluate an AI system, people apply ethical design criteria by asking questions such as: Is the system fair across different users and contexts? Is it transparent about when it is used and what it is doing? Does it minimize data collection and protect privacy? Who is responsible when it fails? What protections reduce harm?    4.6.A.7  Ethical evaluation includes proposing changes to reduce harm, such as improving disclosure, reducing data collection, adding human review for high-risk cases, expanding testing across groups, or giving users meaningful control like the ability to opt out or adjust settings.     How AI Impacts Society, Economy, and Culture   4.6.B.1  AI systems are designed to optimize specific goals, such as efficiency, engagement, accuracy, or generating options. Because the goal shapes what the system prioritizes, it helps explain the kinds of outcomes the system produces in areas like health, transportation, education, and media.    4.6.B.2  AI impacts can change when a tool is deployed in a new context or used beyond its original purpose. In these cases, mismatches between training data, design assumptions, and real-world use can lead to different outcomes.    4.6.B.3  The scale of an AI system refers to how widely it is used and how much it influences outcomes, such as the number of users, the volume of decisions it helps make, how often it is used, and the number of contexts in which it is used, including different schools, jobs, regions, or languages.    4.6.B.4  When an AI tool is used on a large scale, even small design choices, errors, or biased patterns can affect many people, and impacts that seem minor for one user can become significant across a large population. AI tools can also influence individual behavior and habits. When many people rely on the same tool, those shifts can accumulate and reshape group norms and expectations, such as how people write, search, or communicate, even if the tool was originally intended as only a helper.    4.6.B.5  AI can produce uneven outcomes through multiple pathways. These may include training data and labels that shape which users the system works well for, design choices that determine what errors are tolerated and what feedback users receive, and decision-making practices that determine how outputs are applied in real life.    4.6.B.6  AI can reshape work and economic systems by changing the cost, speed, and quality of tasks. This can increase productivity and create new jobs and skills needs, while also contributing to job displacement or changes in wages and working conditions.    4.6.B.7  AI shapes culture and communication by filtering what people see and what content gets created and shared. When these systems are widely used, they can influence what spreads, what is rewarded with attention, and what people consider normal or trustworthy.    4.6.B.8  AI systems can have environmental impacts due to energy use, computing infrastructure, and material consumption.    4.6.B.9  To analyze AI's broader impact, consider how the system is used: identify who uses it and who is affected, where it is deployed and at what scale, and how outputs influence decisions and behavior. Use these observations to determine who benefits, who may be harmed or left out, and what changes when context or scale changes.     Learning Objectives Review   4.6.A  Evaluate the implementation of AI systems using ethical design criteria.    4.6.B  Explain how AI impacts society, the economy, and culture.     Vocabulary Review   "
+},
+{
+  "id": "ethical-design-evaluation-2",
+  "level": "2",
+  "url": "topic-4-6-ai-ethics.html#ethical-design-evaluation-2",
+  "type": "Essential Knowledge",
+  "number": "4.6.1",
+  "title": "4.6.A.1.",
+  "body": " 4.6.A.1  Ethical design uses criteria to evaluate AI systems, including fairness, transparency, privacy, safety, and accountability. Developers use these criteria to guide choices about data, model behavior, user experience, and safeguards.  "
+},
+{
+  "id": "ethical-design-evaluation-3",
+  "level": "2",
+  "url": "topic-4-6-ai-ethics.html#ethical-design-evaluation-3",
+  "type": "Essential Knowledge",
+  "number": "4.6.2",
+  "title": "4.6.A.2.",
+  "body": " 4.6.A.2  Developers use evidence to evaluate whether a system is meeting ethical design criteria. Methods include testing performance across different groups and contexts, reviewing how data is collected and used, observing users to identify confusion or barriers, and examining how the system's outputs are used in decision making.  "
+},
+{
+  "id": "ethical-design-evaluation-4",
+  "level": "2",
+  "url": "topic-4-6-ai-ethics.html#ethical-design-evaluation-4",
+  "type": "Essential Knowledge",
+  "number": "4.6.3",
+  "title": "4.6.A.3.",
+  "body": " 4.6.A.3  Ethical design often involves trade-offs, such as how personalization can conflict with privacy. Developers should document decisions, explain constraints, and choose designs that reduce risk and protect users.  "
+},
+{
+  "id": "ethical-design-evaluation-5",
+  "level": "2",
+  "url": "topic-4-6-ai-ethics.html#ethical-design-evaluation-5",
+  "type": "Essential Knowledge",
+  "number": "4.6.4",
+  "title": "4.6.A.4.",
+  "body": " 4.6.A.4  Developers assess impacts before deployment and revise designs based on user feedback, then continue monitoring after release because real-world use can reveal new issues or model drift.  "
+},
+{
+  "id": "ethical-design-evaluation-6",
+  "level": "2",
+  "url": "topic-4-6-ai-ethics.html#ethical-design-evaluation-6",
+  "type": "Essential Knowledge",
+  "number": "4.6.5",
+  "title": "4.6.A.5.",
+  "body": " 4.6.A.5  Documentation and testing support accountability by making it clear what the system does, what data it relies on, what limitations it has, and what safeguards or human review steps are in place when the risks are high.  "
+},
+{
+  "id": "ethical-design-evaluation-7",
+  "level": "2",
+  "url": "topic-4-6-ai-ethics.html#ethical-design-evaluation-7",
+  "type": "Essential Knowledge",
+  "number": "4.6.6",
+  "title": "4.6.A.6.",
+  "body": " 4.6.A.6  To evaluate an AI system, people apply ethical design criteria by asking questions such as: Is the system fair across different users and contexts? Is it transparent about when it is used and what it is doing? Does it minimize data collection and protect privacy? Who is responsible when it fails? What protections reduce harm?  "
+},
+{
+  "id": "ethical-design-evaluation-8",
+  "level": "2",
+  "url": "topic-4-6-ai-ethics.html#ethical-design-evaluation-8",
+  "type": "Essential Knowledge",
+  "number": "4.6.7",
+  "title": "4.6.A.7.",
+  "body": " 4.6.A.7  Ethical evaluation includes proposing changes to reduce harm, such as improving disclosure, reducing data collection, adding human review for high-risk cases, expanding testing across groups, or giving users meaningful control like the ability to opt out or adjust settings.  "
+},
+{
+  "id": "ai-society-economy-culture-2",
+  "level": "2",
+  "url": "topic-4-6-ai-ethics.html#ai-society-economy-culture-2",
+  "type": "Essential Knowledge",
+  "number": "4.6.8",
+  "title": "4.6.B.1.",
+  "body": " 4.6.B.1  AI systems are designed to optimize specific goals, such as efficiency, engagement, accuracy, or generating options. Because the goal shapes what the system prioritizes, it helps explain the kinds of outcomes the system produces in areas like health, transportation, education, and media.  "
+},
+{
+  "id": "ai-society-economy-culture-3",
+  "level": "2",
+  "url": "topic-4-6-ai-ethics.html#ai-society-economy-culture-3",
+  "type": "Essential Knowledge",
+  "number": "4.6.9",
+  "title": "4.6.B.2.",
+  "body": " 4.6.B.2  AI impacts can change when a tool is deployed in a new context or used beyond its original purpose. In these cases, mismatches between training data, design assumptions, and real-world use can lead to different outcomes.  "
+},
+{
+  "id": "ai-society-economy-culture-4",
+  "level": "2",
+  "url": "topic-4-6-ai-ethics.html#ai-society-economy-culture-4",
+  "type": "Essential Knowledge",
+  "number": "4.6.10",
+  "title": "4.6.B.3.",
+  "body": " 4.6.B.3  The scale of an AI system refers to how widely it is used and how much it influences outcomes, such as the number of users, the volume of decisions it helps make, how often it is used, and the number of contexts in which it is used, including different schools, jobs, regions, or languages.  "
+},
+{
+  "id": "ai-society-economy-culture-5",
+  "level": "2",
+  "url": "topic-4-6-ai-ethics.html#ai-society-economy-culture-5",
+  "type": "Essential Knowledge",
+  "number": "4.6.11",
+  "title": "4.6.B.4.",
+  "body": " 4.6.B.4  When an AI tool is used on a large scale, even small design choices, errors, or biased patterns can affect many people, and impacts that seem minor for one user can become significant across a large population. AI tools can also influence individual behavior and habits. When many people rely on the same tool, those shifts can accumulate and reshape group norms and expectations, such as how people write, search, or communicate, even if the tool was originally intended as only a helper.  "
+},
+{
+  "id": "ai-society-economy-culture-6",
+  "level": "2",
+  "url": "topic-4-6-ai-ethics.html#ai-society-economy-culture-6",
+  "type": "Essential Knowledge",
+  "number": "4.6.12",
+  "title": "4.6.B.5.",
+  "body": " 4.6.B.5  AI can produce uneven outcomes through multiple pathways. These may include training data and labels that shape which users the system works well for, design choices that determine what errors are tolerated and what feedback users receive, and decision-making practices that determine how outputs are applied in real life.  "
+},
+{
+  "id": "ai-society-economy-culture-7",
+  "level": "2",
+  "url": "topic-4-6-ai-ethics.html#ai-society-economy-culture-7",
+  "type": "Essential Knowledge",
+  "number": "4.6.13",
+  "title": "4.6.B.6.",
+  "body": " 4.6.B.6  AI can reshape work and economic systems by changing the cost, speed, and quality of tasks. This can increase productivity and create new jobs and skills needs, while also contributing to job displacement or changes in wages and working conditions.  "
+},
+{
+  "id": "ai-society-economy-culture-8",
+  "level": "2",
+  "url": "topic-4-6-ai-ethics.html#ai-society-economy-culture-8",
+  "type": "Essential Knowledge",
+  "number": "4.6.14",
+  "title": "4.6.B.7.",
+  "body": " 4.6.B.7  AI shapes culture and communication by filtering what people see and what content gets created and shared. When these systems are widely used, they can influence what spreads, what is rewarded with attention, and what people consider normal or trustworthy.  "
+},
+{
+  "id": "ai-society-economy-culture-9",
+  "level": "2",
+  "url": "topic-4-6-ai-ethics.html#ai-society-economy-culture-9",
+  "type": "Essential Knowledge",
+  "number": "4.6.15",
+  "title": "4.6.B.8.",
+  "body": " 4.6.B.8  AI systems can have environmental impacts due to energy use, computing infrastructure, and material consumption.  "
+},
+{
+  "id": "ai-society-economy-culture-10",
+  "level": "2",
+  "url": "topic-4-6-ai-ethics.html#ai-society-economy-culture-10",
+  "type": "Essential Knowledge",
+  "number": "4.6.16",
+  "title": "4.6.B.9.",
+  "body": " 4.6.B.9  To analyze AI's broader impact, consider how the system is used: identify who uses it and who is affected, where it is deployed and at what scale, and how outputs influence decisions and behavior. Use these observations to determine who benefits, who may be harmed or left out, and what changes when context or scale changes.  "
+},
+{
+  "id": "LOs-4-6-2",
+  "level": "2",
+  "url": "topic-4-6-ai-ethics.html#LOs-4-6-2",
+  "type": "Learning Objective",
+  "number": "4.6.17",
+  "title": "4.6.A.",
+  "body": " 4.6.A  Evaluate the implementation of AI systems using ethical design criteria.  "
+},
+{
+  "id": "LOs-4-6-3",
+  "level": "2",
+  "url": "topic-4-6-ai-ethics.html#LOs-4-6-3",
+  "type": "Learning Objective",
+  "number": "4.6.18",
+  "title": "4.6.B.",
+  "body": " 4.6.B  Explain how AI impacts society, the economy, and culture.  "
+},
+{
+  "id": "topic-4-7-machine-learning",
+  "level": "1",
+  "url": "topic-4-7-machine-learning.html",
+  "type": "Section",
+  "number": "4.7",
+  "title": "Machine Learning",
+  "body": "  Machine Learning  machine-learning   Quick Links:   In this topic, we examine how data and probabilistic algorithms shape machine learning outputs, and how training-data choices affect accuracy, privacy, and bias.    How Data and Probabilistic Algorithms Shape Outputs   4.7.A.1  Training data for machine learning can come from sources such as sensors, surveys, simulations, or existing data sets. Depending on the task, the data may include labels, which are the correct outputs paired with example data inputs.    4.7.A.2  Machine learning models use training data to learn patterns that connect inputs to outputs. These patterns come from the examples in the training data and, for supervised learning, the labels attached to them.    4.7.A.3  Training data is often split into separate sets so the model can learn from one set and then be evaluated on different data it has not seen before. The training set is used to build the model, the validation set is used to adjust model choices and check performance during development, and the test set is used for a final check of how well the model performs on new examples.    4.7.A.4  In supervised learning, training examples are paired with labels that represent the correct output. Using both examples that match the target and nonexamples that do not match the target helps the model learn boundaries and make more accurate distinctions.    4.7.A.5  Many machine learning models produce probabilistic outputs, such as a likelihood or confidence score, rather than a guaranteed answer. People decide how to use these scores by choosing a threshold, which determines when the system accepts a prediction automatically and when it requires more checking or human review.    4.7.A.6  When using a threshold, a system can make two kinds of mistakes. A false positive occurs when the system incorrectly accepts something that should be rejected. A false negative occurs when the system incorrectly rejects something that should be accepted. Changing the threshold usually reduces one kind of error while increasing the other, so developers choose thresholds by considering which error is more harmful for the user and the situation. Developers may also add human review or additional checks to reduce harm.    4.7.A.7  Training sets that include diverse examples and counterexamples help a model generalize, meaning it performs well on new inputs and varied real-world situations, not just the examples it learned from.    4.7.A.8  A model can appear to work well during development but still perform poorly on new inputs if it learns patterns that do not generalize beyond the training examples. Testing a model on new data helps evaluate whether its patterns transfer beyond the training sets.     Training Data, Accuracy, Privacy, and Bias   4.7.B.1  Training data may be processed before a model is trained to decide which examples are included and how they are organized. Sampling can reduce data set size or balance the number of examples across categories. Sampling decisions can improve performance for underrepresented cases, but they can also reduce accuracy if important cases are removed or under-sampled.    4.7.B.2  Training data can expose sensitive information. Privacy protection includes minimizing, limiting access to, and protecting sensitive data during storage and sharing.    4.7.B.3  Bias can occur when training data does not represent the people or situations the model will be used for, or when labels reflect human assumptions. Collecting more data does not necessarily reduce bias if the same sampling methods or labeling choices continue.    4.7.B.4  Training data should reflect the intended users and real-world contexts where the model will be used. If the data set differs from actual use, the model can perform poorly or unevenly across users even if it appears accurate during testing. Evaluating training data includes checking whether it represents the people, environments, languages, and situations the system is meant to support, and testing with representative user scenarios to reduce confusion and unequal performance.     Learning Objectives Review   4.7.A  Explain how data and probabilistic algorithms shape machine learning outputs.    4.7.B  Explain how training data decisions can affect accuracy, privacy, and bias.     Vocabulary Review   "
+},
+{
+  "id": "ml-outputs-from-data-and-probability-2",
+  "level": "2",
+  "url": "topic-4-7-machine-learning.html#ml-outputs-from-data-and-probability-2",
+  "type": "Essential Knowledge",
+  "number": "4.7.1",
+  "title": "4.7.A.1.",
+  "body": " 4.7.A.1  Training data for machine learning can come from sources such as sensors, surveys, simulations, or existing data sets. Depending on the task, the data may include labels, which are the correct outputs paired with example data inputs.  "
+},
+{
+  "id": "ml-outputs-from-data-and-probability-3",
+  "level": "2",
+  "url": "topic-4-7-machine-learning.html#ml-outputs-from-data-and-probability-3",
+  "type": "Essential Knowledge",
+  "number": "4.7.2",
+  "title": "4.7.A.2.",
+  "body": " 4.7.A.2  Machine learning models use training data to learn patterns that connect inputs to outputs. These patterns come from the examples in the training data and, for supervised learning, the labels attached to them.  "
+},
+{
+  "id": "ml-outputs-from-data-and-probability-4",
+  "level": "2",
+  "url": "topic-4-7-machine-learning.html#ml-outputs-from-data-and-probability-4",
+  "type": "Essential Knowledge",
+  "number": "4.7.3",
+  "title": "4.7.A.3.",
+  "body": " 4.7.A.3  Training data is often split into separate sets so the model can learn from one set and then be evaluated on different data it has not seen before. The training set is used to build the model, the validation set is used to adjust model choices and check performance during development, and the test set is used for a final check of how well the model performs on new examples.  "
+},
+{
+  "id": "ml-outputs-from-data-and-probability-5",
+  "level": "2",
+  "url": "topic-4-7-machine-learning.html#ml-outputs-from-data-and-probability-5",
+  "type": "Essential Knowledge",
+  "number": "4.7.4",
+  "title": "4.7.A.4.",
+  "body": " 4.7.A.4  In supervised learning, training examples are paired with labels that represent the correct output. Using both examples that match the target and nonexamples that do not match the target helps the model learn boundaries and make more accurate distinctions.  "
+},
+{
+  "id": "ml-outputs-from-data-and-probability-6",
+  "level": "2",
+  "url": "topic-4-7-machine-learning.html#ml-outputs-from-data-and-probability-6",
+  "type": "Essential Knowledge",
+  "number": "4.7.5",
+  "title": "4.7.A.5.",
+  "body": " 4.7.A.5  Many machine learning models produce probabilistic outputs, such as a likelihood or confidence score, rather than a guaranteed answer. People decide how to use these scores by choosing a threshold, which determines when the system accepts a prediction automatically and when it requires more checking or human review.  "
+},
+{
+  "id": "ml-outputs-from-data-and-probability-7",
+  "level": "2",
+  "url": "topic-4-7-machine-learning.html#ml-outputs-from-data-and-probability-7",
+  "type": "Essential Knowledge",
+  "number": "4.7.6",
+  "title": "4.7.A.6.",
+  "body": " 4.7.A.6  When using a threshold, a system can make two kinds of mistakes. A false positive occurs when the system incorrectly accepts something that should be rejected. A false negative occurs when the system incorrectly rejects something that should be accepted. Changing the threshold usually reduces one kind of error while increasing the other, so developers choose thresholds by considering which error is more harmful for the user and the situation. Developers may also add human review or additional checks to reduce harm.  "
+},
+{
+  "id": "ml-outputs-from-data-and-probability-8",
+  "level": "2",
+  "url": "topic-4-7-machine-learning.html#ml-outputs-from-data-and-probability-8",
+  "type": "Essential Knowledge",
+  "number": "4.7.7",
+  "title": "4.7.A.7.",
+  "body": " 4.7.A.7  Training sets that include diverse examples and counterexamples help a model generalize, meaning it performs well on new inputs and varied real-world situations, not just the examples it learned from.  "
+},
+{
+  "id": "ml-outputs-from-data-and-probability-9",
+  "level": "2",
+  "url": "topic-4-7-machine-learning.html#ml-outputs-from-data-and-probability-9",
+  "type": "Essential Knowledge",
+  "number": "4.7.8",
+  "title": "4.7.A.8.",
+  "body": " 4.7.A.8  A model can appear to work well during development but still perform poorly on new inputs if it learns patterns that do not generalize beyond the training examples. Testing a model on new data helps evaluate whether its patterns transfer beyond the training sets.  "
+},
+{
+  "id": "training-data-accuracy-privacy-bias-2",
+  "level": "2",
+  "url": "topic-4-7-machine-learning.html#training-data-accuracy-privacy-bias-2",
+  "type": "Essential Knowledge",
+  "number": "4.7.9",
+  "title": "4.7.B.1.",
+  "body": " 4.7.B.1  Training data may be processed before a model is trained to decide which examples are included and how they are organized. Sampling can reduce data set size or balance the number of examples across categories. Sampling decisions can improve performance for underrepresented cases, but they can also reduce accuracy if important cases are removed or under-sampled.  "
+},
+{
+  "id": "training-data-accuracy-privacy-bias-3",
+  "level": "2",
+  "url": "topic-4-7-machine-learning.html#training-data-accuracy-privacy-bias-3",
+  "type": "Essential Knowledge",
+  "number": "4.7.10",
+  "title": "4.7.B.2.",
+  "body": " 4.7.B.2  Training data can expose sensitive information. Privacy protection includes minimizing, limiting access to, and protecting sensitive data during storage and sharing.  "
+},
+{
+  "id": "training-data-accuracy-privacy-bias-4",
+  "level": "2",
+  "url": "topic-4-7-machine-learning.html#training-data-accuracy-privacy-bias-4",
+  "type": "Essential Knowledge",
+  "number": "4.7.11",
+  "title": "4.7.B.3.",
+  "body": " 4.7.B.3  Bias can occur when training data does not represent the people or situations the model will be used for, or when labels reflect human assumptions. Collecting more data does not necessarily reduce bias if the same sampling methods or labeling choices continue.  "
+},
+{
+  "id": "training-data-accuracy-privacy-bias-5",
+  "level": "2",
+  "url": "topic-4-7-machine-learning.html#training-data-accuracy-privacy-bias-5",
+  "type": "Essential Knowledge",
+  "number": "4.7.12",
+  "title": "4.7.B.4.",
+  "body": " 4.7.B.4  Training data should reflect the intended users and real-world contexts where the model will be used. If the data set differs from actual use, the model can perform poorly or unevenly across users even if it appears accurate during testing. Evaluating training data includes checking whether it represents the people, environments, languages, and situations the system is meant to support, and testing with representative user scenarios to reduce confusion and unequal performance.  "
+},
+{
+  "id": "LOs-4-7-2",
+  "level": "2",
+  "url": "topic-4-7-machine-learning.html#LOs-4-7-2",
+  "type": "Learning Objective",
+  "number": "4.7.13",
+  "title": "4.7.A.",
+  "body": " 4.7.A  Explain how data and probabilistic algorithms shape machine learning outputs.  "
+},
+{
+  "id": "LOs-4-7-3",
+  "level": "2",
+  "url": "topic-4-7-machine-learning.html#LOs-4-7-3",
+  "type": "Learning Objective",
+  "number": "4.7.14",
+  "title": "4.7.B.",
+  "body": " 4.7.B  Explain how training data decisions can affect accuracy, privacy, and bias.  "
 },
 {
   "id": "cspossible-8-1",
