@@ -59,15 +59,15 @@ eBookConfig.enableScratchAC = true;
 eBookConfig.acDefaultLanguage = 'python';
 eBookConfig.build_info = "";
 eBookConfig.python3 = null;
-eBookConfig.runestone_version = '8.1.16';
+eBookConfig.runestone_version = '8.2.0';
 eBookConfig.jobehost = '';
 eBookConfig.proxyuri_runs = '';
 eBookConfig.proxyuri_files = '';
 eBookConfig.enable_chatcodes =  false;
 </script>
 <!--*** Runestone Services ***-->
-<script src="_static/prefix-runtime.279b1f0077454c32.bundle.js"></script><script src="_static/prefix-926.5c7038c8ef173faf.bundle.js"></script><script src="_static/prefix-runestone.db8001875cb726c2.bundle.js"></script><link rel="stylesheet" type="text/css" href="_static/prefix-926.229729d09512acc9.css">
-<link rel="stylesheet" type="text/css" href="_static/prefix-runestone.66fa8a682a32c0ac.css">
+<script src="_static/prefix-runtime.82b0f3334d1d4a05.bundle.js"></script><script src="_static/prefix-926.5c7038c8ef173faf.bundle.js"></script><script src="_static/prefix-runestone.5555907f139e2014.bundle.js"></script><link rel="stylesheet" type="text/css" href="_static/prefix-926.229729d09512acc9.css">
+<link rel="stylesheet" type="text/css" href="_static/prefix-runestone.8086b62682b271d1.css">
 <script src="_static/pretext/js/dist/lti_iframe_resizer.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.26.0/components/prism-core.min.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.26.0/plugins/autoloader/prism-autoloader.min.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.26.0/plugins/line-numbers/prism-line-numbers.min.js" integrity="sha512-dubtf8xMHSQlExGRQ5R7toxHLgSDZ0K7AunqPWHXmJQ8XyVIG19S1T95gBxlAeGOK02P4Da2RTnQz0Za0H0ebQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.26.0/plugins/line-highlight/prism-line-highlight.min.js" integrity="sha512-93uCmm0q+qO5Lb1huDqr7tywS8A2TFA+1/WHvyiWaK6/pvsFl6USnILagntBx8JnVbQH5s3n0vQZY6xNthNfKA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.9/lunr.min.js" integrity="sha512-4xUl/d6D6THrAnXAwGajXkoWaeMNwEKK4iNfq5DotEbLPAfk6FSxSP3ydNxqDgCw1c/0Z1Jg6L8h2j+++9BZmg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script><script src="lunr-pretext-search-index.js" async=""></script><script src="_static/pretext/js/dist/pretext_search.js"></script><!--knowl.js code controls Sage Cells within knowls--><script>sagecellEvalName='Evaluate (Sage)';
 </script>
 </head>
@@ -513,13 +513,17 @@ if "@gmail.com" in email:
 else:
     print("Invalid email.")
 ====
+
 from unittest.gui import TestCaseGui
 
 class myTests(TestCaseGui):
     def test1(self):
-        self.assertIn('"@" in email',self.getEditorText(), 'Check for "@" in email')
-        self.assertIn('"." in email',self.getEditorText(), 'Check for "." in email')
-        self.assertNotIn("@gmail.com",self.getEditorText(), "Don't use @gmail.com")
+        def contains(item, container):
+            return item if item in container else None
+
+        self.assertEqual(contains('"@" in email', self.getEditorText()), '"@" in email', 'Check for "@" in email')
+        self.assertEqual(contains('"." in email', self.getEditorText()), '"." in email', 'Check for "." in email')
+        self.assertEqual(contains("@gmail.com", self.getEditorText()), None, "Don't use @gmail.com")
 
 myTests().main()
 </textarea>
@@ -540,12 +544,16 @@ print("The number is 5")
 if x != 5:
 print("The number is NOT 5")
 ====
+
 from unittest.gui import TestCaseGui
 
 class myTests(TestCaseGui):
       def test1(self):
-          self.assertNotIn("if x != 5",self.getEditorText(), "Don't use x != 5")
-          self.assertIn("else",self.getEditorText(), "Use else")
+          def contains(item, container):
+              return item if item in container else None
+
+          self.assertEqual(contains("if x != 5", self.getEditorText()), None, "Don't use x != 5")
+          self.assertEqual(contains("else", self.getEditorText()), "else", "Use else")
 
 myTests().main()
 </textarea>
@@ -568,12 +576,16 @@ price = 1.30
     total = weight * price
 print(total)
 ====
+
 from unittest.gui import TestCaseGui
 
 class myTests(TestCaseGui):
     def testOne(self):
+        def contains(item, container):
+            return item if item in container else None
+
         self.assertAlmostEqual(total, 3.9, 2, "Testing the total is 3.9.")
-        self.assertIn("else:",self.getEditorText(), "Check for else:")
+        self.assertEqual(contains("else:", self.getEditorText()), "else:", "Check for else:")
 
 myTests().main()
 </textarea>
@@ -594,14 +606,18 @@ mathCredits = 2
 # Print "Can Graduate" or "Cannot Graduate"
 ====
 
+
 from unittest.gui import TestCaseGui
 
 class myTests(TestCaseGui):
     def testOne(self):
-        self.assertIn("totalCredits&gt;=22",,self.getEditorText().replace(" ", ""), 'Check for totalCredits &gt;= 22')
-        self.assertIn("mathCredits&gt;=3",self.getEditorText().replace(" ", ""), 'Check for mathCredits &gt;= 3')
-        self.assertIn('else:',self.getEditorText(), 'Check for else:')
-        self.assertIn("Cannot Graduate", self.getOutput(), "Output has Cannot Graduate (for 22 total and 2 math)")
+        def contains(item, container):
+            return item if item in container else None
+
+        self.assertEqual(contains("totalCredits&gt;=22", self.getEditorText().replace(" ", "")), "totalCredits&gt;=22", 'Check for totalCredits &gt;= 22')
+        self.assertEqual(contains("mathCredits&gt;=3", self.getEditorText().replace(" ", "")), "mathCredits&gt;=3", 'Check for mathCredits &gt;= 3')
+        self.assertEqual(contains('else:', self.getEditorText()), 'else:', 'Check for else:')
+        self.assertEqual(contains("Cannot Graduate", self.getOutput()), "Cannot Graduate", "Output has Cannot Graduate (for 22 total and 2 math)")
 
 myTests().main()
 </textarea>
@@ -619,13 +635,17 @@ myTests().main()
 <textarea data-lang="python" data-audio="" data-coach="true" style="visibility: hidden;" id="rs-is-even_editor" data-question_label="" data-codelens="true" data-timelimit="25000">number = 9
 # Check if the number is even using % and print out "even" or "odd"
 ====
+
 from unittest.gui import TestCaseGui
 
 class myTests(TestCaseGui):
     def testOne(self):
-        self.assertIn("number%2==0",self.getEditorText().replace(" ", ""), "Check if number % 2 == 0")
-        self.assertIn("else:",self.getEditorText(), "Use else: for odd numbers")
-        self.assertIn("odd", self.getOutput(), "Check that the output is odd for 9")
+        def contains(item, container):
+            return item if item in container else None
+
+        self.assertEqual(contains("number%2==0", self.getEditorText().replace(" ", "")), "number%2==0", "Check if number % 2 == 0")
+        self.assertEqual(contains("else:", self.getEditorText()), "else:", "Use else: for odd numbers")
+        self.assertEqual(contains("odd", self.getOutput()), "odd", "Check that the output is odd for 9")
 
 myTests().main()
 </textarea>
@@ -647,13 +667,17 @@ payRate = 18
 # and 1.5 times the normal pay for the hours over 40.
 ====
 
+
 from unittest.gui import TestCaseGui
 
 class myTests(TestCaseGui):
     def testOne(self):
-        self.assertIn("hours&lt;=40",self.getEditorText().replace(" ", ""), "Check for hours &lt;= 40")
-        self.assertIn("hours-40",self.getEditorText().replace(" ", ""), "Check for hours - 40")
-        self.assertIn("990", self.getOutput(), "Answer is 990 for 50 hours at $18/hr + overtime")
+        def contains(item, container):
+            return item if item in container else None
+
+        self.assertEqual(contains("hours&lt;=40", self.getEditorText().replace(" ", "")), "hours&lt;=40", "Check for hours &lt;= 40")
+        self.assertEqual(contains("hours-40", self.getEditorText().replace(" ", "")), "hours-40", "Check for hours - 40")
+        self.assertEqual(contains("990", self.getOutput()), "990", "Answer is 990 for 50 hours at $18/hr + overtime")
 
 myTests().main()
 </textarea>
@@ -674,14 +698,18 @@ myTests().main()
 # Write if statements to determine if the student is a Senior, Junior, Sophomore or First Year
 ====
 
+
 from unittest.gui import TestCaseGui
 
 class myTests(TestCaseGui):
     def testOne(self):
-        self.assertIn("credits&gt;=90",self.getEditorText().replace(" ", ""), "Check for credits &gt;= 90")
-        self.assertIn("credits&gt;=60",self.getEditorText().replace(" ", ""), "Check for credits &gt;= 60")
-        self.assertIn("credits&gt;=30",self.getEditorText().replace(" ", ""), "Check for credits &gt;= 30")
-        self.assertIn("Sophomore", self.getOutput(), "Output has Sophomore (for 40 credits)")
+        def contains(item, container):
+            return item if item in container else None
+
+        self.assertEqual(contains("credits&gt;=90", self.getEditorText().replace(" ", "")), "credits&gt;=90", "Check for credits &gt;= 90")
+        self.assertEqual(contains("credits&gt;=60", self.getEditorText().replace(" ", "")), "credits&gt;=60", "Check for credits &gt;= 60")
+        self.assertEqual(contains("credits&gt;=30", self.getEditorText().replace(" ", "")), "credits&gt;=30", "Check for credits &gt;= 30")
+        self.assertEqual(contains("Sophomore", self.getOutput()), "Sophomore", "Output has Sophomore (for 40 credits)")
 
 myTests().main()
 </textarea>
@@ -705,13 +733,17 @@ mealLocation = "I want it to dine in please"
 # if the mealLocation has "to go" in it, then the cost is just the mealPrice
 # otherwise the cost is the mealPrice times 1.08 (for the tax)
 ====
+
 from unittest.gui import TestCaseGui
 
 class myTests(TestCaseGui):
     def testOne(self):
-      self.assertIn('"to go" in mealLocation:',self.getEditorText(), 'Check for "to go" in mealLocation:')
-      self.assertIn('else',self.getEditorText(), 'Check for else')
-      self.assertIn("10.8", self.getOutput(), "Output has cost 10.8 (with tax)")
+        def contains(item, container):
+            return item if item in container else None
+
+        self.assertEqual(contains('"to go" in mealLocation:', self.getEditorText()), '"to go" in mealLocation:', 'Check for "to go" in mealLocation:')
+        self.assertEqual(contains('else', self.getEditorText()), 'else', 'Check for else')
+        self.assertEqual(contains("10.8", self.getOutput()), "10.8", "Output has cost 10.8 (with tax)")
 
 myTests().main()
 </textarea>
@@ -730,15 +762,19 @@ myTests().main()
 # Cost is 0 for 65+ or under 12, $8 for 12-17, of $15 otherwise
 ====
 
+
 from unittest.gui import TestCaseGui
 
 class myTests(TestCaseGui):
     def testOne(self):
-      self.assertIn("age&gt;65",self.getEditorText().replace('\n', ''), 'Check for age &gt;= 65')
-      self.assertIn('if',self.getEditorText(), 'Check for if')
-      self.assertIn("elif",self.getEditorText().replace('\n', ''), 'Check for elif')
-      self.assertIn('else',self.getEditorText(), 'Check for else')
-      self.assertIn("8", self.getOutput(), "Output has cost 8 (for 12-17)")
+        def contains(item, container):
+            return item if item in container else None
+
+        self.assertEqual(contains("age&gt;65", self.getEditorText().replace('\n', '')), "age&gt;65", 'Check for age &gt;= 65')
+        self.assertEqual(contains('if', self.getEditorText()), 'if', 'Check for if')
+        self.assertEqual(contains("elif", self.getEditorText().replace('\n', '')), "elif", 'Check for elif')
+        self.assertEqual(contains('else', self.getEditorText()), 'else', 'Check for else')
+        self.assertEqual(contains("8", self.getOutput()), "8", "Output has cost 8 (for 12-17)")
 
 myTests().main()
 </textarea>
