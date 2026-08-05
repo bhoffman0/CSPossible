@@ -504,8 +504,8 @@ eBookConfig.enable_chatcodes =  false;
 <div class="para" id="unit2-selection-coding-practice-3">These are exercises mostly written by Dr. Barb Ericson in the AP CSP and Python for Everybody ebooks on Runestone.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#unit2-selection-coding-practice-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="runestone datafile">
-<div class="datafile_caption"><code class="code-inline tex2jax_ignore">Data: unittesthelper</code></div>
-<pre id="rs-unittesthelper" data-component="datafile" data-filename="unittesthelper" data-edit="false" data-hidden="" data-rows="20" data-cols="60">testvar = 5
+<div class="datafile_caption"><code class="code-inline tex2jax_ignore">Data: unittesthelper.py</code></div>
+<pre id="rs-unittesthelper" data-component="datafile" data-filename="unittesthelper.py" data-edit="false" data-hidden="" data-rows="20" data-cols="60">testvar = 5
 def contains(item, container):
     return item if item in container else None
 </pre>
@@ -530,11 +530,12 @@ from unittest.gui import TestCaseGui
 
 class myTests(TestCaseGui):
     def test1(self):
+        def contains(item, container):
+            return item if item in container else None
 
-
-        self.assertEqual(contains('"@" in email', self.getEditorText()), '"@" in email', 'Check for "@" in email')
-        self.assertEqual(contains('"." in email', self.getEditorText()), '"." in email', 'Check for "." in email')
-        self.assertEqual(contains("@gmail.com", self.getEditorText()), None, "Don't use @gmail.com")
+        self.assertEqual('"@" in email', contains('"@" in email', self.getEditorText()), 'Check for "@" in email')
+        self.assertEqual('"." in email', contains('"." in email', self.getEditorText()), 'Check for "." in email')
+        self.assertEqual(None, contains("@gmail.com", self.getEditorText()), "Don't use @gmail.com")
 
 myTests().main()
 </textarea>
@@ -563,8 +564,8 @@ class myTests(TestCaseGui):
           def contains(item, container):
               return item if item in container else None
 
-          self.assertEqual(contains("if x != 5", self.getEditorText()), None, "Don't use x != 5")
-          self.assertEqual(contains("else", self.getEditorText()), "else", "Use else")
+          self.assertEqual(None, contains("if x != 5", self.getEditorText()), "Don't use x != 5")
+          self.assertEqual("else", contains("else", self.getEditorText()), "Use else")
 
 myTests().main()
 </textarea>
@@ -595,8 +596,8 @@ class myTests(TestCaseGui):
         def contains(item, container):
             return item if item in container else None
 
-        self.assertAlmostEqual(total, 1.5, 2, "Testing the total is 1.5.")
-        self.assertEqual(contains("else:", self.getEditorText()), "else:", "Check for else:")
+        self.assertAlmostEqual(1.5, total, 2, "Testing the total is 1.5.")
+        self.assertEqual("else:", contains("else:", self.getEditorText()), "Check for else:")
 
 myTests().main()
 </textarea>
@@ -625,10 +626,10 @@ class myTests(TestCaseGui):
         def contains(item, container):
             return item if item in container else None
 
-        self.assertEqual(contains("totalCredits&gt;=22", self.getEditorText().replace(" ", "")), "totalCredits&gt;=22", 'Check for totalCredits &gt;= 22')
-        self.assertEqual(contains("mathCredits&gt;=3", self.getEditorText().replace(" ", "")), "mathCredits&gt;=3", 'Check for mathCredits &gt;= 3')
-        self.assertEqual(contains('else:', self.getEditorText()), 'else:', 'Check for else:')
-        self.assertEqual(contains("Cannot Graduate", self.getOutput()), "Cannot Graduate", "Output has Cannot Graduate (for 22 total and 2 math)")
+        self.assertEqual("totalCredits&gt;=22", contains("totalCredits&gt;=22", self.getEditorText().replace(" ", "")), 'Check for totalCredits &gt;= 22')
+        self.assertEqual("mathCredits&gt;=3", contains("mathCredits&gt;=3", self.getEditorText().replace(" ", "")), 'Check for mathCredits &gt;= 3')
+        self.assertEqual('else:', contains('else:', self.getEditorText()), 'Check for else:')
+        self.assertEqual( "Cannot Graduate", contains("Cannot Graduate", self.getOutput()),"Output has Cannot Graduate (for 22 total and 2 math)")
 
 myTests().main()
 </textarea>
@@ -654,9 +655,9 @@ class myTests(TestCaseGui):
         def contains(item, container):
             return item if item in container else None
 
-        self.assertEqual(contains("number%2==0", self.getEditorText().replace(" ", "")), "number%2==0", "Check if number % 2 == 0")
-        self.assertEqual(contains("else:", self.getEditorText()), "else:", "Use else: for odd numbers")
-        self.assertEqual(contains("odd", self.getOutput()), "odd", "Check that the output is odd for 9")
+        self.assertEqual("number%2==0", contains("number%2==0", self.getEditorText().replace(" ", "")), "Check if number % 2 == 0")
+        self.assertEqual("else:", contains("else:", self.getEditorText()), "Use else: for odd numbers")
+        self.assertEqual("odd", contains("odd", self.getOutput()), "Check that the output is odd for 9")
 
 myTests().main()
 </textarea>
@@ -686,9 +687,9 @@ class myTests(TestCaseGui):
         def contains(item, container):
             return item if item in container else None
 
-        self.assertEqual(contains("hours&lt;=40", self.getEditorText().replace(" ", "")), "hours&lt;=40", "Check for hours &lt;= 40")
-        self.assertEqual(contains("hours-40", self.getEditorText().replace(" ", "")), "hours-40", "Check for hours - 40")
-        self.assertEqual(contains("990", self.getOutput()), "990", "Answer is 990 for 50 hours at $18/hr + overtime")
+        self.assertEqual("hours&lt;=40", contains("hours&lt;=40", self.getEditorText().replace(" ", "")), "Check for hours &lt;= 40")
+        self.assertEqual("hours-40", contains("hours-40", self.getEditorText().replace(" ", "")), "Check for hours - 40")
+        self.assertEqual("990", contains("990", self.getOutput()), "Answer is 990 for 50 hours at $18/hr + overtime")
 
 myTests().main()
 </textarea>
@@ -717,10 +718,10 @@ class myTests(TestCaseGui):
         def contains(item, container):
             return item if item in container else None
 
-        self.assertEqual(contains("credits&gt;=90", self.getEditorText().replace(" ", "")), "credits&gt;=90", "Check for credits &gt;= 90")
-        self.assertEqual(contains("credits&gt;=60", self.getEditorText().replace(" ", "")), "credits&gt;=60", "Check for credits &gt;= 60")
-        self.assertEqual(contains("credits&gt;=30", self.getEditorText().replace(" ", "")), "credits&gt;=30", "Check for credits &gt;= 30")
-        self.assertEqual(contains("Sophomore", self.getOutput()), "Sophomore", "Output has Sophomore (for 40 credits)")
+        self.assertEqual("credits&gt;=90", contains("credits&gt;=90", self.getEditorText().replace(" ", "")), "Check for credits &gt;= 90")
+        self.assertEqual("credits&gt;=60", contains("credits&gt;=60", self.getEditorText().replace(" ", "")), "Check for credits &gt;= 60")
+        self.assertEqual("credits&gt;=30", contains("credits&gt;=30", self.getEditorText().replace(" ", "")), "Check for credits &gt;= 30")
+        self.assertEqual("Sophomore", contains("Sophomore", self.getOutput()), "Output has Sophomore (for 40 credits)")
 
 myTests().main()
 </textarea>
@@ -752,9 +753,9 @@ class myTests(TestCaseGui):
         def contains(item, container):
             return item if item in container else None
 
-        self.assertEqual(contains('"to go" in mealLocation:', self.getEditorText()), '"to go" in mealLocation:', 'Check for "to go" in mealLocation:')
-        self.assertEqual(contains('else', self.getEditorText()), 'else', 'Check for else')
-        self.assertEqual(contains("10.8", self.getOutput()), "10.8", "Output has cost 10.8 (with tax)")
+        self.assertEqual('"to go" in mealLocation:', contains('"to go" in mealLocation:', self.getEditorText()), 'Check for "to go" in mealLocation:')
+        self.assertEqual('else', contains('else', self.getEditorText()), 'Check for else')
+        self.assertEqual("10.8", contains("10.8", self.getOutput()), "Output has cost 10.8 (with tax)")
 
 myTests().main()
 </textarea>
@@ -781,11 +782,11 @@ class myTests(TestCaseGui):
         def contains(item, container):
             return item if item in container else None
 
-        self.assertEqual(contains("age&gt;65", self.getEditorText().replace('\n', '')), "age&gt;65", 'Check for age &gt;= 65')
-        self.assertEqual(contains('if', self.getEditorText()), 'if', 'Check for if')
-        self.assertEqual(contains("elif", self.getEditorText().replace('\n', '')), "elif", 'Check for elif')
-        self.assertEqual(contains('else', self.getEditorText()), 'else', 'Check for else')
-        self.assertEqual(contains("8", self.getOutput()), "8", "Output has cost 8 (for 12-17)")
+        self.assertEqual("age&gt;65", contains("age&gt;65", self.getEditorText().replace(' ', '')), 'Check for age &gt;= 65')
+        self.assertEqual('if', contains('if', self.getEditorText()), 'Check for if')
+        self.assertEqual("elif", contains("elif", self.getEditorText().replace(' ', '')), 'Check for elif')
+        self.assertEqual('else', contains('else', self.getEditorText()), 'Check for else')
+        self.assertEqual("8", contains("8", self.getOutput()), "Output has cost 8 (for 12-17)")
 
 myTests().main()
 </textarea>
