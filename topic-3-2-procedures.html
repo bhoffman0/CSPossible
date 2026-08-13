@@ -14,7 +14,7 @@
 <!--******************************************-->
 <head xmlns:og="http://ogp.me/ns#" xmlns:book="https://ogp.me/ns/book#">
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>Procedures</title>
+<title>Procedures (Functions)</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0">
@@ -348,10 +348,11 @@ eBookConfig.enable_chatcodes =  false;
 <div class="toc-title-box"><a href="topic-2-6-errors.html" class="internal"><span class="codenumber">2.6</span> <span class="title">Errors</span></a></div>
 <ul id="ptx-toc-group-topic-2-6-errors" class="structural toc-item-list">
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="topic-2-6-errors.html#correcting-errors" class="internal"><span class="codenumber">2.6.1</span> <span class="title">Correcting Errors</span></a></div></li>
-<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="topic-2-6-errors.html#topic-2-6-errors-5" class="internal"><span class="codenumber">2.6.2</span> <span class="title">Testing and Test Cases</span></a></div></li>
-<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="topic-2-6-errors.html#POGIL-test-plans" class="internal"><span class="codenumber">2.6.3</span> <span class="title">POGIL Test Plans</span></a></div></li>
-<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="topic-2-6-errors.html#LOs-2-6" class="internal"><span class="codenumber">2.6.4</span> <span class="title">Learning Objectives</span></a></div></li>
-<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="topic-2-6-errors.html#vocab-2-6" class="internal"><span class="codenumber">2.6.5</span> <span class="title">Vocabulary Review</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="topic-2-6-errors.html#rubber-duck-AI-debugging" class="internal"><span class="codenumber">2.6.2</span> <span class="title">Rubber Duck and AI Tools for Debugging</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="topic-2-6-errors.html#topic-2-6-errors-6" class="internal"><span class="codenumber">2.6.3</span> <span class="title">Testing and Test Cases</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="topic-2-6-errors.html#POGIL-test-plans" class="internal"><span class="codenumber">2.6.4</span> <span class="title">POGIL Test Plans</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="topic-2-6-errors.html#LOs-2-6" class="internal"><span class="codenumber">2.6.5</span> <span class="title">Learning Objectives</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="topic-2-6-errors.html#vocab-2-6" class="internal"><span class="codenumber">2.6.6</span> <span class="title">Vocabulary Review</span></a></div></li>
 </ul>
 </li>
 <li class="toc-item toc-section">
@@ -409,13 +410,14 @@ eBookConfig.enable_chatcodes =  false;
 </ul>
 </li>
 <li class="toc-item toc-section contains-active">
-<div class="toc-title-box"><a href="topic-3-2-procedures.html" class="internal"><span class="codenumber">3.2</span> <span class="title">Procedures</span></a></div>
+<div class="toc-title-box"><a href="topic-3-2-procedures.html" class="internal"><span class="codenumber">3.2</span> <span class="title">Procedures (Functions)</span></a></div>
 <ul class="structural toc-item-list active" id="ptx-toc-group-topic-3-2-procedures">
-<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="topic-3-2-procedures.html#defining-procedures" class="internal"><span class="codenumber">3.2.1</span> <span class="title">Defining Procedures</span></a></div></li>
-<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="topic-3-2-procedures.html#procedure-calls" class="internal"><span class="codenumber">3.2.2</span> <span class="title">Procedure Calls</span></a></div></li>
-<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="topic-3-2-procedures.html#procedural-abstraction" class="internal"><span class="codenumber">3.2.3</span> <span class="title">Procedural Abstraction</span></a></div></li>
-<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="topic-3-2-procedures.html#LOs-3-2" class="internal"><span class="codenumber">3.2.4</span> <span class="title">Learning Objectives Review</span></a></div></li>
-<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="topic-3-2-procedures.html#vocab-3-2" class="internal"><span class="codenumber">3.2.5</span> <span class="title">Vocabulary Review</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="topic-3-2-procedures.html#procedures" class="internal"><span class="codenumber">3.2.1</span> <span class="title">What is a Procedure or Function</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="topic-3-2-procedures.html#function-call-defn" class="internal"><span class="codenumber">3.2.2</span> <span class="title">Procedure/Function Call and Definition</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="topic-3-2-procedures.html#arguments" class="internal"><span class="codenumber">3.2.3</span> <span class="title">Arguments and Parameters</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="topic-3-2-procedures.html#procedural-abstraction" class="internal"><span class="codenumber">3.2.4</span> <span class="title">Procedural Abstraction</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="topic-3-2-procedures.html#LOs-3-2" class="internal"><span class="codenumber">3.2.5</span> <span class="title">Learning Objectives Review</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="topic-3-2-procedures.html#vocab-3-2" class="internal"><span class="codenumber">3.2.6</span> <span class="title">Vocabulary Review</span></a></div></li>
 </ul>
 </li>
 <li class="toc-item toc-section">
@@ -509,143 +511,234 @@ eBookConfig.enable_chatcodes =  false;
 <main class="ptx-main"><div id="ptx-content" class="ptx-content">
 <section class="section" id="topic-3-2-procedures">
 <h1 class="heading hide-type">
-<span class="type">Section</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">3.2</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Procedures</span>
+<span class="type">Section</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">3.2</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Procedures (Functions)</span>
 </h1>
 <div class="time">
-<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-clock" viewBox="0 0 16 16"><path d="M8 3.5a.5.5 0 0 0-1 0V9a.5.5 0 0 0 .252.434l3.5 2a.5.5 0 0 0 .496-.868L8 8.71V3.5z"></path><path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm7-8A7 7 0 1 1 1 8a7 7 0 0 1 14 0z"></path></svg><span>90 minutes</span>
+<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-clock" viewBox="0 0 16 16"><path d="M8 3.5a.5.5 0 0 0-1 0V9a.5.5 0 0 0 .252.434l3.5 2a.5.5 0 0 0 .496-.868L8 8.71V3.5z"></path><path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm7-8A7 7 0 1 1 1 8a7 7 0 0 1 14 0z"></path></svg><span>135 minutes</span>
 </div>
-<section class="introduction" id="topic-3-2-procedures-4">
-<div class="para" id="topic-3-2-procedures-4-1">Quick Links: <a href="topic-3-2-procedures.html#defining-procedures" class="internal" title="Subsection 3.2.1: Defining Procedures">3.2.1</a>, <a href="topic-3-2-procedures.html#procedure-calls" class="internal" title="Subsection 3.2.2: Procedure Calls">3.2.2</a>, <a href="topic-3-2-procedures.html#procedural-abstraction" class="internal" title="Subsection 3.2.3: Procedural Abstraction">3.2.3</a>, <a href="topic-3-2-procedures.html#LOs-3-2" class="internal" title="Subsection 3.2.4: Learning Objectives Review">3.2.4</a>, <a href="topic-3-2-procedures.html#vocab-3-2" class="internal" title="Subsection 3.2.5: Vocabulary Review">3.2.5</a><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#topic-3-2-procedures-4-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<section class="introduction" id="topic-3-2-procedures-3">
+<div class="para" id="topic-3-2-procedures-3-1">Quick Links: <a href="topic-3-2-procedures.html#procedures" class="internal" title="Subsection 3.2.1: What is a Procedure or Function">3.2.1</a>, <a href="topic-3-2-procedures.html#function-call-defn" class="internal" title="Subsection 3.2.2: Procedure/Function Call and Definition">3.2.2</a>, <a href="topic-3-2-procedures.html#arguments" class="internal" title="Subsection 3.2.3: Arguments and Parameters">3.2.3</a>, <a href="topic-3-2-procedures.html#procedural-abstraction" class="internal" title="Subsection 3.2.4: Procedural Abstraction">3.2.4</a>, <a href="topic-3-2-procedures.html#LOs-3-2" class="internal" title="Subsection 3.2.5: Learning Objectives Review">3.2.5</a>, <a href="topic-3-2-procedures.html#vocab-3-2" class="internal" title="Subsection 3.2.6: Vocabulary Review">3.2.6</a><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#topic-3-2-procedures-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="para" id="topic-3-2-procedures-4-2">In this topic, we develop code with procedures, trace procedure calls, and explain how procedural abstraction helps manage complexity.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#topic-3-2-procedures-4-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div></section>
-<section class="subsection" id="defining-procedures">
+<div class="para" id="topic-3-2-procedures-3-2">Our programs are getting longer and longer! Advanced programmers break up large programs into smaller, more manageable pieces called <dfn class="terminology">procedures</dfn> or <dfn class="terminology">functions</dfn>. This allows us to solve complex problems by breaking them into smaller subproblems and to reuse code. In this lesson, we will learn to write our own Python functions and learn how procedural abstraction helps manage complexity.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#topic-3-2-procedures-3-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="image-box" style="width: 70%; margin-left: 15%; margin-right: 15%;"><img src="external/_static/Unit3images/decomposition.png" class="contained"></div></section>
+<section class="subsection" id="procedures">
 <h2 class="heading hide-type">
-<span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">3.2.1</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Defining Procedures</span>
+<span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">3.2.1</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">What is a Procedure or Function</span>
 </h2>
-<article class="note remark-like" id="defining-procedures-2"><h3 class="heading">
+<article class="note remark-like" id="procedures-4"><h3 class="heading">
 <span class="type">Essential Knowledge</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">3.2.1</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">3.2.A.1.</span>
 </h3>
-<div class="para" id="defining-procedures-2-2">A procedure is a named group of programming instructions that performs a task. Using procedures helps programmers organize code, avoid unnecessary code, and make programs easier to read, test, and update. Procedures may also be called functions or methods depending on the programming language.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#defining-procedures-2-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="procedures-4-2">A <dfn class="terminology">procedure</dfn> is a named group of programming instructions that performs a task. Using procedures helps programmers organize code, avoid unnecessary code, and make programs easier to read, test, and update. Procedures may also be called <dfn class="terminology">functions</dfn> or <dfn class="terminology">methods</dfn> depending on the programming language.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#procedures-4-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" aria-hidden="true" data-description="Essential Knowledge 3.2.1: 3.2.A.1"><a tabindex="-1" href="#defining-procedures-2" title="Copy heading and permalink for Essential Knowledge 3.2.1: 3.2.A.1" aria-label="Copy heading and permalink for Essential Knowledge 3.2.1: 3.2.A.1">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Essential Knowledge 3.2.1: 3.2.A.1"><a tabindex="-1" href="#procedures-4" title="Copy heading and permalink for Essential Knowledge 3.2.1: 3.2.A.1" aria-label="Copy heading and permalink for Essential Knowledge 3.2.1: 3.2.A.1">🔗</a></div>
 </article>
-<article class="note remark-like" id="defining-procedures-3"><h3 class="heading">
-<span class="type">Essential Knowledge</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">3.2.2</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">3.2.A.2.</span>
-</h3>
-<div class="para" id="defining-procedures-3-2">If a procedure does not need any input information to complete its intended task, it can be defined with its name followed by parentheses and a block of statements. Each time the procedure is called, the statements in the procedure execute, and then the program continues with the next statement after the call.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#defining-procedures-3-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="procedures-5">A <dfn class="terminology">procedure</dfn> or <dfn class="terminology">function</dfn> is a named block of code that performs a task when it is called.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#procedures-5" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" aria-hidden="true" data-description="Essential Knowledge 3.2.2: 3.2.A.2"><a tabindex="-1" href="#defining-procedures-3" title="Copy heading and permalink for Essential Knowledge 3.2.2: 3.2.A.2" aria-label="Copy heading and permalink for Essential Knowledge 3.2.2: 3.2.A.2">🔗</a></div>
-</article>
-<article class="note remark-like" id="defining-procedures-4"><h3 class="heading">
-<span class="type">Essential Knowledge</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">3.2.3</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">3.2.A.3.</span>
-</h3>
-<div class="para" id="defining-procedures-4-2">Procedures can use parameters to receive input. A parameter is a variable name listed in the procedure definition. An argument is the actual value provided when the procedure is called.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#defining-procedures-4-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="procedures-6">We have already used several built-in Python functions in our programs, for example <code class="code-inline tex2jax_ignore">input()</code> and <code class="code-inline tex2jax_ignore">print()</code> which are input/output functions built into Python. Notice that functions end with parentheses () which can contain <dfn class="terminology">arguments</dfn>, the data that the function needs to do its job, for example what to print for the <code class="code-inline tex2jax_ignore">print("Print this!")</code> function. Some functions like <code class="code-inline tex2jax_ignore">input()</code> or <code class="code-inline tex2jax_ignore">random.randint()</code> also return values back like the user’s input or a random number that we usually store in a variable.  A function is like a black box where you know what goes in and what comes out, but not necessarily how it works inside.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#procedures-6" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" aria-hidden="true" data-description="Essential Knowledge 3.2.3: 3.2.A.3"><a tabindex="-1" href="#defining-procedures-4" title="Copy heading and permalink for Essential Knowledge 3.2.3: 3.2.A.3" aria-label="Copy heading and permalink for Essential Knowledge 3.2.3: 3.2.A.3">🔗</a></div>
-</article>
-<article class="note remark-like" id="defining-procedures-5"><h3 class="heading">
-<span class="type">Essential Knowledge</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">3.2.4</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">3.2.A.4.</span>
+<div class="code-box"><pre class="program clipboardable"><code class="language-py"># The print() function takes 1 argument that it prints to the screen
+print("Hello World!")  
+
+# The input() function takes 1 argument, the prompt, and returns the user's input
+#     which we save in a variable
+name = input("Enter your name: ")
+
+# The random.randint() function takes 2 arguments, the low and high values, 
+# and returns a random number between those values (inclusive)
+random_number = random.randint(1, 10)
+</code></pre></div>
+<div class="image-box" style="width: 65%; margin-left: 17.5%; margin-right: 17.5%;"><img src="external/_static/Unit3images/function.png" class="contained"></div>
+<article class="project project-like" id="unplugged-functions"><h3 class="heading">
+<span class="type">Project</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">3.2.1</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Unplugged: Functions.</span>
 </h3>
-<div class="para" id="defining-procedures-5-2">A procedure may not need parameters when it always performs the same steps with no changing input (for example, displaying an instructions screen or resetting a game to a default starting state). Procedures need parameters when they need input information to complete the intended task. If a procedure should work for many different inputs (for example, greeting different users or calculating totals for different numbers), parameters make it flexible and reusable because the program can pass different arguments each time it is called. Using parameters when input varies helps avoid duplicating code and keeps the program easier to update.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#defining-procedures-5-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="ptx-runestone-container"><div class="runestone shortanswer_section"><div data-component="shortanswer" data-question_label="" class="journal" data-mathjax="" id="rs-unplugged-functions" data-placeholder="You can write here, and it will be saved on this device, but your response will not be graded.">
+<div class="para" id="unplugged-functions-2-1">In groups, choose one person to be the function. The person playing the function should choose a secret math formula with a variable and 2 operations, for example <code class="code-inline tex2jax_ignore">2*x + 1</code>. Don’t tell the rest of the group what the formula is!<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#unplugged-functions-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div> 
+<div class="para" id="unplugged-functions-2-2">The other members of the group will give the function different argument values for <code class="code-inline tex2jax_ignore">x</code>, and the function will return the result of the formula. Write down the input/output pairs for each argument and return value.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#unplugged-functions-2-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div> 
+<div class="para" id="unplugged-functions-2-3">For example, if the function’s formula is <code class="code-inline tex2jax_ignore">2*x + 1</code> and a group member provides <code class="code-inline tex2jax_ignore">3</code> as the argument, the function returns <code class="code-inline tex2jax_ignore">7</code>. After each member gets a return value, the group should try to figure out the function’s secret formula. Then, discuss and answer the following questions as a group.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#unplugged-functions-2-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div> 
+<ol class="decimal" id="unplugged-functions-2-4">
+<li id="unplugged-functions-2-4-1">
+<div class="para" id="p-derived-unplugged-functions-2-4-1">What arguments did your group provide to the function? What return value did the function produce for each argument?</div>
+<div class="autopermalink" aria-hidden="true" data-description="Item 1"><a tabindex="-1" href="#unplugged-functions-2-4-1" title="Copy heading and permalink for Item 1" aria-label="Copy heading and permalink for Item 1">🔗</a></div>
+</li>
+<li id="unplugged-functions-2-4-2">
+<div class="para" id="p-derived-unplugged-functions-2-4-2">What was the function’s secret formula? How did your group use the input/output pairs to try to figure it out?</div>
+<div class="autopermalink" aria-hidden="true" data-description="Item 2"><a tabindex="-1" href="#unplugged-functions-2-4-2" title="Copy heading and permalink for Item 2" aria-label="Copy heading and permalink for Item 2">🔗</a></div>
+</li>
+<li id="unplugged-functions-2-4-3">
+<div class="para" id="p-derived-unplugged-functions-2-4-3">How does this activity demonstrate that a function can be reused with different arguments?</div>
+<div class="autopermalink" aria-hidden="true" data-description="Item 3"><a tabindex="-1" href="#unplugged-functions-2-4-3" title="Copy heading and permalink for Item 3" aria-label="Copy heading and permalink for Item 3">🔗</a></div>
+</li>
+<li id="unplugged-functions-2-4-4">
+<div class="para" id="p-derived-unplugged-functions-2-4-4">Can you use a function without knowing how it works inside? How does this activity demonstrate that a function is an abstraction like a "black box"?</div>
+<div class="autopermalink" aria-hidden="true" data-description="Item 4"><a tabindex="-1" href="#unplugged-functions-2-4-4" title="Copy heading and permalink for Item 4" aria-label="Copy heading and permalink for Item 4">🔗</a></div>
+</li>
+</ol>
+</div></div></div>
+<div class="autopermalink" aria-hidden="true" data-description="Project 3.2.1: Unplugged: Functions"><a tabindex="-1" href="#unplugged-functions" title="Copy heading and permalink for Project 3.2.1: Unplugged: Functions" aria-label="Copy heading and permalink for Project 3.2.1: Unplugged: Functions">🔗</a></div>
+</article><div class="autopermalink" aria-hidden="true" data-description="Subsection 3.2.1: What is a Procedure or Function"><a tabindex="-1" href="#procedures" title="Copy heading and permalink for Subsection 3.2.1: What is a Procedure or Function" aria-label="Copy heading and permalink for Subsection 3.2.1: What is a Procedure or Function">🔗</a></div>
+</section>
+<section class="subsection" id="function-call-defn">
+<h2 class="heading hide-type">
+<span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">3.2.2</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Procedure/Function Call and Definition</span>
+</h2>
+<article class="activity project-like" id="repeatedcode-this-old-man"><h3 class="heading">
+<span class="type">Activity</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">3.2.2</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+</h3>
+<div class="ptx-runestone-container"><div class="runestone clickablearea_section"><div data-component="clickablearea" data-question_label="" style="visibility: hidden;" id="rs-repeatedcode-this-old-man">
+<span data-question="">
+<div class="para" id="repeatedcode-this-old-man-1-1">Click on all the lines that are completely identical and repeated.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#repeatedcode-this-old-man-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div></span><span data-feedback="">
+<div class="para" id="repeatedcode-this-old-man-2-1">Look for lines of Python code that are completely identical.</div></span><pre><span data-incorrect="">print("This old man, he played one.")</span>
+<span data-incorrect="">print("He played knick-knack on my thumb.")</span>
+<span data-correct="">print("With a knick-knack paddywhack, give a dog a bone,")</span>
+<span data-correct="">print("This old man came rolling home.")</span>
+<span data-incorrect="">print("This old man, he played two.")</span>
+<span data-incorrect="">print("He played knick-knack on my shoe.")</span>
+<span data-correct="">print("With a knick-knack paddywhack, give a dog a bone,")</span>
+<span data-correct="">print("This old man came rolling home.")</span>
+<span data-incorrect="">print("This old man, he played three.")</span>
+<span data-incorrect="">print("He played knick-knack on my knee.")</span>
+<span data-correct="">print("With a knick-knack paddywhack, give a dog a bone,")</span>
+<span data-correct="">print("This old man came rolling home.")</span>
+</pre>
+</div></div></div>
+<div class="autopermalink" aria-hidden="true" data-description="Activity 3.2.2"><a tabindex="-1" href="#repeatedcode-this-old-man" title="Copy heading and permalink for Activity 3.2.2" aria-label="Copy heading and permalink for Activity 3.2.2">🔗</a></div>
+</article>
+<article class="note remark-like" id="function-call-defn-3"><h3 class="heading">
+<span class="type">Essential Knowledge</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">3.2.2</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">3.2.B.1.</span>
+</h3>
+<div class="para" id="function-call-defn-3-2">Calling a procedure runs a named sequence of steps, which helps programs reuse code and keep the overall program easier to read and follow.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#function-call-defn-3-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" aria-hidden="true" data-description="Essential Knowledge 3.2.4: 3.2.A.4"><a tabindex="-1" href="#defining-procedures-5" title="Copy heading and permalink for Essential Knowledge 3.2.4: 3.2.A.4" aria-label="Copy heading and permalink for Essential Knowledge 3.2.4: 3.2.A.4">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Essential Knowledge 3.2.2: 3.2.B.1"><a tabindex="-1" href="#function-call-defn-3" title="Copy heading and permalink for Essential Knowledge 3.2.2: 3.2.B.1" aria-label="Copy heading and permalink for Essential Knowledge 3.2.2: 3.2.B.1">🔗</a></div>
 </article>
-<article class="note remark-like" id="defining-procedures-6"><h3 class="heading">
-<span class="type">Essential Knowledge</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">3.2.5</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">3.2.A.5.</span>
+<article class="note remark-like" id="function-call-defn-4"><h3 class="heading">
+<span class="type">Essential Knowledge</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">3.2.3</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">3.2.B.2.</span>
 </h3>
-<div class="para" id="defining-procedures-6-2">Procedures with parameters make it easier to adapt an app’s behavior or output to different users and situations without rewriting code. A single procedure with parameters can generate many clear, personalized messages for different users by using different argument values each time it is called.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#defining-procedures-6-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="function-call-defn-4-2">A procedure is called by using its name in a statement so the program runs the steps stored in that procedure. When the call happens, the program pauses the current sequence of statements, executes the procedure’s instructions, and then resumes at the next statement after the call.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#function-call-defn-4-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" aria-hidden="true" data-description="Essential Knowledge 3.2.5: 3.2.A.5"><a tabindex="-1" href="#defining-procedures-6" title="Copy heading and permalink for Essential Knowledge 3.2.5: 3.2.A.5" aria-label="Copy heading and permalink for Essential Knowledge 3.2.5: 3.2.A.5">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Essential Knowledge 3.2.3: 3.2.B.2"><a tabindex="-1" href="#function-call-defn-4" title="Copy heading and permalink for Essential Knowledge 3.2.3: 3.2.B.2" aria-label="Copy heading and permalink for Essential Knowledge 3.2.3: 3.2.B.2">🔗</a></div>
 </article>
-<article class="note remark-like" id="defining-procedures-7"><h3 class="heading">
-<span class="type">Essential Knowledge</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">3.2.6</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">3.2.A.6.</span>
+<article class="activity project-like" id="codelensSong1"><h3 class="heading">
+<span class="type">Activity</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">3.2.3</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
 </h3>
-<div class="para" id="defining-procedures-7-2">A procedure is defined with a name and a list of zero or more parameters. When the following code runs, a procedure named <code class="code-inline tex2jax_ignore">pName</code> is defined with zero or more parameters (<code class="code-inline tex2jax_ignore">p1, p2, ...</code>). When the procedure is called, the statements in <code class="code-inline tex2jax_ignore">&lt;block of statements&gt;</code> execute.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#defining-procedures-7-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="ptx-runestone-container"><div class="runestone codelens">
+<div class="cd_section" data-component="codelens" data-question_label="">
+<div class="exercise-statement">
+<div class="para" id="codelensSong1-1-1">Click on the next button below the code to step through the code. Watch the red arrow as the program calls the <code class="code-inline tex2jax_ignore">chorus()</code> function and then returns to the line where the function was called.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#codelensSong1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+</div>
+<div class="pytutorVisualizer exercise-interactive" id="rs-codelensSong1" data-params='{"embeddedMode": true, "lang": "python", "jumpToEnd": false}'></div>
+</div>
+<script src="generated/trace/codelensSong1.js"> </script>
+</div></div>
+<div class="autopermalink" aria-hidden="true" data-description="Activity 3.2.3"><a tabindex="-1" href="#codelensSong1" title="Copy heading and permalink for Activity 3.2.3" aria-label="Copy heading and permalink for Activity 3.2.3">🔗</a></div>
+</article>
+<article class="note remark-like" id="function-call-defn-6"><h3 class="heading">
+<span class="type">Essential Knowledge</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">3.2.4</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">3.2.A.6.</span>
+</h3>
+<div class="para" id="function-call-defn-6-2">A procedure is defined with a name and a list of zero or more parameters. When the following code runs, a procedure named <code class="code-inline tex2jax_ignore">pName</code> is defined with zero or more parameters (<code class="code-inline tex2jax_ignore">p1, p2, ...</code>). When the procedure is called, the statements in <code class="code-inline tex2jax_ignore">&lt;block of statements&gt;</code> execute.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#function-call-defn-6-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <pre class="code-block tex2jax_ignore clipboardable">procedure pName(p1, p2, ...)
 {
    &lt;block of statements&gt;
 }
 </pre>
-<div class="autopermalink" aria-hidden="true" data-description="Essential Knowledge 3.2.6: 3.2.A.6"><a tabindex="-1" href="#defining-procedures-7" title="Copy heading and permalink for Essential Knowledge 3.2.6: 3.2.A.6" aria-label="Copy heading and permalink for Essential Knowledge 3.2.6: 3.2.A.6">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Essential Knowledge 3.2.4: 3.2.A.6"><a tabindex="-1" href="#function-call-defn-6" title="Copy heading and permalink for Essential Knowledge 3.2.4: 3.2.A.6" aria-label="Copy heading and permalink for Essential Knowledge 3.2.4: 3.2.A.6">🔗</a></div>
 </article>
-<article class="note remark-like" id="defining-procedures-8"><h3 class="heading">
-<span class="type">Essential Knowledge</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">3.2.7</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">3.2.A.7.</span>
+<article class="note remark-like" id="function-call-defn-7"><h3 class="heading">
+<span class="type">Essential Knowledge</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">3.2.5</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">3.2.A.2.</span>
 </h3>
-<div class="para" id="defining-procedures-8-2">Some procedures use a return statement to send a result back to the part of the program that called the procedure, which allows the returned value to be stored in a variable, used in an expression, or displayed as output. The return statement ends the procedure immediately, even if more statements appear later in the procedure. When the following code runs in the body of a procedure, the value of <code class="code-inline tex2jax_ignore">expression</code> is returned to the place in the program where the procedure was called.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#defining-procedures-8-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="function-call-defn-7-2">If a procedure does not need any input information to complete its intended task, it can be defined with its name followed by parentheses and a block of statements. Each time the procedure is called, the statements in the procedure execute, and then the program continues with the next statement after the call.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#function-call-defn-7-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Essential Knowledge 3.2.5: 3.2.A.2"><a tabindex="-1" href="#function-call-defn-7" title="Copy heading and permalink for Essential Knowledge 3.2.5: 3.2.A.2" aria-label="Copy heading and permalink for Essential Knowledge 3.2.5: 3.2.A.2">🔗</a></div>
+</article>
+<article class="note remark-like" id="function-call-defn-8"><h3 class="heading">
+<span class="type">Essential Knowledge</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">3.2.6</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">3.2.A.4.</span>
+</h3>
+<div class="para" id="function-call-defn-8-2">A procedure may not need parameters when it always performs the same steps with no changing input (for example, displaying an instructions screen or resetting a game to a default starting state). Procedures need parameters when they need input information to complete the intended task. If a procedure should work for many different inputs (for example, greeting different users or calculating totals for different numbers), parameters make it flexible and reusable because the program can pass different arguments each time it is called. Using parameters when input varies helps avoid duplicating code and keeps the program easier to update.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#function-call-defn-8-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Essential Knowledge 3.2.6: 3.2.A.4"><a tabindex="-1" href="#function-call-defn-8" title="Copy heading and permalink for Essential Knowledge 3.2.6: 3.2.A.4" aria-label="Copy heading and permalink for Essential Knowledge 3.2.6: 3.2.A.4">🔗</a></div>
+</article>
+<article class="note remark-like" id="function-call-defn-9"><h3 class="heading">
+<span class="type">Essential Knowledge</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">3.2.7</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">3.2.A.5.</span>
+</h3>
+<div class="para" id="function-call-defn-9-2">Procedures with parameters make it easier to adapt an app’s behavior or output to different users and situations without rewriting code. A single procedure with parameters can generate many clear, personalized messages for different users by using different argument values each time it is called.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#function-call-defn-9-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Essential Knowledge 3.2.7: 3.2.A.5"><a tabindex="-1" href="#function-call-defn-9" title="Copy heading and permalink for Essential Knowledge 3.2.7: 3.2.A.5" aria-label="Copy heading and permalink for Essential Knowledge 3.2.7: 3.2.A.5">🔗</a></div>
+</article>
+<article class="note remark-like" id="function-call-defn-10"><h3 class="heading">
+<span class="type">Essential Knowledge</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">3.2.8</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">3.2.A.7.</span>
+</h3>
+<div class="para" id="function-call-defn-10-2">Some procedures use a return statement to send a result back to the part of the program that called the procedure, which allows the returned value to be stored in a variable, used in an expression, or displayed as output. The return statement ends the procedure immediately, even if more statements appear later in the procedure. When the following code runs in the body of a procedure, the value of <code class="code-inline tex2jax_ignore">expression</code> is returned to the place in the program where the procedure was called.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#function-call-defn-10-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <pre class="code-block tex2jax_ignore clipboardable">return expression
 </pre>
-<div class="autopermalink" aria-hidden="true" data-description="Essential Knowledge 3.2.7: 3.2.A.7"><a tabindex="-1" href="#defining-procedures-8" title="Copy heading and permalink for Essential Knowledge 3.2.7: 3.2.A.7" aria-label="Copy heading and permalink for Essential Knowledge 3.2.7: 3.2.A.7">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Essential Knowledge 3.2.8: 3.2.A.7"><a tabindex="-1" href="#function-call-defn-10" title="Copy heading and permalink for Essential Knowledge 3.2.8: 3.2.A.7" aria-label="Copy heading and permalink for Essential Knowledge 3.2.8: 3.2.A.7">🔗</a></div>
 </article>
-<article class="note remark-like" id="defining-procedures-9"><h3 class="heading">
-<span class="type">Essential Knowledge</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">3.2.8</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">3.2.A.8.</span>
+<article class="note remark-like" id="function-call-defn-11"><h3 class="heading">
+<span class="type">Essential Knowledge</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">3.2.9</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">3.2.A.8.</span>
 </h3>
-<div class="para" id="defining-procedures-9-2">Some procedures perform an action, such as displaying output or updating variables, and do not return a value. Other procedures compute a value and use a return statement so the result can be used elsewhere in the program.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#defining-procedures-9-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="function-call-defn-11-2">Some procedures perform an action, such as displaying output or updating variables, and do not return a value. Other procedures compute a value and use a return statement so the result can be used elsewhere in the program.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#function-call-defn-11-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" aria-hidden="true" data-description="Essential Knowledge 3.2.8: 3.2.A.8"><a tabindex="-1" href="#defining-procedures-9" title="Copy heading and permalink for Essential Knowledge 3.2.8: 3.2.A.8" aria-label="Copy heading and permalink for Essential Knowledge 3.2.8: 3.2.A.8">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Essential Knowledge 3.2.9: 3.2.A.8"><a tabindex="-1" href="#function-call-defn-11" title="Copy heading and permalink for Essential Knowledge 3.2.9: 3.2.A.8" aria-label="Copy heading and permalink for Essential Knowledge 3.2.9: 3.2.A.8">🔗</a></div>
 </article>
-<article class="note remark-like" id="defining-procedures-10"><h3 class="heading">
-<span class="type">Essential Knowledge</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">3.2.9</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">3.2.A.9.</span>
+<article class="note remark-like" id="function-call-defn-12"><h3 class="heading">
+<span class="type">Essential Knowledge</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">3.2.10</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">3.2.A.9.</span>
 </h3>
-<div class="para" id="defining-procedures-10-2">Defining a procedure creates the named steps, but the code inside runs only when the procedure is called.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#defining-procedures-10-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="function-call-defn-12-2">Defining a procedure creates the named steps, but the code inside runs only when the procedure is called.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#function-call-defn-12-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" aria-hidden="true" data-description="Essential Knowledge 3.2.9: 3.2.A.9"><a tabindex="-1" href="#defining-procedures-10" title="Copy heading and permalink for Essential Knowledge 3.2.9: 3.2.A.9" aria-label="Copy heading and permalink for Essential Knowledge 3.2.9: 3.2.A.9">🔗</a></div>
-</article><div class="autopermalink" aria-hidden="true" data-description="Subsection 3.2.1: Defining Procedures"><a tabindex="-1" href="#defining-procedures" title="Copy heading and permalink for Subsection 3.2.1: Defining Procedures" aria-label="Copy heading and permalink for Subsection 3.2.1: Defining Procedures">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Essential Knowledge 3.2.10: 3.2.A.9"><a tabindex="-1" href="#function-call-defn-12" title="Copy heading and permalink for Essential Knowledge 3.2.10: 3.2.A.9" aria-label="Copy heading and permalink for Essential Knowledge 3.2.10: 3.2.A.9">🔗</a></div>
+</article><div class="autopermalink" aria-hidden="true" data-description="Subsection 3.2.2: Procedure/Function Call and Definition"><a tabindex="-1" href="#function-call-defn" title="Copy heading and permalink for Subsection 3.2.2: Procedure/Function Call and Definition" aria-label="Copy heading and permalink for Subsection 3.2.2: Procedure/Function Call and Definition">🔗</a></div>
 </section>
-<section class="subsection" id="procedure-calls">
+<section class="subsection" id="arguments">
 <h2 class="heading hide-type">
-<span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">3.2.2</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Procedure Calls</span>
+<span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">3.2.3</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Arguments and Parameters</span>
 </h2>
-<article class="note remark-like" id="procedure-calls-2"><h3 class="heading">
-<span class="type">Essential Knowledge</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">3.2.10</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">3.2.B.1.</span>
+<article class="note remark-like" id="arguments-2"><h3 class="heading">
+<span class="type">Essential Knowledge</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">3.2.11</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">3.2.A.3.</span>
 </h3>
-<div class="para" id="procedure-calls-2-2">Calling a procedure runs a named sequence of steps, which helps programs reuse code and keep the overall program easier to read and follow.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#procedure-calls-2-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="arguments-2-2">Procedures can use parameters to receive input. A <dfn class="terminology">parameter</dfn> is a variable name listed in the procedure definition. An <dfn class="terminology">argument</dfn> is the actual value provided when the procedure is called.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#arguments-2-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" aria-hidden="true" data-description="Essential Knowledge 3.2.10: 3.2.B.1"><a tabindex="-1" href="#procedure-calls-2" title="Copy heading and permalink for Essential Knowledge 3.2.10: 3.2.B.1" aria-label="Copy heading and permalink for Essential Knowledge 3.2.10: 3.2.B.1">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Essential Knowledge 3.2.11: 3.2.A.3"><a tabindex="-1" href="#arguments-2" title="Copy heading and permalink for Essential Knowledge 3.2.11: 3.2.A.3" aria-label="Copy heading and permalink for Essential Knowledge 3.2.11: 3.2.A.3">🔗</a></div>
 </article>
-<article class="note remark-like" id="procedure-calls-3"><h3 class="heading">
-<span class="type">Essential Knowledge</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">3.2.11</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">3.2.B.2.</span>
-</h3>
-<div class="para" id="procedure-calls-3-2">A procedure is called by using its name in a statement so the program runs the steps stored in that procedure. When the call happens, the program pauses the current sequence of statements, executes the procedure’s instructions, and then resumes at the next statement after the call.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#procedure-calls-3-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div>
-<div class="autopermalink" aria-hidden="true" data-description="Essential Knowledge 3.2.11: 3.2.B.2"><a tabindex="-1" href="#procedure-calls-3" title="Copy heading and permalink for Essential Knowledge 3.2.11: 3.2.B.2" aria-label="Copy heading and permalink for Essential Knowledge 3.2.11: 3.2.B.2">🔗</a></div>
-</article>
-<article class="note remark-like" id="procedure-calls-4"><h3 class="heading">
+<article class="note remark-like" id="arguments-3"><h3 class="heading">
 <span class="type">Essential Knowledge</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">3.2.12</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">3.2.B.3.</span>
 </h3>
-<div class="para" id="procedure-calls-4-2">In a procedure call, the values inside the parentheses are arguments. When the call runs, each argument value is assigned to the matching parameter in the procedure definition. This allows the same procedure to run with different input values. When the following code runs, <code class="code-inline tex2jax_ignore">a1</code> is assigned to the first parameter and <code class="code-inline tex2jax_ignore">a2</code> is assigned to the second parameter before the procedure’s statements execute.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#procedure-calls-4-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="arguments-3-2">In a procedure call, the values inside the parentheses are arguments. When the call runs, each argument value is assigned to the matching parameter in the procedure definition. This allows the same procedure to run with different input values. When the following code runs, <code class="code-inline tex2jax_ignore">a1</code> is assigned to the first parameter and <code class="code-inline tex2jax_ignore">a2</code> is assigned to the second parameter before the procedure’s statements execute.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#arguments-3-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <pre class="code-block tex2jax_ignore clipboardable">pName(a1, a2)
 </pre>
-<div class="autopermalink" aria-hidden="true" data-description="Essential Knowledge 3.2.12: 3.2.B.3"><a tabindex="-1" href="#procedure-calls-4" title="Copy heading and permalink for Essential Knowledge 3.2.12: 3.2.B.3" aria-label="Copy heading and permalink for Essential Knowledge 3.2.12: 3.2.B.3">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Essential Knowledge 3.2.12: 3.2.B.3"><a tabindex="-1" href="#arguments-3" title="Copy heading and permalink for Essential Knowledge 3.2.12: 3.2.B.3" aria-label="Copy heading and permalink for Essential Knowledge 3.2.12: 3.2.B.3">🔗</a></div>
 </article>
-<article class="note remark-like" id="procedure-calls-5"><h3 class="heading">
+<article class="note remark-like" id="arguments-4"><h3 class="heading">
 <span class="type">Essential Knowledge</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">3.2.13</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">3.2.B.4.</span>
 </h3>
-<div class="para" id="procedure-calls-5-2">A procedure can also be called with no arguments (empty parentheses) when it has no parameters. The number of arguments in a call must match the number of parameters in the procedure definition.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#procedure-calls-5-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="arguments-4-2">A procedure can also be called with no arguments (empty parentheses) when it has no parameters. The number of arguments in a call must match the number of parameters in the procedure definition.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#arguments-4-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" aria-hidden="true" data-description="Essential Knowledge 3.2.13: 3.2.B.4"><a tabindex="-1" href="#procedure-calls-5" title="Copy heading and permalink for Essential Knowledge 3.2.13: 3.2.B.4" aria-label="Copy heading and permalink for Essential Knowledge 3.2.13: 3.2.B.4">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Essential Knowledge 3.2.13: 3.2.B.4"><a tabindex="-1" href="#arguments-4" title="Copy heading and permalink for Essential Knowledge 3.2.13: 3.2.B.4" aria-label="Copy heading and permalink for Essential Knowledge 3.2.13: 3.2.B.4">🔗</a></div>
 </article>
-<article class="note remark-like" id="procedure-calls-6"><h3 class="heading">
+<article class="note remark-like" id="arguments-5"><h3 class="heading">
 <span class="type">Essential Knowledge</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">3.2.14</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">3.2.B.5.</span>
 </h3>
-<div class="para" id="procedure-calls-6-2">To determine the result of a procedure call, programmers trace the call by matching arguments to parameters, stepping through the procedure’s statements in order, tracking any variable updates and outputs, and then returning to where the procedure was called to continue program execution.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#procedure-calls-6-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="arguments-5-2">To determine the result of a procedure call, programmers trace the call by matching arguments to parameters, stepping through the procedure’s statements in order, tracking any variable updates and outputs, and then returning to where the procedure was called to continue program execution.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#arguments-5-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" aria-hidden="true" data-description="Essential Knowledge 3.2.14: 3.2.B.5"><a tabindex="-1" href="#procedure-calls-6" title="Copy heading and permalink for Essential Knowledge 3.2.14: 3.2.B.5" aria-label="Copy heading and permalink for Essential Knowledge 3.2.14: 3.2.B.5">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Essential Knowledge 3.2.14: 3.2.B.5"><a tabindex="-1" href="#arguments-5" title="Copy heading and permalink for Essential Knowledge 3.2.14: 3.2.B.5" aria-label="Copy heading and permalink for Essential Knowledge 3.2.14: 3.2.B.5">🔗</a></div>
 </article>
-<article class="note remark-like" id="procedure-calls-7"><h3 class="heading">
+<article class="note remark-like" id="arguments-6"><h3 class="heading">
 <span class="type">Essential Knowledge</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">3.2.15</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">3.2.B.6.</span>
 </h3>
-<div class="para" id="procedure-calls-7-2">If a procedure returns a value, the procedure call evaluates to that value. The returned value can be stored in a variable, used in an expression, or displayed as output. If a procedure does not return a value, the call is used to perform actions such as updating variable values or producing output.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#procedure-calls-7-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="arguments-6-2">If a procedure returns a value, the procedure call evaluates to that value. The returned value can be stored in a variable, used in an expression, or displayed as output. If a procedure does not return a value, the call is used to perform actions such as updating variable values or producing output.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#arguments-6-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" aria-hidden="true" data-description="Essential Knowledge 3.2.15: 3.2.B.6"><a tabindex="-1" href="#procedure-calls-7" title="Copy heading and permalink for Essential Knowledge 3.2.15: 3.2.B.6" aria-label="Copy heading and permalink for Essential Knowledge 3.2.15: 3.2.B.6">🔗</a></div>
-</article><div class="autopermalink" aria-hidden="true" data-description="Subsection 3.2.2: Procedure Calls"><a tabindex="-1" href="#procedure-calls" title="Copy heading and permalink for Subsection 3.2.2: Procedure Calls" aria-label="Copy heading and permalink for Subsection 3.2.2: Procedure Calls">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Essential Knowledge 3.2.15: 3.2.B.6"><a tabindex="-1" href="#arguments-6" title="Copy heading and permalink for Essential Knowledge 3.2.15: 3.2.B.6" aria-label="Copy heading and permalink for Essential Knowledge 3.2.15: 3.2.B.6">🔗</a></div>
+</article><div class="autopermalink" aria-hidden="true" data-description="Subsection 3.2.3: Arguments and Parameters"><a tabindex="-1" href="#arguments" title="Copy heading and permalink for Subsection 3.2.3: Arguments and Parameters" aria-label="Copy heading and permalink for Subsection 3.2.3: Arguments and Parameters">🔗</a></div>
 </section>
 <section class="subsection" id="procedural-abstraction">
 <h2 class="heading hide-type">
-<span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">3.2.3</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Procedural Abstraction</span>
+<span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">3.2.4</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Procedural Abstraction</span>
 </h2>
 <article class="note remark-like" id="procedural-abstraction-2"><h3 class="heading">
 <span class="type">Essential Knowledge</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">3.2.16</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">3.2.C.1.</span>
@@ -702,11 +795,11 @@ eBookConfig.enable_chatcodes =  false;
 <div class="para" id="procedural-abstraction-9-2">Using procedural abstraction improves readability because the rest of the program can call procedures with descriptive names, so the overall steps of the program are easier to understand at a glance.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#procedural-abstraction-9-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="autopermalink" aria-hidden="true" data-description="Essential Knowledge 3.2.23: 3.2.C.8"><a tabindex="-1" href="#procedural-abstraction-9" title="Copy heading and permalink for Essential Knowledge 3.2.23: 3.2.C.8" aria-label="Copy heading and permalink for Essential Knowledge 3.2.23: 3.2.C.8">🔗</a></div>
-</article><div class="autopermalink" aria-hidden="true" data-description="Subsection 3.2.3: Procedural Abstraction"><a tabindex="-1" href="#procedural-abstraction" title="Copy heading and permalink for Subsection 3.2.3: Procedural Abstraction" aria-label="Copy heading and permalink for Subsection 3.2.3: Procedural Abstraction">🔗</a></div>
+</article><div class="autopermalink" aria-hidden="true" data-description="Subsection 3.2.4: Procedural Abstraction"><a tabindex="-1" href="#procedural-abstraction" title="Copy heading and permalink for Subsection 3.2.4: Procedural Abstraction" aria-label="Copy heading and permalink for Subsection 3.2.4: Procedural Abstraction">🔗</a></div>
 </section>
 <section class="subsection" id="LOs-3-2">
 <h2 class="heading hide-type">
-<span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">3.2.4</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Learning Objectives Review</span>
+<span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">3.2.5</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Learning Objectives Review</span>
 </h2>
 <article class="remark remark-like" id="LOs-3-2-2"><h3 class="heading">
 <span class="type">Learning Objective</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">3.2.24</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">3.2.A.</span>
@@ -728,14 +821,14 @@ eBookConfig.enable_chatcodes =  false;
 <div class="para" id="LOs-3-2-4-2">Explain how the use of procedural abstraction manages complexity in a program.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#LOs-3-2-4-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="autopermalink" aria-hidden="true" data-description="Learning Objective 3.2.26: 3.2.C"><a tabindex="-1" href="#LOs-3-2-4" title="Copy heading and permalink for Learning Objective 3.2.26: 3.2.C" aria-label="Copy heading and permalink for Learning Objective 3.2.26: 3.2.C">🔗</a></div>
-</article><div class="autopermalink" aria-hidden="true" data-description="Subsection 3.2.4: Learning Objectives Review"><a tabindex="-1" href="#LOs-3-2" title="Copy heading and permalink for Subsection 3.2.4: Learning Objectives Review" aria-label="Copy heading and permalink for Subsection 3.2.4: Learning Objectives Review">🔗</a></div>
+</article><div class="autopermalink" aria-hidden="true" data-description="Subsection 3.2.5: Learning Objectives Review"><a tabindex="-1" href="#LOs-3-2" title="Copy heading and permalink for Subsection 3.2.5: Learning Objectives Review" aria-label="Copy heading and permalink for Subsection 3.2.5: Learning Objectives Review">🔗</a></div>
 </section>
 <section class="subsection" id="vocab-3-2">
 <h2 class="heading hide-type">
-<span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">3.2.5</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Vocabulary Review</span>
+<span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">3.2.6</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Vocabulary Review</span>
 </h2>
-<div class="autopermalink" aria-hidden="true" data-description="Subsection 3.2.5: Vocabulary Review"><a tabindex="-1" href="#vocab-3-2" title="Copy heading and permalink for Subsection 3.2.5: Vocabulary Review" aria-label="Copy heading and permalink for Subsection 3.2.5: Vocabulary Review">🔗</a></div>
-</section><div class="autopermalink" aria-hidden="true" data-description="Section 3.2: Procedures"><a tabindex="-1" href="#topic-3-2-procedures" title="Copy heading and permalink for Section 3.2: Procedures" aria-label="Copy heading and permalink for Section 3.2: Procedures">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Subsection 3.2.6: Vocabulary Review"><a tabindex="-1" href="#vocab-3-2" title="Copy heading and permalink for Subsection 3.2.6: Vocabulary Review" aria-label="Copy heading and permalink for Subsection 3.2.6: Vocabulary Review">🔗</a></div>
+</section><div class="autopermalink" aria-hidden="true" data-description="Section 3.2: Procedures (Functions)"><a tabindex="-1" href="#topic-3-2-procedures" title="Copy heading and permalink for Section 3.2: Procedures (Functions)" aria-label="Copy heading and permalink for Section 3.2: Procedures (Functions)">🔗</a></div>
 </section>
 </div>
 <div id="ptx-content-footer" class="ptx-content-footer">
