@@ -6172,7 +6172,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "2.15",
   "title": "Unit 2 Loops Project",
-  "body": "  Unit 2 Loops Project   This project was designed by Leigh Anne Fitz of Virginia Beach City Public Schools and the autograding tests were designed by Kate McDonnell of Cherry Creek Schools in Colorado.    Seven-Day Fitness Challenge  Your school is running a Seven-Day Fitness Challenge. Students will enter the number of minutes they exercised each day for one week. The program will analyze their activity and determine whether they met their daily goals. Create a Python program that helps a student track their exercise for one week.  For each of the 7 days, the program should:   Ask the user how many minutes they exercised.  Verify that the number entered is valid.  Determine the student's activity level for that day.  Display the result.  Keep track of the total exercise minutes.   At the end of the week, the program should calculate the student's average daily exercise time and provide an overall assessment.   Activity Levels    Daily Exercise Minutes  Activity Level    0 - 19  Needs Improvement    20 - 39  Good    40 - 59  Great    60 or more  Excellent     For example:  Day 1: 45 minutes Activity Level: Great  Input Validation: Exercise minutes must be between 0 and 300. If the user enters an invalid value, the program should continue asking until a valid value is entered. For example:  How many minutes did you exercise? -20 Please enter a value between 0 and 300. How many minutes did you exercise? 400 Please enter a value between 0 and 300. How many minutes did you exercise? 35 Activity Level: Good  Overall Weekly Assessment: At the end of the week, determine an overall assessment based on the student's average daily exercise time.   Overall Assessment    Average Daily Minutes  Assessment    Less than 20  Keep Working!    20 - 39  Good Job!    40 - 59  Great Work!    60 or more  Fitness Champion!     Sample Output:  ======================================== SEVEN-DAY FITNESS CHALLENGE ======================================== Day 1: 30 minutes Activity Level: Good Day 2: 45 minutes Activity Level: Great Day 3: 15 minutes Activity Level: Needs Improvement Day 4: 60 minutes Activity Level: Excellent Day 5: 40 minutes Activity Level: Great Day 6: 25 minutes Activity Level: Good Day 7: 50 minutes Activity Level: Great ======================================== WEEKLY SUMMARY ======================================== Total Exercise Minutes: 265 Average Daily Minutes: 37.86 Overall Assessment: Good Job! ========================================   Seven-Day Fitness Challenge   Create a Python program that helps a student track their exercise for one week. The program should use a loop toask for the number of exercise minutes for each of 7 days, validate each entry, determine the activity level for each day, keep track of the total exercise minutes, calculate the average daily exercise time, and provide an overall assessment.  Exercise minutes must be between 0 and 300. Use a while loop to continue asking for a valid value when the user enters an invalid number.    # Seven-Day Fitness Challenge # Print the three lines for the Header shown in the sample output # Initialize the accumulator for total exercise minutes total_minutes = # Repeat for each of the 7 days for day in # Get the number of exercise minutes from the user minutes = # Use a while loop to make sure minutes # is between 0 and 300. # If the value is invalid, ask the user again. # Determine the activity level: # 0-19 minutes: Needs Improvement # 20-39 minutes: Good # 40-59 minutes: Great # 60+ minutes: Excellent activity_level = # Display the number of minutes in the form # Day __: ___ minutes # Fill in the correct day number and the number # of minutes entered # Display the activity level in the form # Activity Level: ______ # Fill in the blank with the correct activity level comment # Add today's minutes to the total # Calculate the average number of minutes per day average_minutes = # Determine the overall assessment # Less than 20: Keep Working! # 20-39: Good Job! # 40-59: Great Work! # 60+: Fitness Champion! assessment = # Display the weekly summary  from unittest.gui import TestCaseGui class myTests(TestCaseGui): def testOne(self): code = self.getEditorText().replace(\" \", \"\") self.assertIn(\"range\", code, \"Use range to repeat for 7 days\") self.assertIn(\"if\", code, \"Use if statements\") self.assertIn(\"while\",code,\"Use while loops for input validation\") myTests().main()      Project Reflection   Project Reflection: Iteration   Consider the first iteration statement in your project code above (the for loop). Identify the loop variable by writing it below. Identify the number of times the body of your iteration statement will execute. Explain how a for loop using range cannot cause an infinite loop.      Project Reflection: Loops and Input Validation   Describe how you used a while loop to validate input. What happened when the user entered an invalid value? How did you test your program to make sure that invalid values were rejected and valid values were accepted? Describe a condition or error that would cause your iteration statement to not terminate and cause an infinite loop.      "
+  "body": "  Unit 2 Loops Project   This project was designed by Leigh Anne Fitz of Virginia Beach City Public Schools and the autograding tests were designed by Kate McDonnell of Cherry Creek Schools in Colorado.    Seven-Day Fitness Challenge  Your school is running a Seven-Day Fitness Challenge. Students will enter the number of minutes they exercised each day for one week. The program will analyze their activity and determine whether they met their daily goals. Create a Python program that helps a student track their exercise for one week.  For each of the 7 days, the program should:   Ask the user how many minutes they exercised.  Verify that the number entered is valid.  Determine the student's activity level for that day.  Display the result.  Keep track of the total exercise minutes.   At the end of the week, the program should calculate the student's average daily exercise time and provide an overall assessment.   Activity Levels    Daily Exercise Minutes  Activity Level    0 - 19  Needs Improvement    20 - 39  Good    40 - 59  Great    60 or more  Excellent     For example:  Day 1: 45 minutes Activity Level: Great  Input Validation: Exercise minutes must be between 0 and 300. If the user enters an invalid value, the program should continue asking until a valid value is entered. For example:  How many minutes did you exercise? -20 Please enter a value between 0 and 300. How many minutes did you exercise? 400 Please enter a value between 0 and 300. How many minutes did you exercise? 35 Activity Level: Good  Overall Weekly Assessment: At the end of the week, determine an overall assessment based on the student's average daily exercise time.   Overall Assessment    Average Daily Minutes  Assessment    Less than 20  Keep Working!    20 - 39  Good Job!    40 - 59  Great Work!    60 or more  Fitness Champion!     Sample Output:  ======================================== SEVEN-DAY FITNESS CHALLENGE ======================================== Day 1: 30 minutes Activity Level: Good Day 2: 45 minutes Activity Level: Great Day 3: 15 minutes Activity Level: Needs Improvement Day 4: 60 minutes Activity Level: Excellent Day 5: 40 minutes Activity Level: Great Day 6: 25 minutes Activity Level: Good Day 7: 50 minutes Activity Level: Great ======================================== WEEKLY SUMMARY ======================================== Total Exercise Minutes: 265 Average Daily Minutes: 37.86 Overall Assessment: Good Job! ========================================   Seven-Day Fitness Challenge   Create a Python program that helps a student track their exercise for one week. The program should use a loop to ask for the number of exercise minutes for each of 7 days, validate each entry, determine the activity level for each day, keep track of the total exercise minutes, calculate the average daily exercise time, and provide an overall assessment.  Exercise minutes must be between 0 and 300. Use a while loop to continue asking for a valid value when the user enters an invalid number.    # Seven-Day Fitness Challenge # Print the three lines for the Header shown in the sample output # Initialize the accumulator for total exercise minutes total_minutes = # Repeat for each of the 7 days for day in # Get the number of exercise minutes from the user minutes = # Use a while loop to make sure minutes # is between 0 and 300. # If the value is invalid, ask the user again. # Determine the activity level: # 0-19 minutes: Needs Improvement # 20-39 minutes: Good # 40-59 minutes: Great # 60+ minutes: Excellent activity_level = # Display the number of minutes in the form # Day __: ___ minutes # Fill in the correct day number and the number # of minutes entered # Display the activity level in the form # Activity Level: ______ # Fill in the blank with the correct activity level comment # Add today's minutes to the total # Calculate the average number of minutes per day average_minutes = # Determine the overall assessment # Less than 20: Keep Working! # 20-39: Good Job! # 40-59: Great Work! # 60+: Fitness Champion! assessment = # Display the weekly summary  from unittest.gui import TestCaseGui class myTests(TestCaseGui): def testOne(self): code = self.getEditorText().replace(\" \", \"\") self.assertIn(\"range\", code, \"Use range to repeat for 7 days\") self.assertIn(\"if\", code, \"Use if statements\") self.assertIn(\"while\",code,\"Use while loops for input validation\") myTests().main()      Project Reflection   Project Reflection: Iteration   Consider the first iteration statement in your project code above (the for loop). Identify the loop variable by writing it below. Identify the number of times the body of your iteration statement will execute. Explain how a for loop using range cannot cause an infinite loop.      Project Reflection: Loops and Input Validation   Describe how you used a while loop to validate input. What happened when the user entered an invalid value? How did you test your program to make sure that invalid values were rejected and valid values were accepted? Describe a condition or error that would cause your iteration statement to not terminate and cause an infinite loop.      "
 },
 {
   "id": "activity-levels",
@@ -6199,7 +6199,7 @@ var ptx_lunr_docs = [
   "type": "Project",
   "number": "2.15.1",
   "title": "Seven-Day Fitness Challenge.",
-  "body": " Seven-Day Fitness Challenge   Create a Python program that helps a student track their exercise for one week. The program should use a loop toask for the number of exercise minutes for each of 7 days, validate each entry, determine the activity level for each day, keep track of the total exercise minutes, calculate the average daily exercise time, and provide an overall assessment.  Exercise minutes must be between 0 and 300. Use a while loop to continue asking for a valid value when the user enters an invalid number.    # Seven-Day Fitness Challenge # Print the three lines for the Header shown in the sample output # Initialize the accumulator for total exercise minutes total_minutes = # Repeat for each of the 7 days for day in # Get the number of exercise minutes from the user minutes = # Use a while loop to make sure minutes # is between 0 and 300. # If the value is invalid, ask the user again. # Determine the activity level: # 0-19 minutes: Needs Improvement # 20-39 minutes: Good # 40-59 minutes: Great # 60+ minutes: Excellent activity_level = # Display the number of minutes in the form # Day __: ___ minutes # Fill in the correct day number and the number # of minutes entered # Display the activity level in the form # Activity Level: ______ # Fill in the blank with the correct activity level comment # Add today's minutes to the total # Calculate the average number of minutes per day average_minutes = # Determine the overall assessment # Less than 20: Keep Working! # 20-39: Good Job! # 40-59: Great Work! # 60+: Fitness Champion! assessment = # Display the weekly summary  from unittest.gui import TestCaseGui class myTests(TestCaseGui): def testOne(self): code = self.getEditorText().replace(\" \", \"\") self.assertIn(\"range\", code, \"Use range to repeat for 7 days\") self.assertIn(\"if\", code, \"Use if statements\") self.assertIn(\"while\",code,\"Use while loops for input validation\") myTests().main()   "
+  "body": " Seven-Day Fitness Challenge   Create a Python program that helps a student track their exercise for one week. The program should use a loop to ask for the number of exercise minutes for each of 7 days, validate each entry, determine the activity level for each day, keep track of the total exercise minutes, calculate the average daily exercise time, and provide an overall assessment.  Exercise minutes must be between 0 and 300. Use a while loop to continue asking for a valid value when the user enters an invalid number.    # Seven-Day Fitness Challenge # Print the three lines for the Header shown in the sample output # Initialize the accumulator for total exercise minutes total_minutes = # Repeat for each of the 7 days for day in # Get the number of exercise minutes from the user minutes = # Use a while loop to make sure minutes # is between 0 and 300. # If the value is invalid, ask the user again. # Determine the activity level: # 0-19 minutes: Needs Improvement # 20-39 minutes: Good # 40-59 minutes: Great # 60+ minutes: Excellent activity_level = # Display the number of minutes in the form # Day __: ___ minutes # Fill in the correct day number and the number # of minutes entered # Display the activity level in the form # Activity Level: ______ # Fill in the blank with the correct activity level comment # Add today's minutes to the total # Calculate the average number of minutes per day average_minutes = # Determine the overall assessment # Less than 20: Keep Working! # 20-39: Good Job! # 40-59: Great Work! # 60+: Fitness Champion! assessment = # Display the weekly summary  from unittest.gui import TestCaseGui class myTests(TestCaseGui): def testOne(self): code = self.getEditorText().replace(\" \", \"\") self.assertIn(\"range\", code, \"Use range to repeat for 7 days\") self.assertIn(\"if\", code, \"Use if statements\") self.assertIn(\"while\",code,\"Use while loops for input validation\") myTests().main()   "
 },
 {
   "id": "u2project2-iteration-reflection",
@@ -6973,7 +6973,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "3.2",
   "title": "Procedures (Functions)",
-  "body": "  Procedures (Functions)   Quick Links:   Our programs are getting longer and longer! Advanced programmers break up large programs into smaller, more manageable pieces called procedures or functions . This allows us to solve complex problems by breaking them into smaller subproblems and to reuse code. In this lesson, we will learn to write our own Python functions and learn how procedural abstraction helps manage complexity.     What is a Procedure or Function  procedures  functions   3.2.A.1  A procedure is a named group of programming instructions that performs a task. Using procedures helps programmers organize code, avoid unnecessary code, and make programs easier to read, test, and update. Procedures may also be called functions or methods depending on the programming language.   A procedure or function is a named block of code that performs a task when it is called.  We have already used several built-in Python functions in our programs, for example input() and print() which are input\/output functions built into Python. Notice that functions end with parentheses () which can contain arguments , the data that the function needs to do its job, for example what to print for the print(\"Print this!\") function. Some functions like input() or random.randint() also return values back like the user's input or a random number that we usually store in a variable. A function is like a black box where you know what goes in and what comes out, but not necessarily how it works inside.   # The print() function takes 1 argument that it prints to the screen print(\"Hello World!\") # The input() function takes 1 argument, the prompt, and returns the user's input # which we save in a variable name = input(\"Enter your name: \") # The random.randint() function takes 2 arguments, the low and high values, # and returns a random number between those values (inclusive) random_number = random.randint(1, 10)    unplugged functions  projects unplugged functions  unplugged procedures  projects unplugged procedures  POGIL group activity functions  POGIL group activity procedures   Unplugged: Functions   In groups, choose one person to be the function. The person playing the function should choose a secret math formula with a variable and 2 operations, for example 2*x + 1 . Don't tell the rest of the group what the formula is!  The other members of the group will give the function different argument values for x , and the function will return the result of the formula. Write down the input\/output pairs for each argument and return value.  For example, if the function's formula is 2*x + 1 and a group member provides 3 as the argument, the function returns 7 . After each member gets a return value, the group should try to figure out the function's secret formula. Then, discuss and answer the following questions as a group.   What arguments did your group provide to the function? What return value did the function produce for each argument?  What was the function's secret formula? How did your group use the input\/output pairs to try to figure it out?  How does this activity demonstrate that a function can be reused with different arguments?  Can you use a function without knowing how it works inside? How does this activity demonstrate that a function is an abstraction like a \"black box\"?        Procedure\/Function Call and Definition    Click on all the lines that are completely identical and repeated.    Look for lines of Python code that are completely identical.    print(\"This old man, he played one.\")  print(\"He played knick-knack on my thumb.\")  print(\"With a knick-knack paddywhack, give a dog a bone,\")  print(\"This old man came rolling home.\")  print(\"This old man, he played two.\")  print(\"He played knick-knack on my shoe.\")  print(\"With a knick-knack paddywhack, give a dog a bone,\")  print(\"This old man came rolling home.\")  print(\"This old man, he played three.\")  print(\"He played knick-knack on my knee.\")  print(\"With a knick-knack paddywhack, give a dog a bone,\")  print(\"This old man came rolling home.\")     3.2.B.1  Calling a procedure runs a named sequence of steps, which helps programs reuse code and keep the overall program easier to read and follow.    3.2.B.2  A procedure is called by using its name in a statement so the program runs the steps stored in that procedure. When the call happens, the program pauses the current sequence of statements, executes the procedure's instructions, and then resumes at the next statement after the call.     Click on the next button below the code to step through the code. Watch the red arrow as the program calls the chorus() function and then returns to the line where the function was called.    def chorus(): print(\"With a knick-knack paddywhack, give a dog a bone,\") print(\"This old man came rolling home.\") print(\"This old man, he played one.\") print(\"He played knick-knack on my thumb.\") chorus() print(\"This old man, he played two.\") print(\"He played knick-knack on my shoe.\") chorus()     3.2.A.6  A procedure is defined with a name and a list of zero or more parameters. When the following code runs, a procedure named pName is defined with zero or more parameters ( p1, p2, ... ). When the procedure is called, the statements in <block of statements> execute.  procedure pName(p1, p2, ...) { <block of statements> }    3.2.A.2  If a procedure does not need any input information to complete its intended task, it can be defined with its name followed by parentheses and a block of statements. Each time the procedure is called, the statements in the procedure execute, and then the program continues with the next statement after the call.    3.2.A.4  A procedure may not need parameters when it always performs the same steps with no changing input (for example, displaying an instructions screen or resetting a game to a default starting state). Procedures need parameters when they need input information to complete the intended task. If a procedure should work for many different inputs (for example, greeting different users or calculating totals for different numbers), parameters make it flexible and reusable because the program can pass different arguments each time it is called. Using parameters when input varies helps avoid duplicating code and keeps the program easier to update.    3.2.A.5  Procedures with parameters make it easier to adapt an app's behavior or output to different users and situations without rewriting code. A single procedure with parameters can generate many clear, personalized messages for different users by using different argument values each time it is called.    3.2.A.7  Some procedures use a return statement to send a result back to the part of the program that called the procedure, which allows the returned value to be stored in a variable, used in an expression, or displayed as output. The return statement ends the procedure immediately, even if more statements appear later in the procedure. When the following code runs in the body of a procedure, the value of expression is returned to the place in the program where the procedure was called.  return expression    3.2.A.8  Some procedures perform an action, such as displaying output or updating variables, and do not return a value. Other procedures compute a value and use a return statement so the result can be used elsewhere in the program.    3.2.A.9  Defining a procedure creates the named steps, but the code inside runs only when the procedure is called.     Arguments and Parameters   3.2.A.3  Procedures can use parameters to receive input. A parameter is a variable name listed in the procedure definition. An argument is the actual value provided when the procedure is called.    3.2.B.3  In a procedure call, the values inside the parentheses are arguments. When the call runs, each argument value is assigned to the matching parameter in the procedure definition. This allows the same procedure to run with different input values. When the following code runs, a1 is assigned to the first parameter and a2 is assigned to the second parameter before the procedure's statements execute.  pName(a1, a2)    3.2.B.4  A procedure can also be called with no arguments (empty parentheses) when it has no parameters. The number of arguments in a call must match the number of parameters in the procedure definition.    3.2.B.5  To determine the result of a procedure call, programmers trace the call by matching arguments to parameters, stepping through the procedure's statements in order, tracking any variable updates and outputs, and then returning to where the procedure was called to continue program execution.    3.2.B.6  If a procedure returns a value, the procedure call evaluates to that value. The returned value can be stored in a variable, used in an expression, or displayed as output. If a procedure does not return a value, the call is used to perform actions such as updating variable values or producing output.     Procedural Abstraction   3.2.C.1  Procedural abstraction manages complexity by grouping related code into named procedures that can be called from other parts of a program.    3.2.C.2  Procedural abstraction allows programmers to use a procedure by knowing what it does without needing to know how it works internally. Programmers often use built-in procedures, such as print or random , by relying on the procedure's name, purpose, and expected behavior while the implementation details stay hidden.    3.2.C.3  Procedural abstraction helps manage complexity by breaking a large problem into smaller subproblems and creating procedures to solve each part.    3.2.C.4  The subdivision of a program into smaller, independent procedures or components is called modularity. Modularity helps programmers focus on one part at a time and makes programs easier to build, test, and revise.    3.2.C.5  Procedural abstraction supports code reuse by extracting shared behavior into a single procedure instead of duplicating code in multiple places.    3.2.C.6  Using parameters generalizes a procedure so it can be reused with different inputs, allowing one procedure to handle many situations without rewriting code.    3.2.C.7  Procedural abstraction allows programmers to change a procedure's internal steps (for example, to improve efficiency or fix a bug) without changing the rest of the program. This makes larger programs easier to maintain because updates can be made in one place.    3.2.C.8  Using procedural abstraction improves readability because the rest of the program can call procedures with descriptive names, so the overall steps of the program are easier to understand at a glance.     Learning Objectives Review   3.2.A  Develop code to define procedures with and without parameters.    3.2.B  Develop code for procedure calls, and determine the result of procedure calls.    3.2.C  Explain how the use of procedural abstraction manages complexity in a program.     Vocabulary Review   "
+  "body": "  Procedures (Functions)   Quick Links:   Our programs are getting longer and longer! Advanced programmers break up large programs into smaller, more manageable pieces called procedures or functions . This allows us to solve complex problems by breaking them into smaller subproblems and to reuse code. In this lesson, we will learn to write our own Python functions and learn how procedural abstraction helps manage complexity.     What is a Procedure or Function  procedures  functions   3.2.A.1  A procedure is a named group of programming instructions that performs a task. Using procedures helps programmers organize code, avoid unnecessary code, and make programs easier to read, test, and update. Procedures may also be called functions or methods depending on the programming language.   A procedure or function is a named block of code that performs a task when it is called.  We have already used several built-in Python functions in our programs, for example input() and print() which are input\/output functions built into Python. Notice that functions end with parentheses () which can contain arguments , the data that the function needs to do its job, for example what to print for the print(\"Print this!\") function. Some functions like input() or random.randint() also return values back like the user's input or a random number that we usually store in a variable. A function is like a black box where you know what goes in and what comes out, but not necessarily how it works inside. This is a powerful abstraction that allows our programs to be more complex without being overwhelming.   # The print() function takes 1 argument that it prints to the screen print(\"Hello World!\") # The input() function takes 1 argument, the prompt, and returns the user's input # which we save in a variable name = input(\"Enter your name: \") # The random.randint() function takes 2 arguments, the low and high values, # and returns a random number between those values (inclusive) random_number = random.randint(1, 10)    unplugged functions  projects unplugged functions  unplugged procedures  projects unplugged procedures  POGIL group activity functions  POGIL group activity procedures   Unplugged: Functions   In groups, choose one person to be the function. The person playing the function should choose a secret math formula with a variable and 2 operations, for example 2*x + 1 . Don't tell the rest of the group what the formula is!  The other members of the group will give the function different argument values for x , and the function will return the result of the formula. Write down the input\/output pairs for each argument and return value.  For example, if the function's formula is 2*x + 1 and a group member provides 3 as the argument, the function returns 7 . After each member gets a return value, the group should try to figure out the function's secret formula. Then, discuss and answer the following questions as a group.   What arguments did your group provide to the function? What return value did the function produce for each argument?  What was the function's secret formula? How did your group use the input\/output pairs to try to figure it out?  How does this activity demonstrate that a function can be reused with different arguments?  Can you use a function without knowing how it works inside? How does this activity demonstrate that a function is an abstraction like a \"black box\"?        Procedure\/Function Calls and Definitions  function call  function definition  procedure call  procedure definition  Let's learn how to define our own funtions and call them to do their jobs! The main reasons to divide up a program into multiple functions are to organize the code to reduce its complexity and to avoid repetition of code. For example, the \"This Old Man\" song below has a lot of repetition ( listen here ). Instead of writing the same code over and over in order to print the song, we can write functions that for different parts of the song and run them when needed. Click on all lines of code that are repeated in the song below, and then we will learn how they can be replaced with a function called chorus() .    Click on all the lines that are completely identical and repeated.    Look for lines of Python code that are completely identical.    print(\"This old man, he played one.\")  print(\"He played knick-knack on my thumb.\")  print(\"With a knick-knack paddywhack, give a dog a bone,\")  print(\"This old man came rolling home.\")  print(\"This old man, he played two.\")  print(\"He played knick-knack on my shoe.\")  print(\"With a knick-knack paddywhack, give a dog a bone,\")  print(\"This old man came rolling home.\")    There are two steps to writing a function: the function definition and the function call . A function in Python is defined by using the keyword def followed by the function name which the programmer chooses. Indented inside the function, we write the code that will be executed when the function is called. We can call a function or procedure by using its name, for example chorus() . Functions always have parentheses () after their name even if it's empty parentheses. In Python, functions always have to be defined before they can be called, so programmers put the function definitions at the top of the program and the main program below.   # Function definition def functionName(): <block of statements> # Function call functionName()   In AP CSP pseudocode, functions are called procedures , and the keyword procedure is used instead of def to define a function. Curly braces are used to enclose the block of statements, insead of just indentation. Procedure calls just use the name of the procedure with parentheses like in Python.   # AP pseudocode procedure definition procedure procName() { <block of statements> } # AP pseudocode procedure call procName()    3.2.B.1  Calling a procedure runs a named sequence of steps, which helps programs reuse code and keep the overall program easier to read and follow.    3.2.B.2  A procedure is called by using its name in a statement so the program runs the steps stored in that procedure. When the call happens, the program pauses the current sequence of statements, executes the procedure's instructions, and then resumes at the next statement after the call.   When a function is called to do its job, the computer jumps to the function definition and runs the code inside it. When the function is finished, the computer jumps back to the line after the function call and continues running the program. See how the chorus() function is called in the code below by clicking on the next button. Watch the red arrow as the program jumps to the function definition and then returns to the line after the function call. Notice how we have reduced repetition of code by abstracting the chorus into a function that can be called multiple times.    Click on the next button below the code to step through the code. Watch the red arrow as the program calls the chorus() function and then returns to the line where the function was called.    def chorus(): print(\"With a knick-knack paddywhack, give a dog a bone,\") print(\"This old man came rolling home.\") print(\"This old man, he played one.\") print(\"He played knick-knack on my thumb.\") chorus() print(\"This old man, he played two.\") print(\"He played knick-knack on my shoe.\") chorus()     3.2.A.2  If a procedure does not need any input information to complete its intended task, it can be defined with its name followed by parentheses and a block of statements. Each time the procedure is called, the statements in the procedure execute, and then the program continues with the next statement after the call.    3.2.A.9  Defining a procedure creates the named steps, but the code inside runs only when the procedure is called.   Try writing your own function calls below to reduce repetition of code and organize your program.    Replace the repeated chorus lines in the code below with a function call to chorus() to reduce repetition of code.    def chorus(): print(\"With a knick-knack paddywhack, give a dog a bone,\") print(\"This old man came rolling home.\") # Main program print(\"This old man, he played one.\") print(\"He played knick-knack on my thumb.\") chorus() print(\"This old man, he played two.\") print(\"He played knick-knack on my shoe.\") # Replace the lines below with a chorus function call print(\"With a knick-knack paddywhack, give a dog a bone,\") print(\"This old man came rolling home.\") print(\"This old man, he played three.\") print(\"He played knick-knack on my knee.\") # Replace the lines below with a chorus function call print(\"With a knick-knack paddywhack, give a dog a bone,\") print(\"This old man came rolling home.\")  from unittest.gui import TestCaseGui class myTests(TestCaseGui): def test1(self): count = self.getEditorText().count(\"chorus()\") self.assertLessEqual(4, count, \"Call chorus() at least twice more\") count = self.getEditorText().count(\"With a knick-knack paddywhack\") self.assertEqual(1, count, \"Use chorus() instead of repeated lines \\\"With a knick-knack paddywhack\\\"\") myTests().main()      Trace through the code below and determine what it prints.   def fruit(): print(\"apples and bananas!\") def song(): print(\"I like to eat, eat, eat\") fruit() fruit() song()       I like to eat eat eat    Try tracing through the song function and see what happens when it calls the other functions.      I like to eat eat eat fruit    There is a fruit() function but it does not print out the word fruit.      I like to eat, eat, eat apples and bananas!    There are 2 calls to the fruit() function in song().      I like to eat eat eat apples and bananas! apples and bananas!    Yes, song() prints the first line and then calls fruit() twice to print the other lines.        Arguments and Parameters  arguments  parameters  Let’s take another look at the This Old Man song and see if we can replace more repeated code. Each verse of the song is similar except it uses a different number and rhyme. If we can pull these out into variables, we can write a single function that can print any verse of the song! Click on the words that are different in the lines that are repeated to discover what variables we need to add to the functions.    Click on the words that are different in the repeated lines.    Look for lines that are similar except for a different number or action and click on those words.    print(\"This old man, he played  one .\")  print(\"He played knick-knack on my  thumb .\")  print(\"With a knick-knack paddywhack, give a dog a bone,\")  print(\"This old man came rolling home.\")  print(\"This old man, he played  two .\")  print(\"He played knick-knack on my  shoe .\")  print(\"With a knick-knack paddywhack, give a dog a bone,\")  print(\"This old man came rolling home.\")    We can make functions even more powerful and more abstract by giving them parameters for the data that they need to do their job. A parameter is a variable listed in the definition of a function and can be used inside the function body. This allows values, called arguments , to be passed into the function. The argument value is copied into the corresponding parameter variable. Many people use the terms \"parameter\" and \"argument\" interchangeably, but formally, the parameter is the variable in the function definition and the argument is the value passed to the function when it is called.  For example, here is a procedure called forward with a parameter variable called pixels that we used with turtles with procedure calls like forward(50) telling it to move forward 40 or 100 pixels. The value 40 is the argument that is passed to the parameter variable pixels in the procedure definition.    3.2.A.3  Procedures can use parameters to receive input. A parameter is a variable name listed in the procedure definition. An argument is the actual value provided when the procedure is called.   Going back to our song, we can make a function called verse that takes the number and the rhyme as parameters and uses them to print any verse! The parameter variables number and rhyme will hold different values each time the function is called.   # This function prints a verse for a given number and rhyme. # @param number - the number used in the verse # @param rhyme - the word that rhymes with the number def verse(number, rhyme): print(\"This old man, he played\", number, \".\") print(\"He played knick-knack on my\", rhyme, \".\") chorus()   The verse function can now be used to print any verse of the song. The values passed to the function become the values of the parameter variables. The main part of the program can now mostly be calls to the verse function. Main program code often looks like an outline for the program, calling functions to do the work.   verse(\"one\", \"thumb\") verse(\"two\", \"shoe\")   Notice that the same function is called two times with different arguments. When verse(\"one\", \"thumb\") is called, the parameter number gets the value \"one\" and the parameter rhyme gets the value \"thumb\" . When verse(\"two\", \"shoe\") is called, the same parameters receive different values. The function does not need to change. The arguments provide the values that makes each verse different.     Click on the next button below the code to step through the code. Watch the red arrow jump to the verse function each time it is called. Pay attention to how the arguments are passed into the parameter variables.    def chorus(): print(\"With a knick-knack paddywhack, give a dog a bone,\") print(\"This old man came rolling home.\") def verse(number, rhyme): print(\"This old man, he played\", number, \".\") print(\"He played knick-knack on my\", rhyme, \".\") chorus() verse(\"one\", \"thumb\") verse(\"two\", \"shoe\")    Let’s try adding more verses to the song. With the power of abstraction using a function with parameters, it becomes very easy to add more verses to the song, just by calling the verse function with different arguments. Parameters make it more general, flexible, and reusable!    Run the following code to see the song This Old Man using the verse function. Add another verse using \"three\" and the rhyme \"knee\" and another verse using \"four\" and the rhyme \"door\" by calling the verse function with the two arguments.    def chorus(): print(\"With a knick-knack paddywhack, give a dog a bone,\") print(\"This old man came rolling home.\") def verse(number, rhyme): print(\"This old man, he played\", number, \".\") print(\"He played knick-knack on my\", rhyme, \".\") chorus() verse(\"one\", \"thumb\") verse(\"two\", \"shoe\") # TODO: # Call verse again with \"three\" and \"knee\" # Call verse again with \"four\" and \"door\"  from unittest.gui import TestCaseGui class myTests(TestCaseGui): def test1(self): code = self.getEditorText().replace(\" \", \"\") self.assertIn(\"verse(\\\"three\\\",\\\"knee\\\")\", code, \"Call verse() with \\\"three\\\" and \\\"knee\\\"\") self.assertIn(\"verse(\\\"four\\\",\\\"door\\\")\", code, \"Call verse() with \\\"four\\\" and \\\"door\\\"\") myTests().main()     3.2.A.4  A procedure may not need parameters when it always performs the same steps with no changing input (for example, displaying an instructions screen or resetting a game to a default starting state). Procedures need parameters when they need input information to complete the intended task. If a procedure should work for many different inputs (for example, greeting different users or calculating totals for different numbers), parameters make it flexible and reusable because the program can pass different arguments each time it is called. Using parameters when input varies helps avoid duplicating code and keeps the program easier to update.    3.2.A.5  Procedures with parameters make it easier to adapt an app's behavior or output to different users and situations without rewriting code. A single procedure with parameters can generate many clear, personalized messages for different users by using different argument values each time it is called.   Let's now write our own functions with parameters. Let's write a procedure or function that welcomes a user. In AP CSP pseudocode, we would start the procedure definition with the header procedure welcome(name) where the parameter variable is put inside the parentheses after the procedure name.    3.2.A.6  A procedure is defined with a name and a list of zero or more parameters. When the following code runs, a procedure named pName is defined with zero or more parameters ( p1, p2, ... ). When the procedure is called, the statements in <block of statements> execute.  procedure pName(p1, p2, ...) { <block of statements> }   In AP CSP pseudocode, a procedure with parameters is defined using the following syntax:   procedure procedureName(param1, param2, ...) { <block of statements> }   In Python, a function with parameters is defined using the following syntax:   def functionName(param1, param2, ...): # function body    3.2.B.3  In a procedure call, the values inside the parentheses are arguments . When the call runs, each argument value is assigned to the matching parameter in the procedure definition. This allows the same procedure to run with different input values. When the following code runs, a1 is assigned to the first parameter and a2 is assigned to the second parameter before the procedure's statements execute.  pName(a1, a2)   Python and AP CSP pseudocode have very similar simple procedure or function call with the procedure name followed by the argument values inside the parentheses. The number of arguments in a call must match the number of parameters in the procedure definition. Each argument value is assigned to the matching parameter in the procedure definition in order.   # Python and AP CSP pseudocode procedure\/function call functionName(arg1, arg2, ...)     Write a procedure called welcome that takes a parameter for the user's name and prints Hello using the name. Then call the procedure with your name as the argument.    # TODO: Write the welcome function using def and a parameter name # Function Calls welcome(\"World\") # Call welcome with your name as the argument # Call welcome again with a different name as the argument  from unittest.gui import TestCaseGui class myTests(TestCaseGui): def test1(self): code = self.getEditorText().replace(\" \", \"\") self.assertIn(\"def\", code, \"Define the welcome function with def\") self.assertIn(\"welcome(name)\", code, \"Define the welcome function with a parameter name\") self.assertIn(\"World\", self.getOutput(), \"The output should include a welcome message to World\") count = code.count(\"welcome(\") self.assertLessEqual(4, count, \"Call welcome() at least 2 more times\") myTests().main()     3.2.B.4  A procedure can also be called with no arguments (empty parentheses) when it has no parameters. The number of arguments in a call must match the number of parameters in the procedure definition.    3.2.B.5  To determine the result of a procedure call, programmers trace the call by matching arguments to parameters, stepping through the procedure's statements in order, tracking any variable updates and outputs, and then returning to where the procedure was called to continue program execution.   When tracing through code that has procedures\/functions, it is important to write down and keep track of the parameter variables and their values with each function call. Remember to match the arguments with the parameter in order.    Consider the following pseudocode for a procedure song .   procedure song(food1, food2) { print(\"I like to eat, eat, eat\", food1, \"and\", food2, \"!\") }   Given the following procedure calls, what would be printed when the code is run?   song(\"bananas\", \"apples\") song(\"pizza\", \"pineapples\")       I like to eat, eat, eat apples and bananas!    The first procedure call is song(\"bananas\", \"apples\") , so the first argument, \"bananas\" , is assigned to the food1 parameter.      I like to eat, eat, eat bananas and apples! I like to eat, eat, eat pizza and pineapples!    Correct! The first procedure call is song(\"bananas\", \"apples\") , so the first argument, \"bananas\" , is assigned to the food1 parameter and the second argument, \"apples\" , is assigned to the food2 parameter. The second procedure call is song(\"pizza\", \"pineapples\") , so the first argument, \"pizza\" , is assigned to the food1 parameter and the second argument, \"pineapples\" , is assigned to the food2 parameter.      I like to eat, eat, eat apples and bananas! I like to eat, eat, eat pineapples and pizzas!    Remember that arguments are assigned to parameters in order. The first argument is assigned to the first parameter variable, etc.      I like to eat, eat, eat pizzas and pineapples!    Both procedure calls will print a line, so there should be two lines printed.        Return Values  return values  return  Some procdures or functions also return a value back to the code that called them. For example, we have used the Python built-in input() function, which returns the user's input as a string, and the random.randint() function, which returns a random integer. You can imagine a function as a calculating machine that takes numbers as arguments and returns a calculated result, or like a toaster that takes bread as an argument and returns toast.   When writing your own functions, you can use the keyword return to return a variable or value or expression. If you do not have a return statement in your function, Python automatically returns the special value None by default. So, all Python functions actually return a value, even if it's just None . The return statement also immediately ends the function, so any code after the return statement is not executed.   3.2.A.7  Some procedures use a return statement to send a result back to the part of the program that called the procedure, which allows the returned value to be stored in a variable, used in an expression, or displayed as output. The return statement ends the procedure immediately, even if more statements appear later in the procedure. When the following code runs in the body of a procedure, the value of expression is returned to the place in the program where the procedure was called.  return expression    3.2.A.8  Some procedures perform an action, such as displaying output or updating variables, and do not return a value. Other procedures compute a value and use a return statement so the result can be used elsewhere in the program.   Consider a simple function that squares a number. For example, square(3) returns 9.   # Define function square def square(number): return number * number # Call the function print( square(3) ) # prints 9 result = square(4) print(result) # prints 16   Let’s try this below. Click on the next button to step through the code and see how the argument is passed to the parameter and how the return value is sent back to the calling code.    Click on the next button below the code to step through the code. Watch the red arrow move to the function that is being called, see how the argument is passed into the parameter variable, and watch the return value move back to the calling code.    def square(number): return number * number # Call the function print( square(3) ) # prints 9 result = square(4) print(result) # prints 16     3.2.B.6  If a procedure returns a value, the procedure call evaluates to that value. The returned value can be stored in a variable, used in an expression, or displayed as output. If a procedure does not return a value, the call is used to perform actions such as updating variable values or producing output.   After calling a function, the return value can be printed or stored in a variable or used as part of an expression. The value is substituted in place of the function call.   # Print the return value print( square(3) ) # prints 9 # Save the return value in a variable # and use it in an expression result = square(4) + square(2) + 1     What does the following code print when run?   def square(x): return x * x def divide(x, y): return x \/ y print(square(2) + divide(10, 2))       9.0    Yes. The square(2) function returns 4. The divide(10, 2) function returns 5.0. The sum of 4 and 5.0 is 9.0.      45    Sometimes string concatenation happens, but in this case, the + operator performs addition because both functions return numeric values.      square(3)+divide(5,2)    The functions return values that are then added.      Nothing, it does not run.    Try the code in an active code window. Both functions are valid Python functions and the expression produces a numeric result.      Here are some common errors when working with functions:   Giving the wrong number of arguments to a function.  Giving the arguments in the wrong order.  Forgetting to use what a function returns.     Fix the function calls below. Make sure the correct number and order of arguments are used. Do not change the function definitions.    # square returns the square of a number. # Do NOT change. def square(number): return number * number # divide divides x by y and returns the result. # Do NOT change. def divide(x, y): return x \/ y # TO DO: Fix the function calls below. # Make sure the number and order of the # arguments match what the functions expect. # result1 should be 4 squared. # result2 should be 5 divided by 2. result1 = square(4, 2) result2 = divide(2, 5) print(\"4 squared is\", result1) print(\"5 divided by 2 is\", result2)  from unittest.gui import TestCaseGui class myTests(TestCaseGui): def test1(self): self.assertIn(\"4 squared is 16\", self.getOutput(), \"Correct output for 4 squared\") self.assertIn(\"5 divided by 2 is 2.5\", self.getOutput(), \"Correct output for 5 divided by 2\") self.assertIn(\"square(4)\", self.getEditorText(), \"Call square() with one argument\") self.assertIn(\"divide(5,\", self.getEditorText(), \"Call divide() with the first argument as 5\") myTests().main()      Procedural Abstraction  procedural abstraction   Procedural abstraction means using functions or procedures in order to manage complexity in a program. It allows programmers to use a procedure and not worry about the details of how it exactly works (i.e. abstracting away the details and treating it as a black box).   3.2.C.1  Procedural abstraction manages complexity by grouping related code into named procedures that can be called from other parts of a program.    3.2.C.2  Procedural abstraction allows programmers to use a procedure by knowing what it does without needing to know how it works internally. Programmers often use built-in procedures, such as print or random , by relying on the procedure's name, purpose, and expected behavior while the implementation details stay hidden.    3.2.C.3  Procedural abstraction helps manage complexity by breaking a large problem into smaller subproblems and creating procedures to solve each part.   Modularity is the practice of dividing a program into smaller independent parts. Each part or does one specific job. This is a great way to manage complexity because it divides the problem into more manageable parts that make it easier to design, test, and maintain. It also makes the code easier to understand.   3.2.C.4  The subdivision of a program into smaller, independent procedures or components is called modularity . Modularity helps programmers focus on one part at a time and makes programs easier to build, test, and revise.    3.2.C.8  Using procedural abstraction improves readability because the rest of the program can call procedures with descriptive names, so the overall steps of the program are easier to understand at a glance.   Procedural abstraction also removes repetition in code because it allows programmers to define a procedure once and then call it multiple times, rather than writing the same code repeatedly. This allows for code reuse and makes the code easier to maintain. If a change is needed, it can be made in one place instead of multiple places.   3.2.C.5  Procedural abstraction supports code reuse by extracting shared behavior into a single procedure instead of duplicating code in multiple places.     The following program asks the user for 2 numbers and then checks that they are between 1 and 10. Refactor the code by creating a function named get_valid_number . The function should repeatedly ask the user to enter a number from 1 to 10 and print an error message when the input is not valid. For this exercise, the function does not need to return a value. Replace the repeated validation code with calls to your function.    # The function get_valid_number repeatedly checks # if the user's input is between 1-10 and returns the valid number. def get_valid_number(): # TODO: Move and indent the repeated validation code below into this function. # return the valid number entered by the user return number print(\"Enter your first number:\") # TODO: Remove the repeated validation code below # Replace with # number = get_valid_number() number = int(input(\"Number: \")) while number < 1 or number > 10: number = int(input(\"Invalid number! Enter a number from 1 to 10: \")) print(\"Enter your second number.\") # TODO: Remove the repeated validation code below # Replace with # number2 = get_valid_number() number2 = int(input(\"Number: \")) while number2 < 1 or number2 > 10: number2 = int(input(\"Invalid number! Enter a number from 1 to 10: \")) sum = number + number2 print(\"The sum of your numbers is:\", sum)  from unittest.gui import TestCaseGui class myTests(TestCaseGui): def test1(self): code = self.getEditorText().replace(\"# number = get_valid_number()\", \"\").replace(\"# number2 = get_valid_number()\", \"\") count = code.count(\"get_valid_number()\") self.assertLessEqual(3, count, \"Call get_valid_number at least 2 times\") count = code.count(\"while\") self.assertEqual(1, count, \"Move while loop into get_valid_number\") self.assertGreaterEqual(20, sum, \"The sum of the two numbers should be less than or equal to 20\") myTests().main()     3.2.C.7  Procedural abstraction allows programmers to change a procedure's internal steps (for example, to improve efficiency or fix a bug) without changing the rest of the program. This makes larger programs easier to maintain because updates can be made in one place.     Suppose a program uses the following procedure and procedure calls to calculate the cost of an order.   procedure calculate_total(price, quantity) { subtotal = price * quantity tax = subtotal * 0.06 return subtotal + tax } calculate_total(5.95, 3) calculate_total(10.25, 4)   The programmer later changes the tax rate from 6% to 7%. How does procedural abstraction make it easier to update the program?      The programmer can change the tax rate in one place in the procedure, and calls to the procedure will use the updated calculation.    Correct. Procedural abstraction helps make programs easier to maintain because the implementation can be changed without requiring every part of the program that uses the procedure to be rewritten.      The procedure automatically changes every variable in the program that contains a price.    A procedure does not automatically change unrelated variables. It performs its calculation using the arguments passed to it.      The procedure prevents the tax rate from being changed accidentally.    The tax rate can still be changed by modifying the procedure. The advantage is that the change only needs to be made in one place.      The procedure makes the program faster because Python only has to calculate the tax once.    The procedure is executed each time it is called. Its main advantage here is maintainability, not automatically improving performance.       3.2.C.6  Using parameters generalizes a procedure so it can be reused with different inputs, allowing one procedure to handle many situations without rewriting code.   Using functions with paramenters is an even more powerful abstraction that allows for greater flexibility and reusability in code. Try refactoring the code below to remove the repeated calculations by creating a function that takes parameters and returns a value.    The following program prints out reports for 3 students, but it has a lot of repeated code! Refactor the program by creating a function named print_report . The function should take name and score as parameters and print the name, score, and whether the student passed or failed. Replace the repeated code with calls to your function.    # TODO: Define a function print_report(name, score) # that prints the name, score, and whether the student passed or failed. # The following code has a lot of repetition! # Refactor the code with function calls to print_report name = \"Ava\" score = 92 print(\"Student:\", name) print(\"Score:\", score) print(\"Passed:\", score >= 60) name = \"Luis\" score = 78 print(\"Student:\", name) print(\"Score:\", score) print(\"Passed:\", score >= 60) name = \"Maya\" score = 55 print(\"Student:\", name) print(\"Score:\", score) print(\"Passed:\", score >= 60)  from unittest.gui import TestCaseGui class myTests(TestCaseGui): def test1(self): self.assertIn(\"def print_report(name, score):\", self.getEditorText(), \"Define the print_report function with parameters name and score\") count = self.getEditorText().count(\"print_report(\") self.assertLessEqual(4, count, \"Call print_report at least 3 times\") count = self.getEditorText().count(\"60\") self.assertEqual(1, count, \"Use print_report instead of repeated lines of code with score >= 60\") myTests().main()      The following program repeats the same calculation in several places. Refactor the program by creating a function named calculate_total . The function should take price and quantity as parameters and return the total. Replace the repeated calculations with calls to your function.    # TODO: Define a function calculate_total # The function should take price and quantity as parameters # and return the product. # The following code has a lot of repetition! # Refactor the code with function calls. price1 = 5 quantity1 = 3 total1 = price1 * quantity1 print(\"Order 1:\", total1) price2 = 12 quantity2 = 4 total2 = price2 * quantity2 print(\"Order 2:\", total2) price3 = 8 quantity3 = 6 total3 = price3 * quantity3 print(\"Order 3:\", total3)  from unittest.gui import TestCaseGui class myTests(TestCaseGui): def test1(self): self.assertIn(\"def calculate_total(price, quantity):\", self.getEditorText(), \"Define the calculate_total function with parameters price and quantity\") self.assertIn(\"return\", self.getEditorText(), \"Use a return statement in the calculate_total function\") count = self.getEditorText().count(\"calculate_total(\") self.assertLessEqual(4, count, \"Call calculate_total at least 3 times\") count = self.getEditorText().count(\"*\") self.assertEqual(1, count, \"Use calculate_total() instead of repeated lines with * operator\") self.assertEqual(15, calculate_total(5, 3), \"calculate_total(5, 3) should return 15\") myTests().main()      Coding Challenge: Functions in Tic Tac Toe              Learning Objectives Review   3.2.A  Develop code to define procedures with and without parameters.    3.2.B  Develop code for procedure calls, and determine the result of procedure calls.    3.2.C  Explain how the use of procedural abstraction manages complexity in a program.     Vocabulary Review   "
 },
 {
   "id": "topic-3-2-procedures-3-2",
@@ -7027,21 +7027,39 @@ var ptx_lunr_docs = [
   "type": "Activity",
   "number": "3.2.2",
   "title": "",
-  "body": "  Click on all the lines that are completely identical and repeated.    Look for lines of Python code that are completely identical.    print(\"This old man, he played one.\")  print(\"He played knick-knack on my thumb.\")  print(\"With a knick-knack paddywhack, give a dog a bone,\")  print(\"This old man came rolling home.\")  print(\"This old man, he played two.\")  print(\"He played knick-knack on my shoe.\")  print(\"With a knick-knack paddywhack, give a dog a bone,\")  print(\"This old man came rolling home.\")  print(\"This old man, he played three.\")  print(\"He played knick-knack on my knee.\")  print(\"With a knick-knack paddywhack, give a dog a bone,\")  print(\"This old man came rolling home.\")   "
+  "body": "  Click on all the lines that are completely identical and repeated.    Look for lines of Python code that are completely identical.    print(\"This old man, he played one.\")  print(\"He played knick-knack on my thumb.\")  print(\"With a knick-knack paddywhack, give a dog a bone,\")  print(\"This old man came rolling home.\")  print(\"This old man, he played two.\")  print(\"He played knick-knack on my shoe.\")  print(\"With a knick-knack paddywhack, give a dog a bone,\")  print(\"This old man came rolling home.\")   "
 },
 {
-  "id": "function-call-defn-3",
+  "id": "function-call-defn-8",
   "level": "2",
-  "url": "topic-3-2-procedures.html#function-call-defn-3",
+  "url": "topic-3-2-procedures.html#function-call-defn-8",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "function definition function call "
+},
+{
+  "id": "function-call-defn-10",
+  "level": "2",
+  "url": "topic-3-2-procedures.html#function-call-defn-10",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "procedures "
+},
+{
+  "id": "function-call-defn-12",
+  "level": "2",
+  "url": "topic-3-2-procedures.html#function-call-defn-12",
   "type": "Essential Knowledge",
   "number": "3.2.2",
   "title": "3.2.B.1.",
   "body": " 3.2.B.1  Calling a procedure runs a named sequence of steps, which helps programs reuse code and keep the overall program easier to read and follow.  "
 },
 {
-  "id": "function-call-defn-4",
+  "id": "function-call-defn-13",
   "level": "2",
-  "url": "topic-3-2-procedures.html#function-call-defn-4",
+  "url": "topic-3-2-procedures.html#function-call-defn-13",
   "type": "Essential Knowledge",
   "number": "3.2.3",
   "title": "3.2.B.2.",
@@ -7057,184 +7075,346 @@ var ptx_lunr_docs = [
   "body": "  Click on the next button below the code to step through the code. Watch the red arrow as the program calls the chorus() function and then returns to the line where the function was called.    def chorus(): print(\"With a knick-knack paddywhack, give a dog a bone,\") print(\"This old man came rolling home.\") print(\"This old man, he played one.\") print(\"He played knick-knack on my thumb.\") chorus() print(\"This old man, he played two.\") print(\"He played knick-knack on my shoe.\") chorus()   "
 },
 {
-  "id": "function-call-defn-6",
+  "id": "function-call-defn-16",
   "level": "2",
-  "url": "topic-3-2-procedures.html#function-call-defn-6",
+  "url": "topic-3-2-procedures.html#function-call-defn-16",
   "type": "Essential Knowledge",
   "number": "3.2.4",
-  "title": "3.2.A.6.",
-  "body": " 3.2.A.6  A procedure is defined with a name and a list of zero or more parameters. When the following code runs, a procedure named pName is defined with zero or more parameters ( p1, p2, ... ). When the procedure is called, the statements in <block of statements> execute.  procedure pName(p1, p2, ...) { <block of statements> }  "
-},
-{
-  "id": "function-call-defn-7",
-  "level": "2",
-  "url": "topic-3-2-procedures.html#function-call-defn-7",
-  "type": "Essential Knowledge",
-  "number": "3.2.5",
   "title": "3.2.A.2.",
   "body": " 3.2.A.2  If a procedure does not need any input information to complete its intended task, it can be defined with its name followed by parentheses and a block of statements. Each time the procedure is called, the statements in the procedure execute, and then the program continues with the next statement after the call.  "
 },
 {
-  "id": "function-call-defn-8",
+  "id": "function-call-defn-17",
   "level": "2",
-  "url": "topic-3-2-procedures.html#function-call-defn-8",
+  "url": "topic-3-2-procedures.html#function-call-defn-17",
   "type": "Essential Knowledge",
-  "number": "3.2.6",
-  "title": "3.2.A.4.",
-  "body": " 3.2.A.4  A procedure may not need parameters when it always performs the same steps with no changing input (for example, displaying an instructions screen or resetting a game to a default starting state). Procedures need parameters when they need input information to complete the intended task. If a procedure should work for many different inputs (for example, greeting different users or calculating totals for different numbers), parameters make it flexible and reusable because the program can pass different arguments each time it is called. Using parameters when input varies helps avoid duplicating code and keeps the program easier to update.  "
-},
-{
-  "id": "function-call-defn-9",
-  "level": "2",
-  "url": "topic-3-2-procedures.html#function-call-defn-9",
-  "type": "Essential Knowledge",
-  "number": "3.2.7",
-  "title": "3.2.A.5.",
-  "body": " 3.2.A.5  Procedures with parameters make it easier to adapt an app's behavior or output to different users and situations without rewriting code. A single procedure with parameters can generate many clear, personalized messages for different users by using different argument values each time it is called.  "
-},
-{
-  "id": "function-call-defn-10",
-  "level": "2",
-  "url": "topic-3-2-procedures.html#function-call-defn-10",
-  "type": "Essential Knowledge",
-  "number": "3.2.8",
-  "title": "3.2.A.7.",
-  "body": " 3.2.A.7  Some procedures use a return statement to send a result back to the part of the program that called the procedure, which allows the returned value to be stored in a variable, used in an expression, or displayed as output. The return statement ends the procedure immediately, even if more statements appear later in the procedure. When the following code runs in the body of a procedure, the value of expression is returned to the place in the program where the procedure was called.  return expression  "
-},
-{
-  "id": "function-call-defn-11",
-  "level": "2",
-  "url": "topic-3-2-procedures.html#function-call-defn-11",
-  "type": "Essential Knowledge",
-  "number": "3.2.9",
-  "title": "3.2.A.8.",
-  "body": " 3.2.A.8  Some procedures perform an action, such as displaying output or updating variables, and do not return a value. Other procedures compute a value and use a return statement so the result can be used elsewhere in the program.  "
-},
-{
-  "id": "function-call-defn-12",
-  "level": "2",
-  "url": "topic-3-2-procedures.html#function-call-defn-12",
-  "type": "Essential Knowledge",
-  "number": "3.2.10",
+  "number": "3.2.5",
   "title": "3.2.A.9.",
   "body": " 3.2.A.9  Defining a procedure creates the named steps, but the code inside runs only when the procedure is called.  "
 },
 {
-  "id": "arguments-2",
+  "id": "song-add-calls",
   "level": "2",
-  "url": "topic-3-2-procedures.html#arguments-2",
-  "type": "Essential Knowledge",
-  "number": "3.2.11",
-  "title": "3.2.A.3.",
-  "body": " 3.2.A.3  Procedures can use parameters to receive input. A parameter is a variable name listed in the procedure definition. An argument is the actual value provided when the procedure is called.  "
+  "url": "topic-3-2-procedures.html#song-add-calls",
+  "type": "Activity",
+  "number": "3.2.4",
+  "title": "",
+  "body": "  Replace the repeated chorus lines in the code below with a function call to chorus() to reduce repetition of code.    def chorus(): print(\"With a knick-knack paddywhack, give a dog a bone,\") print(\"This old man came rolling home.\") # Main program print(\"This old man, he played one.\") print(\"He played knick-knack on my thumb.\") chorus() print(\"This old man, he played two.\") print(\"He played knick-knack on my shoe.\") # Replace the lines below with a chorus function call print(\"With a knick-knack paddywhack, give a dog a bone,\") print(\"This old man came rolling home.\") print(\"This old man, he played three.\") print(\"He played knick-knack on my knee.\") # Replace the lines below with a chorus function call print(\"With a knick-knack paddywhack, give a dog a bone,\") print(\"This old man came rolling home.\")  from unittest.gui import TestCaseGui class myTests(TestCaseGui): def test1(self): count = self.getEditorText().count(\"chorus()\") self.assertLessEqual(4, count, \"Call chorus() at least twice more\") count = self.getEditorText().count(\"With a knick-knack paddywhack\") self.assertEqual(1, count, \"Use chorus() instead of repeated lines \\\"With a knick-knack paddywhack\\\"\") myTests().main()   "
 },
 {
-  "id": "arguments-3",
+  "id": "songMethodsTrace",
   "level": "2",
-  "url": "topic-3-2-procedures.html#arguments-3",
-  "type": "Essential Knowledge",
-  "number": "3.2.12",
-  "title": "3.2.B.3.",
-  "body": " 3.2.B.3  In a procedure call, the values inside the parentheses are arguments. When the call runs, each argument value is assigned to the matching parameter in the procedure definition. This allows the same procedure to run with different input values. When the following code runs, a1 is assigned to the first parameter and a2 is assigned to the second parameter before the procedure's statements execute.  pName(a1, a2)  "
+  "url": "topic-3-2-procedures.html#songMethodsTrace",
+  "type": "Activity",
+  "number": "3.2.5",
+  "title": "",
+  "body": "  Trace through the code below and determine what it prints.   def fruit(): print(\"apples and bananas!\") def song(): print(\"I like to eat, eat, eat\") fruit() fruit() song()       I like to eat eat eat    Try tracing through the song function and see what happens when it calls the other functions.      I like to eat eat eat fruit    There is a fruit() function but it does not print out the word fruit.      I like to eat, eat, eat apples and bananas!    There are 2 calls to the fruit() function in song().      I like to eat eat eat apples and bananas! apples and bananas!    Yes, song() prints the first line and then calls fruit() twice to print the other lines.     "
 },
 {
-  "id": "arguments-4",
+  "id": "this-old-man-find-different-words",
   "level": "2",
-  "url": "topic-3-2-procedures.html#arguments-4",
-  "type": "Essential Knowledge",
-  "number": "3.2.13",
-  "title": "3.2.B.4.",
-  "body": " 3.2.B.4  A procedure can also be called with no arguments (empty parentheses) when it has no parameters. The number of arguments in a call must match the number of parameters in the procedure definition.  "
-},
-{
-  "id": "arguments-5",
-  "level": "2",
-  "url": "topic-3-2-procedures.html#arguments-5",
-  "type": "Essential Knowledge",
-  "number": "3.2.14",
-  "title": "3.2.B.5.",
-  "body": " 3.2.B.5  To determine the result of a procedure call, programmers trace the call by matching arguments to parameters, stepping through the procedure's statements in order, tracking any variable updates and outputs, and then returning to where the procedure was called to continue program execution.  "
+  "url": "topic-3-2-procedures.html#this-old-man-find-different-words",
+  "type": "Activity",
+  "number": "3.2.6",
+  "title": "",
+  "body": "  Click on the words that are different in the repeated lines.    Look for lines that are similar except for a different number or action and click on those words.    print(\"This old man, he played  one .\")  print(\"He played knick-knack on my  thumb .\")  print(\"With a knick-knack paddywhack, give a dog a bone,\")  print(\"This old man came rolling home.\")  print(\"This old man, he played  two .\")  print(\"He played knick-knack on my  shoe .\")  print(\"With a knick-knack paddywhack, give a dog a bone,\")  print(\"This old man came rolling home.\")   "
 },
 {
   "id": "arguments-6",
   "level": "2",
   "url": "topic-3-2-procedures.html#arguments-6",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "parameter arguments "
+},
+{
+  "id": "arguments-9",
+  "level": "2",
+  "url": "topic-3-2-procedures.html#arguments-9",
+  "type": "Essential Knowledge",
+  "number": "3.2.6",
+  "title": "3.2.A.3.",
+  "body": " 3.2.A.3  Procedures can use parameters to receive input. A parameter is a variable name listed in the procedure definition. An argument is the actual value provided when the procedure is called.  "
+},
+{
+  "id": "codelensSong2",
+  "level": "2",
+  "url": "topic-3-2-procedures.html#codelensSong2",
+  "type": "Activity",
+  "number": "3.2.7",
+  "title": "",
+  "body": "  Click on the next button below the code to step through the code. Watch the red arrow jump to the verse function each time it is called. Pay attention to how the arguments are passed into the parameter variables.    def chorus(): print(\"With a knick-knack paddywhack, give a dog a bone,\") print(\"This old man came rolling home.\") def verse(number, rhyme): print(\"This old man, he played\", number, \".\") print(\"He played knick-knack on my\", rhyme, \".\") chorus() verse(\"one\", \"thumb\") verse(\"two\", \"shoe\")   "
+},
+{
+  "id": "ThisOldManSong2",
+  "level": "2",
+  "url": "topic-3-2-procedures.html#ThisOldManSong2",
+  "type": "Activity",
+  "number": "3.2.8",
+  "title": "",
+  "body": "  Run the following code to see the song This Old Man using the verse function. Add another verse using \"three\" and the rhyme \"knee\" and another verse using \"four\" and the rhyme \"door\" by calling the verse function with the two arguments.    def chorus(): print(\"With a knick-knack paddywhack, give a dog a bone,\") print(\"This old man came rolling home.\") def verse(number, rhyme): print(\"This old man, he played\", number, \".\") print(\"He played knick-knack on my\", rhyme, \".\") chorus() verse(\"one\", \"thumb\") verse(\"two\", \"shoe\") # TODO: # Call verse again with \"three\" and \"knee\" # Call verse again with \"four\" and \"door\"  from unittest.gui import TestCaseGui class myTests(TestCaseGui): def test1(self): code = self.getEditorText().replace(\" \", \"\") self.assertIn(\"verse(\\\"three\\\",\\\"knee\\\")\", code, \"Call verse() with \\\"three\\\" and \\\"knee\\\"\") self.assertIn(\"verse(\\\"four\\\",\\\"door\\\")\", code, \"Call verse() with \\\"four\\\" and \\\"door\\\"\") myTests().main()   "
+},
+{
+  "id": "arguments-19",
+  "level": "2",
+  "url": "topic-3-2-procedures.html#arguments-19",
+  "type": "Essential Knowledge",
+  "number": "3.2.7",
+  "title": "3.2.A.4.",
+  "body": " 3.2.A.4  A procedure may not need parameters when it always performs the same steps with no changing input (for example, displaying an instructions screen or resetting a game to a default starting state). Procedures need parameters when they need input information to complete the intended task. If a procedure should work for many different inputs (for example, greeting different users or calculating totals for different numbers), parameters make it flexible and reusable because the program can pass different arguments each time it is called. Using parameters when input varies helps avoid duplicating code and keeps the program easier to update.  "
+},
+{
+  "id": "arguments-20",
+  "level": "2",
+  "url": "topic-3-2-procedures.html#arguments-20",
+  "type": "Essential Knowledge",
+  "number": "3.2.8",
+  "title": "3.2.A.5.",
+  "body": " 3.2.A.5  Procedures with parameters make it easier to adapt an app's behavior or output to different users and situations without rewriting code. A single procedure with parameters can generate many clear, personalized messages for different users by using different argument values each time it is called.  "
+},
+{
+  "id": "arguments-23",
+  "level": "2",
+  "url": "topic-3-2-procedures.html#arguments-23",
+  "type": "Essential Knowledge",
+  "number": "3.2.9",
+  "title": "3.2.A.6.",
+  "body": " 3.2.A.6  A procedure is defined with a name and a list of zero or more parameters. When the following code runs, a procedure named pName is defined with zero or more parameters ( p1, p2, ... ). When the procedure is called, the statements in <block of statements> execute.  procedure pName(p1, p2, ...) { <block of statements> }  "
+},
+{
+  "id": "arguments-28",
+  "level": "2",
+  "url": "topic-3-2-procedures.html#arguments-28",
+  "type": "Essential Knowledge",
+  "number": "3.2.10",
+  "title": "3.2.B.3.",
+  "body": " 3.2.B.3  In a procedure call, the values inside the parentheses are arguments . When the call runs, each argument value is assigned to the matching parameter in the procedure definition. This allows the same procedure to run with different input values. When the following code runs, a1 is assigned to the first parameter and a2 is assigned to the second parameter before the procedure's statements execute.  pName(a1, a2)  "
+},
+{
+  "id": "welcome-function",
+  "level": "2",
+  "url": "topic-3-2-procedures.html#welcome-function",
+  "type": "Activity",
+  "number": "3.2.9",
+  "title": "",
+  "body": "  Write a procedure called welcome that takes a parameter for the user's name and prints Hello using the name. Then call the procedure with your name as the argument.    # TODO: Write the welcome function using def and a parameter name # Function Calls welcome(\"World\") # Call welcome with your name as the argument # Call welcome again with a different name as the argument  from unittest.gui import TestCaseGui class myTests(TestCaseGui): def test1(self): code = self.getEditorText().replace(\" \", \"\") self.assertIn(\"def\", code, \"Define the welcome function with def\") self.assertIn(\"welcome(name)\", code, \"Define the welcome function with a parameter name\") self.assertIn(\"World\", self.getOutput(), \"The output should include a welcome message to World\") count = code.count(\"welcome(\") self.assertLessEqual(4, count, \"Call welcome() at least 2 more times\") myTests().main()   "
+},
+{
+  "id": "arguments-32",
+  "level": "2",
+  "url": "topic-3-2-procedures.html#arguments-32",
+  "type": "Essential Knowledge",
+  "number": "3.2.11",
+  "title": "3.2.B.4.",
+  "body": " 3.2.B.4  A procedure can also be called with no arguments (empty parentheses) when it has no parameters. The number of arguments in a call must match the number of parameters in the procedure definition.  "
+},
+{
+  "id": "arguments-33",
+  "level": "2",
+  "url": "topic-3-2-procedures.html#arguments-33",
+  "type": "Essential Knowledge",
+  "number": "3.2.12",
+  "title": "3.2.B.5.",
+  "body": " 3.2.B.5  To determine the result of a procedure call, programmers trace the call by matching arguments to parameters, stepping through the procedure's statements in order, tracking any variable updates and outputs, and then returning to where the procedure was called to continue program execution.  "
+},
+{
+  "id": "parametersTrace",
+  "level": "2",
+  "url": "topic-3-2-procedures.html#parametersTrace",
+  "type": "Activity",
+  "number": "3.2.10",
+  "title": "",
+  "body": "  Consider the following pseudocode for a procedure song .   procedure song(food1, food2) { print(\"I like to eat, eat, eat\", food1, \"and\", food2, \"!\") }   Given the following procedure calls, what would be printed when the code is run?   song(\"bananas\", \"apples\") song(\"pizza\", \"pineapples\")       I like to eat, eat, eat apples and bananas!    The first procedure call is song(\"bananas\", \"apples\") , so the first argument, \"bananas\" , is assigned to the food1 parameter.      I like to eat, eat, eat bananas and apples! I like to eat, eat, eat pizza and pineapples!    Correct! The first procedure call is song(\"bananas\", \"apples\") , so the first argument, \"bananas\" , is assigned to the food1 parameter and the second argument, \"apples\" , is assigned to the food2 parameter. The second procedure call is song(\"pizza\", \"pineapples\") , so the first argument, \"pizza\" , is assigned to the food1 parameter and the second argument, \"pineapples\" , is assigned to the food2 parameter.      I like to eat, eat, eat apples and bananas! I like to eat, eat, eat pineapples and pizzas!    Remember that arguments are assigned to parameters in order. The first argument is assigned to the first parameter variable, etc.      I like to eat, eat, eat pizzas and pineapples!    Both procedure calls will print a line, so there should be two lines printed.     "
+},
+{
+  "id": "return-values-7",
+  "level": "2",
+  "url": "topic-3-2-procedures.html#return-values-7",
+  "type": "Essential Knowledge",
+  "number": "3.2.13",
+  "title": "3.2.A.7.",
+  "body": " 3.2.A.7  Some procedures use a return statement to send a result back to the part of the program that called the procedure, which allows the returned value to be stored in a variable, used in an expression, or displayed as output. The return statement ends the procedure immediately, even if more statements appear later in the procedure. When the following code runs in the body of a procedure, the value of expression is returned to the place in the program where the procedure was called.  return expression  "
+},
+{
+  "id": "return-values-8",
+  "level": "2",
+  "url": "topic-3-2-procedures.html#return-values-8",
+  "type": "Essential Knowledge",
+  "number": "3.2.14",
+  "title": "3.2.A.8.",
+  "body": " 3.2.A.8  Some procedures perform an action, such as displaying output or updating variables, and do not return a value. Other procedures compute a value and use a return statement so the result can be used elsewhere in the program.  "
+},
+{
+  "id": "codelensSquare",
+  "level": "2",
+  "url": "topic-3-2-procedures.html#codelensSquare",
+  "type": "Activity",
+  "number": "3.2.11",
+  "title": "",
+  "body": "  Click on the next button below the code to step through the code. Watch the red arrow move to the function that is being called, see how the argument is passed into the parameter variable, and watch the return value move back to the calling code.    def square(number): return number * number # Call the function print( square(3) ) # prints 9 result = square(4) print(result) # prints 16   "
+},
+{
+  "id": "return-values-13",
+  "level": "2",
+  "url": "topic-3-2-procedures.html#return-values-13",
   "type": "Essential Knowledge",
   "number": "3.2.15",
   "title": "3.2.B.6.",
   "body": " 3.2.B.6  If a procedure returns a value, the procedure call evaluates to that value. The returned value can be stored in a variable, used in an expression, or displayed as output. If a procedure does not return a value, the call is used to perform actions such as updating variable values or producing output.  "
 },
 {
-  "id": "procedural-abstraction-2",
+  "id": "traceReturns",
   "level": "2",
-  "url": "topic-3-2-procedures.html#procedural-abstraction-2",
-  "type": "Essential Knowledge",
-  "number": "3.2.16",
-  "title": "3.2.C.1.",
-  "body": " 3.2.C.1  Procedural abstraction manages complexity by grouping related code into named procedures that can be called from other parts of a program.  "
+  "url": "topic-3-2-procedures.html#traceReturns",
+  "type": "Activity",
+  "number": "3.2.12",
+  "title": "",
+  "body": "  What does the following code print when run?   def square(x): return x * x def divide(x, y): return x \/ y print(square(2) + divide(10, 2))       9.0    Yes. The square(2) function returns 4. The divide(10, 2) function returns 5.0. The sum of 4 and 5.0 is 9.0.      45    Sometimes string concatenation happens, but in this case, the + operator performs addition because both functions return numeric values.      square(3)+divide(5,2)    The functions return values that are then added.      Nothing, it does not run.    Try the code in an active code window. Both functions are valid Python functions and the expression produces a numeric result.     "
+},
+{
+  "id": "fixFunctionErrors",
+  "level": "2",
+  "url": "topic-3-2-procedures.html#fixFunctionErrors",
+  "type": "Activity",
+  "number": "3.2.13",
+  "title": "",
+  "body": "  Fix the function calls below. Make sure the correct number and order of arguments are used. Do not change the function definitions.    # square returns the square of a number. # Do NOT change. def square(number): return number * number # divide divides x by y and returns the result. # Do NOT change. def divide(x, y): return x \/ y # TO DO: Fix the function calls below. # Make sure the number and order of the # arguments match what the functions expect. # result1 should be 4 squared. # result2 should be 5 divided by 2. result1 = square(4, 2) result2 = divide(2, 5) print(\"4 squared is\", result1) print(\"5 divided by 2 is\", result2)  from unittest.gui import TestCaseGui class myTests(TestCaseGui): def test1(self): self.assertIn(\"4 squared is 16\", self.getOutput(), \"Correct output for 4 squared\") self.assertIn(\"5 divided by 2 is 2.5\", self.getOutput(), \"Correct output for 5 divided by 2\") self.assertIn(\"square(4)\", self.getEditorText(), \"Call square() with one argument\") self.assertIn(\"divide(5,\", self.getEditorText(), \"Call divide() with the first argument as 5\") myTests().main()   "
 },
 {
   "id": "procedural-abstraction-3",
   "level": "2",
   "url": "topic-3-2-procedures.html#procedural-abstraction-3",
-  "type": "Essential Knowledge",
-  "number": "3.2.17",
-  "title": "3.2.C.2.",
-  "body": " 3.2.C.2  Procedural abstraction allows programmers to use a procedure by knowing what it does without needing to know how it works internally. Programmers often use built-in procedures, such as print or random , by relying on the procedure's name, purpose, and expected behavior while the implementation details stay hidden.  "
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "Procedural abstraction "
 },
 {
   "id": "procedural-abstraction-4",
   "level": "2",
   "url": "topic-3-2-procedures.html#procedural-abstraction-4",
   "type": "Essential Knowledge",
-  "number": "3.2.18",
-  "title": "3.2.C.3.",
-  "body": " 3.2.C.3  Procedural abstraction helps manage complexity by breaking a large problem into smaller subproblems and creating procedures to solve each part.  "
+  "number": "3.2.16",
+  "title": "3.2.C.1.",
+  "body": " 3.2.C.1  Procedural abstraction manages complexity by grouping related code into named procedures that can be called from other parts of a program.  "
 },
 {
   "id": "procedural-abstraction-5",
   "level": "2",
   "url": "topic-3-2-procedures.html#procedural-abstraction-5",
   "type": "Essential Knowledge",
-  "number": "3.2.19",
-  "title": "3.2.C.4.",
-  "body": " 3.2.C.4  The subdivision of a program into smaller, independent procedures or components is called modularity. Modularity helps programmers focus on one part at a time and makes programs easier to build, test, and revise.  "
+  "number": "3.2.17",
+  "title": "3.2.C.2.",
+  "body": " 3.2.C.2  Procedural abstraction allows programmers to use a procedure by knowing what it does without needing to know how it works internally. Programmers often use built-in procedures, such as print or random , by relying on the procedure's name, purpose, and expected behavior while the implementation details stay hidden.  "
 },
 {
   "id": "procedural-abstraction-6",
   "level": "2",
   "url": "topic-3-2-procedures.html#procedural-abstraction-6",
   "type": "Essential Knowledge",
-  "number": "3.2.20",
-  "title": "3.2.C.5.",
-  "body": " 3.2.C.5  Procedural abstraction supports code reuse by extracting shared behavior into a single procedure instead of duplicating code in multiple places.  "
+  "number": "3.2.18",
+  "title": "3.2.C.3.",
+  "body": " 3.2.C.3  Procedural abstraction helps manage complexity by breaking a large problem into smaller subproblems and creating procedures to solve each part.  "
 },
 {
   "id": "procedural-abstraction-7",
   "level": "2",
   "url": "topic-3-2-procedures.html#procedural-abstraction-7",
-  "type": "Essential Knowledge",
-  "number": "3.2.21",
-  "title": "3.2.C.6.",
-  "body": " 3.2.C.6  Using parameters generalizes a procedure so it can be reused with different inputs, allowing one procedure to handle many situations without rewriting code.  "
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "Modularity "
 },
 {
   "id": "procedural-abstraction-8",
   "level": "2",
   "url": "topic-3-2-procedures.html#procedural-abstraction-8",
   "type": "Essential Knowledge",
-  "number": "3.2.22",
-  "title": "3.2.C.7.",
-  "body": " 3.2.C.7  Procedural abstraction allows programmers to change a procedure's internal steps (for example, to improve efficiency or fix a bug) without changing the rest of the program. This makes larger programs easier to maintain because updates can be made in one place.  "
+  "number": "3.2.19",
+  "title": "3.2.C.4.",
+  "body": " 3.2.C.4  The subdivision of a program into smaller, independent procedures or components is called modularity . Modularity helps programmers focus on one part at a time and makes programs easier to build, test, and revise.  "
 },
 {
   "id": "procedural-abstraction-9",
   "level": "2",
   "url": "topic-3-2-procedures.html#procedural-abstraction-9",
   "type": "Essential Knowledge",
-  "number": "3.2.23",
+  "number": "3.2.20",
   "title": "3.2.C.8.",
   "body": " 3.2.C.8  Using procedural abstraction improves readability because the rest of the program can call procedures with descriptive names, so the overall steps of the program are easier to understand at a glance.  "
+},
+{
+  "id": "procedural-abstraction-11",
+  "level": "2",
+  "url": "topic-3-2-procedures.html#procedural-abstraction-11",
+  "type": "Essential Knowledge",
+  "number": "3.2.21",
+  "title": "3.2.C.5.",
+  "body": " 3.2.C.5  Procedural abstraction supports code reuse by extracting shared behavior into a single procedure instead of duplicating code in multiple places.  "
+},
+{
+  "id": "refactorIsValidFunction",
+  "level": "2",
+  "url": "topic-3-2-procedures.html#refactorIsValidFunction",
+  "type": "Activity",
+  "number": "3.2.14",
+  "title": "",
+  "body": "  The following program asks the user for 2 numbers and then checks that they are between 1 and 10. Refactor the code by creating a function named get_valid_number . The function should repeatedly ask the user to enter a number from 1 to 10 and print an error message when the input is not valid. For this exercise, the function does not need to return a value. Replace the repeated validation code with calls to your function.    # The function get_valid_number repeatedly checks # if the user's input is between 1-10 and returns the valid number. def get_valid_number(): # TODO: Move and indent the repeated validation code below into this function. # return the valid number entered by the user return number print(\"Enter your first number:\") # TODO: Remove the repeated validation code below # Replace with # number = get_valid_number() number = int(input(\"Number: \")) while number < 1 or number > 10: number = int(input(\"Invalid number! Enter a number from 1 to 10: \")) print(\"Enter your second number.\") # TODO: Remove the repeated validation code below # Replace with # number2 = get_valid_number() number2 = int(input(\"Number: \")) while number2 < 1 or number2 > 10: number2 = int(input(\"Invalid number! Enter a number from 1 to 10: \")) sum = number + number2 print(\"The sum of your numbers is:\", sum)  from unittest.gui import TestCaseGui class myTests(TestCaseGui): def test1(self): code = self.getEditorText().replace(\"# number = get_valid_number()\", \"\").replace(\"# number2 = get_valid_number()\", \"\") count = code.count(\"get_valid_number()\") self.assertLessEqual(3, count, \"Call get_valid_number at least 2 times\") count = code.count(\"while\") self.assertEqual(1, count, \"Move while loop into get_valid_number\") self.assertGreaterEqual(20, sum, \"The sum of the two numbers should be less than or equal to 20\") myTests().main()   "
+},
+{
+  "id": "procedural-abstraction-13",
+  "level": "2",
+  "url": "topic-3-2-procedures.html#procedural-abstraction-13",
+  "type": "Essential Knowledge",
+  "number": "3.2.22",
+  "title": "3.2.C.7.",
+  "body": " 3.2.C.7  Procedural abstraction allows programmers to change a procedure's internal steps (for example, to improve efficiency or fix a bug) without changing the rest of the program. This makes larger programs easier to maintain because updates can be made in one place.  "
+},
+{
+  "id": "proceduralAbstractionChange",
+  "level": "2",
+  "url": "topic-3-2-procedures.html#proceduralAbstractionChange",
+  "type": "Activity",
+  "number": "3.2.15",
+  "title": "",
+  "body": "  Suppose a program uses the following procedure and procedure calls to calculate the cost of an order.   procedure calculate_total(price, quantity) { subtotal = price * quantity tax = subtotal * 0.06 return subtotal + tax } calculate_total(5.95, 3) calculate_total(10.25, 4)   The programmer later changes the tax rate from 6% to 7%. How does procedural abstraction make it easier to update the program?      The programmer can change the tax rate in one place in the procedure, and calls to the procedure will use the updated calculation.    Correct. Procedural abstraction helps make programs easier to maintain because the implementation can be changed without requiring every part of the program that uses the procedure to be rewritten.      The procedure automatically changes every variable in the program that contains a price.    A procedure does not automatically change unrelated variables. It performs its calculation using the arguments passed to it.      The procedure prevents the tax rate from being changed accidentally.    The tax rate can still be changed by modifying the procedure. The advantage is that the change only needs to be made in one place.      The procedure makes the program faster because Python only has to calculate the tax once.    The procedure is executed each time it is called. Its main advantage here is maintainability, not automatically improving performance.     "
+},
+{
+  "id": "procedural-abstraction-15",
+  "level": "2",
+  "url": "topic-3-2-procedures.html#procedural-abstraction-15",
+  "type": "Essential Knowledge",
+  "number": "3.2.23",
+  "title": "3.2.C.6.",
+  "body": " 3.2.C.6  Using parameters generalizes a procedure so it can be reused with different inputs, allowing one procedure to handle many situations without rewriting code.  "
+},
+{
+  "id": "refactorFunctions",
+  "level": "2",
+  "url": "topic-3-2-procedures.html#refactorFunctions",
+  "type": "Activity",
+  "number": "3.2.16",
+  "title": "",
+  "body": "  The following program prints out reports for 3 students, but it has a lot of repeated code! Refactor the program by creating a function named print_report . The function should take name and score as parameters and print the name, score, and whether the student passed or failed. Replace the repeated code with calls to your function.    # TODO: Define a function print_report(name, score) # that prints the name, score, and whether the student passed or failed. # The following code has a lot of repetition! # Refactor the code with function calls to print_report name = \"Ava\" score = 92 print(\"Student:\", name) print(\"Score:\", score) print(\"Passed:\", score >= 60) name = \"Luis\" score = 78 print(\"Student:\", name) print(\"Score:\", score) print(\"Passed:\", score >= 60) name = \"Maya\" score = 55 print(\"Student:\", name) print(\"Score:\", score) print(\"Passed:\", score >= 60)  from unittest.gui import TestCaseGui class myTests(TestCaseGui): def test1(self): self.assertIn(\"def print_report(name, score):\", self.getEditorText(), \"Define the print_report function with parameters name and score\") count = self.getEditorText().count(\"print_report(\") self.assertLessEqual(4, count, \"Call print_report at least 3 times\") count = self.getEditorText().count(\"60\") self.assertEqual(1, count, \"Use print_report instead of repeated lines of code with score >= 60\") myTests().main()   "
+},
+{
+  "id": "refactorFunctionsParams",
+  "level": "2",
+  "url": "topic-3-2-procedures.html#refactorFunctionsParams",
+  "type": "Activity",
+  "number": "3.2.17",
+  "title": "",
+  "body": "  The following program repeats the same calculation in several places. Refactor the program by creating a function named calculate_total . The function should take price and quantity as parameters and return the total. Replace the repeated calculations with calls to your function.    # TODO: Define a function calculate_total # The function should take price and quantity as parameters # and return the product. # The following code has a lot of repetition! # Refactor the code with function calls. price1 = 5 quantity1 = 3 total1 = price1 * quantity1 print(\"Order 1:\", total1) price2 = 12 quantity2 = 4 total2 = price2 * quantity2 print(\"Order 2:\", total2) price3 = 8 quantity3 = 6 total3 = price3 * quantity3 print(\"Order 3:\", total3)  from unittest.gui import TestCaseGui class myTests(TestCaseGui): def test1(self): self.assertIn(\"def calculate_total(price, quantity):\", self.getEditorText(), \"Define the calculate_total function with parameters price and quantity\") self.assertIn(\"return\", self.getEditorText(), \"Use a return statement in the calculate_total function\") count = self.getEditorText().count(\"calculate_total(\") self.assertLessEqual(4, count, \"Call calculate_total at least 3 times\") count = self.getEditorText().count(\"*\") self.assertEqual(1, count, \"Use calculate_total() instead of repeated lines with * operator\") self.assertEqual(15, calculate_total(5, 3), \"calculate_total(5, 3) should return 15\") myTests().main()   "
+},
+{
+  "id": "functionsChallenge",
+  "level": "2",
+  "url": "topic-3-2-procedures.html#functionsChallenge",
+  "type": "Activity",
+  "number": "3.2.18",
+  "title": "",
+  "body": "         "
 },
 {
   "id": "LOs-3-2-2",
