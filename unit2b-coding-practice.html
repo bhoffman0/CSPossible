@@ -433,7 +433,7 @@ eBookConfig.enable_chatcodes =  false;
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="topic-3-2-procedures.html#arguments" class="internal"><span class="codenumber">3.2.3</span> <span class="title">Arguments and Parameters</span></a></div></li>
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="topic-3-2-procedures.html#return-values" class="internal"><span class="codenumber">3.2.4</span> <span class="title">Return Values</span></a></div></li>
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="topic-3-2-procedures.html#procedural-abstraction" class="internal"><span class="codenumber">3.2.5</span> <span class="title">Procedural Abstraction</span></a></div></li>
-<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="topic-3-2-procedures.html#coding-challenge-functions" class="internal"><span class="codenumber">3.2.6</span> <span class="title">Coding Challenge: Functions in Tic Tac Toe</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="topic-3-2-procedures.html#coding-challenge-functions" class="internal"><span class="codenumber">3.2.6</span> <span class="title">Coding Challenge: Functions</span></a></div></li>
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="topic-3-2-procedures.html#LOs-3-2" class="internal"><span class="codenumber">3.2.7</span> <span class="title">Learning Objectives Review</span></a></div></li>
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="topic-3-2-procedures.html#vocab-3-2" class="internal"><span class="codenumber">3.2.8</span> <span class="title">Vocabulary Review</span></a></div></li>
 </ul>
@@ -665,10 +665,10 @@ myTests().main()
 <div class="para" id="csprepeatimages_exercises2-1-1">The code below sets all the red pixels to 0. Change it so that it sets all the green pixels to 0 instead.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#csprepeatimages_exercises2-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 </div>
-<textarea data-lang="python" data-audio="" data-coach="true" style="visibility: hidden;" id="rs-csprepeatimages_exercises2_editor" data-question_label="" data-codelens="true" data-timelimit="25000">from image import *
+<textarea data-lang="python" data-audio="" data-coach="true" style="visibility: hidden;" id="rs-csprepeatimages_exercises2_editor" data-question_label="" data-codelens="true" data-add-files="rs-puppies" data-timelimit="25000">from image import *
 
 # PICK THE IMAGE AND DISPLAY (it will show updates automatically)
-img = Image("external/_static/Unit2images/puppies.jpg")
+img = Image("puppies.jpg")
 win = ImageWin(img.getWidth(), img.getHeight())
 img.draw(win)
 img.setDelay(1, 400)   #SPEEDS UP THE DRAWING
@@ -702,9 +702,9 @@ myTests().main()
 <div class="para" id="csprepeatimages_exercises5-1-1">Write code to set the red value of each pixel to 255. This should give the entire image a rosy tint.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#csprepeatimages_exercises5-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 </div>
-<textarea data-lang="python" data-audio="" data-coach="true" style="visibility: hidden;" id="rs-csprepeatimages_exercises5_editor" data-question_label="" data-codelens="true" data-timelimit="25000">from image import *
+<textarea data-lang="python" data-audio="" data-coach="true" style="visibility: hidden;" id="rs-csprepeatimages_exercises5_editor" data-question_label="" data-codelens="true" data-add-files="rs-puppies" data-timelimit="25000">from image import *
 
-img = Image("external/_static/Unit2images/puppies.jpg")
+img = Image("puppies.jpg")
 win = ImageWin(img.getWidth(), img.getHeight())
 img.draw(win)
 img.setDelay(1, 400)   #SPEEDS UP THE DRAWING
@@ -740,9 +740,9 @@ myTests().main()
 <div class="para" id="picture-lab-black-and-white-1-1">This program should make a black-and-white image by averaging the red, green, and blue values of each pixel and then setting the red, green, and blue values to that average.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#picture-lab-black-and-white-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 </div>
-<textarea data-lang="python" data-audio="" data-coach="true" style="visibility: hidden;" id="rs-picture-lab-black-and-white_editor" data-question_label="" data-codelens="true" data-timelimit="25000">from image import *
+<textarea data-lang="python" data-audio="" data-coach="true" style="visibility: hidden;" id="rs-picture-lab-black-and-white_editor" data-question_label="" data-codelens="true" data-add-files="rs-puppies" data-timelimit="25000">from image import *
 
-img = Image("external/_static/Unit2images/puppies.jpg")
+img = Image("puppies.jpg")
 win = ImageWin(img.getWidth(), img.getHeight())
 img.draw(win)
 img.setDelay(1, 400)   #SPEEDS UP THE DRAWING
