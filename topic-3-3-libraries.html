@@ -60,14 +60,14 @@ eBookConfig.enableScratchAC = true;
 eBookConfig.acDefaultLanguage = 'python';
 eBookConfig.build_info = "";
 eBookConfig.python3 = null;
-eBookConfig.runestone_version = '8.2.9';
+eBookConfig.runestone_version = '8.2.10';
 eBookConfig.jobehost = '';
 eBookConfig.proxyuri_runs = '';
 eBookConfig.proxyuri_files = '';
 eBookConfig.enable_chatcodes =  false;
 </script>
 <!--*** Runestone Services ***-->
-<script src="_static/prefix-runtime.5ef53875c58b216b.bundle.js"></script><script src="_static/prefix-926.5c7038c8ef173faf.bundle.js"></script><script src="_static/prefix-runestone.c5ba0ffa5f963084.bundle.js"></script><link rel="stylesheet" type="text/css" href="_static/prefix-926.229729d09512acc9.css">
+<script src="_static/prefix-runtime.e3f9706509fcf6f7.bundle.js"></script><script src="_static/prefix-926.5c7038c8ef173faf.bundle.js"></script><script src="_static/prefix-runestone.c5ba0ffa5f963084.bundle.js"></script><link rel="stylesheet" type="text/css" href="_static/prefix-926.229729d09512acc9.css">
 <link rel="stylesheet" type="text/css" href="_static/prefix-runestone.efe427683fc41f98.css">
 <script src="_static/pretext/js/dist/lti_iframe_resizer.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.26.0/components/prism-core.min.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.26.0/plugins/autoloader/prism-autoloader.min.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.26.0/plugins/line-numbers/prism-line-numbers.min.js" integrity="sha512-dubtf8xMHSQlExGRQ5R7toxHLgSDZ0K7AunqPWHXmJQ8XyVIG19S1T95gBxlAeGOK02P4Da2RTnQz0Za0H0ebQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.26.0/plugins/line-highlight/prism-line-highlight.min.js" integrity="sha512-93uCmm0q+qO5Lb1huDqr7tywS8A2TFA+1/WHvyiWaK6/pvsFl6USnILagntBx8JnVbQH5s3n0vQZY6xNthNfKA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.9/lunr.min.js" integrity="sha512-4xUl/d6D6THrAnXAwGajXkoWaeMNwEKK4iNfq5DotEbLPAfk6FSxSP3ydNxqDgCw1c/0Z1Jg6L8h2j+++9BZmg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script><script src="lunr-pretext-search-index.js" async=""></script><script src="_static/pretext/js/dist/pretext_search.js"></script><!--knowl.js code controls Sage Cells within knowls--><script>sagecellEvalName='Evaluate (Sage)';
 </script>
@@ -443,8 +443,9 @@ eBookConfig.enable_chatcodes =  false;
 <ul class="structural toc-item-list active" id="ptx-toc-group-topic-3-3-libraries">
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="topic-3-3-libraries.html#libraries" class="internal"><span class="codenumber">3.3.1</span> <span class="title">Libraries</span></a></div></li>
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="topic-3-3-libraries.html#apis" class="internal"><span class="codenumber">3.3.2</span> <span class="title">Application Programming Interfaces (APIs)</span></a></div></li>
-<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="topic-3-3-libraries.html#LOs-3-3" class="internal"><span class="codenumber">3.3.3</span> <span class="title">Learning Objectives Review</span></a></div></li>
-<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="topic-3-3-libraries.html#vocab-3-3" class="internal"><span class="codenumber">3.3.4</span> <span class="title">Vocabulary Review</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="topic-3-3-libraries.html#API-project" class="internal"><span class="codenumber">3.3.3</span> <span class="title">API Project</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="topic-3-3-libraries.html#LOs-3-3" class="internal"><span class="codenumber">3.3.4</span> <span class="title">Learning Objectives Review</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="topic-3-3-libraries.html#vocab-3-3" class="internal"><span class="codenumber">3.3.5</span> <span class="title">Vocabulary Review</span></a></div></li>
 </ul>
 </li>
 </ul>
@@ -532,89 +533,550 @@ eBookConfig.enable_chatcodes =  false;
 <span class="type">Section</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">3.3</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Using Existing Code and Libraries</span>
 </h1>
 <div class="time">
-<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-clock" viewBox="0 0 16 16"><path d="M8 3.5a.5.5 0 0 0-1 0V9a.5.5 0 0 0 .252.434l3.5 2a.5.5 0 0 0 .496-.868L8 8.71V3.5z"></path><path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm7-8A7 7 0 1 1 1 8a7 7 0 0 1 14 0z"></path></svg><span>90 minutes</span>
+<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-clock" viewBox="0 0 16 16"><path d="M8 3.5a.5.5 0 0 0-1 0V9a.5.5 0 0 0 .252.434l3.5 2a.5.5 0 0 0 .496-.868L8 8.71V3.5z"></path><path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm7-8A7 7 0 1 1 1 8a7 7 0 0 1 14 0z"></path></svg><span>45 minutes</span>
 </div>
-<section class="introduction" id="topic-3-3-libraries-4">
-<div class="para" id="topic-3-3-libraries-4-1">Quick Links: <a href="topic-3-3-libraries.html#libraries" class="internal" title="Subsection 3.3.1: Libraries">3.3.1</a>, <a href="topic-3-3-libraries.html#apis" class="internal" title="Subsection 3.3.2: Application Programming Interfaces (APIs)">3.3.2</a>, <a href="topic-3-3-libraries.html#LOs-3-3" class="internal" title="Subsection 3.3.3: Learning Objectives Review">3.3.3</a>, <a href="topic-3-1-lists.html#vocab-3-1" class="internal" title="Subsection 3.1.14: Vocabulary Review">3.1.14</a><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#topic-3-3-libraries-4-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<section class="introduction" id="topic-3-3-libraries-7">
+<div class="para" id="topic-3-3-libraries-7-1">Quick Links: <a href="topic-3-3-libraries.html#libraries" class="internal" title="Subsection 3.3.1: Libraries">3.3.1</a>, <a href="topic-3-3-libraries.html#apis" class="internal" title="Subsection 3.3.2: Application Programming Interfaces (APIs)">3.3.2</a>, <a href="topic-3-3-libraries.html#API-project" class="internal" title="Subsection 3.3.3: API Project">3.3.3</a>, <a href="topic-3-3-libraries.html#LOs-3-3" class="internal" title="Subsection 3.3.4: Learning Objectives Review">3.3.4</a>, <a href="topic-3-3-libraries.html#vocab-3-3" class="internal" title="Subsection 3.3.5: Vocabulary Review">3.3.5</a><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#topic-3-3-libraries-7-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="para" id="topic-3-3-libraries-4-2">In this unit, we will learn how to use existing code and libraries.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#topic-3-3-libraries-4-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="topic-3-3-libraries-7-2">We can use existing code written by other programmers to help us write programs more quickly and efficiently. For example, we have been using the Turtle library to draw shapes and patterns. The Turtle library is a collection of code that allows us to use the turtle graphics system in our programs.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#topic-3-3-libraries-7-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div></section>
 <section class="subsection" id="libraries">
 <h2 class="heading hide-type">
 <span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">3.3.1</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Libraries</span>
 </h2>
-<article class="note remark-like" id="libraries-2"><h3 class="heading">
+<div class="para" id="libraries-2">A <dfn class="terminology">library</dfn> is a collection of code written by other programmers that we can use in our own programs. Libraries have existing code that can quickly add functionality to our programs without having to write everything ourselves.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#libraries-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<article class="note remark-like" id="libraries-3"><h3 class="heading">
 <span class="type">Essential Knowledge</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">3.3.1</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">3.3.A.1.</span>
 </h3>
-<div class="para" id="libraries-2-2">A software <dfn class="terminology">library</dfn> is a collection of prewritten procedures that programmers can use to add features to a program without writing everything from scratch (for example, drawing graphics, working with data, or generating random values).<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#libraries-2-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="libraries-3-2">A software <dfn class="terminology">library</dfn> is a collection of prewritten procedures that programmers can use to add features to a program without writing everything from scratch (for example, drawing graphics, working with data, or generating random values).<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#libraries-3-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" aria-hidden="true" data-description="Essential Knowledge 3.3.1: 3.3.A.1"><a tabindex="-1" href="#libraries-2" title="Copy heading and permalink for Essential Knowledge 3.3.1: 3.3.A.1" aria-label="Copy heading and permalink for Essential Knowledge 3.3.1: 3.3.A.1">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Essential Knowledge 3.3.1: 3.3.A.1"><a tabindex="-1" href="#libraries-3" title="Copy heading and permalink for Essential Knowledge 3.3.1: 3.3.A.1" aria-label="Copy heading and permalink for Essential Knowledge 3.3.1: 3.3.A.1">🔗</a></div>
 </article>
-<article class="note remark-like" id="libraries-3"><h3 class="heading">
+<div class="para" id="libraries-4">In Python, you can <dfn class="terminology">import</dfn> libraries like random or turtle and then use the functions they provide. Single python files that are imported in are called <dfn class="terminology">modules</dfn>, and a folder of these Python files is called a <dfn class="terminology">package</dfn>. Libraries can be collections of modules or packages.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#libraries-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="code-box"><pre class="program clipboardable"><code class="language-py">import random
+# We can now use the randint() function from the random library
+number = random.randint(1, 10)
+
+import turtle
+# We can now use the turtle library to draw shapes
+turt = turtle.Turtle()
+turt.forward(100)
+</code></pre></div>
+<div class="para" id="libraries-6">Libraries often have <dfn class="terminology">documentation</dfn> that explains how to use the code and what each function does. For example, <a class="external" href="https://docs.python.org/3/library/turtle.html#turtle-methods" target="_blank">https://docs.python.org/3/library/turtle.html#turtle-methods</a> explains every function in the Turtle library. Unfortunately, not all of the Python Turtle functions work in this ebook, because it uses a browser implementation of Python.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#libraries-6" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<article class="activity project-like" id="turtleLibrary"><h3 class="heading">
+<span class="type">Activity</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">3.3.1</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+</h3>
+<div class="ptx-runestone-container"><div class="runestone explainer ac_section "><div data-component="activecode" id="rs-turtleLibrary">
+<div class="ac_question exercise-statement" id="rs-turtleLibrary_question">
+<div class="para" id="turtleLibrary-1-1">Look up the function <code class="code-inline tex2jax_ignore">home()</code> in the Turtle documentation <a class="external" href="https://docs.python.org/3/library/turtle.html#turtle-methods" target="_blank">https://docs.python.org/3/library/turtle.html#turtle-methods</a> and try using it below. Then, find another Turtle function that you haven’t used before and try it below. Not all functions will work in this ebook, unfortunately, so keep trying different ones until you find one that works.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#turtleLibrary-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+</div>
+<textarea data-lang="python" data-audio="" data-coach="true" style="visibility: hidden;" id="rs-turtleLibrary_editor" data-question_label="" data-codelens="true" data-timelimit="25000">import turtle
+t = turtle.Turtle()
+t.shape("turtle")
+t.color("green")
+t.forward(50)
+t.right(90)
+t.forward(50)
+
+# Try using the Turtle home function
+
+
+# Try a different function you have not used before
+====
+from unittest.gui import TestCaseGui
+
+class myTests(TestCaseGui):
+    def test1(self):
+        self.assertIn("t.home()",self.getEditorText(), "Use t.home()")
+        count = self.getEditorText().count("t.")
+        self.assertLessEqual(7, count, "Use at least 2 more turtle functions")
+
+myTests().main()
+</textarea>
+</div></div></div>
+<div class="autopermalink" aria-hidden="true" data-description="Activity 3.3.1"><a tabindex="-1" href="#turtleLibrary" title="Copy heading and permalink for Activity 3.3.1" aria-label="Copy heading and permalink for Activity 3.3.1">🔗</a></div>
+</article>
+<article class="note remark-like" id="libraries-8"><h3 class="heading">
 <span class="type">Essential Knowledge</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">3.3.2</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">3.3.A.2.</span>
 </h3>
-<div class="para" id="libraries-3-2">Existing code segments can come from internal sources (your own prior projects or your team’s code) or external sources (libraries, sample code, or online repositories). Reusing code can save time and reduce errors when the code is well-tested and well-understood.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#libraries-3-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="libraries-8-2">Existing code segments can come from internal sources (your own prior projects or your team’s code) or external sources (libraries, sample code, or online repositories). Reusing code can save time and reduce errors when the code is well-tested and well-understood.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#libraries-8-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" aria-hidden="true" data-description="Essential Knowledge 3.3.2: 3.3.A.2"><a tabindex="-1" href="#libraries-3" title="Copy heading and permalink for Essential Knowledge 3.3.2: 3.3.A.2" aria-label="Copy heading and permalink for Essential Knowledge 3.3.2: 3.3.A.2">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Essential Knowledge 3.3.2: 3.3.A.2"><a tabindex="-1" href="#libraries-8" title="Copy heading and permalink for Essential Knowledge 3.3.2: 3.3.A.2" aria-label="Copy heading and permalink for Essential Knowledge 3.3.2: 3.3.A.2">🔗</a></div>
 </article>
-<article class="note remark-like" id="libraries-4"><h3 class="heading">
+<article class="note remark-like" id="libraries-9"><h3 class="heading">
 <span class="type">Essential Knowledge</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">3.3.3</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">3.3.A.3.</span>
 </h3>
-<div class="para" id="libraries-4-2">Libraries and reusable code simplify complex tasks by providing procedures that handle common problems, allowing programmers to focus on the parts of the program that are unique to their users and goals.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#libraries-4-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="libraries-9-2">Libraries and reusable code simplify complex tasks by providing procedures that handle common problems, allowing programmers to focus on the parts of the program that are unique to their users and goals.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#libraries-9-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" aria-hidden="true" data-description="Essential Knowledge 3.3.3: 3.3.A.3"><a tabindex="-1" href="#libraries-4" title="Copy heading and permalink for Essential Knowledge 3.3.3: 3.3.A.3" aria-label="Copy heading and permalink for Essential Knowledge 3.3.3: 3.3.A.3">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Essential Knowledge 3.3.3: 3.3.A.3"><a tabindex="-1" href="#libraries-9" title="Copy heading and permalink for Essential Knowledge 3.3.3: 3.3.A.3" aria-label="Copy heading and permalink for Essential Knowledge 3.3.3: 3.3.A.3">🔗</a></div>
+</article>
+<div class="para" id="libraries-10">We can also package our code into modules and packages for easier reuse. We can also include existing code from other sources, including Gen AI. When including code from other sources, it is important to check the license and to give credit to the original creator.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#libraries-10" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<article class="activity project-like" id="purpose_libraries"><h3 class="heading">
+<span class="type">Activity</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">3.3.2</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+</h3>
+<div class="ptx-runestone-container"><div class="runestone multiplechoice_section">
+<div class="exercise-statement">
+<div class="para" id="purpose_libraries-1-1">What is the purpose of libraries in programming?<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#purpose_libraries-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+</div>
+<ul data-component="multiplechoice" class="exercise-interactives" id="rs-purpose_libraries" data-multipleanswers="false" data-random="">
+<li data-component="answer" id="rs-purpose_libraries_opt_a">
+<div class="para" id="purpose_libraries-2-1-1-1">To write new code from scratch</div>
+</li>
+<li data-component="feedback" id="rs-purpose_libraries_opt_a">
+<div class="para" id="purpose_libraries-2-1-2-1">Incorrect. Libraries allow you to use code written by others.</div>
+</li>
+<li data-component="answer" id="rs-purpose_libraries_opt_b" data-correct="">
+<div class="para" id="purpose_libraries-2-2-1-1">To use code written by others to quickly add functionality to our programs</div>
+</li>
+<li data-component="feedback" id="rs-purpose_libraries_opt_b">
+<div class="para" id="purpose_libraries-2-2-2-1">Correct! Libraries let you use code written by others to add functionality to your programs.</div>
+</li>
+<li data-component="answer" id="rs-purpose_libraries_opt_c">
+<div class="para" id="purpose_libraries-2-3-1-1">To create programming languages</div>
+</li>
+<li data-component="feedback" id="rs-purpose_libraries_opt_c">
+<div class="para" id="purpose_libraries-2-3-2-1">Incorrect. Libraries are defined <em class="emphasis">in</em> a programming language.</div>
+</li>
+<li data-component="answer" id="rs-purpose_libraries_opt_d">
+<div class="para" id="purpose_libraries-2-4-1-1">To compile code</div>
+</li>
+<li data-component="feedback" id="rs-purpose_libraries_opt_d">
+<div class="para" id="purpose_libraries-2-4-2-1">Incorrect. Libraries are not for compiling code.</div>
+</li>
+</ul>
+</div></div>
+<div class="autopermalink" aria-hidden="true" data-description="Activity 3.3.2"><a tabindex="-1" href="#purpose_libraries" title="Copy heading and permalink for Activity 3.3.2" aria-label="Copy heading and permalink for Activity 3.3.2">🔗</a></div>
 </article><div class="autopermalink" aria-hidden="true" data-description="Subsection 3.3.1: Libraries"><a tabindex="-1" href="#libraries" title="Copy heading and permalink for Subsection 3.3.1: Libraries" aria-label="Copy heading and permalink for Subsection 3.3.1: Libraries">🔗</a></div>
 </section>
 <section class="subsection" id="apis">
 <h2 class="heading hide-type">
 <span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">3.3.2</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Application Programming Interfaces (APIs)</span>
 </h2>
-<article class="note remark-like" id="apis-2"><h3 class="heading">
+<div class="para" id="apis-3">An <dfn class="terminology">application programming interface (API)</dfn> is the set of rules or specification that specifies how to use a library or software component.  These rules are spelled out in the library documentation.  The API describes what inputs are accepted and what output is returned.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#apis-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<article class="note remark-like" id="apis-4"><h3 class="heading">
 <span class="type">Essential Knowledge</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">3.3.4</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">3.3.A.4.</span>
 </h3>
-<div class="para" id="apis-2-2">An <dfn class="terminology">application programming interface (API)</dfn> is a set of rules that specifies how one piece of software can interact with another. An API describes what inputs are accepted, what output is returned (if any), and what side effects may occur.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#apis-2-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="apis-4-2">An <dfn class="terminology">application programming interface (API)</dfn> is a set of rules that specifies how one piece of software can interact with another. An API describes what inputs are accepted, what output is returned (if any), and what side effects may occur.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#apis-4-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" aria-hidden="true" data-description="Essential Knowledge 3.3.4: 3.3.A.4"><a tabindex="-1" href="#apis-2" title="Copy heading and permalink for Essential Knowledge 3.3.4: 3.3.A.4" aria-label="Copy heading and permalink for Essential Knowledge 3.3.4: 3.3.A.4">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Essential Knowledge 3.3.4: 3.3.A.4"><a tabindex="-1" href="#apis-4" title="Copy heading and permalink for Essential Knowledge 3.3.4: 3.3.A.4" aria-label="Copy heading and permalink for Essential Knowledge 3.3.4: 3.3.A.4">🔗</a></div>
 </article>
-<article class="note remark-like" id="apis-3"><h3 class="heading">
+<article class="activity project-like" id="api-definition"><h3 class="heading">
+<span class="type">Activity</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">3.3.3</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+</h3>
+<div class="ptx-runestone-container"><div class="runestone multiplechoice_section">
+<div class="exercise-statement">
+<div class="para" id="api-definition-1-1">Which statement best describes an API?<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#api-definition-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+</div>
+<ul data-component="multiplechoice" class="exercise-interactives" id="rs-api-definition" data-multipleanswers="false" data-random="">
+<li data-component="answer" id="rs-api-definition_opt_a">
+<div class="para" id="api-definition-2-1-1-1">A collection of reusable code.</div>
+</li>
+<li data-component="feedback" id="rs-api-definition_opt_a">
+<div class="para" id="api-definition-2-1-2-1">Incorrect. A library is a collection of reusable code. An API describes how software can be used.</div>
+</li>
+<li data-component="answer" id="rs-api-definition_opt_b">
+<div class="para" id="api-definition-2-2-1-1">A Python file containing functions.</div>
+</li>
+<li data-component="feedback" id="rs-api-definition_opt_b">
+<div class="para" id="api-definition-2-2-2-1">Incorrect. A Python file containing reusable code is a module. An API describes how software can be used.</div>
+</li>
+<li data-component="answer" id="rs-api-definition_opt_c" data-correct="">
+<div class="para" id="api-definition-2-3-1-1">A set of rules that specifies how software can be used by other software.</div>
+</li>
+<li data-component="feedback" id="rs-api-definition_opt_c">
+<div class="para" id="api-definition-2-3-2-1">Correct! An API specifies how software can be used, including what inputs are accepted and what outputs may be returned.</div>
+</li>
+<li data-component="answer" id="rs-api-definition_opt_d">
+<div class="para" id="api-definition-2-4-1-1">A website where programmers download code.</div>
+</li>
+<li data-component="feedback" id="rs-api-definition_opt_d">
+<div class="para" id="api-definition-2-4-2-1">Incorrect. An API is not a website. It is a set of rules or specifications for how software can interact.</div>
+</li>
+</ul>
+</div></div>
+<div class="autopermalink" aria-hidden="true" data-description="Activity 3.3.3"><a tabindex="-1" href="#api-definition" title="Copy heading and permalink for Activity 3.3.3" aria-label="Copy heading and permalink for Activity 3.3.3">🔗</a></div>
+</article>
+<article class="note remark-like" id="apis-6"><h3 class="heading">
 <span class="type">Essential Knowledge</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">3.3.5</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">3.3.A.5.</span>
 </h3>
-<div class="para" id="apis-3-2">Library documentation describes the API and is necessary for correct use. Programmers use documentation to learn required inputs, possible outputs, examples, limitations, and common errors.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#apis-3-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="apis-6-2">Library documentation describes the API and is necessary for correct use. Programmers use documentation to learn required inputs, possible outputs, examples, limitations, and common errors.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#apis-6-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" aria-hidden="true" data-description="Essential Knowledge 3.3.5: 3.3.A.5"><a tabindex="-1" href="#apis-3" title="Copy heading and permalink for Essential Knowledge 3.3.5: 3.3.A.5" aria-label="Copy heading and permalink for Essential Knowledge 3.3.5: 3.3.A.5">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Essential Knowledge 3.3.5: 3.3.A.5"><a tabindex="-1" href="#apis-6" title="Copy heading and permalink for Essential Knowledge 3.3.5: 3.3.A.5" aria-label="Copy heading and permalink for Essential Knowledge 3.3.5: 3.3.A.5">🔗</a></div>
 </article>
-<article class="note remark-like" id="apis-4"><h3 class="heading">
+<div class="para" id="apis-7">For example, the following documentation describes the API for the math function <code class="code-inline tex2jax_ignore">isqrt</code> in the Python <code class="code-inline tex2jax_ignore">math</code> module <a class="external" href="https://docs.python.org/3/library/math.html#math.isqrt" target="_blank">https://docs.python.org/3/library/math.html#math.isqrt</a>:<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#apis-7" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<pre class="code-block tex2jax_ignore clipboardable">math.isqrt(n)
+Return the integer square root of the nonnegative integer n. 
+This is the floor of the exact square root of n, or equivalently the greatest integer a 
+such that a² &lt;= n.
+</pre>
+<article class="activity project-like" id="isqrt-documentation"><h3 class="heading">
+<span class="type">Activity</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">3.3.4</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+</h3>
+<div class="ptx-runestone-container"><div class="runestone multiplechoice_section">
+<div class="exercise-statement">
+<div class="para" id="isqrt-documentation-1-1">The documentation for <code class="code-inline tex2jax_ignore">math.isqrt()</code> says:<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#isqrt-documentation-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<pre class="code-block tex2jax_ignore clipboardable">math.isqrt(n)
+Return the integer square root of the nonnegative integer n.
+</pre>
+<div class="para" id="isqrt-documentation-1-3">Which function call correctly uses this math library function?<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#isqrt-documentation-1-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+</div>
+<ul data-component="multiplechoice" class="exercise-interactives" id="rs-isqrt-documentation" data-multipleanswers="false" data-random="">
+<li data-component="answer" id="rs-isqrt-documentation_opt_a">
+<div class="para" id="isqrt-documentation-2-1-1-1"><code class="code-inline tex2jax_ignore">math.isqrt()</code></div>
+</li>
+<li data-component="feedback" id="rs-isqrt-documentation_opt_a">
+<div class="para" id="isqrt-documentation-2-1-2-1">No. The function requires a nonnegative integer as an input.</div>
+</li>
+<li data-component="answer" id="rs-isqrt-documentation_opt_b" data-correct="">
+<div class="para" id="isqrt-documentation-2-2-1-1"><code class="code-inline tex2jax_ignore">math.isqrt(25)</code></div>
+</li>
+<li data-component="feedback" id="rs-isqrt-documentation_opt_b">
+<div class="para" id="isqrt-documentation-2-2-2-1">Correct! The function requires a nonnegative integer, and <code class="code-inline tex2jax_ignore">25</code> is a valid input.</div>
+</li>
+<li data-component="answer" id="rs-isqrt-documentation_opt_c">
+<div class="para" id="isqrt-documentation-2-3-1-1"><code class="code-inline tex2jax_ignore">math.isqrt("25")</code></div>
+</li>
+<li data-component="feedback" id="rs-isqrt-documentation_opt_c">
+<div class="para" id="isqrt-documentation-2-3-2-1">No. <code class="code-inline tex2jax_ignore">"25"</code> is a string, not an integer. The documentation specifies that the input should be a nonnegative integer.</div>
+</li>
+<li data-component="answer" id="rs-isqrt-documentation_opt_d">
+<div class="para" id="isqrt-documentation-2-4-1-1"><code class="code-inline tex2jax_ignore">math.isqrt(25, 5)</code></div>
+</li>
+<li data-component="feedback" id="rs-isqrt-documentation_opt_d">
+<div class="para" id="isqrt-documentation-2-4-2-1">No. The documentation shows that <code class="code-inline tex2jax_ignore">isqrt()</code> accepts one input, <code class="code-inline tex2jax_ignore">n</code>, not two inputs.</div>
+</li>
+</ul>
+</div></div>
+<div class="autopermalink" aria-hidden="true" data-description="Activity 3.3.4"><a tabindex="-1" href="#isqrt-documentation" title="Copy heading and permalink for Activity 3.3.4" aria-label="Copy heading and permalink for Activity 3.3.4">🔗</a></div>
+</article>
+<div class="para" id="apis-10">Many web service or platforms, for example Google Maps, Youtube, Wikipedia, etc. have APIs that allow access to their service for programmers. This simplifies complex programming tasks and allows communication between different programs. For example, you can use the Google Maps API to embed a map in an app that you are creating.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#apis-10" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="apis-11">We can often see a web platform’s API in action while using the platform. For example, go to <a class="external" href="https://www.google.com/maps" target="_blank">https://www.google.com/maps</a> and search for a location. Notice how the url (web address) changes. For example, if you search for "Philadelphia", the url changes to <a class="external" href="https://www.google.com/maps/place/%20%20%20Philadelphia" target="_blank">https://www.google.com/maps/place/Philadelphia</a> followed by other geographic information, but just the city name is enough to get the map to show Philadelphia. This is an example of a web API in action.  We now know the rule that we can take the base url and add "place/cityname" to get a map of that city.  Try just changing the url to find the map of another city, for example Chicago.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#apis-11" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<article class="activity project-like" id="mapAPI"><h3 class="heading">
+<span class="type">Activity</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">3.3.5</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+</h3>
+<div class="ptx-runestone-container"><div class="runestone multiplechoice_section">
+<div class="exercise-statement">
+<div class="para" id="mapAPI-1-1">As you explore the map of Philadelphia in Google Maps and Zoom into level 15, you see the url <a class="external" href="https://www.google.com/maps/place/Philadelphia,+PA/@40.002498,-75.0129578,15z" target="_blank">https://www.google.com/maps/place/Philadelphia,+PA/@40.002498,-75.0129578,15z</a>. Following the API rules of that url, what url would you use to get a map of Chicago at Zoom level 11?<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#mapAPI-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+</div>
+<ul data-component="multiplechoice" class="exercise-interactives" id="rs-mapAPI" data-multipleanswers="false" data-random="">
+<li data-component="answer" id="rs-mapAPI_opt_a">
+<div class="para" id="mapAPI-2-1-1-1"><a class="external" href="https://www.google.com/maps/place/Philadelphia,+PA/@40.002498,-75.0129578,15z" target="_blank">https://www.google.com/maps/place/Philadelphia,+PA/@40.002498,-75.0129578,15z</a></div>
+</li>
+<li data-component="feedback" id="rs-mapAPI_opt_a">
+<div class="para" id="mapAPI-2-1-2-1">Incorrect, this is unchanged. This will show Philadelphia at Zoom level 15, not Chicago at Zoom level 11.</div>
+</li>
+<li data-component="answer" id="rs-mapAPI_opt_b" data-correct="">
+<div class="para" id="mapAPI-2-2-1-1"><a class="external" href="https://www.google.com/maps/place/Chicago,+IL/@41.8337105,-87.731879,11z" target="_blank">https://www.google.com/maps/place/Chicago,+IL/@41.8337105,-87.731879,11z</a></div>
+</li>
+<li data-component="feedback" id="rs-mapAPI_opt_b">
+<div class="para" id="mapAPI-2-2-2-1">Correct!</div>
+</li>
+<li data-component="answer" id="rs-mapAPI_opt_c">
+<div class="para" id="mapAPI-2-3-1-1"><a class="external" href="https://www.google.com/maps/place/Chicago,+IL/@40.002498,-75.0129578,11z" target="_blank">https://www.google.com/maps/place/Chicago,+IL/@40.002498,-75.0129578,15z</a></div>
+</li>
+<li data-component="feedback" id="rs-mapAPI_opt_c">
+<div class="para" id="mapAPI-2-3-2-1">Incorrect. The numbers after the @ sign are the latitude and longitude of Philadelphia, not Chicago.</div>
+</li>
+<li data-component="answer" id="rs-mapAPI_opt_d">
+<div class="para" id="mapAPI-2-4-1-1"><a class="external" href="https://www.google.com/maps/place/Chicago/" target="_blank">https://www.google.com/maps/place/Chicago/</a></div>
+</li>
+<li data-component="feedback" id="rs-mapAPI_opt_d">
+<div class="para" id="mapAPI-2-4-2-1">Incorrect. Although this url will take you to a map of Chicago, it doesn’t specify the zoom level.</div>
+</li>
+</ul>
+</div></div>
+<div class="autopermalink" aria-hidden="true" data-description="Activity 3.3.5"><a tabindex="-1" href="#mapAPI" title="Copy heading and permalink for Activity 3.3.5" aria-label="Copy heading and permalink for Activity 3.3.5">🔗</a></div>
+</article>
+<article class="note remark-like" id="apis-13"><h3 class="heading">
 <span class="type">Essential Knowledge</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">3.3.6</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">3.3.A.6.</span>
 </h3>
-<div class="para" id="apis-4-2">Selecting appropriate libraries or code segments requires checking whether they fit the program’s purpose and user needs, are compatible with the programming environment, come from a trustworthy source, and are licensed for reuse.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#apis-4-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="apis-13-2">Selecting appropriate libraries or code segments requires checking whether they fit the program’s purpose and user needs, are compatible with the programming environment, come from a trustworthy source, and are licensed for reuse.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#apis-13-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" aria-hidden="true" data-description="Essential Knowledge 3.3.6: 3.3.A.6"><a tabindex="-1" href="#apis-4" title="Copy heading and permalink for Essential Knowledge 3.3.6: 3.3.A.6" aria-label="Copy heading and permalink for Essential Knowledge 3.3.6: 3.3.A.6">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Essential Knowledge 3.3.6: 3.3.A.6"><a tabindex="-1" href="#apis-13" title="Copy heading and permalink for Essential Knowledge 3.3.6: 3.3.A.6" aria-label="Copy heading and permalink for Essential Knowledge 3.3.6: 3.3.A.6">🔗</a></div>
 </article>
-<article class="note remark-like" id="apis-5"><h3 class="heading">
+<div class="para" id="apis-14">When selecting libraries or existing code segments, it’s important to consider the following factors:<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#apis-14" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<ul class="disc" id="apis-15">
+<li id="apis-15-1">
+<div class="para" id="p-derived-apis-15-1">Does the library or code segment fit the program’s purpose and user needs?</div>
+<div class="autopermalink" aria-hidden="true" data-description="Item"><a tabindex="-1" href="#apis-15-1" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="apis-15-2">
+<div class="para" id="p-derived-apis-15-2">Is it compatible with the programming environment?</div>
+<div class="autopermalink" aria-hidden="true" data-description="Item"><a tabindex="-1" href="#apis-15-2" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="apis-15-3">
+<div class="para" id="p-derived-apis-15-3">Does it come from a trustworthy source?</div>
+<div class="autopermalink" aria-hidden="true" data-description="Item"><a tabindex="-1" href="#apis-15-3" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="apis-15-4">
+<div class="para" id="p-derived-apis-15-4">Is it licensed for reuse?</div>
+<div class="autopermalink" aria-hidden="true" data-description="Item"><a tabindex="-1" href="#apis-15-4" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+</ul>
+<div class="para" id="apis-16">It is also important to cite the sources of any libraries or code segments you use in the comments of your code, and to test it.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#apis-16" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<article class="note remark-like" id="apis-17"><h3 class="heading">
 <span class="type">Essential Knowledge</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">3.3.7</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">3.3.A.7.</span>
 </h3>
-<div class="para" id="apis-5-2">When using existing code, programmers test how reused procedures work within their own program. They compare actual results to expected results using both typical inputs and boundary cases to confirm the integration works as intended.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#apis-5-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="apis-17-2">When using existing code, programmers test how reused procedures work within their own program. They compare actual results to expected results using both typical inputs and boundary cases to confirm the integration works as intended.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#apis-17-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" aria-hidden="true" data-description="Essential Knowledge 3.3.7: 3.3.A.7"><a tabindex="-1" href="#apis-5" title="Copy heading and permalink for Essential Knowledge 3.3.7: 3.3.A.7" aria-label="Copy heading and permalink for Essential Knowledge 3.3.7: 3.3.A.7">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Essential Knowledge 3.3.7: 3.3.A.7"><a tabindex="-1" href="#apis-17" title="Copy heading and permalink for Essential Knowledge 3.3.7: 3.3.A.7" aria-label="Copy heading and permalink for Essential Knowledge 3.3.7: 3.3.A.7">🔗</a></div>
+</article>
+<div class="para" id="apis-18">If you were creating a calculator app and wanted to have a square root function, you could use the <code class="code-inline tex2jax_ignore">sqrt</code> function from the Python <code class="code-inline tex2jax_ignore">math</code> module. You would first look at its documentation at <a class="external" href="https://docs.python.org/3/library/math.html#math.sqrt" target="_blank">https://docs.python.org/3/library/math.html#math.sqrt</a> to understand how to use it. After using it in your code, you would need to test it to make sure it works as expected on typical inputs and boundary cases, for example with positive numbers, zero, and negative numbers. The square root of a negative number is not defined in the real number system, so you would expect that to give an error.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#apis-18" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<article class="activity project-like" id="use-sqrt"><h3 class="heading">
+<span class="type">Activity</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">3.3.6</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+</h3>
+<div class="ptx-runestone-container"><div class="runestone explainer ac_section "><div data-component="activecode" id="rs-use-sqrt">
+<div class="ac_question exercise-statement" id="rs-use-sqrt_question">
+<div class="para" id="use-sqrt-1-1">Use the <code class="code-inline tex2jax_ignore">sqrt</code> function from the Python <code class="code-inline tex2jax_ignore">math</code> module to find the integer square root of a number. Test it with positive numbers, zero, and negative numbers.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#use-sqrt-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div> 
+<div class="para" id="use-sqrt-1-2">After testing with a negative number, comment that line and run again to get all of the points for this activity.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#use-sqrt-1-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+</div>
+<textarea data-lang="python" data-audio="" data-coach="true" style="visibility: hidden;" id="rs-use-sqrt_editor" data-question_label="" data-codelens="true" data-timelimit="25000">import math
+
+print(math.sqrt(16))  # Should print 4
+
+# Test with 9
+
+# Test with 10
+
+# Test with zero
+
+# Test with a negative number to see error, but then comment it out and run again
+====
+from unittest.gui import TestCaseGui
+class myTests(TestCaseGui):
+    def test1(self):
+          self.assertIn("math.sqrt(9)", self.getEditorText(), "Use math.sqrt(9) to test with 9")
+          self.assertIn("math.sqrt(10)", self.getEditorText(), "Use math.sqrt(10) to test with 10")
+          self.assertIn("math.sqrt(0)", self.getEditorText(), "Test with 0")
+          self.assertIn("math.sqrt(-", self.getEditorText(), "Test with a negative number but comment it out")
+
+myTests().main()
+</textarea>
+</div></div></div>
+<div class="autopermalink" aria-hidden="true" data-description="Activity 3.3.6"><a tabindex="-1" href="#use-sqrt" title="Copy heading and permalink for Activity 3.3.6" aria-label="Copy heading and permalink for Activity 3.3.6">🔗</a></div>
+</article>
+<article class="activity project-like" id="sqrt-test-cases"><h3 class="heading">
+<span class="type">Activity</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">3.3.7</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">sqrt Test Plan.</span>
+</h3>
+<div class="ptx-runestone-container"><div class="runestone">
+<div data-component="fillintheblank" class="fillintheblank" style="visibility: hidden;" id="rs-sqrt-test-cases"><script type="application/json">{
+"problemHtml": "\n<div class=\"para\" id=\"sqrt-test-cases-2-1\">Fill in the test plan below for the <code class=\"code-inline tex2jax_ignore\">sqrt<\/code> function as you run it in the previous activity.<div class=\"autopermalink\" aria-hidden=\"true\" data-description=\"Paragraph\"><a tabindex=\"-1\" href=\"#sqrt-test-cases-2-1\" title=\"Copy heading and permalink for Paragraph\" aria-label=\"Copy heading and permalink for Paragraph\">🔗<\/a><\/div><\/div>\n<figure class=\"table table-like\" id=\"sqrt-test-cases-2-2\"><figcaption><span class=\"type\">Table<\/span><span class=\"space heading-divison-mark heading-divison-mark__space\"> <\/span><span class=\"codenumber\">3.3.8<span class=\"period heading-divison-mark heading-divison-mark__period\">.<\/span><\/span><span class=\"space heading-divison-mark heading-divison-mark__space\"> <\/span>Test Cases<div class=\"autopermalink\" aria-hidden=\"true\" data-description=\"Table 3.3.8: Test Cases\"><a tabindex=\"-1\" href=\"#sqrt-test-cases-2-2\" title=\"Copy heading and permalink for Table 3.3.8: Test Cases\" aria-label=\"Copy heading and permalink for Table 3.3.8: Test Cases\">🔗<\/a><\/div><\/figcaption><div class=\"tabular-box natural-width\"><table class=\"tabular\">\n<tr class=\"header-horizontal\">\n<th scope=\"col\" class=\"l m b1 r0 l0 t0 lines\">Test Case<\/th>\n<th scope=\"col\" class=\"l m b1 r0 l0 t0 lines\">Input<\/th>\n<th scope=\"col\" class=\"l m b1 r0 l0 t0 lines\">Expected Output<\/th>\n<th scope=\"col\" class=\"l m b1 r0 l0 t0 lines\">Actual Output<\/th><\/tr>\n<tr>\n<td class=\"l m b0 r0 l0 t0 lines\">positive number<\/td>\n<td class=\"l m b0 r0 l0 t0 lines\">9<\/td>\n<td class=\"l m b0 r0 l0 t0 lines\">3<\/td>\n<td class=\"l m b0 r0 l0 t0 lines\"><input type=\"text\" id=\"-blank1\"\/><\/td><\/tr>\n<tr>\n<td class=\"l m b0 r0 l0 t0 lines\">zero<\/td>\n<td class=\"l m b0 r0 l0 t0 lines\">0<\/td>\n<td class=\"l m b0 r0 l0 t0 lines\">0<\/td>\n<td class=\"l m b0 r0 l0 t0 lines\"><input type=\"text\" id=\"-blank2\"\/><\/td><\/tr>\n<tr>\n<td class=\"l m b0 r0 l0 t0 lines\">negative number<\/td>\n<td class=\"l m b0 r0 l0 t0 lines\">-1<\/td>\n<td class=\"l m b0 r0 l0 t0 lines\">ValueError<\/td>\n<td class=\"l m b0 r0 l0 t0 lines\"><input type=\"text\" id=\"-blank3\"\/><\/td><\/tr><\/table><\/div>\n<\/figure>",
+"solutionHtml": "",
+"blankNames": {"blank1": 0, "blank2": 1, "blank3": 2},
+"feedbackArray": [[{"regex": "^\\s*3\\s*$", "regexFlags": "", "feedback": "Correct!"}, {"regex": "^\\s*3\\s*$", "regexFlags": "", "feedback": "Correct!"}, {"solution_code": "function() {\n    var testResults = new Array();\n    testResults[0] = 1;\n    return (testResults[0]);\n}()", "feedback": "Run the original code with the input to see the output."}, {"feedback": "Incorrect."}], [{"regex": "^\\s*0\\s*$", "regexFlags": "", "feedback": "Correct!"}, {"regex": "^\\s*0\\s*$", "regexFlags": "", "feedback": "Correct!"}, {"solution_code": "function() {\n    var testResults = new Array();\n    testResults[0] = 1;\n    return (testResults[0]);\n}()", "feedback": "Run the original code with the input to see the output."}, {"feedback": "Incorrect."}], [{"regex": "^\\s*ValueError\\s*$", "regexFlags": "", "feedback": "Correct!"}, {"regex": "^\\s*ValueError\\s*$", "regexFlags": "", "feedback": "Correct!"}, {"solution_code": "function() {\n    var testResults = new Array();\n    testResults[0] = 1;\n    return (testResults[0]);\n}()", "feedback": "Run the original code with the input to see the output."}, {"feedback": "Incorrect."}]]
+}</script></div>
+</div></div>
+<div class="autopermalink" aria-hidden="true" data-description="Activity 3.3.7: sqrt Test Plan"><a tabindex="-1" href="#sqrt-test-cases" title="Copy heading and permalink for Activity 3.3.7: sqrt Test Plan" aria-label="Copy heading and permalink for Activity 3.3.7: sqrt Test Plan">🔗</a></div>
+</article>
+<article class="activity project-like" id="test-library-code"><h3 class="heading">
+<span class="type">Activity</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">3.3.8</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+</h3>
+<div class="ptx-runestone-container"><div class="runestone multiplechoice_section">
+<div class="exercise-statement">
+<div class="para" id="test-library-code-1-1">Why should you test code from a library or other existing code after adding it to your program?<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#test-library-code-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+</div>
+<ul data-component="multiplechoice" class="exercise-interactives" id="rs-test-library-code" data-multipleanswers="false" data-random="">
+<li data-component="answer" id="rs-test-library-code_opt_a">
+<div class="para" id="test-library-code-2-1-1-1">Library code is always correct.</div>
+</li>
+<li data-component="feedback" id="rs-test-library-code_opt_a">
+<div class="para" id="test-library-code-2-1-2-1">Incorrect. Library functions are generally designed to work correctly, but you should still test them in your program.</div>
+</li>
+<li data-component="answer" id="rs-test-library-code_opt_b">
+<div class="para" id="test-library-code-2-2-1-1">Testing makes it faster.</div>
+</li>
+<li data-component="feedback" id="rs-test-library-code_opt_b">
+<div class="para" id="test-library-code-2-2-2-1">Incorrect. Testing does not make the code run faster.</div>
+</li>
+<li data-component="answer" id="rs-test-library-code_opt_c" data-correct="">
+<div class="para" id="test-library-code-2-3-1-1">The code may behave differently than you expected.</div>
+</li>
+<li data-component="feedback" id="rs-test-library-code_opt_c">
+<div class="para" id="test-library-code-2-3-2-1">Correct! Testing helps you make sure that the reused code works as expected in your program.</div>
+</li>
+<li data-component="answer" id="rs-test-library-code_opt_d">
+<div class="para" id="test-library-code-2-4-1-1">It won’t work without testing.</div>
+</li>
+<li data-component="feedback" id="rs-test-library-code_opt_d">
+<div class="para" id="test-library-code-2-4-2-1">Incorrect. It will probably work, but you should still test it to make sure.</div>
+</li>
+</ul>
+</div></div>
+<div class="autopermalink" aria-hidden="true" data-description="Activity 3.3.8"><a tabindex="-1" href="#test-library-code" title="Copy heading and permalink for Activity 3.3.8" aria-label="Copy heading and permalink for Activity 3.3.8">🔗</a></div>
 </article><div class="autopermalink" aria-hidden="true" data-description="Subsection 3.3.2: Application Programming Interfaces (APIs)"><a tabindex="-1" href="#apis" title="Copy heading and permalink for Subsection 3.3.2: Application Programming Interfaces (APIs)" aria-label="Copy heading and permalink for Subsection 3.3.2: Application Programming Interfaces (APIs)">🔗</a></div>
+</section>
+<section class="subsection" id="API-project">
+<h2 class="heading hide-type">
+<span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">3.3.3</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">API Project</span>
+</h2>
+<div class="para" id="API-project-4">In this project, you will use an API For a web service called <a class="external" href="https://dog.ceo/dog-api" target="_blank">https://dog.ceo/dog-api</a> which provides free dog images by breed. In the documentation, <a class="external" href="https://dog.ceo/dog-api/documentation/random" target="_blank">https://dog.ceo/dog-api/documentation/random</a>, you can find the url (web address) for fetching random dog images. You can also try it in your browser to see that <a class="external" href="https://dog.ceo/api/breeds/image/random" target="_blank">https://dog.ceo/api/breeds/image/random</a> returns some text like <code class="code-inline tex2jax_ignore">{"message":"https://images.dog.ceo/breeds/german-shepherd/n02106662_16342.jpg","status":"success"}</code> and if we paste the embedded image link into a browser, we can see the image that it returns <a class="external" href="https://images.dog.ceo/breeds/german-shepherd/n02106662_16342.jpg" target="_blank">https://images.dog.ceo/breeds/german-shepherd/n02106662_16342.jpg</a>. Try running the active code below to see the random images that it returns which is displayed in the web page using a hidden <code class="code-inline tex2jax_ignore">showImage</code> function.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#API-project-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="API-project-5">Now, take a look at the documentation for showing random dog images of a certain breed at <a class="external" href="https://dog.ceo/dog-api/breeds-list" target="_blank">https://dog.ceo/dog-api/breeds-list</a>. Pull down the menu to see different breeds.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#API-project-5" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="API-project-6">Let’s use this API to fetch images of a specific dog breed that the user chooses. First, create a list of at least 5 dog breeds that are in the API. Then, use a loop to print the list of dog breeds with their index number. Then, ask the user to input the index number of the dog breed they want to see. Finally, use the API to fetch a random image of that breed and display it on the web page using the <code class="code-inline tex2jax_ignore">showImage</code> function.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#API-project-6" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<article class="project project-like" id="projectAPI"><h3 class="heading">
+<span class="type">Project</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">3.3.9</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Dog API Project.</span>
+</h3>
+<div class="ptx-runestone-container"><div class="runestone explainer ac_section "><div data-component="activecode" id="rs-projectAPI">
+<div class="ac_question exercise-statement" id="rs-projectAPI_question">
+<div class="para" id="projectAPI-2-1">Run the code below to see a random dog image from the dog API.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#projectAPI-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div> 
+<div class="para" id="projectAPI-2-2">Then, change it to show different breeds.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#projectAPI-2-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div> 
+<ol class="decimal" id="projectAPI-2-3">
+<li id="projectAPI-2-3-1">
+<div class="para" id="p-derived-projectAPI-2-3-1">Create a list of at least 5 dog breeds that are in <a class="external" href="https://dog.ceo/dog-api/breeds-list" target="_blank">https://dog.ceo/dog-api/breeds-list</a>.</div>
+<div class="autopermalink" aria-hidden="true" data-description="Item 1"><a tabindex="-1" href="#projectAPI-2-3-1" title="Copy heading and permalink for Item 1" aria-label="Copy heading and permalink for Item 1">🔗</a></div>
+</li>
+<li id="projectAPI-2-3-2">
+<div class="para" id="p-derived-projectAPI-2-3-2">Use an indexed for loop to print the list of dog breeds with their index number.</div>
+<div class="autopermalink" aria-hidden="true" data-description="Item 2"><a tabindex="-1" href="#projectAPI-2-3-2" title="Copy heading and permalink for Item 2" aria-label="Copy heading and permalink for Item 2">🔗</a></div>
+</li>
+<li id="projectAPI-2-3-3">
+<div class="para" id="p-derived-projectAPI-2-3-3">Ask the user to input the index number of the dog breed they want to see.</div>
+<div class="autopermalink" aria-hidden="true" data-description="Item 3"><a tabindex="-1" href="#projectAPI-2-3-3" title="Copy heading and permalink for Item 3" aria-label="Copy heading and permalink for Item 3">🔗</a></div>
+</li>
+<li id="projectAPI-2-3-4">
+<div class="para" id="p-derived-projectAPI-2-3-4">Use the breeds list and the user’s index input to save the selected breed name.</div>
+<div class="autopermalink" aria-hidden="true" data-description="Item 4"><a tabindex="-1" href="#projectAPI-2-3-4" title="Copy heading and permalink for Item 4" aria-label="Copy heading and permalink for Item 4">🔗</a></div>
+</li>
+<li id="projectAPI-2-3-5">
+<div class="para" id="p-derived-projectAPI-2-3-5">Use the selected breed name to fetch a random image using the APIString "https://dog.ceo/api/breed/" + breed + "/images/random"</div>
+<div class="autopermalink" aria-hidden="true" data-description="Item 5"><a tabindex="-1" href="#projectAPI-2-3-5" title="Copy heading and permalink for Item 5" aria-label="Copy heading and permalink for Item 5">🔗</a></div>
+</li>
+</ol>
+</div>
+<textarea data-lang="python" data-audio="" data-coach="true" style="visibility: hidden;" id="rs-projectAPI_editor" data-question_label="" data-codelens="true" data-timelimit="25000">import document
+
+def showImage(image):
+    id = "cspossible__projectAPI_graphics"
+    output = document.getElementById(id)
+    output.innerHTML = ""
+    img = document.createElement("img")
+    img.src = image
+    img.width = 400
+    output.appendChild(img)
+^^^^
+import requests
+
+# Run this to see a random dog image from the dog API
+apiString = "https://dog.ceo/api/breeds/image/random"
+data = requests.get(apiString).json()
+print(data)
+showImage(data["message"])
+
+# TODO: 
+# 1. Create a list of at least 5 dog breeds that are in the API https://dog.ceo/dog-api/breeds-list
+
+# 2. Use an indexed for-loop to print the list of dog breeds with their index number
+
+# 3. Ask the user to input the index number of the dog breed they want to see (convert to int)
+
+# 4. Use the breeds list and the user's index input to save the selected breed name
+
+# 5. Use the selected breed name to fetch a random image 
+# Hint: Create an APIString that has "https://dog.ceo/api/breed/", the breed, and "/images/random"
+====
+from unittest.gui import TestCaseGui
+
+class myTests(TestCaseGui):
+    def test1(self):
+        code = self.getEditorText().replace(" ", "")
+        self.assertIn("=[", code, "Define a list of breeds")
+        self.assertIn("for ", self.getEditorText(), "Use an indexed for loop with range to print the list of breeds with their index number")
+        self.assertIn("input(", code, "Ask the user for input")
+        self.assertIn('\"https://dog.ceo/api/breed/\"+', code, "Add the selected breed to the APIString")
+
+myTests().main()
+</textarea>
+</div></div></div>
+<div class="autopermalink" aria-hidden="true" data-description="Project 3.3.9: Dog API Project"><a tabindex="-1" href="#projectAPI" title="Copy heading and permalink for Project 3.3.9: Dog API Project" aria-label="Copy heading and permalink for Project 3.3.9: Dog API Project">🔗</a></div>
+</article>
+<article class="activity project-like" id="frq-data-api-abstraction"><h3 class="heading">
+<span class="type">Activity</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">3.3.10</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Data and API Abstraction Reflection.</span>
+</h3>
+<div class="ptx-runestone-container"><div class="runestone shortanswer_section"><div data-component="shortanswer" data-question_label="" class="journal" data-mathjax="" id="rs-frq-data-api-abstraction" data-placeholder="You can write here, and it will be saved on this device, but your response will not be graded.">
+<div class="para" id="frq-data-api-abstraction-2-1">Consider the list and the API used in your project code above.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#frq-data-api-abstraction-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div> 
+<ol class="decimal" id="frq-data-api-abstraction-2-2">
+<li id="frq-data-api-abstraction-2-2-1">
+<div class="para" id="p-derived-frq-data-api-abstraction-2-2-1">Explain how the list uses data abstraction to manage complexity in your program.</div>
+<div class="autopermalink" aria-hidden="true" data-description="Item 1"><a tabindex="-1" href="#frq-data-api-abstraction-2-2-1" title="Copy heading and permalink for Item 1" aria-label="Copy heading and permalink for Item 1">🔗</a></div>
+</li>
+<li id="frq-data-api-abstraction-2-2-2">
+<div class="para" id="p-derived-frq-data-api-abstraction-2-2-2">How easy or difficult would it be to add more breeds to your program?</div>
+<div class="autopermalink" aria-hidden="true" data-description="Item 2"><a tabindex="-1" href="#frq-data-api-abstraction-2-2-2" title="Copy heading and permalink for Item 2" aria-label="Copy heading and permalink for Item 2">🔗</a></div>
+</li>
+<li id="frq-data-api-abstraction-2-2-3">
+<div class="para" id="p-derived-frq-data-api-abstraction-2-2-3">How did the API help to quickly add more functionality to your program?</div>
+<div class="autopermalink" aria-hidden="true" data-description="Item 3"><a tabindex="-1" href="#frq-data-api-abstraction-2-2-3" title="Copy heading and permalink for Item 3" aria-label="Copy heading and permalink for Item 3">🔗</a></div>
+</li>
+<li id="frq-data-api-abstraction-2-2-4">
+<div class="para" id="p-derived-frq-data-api-abstraction-2-2-4">How did you use the API? What rules or structure of the API did you follow to show the correct images?</div>
+<div class="autopermalink" aria-hidden="true" data-description="Item 4"><a tabindex="-1" href="#frq-data-api-abstraction-2-2-4" title="Copy heading and permalink for Item 4" aria-label="Copy heading and permalink for Item 4">🔗</a></div>
+</li>
+</ol>
+</div></div></div>
+<div class="autopermalink" aria-hidden="true" data-description="Activity 3.3.10: Data and API Abstraction Reflection"><a tabindex="-1" href="#frq-data-api-abstraction" title="Copy heading and permalink for Activity 3.3.10: Data and API Abstraction Reflection" aria-label="Copy heading and permalink for Activity 3.3.10: Data and API Abstraction Reflection">🔗</a></div>
+</article><div class="autopermalink" aria-hidden="true" data-description="Subsection 3.3.3: API Project"><a tabindex="-1" href="#API-project" title="Copy heading and permalink for Subsection 3.3.3: API Project" aria-label="Copy heading and permalink for Subsection 3.3.3: API Project">🔗</a></div>
 </section>
 <section class="subsection" id="LOs-3-3">
 <h2 class="heading hide-type">
-<span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">3.3.3</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Learning Objectives Review</span>
+<span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">3.3.4</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Learning Objectives Review</span>
 </h2>
 <article class="remark remark-like" id="LOs-3-3-2"><h3 class="heading">
-<span class="type">Learning Objective</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">3.3.8</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">3.3.A.</span>
+<span class="type">Learning Objective</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">3.3.9</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">3.3.A.</span>
 </h3>
 <div class="para" id="LOs-3-3-2-2">Develop code using appropriate libraries or existing code segments to create a program.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#LOs-3-3-2-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" aria-hidden="true" data-description="Learning Objective 3.3.8: 3.3.A"><a tabindex="-1" href="#LOs-3-3-2" title="Copy heading and permalink for Learning Objective 3.3.8: 3.3.A" aria-label="Copy heading and permalink for Learning Objective 3.3.8: 3.3.A">🔗</a></div>
-</article><div class="autopermalink" aria-hidden="true" data-description="Subsection 3.3.3: Learning Objectives Review"><a tabindex="-1" href="#LOs-3-3" title="Copy heading and permalink for Subsection 3.3.3: Learning Objectives Review" aria-label="Copy heading and permalink for Subsection 3.3.3: Learning Objectives Review">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Learning Objective 3.3.9: 3.3.A"><a tabindex="-1" href="#LOs-3-3-2" title="Copy heading and permalink for Learning Objective 3.3.9: 3.3.A" aria-label="Copy heading and permalink for Learning Objective 3.3.9: 3.3.A">🔗</a></div>
+</article><div class="autopermalink" aria-hidden="true" data-description="Subsection 3.3.4: Learning Objectives Review"><a tabindex="-1" href="#LOs-3-3" title="Copy heading and permalink for Subsection 3.3.4: Learning Objectives Review" aria-label="Copy heading and permalink for Subsection 3.3.4: Learning Objectives Review">🔗</a></div>
 </section>
 <section class="subsection" id="vocab-3-3">
 <h2 class="heading hide-type">
-<span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">3.3.4</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Vocabulary Review</span>
+<span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">3.3.5</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Vocabulary Review</span>
 </h2>
-<div class="autopermalink" aria-hidden="true" data-description="Subsection 3.3.4: Vocabulary Review"><a tabindex="-1" href="#vocab-3-3" title="Copy heading and permalink for Subsection 3.3.4: Vocabulary Review" aria-label="Copy heading and permalink for Subsection 3.3.4: Vocabulary Review">🔗</a></div>
+<article class="activity project-like" id="vocab-libraries"><h3 class="heading">
+<span class="type">Activity</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">3.3.11</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+</h3>
+<div class="ptx-runestone-container"><div class="runestone cardsort_section"><ul data-component="dragndrop" data-question_label="" style="visibility: hidden;" id="rs-vocab-libraries">
+<span data-subcomponent="question">
+<div class="para" id="vocab-libraries-1-1">Review the vocabulary in this lesson. Drag the vocabulary term from the left and drop it on its correct definition on the right. Click the "Check Me" button to see if you are correct.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#vocab-libraries-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div></span><span data-subcomponent="feedback">
+<div class="para" id="vocab-libraries-2-1">Find the words in the lesson above and try again.</div></span><li data-subcomponent="draggable" id="rs-vocab-libraries_drag1" data-category="1">library</li>
+<li data-subcomponent="dropzone" for="rs-vocab-libraries_drag1" data-category="1">A collection of classes written by other programmers</li>
+<li data-subcomponent="draggable" id="rs-vocab-libraries_drag2" data-category="2">import</li>
+<li data-subcomponent="dropzone" for="rs-vocab-libraries_drag2" data-category="2">To include a library in your code</li>
+<li data-subcomponent="draggable" id="rs-vocab-libraries_drag3" data-category="3">API</li>
+<li data-subcomponent="dropzone" for="rs-vocab-libraries_drag3" data-category="3">The rules or specification on how to use a library</li>
+<li data-subcomponent="draggable" id="rs-vocab-libraries_drag4" data-category="4">module</li>
+<li data-subcomponent="dropzone" for="rs-vocab-libraries_drag4" data-category="4">A single Python file that can be imported into another program</li>
+<li data-subcomponent="draggable" id="rs-vocab-libraries_drag5" data-category="5">documentation</li>
+<li data-subcomponent="dropzone" for="rs-vocab-libraries_drag5" data-category="5">The written description of a library’s usage</li>
+</ul></div></div>
+<div class="autopermalink" aria-hidden="true" data-description="Activity 3.3.11"><a tabindex="-1" href="#vocab-libraries" title="Copy heading and permalink for Activity 3.3.11" aria-label="Copy heading and permalink for Activity 3.3.11">🔗</a></div>
+</article><div class="autopermalink" aria-hidden="true" data-description="Subsection 3.3.5: Vocabulary Review"><a tabindex="-1" href="#vocab-3-3" title="Copy heading and permalink for Subsection 3.3.5: Vocabulary Review" aria-label="Copy heading and permalink for Subsection 3.3.5: Vocabulary Review">🔗</a></div>
 </section><div class="autopermalink" aria-hidden="true" data-description="Section 3.3: Using Existing Code and Libraries"><a tabindex="-1" href="#topic-3-3-libraries" title="Copy heading and permalink for Section 3.3: Using Existing Code and Libraries" aria-label="Copy heading and permalink for Section 3.3: Using Existing Code and Libraries">🔗</a></div>
 </section>
 </div>
