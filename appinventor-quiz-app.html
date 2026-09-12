@@ -1,0 +1,777 @@
+<!DOCTYPE html>
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
+<html lang="en-US" dir="ltr">
+<!--******************************************-->
+<!--*  Authored with PreTeXt                 *-->
+<!--*  pretextbook.org                       *-->
+<!--*  Theme: salem                          *-->
+<!--*  Palette:                              *-->
+<!--******************************************-->
+<head xmlns:og="http://ogp.me/ns#" xmlns:book="https://ogp.me/ns/book#">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>App Inventor Quiz App Tutorial (Optional)</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0">
+<link href="_static/pretext/css/theme.css" rel="stylesheet" type="text/css">
+<link href="_static/pretext/css/ol-markers.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" type="text/css" href="external/_static/css/custom.css">
+<script type="module">import { startMathJax } from './_static/pretext/js/dist/mathjax_startup.js';
+startMathJax({
+hasWebworkReps: false,
+hasSage: false,
+isReact: false,
+htmlPresentation: false,
+lang: "en-US",
+});
+</script><script defer src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-mml-chtml.js"></script><meta name="Keywords" content="Authored in PreTeXt">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta property="og:type" content="book">
+<meta name="twitter:title" content="CSPossible: AP CSP in Python (beta)">
+<meta property="og:title" content="CSPossible: AP CSP in Python (beta)">
+<meta property="book:title" content="CSPossible: AP CSP in Python (beta)">
+<meta name="twitter:description" content="CSPossible is a beta AP CSP Python curriculum to meet the 2027-2028 College Board standards. It is also an introductory college-level computer programming course in Python.">
+<meta property="og:description" content="CSPossible is a beta AP CSP Python curriculum to meet the 2027-2028 College Board standards. It is also an introductory college-level computer programming course in Python.">
+<meta name="twitter:card" content="summary">
+<script src="_static/pretext/js/jquery.min.js"></script><script src="_static/pretext/js/dist/pretext-core.js?v=2.48"></script><script src="_static/pretext/js/dist/pretext-read-aloud.js?v=2.48"></script><!--** eBookCongig is necessary to configure interactive       **-->
+<!--** Runestone components to run locally in reader's browser **-->
+<!--** No external communication:                              **-->
+<!--**     log level is 0, Runestone Services are disabled     **-->
+<script type="text/javascript">
+eBookConfig = {};
+eBookConfig.useRunestoneServices = false;
+eBookConfig.host = 'http://127.0.0.1:8000';
+eBookConfig.course = 'PTX_Course_Title_Here';
+eBookConfig.basecourse = 'PTX_Base_Course';
+eBookConfig.isLoggedIn = false;
+eBookConfig.email = '';
+eBookConfig.isInstructor = false;
+eBookConfig.logLevel = 0;
+eBookConfig.username = '';
+eBookConfig.readings = null;
+eBookConfig.activities = null;
+eBookConfig.downloadsEnabled = false;
+eBookConfig.allow_pairs = false;
+eBookConfig.enableScratchAC = true;
+eBookConfig.acDefaultLanguage = 'python';
+eBookConfig.build_info = "";
+eBookConfig.python3 = null;
+eBookConfig.runestone_version = '8.2.10';
+eBookConfig.jobehost = '';
+eBookConfig.proxyuri_runs = '';
+eBookConfig.proxyuri_files = '';
+eBookConfig.enable_chatcodes =  false;
+</script>
+<!--*** Runestone Services ***-->
+<script src="_static/prefix-runtime.e3f9706509fcf6f7.bundle.js"></script><script src="_static/prefix-926.5c7038c8ef173faf.bundle.js"></script><script src="_static/prefix-runestone.c5ba0ffa5f963084.bundle.js"></script><link rel="stylesheet" type="text/css" href="_static/prefix-926.229729d09512acc9.css">
+<link rel="stylesheet" type="text/css" href="_static/prefix-runestone.efe427683fc41f98.css">
+<script src="_static/pretext/js/dist/lti_iframe_resizer.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.26.0/components/prism-core.min.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.26.0/plugins/autoloader/prism-autoloader.min.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.26.0/plugins/line-numbers/prism-line-numbers.min.js" integrity="sha512-dubtf8xMHSQlExGRQ5R7toxHLgSDZ0K7AunqPWHXmJQ8XyVIG19S1T95gBxlAeGOK02P4Da2RTnQz0Za0H0ebQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.26.0/plugins/line-highlight/prism-line-highlight.min.js" integrity="sha512-93uCmm0q+qO5Lb1huDqr7tywS8A2TFA+1/WHvyiWaK6/pvsFl6USnILagntBx8JnVbQH5s3n0vQZY6xNthNfKA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.9/lunr.min.js" integrity="sha512-4xUl/d6D6THrAnXAwGajXkoWaeMNwEKK4iNfq5DotEbLPAfk6FSxSP3ydNxqDgCw1c/0Z1Jg6L8h2j+++9BZmg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script><script src="lunr-pretext-search-index.js" async=""></script><script src="_static/pretext/js/dist/pretext_search.js"></script><!--knowl.js code controls Sage Cells within knowls--><script>sagecellEvalName='Evaluate (Sage)';
+</script>
+</head>
+<body id="cspossible" class="pretext book ignore-math">
+<a class="assistive" href="#ptx-content">Skip to main content</a><header id="ptx-masthead" class="ptx-masthead" role="banner"><div class="ptx-banner">
+<a id="logo-link" class="logo-link" target="_blank" href="./index.html"><img src="external/_static/CSPossible.png" alt="Logo image"></a><div class="title-container">
+<div class="heading ptx-banner-heading"><a href="cspossible.html"><span class="title">CSPossible</span> <span class="subtitle">AP CSP in Python (beta)</span></a></div>
+<p class="byline"></p>
+</div>
+</div></header><nav id="ptx-navbar" class="ptx-navbar navbar"><div class="ptx-navbar-contents">
+<button id="ptx-toc-toggle" type="button" aria-controls="ptx-sidebar" class="toc-toggle button" title="Contents"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5d2;</span><span class="name">Contents</span></button><a class="index-button button" href="cspossible-8-1.html" title="Index"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe88e;</span><span class="name">Index</span></a><div class="ptx-search-box">
+<div class="ptx-search-widget"><button id="ptx-search-button" type="button" class="ptx-search-button button" title="Search Book"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe8b6;</span><span class="name">Search Book</span></button></div>
+<dialog id="ptx-search-dialog" class="ptx-dialog ptx-search-dialog"><div class="ptx-search-dialog-controls">
+<input aria-label="Search term" id="ptx-search-terms" class="ptx-search-terms" type="text" name="terms" placeholder="Search terms"><button aria-label="Close" id="ptx-search-close" class="ptx-search-close"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cd;</span></button>
+</div>
+<div id="ptx-search-status" class="ptx-search-status" aria-live="polite" aria-atomic="true"></div>
+<h2 class="heading ptx-search-results-heading">Search Results: </h2>
+<div id="ptx-search-empty" class="ptx-search-empty"><span>No results.</span></div>
+<ol id="ptx-search-results" class="ptx-search-results"></ol></dialog>
+</div>
+<span class="nav-other-controls"><button id="ptx-read-aloud-button" class="ptx-read-aloud-button button" title="Read aloud" aria-expanded="false"><span class="icon material-symbols-outlined" aria-hidden="true">&#xf1bc;</span><span class="name">Read aloud</span></button><div id="ptx-read-aloud-player" class="ptx-read-aloud-player" hidden="hidden" role="group" aria-label="Read aloud">
+<button id="ptx-read-aloud-prev" class="button" title="Previous sentence"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe045;</span></button><button id="ptx-read-aloud-toggle" class="ptx-read-aloud-toggle button" title="Play"><span class="ptx-read-aloud-icon-play"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe037;</span></span><span class="ptx-read-aloud-icon-pause"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe034;</span></span></button><button id="ptx-read-aloud-next" class="button" title="Next sentence"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe044;</span></button><a id="ptx-read-aloud-continue" class="ptx-read-aloud-continue button" hidden="hidden">Continue<span class="icon material-symbols-outlined" aria-hidden="true">&#xe037;</span></a><button id="ptx-read-aloud-settings-button" class="ptx-read-aloud-settings-button button" title="Reading settings"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe429;</span></button>
+</div>
+<dialog class="ptx-dialog ptx-read-aloud-settings-popup" id="ptx-read-aloud-settings-popup"><div class="ptx-readability-options-popup-controls">
+<h2 class="heading">Read aloud settings</h2>
+<button class="ptx-read-aloud-settings-close-button button" id="ptx-read-aloud-settings-close-button" title="Close"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cd;</span></button>
+</div>
+<div class="ptx-readability-options-group">
+<label for="ptx-read-aloud-voice"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe91f;</span><span>Voice</span></label><select id="ptx-read-aloud-voice"></select><label class="ptx-readability-slider-label" for="ptx-read-aloud-rate"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe9e4;</span><span>Reading speed</span><output id="ptx-read-aloud-rate-value" for="ptx-read-aloud-rate">1×</output></label><input type="range" id="ptx-read-aloud-rate" min="0.5" max="2" step="0.1" value="1"><label for="ptx-read-aloud-asides"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5d7;</span><span>Collapsed content</span></label><select id="ptx-read-aloud-asides"><option value="skip">Announce, do not read</option>
+<option value="read">Read automatically</option></select><label for="ptx-read-aloud-autoscroll"><input type="checkbox" id="ptx-read-aloud-autoscroll" checked><span>Follow along (auto-scroll)</span></label><label for="ptx-read-aloud-autocontinue"><input type="checkbox" id="ptx-read-aloud-autocontinue"><span>Continue to the next page automatically</span></label>
+</div></dialog><button id="ptx-readability-options-button" class="ptx-readability-options-button button" title="Readability settings"><span class="icon material-symbols-outlined" aria-hidden="true">&#xf6f1;</span><span class="name">Readability settings</span></button><dialog class="ptx-dialog ptx-readability-options-popup" id="ptx-readability-options-popup"><div class="ptx-readability-options-popup-controls">
+<h2 class="heading">Readability settings</h2>
+<button class="ptx-readability-options-close-button button" id="ptx-readability-options-close-button" title="Close"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cd;</span></button>
+</div>
+<div class="ptx-readability-options-group">
+<label class="ptx-readability-slider-label" for="ptx-readability-line-height"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe240;</span><span>Line height</span><output id="ptx-readability-line-height-value" for="ptx-readability-line-height">1.35</output></label><input type="range" id="ptx-readability-line-height" min="1.10" max="3" step="0.05" value="1.35">
+</div>
+<div class="ptx-readability-options-group">
+<label class="ptx-readability-slider-label" for="ptx-readability-font-size"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe245;</span><span>Content font size</span><output id="ptx-readability-font-size-value" for="ptx-readability-font-size">100%</output></label><input type="range" id="ptx-readability-font-size" min="0.8" max="1.5" step="0.05" value="1">
+</div>
+<fieldset class="ptx-readability-options-group ptx-readability-options-group-theme">
+<legend>Theme</legend>
+<label for="ptx-readability-theme-system"><input type="radio" name="ptx-readability-theme" id="ptx-readability-theme-system" value="system"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe1ab;</span><span>System</span></label><label for="ptx-readability-theme-light"><input type="radio" name="ptx-readability-theme" id="ptx-readability-theme-light" value="light"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe518;</span><span>Light</span></label><label for="ptx-readability-theme-dark"><input type="radio" name="ptx-readability-theme" id="ptx-readability-theme-dark" value="dark"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe51c;</span><span>Dark</span></label>
+</fieldset>
+<fieldset class="ptx-readability-options-group">
+<legend>Assistive technologies</legend>
+<label for="ptx-readability-accessible-permalinks"><input type="checkbox" id="ptx-readability-accessible-permalinks"><span>🔗</span><span>Expose permalinks</span></label>
+</fieldset>
+<div class="ptx-readability-options-group"><button type="button" class="ptx-readability-reset-button button" id="ptx-readability-reset-button"><span class="icon material-symbols-outlined" aria-hidden="true">&#xf053;</span><span class="name">Reset All</span></button></div></dialog></span><span class="treebuttons"><a class="previous-button button" href="lists-coding-practice.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="up-button button" href="unit3.html" title="Up"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Up</span></a><a class="next-button button" href="unit4.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a></span><span class="nav-runestone-controls"><button onclick="runestoneComponents.popupScratchAC()" class="activecode-toggle button" title="Scratch ActiveCode"><span class="icon material-symbols-outlined" aria-hidden="true">&#xf097;</span><span class="name">Scratch ActiveCode</span></button></span>
+</div></nav><div id="latex-macros" class="hidden-content process-math" style="display:none"><span class="process-math">\(
+\newcommand{\lt}{&lt;}
+\newcommand{\gt}{&gt;}
+\newcommand{\amp}{&amp;}
+\definecolor{fillinmathshade}{gray}{0.9}
+\newcommand{\fillinmath}[1]{\mathchoice{\colorbox{fillinmathshade}{$\displaystyle     \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\textstyle        \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptstyle      \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptscriptstyle\phantom{\,#1\,}$}}}
+\)</span></div>
+<div class="ptx-page">
+<div id="ptx-sidebar" role="complementary" class="ptx-sidebar"><nav id="ptx-toc" tabindex="-1" aria-label="Contents" class="ptx-toc depth3 focused" data-preexpanded-levels="0" data-max-levels="3"><ul class="structural toc-item-list contains-active">
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="unit0.html" class="internal"><span class="codenumber">0</span> <span class="title">Welcome to CSPossible</span></a></div>
+<ul id="ptx-toc-group-unit0" class="structural toc-item-list">
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="introduction-csp.html" class="internal"><span class="codenumber">0.1</span> <span class="title">Introduction</span></a></div>
+<ul id="ptx-toc-group-introduction-csp" class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="introduction-csp.html#teachers" class="internal"><span class="codenumber">0.1.1</span> <span class="title">Teachers</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="introduction-csp.html#sisters" class="internal"><span class="codenumber">0.1.2</span> <span class="title">Sisters Rise Up</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="introduction-csp.html#authors" class="internal"><span class="codenumber">0.1.3</span> <span class="title">Authors</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="introduction-csp.html#introduction-csp-6" class="internal"><span class="codenumber">0.1.4</span> <span class="title">Copyright</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="aboutcsp.html" class="internal"><span class="codenumber">0.2</span> <span class="title">About AP CSP</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="growthmindset.html" class="internal"><span class="codenumber">0.3</span> <span class="title">Growth Mindset</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="unit1.html" class="internal"><span class="codenumber">1</span> <span class="title">Creating Purposeful Apps and Programs</span></a></div>
+<ul id="ptx-toc-group-unit1" class="structural toc-item-list">
+<li class="toc-item toc-introduction"><div class="toc-title-box"><a href="unit1-2.html" class="internal"><span class="title">Introduction</span></a></div></li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="topic-1-1-purpose.html" class="internal"><span class="codenumber">1.1</span> <span class="title">Purpose and Behavior</span></a></div>
+<ul id="ptx-toc-group-topic-1-1-purpose" class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="topic-1-1-purpose.html#topic-1-1-purpose-4" class="internal"><span class="codenumber">1.1.1</span> <span class="title">Purpose and Behavior of Apps</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="topic-1-1-purpose.html#topic-1-1-purpose-5" class="internal"><span class="codenumber">1.1.2</span> <span class="title">Inputs and Outputs</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="topic-1-1-purpose.html#LOs-1-1" class="internal"><span class="codenumber">1.1.3</span> <span class="title">Learning Objectives Review</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="topic-1-1-purpose.html#vocab-1-1" class="internal"><span class="codenumber">1.1.4</span> <span class="title">Vocabulary Review</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="topic-1-2-collaboration.html" class="internal"><span class="codenumber">1.2</span> <span class="title">Benefits of Collaboration</span></a></div>
+<ul id="ptx-toc-group-topic-1-2-collaboration" class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="topic-1-2-collaboration.html#collaboration" class="internal"><span class="codenumber">1.2.1</span> <span class="title">Collaboration</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="topic-1-2-collaboration.html#user-testing" class="internal"><span class="codenumber">1.2.2</span> <span class="title">User Testing</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="topic-1-2-collaboration.html#iterative-process" class="internal"><span class="codenumber">1.2.3</span> <span class="title">Iterative Process</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="topic-1-2-collaboration.html#bias" class="internal"><span class="codenumber">1.2.4</span> <span class="title">Reducing Bias through Collaboration</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="topic-1-2-collaboration.html#LOs-1-2" class="internal"><span class="codenumber">1.2.5</span> <span class="title">Learning Objectives Review</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="topic-1-2-collaboration.html#vocab-1-2" class="internal"><span class="codenumber">1.2.6</span> <span class="title">Vocabulary Review</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="topic-1-3-responsible-ai.html" class="internal"><span class="codenumber">1.3</span> <span class="title">Responsible AI and Human Decision-Making</span></a></div>
+<ul id="ptx-toc-group-topic-1-3-responsible-ai" class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="topic-1-3-responsible-ai.html#ai-data" class="internal"><span class="codenumber">1.3.1</span> <span class="title">AI and Data</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="topic-1-3-responsible-ai.html#ai-models" class="internal"><span class="codenumber">1.3.2</span> <span class="title">Machine Learning and AI Models</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="topic-1-3-responsible-ai.html#teachable-machine" class="internal"><span class="codenumber">1.3.3</span> <span class="title">Teachable Machine Project</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="topic-1-3-responsible-ai.html#genAI" class="internal"><span class="codenumber">1.3.4</span> <span class="title">Generative AI</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="topic-1-3-responsible-ai.html#automation-augmentation" class="internal"><span class="codenumber">1.3.5</span> <span class="title">Automation and Augmentation</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="topic-1-3-responsible-ai.html#LOs-1-3" class="internal"><span class="codenumber">1.3.6</span> <span class="title">Learning Objectives Review</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="topic-1-3-responsible-ai.html#vocab-1-3" class="internal"><span class="codenumber">1.3.7</span> <span class="title">Vocabulary Review</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="topic-1-4-binary.html" class="internal"><span class="codenumber">1.4</span> <span class="title">Binary Representation</span></a></div>
+<ul id="ptx-toc-group-topic-1-4-binary" class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="topic-1-4-binary.html#data-bits" class="internal"><span class="codenumber">1.4.1</span> <span class="title">Data and Bits</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="topic-1-4-binary.html#binary" class="internal"><span class="codenumber">1.4.2</span> <span class="title">Binary Numbers</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="topic-1-4-binary.html#abstraction" class="internal"><span class="codenumber">1.4.3</span> <span class="title">Abstraction</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="topic-1-4-binary.html#encoding" class="internal"><span class="codenumber">1.4.4</span> <span class="title">Encoding in Bits</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="topic-1-4-binary.html#binary-limits" class="internal"><span class="codenumber">1.4.5</span> <span class="title">Limitations of Binary Representation</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="topic-1-4-binary.html#LOs-1-4" class="internal"><span class="codenumber">1.4.6</span> <span class="title">Learning Objectives Review</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="topic-1-4-binary.html#vocab-1-4" class="internal"><span class="codenumber">1.4.7</span> <span class="title">Vocabulary Review</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="topic-1-5-sequencing.html" class="internal"><span class="codenumber">1.5</span> <span class="title">Sequencing</span></a></div>
+<ul id="ptx-toc-group-topic-1-5-sequencing" class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="topic-1-5-sequencing.html#sequencing" class="internal"><span class="codenumber">1.5.1</span> <span class="title">Sequencing in Written Steps and Flowcharts</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="topic-1-5-sequencing.html#print" class="internal"><span class="codenumber">1.5.2</span> <span class="title">Python Output with <code class="code-inline tex2jax_ignore">print()</code></span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="topic-1-5-sequencing.html#sequencing-print" class="internal"><span class="codenumber">1.5.3</span> <span class="title">Sequencing in Code</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="topic-1-5-sequencing.html#debugging" class="internal"><span class="codenumber">1.5.4</span> <span class="title">Debugging</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="topic-1-5-sequencing.html#turtles" class="internal"><span class="codenumber">1.5.5</span> <span class="title">Python Turtles</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="topic-1-5-sequencing.html#tracing" class="internal"><span class="codenumber">1.5.6</span> <span class="title">Tracing Sequential Code</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="topic-1-5-sequencing.html#coding-challenge-turtle-project" class="internal"><span class="codenumber">1.5.7</span> <span class="title">Coding Challenge: Turtle Project</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="topic-1-5-sequencing.html#LOs-1-5" class="internal"><span class="codenumber">1.5.8</span> <span class="title">Learning Objectives Review</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="topic-1-5-sequencing.html#vocab-1-5" class="internal"><span class="codenumber">1.5.9</span> <span class="title">Vocabulary Review</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="topic-1-5-sequencing.html#appinventor-setup" class="internal"><span class="codenumber">1.5.10</span> <span class="title">App Inventor Setup (Optional)</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="topic-1-6-variables.html" class="internal"><span class="codenumber">1.6</span> <span class="title">Variables</span></a></div>
+<ul id="ptx-toc-group-topic-1-6-variables" class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="topic-1-6-variables.html#vars-in-apps" class="internal"><span class="codenumber">1.6.1</span> <span class="title">Identifying Variables in Apps</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="topic-1-6-variables.html#python-vars" class="internal"><span class="codenumber">1.6.2</span> <span class="title">Variables in Python</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="topic-1-6-variables.html#data-types" class="internal"><span class="codenumber">1.6.3</span> <span class="title">Data Types</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="topic-1-6-variables.html#naming-vars" class="internal"><span class="codenumber">1.6.4</span> <span class="title">Naming variables</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="topic-1-6-variables.html#assignment" class="internal"><span class="codenumber">1.6.5</span> <span class="title">Variables and Assignment</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="topic-1-6-variables.html#strings" class="internal"><span class="codenumber">1.6.6</span> <span class="title">Strings</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="topic-1-6-variables.html#input" class="internal"><span class="codenumber">1.6.7</span> <span class="title">Input</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="topic-1-6-variables.html#coding-challenge-madlibs-project" class="internal"><span class="codenumber">1.6.8</span> <span class="title">Coding Challenge: Story Project</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="topic-1-6-variables.html#LOs-1-6" class="internal"><span class="codenumber">1.6.9</span> <span class="title">Learning Objectives Review</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="topic-1-6-variables.html#vocab-1-6" class="internal"><span class="codenumber">1.6.10</span> <span class="title">Vocabulary Review</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="topic-1-6-variables.html#appinventor-activity1" class="internal"><span class="codenumber">1.6.11</span> <span class="title">App Inventor Project (Optional)</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="topic-1-7-expressions.html" class="internal"><span class="codenumber">1.7</span> <span class="title">Mathematical Expressions</span></a></div>
+<ul id="ptx-toc-group-topic-1-7-expressions" class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="topic-1-7-expressions.html#expressions" class="internal"><span class="codenumber">1.7.1</span> <span class="title">Mathematical Expressions</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="topic-1-7-expressions.html#updating-state" class="internal"><span class="codenumber">1.7.2</span> <span class="title">Updating State with Expressions</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="topic-1-7-expressions.html#operators" class="internal"><span class="codenumber">1.7.3</span> <span class="title">Arithmetic Operators</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="topic-1-7-expressions.html#input-math" class="internal"><span class="codenumber">1.7.4</span> <span class="title">Input and Math</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="topic-1-7-expressions.html#random-numbers" class="internal"><span class="codenumber">1.7.5</span> <span class="title">Random Numbers</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="topic-1-7-expressions.html#coding-challenge-random-turtle-project" class="internal"><span class="codenumber">1.7.6</span> <span class="title">Coding Challenge: Random Turtle Project</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="topic-1-7-expressions.html#LOs-1-7" class="internal"><span class="codenumber">1.7.7</span> <span class="title">Learning Objectives Review</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="topic-1-7-expressions.html#vocab-1-7" class="internal"><span class="codenumber">1.7.8</span> <span class="title">Vocabulary Review</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="topic-1-7-expressions.html#appinventor-activity2" class="internal"><span class="codenumber">1.7.9</span> <span class="title">App Inventor Project Continued (Optional)</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="unit1-summary.html" class="internal"><span class="codenumber">1.8</span> <span class="title">Unit 1 Summary</span></a></div>
+<ul id="ptx-toc-group-unit1-summary" class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="unit1-summary.html#unit1-summary-objectives" class="internal"><span class="codenumber">1.8.1</span> <span class="title">Unit 1 Learning Objectives</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="unit1-summary.html#unit1-summary-vocab" class="internal"><span class="codenumber">1.8.2</span> <span class="title">Unit 1 Vocabulary</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="unit1-mcq-exercises.html" class="internal"><span class="codenumber">1.9</span> <span class="title">Unit 1 Multiple-Choice Exercises</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="unit1-mixed-up-code-practice.html" class="internal"><span class="codenumber">1.10</span> <span class="title">Unit 1 Mixed Up Code Practice</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="unit1-coding-practice.html" class="internal"><span class="codenumber">1.11</span> <span class="title">Unit 1 Coding Practice Exercises</span></a></div></li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="unit1-projects.html" class="internal"><span class="codenumber">1.12</span> <span class="title">Unit 1 Projects</span></a></div>
+<ul id="ptx-toc-group-unit1-projects" class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="unit1-projects.html#unit1-project1-roadtrip" class="internal"><span class="codenumber">1.12.1</span> <span class="title">Project 1: Road Trip Budget Planner</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="unit1-projects.html#unit1-projects-5" class="internal"><span class="codenumber">1.12.2</span> <span class="title">Unit 1 Coding Project 2: Event Invitation Generator</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="unit1-appinventor-setup.html" class="internal"><span class="codenumber">1.13</span> <span class="title">App Inventor Setup (Optional)</span></a></div>
+<ul id="ptx-toc-group-unit1-appinventor-setup" class="structural toc-item-list"><li class="toc-item toc-subsection"><div class="toc-title-box"><a href="unit1-appinventor-setup.html#unit1-appinventor-setup-steps" class="internal"><span class="codenumber">1.13.1</span> <span class="title">App Inventor Setup Steps</span></a></div></li></ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="unit1-appinventor-paint.html" class="internal"><span class="codenumber">1.14</span> <span class="title">App Inventor Paint Pot Tutorial (Optional)</span></a></div>
+<ul id="ptx-toc-group-unit1-appinventor-paint" class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="unit1-appinventor-paint.html#paint-part1" class="internal"><span class="codenumber">1.14.1</span> <span class="title">Paint Pot Tutorial Part 1</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="unit1-appinventor-paint.html#paint-part2" class="internal"><span class="codenumber">1.14.2</span> <span class="title">Paint Pot Tutorial Part 2</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="unit1-appinventor-paint.html#paint-enhancements" class="internal"><span class="codenumber">1.14.3</span> <span class="title">Paint Pot Enhancements</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="unit1-appinventor-paint.html#paint-reflection" class="internal"><span class="codenumber">1.14.4</span> <span class="title">Paint Pot Reflection</span></a></div></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="unit2.html" class="internal"><span class="codenumber">2</span> <span class="title">Building Solutions using Selection and Iteration</span></a></div>
+<ul id="ptx-toc-group-unit2" class="structural toc-item-list">
+<li class="toc-item toc-introduction"><div class="toc-title-box"><a href="unit2-2.html" class="internal"><span class="title">Introduction</span></a></div></li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="topic-2-1-program-design-development.html" class="internal"><span class="codenumber">2.1</span> <span class="title">Program Design and Development</span></a></div>
+<ul id="ptx-toc-group-topic-2-1-program-design-development" class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="topic-2-1-program-design-development.html#development-process" class="internal"><span class="codenumber">2.1.1</span> <span class="title">The Development Process</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="topic-2-1-program-design-development.html#design-thinking" class="internal"><span class="codenumber">2.1.2</span> <span class="title">Design Thinking</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="topic-2-1-program-design-development.html#user-research" class="internal"><span class="codenumber">2.1.3</span> <span class="title">User Research and Feedback</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="topic-2-1-program-design-development.html#documentation" class="internal"><span class="codenumber">2.1.4</span> <span class="title">Documentation</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="topic-2-1-program-design-development.html#reuse-cite-digital-content" class="internal"><span class="codenumber">2.1.5</span> <span class="title">Reusing and Citing Digital Content</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="topic-2-1-program-design-development.html#LOs-2-1" class="internal"><span class="codenumber">2.1.6</span> <span class="title">Learning Objectives Review</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="topic-2-1-program-design-development.html#vocab-2-1" class="internal"><span class="codenumber">2.1.7</span> <span class="title">Vocabulary Review</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="topic-2-1-program-design-development.html#appinventor-design" class="internal"><span class="codenumber">2.1.8</span> <span class="title">App Inventor Lights Off and Design Project (Optional)</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="topic-2-2-boolean-expressions.html" class="internal"><span class="codenumber">2.2</span> <span class="title">Boolean Expressions</span></a></div>
+<ul id="ptx-toc-group-topic-2-2-boolean-expressions" class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="topic-2-2-boolean-expressions.html#decisions" class="internal"><span class="codenumber">2.2.1</span> <span class="title">Boolean Expressions and Decision Making</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="topic-2-2-boolean-expressions.html#relational-operators" class="internal"><span class="codenumber">2.2.2</span> <span class="title">Relational Operators</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="topic-2-2-boolean-expressions.html#logical-operators" class="internal"><span class="codenumber">2.2.3</span> <span class="title">Logical Operators</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="topic-2-2-boolean-expressions.html#unplugged-logic-project" class="internal"><span class="codenumber">2.2.4</span> <span class="title">Unplugged Boolean Logic Project</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="topic-2-2-boolean-expressions.html#LOs-2-2" class="internal"><span class="codenumber">2.2.5</span> <span class="title">Learning Objectives Review</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="topic-2-2-boolean-expressions.html#vocab-2-2" class="internal"><span class="codenumber">2.2.6</span> <span class="title">Vocabulary Review</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="topic-2-2-boolean-expressions.html#appinventor-lights-off-iteration2" class="internal"><span class="codenumber">2.2.7</span> <span class="title">App Inventor Project Continued (Optional)</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="topic-2-3-selection.html" class="internal"><span class="codenumber">2.3</span> <span class="title">Selection</span></a></div>
+<ul id="ptx-toc-group-topic-2-3-selection" class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="topic-2-3-selection.html#selection-in-algorithms" class="internal"><span class="codenumber">2.3.1</span> <span class="title">Selection in Algorithms</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="topic-2-3-selection.html#unplugged-ifs" class="internal"><span class="codenumber">2.3.2</span> <span class="title">Unplugged Activity: Simon Says Ifs</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="topic-2-3-selection.html#if-statements" class="internal"><span class="codenumber">2.3.3</span> <span class="title">Conditional Statements (If Statements)</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="topic-2-3-selection.html#if-else" class="internal"><span class="codenumber">2.3.4</span> <span class="title">If-Else Statements</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="topic-2-3-selection.html#nested-conditionals" class="internal"><span class="codenumber">2.3.5</span> <span class="title">Nested Conditional Statements</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="topic-2-3-selection.html#adventure-project" class="internal"><span class="codenumber">2.3.6</span> <span class="title">Adventure Coding Challenge</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="topic-2-3-selection.html#LOs-2-3" class="internal"><span class="codenumber">2.3.7</span> <span class="title">Learning Objectives Review</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="topic-2-3-selection.html#vocab-2-3" class="internal"><span class="codenumber">2.3.8</span> <span class="title">Vocabulary Review</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="topic-2-3-selection.html#appinventor-lights-off-iteration3" class="internal"><span class="codenumber">2.3.9</span> <span class="title">App Inventor Project Continued (Optional)</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="topic-2-4-iteration.html" class="internal"><span class="codenumber">2.4</span> <span class="title">Iteration (Loops)</span></a></div>
+<ul id="ptx-toc-group-topic-2-4-iteration" class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="topic-2-4-iteration.html#unplugged-loops" class="internal"><span class="codenumber">2.4.1</span> <span class="title">Unplugged Loops Activity</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="topic-2-4-iteration.html#iteration-in-algorithms" class="internal"><span class="codenumber">2.4.2</span> <span class="title">Iteration in Algorithms</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="topic-2-4-iteration.html#while-loops" class="internal"><span class="codenumber">2.4.3</span> <span class="title">While Loops</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="topic-2-4-iteration.html#for-loops" class="internal"><span class="codenumber">2.4.4</span> <span class="title">For Loops</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="topic-2-4-iteration.html#turtle-loops" class="internal"><span class="codenumber">2.4.5</span> <span class="title">Turtle Loops 🐢</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="topic-2-4-iteration.html#common-loop-errors" class="internal"><span class="codenumber">2.4.6</span> <span class="title">Common Loop Errors</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="topic-2-4-iteration.html#while-vs-for" class="internal"><span class="codenumber">2.4.7</span> <span class="title">Comparing While Loops vs For Loops</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="topic-2-4-iteration.html#tracing-loops" class="internal"><span class="codenumber">2.4.8</span> <span class="title">Tracing Loops</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="topic-2-4-iteration.html#coding-challenge-picture-lab" class="internal"><span class="codenumber">2.4.9</span> <span class="title">Coding Challenge Picture Lab</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="topic-2-4-iteration.html#LOs-2-4" class="internal"><span class="codenumber">2.4.10</span> <span class="title">Learning Objectives Review</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="topic-2-4-iteration.html#vocab-2-4" class="internal"><span class="codenumber">2.4.11</span> <span class="title">Vocabulary Review</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="topic-2-5-algorithm-development.html" class="internal"><span class="codenumber">2.5</span> <span class="title">Algorithm Development</span></a></div>
+<ul id="ptx-toc-group-topic-2-5-algorithm-development" class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="topic-2-5-algorithm-development.html#developing-algorithms" class="internal"><span class="codenumber">2.5.1</span> <span class="title">Developing Algorithms</span></a></div></li>
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="topic-2-5-algorithm-development.html#common-algorithms" class="internal"><span class="codenumber">2.5.2</span> <span class="title">Common Algorithms</span></a></div>
+<ul id="ptx-toc-group-common-algorithms" class="structural toc-item-list">
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="topic-2-5-algorithm-development.html#sum-average" class="internal"><span class="codenumber">2.5.2.1</span> <span class="title">Sum and Average Accumulator Algorithms</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="topic-2-5-algorithm-development.html#min-max" class="internal"><span class="codenumber">2.5.2.2</span> <span class="title">Minimum and Maximum</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="topic-2-5-algorithm-development.html#divisibility" class="internal"><span class="codenumber">2.5.2.3</span> <span class="title">Divisibility</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="topic-2-5-algorithm-development.html#comparing-algorithms" class="internal"><span class="codenumber">2.5.3</span> <span class="title">Comparing Algorithms</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="topic-2-5-algorithm-development.html#coding-challenge-algorithms" class="internal"><span class="codenumber">2.5.4</span> <span class="title">Coding Challenge: Guessing Game</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="topic-2-5-algorithm-development.html#LOs-2-5" class="internal"><span class="codenumber">2.5.5</span> <span class="title">Learning Objectives Review</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="topic-2-5-algorithm-development.html#vocab-2-5" class="internal"><span class="codenumber">2.5.6</span> <span class="title">Vocabulary Review</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="topic-2-6-errors.html" class="internal"><span class="codenumber">2.6</span> <span class="title">Errors</span></a></div>
+<ul id="ptx-toc-group-topic-2-6-errors" class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="topic-2-6-errors.html#correcting-errors" class="internal"><span class="codenumber">2.6.1</span> <span class="title">Correcting Errors</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="topic-2-6-errors.html#rubber-duck-AI-debugging" class="internal"><span class="codenumber">2.6.2</span> <span class="title">Rubber Duck and AI Tools for Debugging</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="topic-2-6-errors.html#topic-2-6-errors-6" class="internal"><span class="codenumber">2.6.3</span> <span class="title">Testing and Test Cases</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="topic-2-6-errors.html#POGIL-test-plans" class="internal"><span class="codenumber">2.6.4</span> <span class="title">POGIL Test Plans</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="topic-2-6-errors.html#LOs-2-6" class="internal"><span class="codenumber">2.6.5</span> <span class="title">Learning Objectives</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="topic-2-6-errors.html#vocab-2-6" class="internal"><span class="codenumber">2.6.6</span> <span class="title">Vocabulary Review</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="unit2-summary.html" class="internal"><span class="codenumber">2.7</span> <span class="title">Unit 2 Summary</span></a></div>
+<ul id="ptx-toc-group-unit2-summary" class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="unit2-summary.html#unit2-summary-objectives" class="internal"><span class="codenumber">2.7.1</span> <span class="title">Unit 2 Learning Objectives</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="unit2-summary.html#unit2-summary-vocab" class="internal"><span class="codenumber">2.7.2</span> <span class="title">Unit 2 Vocabulary</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="unit2-selection-mcq-exercises.html" class="internal"><span class="codenumber">2.8</span> <span class="title">Selection Multiple-Choice Exercises</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="unit2-selection-mixedup-coding-practice.html" class="internal"><span class="codenumber">2.9</span> <span class="title">Selection Mixed-Up Coding Practice Exercises</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="unit2-selection-coding-practice.html" class="internal"><span class="codenumber">2.10</span> <span class="title">Selection Coding Practice Exercises</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="unit2-loops-mcq-exercises.html" class="internal"><span class="codenumber">2.11</span> <span class="title">Loops Multiple-Choice Exercises</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="unit2-loops-mixedup-coding-practice.html" class="internal"><span class="codenumber">2.12</span> <span class="title">Loops Mixed-Up Coding Practice Exercises</span></a></div></li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="unit2b-coding-practice.html" class="internal"><span class="codenumber">2.13</span> <span class="title">Loops Coding Practice Exercises</span></a></div>
+<ul id="ptx-toc-group-unit2b-coding-practice" class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="unit2b-coding-practice.html#turtle-loop-practice" class="internal"><span class="codenumber">2.13.1</span> <span class="title">Turtle Loop Practice</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="unit2b-coding-practice.html#picture-loop-practice" class="internal"><span class="codenumber">2.13.2</span> <span class="title">Picture Loop Practice</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="unit2b-coding-practice.html#number-loop-practice" class="internal"><span class="codenumber">2.13.3</span> <span class="title">Number Loop Practice</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="unit2-selection-project.html" class="internal"><span class="codenumber">2.14</span> <span class="title">Unit 2 Selection Project</span></a></div>
+<ul id="ptx-toc-group-unit2-selection-project" class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="unit2-selection-project.html#parking-fee-calculator" class="internal"><span class="codenumber">2.14.1</span> <span class="title">Smart Parking Fee Calculator</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="unit2-selection-project.html#unit2-selection-project-5" class="internal"><span class="codenumber">2.14.2</span> <span class="title">Project Reflection</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="unit2-loops-coding-project.html" class="internal"><span class="codenumber">2.15</span> <span class="title">Unit 2 Loops Project</span></a></div>
+<ul id="ptx-toc-group-unit2-loops-coding-project" class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="unit2-loops-coding-project.html#seven-day-fitness-challenge" class="internal"><span class="codenumber">2.15.1</span> <span class="title">Seven-Day Fitness Challenge</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="unit2-loops-coding-project.html#unit2-project2-reflection" class="internal"><span class="codenumber">2.15.2</span> <span class="title">Project Reflection</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="appinventor-lights-off-app.html" class="internal"><span class="codenumber">2.16</span> <span class="title">App Inventor Lights Off App (Optional)</span></a></div>
+<ul id="ptx-toc-group-appinventor-lights-off-app" class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="appinventor-lights-off-app.html#lights-off-tutorial" class="internal"><span class="codenumber">2.16.1</span> <span class="title">Tutorial: Creating the Lights Off App</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="appinventor-lights-off-app.html#design-app" class="internal"><span class="codenumber">2.16.2</span> <span class="title">Design Your Own App: Iteration 1</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="appinventor-lights-off-app.html#iteration2-appinventor" class="internal"><span class="codenumber">2.16.3</span> <span class="title">Iteration 2: App Inventor</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="appinventor-lights-off-app.html#iteration3-appinventor-ifs" class="internal"><span class="codenumber">2.16.4</span> <span class="title">Iteration 3: App Inventor If Blocks to Test Scores</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="appinventor-lights-off-app.html#app-reflection" class="internal"><span class="codenumber">2.16.5</span> <span class="title">Reflection</span></a></div></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-item toc-chapter contains-active">
+<div class="toc-title-box"><a href="unit3.html" class="internal"><span class="codenumber">3</span> <span class="title">Abstraction using Lists and Procedures</span></a></div>
+<ul class="structural toc-item-list contains-active" id="ptx-toc-group-unit3">
+<li class="toc-item toc-introduction"><div class="toc-title-box"><a href="unit3-2.html" class="internal"><span class="title">Introduction</span></a></div></li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="topic-3-1-lists.html" class="internal"><span class="codenumber">3.1</span> <span class="title">Lists</span></a></div>
+<ul id="ptx-toc-group-topic-3-1-lists" class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="topic-3-1-lists.html#lists-intro" class="internal"><span class="codenumber">3.1.1</span> <span class="title">Lists as Data Collections</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="topic-3-1-lists.html#list-index" class="internal"><span class="codenumber">3.1.2</span> <span class="title">Index to Access Elements</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="topic-3-1-lists.html#unplugged-lists" class="internal"><span class="codenumber">3.1.3</span> <span class="title">Unplugged Activity: List of Chairs</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="topic-3-1-lists.html#changing-lists" class="internal"><span class="codenumber">3.1.4</span> <span class="title">Changing List Elements with Assignment</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="topic-3-1-lists.html#length" class="internal"><span class="codenumber">3.1.5</span> <span class="title">Length of a List, Random Elements, and Slicing</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="topic-3-1-lists.html#append" class="internal"><span class="codenumber">3.1.6</span> <span class="title">Appending to Lists</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="topic-3-1-lists.html#insert-remove-lists" class="internal"><span class="codenumber">3.1.7</span> <span class="title">Insert and Remove List Elements</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="topic-3-1-lists.html#list-loops" class="internal"><span class="codenumber">3.1.8</span> <span class="title">Traversing Lists with Loops</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="topic-3-1-lists.html#coding-challenge-lists1" class="internal"><span class="codenumber">3.1.9</span> <span class="title">Coding Challenge: Lists in a Bakery</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="topic-3-1-lists.html#linear-search" class="internal"><span class="codenumber">3.1.10</span> <span class="title">Linear Search</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="topic-3-1-lists.html#data-abstraction-with-lists" class="internal"><span class="codenumber">3.1.11</span> <span class="title">Data Abstraction with Lists</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="topic-3-1-lists.html#appinventor-quiz-app-link" class="internal"><span class="codenumber">3.1.12</span> <span class="title">App Inventor Quiz App Project (Optional)</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="topic-3-1-lists.html#coding-challenge-lists2" class="internal"><span class="codenumber">3.1.13</span> <span class="title">Coding Challenge: Quiz App</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="topic-3-1-lists.html#LOs-3-1" class="internal"><span class="codenumber">3.1.14</span> <span class="title">Learning Objectives Review</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="topic-3-1-lists.html#vocab-3-1" class="internal"><span class="codenumber">3.1.15</span> <span class="title">Vocabulary Review</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="topic-3-2-procedures.html" class="internal"><span class="codenumber">3.2</span> <span class="title">Procedures (Functions)</span></a></div>
+<ul id="ptx-toc-group-topic-3-2-procedures" class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="topic-3-2-procedures.html#procedures" class="internal"><span class="codenumber">3.2.1</span> <span class="title">What is a Procedure or Function</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="topic-3-2-procedures.html#function-call-defn" class="internal"><span class="codenumber">3.2.2</span> <span class="title">Procedure/Function Calls and Definitions</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="topic-3-2-procedures.html#arguments" class="internal"><span class="codenumber">3.2.3</span> <span class="title">Arguments and Parameters</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="topic-3-2-procedures.html#appinventor-quiz-app2" class="internal"><span class="codenumber">3.2.4</span> <span class="title">App Inventor Quiz App Project Continued (Optional)</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="topic-3-2-procedures.html#event-handlers" class="internal"><span class="codenumber">3.2.5</span> <span class="title">Event-Handling Functions and Global Variables</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="topic-3-2-procedures.html#return-values" class="internal"><span class="codenumber">3.2.6</span> <span class="title">Return Values</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="topic-3-2-procedures.html#procedural-abstraction" class="internal"><span class="codenumber">3.2.7</span> <span class="title">Procedural Abstraction</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="topic-3-2-procedures.html#coding-challenge-draw-functions" class="internal"><span class="codenumber">3.2.8</span> <span class="title">Coding Challenge: Draw Functions</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="topic-3-2-procedures.html#LOs-3-2" class="internal"><span class="codenumber">3.2.9</span> <span class="title">Learning Objectives Review</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="topic-3-2-procedures.html#vocab-3-2" class="internal"><span class="codenumber">3.2.10</span> <span class="title">Vocabulary Review</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="topic-3-3-libraries.html" class="internal"><span class="codenumber">3.3</span> <span class="title">Using Existing Code and Libraries</span></a></div>
+<ul id="ptx-toc-group-topic-3-3-libraries" class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="topic-3-3-libraries.html#libraries" class="internal"><span class="codenumber">3.3.1</span> <span class="title">Libraries</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="topic-3-3-libraries.html#apis" class="internal"><span class="codenumber">3.3.2</span> <span class="title">Application Programming Interfaces (APIs)</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="topic-3-3-libraries.html#API-project" class="internal"><span class="codenumber">3.3.3</span> <span class="title">API Project</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="topic-3-3-libraries.html#LOs-3-3" class="internal"><span class="codenumber">3.3.4</span> <span class="title">Learning Objectives Review</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="topic-3-3-libraries.html#vocab-3-3" class="internal"><span class="codenumber">3.3.5</span> <span class="title">Vocabulary Review</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="unit3-summary.html" class="internal"><span class="codenumber">3.4</span> <span class="title">Unit 3 Summary</span></a></div>
+<ul id="ptx-toc-group-unit3-summary" class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="unit3-summary.html#unit3-summary-objectives" class="internal"><span class="codenumber">3.4.1</span> <span class="title">Unit 3 Learning Objectives</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="unit3-summary.html#unit3-summary-vocab" class="internal"><span class="codenumber">3.4.2</span> <span class="title">Unit 3 Vocabulary</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="lists-mcq-exercises.html" class="internal"><span class="codenumber">3.5</span> <span class="title">Lists Multiple-Choice Exercises</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="lists-mixedup-coding-practice.html" class="internal"><span class="codenumber">3.6</span> <span class="title">Lists Mixed-Up Coding Practice Exercises</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="lists-coding-practice.html" class="internal"><span class="codenumber">3.7</span> <span class="title">Lists Coding Practice Exercises</span></a></div></li>
+<li class="toc-item toc-section contains-active">
+<div class="toc-title-box"><a href="appinventor-quiz-app.html" class="internal"><span class="codenumber">3.8</span> <span class="title">App Inventor Quiz App Tutorial (Optional)</span></a></div>
+<ul class="structural toc-item-list active" id="ptx-toc-group-appinventor-quiz-app">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="appinventor-quiz-app.html#quiz-app1" class="internal"><span class="codenumber">3.8.1</span> <span class="title">Quiz App Tutorial Part 1</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="appinventor-quiz-app.html#quiz-app-extensions" class="internal"><span class="codenumber">3.8.2</span> <span class="title">Quiz App Extensions</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="appinventor-quiz-app.html#loops-lists-appinventor" class="internal"><span class="codenumber">3.8.3</span> <span class="title">App Inventor Loops with Lists</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="appinventor-quiz-app.html#quiz-app-extensions2" class="internal"><span class="codenumber">3.8.4</span> <span class="title">Quiz App Extensions with Search Procedure</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="appinventor-quiz-app.html#quiz-app-reflection" class="internal"><span class="codenumber">3.8.5</span> <span class="title">Quiz App Reflection</span></a></div></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="unit4.html" class="internal"><span class="codenumber">4</span> <span class="title">Data-Driven Decisions using the Internet and AI</span></a></div>
+<ul id="ptx-toc-group-unit4" class="structural toc-item-list">
+<li class="toc-item toc-introduction"><div class="toc-title-box"><a href="unit4-2.html" class="internal"><span class="title">Introduction</span></a></div></li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="topic-4-1-internet.html" class="internal"><span class="codenumber">4.1</span> <span class="title">The Internet</span></a></div>
+<ul id="ptx-toc-group-topic-4-1-internet" class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="topic-4-1-internet.html#internet-protocols-and-scale" class="internal"><span class="codenumber">4.1.1</span> <span class="title">Internet Protocols and Scale</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="topic-4-1-internet.html#network-communication-and-conditions" class="internal"><span class="codenumber">4.1.2</span> <span class="title">Network Communication and User Experience</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="topic-4-1-internet.html#fault-tolerance-and-failure" class="internal"><span class="codenumber">4.1.3</span> <span class="title">Fault Tolerance and Network Failure</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="topic-4-1-internet.html#LOs-4-1" class="internal"><span class="codenumber">4.1.4</span> <span class="title">Learning Objectives Review</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="topic-4-1-internet.html#vocab-4-1" class="internal"><span class="codenumber">4.1.5</span> <span class="title">Vocabulary Review</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="topic-4-2-effects.html" class="internal"><span class="codenumber">4.2</span> <span class="title">Effects of Technology</span></a></div>
+<ul id="ptx-toc-group-topic-4-2-effects" class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="topic-4-2-effects.html#beneficial-and-harmful-effects" class="internal"><span class="codenumber">4.2.1</span> <span class="title">Beneficial and Harmful Effects</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="topic-4-2-effects.html#impacts-beyond-intended-purpose" class="internal"><span class="codenumber">4.2.2</span> <span class="title">Impacts Beyond Intended Purpose</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="topic-4-2-effects.html#LOs-4-2" class="internal"><span class="codenumber">4.2.3</span> <span class="title">Learning Objectives Review</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="topic-4-2-effects.html#vocab-4-2" class="internal"><span class="codenumber">4.2.4</span> <span class="title">Vocabulary Review</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="topic-4-3-privacy-security.html" class="internal"><span class="codenumber">4.3</span> <span class="title">Privacy and Security</span></a></div>
+<ul id="ptx-toc-group-topic-4-3-privacy-security" class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="topic-4-3-privacy-security.html#data-collection-and-privacy-risks" class="internal"><span class="codenumber">4.3.1</span> <span class="title">Data Collection, Tracking, and Privacy Risks</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="topic-4-3-privacy-security.html#how-systems-are-compromised" class="internal"><span class="codenumber">4.3.2</span> <span class="title">How Systems and Information Can Be Compromised</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="topic-4-3-privacy-security.html#protecting-digital-systems" class="internal"><span class="codenumber">4.3.3</span> <span class="title">Protecting Digital Systems and Information</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="topic-4-3-privacy-security.html#LOs-4-3" class="internal"><span class="codenumber">4.3.4</span> <span class="title">Learning Objectives Review</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="topic-4-3-privacy-security.html#vocab-4-3" class="internal"><span class="codenumber">4.3.5</span> <span class="title">Vocabulary Review</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="topic-4-4-data-analysis.html" class="internal"><span class="codenumber">4.4</span> <span class="title">Data Analysis</span></a></div>
+<ul id="ptx-toc-group-topic-4-4-data-analysis" class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="topic-4-4-data-analysis.html#learning-from-data" class="internal"><span class="codenumber">4.4.1</span> <span class="title">What People Can Learn from Data</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="topic-4-4-data-analysis.html#learning-from-metadata" class="internal"><span class="codenumber">4.4.2</span> <span class="title">What People Can Learn from Metadata</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="topic-4-4-data-analysis.html#algorithms-for-data-analysis" class="internal"><span class="codenumber">4.4.3</span> <span class="title">Algorithms and Code for Data Analysis</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="topic-4-4-data-analysis.html#LOs-4-4" class="internal"><span class="codenumber">4.4.4</span> <span class="title">Learning Objectives Review</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="topic-4-4-data-analysis.html#vocab-4-4" class="internal"><span class="codenumber">4.4.5</span> <span class="title">Vocabulary Review</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="topic-4-5-ai-algorithm-development.html" class="internal"><span class="codenumber">4.5</span> <span class="title">AI Algorithm Development</span></a></div>
+<ul id="ptx-toc-group-topic-4-5-ai-algorithm-development" class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="topic-4-5-ai-algorithm-development.html#deterministic-vs-probabilistic" class="internal"><span class="codenumber">4.5.1</span> <span class="title">Deterministic and Probabilistic Algorithms</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="topic-4-5-ai-algorithm-development.html#rule-based-vs-trained-models" class="internal"><span class="codenumber">4.5.2</span> <span class="title">Rule-Based Systems vs. Trained AI Models</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="topic-4-5-ai-algorithm-development.html#LOs-4-5" class="internal"><span class="codenumber">4.5.3</span> <span class="title">Learning Objectives Review</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="topic-4-5-ai-algorithm-development.html#vocab-4-5" class="internal"><span class="codenumber">4.5.4</span> <span class="title">Vocabulary Review</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="topic-4-6-ai-ethics.html" class="internal"><span class="codenumber">4.6</span> <span class="title">Ethics and Effects of AI</span></a></div>
+<ul id="ptx-toc-group-topic-4-6-ai-ethics" class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="topic-4-6-ai-ethics.html#ethical-design-evaluation" class="internal"><span class="codenumber">4.6.1</span> <span class="title">Evaluating AI with Ethical Design Criteria</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="topic-4-6-ai-ethics.html#ai-society-economy-culture" class="internal"><span class="codenumber">4.6.2</span> <span class="title">How AI Impacts Society, Economy, and Culture</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="topic-4-6-ai-ethics.html#LOs-4-6" class="internal"><span class="codenumber">4.6.3</span> <span class="title">Learning Objectives Review</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="topic-4-6-ai-ethics.html#vocab-4-6" class="internal"><span class="codenumber">4.6.4</span> <span class="title">Vocabulary Review</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="topic-4-7-machine-learning.html" class="internal"><span class="codenumber">4.7</span> <span class="title">Machine Learning</span></a></div>
+<ul id="ptx-toc-group-topic-4-7-machine-learning" class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="topic-4-7-machine-learning.html#ml-outputs-from-data-and-probability" class="internal"><span class="codenumber">4.7.1</span> <span class="title">How Data and Probabilistic Algorithms Shape Outputs</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="topic-4-7-machine-learning.html#training-data-accuracy-privacy-bias" class="internal"><span class="codenumber">4.7.2</span> <span class="title">Training Data, Accuracy, Privacy, and Bias</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="topic-4-7-machine-learning.html#LOs-4-7" class="internal"><span class="codenumber">4.7.3</span> <span class="title">Learning Objectives Review</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="topic-4-7-machine-learning.html#vocab-4-7" class="internal"><span class="codenumber">4.7.4</span> <span class="title">Vocabulary Review</span></a></div></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-item toc-backmatter">
+<div class="toc-title-box"><a href="cspossible-8.html" class="internal"><span class="title">Back Matter</span></a></div>
+<ul id="ptx-toc-group-cspossible-8" class="structural toc-item-list"><li class="toc-item toc-index"><div class="toc-title-box"><a href="cspossible-8-1.html" class="internal"><span class="title">Index</span></a></div></li></ul>
+</li>
+</ul></nav></div>
+<main class="ptx-main"><div id="ptx-content" class="ptx-content">
+<section class="section" id="appinventor-quiz-app">
+<h1 class="heading hide-type">
+<span class="type">Section</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">3.8</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">App Inventor Quiz App Tutorial (Optional)</span>
+</h1>
+<div class="time">
+<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-clock" viewBox="0 0 16 16"><path d="M8 3.5a.5.5 0 0 0-1 0V9a.5.5 0 0 0 .252.434l3.5 2a.5.5 0 0 0 .496-.868L8 8.71V3.5z"></path><path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm7-8A7 7 0 1 1 1 8a7 7 0 0 1 14 0z"></path></svg><span>90 minutes</span>
+</div>
+<section class="introduction" id="appinventor-quiz-app-4">
+<div class="para" id="appinventor-quiz-app-4-1">In this App Inventor tutorial, you will learn how to create a quiz app about computer science pioneers.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#appinventor-quiz-app-4-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="video-box" style="width: 100%;padding-top: 56.25%; margin-left: 0%; margin-right: 0%;"><iframe class="video" allowfullscreen="" src="https://www.youtube-nocookie.com/embed/G_BrTzwHcoU?&amp;modestbranding=1&amp;rel=0" id="video-quiz-app-intro"></iframe></div>
+<div class="para logical" id="appinventor-quiz-app-4-3">
+<div class="para">In this tutorial, you will learn to:</div>
+<ul class="disc" id="appinventor-quiz-app-4-3-1">
+<li id="appinventor-quiz-app-4-3-1-1">
+<div class="para" id="p-derived-appinventor-quiz-app-4-3-1-1">navigate a list using an index variable</div>
+<div class="autopermalink" aria-hidden="true" data-description="Item"><a tabindex="-1" href="#appinventor-quiz-app-4-3-1-1" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="appinventor-quiz-app-4-3-1-2">
+<div class="para" id="p-derived-appinventor-quiz-app-4-3-1-2">perform operations on a list, such as selecting items and checking for the end</div>
+<div class="autopermalink" aria-hidden="true" data-description="Item"><a tabindex="-1" href="#appinventor-quiz-app-4-3-1-2" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="appinventor-quiz-app-4-3-1-3">
+<div class="para" id="p-derived-appinventor-quiz-app-4-3-1-3">use parallel lists to organize data</div>
+<div class="autopermalink" aria-hidden="true" data-description="Item"><a tabindex="-1" href="#appinventor-quiz-app-4-3-1-3" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="appinventor-quiz-app-4-3-1-4">
+<div class="para" id="p-derived-appinventor-quiz-app-4-3-1-4">use loops with lists and standard algorithms to enhance the app</div>
+<div class="autopermalink" aria-hidden="true" data-description="Item"><a tabindex="-1" href="#appinventor-quiz-app-4-3-1-4" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+</ul>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#appinventor-quiz-app-4-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="appinventor-quiz-app-4-4">
+<div class="para">Language Objectives: you will be able to:</div>
+<ul class="disc" id="appinventor-quiz-app-4-4-1">
+<li id="appinventor-quiz-app-4-4-1-1">
+<div class="para" id="p-derived-appinventor-quiz-app-4-4-1-1">explain how items in parallel lists are related to each other</div>
+<div class="autopermalink" aria-hidden="true" data-description="Item"><a tabindex="-1" href="#appinventor-quiz-app-4-4-1-1" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="appinventor-quiz-app-4-4-1-2">
+<div class="para" id="p-derived-appinventor-quiz-app-4-4-1-2">use target vocabulary, such as <dfn class="terminology">index</dfn> and <dfn class="terminology">parallel list</dfn>, while describing app features and User Interface with the support of concept definitions and <a class="external" href="https://docs.google.com/presentation/d/1-IY5fs_ygKlgwUGBD9nX_tx_tFerN7pEeQvdgQIwrdw/copy" target="_blank">vocabulary notes</a> from this lesson</div>
+<div class="autopermalink" aria-hidden="true" data-description="Item"><a tabindex="-1" href="#appinventor-quiz-app-4-4-1-2" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+</ul>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#appinventor-quiz-app-4-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div></section>
+<section class="subsection" id="quiz-app1">
+<h2 class="heading hide-type">
+<span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">3.8.1</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Quiz App Tutorial Part 1</span>
+</h2>
+<div class="para" id="quiz-app1-2">To get started, open App Inventor with the <a class="external" href="http://ai2a.appinventor.mit.edu/?repo=templates.appinventor.mit.edu/trincoll/csp/unit6/templates/QuizApp/QuizAppTemplate.asc" target="_blank">Quiz App template</a> in a separate tab and follow along with the <a class="external" href="https://youtu.be/y7epbJbCZOI" target="_blank">video tutoral</a> below, or follow the <a class="external" href="https://docs.google.com/document/d/1RPxUXIbluNl4RBjEsBojSzQTvBZqWm3eO5Y9Fci_-0k/edit?usp=sharing" target="_blank">text tutorial</a> or for an extra challenge use just the <a class="external" href="https://docs.google.com/document/d/1esBQ08ydu6a-ZpNjQ9FPk-qMuHmg6gjSRtnLPaOLo60/edit?usp=sharing" target="_blank">short handout</a>.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#quiz-app1-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="video-box" style="width: 100%;padding-top: 56.25%; margin-left: 0%; margin-right: 0%;"><iframe class="video" allowfullscreen="" src="https://www.youtube-nocookie.com/embed/y7epbJbCZOI?&amp;modestbranding=1&amp;rel=0" id="video-quiz-app-tutorial"></iframe></div>
+<div class="para" id="quiz-app1-4">In the app, you will construct 3 separate lists for the questions, answers, and the names of image files. The first question in the question list corresponds to the first answer in answer list and the first image in the image list. This parallel setup allows you to use an <dfn class="terminology">index</dfn> variable to associate each question with its corresponding answer and image. For example, when the index variable has the value 2, it is referring to the second question, second answer, and second image.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#quiz-app1-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="quiz-app1-5">You will be typing in the quiz questions, answers, and image names (the image jpg files are provided in the Quiz App template).<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#quiz-app1-5" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="quiz-app1-6">The questions are:<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#quiz-app1-6" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<ol class="decimal" id="quiz-app1-7">
+<li id="quiz-app1-7-1">
+<div class="para" id="p-derived-quiz-app1-7-1">Which computer science pioneer broke the German Enigma Code during the World War II?</div>
+<div class="autopermalink" aria-hidden="true" data-description="Item 1"><a tabindex="-1" href="#quiz-app1-7-1" title="Copy heading and permalink for Item 1" aria-label="Copy heading and permalink for Item 1">🔗</a></div>
+</li>
+<li id="quiz-app1-7-2">
+<div class="para" id="p-derived-quiz-app1-7-2">Which NASA engineer was the first black female engineer at NASA and a human computer featured in the movie Hidden Figures?</div>
+<div class="autopermalink" aria-hidden="true" data-description="Item 2"><a tabindex="-1" href="#quiz-app1-7-2" title="Copy heading and permalink for Item 2" aria-label="Copy heading and permalink for Item 2">🔗</a></div>
+</li>
+<li id="quiz-app1-7-3">
+<div class="para" id="p-derived-quiz-app1-7-3">Which Navy admiral led the creation of COBOL, one of the first high level programming languages?</div>
+<div class="autopermalink" aria-hidden="true" data-description="Item 3"><a tabindex="-1" href="#quiz-app1-7-3" title="Copy heading and permalink for Item 3" aria-label="Copy heading and permalink for Item 3">🔗</a></div>
+</li>
+</ol>
+<div class="para" id="quiz-app1-8">The corresponding answers are:<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#quiz-app1-8" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<ol class="decimal" id="quiz-app1-9">
+<li id="quiz-app1-9-1">
+<div class="para" id="p-derived-quiz-app1-9-1">Alan Turing</div>
+<div class="autopermalink" aria-hidden="true" data-description="Item 1"><a tabindex="-1" href="#quiz-app1-9-1" title="Copy heading and permalink for Item 1" aria-label="Copy heading and permalink for Item 1">🔗</a></div>
+</li>
+<li id="quiz-app1-9-2">
+<div class="para" id="p-derived-quiz-app1-9-2">Mary Jackson</div>
+<div class="autopermalink" aria-hidden="true" data-description="Item 2"><a tabindex="-1" href="#quiz-app1-9-2" title="Copy heading and permalink for Item 2" aria-label="Copy heading and permalink for Item 2">🔗</a></div>
+</li>
+<li id="quiz-app1-9-3">
+<div class="para" id="p-derived-quiz-app1-9-3">Grace Hopper</div>
+<div class="autopermalink" aria-hidden="true" data-description="Item 3"><a tabindex="-1" href="#quiz-app1-9-3" title="Copy heading and permalink for Item 3" aria-label="Copy heading and permalink for Item 3">🔗</a></div>
+</li>
+</ol>
+<div class="para" id="quiz-app1-10">The corresponding images are:<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#quiz-app1-10" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<ol class="decimal" id="quiz-app1-11">
+<li id="quiz-app1-11-1">
+<div class="para" id="p-derived-quiz-app1-11-1">AlanTuring.jpg</div>
+<div class="autopermalink" aria-hidden="true" data-description="Item 1"><a tabindex="-1" href="#quiz-app1-11-1" title="Copy heading and permalink for Item 1" aria-label="Copy heading and permalink for Item 1">🔗</a></div>
+</li>
+<li id="quiz-app1-11-2">
+<div class="para" id="p-derived-quiz-app1-11-2">MaryJackson.jpg</div>
+<div class="autopermalink" aria-hidden="true" data-description="Item 2"><a tabindex="-1" href="#quiz-app1-11-2" title="Copy heading and permalink for Item 2" aria-label="Copy heading and permalink for Item 2">🔗</a></div>
+</li>
+<li id="quiz-app1-11-3">
+<div class="para" id="p-derived-quiz-app1-11-3">GraceHopper.jpg</div>
+<div class="autopermalink" aria-hidden="true" data-description="Item 3"><a tabindex="-1" href="#quiz-app1-11-3" title="Copy heading and permalink for Item 3" aria-label="Copy heading and permalink for Item 3">🔗</a></div>
+</li>
+</ol>
+<div class="autopermalink" aria-hidden="true" data-description="Subsection 3.8.1: Quiz App Tutorial Part 1"><a tabindex="-1" href="#quiz-app1" title="Copy heading and permalink for Subsection 3.8.1: Quiz App Tutorial Part 1" aria-label="Copy heading and permalink for Subsection 3.8.1: Quiz App Tutorial Part 1">🔗</a></div>
+</section>
+<section class="subsection" id="quiz-app-extensions">
+<h2 class="heading hide-type">
+<span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">3.8.2</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Quiz App Extensions</span>
+</h2>
+<div class="para" id="quiz-app-extensions-2">Here are some ways to enhance and extend the Quiz App.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#quiz-app-extensions-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<ol class="decimal" id="quiz-app-extensions-3">
+<li id="quiz-app-extensions-3-1">
+<div class="para" id="p-derived-quiz-app-extensions-3-1">As you might have noticed, if the answer is “Alan Turing” and the user types in “alan turing”, the answer will be marked incorrect.  That’s not very nice for the user.  To remedy this problem you will want to convert both the user’s answer and the stored answer to upper case “ALAN TURING”.  (HINT: use the upcase block in the Text drawer to convert both strings.)</div>
+<div class="autopermalink" aria-hidden="true" data-description="Item 1"><a tabindex="-1" href="#quiz-app-extensions-3-1" title="Copy heading and permalink for Item 1" aria-label="Copy heading and permalink for Item 1">🔗</a></div>
+</li>
+<li id="quiz-app-extensions-3-2">
+<div class="para" id="p-derived-quiz-app-extensions-3-2">When the user gets an incorrect answer, instead of just reporting “incorrect”, use a join block to also display the correct answer. For example, “Sorry, that is incorrect. The correct answer is Grace Hopper.”</div>
+<div class="autopermalink" aria-hidden="true" data-description="Item 2"><a tabindex="-1" href="#quiz-app-extensions-3-2" title="Copy heading and permalink for Item 2" aria-label="Copy heading and permalink for Item 2">🔗</a></div>
+</li>
+<li id="quiz-app-extensions-3-3">
+<div class="para" id="p-derived-quiz-app-extensions-3-3">Add RandomButton to the app that when clicked will display a random question from the quiz.  (HINT:  You could use some new blocks from the <a class="external" href="https://ai2a.appinventor.mit.edu/reference/blocks/lists.html#pickrandomitem" target="_blank">List drawer</a> such as a <em class="emphasis">pick a random item</em> block fed into an <em class="emphasis">index in list thing</em> block to set the index randomly.)</div>
+<div class="autopermalink" aria-hidden="true" data-description="Item 3"><a tabindex="-1" href="#quiz-app-extensions-3-3" title="Copy heading and permalink for Item 3" aria-label="Copy heading and permalink for Item 3">🔗</a></div>
+</li>
+<li id="quiz-app-extensions-3-4">
+<div class="para" id="p-derived-quiz-app-extensions-3-4">Add a fourth question (and answer and image) to the quiz.  Research famous computer scientists on the Web to find a fourth person.  (HINT: You should only have to modify the 3 lists and upload an image file. The code should work with any number of questions as long as you used the length of list block instead of hard coding in the number 3 for the number of questions.)</div>
+<div class="autopermalink" aria-hidden="true" data-description="Item 4"><a tabindex="-1" href="#quiz-app-extensions-3-4" title="Copy heading and permalink for Item 4" aria-label="Copy heading and permalink for Item 4">🔗</a></div>
+</li>
+</ol>
+<div class="autopermalink" aria-hidden="true" data-description="Subsection 3.8.2: Quiz App Extensions"><a tabindex="-1" href="#quiz-app-extensions" title="Copy heading and permalink for Subsection 3.8.2: Quiz App Extensions" aria-label="Copy heading and permalink for Subsection 3.8.2: Quiz App Extensions">🔗</a></div>
+</section>
+<section class="subsection" id="loops-lists-appinventor">
+<h2 class="heading hide-type">
+<span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">3.8.3</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">App Inventor Loops with Lists</span>
+</h2>
+<div class="para" id="loops-lists-appinventor-2">Watch the following <a class="external" href="https://youtu.be/zEZ3F9SgfPE" target="_blank">video</a> to learn how to use loops with lists in App Inventor (<a class="external" href="https://docs.google.com/presentation/d/1puzK5D_unNI65CMvxNwqPHW6DkDuPq-reuISHST5bMQ/edit?usp=sharing" target="_blank">Slides</a>).<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#loops-lists-appinventor-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="video-box" style="width: 100%;padding-top: 56.25%; margin-left: 0%; margin-right: 0%;"><iframe class="video" allowfullscreen="" src="https://www.youtube-nocookie.com/embed/zEZ3F9SgfPE?&amp;modestbranding=1&amp;rel=0" id="video-loops-lists-appinventor"></iframe></div>
+<div class="para" id="loops-lists-appinventor-4">The rest of this lesson can be finished after you learn about procedures in lesson 3.2.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#loops-lists-appinventor-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Subsection 3.8.3: App Inventor Loops with Lists"><a tabindex="-1" href="#loops-lists-appinventor" title="Copy heading and permalink for Subsection 3.8.3: App Inventor Loops with Lists" aria-label="Copy heading and permalink for Subsection 3.8.3: App Inventor Loops with Lists">🔗</a></div>
+</section>
+<section class="subsection" id="quiz-app-extensions2">
+<h2 class="heading hide-type">
+<span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">3.8.4</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Quiz App Extensions with Search Procedure</span>
+</h2>
+<ol class="decimal" id="quiz-app-extensions2-2">
+<li id="quiz-app-extensions2-2-1">
+<div class="para" id="p-derived-quiz-app-extensions2-2-1">If/else Scoring Algorithm: Modify your app to keep score of how many questions are answered correctly or incorrectly. Be sure to restrict it so that the quiz taker can only receive credit for answering each question once (i.e., if there are three questions, the quiz taker can only be credited with three correct answers). Use this <a class="external" href="https://docs.google.com/document/d/1g3vEjfz1jBxCAoddWHA2D_CxpY7PPk6Qkw1H90Imxy8/edit?usp=sharing" target="_blank">short handout</a> to guide you with this project.</div>
+<div class="autopermalink" aria-hidden="true" data-description="Item 1"><a tabindex="-1" href="#quiz-app-extensions2-2-1" title="Copy heading and permalink for Item 1" aria-label="Copy heading and permalink for Item 1">🔗</a></div>
+</li>
+<li id="quiz-app-extensions2-2-2">
+<div class="para" id="p-derived-quiz-app-extensions2-2-2">Loop Algorithm for Searching: Add a keyword search capability to your app.  For example, if the user types in NASA and clicks on the search button, you should find the question or answer with the word NASA in it and show that question.  This will be a linear search through the parallel question and answer lists using a loop. Use this <a class="external" href="https://docs.google.com/document/d/1IuSbMQM_NlNplN2pzNRNTD7LduyxAScvmzKz5En1u18/edit?usp=sharing" target="_blank">short handout</a> to guide you with this project.</div>
+<div class="autopermalink" aria-hidden="true" data-description="Item 2"><a tabindex="-1" href="#quiz-app-extensions2-2-2" title="Copy heading and permalink for Item 2" aria-label="Copy heading and permalink for Item 2">🔗</a></div>
+</li>
+<li id="quiz-app-extensions2-2-3">
+<div class="para" id="p-derived-quiz-app-extensions2-2-3">Your Own Quiz App: Use the Quiz App as a template to create a quiz on a topic of your own choosing. Besides changing the questions, answers, and pictures, add at least one enhancement to the app. Be creative!</div>
+<div class="autopermalink" aria-hidden="true" data-description="Item 3"><a tabindex="-1" href="#quiz-app-extensions2-2-3" title="Copy heading and permalink for Item 3" aria-label="Copy heading and permalink for Item 3">🔗</a></div>
+</li>
+</ol>
+<div class="autopermalink" aria-hidden="true" data-description="Subsection 3.8.4: Quiz App Extensions with Search Procedure"><a tabindex="-1" href="#quiz-app-extensions2" title="Copy heading and permalink for Subsection 3.8.4: Quiz App Extensions with Search Procedure" aria-label="Copy heading and permalink for Subsection 3.8.4: Quiz App Extensions with Search Procedure">🔗</a></div>
+</section>
+<section class="subsection" id="quiz-app-reflection">
+<h2 class="heading hide-type">
+<span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">3.8.5</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Quiz App Reflection</span>
+</h2>
+<article class="activity project-like" id="frq-data-abstraction-appinventor"><h3 class="heading">
+<span class="type">Activity</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">3.8.1</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Data Abstraction Reflection.</span>
+</h3>
+<div class="ptx-runestone-container"><div class="runestone shortanswer_section"><div data-component="shortanswer" data-question_label="" class="journal" data-mathjax="" id="rs-frq-data-abstraction-appinventor" data-placeholder="You can write here, and it will be saved on this device, but your response will not be graded.">
+<div class="para" id="frq-data-abstraction-appinventor-2-1">Consider the lists used in your project code above.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#frq-data-abstraction-appinventor-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div> 
+<ol class="decimal" id="frq-data-abstraction-appinventor-2-2">
+<li id="frq-data-abstraction-appinventor-2-2-1">
+<div class="para" id="p-derived-frq-data-abstraction-appinventor-2-2-1">Explain how the lists use data abstraction to manage complexity in your program.</div>
+<div class="autopermalink" aria-hidden="true" data-description="Item 1"><a tabindex="-1" href="#frq-data-abstraction-appinventor-2-2-1" title="Copy heading and permalink for Item 1" aria-label="Copy heading and permalink for Item 1">🔗</a></div>
+</li>
+<li id="frq-data-abstraction-appinventor-2-2-2">
+<div class="para" id="p-derived-frq-data-abstraction-appinventor-2-2-2">Explain how your code would be more complex if you did not have lists.</div>
+<div class="autopermalink" aria-hidden="true" data-description="Item 2"><a tabindex="-1" href="#frq-data-abstraction-appinventor-2-2-2" title="Copy heading and permalink for Item 2" aria-label="Copy heading and permalink for Item 2">🔗</a></div>
+</li>
+<li id="frq-data-abstraction-appinventor-2-2-3">
+<div class="para" id="p-derived-frq-data-abstraction-appinventor-2-2-3">If you decide to add more elements to your lists, describe how you would need to adjust your code. How do lists make this easier?</div>
+<div class="autopermalink" aria-hidden="true" data-description="Item 3"><a tabindex="-1" href="#frq-data-abstraction-appinventor-2-2-3" title="Copy heading and permalink for Item 3" aria-label="Copy heading and permalink for Item 3">🔗</a></div>
+</li>
+</ol>
+</div></div></div>
+<div class="autopermalink" aria-hidden="true" data-description="Activity 3.8.1: Data Abstraction Reflection"><a tabindex="-1" href="#frq-data-abstraction-appinventor" title="Copy heading and permalink for Activity 3.8.1: Data Abstraction Reflection" aria-label="Copy heading and permalink for Activity 3.8.1: Data Abstraction Reflection">🔗</a></div>
+</article>
+<article class="activity project-like" id="quiz-app-procedure-abstraction"><h3 class="heading">
+<span class="type">Activity</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">3.8.2</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Procedural Abstraction Reflection.</span>
+</h3>
+<div class="ptx-runestone-container"><div class="runestone shortanswer_section"><div data-component="shortanswer" data-question_label="" class="journal" data-mathjax="" id="rs-quiz-app-procedure-abstraction" data-placeholder="You can write here, and it will be saved on this device, but your response will not be graded.">
+<div class="para" id="quiz-app-procedure-abstraction-2-1">Consider the search procedure that you wrote in the quiz app.. Describe the functionality provided by this procedure. Explain the advantages of implementing this functionality as a procedure. Describe how the program would be coded if this functionality was not in a procedure. What are the benefits of using procedural abstraction in your code?<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#quiz-app-procedure-abstraction-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+</div></div></div>
+<div class="autopermalink" aria-hidden="true" data-description="Activity 3.8.2: Procedural Abstraction Reflection"><a tabindex="-1" href="#quiz-app-procedure-abstraction" title="Copy heading and permalink for Activity 3.8.2: Procedural Abstraction Reflection" aria-label="Copy heading and permalink for Activity 3.8.2: Procedural Abstraction Reflection">🔗</a></div>
+</article>
+<article class="activity project-like" id="quiz-app-procedure-calls"><h3 class="heading">
+<span class="type">Activity</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">3.8.3</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Procedure Calls Reflection.</span>
+</h3>
+<div class="ptx-runestone-container"><div class="runestone shortanswer_section"><div data-component="shortanswer" data-question_label="" class="journal" data-mathjax="" id="rs-quiz-app-procedure-calls" data-placeholder="You can write here, and it will be saved on this device, but your response will not be graded.">
+<div class="para" id="quiz-app-procedure-calls-2-1">Consider the search procedure that you wrote in the quiz app. Write two calls to your procedure that each cause a different code segment in the procedure to execute. (Hint: whether the search keyword is found or not.) Describe the expected behavior of each call. Describe why this is a good use of procedural abstraction. If it is not possible for two calls to your procedure to cause different code segments to execute, explain why this is the case for your procedure.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#quiz-app-procedure-calls-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+</div></div></div>
+<div class="autopermalink" aria-hidden="true" data-description="Activity 3.8.3: Procedure Calls Reflection"><a tabindex="-1" href="#quiz-app-procedure-calls" title="Copy heading and permalink for Activity 3.8.3: Procedure Calls Reflection" aria-label="Copy heading and permalink for Activity 3.8.3: Procedure Calls Reflection">🔗</a></div>
+</article><div class="autopermalink" aria-hidden="true" data-description="Subsection 3.8.5: Quiz App Reflection"><a tabindex="-1" href="#quiz-app-reflection" title="Copy heading and permalink for Subsection 3.8.5: Quiz App Reflection" aria-label="Copy heading and permalink for Subsection 3.8.5: Quiz App Reflection">🔗</a></div>
+</section><div class="autopermalink" aria-hidden="true" data-description="Section 3.8: App Inventor Quiz App Tutorial (Optional)"><a tabindex="-1" href="#appinventor-quiz-app" title="Copy heading and permalink for Section 3.8: App Inventor Quiz App Tutorial (Optional)" aria-label="Copy heading and permalink for Section 3.8: App Inventor Quiz App Tutorial (Optional)">🔗</a></div>
+</section>
+</div>
+<div id="ptx-content-footer" class="ptx-content-footer">
+<a class="previous-button button" href="lists-coding-practice.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Top</span></a><a class="next-button button" href="unit4.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a>
+</div></main>
+</div>
+<div id="ptx-page-footer" class="ptx-page-footer">
+<a class="pretext-link" href="https://pretextbook.org" title="PreTeXt"><div class="logo"><svg xmlns="http://www.w3.org/2000/svg" height="100%" viewBox="338 3000 8772 6866" role="img"><title>PreTeXt logo</title><g style="stroke-width:.025in; stroke:currentColor; fill:none"><polyline points="472,3590 472,9732 " style="stroke-width:174; stroke-linejoin:miter; stroke-linecap:round; "></polyline><path style="stroke-width:126;stroke-linecap:butt;" d="M 4724,9448 A 4660 4660  0  0  1  8598  9259"></path><path style="stroke-width:174;stroke-linecap:butt;" d="M 4488,9685 A 4228 4228  0  0  0   472  9732"></path><path style="stroke-width:126;stroke-linecap:butt;" d="M 4724,3590 A 4241 4241  0  0  1  8598  3496"></path><path style="stroke-width:126;stroke-linecap:round;" d="M 850,3496  A 4241 4241  0  0  1  4724  3590"></path><path style="stroke-width:126;stroke-linecap:round;" d="M 850,9259  A 4507 4507  0  0  1  4724  9448"></path><polyline points="5385,4299 4062,8125" style="stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="8598,3496 8598,9259" style="stroke-width:126; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="850,3496 850,9259" style="stroke-width:126; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="4960,9685 4488,9685" style="stroke-width:174; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="3070,4582 1889,6141 3070,7700" style="stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="6418,4582 7600,6141 6418,7700" style="stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="8976,3590 8976,9732" style="stroke-width:174; stroke-linejoin:miter; stroke-linecap:round;"></polyline><path style="stroke-width:174;stroke-linecap:butt;" d="M 4960,9685 A 4228 4228  0  0  1  8976  9732"></path></g></svg></div></a><a class="runestone-link" href="https://runestone.academy" title="Runestone Academy"><img class="logo" src="https://runestone.academy/runestone/static/images/RAIcon_cropped.png" alt="Runstone Academy logo"></a><a class="mathjax-link" href="https://www.mathjax.org" title="MathJax"><img class="logo" src="https://www.mathjax.org/badge/badge-square-2.png" alt="MathJax logo"></a>
+</div>
+<script src="external/_static/js/custom.js"></script>
+</body>
+</html>
