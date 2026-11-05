@@ -488,11 +488,12 @@ eBookConfig.enable_chatcodes =  false;
 <li class="toc-item toc-section contains-active">
 <div class="toc-title-box"><a href="topic-4-1-internet.html" class="internal"><span class="codenumber">4.1</span> <span class="title">The Internet</span></a></div>
 <ul class="structural toc-item-list active" id="ptx-toc-group-topic-4-1-internet">
-<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="topic-4-1-internet.html#internet-protocols-and-scale" class="internal"><span class="codenumber">4.1.1</span> <span class="title">Internet Protocols and Scale</span></a></div></li>
-<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="topic-4-1-internet.html#network-communication-and-conditions" class="internal"><span class="codenumber">4.1.2</span> <span class="title">Network Communication and User Experience</span></a></div></li>
-<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="topic-4-1-internet.html#fault-tolerance-and-failure" class="internal"><span class="codenumber">4.1.3</span> <span class="title">Fault Tolerance and Network Failure</span></a></div></li>
-<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="topic-4-1-internet.html#LOs-4-1" class="internal"><span class="codenumber">4.1.4</span> <span class="title">Learning Objectives Review</span></a></div></li>
-<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="topic-4-1-internet.html#vocab-4-1" class="internal"><span class="codenumber">4.1.5</span> <span class="title">Vocabulary Review</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="topic-4-1-internet.html#internet" class="internal"><span class="codenumber">4.1.1</span> <span class="title">What is the Internet?</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="topic-4-1-internet.html#protocols" class="internal"><span class="codenumber">4.1.2</span> <span class="title">Internet Protocols for Communication</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="topic-4-1-internet.html#network" class="internal"><span class="codenumber">4.1.3</span> <span class="title">Network Bandwidth and Latency</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="topic-4-1-internet.html#packets" class="internal"><span class="codenumber">4.1.4</span> <span class="title">The Journey of a Packet</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="topic-4-1-internet.html#LOs-4-1" class="internal"><span class="codenumber">4.1.5</span> <span class="title">Learning Objectives Review</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="topic-4-1-internet.html#vocab-4-1" class="internal"><span class="codenumber">4.1.6</span> <span class="title">Vocabulary Review</span></a></div></li>
 </ul>
 </li>
 <li class="toc-item toc-section">
@@ -567,175 +568,826 @@ eBookConfig.enable_chatcodes =  false;
 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-clock" viewBox="0 0 16 16"><path d="M8 3.5a.5.5 0 0 0-1 0V9a.5.5 0 0 0 .252.434l3.5 2a.5.5 0 0 0 .496-.868L8 8.71V3.5z"></path><path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm7-8A7 7 0 1 1 1 8a7 7 0 0 1 14 0z"></path></svg><span>90 minutes</span>
 </div>
 <section class="introduction" id="topic-4-1-internet-4">
-<div class="para" id="topic-4-1-internet-4-1">Quick Links: <a href="topic-4-1-internet.html#internet-protocols-and-scale" class="internal" title="Subsection 4.1.1: Internet Protocols and Scale">4.1.1</a>, <a href="topic-4-1-internet.html#network-communication-and-conditions" class="internal" title="Subsection 4.1.2: Network Communication and User Experience">4.1.2</a>, <a href="topic-4-1-internet.html#fault-tolerance-and-failure" class="internal" title="Subsection 4.1.3: Fault Tolerance and Network Failure">4.1.3</a>, <a href="topic-4-1-internet.html#LOs-4-1" class="internal" title="Subsection 4.1.4: Learning Objectives Review">4.1.4</a>, <a href="topic-4-1-internet.html#vocab-4-1" class="internal" title="Subsection 4.1.5: Vocabulary Review">4.1.5</a><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#topic-4-1-internet-4-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="topic-4-1-internet-4-1">Quick Links: <a href="topic-4-1-internet.html#internet" class="internal" title="Subsection 4.1.1: What is the Internet?">4.1.1</a>, <a href="topic-4-1-internet.html#protocols" class="internal" title="Subsection 4.1.2: Internet Protocols for Communication">4.1.2</a>, <a href="topic-4-1-internet.html#network" class="internal" title="Subsection 4.1.3: Network Bandwidth and Latency">4.1.3</a>, <a href="topic-4-1-internet.html#packets" class="internal" title="Subsection 4.1.4: The Journey of a Packet">4.1.4</a>, <a href="topic-4-1-internet.html#LOs-4-1" class="internal" title="Subsection 4.1.5: Learning Objectives Review">4.1.5</a>, <a href="topic-4-1-internet.html#vocab-4-1" class="internal" title="Subsection 4.1.6: Vocabulary Review">4.1.6</a><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#topic-4-1-internet-4-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="para" id="topic-4-1-internet-4-2">In this topic, we explain how the Internet exchanges data, scales to demand, and remains functional through packets, dynamic routing, and redundancy.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#topic-4-1-internet-4-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div></section>
-<section class="subsection" id="internet-protocols-and-scale">
+<div class="para" id="topic-4-1-internet-4-2">The Internet has had a huge impact on society, enabling people to communicate, share information, and access services, while transforming businesses through e-commerce in ways that were not possible before the 1990s. But what is the Internet? Many people don’t know what the Internet is or how it works! In this topic, you will learn how the Internet works, how network devices communicate, and how the internet is designed to be fault-tolerant so that it can continue to function even when some devices or connections fail.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#topic-4-1-internet-4-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="image-box" style="width: 50%; margin-left: 25%; margin-right: 25%;"><img src="external/_static/Unit4images/internet.webp" class="contained"></div></section>
+<section class="subsection" id="internet">
 <h2 class="heading hide-type">
-<span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">4.1.1</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Internet Protocols and Scale</span>
+<span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">4.1.1</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">What is the Internet?</span>
 </h2>
-<article class="note remark-like" id="internet-protocols-and-scale-2"><h3 class="heading">
+<div class="para" id="internet-2">The <dfn class="terminology">Internet</dfn> is a global network of networks that connects millions of devices worldwide, enabling them to communicate and share information through standardized communication protocols.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#internet-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="internet-3">Watch the following <a class="external" href="https://www.youtube.com/watch?v=Dxcc6ycZ73M" target="_blank">video</a> to see how people answer the question "What is the Internet?" and learn about the history of the Internet.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#internet-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="video-box" style="width: 100%;padding-top: 56.25%; margin-left: 0%; margin-right: 0%;"><iframe class="video" allowfullscreen="" src="https://www.youtube-nocookie.com/embed/Dxcc6ycZ73M?&amp;modestbranding=1&amp;rel=0" id="video-internet"></iframe></div>
+<article class="note remark-like" id="internet-5"><h3 class="heading">
 <span class="type">Essential Knowledge</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">4.1.1</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">4.1.A.1.</span>
 </h3>
-<div class="para" id="internet-protocols-and-scale-2-2">The Internet is a global network of networks that communicates using standardized protocols.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#internet-protocols-and-scale-2-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="internet-5-2">The <dfn class="terminology">Internet</dfn> is a global network of networks that communicates using standardized protocols.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#internet-5-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" aria-hidden="true" data-description="Essential Knowledge 4.1.1: 4.1.A.1"><a tabindex="-1" href="#internet-protocols-and-scale-2" title="Copy heading and permalink for Essential Knowledge 4.1.1: 4.1.A.1" aria-label="Copy heading and permalink for Essential Knowledge 4.1.1: 4.1.A.1">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Essential Knowledge 4.1.1: 4.1.A.1"><a tabindex="-1" href="#internet-5" title="Copy heading and permalink for Essential Knowledge 4.1.1: 4.1.A.1" aria-label="Copy heading and permalink for Essential Knowledge 4.1.1: 4.1.A.1">🔗</a></div>
 </article>
-<article class="note remark-like" id="internet-protocols-and-scale-3"><h3 class="heading">
-<span class="type">Essential Knowledge</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">4.1.2</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">4.1.A.2.</span>
-</h3>
-<div class="para" id="internet-protocols-and-scale-3-2">A protocol is an agreed-upon set of rules for communication, such as how data is formatted, sent, received, or acknowledged so different devices and networks can work together reliably.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#internet-protocols-and-scale-3-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="internet-6">What do we mean by a network of networks? There are a lot of smaller networks that are connected together to make up the Internet. For example, your home Wi-Fi network is a small network that connects your devices like phones, tablets, computers, and printers to each other and to the Internet using an <dfn class="terminology">Internet Service Provider (ISP)</dfn> like Comcast or Verizon. Your school or workplace has a larger network that connects many devices together and to the Internet. A <dfn class="terminology">computer network</dfn> is a group of interconnected computing devices that communicate by sending and receiving data and form a <dfn class="terminology">computing system</dfn> that works together to accomplish a shared purpose.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#internet-6" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" aria-hidden="true" data-description="Essential Knowledge 4.1.2: 4.1.A.2"><a tabindex="-1" href="#internet-protocols-and-scale-3" title="Copy heading and permalink for Essential Knowledge 4.1.2: 4.1.A.2" aria-label="Copy heading and permalink for Essential Knowledge 4.1.2: 4.1.A.2">🔗</a></div>
+<article class="note remark-like" id="internet-7"><h3 class="heading">
+<span class="type">Essential Knowledge</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">4.1.2</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">4.1.A.4.</span>
+</h3>
+<div class="para" id="internet-7-2">Devices access the Internet by connecting to a local network (like home or school Wi-Fi) or directly to a cellular provider’s network. In both cases, the connection is carried by an <dfn class="terminology">Internet service provider (ISP)</dfn> to the broader Internet.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#internet-7-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Essential Knowledge 4.1.2: 4.1.A.4"><a tabindex="-1" href="#internet-7" title="Copy heading and permalink for Essential Knowledge 4.1.2: 4.1.A.4" aria-label="Copy heading and permalink for Essential Knowledge 4.1.2: 4.1.A.4">🔗</a></div>
 </article>
-<article class="note remark-like" id="internet-protocols-and-scale-4"><h3 class="heading">
-<span class="type">Essential Knowledge</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">4.1.3</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">4.1.A.3.</span>
+<article class="note remark-like" id="internet-8"><h3 class="heading">
+<span class="type">Essential Knowledge</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">4.1.3</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">4.1.B.1.</span>
 </h3>
-<div class="para" id="internet-protocols-and-scale-4-2">Because Internet protocols are open and nonproprietary (not owned or controlled by a single company), devices and networks from different companies can communicate and exchange data. This makes widespread connectivity possible and allows new devices and networks to join the Internet without relying on proprietary systems (owned or controlled by one company).<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#internet-protocols-and-scale-4-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="internet-8-2">A <dfn class="terminology">networked computing device</dfn>, such as a computer, tablet, server, router, or smart sensor, is a physical artifact that can run programs and can send and/or receive data over a network.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#internet-8-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" aria-hidden="true" data-description="Essential Knowledge 4.1.3: 4.1.A.3"><a tabindex="-1" href="#internet-protocols-and-scale-4" title="Copy heading and permalink for Essential Knowledge 4.1.3: 4.1.A.3" aria-label="Copy heading and permalink for Essential Knowledge 4.1.3: 4.1.A.3">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Essential Knowledge 4.1.3: 4.1.B.1"><a tabindex="-1" href="#internet-8" title="Copy heading and permalink for Essential Knowledge 4.1.3: 4.1.B.1" aria-label="Copy heading and permalink for Essential Knowledge 4.1.3: 4.1.B.1">🔗</a></div>
 </article>
-<article class="note remark-like" id="internet-protocols-and-scale-5"><h3 class="heading">
-<span class="type">Essential Knowledge</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">4.1.4</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">4.1.A.4.</span>
-</h3>
-<div class="para" id="internet-protocols-and-scale-5-2">Devices access the Internet by connecting to a local network (like home or school Wi-Fi) or directly to a cellular provider’s network. In both cases, the connection is carried by an Internet service provider (ISP) to the broader Internet.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#internet-protocols-and-scale-5-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="internet-9">Take a look at the network diagram below of a simple home network. Does your house have a black box with an antenna that provides Wi-Fi access in your home? This is a <dfn class="terminology">router</dfn> which is a device that connects your home network to the Internet through your ISP. It can use radio waves for wifi (wireless) access or cables to connect devices together. Through the Internet, you can connect to <dfn class="terminology">web servers</dfn> that host websites and other devices around the world.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#internet-9" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" aria-hidden="true" data-description="Essential Knowledge 4.1.4: 4.1.A.4"><a tabindex="-1" href="#internet-protocols-and-scale-5" title="Copy heading and permalink for Essential Knowledge 4.1.4: 4.1.A.4" aria-label="Copy heading and permalink for Essential Knowledge 4.1.4: 4.1.A.4">🔗</a></div>
+<div class="image-box" style="width: 50%; margin-left: 25%; margin-right: 25%;"><img src="external/_static/Unit4images/network.jpg" class="contained"></div>
+<article class="note remark-like" id="internet-11"><h3 class="heading">
+<span class="type">Essential Knowledge</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">4.1.4</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">4.1.B.3.</span>
+</h3>
+<div class="para" id="internet-11-2">A <dfn class="terminology">computer network</dfn> is a group of interconnected computing devices that communicate by sending and receiving data. It is a type of computing system because multiple devices coordinate to exchange data and provide services.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#internet-11-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Essential Knowledge 4.1.4: 4.1.B.3"><a tabindex="-1" href="#internet-11" title="Copy heading and permalink for Essential Knowledge 4.1.4: 4.1.B.3" aria-label="Copy heading and permalink for Essential Knowledge 4.1.4: 4.1.B.3">🔗</a></div>
 </article>
-<article class="note remark-like" id="internet-protocols-and-scale-6"><h3 class="heading">
-<span class="type">Essential Knowledge</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">4.1.5</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">4.1.A.5.</span>
+<article class="note remark-like" id="internet-12"><h3 class="heading">
+<span class="type">Essential Knowledge</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">4.1.5</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">4.1.B.2.</span>
 </h3>
-<div class="para" id="internet-protocols-and-scale-6-2">The Internet was designed to be scalable, meaning it can expand over time to meet demand. Scalability is a system’s ability to grow or change to meet new demands, such as more users, more devices, or higher traffic, while continuing to function efficiently and reliably.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#internet-protocols-and-scale-6-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="internet-12-2">A <dfn class="terminology">computing system</dfn> is a group of computing devices and programs that work together to accomplish a shared purpose. A messaging service may rely on an app on a phone, a Wi-Fi router, and cloud servers working together to send and receive messages.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#internet-12-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" aria-hidden="true" data-description="Essential Knowledge 4.1.5: 4.1.A.5"><a tabindex="-1" href="#internet-protocols-and-scale-6" title="Copy heading and permalink for Essential Knowledge 4.1.5: 4.1.A.5" aria-label="Copy heading and permalink for Essential Knowledge 4.1.5: 4.1.A.5">🔗</a></div>
-</article><div class="autopermalink" aria-hidden="true" data-description="Subsection 4.1.1: Internet Protocols and Scale"><a tabindex="-1" href="#internet-protocols-and-scale" title="Copy heading and permalink for Subsection 4.1.1: Internet Protocols and Scale" aria-label="Copy heading and permalink for Subsection 4.1.1: Internet Protocols and Scale">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Essential Knowledge 4.1.5: 4.1.B.2"><a tabindex="-1" href="#internet-12" title="Copy heading and permalink for Essential Knowledge 4.1.5: 4.1.B.2" aria-label="Copy heading and permalink for Essential Knowledge 4.1.5: 4.1.B.2">🔗</a></div>
+</article>
+<article class="activity project-like" id="internet-mcq"><h3 class="heading">
+<span class="type">Activity</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">4.1.1</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+</h3>
+<div class="ptx-runestone-container"><div class="runestone multiplechoice_section">
+<div class="exercise-statement">
+<div class="para" id="internet-mcq-1-1">Which statement best describes the Internet?<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#internet-mcq-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+</div>
+<ul data-component="multiplechoice" class="exercise-interactives" id="rs-internet-mcq" data-multipleanswers="false" data-random="">
+<li data-component="answer" id="rs-internet-mcq_opt_a">
+<div class="para" id="internet-mcq-2-1-1-1">A single network owned and maintained by one organization.</div>
+</li>
+<li data-component="feedback" id="rs-internet-mcq_opt_a">
+<div class="para" id="internet-mcq-2-1-2-1">No, the Internet is not owned or maintained by a single organization. It consists of many independently operated networks.</div>
+</li>
+<li data-component="answer" id="rs-internet-mcq_opt_b" data-correct="">
+<div class="para" id="internet-mcq-2-2-1-1">A global network consisting of many interconnected networks.</div>
+</li>
+<li data-component="feedback" id="rs-internet-mcq_opt_b">
+<div class="para" id="internet-mcq-2-2-2-1">Correct! The Internet is a global network of interconnected networks that allows devices around the world to communicate.</div>
+</li>
+<li data-component="answer" id="rs-internet-mcq_opt_c">
+<div class="para" id="internet-mcq-2-3-1-1">A collection of websites stored on a central server.</div>
+</li>
+<li data-component="feedback" id="rs-internet-mcq_opt_c">
+<div class="para" id="internet-mcq-2-3-2-1">No, websites are hosted on many different servers around the world. The Internet connects the networks that allow users to access them.</div>
+</li>
+<li data-component="answer" id="rs-internet-mcq_opt_d">
+<div class="para" id="internet-mcq-2-4-1-1">A wireless network that connects computers around the world.</div>
+</li>
+<li data-component="feedback" id="rs-internet-mcq_opt_d">
+<div class="para" id="internet-mcq-2-4-2-1">Not quite. The Internet includes both wired and wireless connections. It is much broader than a single wireless network.</div>
+</li>
+</ul>
+</div></div>
+<div class="autopermalink" aria-hidden="true" data-description="Activity 4.1.1"><a tabindex="-1" href="#internet-mcq" title="Copy heading and permalink for Activity 4.1.1" aria-label="Copy heading and permalink for Activity 4.1.1">🔗</a></div>
+</article>
+<article class="activity project-like" id="router-function"><h3 class="heading">
+<span class="type">Activity</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">4.1.2</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+</h3>
+<div class="ptx-runestone-container"><div class="runestone multiplechoice_section">
+<div class="exercise-statement">
+<div class="para" id="router-function-1-1">A student connects a laptop to a home Wi-Fi network. Which statement best describes the role of the router?<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#router-function-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+</div>
+<ul data-component="multiplechoice" class="exercise-interactives" id="rs-router-function" data-multipleanswers="false" data-random="">
+<li data-component="answer" id="rs-router-function_opt_a">
+<div class="para" id="router-function-2-1-1-1">It stores all the websites that the student visits.</div>
+</li>
+<li data-component="feedback" id="rs-router-function_opt_a">
+<div class="para" id="router-function-2-1-2-1">No, websites are stored on web servers, not typically on a home router.</div>
+</li>
+<li data-component="answer" id="rs-router-function_opt_b" data-correct="">
+<div class="para" id="router-function-2-2-1-1">It connects devices on the local network to another network, such as the Internet.</div>
+</li>
+<li data-component="feedback" id="rs-router-function_opt_b">
+<div class="para" id="router-function-2-2-2-1">Correct! A router forwards data between networks, allowing devices on a home network to communicate with devices and services on the Internet.</div>
+</li>
+<li data-component="answer" id="rs-router-function_opt_c">
+<div class="para" id="router-function-2-3-1-1">It translates every IP address into HTML.</div>
+</li>
+<li data-component="feedback" id="rs-router-function_opt_c">
+<div class="para" id="router-function-2-3-2-1">No, IP addresses identify devices or network interfaces. HTML is a language used to structure web pages.</div>
+</li>
+<li data-component="answer" id="rs-router-function_opt_d">
+<div class="para" id="router-function-2-4-1-1">It provides the physical cables used by the ISP.</div>
+</li>
+<li data-component="feedback" id="rs-router-function_opt_d">
+<div class="para" id="router-function-2-4-2-1">No, the ISP provides the Internet connection and associated infrastructure. A router directs traffic between networks.</div>
+</li>
+</ul>
+</div></div>
+<div class="autopermalink" aria-hidden="true" data-description="Activity 4.1.2"><a tabindex="-1" href="#router-function" title="Copy heading and permalink for Activity 4.1.2" aria-label="Copy heading and permalink for Activity 4.1.2">🔗</a></div>
+</article>
+<article class="activity project-like" id="isp-function"><h3 class="heading">
+<span class="type">Activity</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">4.1.3</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+</h3>
+<div class="ptx-runestone-container"><div class="runestone multiplechoice_section">
+<div class="exercise-statement">
+<div class="para" id="isp-function-1-1">A school connects its local network to the Internet through an ISP. Which statement is correct?<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#isp-function-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+</div>
+<ul data-component="multiplechoice" class="exercise-interactives" id="rs-isp-function" data-multipleanswers="false" data-random="">
+<li data-component="answer" id="rs-isp-function_opt_a" data-correct="">
+<div class="para" id="isp-function-2-1-1-1">The ISP provides a connection between the school’s network and other networks on the Internet.</div>
+</li>
+<li data-component="feedback" id="rs-isp-function_opt_a">
+<div class="para" id="isp-function-2-1-2-1">Correct! An Internet Service Provider (ISP) provides the connection that allows the school’s network to communicate with other networks on the Internet.</div>
+</li>
+<li data-component="answer" id="rs-isp-function_opt_b">
+<div class="para" id="isp-function-2-2-1-1">The ISP becomes the owner of the school’s computers.</div>
+</li>
+<li data-component="feedback" id="rs-isp-function_opt_b">
+<div class="para" id="isp-function-2-2-2-1">No, the school owns and manages its computers. The ISP provides Internet connectivity.</div>
+</li>
+<li data-component="answer" id="rs-isp-function_opt_c">
+<div class="para" id="isp-function-2-3-1-1">The ISP stores all the information that students access.</div>
+</li>
+<li data-component="feedback" id="rs-isp-function_opt_c">
+<div class="para" id="isp-function-2-3-2-1">No, information is stored on servers distributed across the Internet. The ISP provides the connection that allows students to access that information.</div>
+</li>
+<li data-component="answer" id="rs-isp-function_opt_d">
+<div class="para" id="isp-function-2-4-1-1">The ISP replaces the need for routers.</div>
+</li>
+<li data-component="feedback" id="rs-isp-function_opt_d">
+<div class="para" id="isp-function-2-4-2-1">No, routers are still needed to direct data between the school’s local network and other networks.</div>
+</li>
+</ul>
+</div></div>
+<div class="autopermalink" aria-hidden="true" data-description="Activity 4.1.3"><a tabindex="-1" href="#isp-function" title="Copy heading and permalink for Activity 4.1.3" aria-label="Copy heading and permalink for Activity 4.1.3">🔗</a></div>
+</article>
+<div class="para" id="internet-16">The Internet is designed to be <dfn class="terminology">scalable</dfn>, which means it can grow to accommodate more users, devices, and data.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#internet-16" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<article class="note remark-like" id="internet-17"><h3 class="heading">
+<span class="type">Essential Knowledge</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">4.1.6</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">4.1.A.5.</span>
+</h3>
+<div class="para" id="internet-17-2">The Internet was designed to be <dfn class="terminology">scalable</dfn>, meaning it can expand over time to meet demand. Scalability is a system’s ability to grow or change to meet new demands, such as more users, more devices, or higher traffic, while continuing to function efficiently and reliably.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#internet-17-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Essential Knowledge 4.1.6: 4.1.A.5"><a tabindex="-1" href="#internet-17" title="Copy heading and permalink for Essential Knowledge 4.1.6: 4.1.A.5" aria-label="Copy heading and permalink for Essential Knowledge 4.1.6: 4.1.A.5">🔗</a></div>
+</article>
+<article class="activity project-like" id="network-scalability"><h3 class="heading">
+<span class="type">Activity</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">4.1.4</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+</h3>
+<div class="ptx-runestone-container"><div class="runestone multiplechoice_section">
+<div class="exercise-statement">
+<div class="para" id="network-scalability-1-1">A company adds 500 computers to its existing network. Which characteristic of the Internet’s design makes it possible for networks to grow and connect additional devices?<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#network-scalability-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+</div>
+<ul data-component="multiplechoice" class="exercise-interactives" id="rs-network-scalability" data-multipleanswers="false" data-random="">
+<li data-component="answer" id="rs-network-scalability_opt_a">
+<div class="para" id="network-scalability-2-1-1-1">Centralization</div>
+</li>
+<li data-component="feedback" id="rs-network-scalability_opt_a">
+<div class="para" id="network-scalability-2-1-2-1">No, the Internet is decentralized. Its design does not depend on a single central system controlling all connected devices and networks.</div>
+</li>
+<li data-component="answer" id="rs-network-scalability_opt_b" data-correct="">
+<div class="para" id="network-scalability-2-2-1-1">Scalability</div>
+</li>
+<li data-component="feedback" id="rs-network-scalability_opt_b">
+<div class="para" id="network-scalability-2-2-2-1">Correct! Scalability allows networks to grow by adding more devices and connecting additional networks without requiring the entire Internet to be redesigned.</div>
+</li>
+<li data-component="answer" id="rs-network-scalability_opt_c">
+<div class="para" id="network-scalability-2-3-1-1">Encryption</div>
+</li>
+<li data-component="feedback" id="rs-network-scalability_opt_c">
+<div class="para" id="network-scalability-2-3-2-1">No, encryption protects information by making it unreadable to unauthorized users. It does not describe the ability of a network to grow.</div>
+</li>
+<li data-component="answer" id="rs-network-scalability_opt_d">
+<div class="para" id="network-scalability-2-4-1-1">Compression</div>
+</li>
+<li data-component="feedback" id="rs-network-scalability_opt_d">
+<div class="para" id="network-scalability-2-4-2-1">No, compression reduces the size of data to make it more efficient to store or transmit. It does not describe network growth.</div>
+</li>
+</ul>
+</div></div>
+<div class="autopermalink" aria-hidden="true" data-description="Activity 4.1.4"><a tabindex="-1" href="#network-scalability" title="Copy heading and permalink for Activity 4.1.4" aria-label="Copy heading and permalink for Activity 4.1.4">🔗</a></div>
+</article>
+<article class="activity project-like" id="network-diagram"><h3 class="heading">
+<span class="type">Activity</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">4.1.5</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Network Diagram.</span>
+</h3>
+<div class="ptx-runestone-container"><div class="runestone shortanswer_section"><div data-component="shortanswer" data-question_label="" class="journal" data-mathjax="" id="rs-network-diagram" data-placeholder="You can write here, and it will be saved on this device, but your response will not be graded.">
+<div class="para" id="network-diagram-2-1">Create a network diagram like the one above showing at least 4 devices and connections in your home or school network. Make sure to include all the devices that connect to the Internet, such as computers, tablets, phones, smart TVs, and gaming consoles, as well as the router and the connection to your ISP. You can draw this on paper and take a picture or use a diagramming tool like <a class="external" href="https://app.diagrams.net/" target="_blank">app.diagrams.net</a> (Click on More Shapes at the bottom left, scroll down to Networking, and choose Network 2025) or <a class="external" href="https://www.smartdraw.com/network-diagram/network-diagram-software.htm" target="_blank">SmartDraw</a> or <a class="external" href="https://packet.school/en/sandbox/builder" target="_blank">Packet School Sandbox</a> to create your diagram online and save a screenshot. Put your image or screenshot in google doc and share the link here.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#network-diagram-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div> 
+<div class="para" id="network-diagram-2-2">In addition, answer the following questions:<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#network-diagram-2-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div> 
+<ol class="decimal" id="network-diagram-2-3">
+<li id="network-diagram-2-3-1">
+<div class="para" id="p-derived-network-diagram-2-3-1">Approximately how many devices are connected to your home or school network?</div>
+<div class="autopermalink" aria-hidden="true" data-description="Item 1"><a tabindex="-1" href="#network-diagram-2-3-1" title="Copy heading and permalink for Item 1" aria-label="Copy heading and permalink for Item 1">🔗</a></div>
+</li>
+<li id="network-diagram-2-3-2">
+<div class="para" id="p-derived-network-diagram-2-3-2">Is your network wired or wireless (wifi) or both?</div>
+<div class="autopermalink" aria-hidden="true" data-description="Item 2"><a tabindex="-1" href="#network-diagram-2-3-2" title="Copy heading and permalink for Item 2" aria-label="Copy heading and permalink for Item 2">🔗</a></div>
+</li>
+<li id="network-diagram-2-3-3">
+<div class="para" id="p-derived-network-diagram-2-3-3">Is your network scalable? Can you easily add more devices? How do you add more devices to the network?</div>
+<div class="autopermalink" aria-hidden="true" data-description="Item 3"><a tabindex="-1" href="#network-diagram-2-3-3" title="Copy heading and permalink for Item 3" aria-label="Copy heading and permalink for Item 3">🔗</a></div>
+</li>
+</ol>
+</div></div></div>
+<div class="autopermalink" aria-hidden="true" data-description="Activity 4.1.5: Network Diagram"><a tabindex="-1" href="#network-diagram" title="Copy heading and permalink for Activity 4.1.5: Network Diagram" aria-label="Copy heading and permalink for Activity 4.1.5: Network Diagram">🔗</a></div>
+</article><div class="autopermalink" aria-hidden="true" data-description="Subsection 4.1.1: What is the Internet?"><a tabindex="-1" href="#internet" title="Copy heading and permalink for Subsection 4.1.1: What is the Internet?" aria-label="Copy heading and permalink for Subsection 4.1.1: What is the Internet?">🔗</a></div>
 </section>
-<section class="subsection" id="network-communication-and-conditions">
+<section class="subsection" id="protocols">
 <h2 class="heading hide-type">
-<span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">4.1.2</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Network Communication and User Experience</span>
+<span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">4.1.2</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Internet Protocols for Communication</span>
 </h2>
-<article class="note remark-like" id="network-communication-and-conditions-2"><h3 class="heading">
-<span class="type">Essential Knowledge</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">4.1.6</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">4.1.B.1.</span>
-</h3>
-<div class="para" id="network-communication-and-conditions-2-2">A networked computing device, such as a computer, tablet, server, router, or smart sensor, is a physical artifact that can run programs and can send and/or receive data over a network.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#network-communication-and-conditions-2-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="protocols-2">Watch the following <a class="external" href="https://www.youtube.com/watch?v=5o8CwafCxnU" target="_blank">video</a> to learn about the protocols and IP addresses that enable communication on the Internet.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#protocols-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" aria-hidden="true" data-description="Essential Knowledge 4.1.6: 4.1.B.1"><a tabindex="-1" href="#network-communication-and-conditions-2" title="Copy heading and permalink for Essential Knowledge 4.1.6: 4.1.B.1" aria-label="Copy heading and permalink for Essential Knowledge 4.1.6: 4.1.B.1">🔗</a></div>
-</article>
-<article class="note remark-like" id="network-communication-and-conditions-3"><h3 class="heading">
-<span class="type">Essential Knowledge</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">4.1.7</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">4.1.B.2.</span>
-</h3>
-<div class="para" id="network-communication-and-conditions-3-2">A computing system is a group of computing devices and programs that work together to accomplish a shared purpose. A messaging service may rely on an app on a phone, a Wi-Fi router, and cloud servers working together to send and receive messages.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#network-communication-and-conditions-3-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="video-box" style="width: 100%;padding-top: 56.25%; margin-left: 0%; margin-right: 0%;"><iframe class="video" allowfullscreen="" src="https://www.youtube-nocookie.com/embed/5o8CwafCxnU?&amp;modestbranding=1&amp;rel=0" id="video-protocol-IP"></iframe></div>
+<div class="para" id="protocols-4">The Internet uses a set of standardized <dfn class="terminology">protocols</dfn>, or rules that devices follow to exchange data. For example, <dfn class="terminology">HTTP (Hypertext Transfer Protocol)</dfn> is used to retrieve web pages formatted using HTML (HyperText Markup Language). <dfn class="terminology">IP (Internet Protocol)</dfn> provides an addressing system of unique IP addresses for devices on the Internet. These protocols are <dfn class="terminology">nonproprietary</dfn>, which means they are not owned or controlled by a single company, so that anyone can connect to the internet.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#protocols-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" aria-hidden="true" data-description="Essential Knowledge 4.1.7: 4.1.B.2"><a tabindex="-1" href="#network-communication-and-conditions-3" title="Copy heading and permalink for Essential Knowledge 4.1.7: 4.1.B.2" aria-label="Copy heading and permalink for Essential Knowledge 4.1.7: 4.1.B.2">🔗</a></div>
-</article>
-<article class="note remark-like" id="network-communication-and-conditions-4"><h3 class="heading">
-<span class="type">Essential Knowledge</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">4.1.8</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">4.1.B.3.</span>
+<article class="note remark-like" id="protocols-5"><h3 class="heading">
+<span class="type">Essential Knowledge</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">4.1.7</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">4.1.A.2.</span>
 </h3>
-<div class="para" id="network-communication-and-conditions-4-2">A computer network is a group of interconnected computing devices that communicate by sending and receiving data. It is a type of computing system because multiple devices coordinate to exchange data and provide services.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#network-communication-and-conditions-4-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="protocols-5-2">A <dfn class="terminology">protocol</dfn> is an agreed-upon set of rules for communication, such as how data is formatted, sent, received, or acknowledged so different devices and networks can work together reliably.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#protocols-5-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" aria-hidden="true" data-description="Essential Knowledge 4.1.8: 4.1.B.3"><a tabindex="-1" href="#network-communication-and-conditions-4" title="Copy heading and permalink for Essential Knowledge 4.1.8: 4.1.B.3" aria-label="Copy heading and permalink for Essential Knowledge 4.1.8: 4.1.B.3">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Essential Knowledge 4.1.7: 4.1.A.2"><a tabindex="-1" href="#protocols-5" title="Copy heading and permalink for Essential Knowledge 4.1.7: 4.1.A.2" aria-label="Copy heading and permalink for Essential Knowledge 4.1.7: 4.1.A.2">🔗</a></div>
 </article>
-<article class="note remark-like" id="network-communication-and-conditions-5"><h3 class="heading">
+<article class="note remark-like" id="protocols-6"><h3 class="heading">
+<span class="type">Essential Knowledge</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">4.1.8</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">4.1.A.3.</span>
+</h3>
+<div class="para" id="protocols-6-2">Because Internet protocols are open and <dfn class="terminology">nonproprietary</dfn> (not owned or controlled by a single company), devices and networks from different companies can communicate and exchange data. This makes widespread connectivity possible and allows new devices and networks to join the Internet without relying on proprietary systems (owned or controlled by one company).<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#protocols-6-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Essential Knowledge 4.1.8: 4.1.A.3"><a tabindex="-1" href="#protocols-6" title="Copy heading and permalink for Essential Knowledge 4.1.8: 4.1.A.3" aria-label="Copy heading and permalink for Essential Knowledge 4.1.8: 4.1.A.3">🔗</a></div>
+</article>
+<article class="activity project-like" id="protocol-definition"><h3 class="heading">
+<span class="type">Activity</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">4.1.6</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+</h3>
+<div class="ptx-runestone-container"><div class="runestone multiplechoice_section">
+<div class="exercise-statement">
+<div class="para" id="protocol-definition-1-1">Which of the following best describes a protocol in computer networking?<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#protocol-definition-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+</div>
+<ul data-component="multiplechoice" class="exercise-interactives" id="rs-protocol-definition" data-multipleanswers="false" data-random="">
+<li data-component="answer" id="rs-protocol-definition_opt_a">
+<div class="para" id="protocol-definition-2-1-1-1">A physical connection between computers.</div>
+</li>
+<li data-component="feedback" id="rs-protocol-definition_opt_a">
+<div class="para" id="protocol-definition-2-1-2-1">No, a physical connection allows devices to connect, but a protocol defines the rules they follow when communicating.</div>
+</li>
+<li data-component="answer" id="rs-protocol-definition_opt_b" data-correct="">
+<div class="para" id="protocol-definition-2-2-1-1">An agreed-upon set of rules for communication.</div>
+</li>
+<li data-component="feedback" id="rs-protocol-definition_opt_b">
+<div class="para" id="protocol-definition-2-2-2-1">Correct! A protocol defines rules for how devices format, send, receive, and interpret information so they can communicate.</div>
+</li>
+<li data-component="answer" id="rs-protocol-definition_opt_c">
+<div class="para" id="protocol-definition-2-3-1-1">A unique identifier for a website.</div>
+</li>
+<li data-component="feedback" id="rs-protocol-definition_opt_c">
+<div class="para" id="protocol-definition-2-3-2-1">No, a website can be identified using a domain name or IP address. A protocol defines the rules for communication.</div>
+</li>
+<li data-component="answer" id="rs-protocol-definition_opt_d">
+<div class="para" id="protocol-definition-2-4-1-1">A type of computer hardware.</div>
+</li>
+<li data-component="feedback" id="rs-protocol-definition_opt_d">
+<div class="para" id="protocol-definition-2-4-2-1">No, protocols are sets of rules or standards, not physical components of a computer.</div>
+</li>
+</ul>
+</div></div>
+<div class="autopermalink" aria-hidden="true" data-description="Activity 4.1.6"><a tabindex="-1" href="#protocol-definition" title="Copy heading and permalink for Activity 4.1.6" aria-label="Copy heading and permalink for Activity 4.1.6">🔗</a></div>
+</article>
+<article class="activity project-like" id="standardized-protocols"><h3 class="heading">
+<span class="type">Activity</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">4.1.7</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+</h3>
+<div class="ptx-runestone-container"><div class="runestone multiplechoice_section">
+<div class="exercise-statement">
+<div class="para" id="standardized-protocols-1-1">Why are standardized Internet protocols important for communication between devices?<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#standardized-protocols-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+</div>
+<ul data-component="multiplechoice" class="exercise-interactives" id="rs-standardized-protocols" data-multipleanswers="false" data-random="">
+<li data-component="answer" id="rs-standardized-protocols_opt_a">
+<div class="para" id="standardized-protocols-2-1-1-1">They require all devices to have the same processing speed.</div>
+</li>
+<li data-component="feedback" id="rs-standardized-protocols_opt_a">
+<div class="para" id="standardized-protocols-2-1-2-1">No, devices can communicate using the same protocols even if they have different processing speeds.</div>
+</li>
+<li data-component="answer" id="rs-standardized-protocols_opt_b" data-correct="">
+<div class="para" id="standardized-protocols-2-2-1-1">They ensure that devices follow compatible rules for exchanging information.</div>
+</li>
+<li data-component="feedback" id="rs-standardized-protocols_opt_b">
+<div class="para" id="standardized-protocols-2-2-2-1">Correct! Standardized protocols allow devices and networks made by different companies to communicate by following the same rules.</div>
+</li>
+<li data-component="answer" id="rs-standardized-protocols_opt_c">
+<div class="para" id="standardized-protocols-2-3-1-1">They ensure that all Internet data is transmitted at the same speed.</div>
+</li>
+<li data-component="feedback" id="rs-standardized-protocols_opt_c">
+<div class="para" id="standardized-protocols-2-3-2-1">No, protocols establish communication rules, but they do not guarantee that all data is transmitted at the same speed.</div>
+</li>
+<li data-component="answer" id="rs-standardized-protocols_opt_d">
+<div class="para" id="standardized-protocols-2-4-1-1">They prevent companies from developing new Internet-connected devices.</div>
+</li>
+<li data-component="feedback" id="rs-standardized-protocols_opt_d">
+<div class="para" id="standardized-protocols-2-4-2-1">No, standardized protocols actually encourage innovation by allowing new devices from different companies to connect to the Internet.</div>
+</li>
+</ul>
+</div></div>
+<div class="autopermalink" aria-hidden="true" data-description="Activity 4.1.7"><a tabindex="-1" href="#standardized-protocols" title="Copy heading and permalink for Activity 4.1.7" aria-label="Copy heading and permalink for Activity 4.1.7">🔗</a></div>
+</article>
+<article class="activity project-like" id="unplugged-protocol"><h3 class="heading">
+<span class="type">Activity</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">4.1.8</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Designing a Protocol.</span>
+</h3>
+<div class="ptx-runestone-container"><div class="runestone shortanswer_section"><div data-component="shortanswer" data-question_label="" class="journal" data-mathjax="" id="rs-unplugged-protocol" data-placeholder="You can write here, and it will be saved on this device, but your response will not be graded.">
+<div class="para" id="unplugged-protocol-2-1">
+<dfn class="terminology">Design a Protocol:</dfn> In groups or individually, design a protocol for passing notes in class. The note can have 4 fields and separators: the date, the receiver’s name, the message, the sender’s name. Each group or person should choose a different order for these fields in their protocol and a way to separate the fields, such as a comma, a semicolon, or a space. Do not label the fields, just put the information in the order you choose, for example: "Apr 1, Jo, I like your shirt, Ava" or "Ava I like your shirt Jo Apr 1".<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#unplugged-protocol-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div> 
+<div class="para" id="unplugged-protocol-2-2">
+<dfn class="terminology">Using your protocol:</dfn> Try sending a note to another person in your group using your protocol passing the note through at least two other people. Then, try sending a note to another group using your protocol passing the note through at least two other groups, but do not tell them your protocol. If you are working individually, imagine what would happen in these two scenarios.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#unplugged-protocol-2-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div> 
+<div class="para" id="unplugged-protocol-2-3">Answer the following questions:<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#unplugged-protocol-2-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div> 
+<ul class="disc" id="unplugged-protocol-2-4">
+<li id="unplugged-protocol-2-4-1">
+<div class="para" id="p-derived-unplugged-protocol-2-4-1">What is the protocol (the ordering of fields and separators) that your group or you chose?</div>
+<div class="autopermalink" aria-hidden="true" data-description="Item"><a tabindex="-1" href="#unplugged-protocol-2-4-1" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="unplugged-protocol-2-4-2">
+<div class="para" id="p-derived-unplugged-protocol-2-4-2">Is it easy to pass notes within a group that knows your protocol? Why or why not?</div>
+<div class="autopermalink" aria-hidden="true" data-description="Item"><a tabindex="-1" href="#unplugged-protocol-2-4-2" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="unplugged-protocol-2-4-3">
+<div class="para" id="p-derived-unplugged-protocol-2-4-3">Is it easy to pass notes to groups that use different protocols? Why or why not?</div>
+<div class="autopermalink" aria-hidden="true" data-description="Item"><a tabindex="-1" href="#unplugged-protocol-2-4-3" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="unplugged-protocol-2-4-4">
+<div class="para" id="p-derived-unplugged-protocol-2-4-4">If your school purchases computers from several different companies where each company uses its own proprietary communication protocols, what problems might occur when the computers try to communicate with one another on a network?</div>
+<div class="autopermalink" aria-hidden="true" data-description="Item"><a tabindex="-1" href="#unplugged-protocol-2-4-4" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="unplugged-protocol-2-4-5">
+<div class="para" id="p-derived-unplugged-protocol-2-4-5">Why is it important for devices made by different companies to follow the same Internet protocols? How do nonproprietary protocols help make the Internet accessible and scalable?</div>
+<div class="autopermalink" aria-hidden="true" data-description="Item"><a tabindex="-1" href="#unplugged-protocol-2-4-5" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+</ul>
+</div></div></div>
+<div class="autopermalink" aria-hidden="true" data-description="Activity 4.1.8: Designing a Protocol"><a tabindex="-1" href="#unplugged-protocol" title="Copy heading and permalink for Activity 4.1.8: Designing a Protocol" aria-label="Copy heading and permalink for Activity 4.1.8: Designing a Protocol">🔗</a></div>
+</article><div class="autopermalink" aria-hidden="true" data-description="Subsection 4.1.2: Internet Protocols for Communication"><a tabindex="-1" href="#protocols" title="Copy heading and permalink for Subsection 4.1.2: Internet Protocols for Communication" aria-label="Copy heading and permalink for Subsection 4.1.2: Internet Protocols for Communication">🔗</a></div>
+</section>
+<section class="subsection" id="network">
+<h2 class="heading hide-type">
+<span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">4.1.3</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Network Bandwidth and Latency</span>
+</h2>
+<div class="para" id="network-2">Watch the following <a class="external" href="https://www.youtube.com/watch?v=ZhEf7e4kopM" target="_blank">video</a> to learn how data travels across the internet using electricity, light, and radio waves (wifi) and about <dfn class="terminology">bandwidth</dfn> and <dfn class="terminology">latency</dfn> which are measurements of internet performance.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#network-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="video-box" style="width: 100%;padding-top: 56.25%; margin-left: 0%; margin-right: 0%;"><iframe class="video" allowfullscreen="" src="https://www.youtube-nocookie.com/embed/ZhEf7e4kopM?&amp;modestbranding=1&amp;rel=0" id="video-internet-waves"></iframe></div>
+<article class="note remark-like" id="network-4"><h3 class="heading">
 <span class="type">Essential Knowledge</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">4.1.9</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">4.1.B.4.</span>
 </h3>
-<div class="para" id="network-communication-and-conditions-5-2">Data sent across a network typically travels through multiple intermediate devices, such as switches and routers, before reaching its destination. A path from sender to receiver is the sequence of directly connected devices that the data follows from start to finish.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#network-communication-and-conditions-5-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="network-4-2">Data sent across a network typically travels through multiple intermediate devices, such as <dfn class="terminology">switches</dfn> and <dfn class="terminology">routers</dfn>, before reaching its destination. A path from sender to receiver is the sequence of directly connected devices that the data follows from start to finish.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#network-4-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" aria-hidden="true" data-description="Essential Knowledge 4.1.9: 4.1.B.4"><a tabindex="-1" href="#network-communication-and-conditions-5" title="Copy heading and permalink for Essential Knowledge 4.1.9: 4.1.B.4" aria-label="Copy heading and permalink for Essential Knowledge 4.1.9: 4.1.B.4">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Essential Knowledge 4.1.9: 4.1.B.4"><a tabindex="-1" href="#network-4" title="Copy heading and permalink for Essential Knowledge 4.1.9: 4.1.B.4" aria-label="Copy heading and permalink for Essential Knowledge 4.1.9: 4.1.B.4">🔗</a></div>
 </article>
-<article class="note remark-like" id="network-communication-and-conditions-6"><h3 class="heading">
+<div class="para" id="network-5">
+<dfn class="terminology">Bandwidth</dfn> is the maximum amount of data that can be transmitted over a network connection in a given time period. It’s measured in <dfn class="terminology">bits per second (bps)</dfn>. You can imagine bandwidth as the width of a water pipe or the number of lanes on a highway. The more bandwidth you have, the more data can flow at the same time. This might be really important when you’re trying to stream a video or download a large file or play an online game.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#network-5" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<article class="note remark-like" id="network-6"><h3 class="heading">
 <span class="type">Essential Knowledge</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">4.1.10</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">4.1.B.5.</span>
 </h3>
-<div class="para" id="network-communication-and-conditions-6-2">Bandwidth commonly refers to the maximum rate at which data can be transmitted over a connection, usually measured in bits per second. More available bandwidth generally allows higher data rates. Higher data-rate bandwidth can support faster downloads and higher-quality streaming.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#network-communication-and-conditions-6-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="network-6-2">
+<dfn class="terminology">Bandwidth</dfn> commonly refers to the maximum rate at which data can be transmitted over a connection, usually measured in bits per second. More available bandwidth generally allows higher data rates. Higher data-rate bandwidth can support faster downloads and higher-quality streaming.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#network-6-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" aria-hidden="true" data-description="Essential Knowledge 4.1.10: 4.1.B.5"><a tabindex="-1" href="#network-communication-and-conditions-6" title="Copy heading and permalink for Essential Knowledge 4.1.10: 4.1.B.5" aria-label="Copy heading and permalink for Essential Knowledge 4.1.10: 4.1.B.5">🔗</a></div>
-</article>
-<article class="note remark-like" id="network-communication-and-conditions-7"><h3 class="heading">
+<div class="autopermalink" aria-hidden="true" data-description="Essential Knowledge 4.1.10: 4.1.B.5"><a tabindex="-1" href="#network-6" title="Copy heading and permalink for Essential Knowledge 4.1.10: 4.1.B.5" aria-label="Copy heading and permalink for Essential Knowledge 4.1.10: 4.1.B.5">🔗</a></div>
+</article><div class="image-box" style="width: 75%; margin-left: 12.5%; margin-right: 12.5%;"><img src="external/_static/Unit4images/bandwidth.jpg" class="contained"></div>
+<div class="para" id="network-8">
+<dfn class="terminology">Latency</dfn> is the time it takes for data to travel from one device to another across a network and is measured in <dfn class="terminology">milliseconds (ms)</dfn>. You can imagine latency as how long a single drop of water takes to travel from one end of a pipe to the other, or how long it takes a single car to drive down the highway. While we typically want high bandwidth, we want low latency, since less time means that it is faster. Low latency is important for real-time applications like video calls or online games.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#network-8" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<article class="note remark-like" id="network-9"><h3 class="heading">
 <span class="type">Essential Knowledge</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">4.1.11</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">4.1.B.6.</span>
 </h3>
-<div class="para" id="network-communication-and-conditions-7-2">Latency is the time it takes for data to travel from one device to another across a network. Latency is typically measured in milliseconds. High latency creates noticeable delays, like slow page loads, lag in video calls, or delayed responses in online games, even if bandwidth is high.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#network-communication-and-conditions-7-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="network-9-2">
+<dfn class="terminology">Latency</dfn> is the time it takes for data to travel from one device to another across a network. Latency is typically measured in milliseconds. High latency creates noticeable delays, like slow page loads, lag in video calls, or delayed responses in online games, even if bandwidth is high.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#network-9-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" aria-hidden="true" data-description="Essential Knowledge 4.1.11: 4.1.B.6"><a tabindex="-1" href="#network-communication-and-conditions-7" title="Copy heading and permalink for Essential Knowledge 4.1.11: 4.1.B.6" aria-label="Copy heading and permalink for Essential Knowledge 4.1.11: 4.1.B.6">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Essential Knowledge 4.1.11: 4.1.B.6"><a tabindex="-1" href="#network-9" title="Copy heading and permalink for Essential Knowledge 4.1.11: 4.1.B.6" aria-label="Copy heading and permalink for Essential Knowledge 4.1.11: 4.1.B.6">🔗</a></div>
 </article>
-<article class="note remark-like" id="network-communication-and-conditions-8"><h3 class="heading">
+<article class="activity project-like" id="measure-bandwidth"><h3 class="heading">
+<span class="type">Activity</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">4.1.9</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Measuring Bandwidth and Latency.</span>
+</h3>
+<div class="ptx-runestone-container"><div class="runestone shortanswer_section"><div data-component="shortanswer" data-question_label="" class="journal" data-mathjax="" id="rs-measure-bandwidth" data-placeholder="You can write here, and it will be saved on this device, but your response will not be graded.">
+<div class="para" id="measure-bandwidth-2-1">Use the <a class="external" href="http://www.bandwidthplace.com/" target="_blank">BandwidthPlace</a> tool (or the <a class="external" href="https://speed.cloudflare.com/" target="_blank">Cloudflare Speed Test</a>) to measure the bandwidth and latency of your Internet connection.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#measure-bandwidth-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div> 
+<ol class="decimal" id="measure-bandwidth-2-2">
+<li id="measure-bandwidth-2-2-1">
+<div class="para" id="p-derived-measure-bandwidth-2-2-1">What are the download and upload speeds for your Internet connection? Note that these bandwidth measurements are in megabits per second (Mbps). If possible, measure the bandwidth at school and at home or on your phone. Are they different?</div>
+<div class="autopermalink" aria-hidden="true" data-description="Item 1"><a tabindex="-1" href="#measure-bandwidth-2-2-1" title="Copy heading and permalink for Item 1" aria-label="Copy heading and permalink for Item 1">🔗</a></div>
+</li>
+<li id="measure-bandwidth-2-2-2">
+<div class="para" id="p-derived-measure-bandwidth-2-2-2">This speed test also provides a latency test using a utility called ping, which measures the round-trip time for a small packet to travel from your computer to a test server and for the response to return. The time is usually measured in milliseconds. What is the latency for your connection?</div>
+<div class="autopermalink" aria-hidden="true" data-description="Item 2"><a tabindex="-1" href="#measure-bandwidth-2-2-2" title="Copy heading and permalink for Item 2" aria-label="Copy heading and permalink for Item 2">🔗</a></div>
+</li>
+<li id="measure-bandwidth-2-2-3">
+<div class="para" id="p-derived-measure-bandwidth-2-2-3">Why is measuring your Internet connection’s bandwidth and latency useful?</div>
+<div class="autopermalink" aria-hidden="true" data-description="Item 3"><a tabindex="-1" href="#measure-bandwidth-2-2-3" title="Copy heading and permalink for Item 3" aria-label="Copy heading and permalink for Item 3">🔗</a></div>
+</li>
+<li id="measure-bandwidth-2-2-4">
+<div class="para" id="p-derived-measure-bandwidth-2-2-4">Why do you think Internet Service Providers (ISPs) provide different bandwidths for downloading and uploading from the Internet?</div>
+<div class="autopermalink" aria-hidden="true" data-description="Item 4"><a tabindex="-1" href="#measure-bandwidth-2-2-4" title="Copy heading and permalink for Item 4" aria-label="Copy heading and permalink for Item 4">🔗</a></div>
+</li>
+<li id="measure-bandwidth-2-2-5">
+<div class="para" id="p-derived-measure-bandwidth-2-2-5">How does your download speed of your Internet connection compare to <a class="external" href="https://www.speedtest.net/global-index" target="_blank">Global Speed Statistics</a>? Is it faster or slower than the average download speed in your country? How does it compare to the top 3 countries with the highest speeds?</div>
+<div class="autopermalink" aria-hidden="true" data-description="Item 5"><a tabindex="-1" href="#measure-bandwidth-2-2-5" title="Copy heading and permalink for Item 5" aria-label="Copy heading and permalink for Item 5">🔗</a></div>
+</li>
+</ol>
+</div></div></div>
+<div class="autopermalink" aria-hidden="true" data-description="Activity 4.1.9: Measuring Bandwidth and Latency"><a tabindex="-1" href="#measure-bandwidth" title="Copy heading and permalink for Activity 4.1.9: Measuring Bandwidth and Latency" aria-label="Copy heading and permalink for Activity 4.1.9: Measuring Bandwidth and Latency">🔗</a></div>
+</article>
+<div class="para" id="network-11">Have you ever tried loading a webpage or playing an online game and it was too slow? That can be frustrating. When designing an app that runs online, it’s important to consider the impact of network conditions on the user experience. If users have limited bandwidth or high latency because of congested networks or weak connections, the app might not run well. Some ways to design for these situations include reducing file sizes of images and videos and loading content in chunks.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#network-11" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<article class="note remark-like" id="network-12"><h3 class="heading">
 <span class="type">Essential Knowledge</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">4.1.12</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">4.1.B.7.</span>
 </h3>
-<div class="para" id="network-communication-and-conditions-8-2">Network conditions shape user experience. When bandwidth is limited, latency is high, or networks are congested, apps may lag, buffer, or fail to load. Developers design for these situations by reducing file sizes, loading content in chunks, saving progress, and showing clear status messages like "Loading..." or "Try again."<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#network-communication-and-conditions-8-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="network-12-2">Network conditions shape user experience. When bandwidth is limited, latency is high, or networks are congested, apps may lag, buffer, or fail to load. Developers design for these situations by reducing file sizes, loading content in chunks, saving progress, and showing clear status messages like "Loading..." or "Try again."<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#network-12-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" aria-hidden="true" data-description="Essential Knowledge 4.1.12: 4.1.B.7"><a tabindex="-1" href="#network-communication-and-conditions-8" title="Copy heading and permalink for Essential Knowledge 4.1.12: 4.1.B.7" aria-label="Copy heading and permalink for Essential Knowledge 4.1.12: 4.1.B.7">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Essential Knowledge 4.1.12: 4.1.B.7"><a tabindex="-1" href="#network-12" title="Copy heading and permalink for Essential Knowledge 4.1.12: 4.1.B.7" aria-label="Copy heading and permalink for Essential Knowledge 4.1.12: 4.1.B.7">🔗</a></div>
 </article>
-<article class="note remark-like" id="network-communication-and-conditions-9"><h3 class="heading">
+<article class="note remark-like" id="network-13"><h3 class="heading">
 <span class="type">Essential Knowledge</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">4.1.13</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">4.1.B.8.</span>
 </h3>
-<div class="para" id="network-communication-and-conditions-9-2">Understanding bandwidth, latency, and routing helps programmers design apps that stay usable under common situations such as crowded public Wi-Fi, weak cellular signals, or unreliable connections, so users can complete tasks reliably or receive clear feedback when connectivity prevents it.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#network-communication-and-conditions-9-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="network-13-2">Understanding bandwidth, latency, and routing helps programmers design apps that stay usable under common situations such as crowded public Wi-Fi, weak cellular signals, or unreliable connections, so users can complete tasks reliably or receive clear feedback when connectivity prevents it.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#network-13-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" aria-hidden="true" data-description="Essential Knowledge 4.1.13: 4.1.B.8"><a tabindex="-1" href="#network-communication-and-conditions-9" title="Copy heading and permalink for Essential Knowledge 4.1.13: 4.1.B.8" aria-label="Copy heading and permalink for Essential Knowledge 4.1.13: 4.1.B.8">🔗</a></div>
-</article><div class="autopermalink" aria-hidden="true" data-description="Subsection 4.1.2: Network Communication and User Experience"><a tabindex="-1" href="#network-communication-and-conditions" title="Copy heading and permalink for Subsection 4.1.2: Network Communication and User Experience" aria-label="Copy heading and permalink for Subsection 4.1.2: Network Communication and User Experience">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Essential Knowledge 4.1.13: 4.1.B.8"><a tabindex="-1" href="#network-13" title="Copy heading and permalink for Essential Knowledge 4.1.13: 4.1.B.8" aria-label="Copy heading and permalink for Essential Knowledge 4.1.13: 4.1.B.8">🔗</a></div>
+</article>
+<article class="activity project-like" id="bandwidth-definition"><h3 class="heading">
+<span class="type">Activity</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">4.1.10</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+</h3>
+<div class="ptx-runestone-container"><div class="runestone multiplechoice_section">
+<div class="exercise-statement">
+<div class="para" id="bandwidth-definition-1-1">What does bandwidth measure in a network?<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#bandwidth-definition-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+</div>
+<ul data-component="multiplechoice" class="exercise-interactives" id="rs-bandwidth-definition" data-multipleanswers="false" data-random="">
+<li data-component="answer" id="rs-bandwidth-definition_opt_a">
+<div class="para" id="bandwidth-definition-2-1-1-1">How fast your computer can connect to the Internet.</div>
+</li>
+<li data-component="feedback" id="rs-bandwidth-definition_opt_a">
+<div class="para" id="bandwidth-definition-2-1-2-1">No, bandwidth measures the capacity of a network connection, not simply how quickly a computer connects.</div>
+</li>
+<li data-component="answer" id="rs-bandwidth-definition_opt_b">
+<div class="para" id="bandwidth-definition-2-2-1-1">The average length of emails that you can send on a daily basis.</div>
+</li>
+<li data-component="feedback" id="rs-bandwidth-definition_opt_b">
+<div class="para" id="bandwidth-definition-2-2-2-1">No, bandwidth is related to the amount of data that can be transmitted, not the length or number of emails.</div>
+</li>
+<li data-component="answer" id="rs-bandwidth-definition_opt_c">
+<div class="para" id="bandwidth-definition-2-3-1-1">The amount of time it takes to send data over the Internet.</div>
+</li>
+<li data-component="feedback" id="rs-bandwidth-definition_opt_c">
+<div class="para" id="bandwidth-definition-2-3-2-1">No, this describes latency, which measures the time it takes for data to travel from one point to another.</div>
+</li>
+<li data-component="answer" id="rs-bandwidth-definition_opt_d" data-correct="">
+<div class="para" id="bandwidth-definition-2-4-1-1">The amount of data that can be sent in a fixed amount of time.</div>
+</li>
+<li data-component="feedback" id="rs-bandwidth-definition_opt_d">
+<div class="para" id="bandwidth-definition-2-4-2-1">Correct! Bandwidth measures the maximum amount of data that can be transmitted over a network connection in a given amount of time, typically measured in bits per second (bps).</div>
+</li>
+</ul>
+</div></div>
+<div class="autopermalink" aria-hidden="true" data-description="Activity 4.1.10"><a tabindex="-1" href="#bandwidth-definition" title="Copy heading and permalink for Activity 4.1.10" aria-label="Copy heading and permalink for Activity 4.1.10">🔗</a></div>
+</article>
+<article class="activity project-like" id="latency-definition"><h3 class="heading">
+<span class="type">Activity</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">4.1.11</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+</h3>
+<div class="ptx-runestone-container"><div class="runestone multiplechoice_section">
+<div class="exercise-statement">
+<div class="para" id="latency-definition-1-1">What does latency measure in a network?<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#latency-definition-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+</div>
+<ul data-component="multiplechoice" class="exercise-interactives" id="rs-latency-definition" data-multipleanswers="false" data-random="">
+<li data-component="answer" id="rs-latency-definition_opt_a">
+<div class="para" id="latency-definition-2-1-1-1">The average number of messages you send over the Internet in a day.</div>
+</li>
+<li data-component="feedback" id="rs-latency-definition_opt_a">
+<div class="para" id="latency-definition-2-1-2-1">No, latency does not measure the number of messages sent. It measures the time it takes for data to travel across a network.</div>
+</li>
+<li data-component="answer" id="rs-latency-definition_opt_b">
+<div class="para" id="latency-definition-2-2-1-1">The size of the messages that you send over the Internet.</div>
+</li>
+<li data-component="feedback" id="rs-latency-definition_opt_b">
+<div class="para" id="latency-definition-2-2-2-1">No, latency is not a measure of message size. It measures the time required for data to travel from one point to another.</div>
+</li>
+<li data-component="answer" id="rs-latency-definition_opt_c" data-correct="">
+<div class="para" id="latency-definition-2-3-1-1">The amount of time it takes to send a message over the Internet.</div>
+</li>
+<li data-component="feedback" id="rs-latency-definition_opt_c">
+<div class="para" id="latency-definition-2-3-2-1">Correct! Latency measures the delay in data transmission, typically measured in milliseconds (ms). Lower latency means less delay in communication.</div>
+</li>
+<li data-component="answer" id="rs-latency-definition_opt_d">
+<div class="para" id="latency-definition-2-4-1-1">How much data can be sent in a specific amount of time.</div>
+</li>
+<li data-component="feedback" id="rs-latency-definition_opt_d">
+<div class="para" id="latency-definition-2-4-2-1">No, this describes bandwidth, which measures the data transmission capacity of a network connection.</div>
+</li>
+</ul>
+</div></div>
+<div class="autopermalink" aria-hidden="true" data-description="Activity 4.1.11"><a tabindex="-1" href="#latency-definition" title="Copy heading and permalink for Activity 4.1.11" aria-label="Copy heading and permalink for Activity 4.1.11">🔗</a></div>
+</article><div class="autopermalink" aria-hidden="true" data-description="Subsection 4.1.3: Network Bandwidth and Latency"><a tabindex="-1" href="#network" title="Copy heading and permalink for Subsection 4.1.3: Network Bandwidth and Latency" aria-label="Copy heading and permalink for Subsection 4.1.3: Network Bandwidth and Latency">🔗</a></div>
 </section>
-<section class="subsection" id="fault-tolerance-and-failure">
+<section class="subsection" id="packets">
 <h2 class="heading hide-type">
-<span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">4.1.3</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Fault Tolerance and Network Failure</span>
+<span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">4.1.4</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">The Journey of a Packet</span>
 </h2>
-<article class="note remark-like" id="fault-tolerance-and-failure-2"><h3 class="heading">
+<div class="para" id="packets-2">When you click on a link for a song or a video on the Internet, how does that song or video travel to your computer or phone? It’s too big to be sent all at once, so it is broken into smaller pieces called <dfn class="terminology">packets</dfn> or <dfn class="terminology">data packets</dfn> that travel across the Internet and are reassembled at the destination.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#packets-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<article class="note remark-like" id="packets-3"><h3 class="heading">
 <span class="type">Essential Knowledge</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">4.1.14</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">4.1.C.1.</span>
 </h3>
-<div class="para" id="fault-tolerance-and-failure-2-2">Data sent over the Internet is broken into smaller pieces called packets. Sending data as packets lets routers send each packet along available paths, and the receiving device reassembles the data at the destination, which improves efficiency.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#fault-tolerance-and-failure-2-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="packets-3-2">Data sent over the Internet is broken into smaller pieces called <dfn class="terminology">packets</dfn>. Sending data as packets lets routers send each packet along available paths, and the receiving device reassembles the data at the destination, which improves efficiency.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#packets-3-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" aria-hidden="true" data-description="Essential Knowledge 4.1.14: 4.1.C.1"><a tabindex="-1" href="#fault-tolerance-and-failure-2" title="Copy heading and permalink for Essential Knowledge 4.1.14: 4.1.C.1" aria-label="Copy heading and permalink for Essential Knowledge 4.1.14: 4.1.C.1">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Essential Knowledge 4.1.14: 4.1.C.1"><a tabindex="-1" href="#packets-3" title="Copy heading and permalink for Essential Knowledge 4.1.14: 4.1.C.1" aria-label="Copy heading and permalink for Essential Knowledge 4.1.14: 4.1.C.1">🔗</a></div>
 </article>
-<article class="note remark-like" id="fault-tolerance-and-failure-3"><h3 class="heading">
+<div class="para" id="packets-4">Watch the following <a class="external" href="https://www.youtube.com/watch?v=AYdF7b3nMto" target="_blank">video</a> to learn how the Internet uses <dfn class="terminology">packet routing</dfn> to be <dfn class="terminology">fault-tolerant</dfn>, meaning it can continue to function even when some devices or connections fail.  Another fun but longer video is <a class="external" href="https://www.youtube.com/watch?v=PBWhzz_Gn10" target="_blank">Warriors of the Net</a> that animates a packet’s journey through the Internet or see this short <a class="external" href="https://www.youtube.com/watch?v=m0QxVGiLToA" target="_blank">2-minute video</a> about packets.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#packets-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="video-box" style="width: 100%;padding-top: 56.25%; margin-left: 0%; margin-right: 0%;"><iframe class="video" allowfullscreen="" src="https://www.youtube-nocookie.com/embed/AYdF7b3nMto?&amp;modestbranding=1&amp;rel=0" id="video-internet-packet-routing"></iframe></div>
+<div class="para" id="packets-6">Packets contain data as well as <dfn class="terminology">metadata</dfn> that provides information such as the packet’s origin and destination. The source and destination IP addresses are like mailing addresses on an envelope. Some protocols also include sequence information that lets the receiving device put data back in order and detect missing data. When needed, the protocol can request that missing data be sent again.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#packets-6" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="image-box" style="width: 75%; margin-left: 12.5%; margin-right: 12.5%;"><img src="external/_static/Unit4images/envelope.png" class="contained"></div>
+<article class="note remark-like" id="packets-8"><h3 class="heading">
 <span class="type">Essential Knowledge</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">4.1.15</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">4.1.C.2.</span>
 </h3>
-<div class="para" id="fault-tolerance-and-failure-3-2">A packet contains a chunk of data (part of a message) and metadata (information such as where it came from and where it is going). This metadata helps networks route packets to the correct destination and may help the receiving device reassemble the original data.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#fault-tolerance-and-failure-3-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="packets-8-2">A <dfn class="terminology">packet</dfn> contains a chunk of data (part of a message) and <dfn class="terminology">metadata</dfn> (information such as where it came from and where it is going). This metadata helps networks route packets to the correct destination and may help the receiving device reassemble the original data.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#packets-8-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" aria-hidden="true" data-description="Essential Knowledge 4.1.15: 4.1.C.2"><a tabindex="-1" href="#fault-tolerance-and-failure-3" title="Copy heading and permalink for Essential Knowledge 4.1.15: 4.1.C.2" aria-label="Copy heading and permalink for Essential Knowledge 4.1.15: 4.1.C.2">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Essential Knowledge 4.1.15: 4.1.C.2"><a tabindex="-1" href="#packets-8" title="Copy heading and permalink for Essential Knowledge 4.1.15: 4.1.C.2" aria-label="Copy heading and permalink for Essential Knowledge 4.1.15: 4.1.C.2">🔗</a></div>
 </article>
-<article class="note remark-like" id="fault-tolerance-and-failure-4"><h3 class="heading">
+<article class="note remark-like" id="packets-9"><h3 class="heading">
 <span class="type">Essential Knowledge</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">4.1.16</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">4.1.C.3.</span>
 </h3>
-<div class="para" id="fault-tolerance-and-failure-4-2">Packets may arrive out of order, be delayed, or fail to arrive. Certain Internet protocols help handle these situations by organizing packets correctly and requesting missing data when needed.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#fault-tolerance-and-failure-4-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="packets-9-2">Packets may arrive out of order, be delayed, or fail to arrive. Certain Internet protocols help handle these situations by organizing packets correctly and requesting missing data when needed.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#packets-9-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" aria-hidden="true" data-description="Essential Knowledge 4.1.16: 4.1.C.3"><a tabindex="-1" href="#fault-tolerance-and-failure-4" title="Copy heading and permalink for Essential Knowledge 4.1.16: 4.1.C.3" aria-label="Copy heading and permalink for Essential Knowledge 4.1.16: 4.1.C.3">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Essential Knowledge 4.1.16: 4.1.C.3"><a tabindex="-1" href="#packets-9" title="Copy heading and permalink for Essential Knowledge 4.1.16: 4.1.C.3" aria-label="Copy heading and permalink for Essential Knowledge 4.1.16: 4.1.C.3">🔗</a></div>
 </article>
-<article class="note remark-like" id="fault-tolerance-and-failure-5"><h3 class="heading">
+<article class="activity project-like" id="packet-structure"><h3 class="heading">
+<span class="type">Activity</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">4.1.12</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+</h3>
+<div class="ptx-runestone-container"><div class="runestone multiplechoice_section">
+<div class="exercise-statement">
+<div class="para" id="packet-structure-1-1">Which of the following best explains how data is typically assembled into packets for transmission over the Internet?<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#packet-structure-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+</div>
+<ul data-component="multiplechoice" class="exercise-interactives" id="rs-packet-structure" data-multipleanswers="false" data-random="">
+<li data-component="answer" id="rs-packet-structure_opt_a" data-correct="">
+<div class="para" id="packet-structure-2-1-1-1">Each packet contains data to be transmitted, along with metadata containing information used for routing the data.</div>
+</li>
+<li data-component="feedback" id="rs-packet-structure_opt_a">
+<div class="para" id="packet-structure-2-1-2-1">Correct! Packets contain a portion of the original data along with metadata, such as addressing information, that helps routers forward the packet toward its destination.</div>
+</li>
+<li data-component="answer" id="rs-packet-structure_opt_b">
+<div class="para" id="packet-structure-2-2-1-1">Each packet contains an encrypted version of the data to be transmitted, along with metadata containing the key needed to decrypt the data.</div>
+</li>
+<li data-component="feedback" id="rs-packet-structure_opt_b">
+<div class="para" id="packet-structure-2-2-2-1">No, packets do not necessarily contain encrypted data, and encryption keys are not generally included in packet metadata. Packets contain data and control information used for communication and routing.</div>
+</li>
+<li data-component="answer" id="rs-packet-structure_opt_c">
+<div class="para" id="packet-structure-2-3-1-1">Each packet contains only the metadata used to establish a direct connection so that the data can be transmitted.</div>
+</li>
+<li data-component="feedback" id="rs-packet-structure_opt_c">
+<div class="para" id="packet-structure-2-3-2-1">No, packets contain actual data as well as metadata. The metadata helps direct the packet through the network.</div>
+</li>
+<li data-component="answer" id="rs-packet-structure_opt_d">
+<div class="para" id="packet-structure-2-4-1-1">Each packet contains multiple data files bundled together, along with metadata describing how to categorize each data file.</div>
+</li>
+<li data-component="feedback" id="rs-packet-structure_opt_d">
+<div class="para" id="packet-structure-2-4-2-1">No, packets typically contain portions of a larger message or data transmission, not multiple complete files bundled together for categorization.</div>
+</li>
+</ul>
+</div></div>
+<div class="autopermalink" aria-hidden="true" data-description="Activity 4.1.12"><a tabindex="-1" href="#packet-structure" title="Copy heading and permalink for Activity 4.1.12" aria-label="Copy heading and permalink for Activity 4.1.12">🔗</a></div>
+</article>
+<div class="para" id="packets-11">As seen in the animation below, packets can be routed through different paths to reach their destination. Selecting the paths is called <dfn class="terminology">packet routing</dfn>. Using <dfn class="terminology">dynamic routing</dfn>, the paths are chosen based on current network conditions at each moment.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#packets-11" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="external/_static/Unit4images/Packet_Switching.gif" class="contained"></div>
+<article class="note remark-like" id="packets-13"><h3 class="heading">
 <span class="type">Essential Knowledge</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">4.1.17</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">4.1.C.4.</span>
 </h3>
-<div class="para" id="fault-tolerance-and-failure-5-2">Routing is the process of selecting a path for data to travel from a sender to a receiver. Routing on the Internet is usually dynamic, meaning data can take different paths when network conditions change, especially when links or devices fail or become unavailable.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#fault-tolerance-and-failure-5-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="packets-13-2">
+<dfn class="terminology">Routing</dfn> is the process of selecting a path for data to travel from a sender to a receiver. Routing on the Internet is usually dynamic, meaning data can take different paths when network conditions change, especially when links or devices fail or become unavailable.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#packets-13-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" aria-hidden="true" data-description="Essential Knowledge 4.1.17: 4.1.C.4"><a tabindex="-1" href="#fault-tolerance-and-failure-5" title="Copy heading and permalink for Essential Knowledge 4.1.17: 4.1.C.4" aria-label="Copy heading and permalink for Essential Knowledge 4.1.17: 4.1.C.4">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Essential Knowledge 4.1.17: 4.1.C.4"><a tabindex="-1" href="#packets-13" title="Copy heading and permalink for Essential Knowledge 4.1.17: 4.1.C.4" aria-label="Copy heading and permalink for Essential Knowledge 4.1.17: 4.1.C.4">🔗</a></div>
 </article>
-<article class="note remark-like" id="fault-tolerance-and-failure-6"><h3 class="heading">
-<span class="type">Essential Knowledge</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">4.1.18</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">4.1.C.5.</span>
+<article class="note remark-like" id="packets-14"><h3 class="heading">
+<span class="type">Essential Knowledge</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">4.1.18</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">4.1.C.7.</span>
 </h3>
-<div class="para" id="fault-tolerance-and-failure-6-2">The Internet is designed to be fault-tolerant, meaning it can continue to function even when some devices or connections fail. This matters because failures happen regularly, and fault tolerance helps users continue to access information.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#fault-tolerance-and-failure-6-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="packets-14-2">
+<dfn class="terminology">Dynamic routing</dfn> is the process of selecting a path for data to travel from a sender to a receiver based on current network conditions. Because data is sent as packets and routing is dynamic, packets can be redirected when a path fails. Redundant routes can allow the network to continue delivering data even if some devices or connections stop working.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#packets-14-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" aria-hidden="true" data-description="Essential Knowledge 4.1.18: 4.1.C.5"><a tabindex="-1" href="#fault-tolerance-and-failure-6" title="Copy heading and permalink for Essential Knowledge 4.1.18: 4.1.C.5" aria-label="Copy heading and permalink for Essential Knowledge 4.1.18: 4.1.C.5">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Essential Knowledge 4.1.18: 4.1.C.7"><a tabindex="-1" href="#packets-14" title="Copy heading and permalink for Essential Knowledge 4.1.18: 4.1.C.7" aria-label="Copy heading and permalink for Essential Knowledge 4.1.18: 4.1.C.7">🔗</a></div>
 </article>
-<article class="note remark-like" id="fault-tolerance-and-failure-7"><h3 class="heading">
-<span class="type">Essential Knowledge</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">4.1.19</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">4.1.C.6.</span>
+<article class="activity project-like" id="internet-routing"><h3 class="heading">
+<span class="type">Activity</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">4.1.13</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
 </h3>
-<div class="para" id="fault-tolerance-and-failure-7-2">Redundancy is the inclusion of extra components or alternate paths that can reduce the impact of failure when part of a system stops working. Redundancy often requires additional resources, but it increases reliability.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#fault-tolerance-and-failure-7-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="ptx-runestone-container"><div class="runestone multiplechoice_section">
+<div class="exercise-statement">
+<div class="para" id="internet-routing-1-1">True or False: All routes on the Internet are specified in advance and cannot change dynamically. Every packet of data sent over the Internet has only one possible route to reach its destination.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#internet-routing-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" aria-hidden="true" data-description="Essential Knowledge 4.1.19: 4.1.C.6"><a tabindex="-1" href="#fault-tolerance-and-failure-7" title="Copy heading and permalink for Essential Knowledge 4.1.19: 4.1.C.6" aria-label="Copy heading and permalink for Essential Knowledge 4.1.19: 4.1.C.6">🔗</a></div>
+</div>
+<ul data-component="multiplechoice" class="exercise-interactives" id="rs-internet-routing" data-multipleanswers="false" data-random="">
+<li data-component="answer" id="rs-internet-routing_opt_a">
+<div class="para" id="internet-routing-2-1-1-1">True</div>
+</li>
+<li data-component="feedback" id="rs-internet-routing_opt_a">
+<div class="para" id="internet-routing-2-1-2-1">No, packets do not have to follow a single predetermined route. Routers can dynamically select different routes based on network conditions and available connections.</div>
+</li>
+<li data-component="answer" id="rs-internet-routing_opt_b" data-correct="">
+<div class="para" id="internet-routing-2-2-1-1">False</div>
+</li>
+<li data-component="feedback" id="rs-internet-routing_opt_b">
+<div class="para" id="internet-routing-2-2-2-1">Correct! The Internet has multiple possible routes between devices. Routers can dynamically determine where to send packets, and different packets from the same message may travel along different routes.</div>
+</li>
+</ul>
+</div></div>
+<div class="autopermalink" aria-hidden="true" data-description="Activity 4.1.13"><a tabindex="-1" href="#internet-routing" title="Copy heading and permalink for Activity 4.1.13" aria-label="Copy heading and permalink for Activity 4.1.13">🔗</a></div>
 </article>
-<article class="note remark-like" id="fault-tolerance-and-failure-8"><h3 class="heading">
-<span class="type">Essential Knowledge</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">4.1.20</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">4.1.C.7.</span>
+<article class="activity project-like" id="email-packets"><h3 class="heading">
+<span class="type">Activity</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">4.1.14</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
 </h3>
-<div class="para" id="fault-tolerance-and-failure-8-2">Because data is sent as packets and routing is dynamic, packets can be redirected when a path fails. Redundant routes can allow the network to continue delivering data even if some devices or connections stop working.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#fault-tolerance-and-failure-8-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="ptx-runestone-container"><div class="runestone multiplechoice_section">
+<div class="exercise-statement">
+<div class="para" id="email-packets-1-1">When you send an email message using Gmail in your browser or the Gmail app, what typically happens to the message as it travels over the Internet?<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#email-packets-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" aria-hidden="true" data-description="Essential Knowledge 4.1.20: 4.1.C.7"><a tabindex="-1" href="#fault-tolerance-and-failure-8" title="Copy heading and permalink for Essential Knowledge 4.1.20: 4.1.C.7" aria-label="Copy heading and permalink for Essential Knowledge 4.1.20: 4.1.C.7">🔗</a></div>
+</div>
+<ul data-component="multiplechoice" class="exercise-interactives" id="rs-email-packets" data-multipleanswers="false" data-random="">
+<li data-component="answer" id="rs-email-packets_opt_a" data-correct="">
+<div class="para" id="email-packets-2-1-1-1">The message is divided into packets that are routed individually over the Internet to the recipient’s email server.</div>
+</li>
+<li data-component="feedback" id="rs-email-packets_opt_a">
+<div class="para" id="email-packets-2-1-2-1">Correct! Data sent over the Internet is divided into smaller packets. These packets are routed independently and may take different paths to reach their destination, where they are reassembled.</div>
+</li>
+<li data-component="answer" id="rs-email-packets_opt_b">
+<div class="para" id="email-packets-2-2-1-1">The message is placed into a single packet that is routed through the Internet to the recipient’s email server.</div>
+</li>
+<li data-component="feedback" id="rs-email-packets_opt_b">
+<div class="para" id="email-packets-2-2-2-1">No, messages are typically divided into multiple packets rather than transmitted as one large packet.</div>
+</li>
+<li data-component="answer" id="rs-email-packets_opt_c">
+<div class="para" id="email-packets-2-3-1-1">The message is placed into a single packet that is routed through a dedicated communication channel to the recipient’s email server.</div>
+</li>
+<li data-component="feedback" id="rs-email-packets_opt_c">
+<div class="para" id="email-packets-2-3-2-1">No, Internet communication generally uses packet routing rather than a dedicated communication channel reserved for the entire message.</div>
+</li>
+<li data-component="answer" id="rs-email-packets_opt_d">
+<div class="para" id="email-packets-2-4-1-1">The message is divided into packets that are routed through a dedicated communication channel to the recipient’s email server.</div>
+</li>
+<li data-component="feedback" id="rs-email-packets_opt_d">
+<div class="para" id="email-packets-2-4-2-1">No, although messages are divided into packets, the Internet does not generally reserve a dedicated communication channel for each message. Packets are routed independently across shared network connections.</div>
+</li>
+</ul>
+</div></div>
+<div class="autopermalink" aria-hidden="true" data-description="Activity 4.1.14"><a tabindex="-1" href="#email-packets" title="Copy heading and permalink for Activity 4.1.14" aria-label="Copy heading and permalink for Activity 4.1.14">🔗</a></div>
 </article>
-<article class="note remark-like" id="fault-tolerance-and-failure-9"><h3 class="heading">
+<div class="para" id="packets-17">If a connection fails along one path, packets can be rerouted along a different path to reach the destination. These <dfn class="terminology">redundant</dfn> or alternative paths make the Internet <dfn class="terminology">fault-tolerant</dfn>, so that it can continue to function even when some devices or connections fail. For example, if device B and E below are both down, there is still another path that can be taken in the redundant network below.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#packets-17" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="image-box" style="width: 75%; margin-left: 12.5%; margin-right: 12.5%;"><img src="external/_static/Unit4images/redundant-network.png" class="contained"></div>
+<article class="note remark-like" id="packets-19"><h3 class="heading">
+<span class="type">Essential Knowledge</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">4.1.19</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">4.1.C.5.</span>
+</h3>
+<div class="para" id="packets-19-2">The Internet is designed to be <dfn class="terminology">fault-tolerant</dfn>, meaning it can continue to function even when some devices or connections fail. This matters because failures happen regularly, and fault tolerance helps users continue to access information.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#packets-19-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Essential Knowledge 4.1.19: 4.1.C.5"><a tabindex="-1" href="#packets-19" title="Copy heading and permalink for Essential Knowledge 4.1.19: 4.1.C.5" aria-label="Copy heading and permalink for Essential Knowledge 4.1.19: 4.1.C.5">🔗</a></div>
+</article>
+<article class="note remark-like" id="packets-20"><h3 class="heading">
+<span class="type">Essential Knowledge</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">4.1.20</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">4.1.C.6.</span>
+</h3>
+<div class="para" id="packets-20-2">
+<dfn class="terminology">Redundancy</dfn> is the inclusion of extra components or alternate paths that can reduce the impact of failure when part of a system stops working. Redundancy often requires additional resources, but it increases reliability.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#packets-20-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Essential Knowledge 4.1.20: 4.1.C.6"><a tabindex="-1" href="#packets-20" title="Copy heading and permalink for Essential Knowledge 4.1.20: 4.1.C.6" aria-label="Copy heading and permalink for Essential Knowledge 4.1.20: 4.1.C.6">🔗</a></div>
+</article>
+<article class="note remark-like" id="packets-21"><h3 class="heading">
 <span class="type">Essential Knowledge</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">4.1.21</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">4.1.C.8.</span>
 </h3>
-<div class="para" id="fault-tolerance-and-failure-9-2">To predict the impact of a failure, identify the intermediate devices and connections used along a path. If removing one device or connection leaves no remaining path between the sender and receiver, that failure can stop communication. Redundancy reduces this risk by providing alternate paths.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#fault-tolerance-and-failure-9-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="packets-21-2">To predict the impact of a failure, identify the intermediate devices and connections used along a path. If removing one device or connection leaves no remaining path between the sender and receiver, that failure can stop communication. Redundancy reduces this risk by providing alternate paths.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#packets-21-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" aria-hidden="true" data-description="Essential Knowledge 4.1.21: 4.1.C.8"><a tabindex="-1" href="#fault-tolerance-and-failure-9" title="Copy heading and permalink for Essential Knowledge 4.1.21: 4.1.C.8" aria-label="Copy heading and permalink for Essential Knowledge 4.1.21: 4.1.C.8">🔗</a></div>
-</article><div class="autopermalink" aria-hidden="true" data-description="Subsection 4.1.3: Fault Tolerance and Network Failure"><a tabindex="-1" href="#fault-tolerance-and-failure" title="Copy heading and permalink for Subsection 4.1.3: Fault Tolerance and Network Failure" aria-label="Copy heading and permalink for Subsection 4.1.3: Fault Tolerance and Network Failure">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Essential Knowledge 4.1.21: 4.1.C.8"><a tabindex="-1" href="#packets-21" title="Copy heading and permalink for Essential Knowledge 4.1.21: 4.1.C.8" aria-label="Copy heading and permalink for Essential Knowledge 4.1.21: 4.1.C.8">🔗</a></div>
+</article>
+<article class="activity project-like" id="find-network-path"><h3 class="heading">
+<span class="type">Activity</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">4.1.15</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+</h3>
+<div class="ptx-runestone-container"><div class="runestone multiplechoice_section">
+<div class="exercise-statement">
+<div class="para" id="find-network-path-1-1">In the network diagram below where the devices at node B and E are down, which of the following paths can still be used to send packets from Host 1 to Host 2?<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#find-network-path-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div> <div class="image-box" style="width: 75%; margin-left: 12.5%; margin-right: 12.5%;"><img src="external/_static/Unit4images/redundant-network.png" class="contained"></div>
+</div>
+<ul data-component="multiplechoice" class="exercise-interactives" id="rs-find-network-path" data-multipleanswers="false" data-random="">
+<li data-component="answer" id="rs-find-network-path_opt_a" data-correct="">
+<div class="para" id="find-network-path-2-1-1-1">Host 1 → A → D → G → H → Host 2</div>
+</li>
+<li data-component="feedback" id="rs-find-network-path_opt_a">
+<div class="para" id="find-network-path-2-1-2-1">Correct! This is the only possible paths from Host 1 to Host 2.</div>
+</li>
+<li data-component="answer" id="rs-find-network-path_opt_b">
+<div class="para" id="find-network-path-2-2-1-1">Host 1 → A → B → C → F → Host 2</div>
+</li>
+<li data-component="feedback" id="rs-find-network-path_opt_b">
+<div class="para" id="find-network-path-2-2-2-1">No, this path is not possible because Node B is down.</div>
+</li>
+<li data-component="answer" id="rs-find-network-path_opt_c">
+<div class="para" id="find-network-path-2-3-1-1">Host 1 → A → E → Host 2</div>
+</li>
+<li data-component="feedback" id="rs-find-network-path_opt_c">
+<div class="para" id="find-network-path-2-3-2-1">No, this path is not possible because Node E is down.</div>
+</li>
+<li data-component="answer" id="rs-find-network-path_opt_d">
+<div class="para" id="find-network-path-2-4-1-1">Host 1 → Host 2</div>
+</li>
+<li data-component="feedback" id="rs-find-network-path_opt_d">
+<div class="para" id="find-network-path-2-4-2-1">No, this path is not possible because they are not directly connected.</div>
+</li>
+</ul>
+</div></div>
+<div class="autopermalink" aria-hidden="true" data-description="Activity 4.1.15"><a tabindex="-1" href="#find-network-path" title="Copy heading and permalink for Activity 4.1.15" aria-label="Copy heading and permalink for Activity 4.1.15">🔗</a></div>
+</article>
+<article class="activity project-like" id="routing-redundancy"><h3 class="heading">
+<span class="type">Activity</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">4.1.16</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+</h3>
+<div class="ptx-runestone-container"><div class="runestone multiplechoice_section">
+<div class="exercise-statement">
+<div class="para" id="routing-redundancy-1-1">Which of the following are benefits of redundancy in Internet routing, where multiple routes are available for packets to travel between devices? Select all that apply.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#routing-redundancy-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+</div>
+<ul data-component="multiplechoice" class="exercise-interactives" id="rs-routing-redundancy" data-multipleanswers="true" data-random="">
+<li data-component="answer" id="rs-routing-redundancy_opt_a">
+<div class="para" id="routing-redundancy-2-1-1-1">Avoiding the loss of packets</div>
+</li>
+<li data-component="feedback" id="rs-routing-redundancy_opt_a">
+<div class="para" id="routing-redundancy-2-1-2-1">No, redundancy does not guarantee that packets will never be lost.</div>
+</li>
+<li data-component="answer" id="rs-routing-redundancy_opt_b" data-correct="">
+<div class="para" id="routing-redundancy-2-2-1-1">Increasing the ease with which the Internet can scale or grow because additional routes can be added.</div>
+</li>
+<li data-component="feedback" id="rs-routing-redundancy_opt_b">
+<div class="para" id="routing-redundancy-2-2-2-1">Correct! The Internet’s distributed routing structure allows new networks and connections to be added without requiring a single central route for all communication.</div>
+</li>
+<li data-component="answer" id="rs-routing-redundancy_opt_c">
+<div class="para" id="routing-redundancy-2-3-1-1">Allowing many different communication protocols.</div>
+</li>
+<li data-component="feedback" id="rs-routing-redundancy_opt_c">
+<div class="para" id="routing-redundancy-2-3-2-1">No, supporting different communication protocols is not a direct benefit of having redundant routes. Redundancy provides alternative paths for data to travel.</div>
+</li>
+<li data-component="answer" id="rs-routing-redundancy_opt_d" data-correct="">
+<div class="para" id="routing-redundancy-2-4-1-1">Increasing the fault tolerance of the Internet so that packets can still reach their destination even if some connections have failed.</div>
+</li>
+<li data-component="feedback" id="rs-routing-redundancy_opt_d">
+<div class="para" id="routing-redundancy-2-4-2-1">Correct! Redundant routes increase fault tolerance by providing alternative paths when network connections or routers become unavailable.</div>
+</li>
+</ul>
+</div></div>
+<div class="autopermalink" aria-hidden="true" data-description="Activity 4.1.16"><a tabindex="-1" href="#routing-redundancy" title="Copy heading and permalink for Activity 4.1.16" aria-label="Copy heading and permalink for Activity 4.1.16">🔗</a></div>
+</article>
+<div class="para" id="packets-24">Our final activity will be simulating packet routing. We will act out the <dfn class="terminology">TCP/IP Model</dfn> which describes how data is packaged through four layers: Application, Transport, Network, and Link, as shown below. In each level, we add more metadata to the packet on the left to prepare it for the journey. You do not need to learn the details of the TCP/IP model, but the activity below will help you understand how packets are created to travel across the Internet and how they are assembled at the destination.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#packets-24" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="external/_static/Unit4images/tcpip.png" class="contained"></div>
+<article class="project project-like" id="packet-routing"><h3 class="heading">
+<span class="type">Project</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">4.1.17</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Packet Routing Activity.</span>
+</h3>
+<div class="ptx-runestone-container"><div class="runestone shortanswer_section"><div data-component="shortanswer" data-question_label="" class="journal" data-mathjax="" id="rs-packet-routing" data-placeholder="You can write here, and it will be saved on this device, but your response will not be graded.">
+<div class="para" id="packet-routing-2-1">In POGIL groups, do the <a class="external" href="https://docs.google.com/document/d/1vCMjrLWMzU-bs1zv8Btu-rjrcvzQ21J0HarznLgL30g/view?tab=t.0" target="_blank">Packet Routing Activity</a>. Each group is a computer acting out 4 layers of the TCP/IP model to send packets across a network to another group. Each person will represent one layer of the TCP/IP model and have a role to play in sending packets across the network. If you are working individually, do all 4 layers yourself.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#packet-routing-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div> 
+<div class="para" id="packet-routing-2-2">Once your group has sent and received a message, discuss the following questions:<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#packet-routing-2-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div> 
+<ol class="decimal" id="packet-routing-2-3">
+<li id="packet-routing-2-3-1">
+<div class="para" id="p-derived-packet-routing-2-3-1">Does it matter whether the packets of a message arrive in order? Explain how this set of protocols handles that.</div>
+<div class="autopermalink" aria-hidden="true" data-description="Item 1"><a tabindex="-1" href="#packet-routing-2-3-1" title="Copy heading and permalink for Item 1" aria-label="Copy heading and permalink for Item 1">🔗</a></div>
+</li>
+<li id="packet-routing-2-3-2">
+<div class="para" id="p-derived-packet-routing-2-3-2">What should happen if a packet goes missing? Who (which layer) would handle this? What action would they have to take? And what additional information would be needed in the packet in order to handle it?</div>
+<div class="autopermalink" aria-hidden="true" data-description="Item 2"><a tabindex="-1" href="#packet-routing-2-3-2" title="Copy heading and permalink for Item 2" aria-label="Copy heading and permalink for Item 2">🔗</a></div>
+</li>
+<li id="packet-routing-2-3-3">
+<div class="para" id="p-derived-packet-routing-2-3-3">Suppose there is some kind of hardware glitch that corrupts one or more bits in a packet. Can this be detected? What action should be taken in this case? What additional information would be needed to handle this issue?</div>
+<div class="autopermalink" aria-hidden="true" data-description="Item 3"><a tabindex="-1" href="#packet-routing-2-3-3" title="Copy heading and permalink for Item 3" aria-label="Copy heading and permalink for Item 3">🔗</a></div>
+</li>
+<li id="packet-routing-2-3-4">
+<div class="para" id="p-derived-packet-routing-2-3-4">Complex systems, like networks, fail at unexpected times. Often multiple devices fail at the same time.  Explain how the TCP/IP model continues to function even when parts of the system fail.</div>
+<div class="autopermalink" aria-hidden="true" data-description="Item 4"><a tabindex="-1" href="#packet-routing-2-3-4" title="Copy heading and permalink for Item 4" aria-label="Copy heading and permalink for Item 4">🔗</a></div>
+</li>
+<li id="packet-routing-2-3-5">
+<div class="para" id="p-derived-packet-routing-2-3-5">As the packets are being transmitted through the network, can people other than the sender and receiver read the messages? What methods can we use to protect the message?</div>
+<div class="autopermalink" aria-hidden="true" data-description="Item 5"><a tabindex="-1" href="#packet-routing-2-3-5" title="Copy heading and permalink for Item 5" aria-label="Copy heading and permalink for Item 5">🔗</a></div>
+</li>
+</ol>
+</div></div></div>
+<div class="autopermalink" aria-hidden="true" data-description="Project 4.1.17: Packet Routing Activity"><a tabindex="-1" href="#packet-routing" title="Copy heading and permalink for Project 4.1.17: Packet Routing Activity" aria-label="Copy heading and permalink for Project 4.1.17: Packet Routing Activity">🔗</a></div>
+</article><div class="autopermalink" aria-hidden="true" data-description="Subsection 4.1.4: The Journey of a Packet"><a tabindex="-1" href="#packets" title="Copy heading and permalink for Subsection 4.1.4: The Journey of a Packet" aria-label="Copy heading and permalink for Subsection 4.1.4: The Journey of a Packet">🔗</a></div>
 </section>
 <section class="subsection" id="LOs-4-1">
 <h2 class="heading hide-type">
-<span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">4.1.4</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Learning Objectives Review</span>
+<span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">4.1.5</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Learning Objectives Review</span>
 </h2>
 <article class="remark remark-like" id="LOs-4-1-2"><h3 class="heading">
 <span class="type">Learning Objective</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">4.1.22</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">4.1.A.</span>
@@ -757,13 +1409,64 @@ eBookConfig.enable_chatcodes =  false;
 <div class="para" id="LOs-4-1-4-2">Explain how network failures can occur, and how fault-tolerant networks use packets, dynamic routing, and redundancy to keep communication working.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#LOs-4-1-4-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="autopermalink" aria-hidden="true" data-description="Learning Objective 4.1.24: 4.1.C"><a tabindex="-1" href="#LOs-4-1-4" title="Copy heading and permalink for Learning Objective 4.1.24: 4.1.C" aria-label="Copy heading and permalink for Learning Objective 4.1.24: 4.1.C">🔗</a></div>
-</article><div class="autopermalink" aria-hidden="true" data-description="Subsection 4.1.4: Learning Objectives Review"><a tabindex="-1" href="#LOs-4-1" title="Copy heading and permalink for Subsection 4.1.4: Learning Objectives Review" aria-label="Copy heading and permalink for Subsection 4.1.4: Learning Objectives Review">🔗</a></div>
+</article><div class="autopermalink" aria-hidden="true" data-description="Subsection 4.1.5: Learning Objectives Review"><a tabindex="-1" href="#LOs-4-1" title="Copy heading and permalink for Subsection 4.1.5: Learning Objectives Review" aria-label="Copy heading and permalink for Subsection 4.1.5: Learning Objectives Review">🔗</a></div>
 </section>
 <section class="subsection" id="vocab-4-1">
 <h2 class="heading hide-type">
-<span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">4.1.5</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Vocabulary Review</span>
+<span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">4.1.6</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Vocabulary Review</span>
 </h2>
-<div class="autopermalink" aria-hidden="true" data-description="Subsection 4.1.5: Vocabulary Review"><a tabindex="-1" href="#vocab-4-1" title="Copy heading and permalink for Subsection 4.1.5: Vocabulary Review" aria-label="Copy heading and permalink for Subsection 4.1.5: Vocabulary Review">🔗</a></div>
+<article class="activity project-like" id="vocab-match-4-1-part1"><h3 class="heading">
+<span class="type">Activity</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">4.1.18</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+</h3>
+<div class="ptx-runestone-container"><div class="runestone cardsort_section"><ul data-component="dragndrop" data-question_label="" style="visibility: hidden;" id="rs-vocab-match-4-1-part1">
+<span data-subcomponent="question">
+<div class="para" id="vocab-match-4-1-part1-1-1">Review the vocabulary in this lesson. Drag the vocabulary term from the left and drop it on its correct definition on the right. Click the "Check Me" button to see if you are correct.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#vocab-match-4-1-part1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div></span><span data-subcomponent="feedback">
+<div class="para" id="vocab-match-4-1-part1-2-1">Find the words in the lesson above and try again.</div></span><li data-subcomponent="draggable" id="rs-vocab-match-4-1-part1_drag1" data-category="1">Internet</li>
+<li data-subcomponent="dropzone" for="rs-vocab-match-4-1-part1_drag1" data-category="1">a global network of networks</li>
+<li data-subcomponent="draggable" id="rs-vocab-match-4-1-part1_drag2" data-category="2">computer network</li>
+<li data-subcomponent="dropzone" for="rs-vocab-match-4-1-part1_drag2" data-category="2">a group of interconnected computing devices</li>
+<li data-subcomponent="draggable" id="rs-vocab-match-4-1-part1_drag3" data-category="3">Internet Service Provider (ISP)</li>
+<li data-subcomponent="dropzone" for="rs-vocab-match-4-1-part1_drag3" data-category="3">an organization that provides internet access</li>
+<li data-subcomponent="draggable" id="rs-vocab-match-4-1-part1_drag4" data-category="4">computing system</li>
+<li data-subcomponent="dropzone" for="rs-vocab-match-4-1-part1_drag4" data-category="4">a group of computing devices and programs that work together to accomplish a shared purpose</li>
+<li data-subcomponent="draggable" id="rs-vocab-match-4-1-part1_drag5" data-category="5">protocol</li>
+<li data-subcomponent="dropzone" for="rs-vocab-match-4-1-part1_drag5" data-category="5">an agreed-upon set of rules for communication</li>
+<li data-subcomponent="draggable" id="rs-vocab-match-4-1-part1_drag6" data-category="6">HTTP (Hypertext Transfer Protocol)</li>
+<li data-subcomponent="dropzone" for="rs-vocab-match-4-1-part1_drag6" data-category="6">a protocol used to retrieve web pages formatted using HTML from the internet</li>
+<li data-subcomponent="draggable" id="rs-vocab-match-4-1-part1_drag7" data-category="7">IP (Internet Protocol)</li>
+<li data-subcomponent="dropzone" for="rs-vocab-match-4-1-part1_drag7" data-category="7">a protocol for unique IP addresses for devices on the Internet</li>
+<li data-subcomponent="draggable" id="rs-vocab-match-4-1-part1_drag8" data-category="8">nonproprietary</li>
+<li data-subcomponent="dropzone" for="rs-vocab-match-4-1-part1_drag8" data-category="8">not owned or controlled by a single company</li>
+</ul></div></div>
+<div class="autopermalink" aria-hidden="true" data-description="Activity 4.1.18"><a tabindex="-1" href="#vocab-match-4-1-part1" title="Copy heading and permalink for Activity 4.1.18" aria-label="Copy heading and permalink for Activity 4.1.18">🔗</a></div>
+</article>
+<article class="activity project-like" id="vocab-match-4-1-part2"><h3 class="heading">
+<span class="type">Activity</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">4.1.19</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+</h3>
+<div class="ptx-runestone-container"><div class="runestone cardsort_section"><ul data-component="dragndrop" data-question_label="" style="visibility: hidden;" id="rs-vocab-match-4-1-part2">
+<span data-subcomponent="question">
+<div class="para" id="vocab-match-4-1-part2-1-1">Review the vocabulary in this lesson. Drag the vocabulary term from the left and drop it on its correct definition on the right. Click the "Check Me" button to see if you are correct.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#vocab-match-4-1-part2-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div></span><span data-subcomponent="feedback">
+<div class="para" id="vocab-match-4-1-part2-2-1">Find the words in the lesson above and try again.</div></span><li data-subcomponent="draggable" id="rs-vocab-match-4-1-part2_drag1" data-category="1">bandwidth</li>
+<li data-subcomponent="dropzone" for="rs-vocab-match-4-1-part2_drag1" data-category="1">the maximum amount of data that can be transmitted over a network connection in a given time period</li>
+<li data-subcomponent="draggable" id="rs-vocab-match-4-1-part2_drag2" data-category="2">latency</li>
+<li data-subcomponent="dropzone" for="rs-vocab-match-4-1-part2_drag2" data-category="2">the time it takes for data to travel from one device to another across a network</li>
+<li data-subcomponent="draggable" id="rs-vocab-match-4-1-part2_drag3" data-category="3">packet</li>
+<li data-subcomponent="dropzone" for="rs-vocab-match-4-1-part2_drag3" data-category="3">a chunk of data and metadata that is sent over a network</li>
+<li data-subcomponent="draggable" id="rs-vocab-match-4-1-part2_drag4" data-category="4">metadata</li>
+<li data-subcomponent="dropzone" for="rs-vocab-match-4-1-part2_drag4" data-category="4">part of a data packet that describes the data, including the IP address that it came from and where it is going</li>
+<li data-subcomponent="draggable" id="rs-vocab-match-4-1-part2_drag5" data-category="5">routing</li>
+<li data-subcomponent="dropzone" for="rs-vocab-match-4-1-part2_drag5" data-category="5">selecting a path for data to travel through a network</li>
+<li data-subcomponent="draggable" id="rs-vocab-match-4-1-part2_drag6" data-category="6">dynamic routing</li>
+<li data-subcomponent="dropzone" for="rs-vocab-match-4-1-part2_drag6" data-category="6">selecting different paths for data based on current network conditions</li>
+<li data-subcomponent="draggable" id="rs-vocab-match-4-1-part2_drag7" data-category="7">fault-tolerant</li>
+<li data-subcomponent="dropzone" for="rs-vocab-match-4-1-part2_drag7" data-category="7">able to continue to function even when some devices or connections fail</li>
+<li data-subcomponent="draggable" id="rs-vocab-match-4-1-part2_drag8" data-category="8">redundancy</li>
+<li data-subcomponent="dropzone" for="rs-vocab-match-4-1-part2_drag8" data-category="8">the inclusion of extra alternate paths through a network</li>
+</ul></div></div>
+<div class="autopermalink" aria-hidden="true" data-description="Activity 4.1.19"><a tabindex="-1" href="#vocab-match-4-1-part2" title="Copy heading and permalink for Activity 4.1.19" aria-label="Copy heading and permalink for Activity 4.1.19">🔗</a></div>
+</article><div class="autopermalink" aria-hidden="true" data-description="Subsection 4.1.6: Vocabulary Review"><a tabindex="-1" href="#vocab-4-1" title="Copy heading and permalink for Subsection 4.1.6: Vocabulary Review" aria-label="Copy heading and permalink for Subsection 4.1.6: Vocabulary Review">🔗</a></div>
 </section><div class="autopermalink" aria-hidden="true" data-description="Section 4.1: The Internet"><a tabindex="-1" href="#topic-4-1-internet" title="Copy heading and permalink for Section 4.1: The Internet" aria-label="Copy heading and permalink for Section 4.1: The Internet">🔗</a></div>
 </section>
 </div>
