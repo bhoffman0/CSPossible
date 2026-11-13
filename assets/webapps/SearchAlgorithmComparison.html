@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Linear vs Binary Search</title>
+<style>
+:root{--bg:#fafaf7;--card:#fff;--text:#1d1d1b;--muted:#6b6b66;--line:#e2e1da;--lin:#c2410c;--bin:#0f766e;--accent:#1d1d1b;--accent-text:#fff;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#161614;--card:#1f1f1c;--text:#ecebe5;--muted:#9a9990;--line:#33322d;--lin:#fb923c;--bin:#2dd4bf;--accent:#ecebe5;--accent-text:#161614;color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#161614;--card:#1f1f1c;--text:#ecebe5;--muted:#9a9990;--line:#33322d;--lin:#fb923c;--bin:#2dd4bf;--accent:#ecebe5;--accent-text:#161614;color-scheme:dark}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--text);font:15px/1.4 system-ui,-apple-system,"Segoe UI",sans-serif}
+main{max-width:720px;margin:0 auto;padding:14px 14px 20px}
+h1{font-size:1.4rem;margin:0 0 2px}
+p.sub{color:var(--muted);margin:0 0 12px;font-size:.9rem}
+.card{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:12px 14px;margin-bottom:12px}
+.card h2{font-size:.75rem;letter-spacing:.06em;text-transform:uppercase;color:var(--muted);margin:0 0 8px}
+.row{display:flex;flex-wrap:wrap;gap:10px;align-items:end}
+.top{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-bottom:12px}
+.top .card{margin-bottom:0}
+.top label{flex:1;min-width:70px}
+.top input{width:100%}
+@media (max-width:560px){.top{grid-template-columns:1fr}}
+label{display:flex;flex-direction:column;font-size:.8rem;color:var(--muted);gap:3px}
+input{font:inherit;padding:6px 10px;border:1px solid var(--line);border-radius:8px;background:var(--bg);color:var(--text);width:130px}
+button{font:inherit;padding:7px 14px;border-radius:8px;border:1px solid var(--line);background:var(--card);color:var(--text);cursor:pointer}
+button.primary{background:var(--accent);color:var(--accent-text);border-color:var(--accent)}
+button:disabled{opacity:.4;cursor:not-allowed}
+.preview{font:.78rem/1.4 ui-monospace,Menlo,Consolas,monospace;color:var(--muted);word-break:break-word;margin-top:8px}
+.quick{display:flex;flex-wrap:wrap;gap:5px;margin-top:6px}
+.quick button{font-size:.8rem;padding:4px 10px}
+.grid{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+@media (max-width:540px){.grid{grid-template-columns:1fr}}
+.res{border:1px solid var(--line);border-radius:10px;padding:10px 12px;border-top:4px solid}
+.res.lin{border-top-color:var(--lin)}.res.bin{border-top-color:var(--bin)}
+.res h3{margin:0 0 6px;font-size:1rem}
+.res.lin h3{color:var(--lin)}.res.bin h3{color:var(--bin)}
+.stat{display:flex;justify-content:space-between;padding:2px 0;font-size:.9rem}
+.stat b{font-variant-numeric:tabular-nums}
+.bars{margin-top:8px}
+.bar{height:8px;border-radius:4px;margin:4px 0 6px;min-width:2px}
+.msg{margin-top:8px;font-size:.9rem}
+.err{color:#dc2626}
+.note{font-size:.75rem;color:var(--muted);margin-top:6px}
+</style>
+</head>
+<body>
+<main>
+<h1>Linear vs Binary Search</h1>
+<p class="sub">Generate a sorted list of random numbers, pick a target, and compare time and comparisons.</p>
+
+<div class="top">
+<section class="card">
+<h2>1 · Generate list</h2>
+<div class="row">
+<label>List size<input id="size" type="number" min="1" max="10000" value="1000"></label>
+<label>Max value<input id="maxv" type="number" min="1" max="100000" value="10000"></label>
+<button class="primary" id="gen">Generate</button>
+</div>
+<div class="preview" id="preview"></div>
+</section>
+
+<section class="card">
+<h2>2 · Search</h2>
+<div class="row">
+<label>Number to find<input id="target" type="number" disabled></label>
+<button class="primary" id="run" disabled>Run searches</button>
+</div>
+<div class="quick" id="quick"></div>
+<div class="msg" id="msg"></div>
+</section>
+</div>
+
+<section class="card" id="results" hidden>
+<h2>Results</h2>
+<div class="grid">
+<div class="res lin"><h3>Linear search</h3>
+<div class="stat"><span>Result</span><b id="l-found"></b></div>
+<div class="stat"><span>Comparisons</span><b id="l-cmp"></b></div>
+<div class="stat"><span>Time / search</span><b id="l-time"></b></div></div>
+<div class="res bin"><h3>Binary search</h3>
+<div class="stat"><span>Result</span><b id="b-found"></b></div>
+<div class="stat"><span>Comparisons</span><b id="b-cmp"></b></div>
+<div class="stat"><span>Time / search</span><b id="b-time"></b></div></div>
+</div>
+<div class="bars">
+<div style="font-size:.8rem;color:var(--muted)">Comparisons</div>
+<div class="bar" id="bar-lc" style="background:var(--lin)"></div>
+<div class="bar" id="bar-bc" style="background:var(--bin)"></div>
+</div>
+<div class="msg" id="summary"></div>
+<div class="note">Times are averaged over many repeated runs (a single search is too fast for the browser’s clock to measure reliably). Comparisons count one equality/ordering check per element examined; the timed runs don’t include the counting overhead.</div>
+</section>
+</main>
+
+<script>
+let arr=null;
+const $=id=>document.getElementById(id);
+const fmtN=n=>n.toLocaleString();
+function fmtT(ms){
+  if(ms<0.001)return (ms*1e6).toFixed(0)+" ns";
+  if(ms<1)return (ms*1000).toFixed(2)+" µs";
+  return ms.toFixed(3)+" ms";
+}
+
+function linearCount(a,t){let c=0;for(let i=0;i<a.length;i++){c++;if(a[i]===t)return{i,c};}return{i:-1,c};}
+function binaryCount(a,t){let lo=0,hi=a.length-1,c=0;while(lo<=hi){const m=(lo+hi)>>>1;c++;if(a[m]===t)return{i:m,c};if(a[m]<t)lo=m+1;else hi=m-1;}return{i:-1,c};}
+function linearFast(a,t){for(let i=0;i<a.length;i++)if(a[i]===t)return i;return -1;}
+function binaryFast(a,t){let lo=0,hi=a.length-1;while(lo<=hi){const m=(lo+hi)>>>1;const v=a[m];if(v===t)return m;if(v<t)lo=m+1;else hi=m-1;}return -1;}
+
+let sink=0;
+function bench(fn,a,t){
+  let reps=1;
+  for(;;){
+    const t0=performance.now();
+    for(let i=0;i<reps;i++)sink+=fn(a,t);
+    const dt=performance.now()-t0;
+    if(dt>=40||reps>=4e6)return dt/reps;
+    reps*=4;
+  }
+}
+
+function showMsg(text,err){const m=$("msg");m.textContent=text;m.className="msg"+(err?" err":"");}
+
+$("gen").onclick=()=>{
+  const n=Math.floor(+$("size").value),max=Math.floor(+$("maxv").value);
+  if(!(n>=1&&n<=10000)||!(max>=1&&max<=100000)){showMsg("List size must be 1–10,000 and max value 1–100,000.",true);return;}
+  const a=new Float64Array(n);
+  for(let i=0;i<n;i++)a[i]=Math.floor(Math.random()*(max+1));
+  a.sort();
+  arr=a;
+  const head=Array.from(a.slice(0,10)).map(fmtN).join(", ");
+  const tail=n>20?" … "+Array.from(a.slice(-5)).map(fmtN).join(", "):"";
+  $("preview").textContent=`${fmtN(n)} numbers (0–${fmtN(max)}), sorted: ${head}${tail}`;
+  $("target").disabled=false;$("run").disabled=false;
+  $("target").value=a[Math.floor(n/2)];
+  $("results").hidden=true;showMsg("");
+  const q=$("quick");q.innerHTML="";
+  [["First element",()=>a[0]],["Middle element",()=>a[n>>1]],["Last element",()=>a[n-1]],["Not in list",()=>max+1]].forEach(([l,f])=>{
+    const b=document.createElement("button");b.textContent=l;
+    b.onclick=()=>{$("target").value=f();run();};q.appendChild(b);
+  });
+};
+
+function run(){
+  if(!arr)return;
+  const raw=$("target").value;
+  const t=Number(raw);
+  if(raw===""||!Number.isFinite(t)){showMsg("Enter a number to search for.",true);return;}
+  showMsg("");
+  const L=linearCount(arr,t),B=binaryCount(arr,t);
+  const lt=bench(linearFast,arr,t),bt=bench(binaryFast,arr,t);
+  $("results").hidden=false;
+  $("l-found").textContent=L.i>=0?"found at index "+fmtN(L.i):"not found";
+  $("b-found").textContent=B.i>=0?"found at index "+fmtN(B.i):"not found";
+  $("l-cmp").textContent=fmtN(L.c);$("b-cmp").textContent=fmtN(B.c);
+  $("l-time").textContent=fmtT(lt);$("b-time").textContent=fmtT(bt);
+  $("bar-lc").style.width="100%";
+  $("bar-bc").style.width=Math.max(0.5,B.c/L.c*100)+"%";
+  const cr=(L.c/B.c).toFixed(1),tr=(lt/bt).toFixed(1);
+  let s=`Binary search used ${cr}× fewer comparisons`;
+  s+=bt<lt?` and was about ${tr}× faster.`:` but was not faster in time here (${tr}× ratio) — with an early match, linear search can win.`;
+  if(B.i>=0&&L.i>=0&&B.i!==L.i)s+=" (The list has duplicates, so the two searches landed on different matching indices.)";
+  $("summary").textContent=s;
+}
+$("run").onclick=run;
+$("target").addEventListener("keydown",e=>{if(e.key==="Enter")run();});
+$("gen").click();
+</script>
+</body>
+</html>

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Traveling Salesman Explorer</title>
+<style>
+:root{--bg:#f6f4ee;--card:#fff;--ink:#1d2a2e;--mute:#5b6b70;--line:#cfd6d4;--acc:#0b7a75;--acc2:#e2572b;--ok:#2e7d32;--bad:#b3261e;--tour:#0b7a75;--best:#e2572b;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px);color-scheme:light}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#121a1c;--card:#1b2629;--ink:#e8efee;--mute:#9db0b3;--line:#34464a;--acc:#4fd1c5;--acc2:#ff8a65;--ok:#7bd88f;--bad:#ff8a80;--tour:#4fd1c5;--best:#ff8a65;color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#121a1c;--card:#1b2629;--ink:#e8efee;--mute:#9db0b3;--line:#34464a;--acc:#4fd1c5;--acc2:#ff8a65;--ok:#7bd88f;--bad:#ff8a80;--tour:#4fd1c5;--best:#ff8a65;color-scheme:dark}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.5 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+main{max-width:980px;margin:0 auto;padding:16px}
+h1{font-size:1.6rem;margin:.2em 0}h2{font-size:1.15rem;margin:0 0 .5em}
+p{margin:.4em 0}.mute{color:var(--mute)}
+.card{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:14px;margin:14px 0}
+.grid{display:grid;grid-template-columns:3fr 2fr;gap:14px}
+@media(max-width:760px){.grid{grid-template-columns:1fr}}
+svg{width:100%;height:auto;display:block;background:var(--bg);border-radius:8px;border:1px solid var(--line)}
+.city{cursor:pointer}.city circle{fill:var(--card);stroke:var(--ink);stroke-width:2.5}
+.city.in circle{fill:var(--acc);stroke:var(--acc)}.city.start circle{fill:var(--acc2);stroke:var(--acc2)}
+.city text{font-size:14px;font-weight:600;fill:var(--ink);paint-order:stroke;stroke:var(--bg);stroke-width:4px}
+.edge{stroke:var(--line);stroke-width:1.5}.tour{stroke:var(--tour);stroke-width:4;stroke-linecap:round}.best{stroke:var(--best);stroke-width:4;stroke-dasharray:8 6}
+.lbl{font-size:12px;fill:var(--mute);paint-order:stroke;stroke:var(--bg);stroke-width:4px;text-anchor:middle}.lbl.t{fill:var(--ink);font-weight:700}
+button{font:inherit;padding:7px 12px;border-radius:8px;border:1px solid var(--line);background:var(--card);color:var(--ink);cursor:pointer;margin:3px 3px 3px 0}
+button.p{background:var(--acc);color:#fff;border-color:var(--acc)}@media(prefers-color-scheme:dark){:root:not([data-theme="light"]) button.p{color:#0b1416}}
+.big{font-size:1.8rem;font-weight:800}
+.table{overflow-x:auto}table{border-collapse:collapse;font-size:.85rem;width:100%}td,th{border:1px solid var(--line);padding:3px 5px;text-align:center}
+.q label{display:block;padding:5px 8px;border:1px solid var(--line);border-radius:8px;margin:5px 0;cursor:pointer}
+.fb{margin-top:6px;font-weight:600}.ok{color:var(--ok)}.no{color:var(--bad)}
+.legend span{display:inline-block;margin-right:12px;font-size:.85rem}
+</style></head><body><main>
+<h1>⚡ Traveling Salesman in Kanto</h1>
+<p class="mute">A Pokemon Trainer must visit every city once and return home. Which route is shortest? The map shows towns from the Kanto region of the Pokémon games; distances are made-up miles.</p>
+
+<div class="grid">
+<div class="card"><svg id="map" viewBox="0 0 600 380" role="img" aria-label="Map of six towns in Kanto"></svg>
+<p class="mute" style="font-size:.85rem">Tap cities in order to build a route. Tap the start city (orange) last to close the loop.</p></div>
+<div class="card">
+<h2>Your route</h2>
+<div id="path" class="mute">Tap a city to start.</div>
+<div class="big"><span id="len">0</span> <span style="font-size:1rem" class="mute">miles</span></div>
+<div id="status" class="mute"></div>
+<div>
+<button id="undo">↶ Undo</button><button id="reset">Reset</button>
+<button id="nn" class="p">Nearest-neighbor</button><button id="opt">Reveal shortest</button>
+<label style="display:block;margin-top:6px"><input type="checkbox" id="all"> Show all distances</label></div>
+<div class="legend" style="margin-top:8px"><span style="color:var(--tour)">━ your route</span><span style="color:var(--best)">╍ shortest</span></div>
+</div></div>
+
+<div class="card table"><h2>Distance table (miles)</h2><div id="tbl"></div></div>
+
+</main>
+<script>
+const C=[["Pallet Town",130,320],["Viridian City",130,205],["Pewter City",170,60],["Cerulean City",390,70],["Lavender Town",510,165],["Vermilion City",380,285]];
+const N=C.length,S=0.3,svg=document.getElementById("map"),NS="http://www.w3.org/2000/svg";
+const D=C.map(a=>C.map(b=>Math.round(Math.hypot(a[1]-b[1],a[2]-b[2])*S)));
+let tour=[],showBest=null,closed=false;
+const el=(t,a,p)=>{const e=document.createElementNS(NS,t);for(const k in a)e.setAttribute(k,a[k]);(p||svg).appendChild(e);return e};
+const len=t=>t.reduce((s,c,i)=>i?s+D[t[i-1]][c]:s,0);
+function perms(a){if(a.length<2)return[a];const r=[];a.forEach((x,i)=>perms([...a.slice(0,i),...a.slice(i+1)]).forEach(p=>r.push([x,...p])));return r}
+let bestT=null,bestL=1e9;perms([1,2,3,4,5]).forEach(p=>{const t=[0,...p,0],l=len(t);if(l<bestL){bestL=l;bestT=t}});
+function nnTour(){const t=[0];while(t.length<N){const l=t[t.length-1];let b=-1;for(let i=0;i<N;i++)if(!t.includes(i)&&(b<0||D[l][i]<D[l][b]))b=i;t.push(b)}t.push(0);return t}
+function edge(a,b,cls,lbl,lc){const x1=C[a][1],y1=C[a][2],x2=C[b][1],y2=C[b][2];
+ if(cls)el("line",{x1,y1,x2,y2,class:cls});
+ if(lbl){const t=el("text",{x:(x1+x2)/2,y:(y1+y2)/2+4,class:"lbl "+(lc||"")});t.textContent=D[a][b]}}
+function draw(){
+ svg.innerHTML="";const all=document.getElementById("all").checked;
+ for(let i=0;i<N;i++)for(let j=i+1;j<N;j++)el("line",{x1:C[i][1],y1:C[i][2],x2:C[j][1],y2:C[j][2],class:"edge"});
+ if(all)for(let i=0;i<N;i++)for(let j=i+1;j<N;j++)edge(i,j,null,true);
+ if(showBest)for(let i=1;i<showBest.length;i++)edge(showBest[i-1],showBest[i],"best");
+ const full=closed?tour:tour;
+ for(let i=1;i<full.length;i++)edge(full[i-1],full[i],"tour",true,"t");
+ C.forEach((c,i)=>{const g=el("g",{class:"city"+(tour.includes(i)?" in":"")+(tour[0]===i?" start":""),tabindex:0,role:"button","aria-label":c[0]});
+  el("circle",{cx:c[1],cy:c[2],r:12},g);const t=el("text",{x:c[1],y:c[2]-18,"text-anchor":"middle"},g);t.textContent=c[0];
+  g.onclick=()=>pick(i);g.onkeydown=e=>{if(e.key==="Enter"||e.key===" "){e.preventDefault();pick(i)}}});
+ document.getElementById("len").textContent=len(tour);
+ document.getElementById("path").textContent=tour.length?tour.map(i=>C[i][0]).join(" → "):"Tap a city to start.";
+ const st=document.getElementById("status");
+ st.textContent=closed?"✔ Complete round trip!":tour.length?`Visited ${new Set(tour).size} of ${N}. ${tour.length===N?"Now return to "+C[0][0]+".":""}`:"";
+}
+function pick(i){if(closed)return;
+ if(!tour.length){tour=[i]}
+ else if(!tour.includes(i))tour.push(i);
+ else if(i===tour[0]&&tour.length===N){tour.push(i);closed=true}
+ draw()}
+// start city is always Denver for fair comparison
+const origPick=pick;pick=function(i){if(!tour.length&&i!==0){document.getElementById("status").textContent="Start at Pallet Town (orange) so routes are comparable.";return}origPick(i)};
+document.getElementById("undo").onclick=()=>{tour.pop();closed=false;draw()};
+document.getElementById("reset").onclick=()=>{tour=[];closed=false;showBest=null;draw()};
+document.getElementById("opt").onclick=()=>{showBest=bestT;draw()};
+document.getElementById("all").onchange=draw;
+document.getElementById("nn").onclick=()=>{tour=nnTour();closed=true;draw();const n=len(tour);document.getElementById("status").textContent=`Nearest-neighbor gives ${n} miles. Shortest possible: ${bestL} miles.`+(n>bestL?` It is ${n-bestL} miles longer!`:" Here it happens to be optimal.")};
+// distance table
+document.getElementById("tbl").innerHTML="<table><tr><th></th>"+C.map(c=>"<th>"+c[0]+"</th>").join("")+"</tr>"+C.map((c,i)=>"<tr><th>"+c[0]+"</th>"+D[i].map(v=>"<td>"+(v||"–")+"</td>").join("")+"</tr>").join("")+"</table>";
+draw();
+</script></body></html>

@@ -6,47 +6,409 @@
 <introduction>
   <p>
     In this lesson we are going to use an App Inventor app to analyze the algorithms we have been studying. You will be running two different apps, one to test the search algorithms and one to test the sorting algorithms.
-  </p><p>
-    This activity will resemble that of a scientific investigation. You'll run the apps repeatedly on different lists of data, record the running times of the algorithms, tabulate and graph your data, and then analyze the results. Can you figure out from the results, which algorithm is which?
-  </p><p>    
-    Another way to look at this activity is as quality assurance (QA). Many careers in the computing field start with assignments in QA. This is where you help software developers test and debug their apps.
   </p>
-  <video youtube="t9PVjJDXWTk" label="video-preview-algorithm-analysis"/>
-  
+  <p>    
+    Another way to look at this activity is as quality assurance (QA). Many careers in the computing field start with assignments in QA. This is where you help software developers test and debug their apps.
+  </p>  
 </introduction>
 
 <subsection xml:id="unit3a-4-analyzing-search-algorithms">
   <title>Analyzing Search Algorithms</title>
   <p>
-    Watch the following presentation on analyzing search algorithms to learn how to determine how fast <term>linear search</term> and <term>binary search</term> are.
+    Watch the following presentation on analyzing search algorithms to learn how to determine how fast <term>linear search</term> and <term>binary search</term> are. The code in the video is from MIT App Inventor, but the concepts apply to any programming language.
   </p>
-  <video youtube="Omh4VtutCdQ" label="video-search-analysis"/>
+  <p>
+    <video youtube="Omh4VtutCdQ" label="video-search-analysis"/>
+  </p>
+  <p>
+    You will be using the <term>Linear vs Binary Search Comparison</term> app below to analyze the search algorithms. The app will run both search algorithms on a list of numbers and record the time it takes to find a number in the list. You will be able to generate random lists with different lengths and record the results. Note that the binary search algorithm will only work on sorted lists, so the app will generate a sorted list every time.
+  </p>
+  <interactive iframe="webapps/SearchAlgorithmComparison.html" width="100%" aspect="1:1"/>
+  
+    <activity label="fillin-linear-binary-search">
+      <title>Linear and Binary Search Best vs. Worst Cases</title>
+      <statement>
+        <p>Linear Search</p>
+        <p>What is the best case for number of comparisons for a linear search on a list of 1000 items? (Hint: The best case is when the item is the first item in the list.)
+          <fillin answer="1" mode="string"/></p>
+        <p>What is the worst case for number of comparisons for a linear search on a list of 1000 items? (Hint: The worst case is when the item is not in the list.)
+          <fillin answer="1000" mode="string"/></p>
+        <p>Binary Search</p>
+        <p>What is the best case for number of comparisons for a binary search on a list of 1000 items? (Hint: The best case is when the item is the middle item in the list.)
+          <fillin answer="1" mode="string"/></p>
+        <p>What is the worst case for number of comparisons for a binary search on a list of 1000 items? (Hint: The worst case is when the item is not in the list.)
+          <fillin answer="10" mode="string"/></p>
+      </statement>
+
+      <evaluation>
+        <evaluate>
+          <test>
+            <strcmp use-answer="yes"/>
+            <feedback></feedback>
+          </test>
+        </evaluate>
+        <evaluate>
+          <test>
+            <strcmp use-answer="yes"/>
+            <feedback></feedback>
+          </test>
+        </evaluate>
+        <evaluate>
+          <test>
+            <strcmp use-answer="yes"/>
+            <feedback></feedback>
+          </test>
+        </evaluate>
+        <evaluate>
+          <test>
+            <strcmp use-answer="yes"/>
+            <feedback>Remember from last lesson that 2^10 = 1024, so the worst case for a binary search on a list of 1000 items is 10 comparisons.</feedback>
+          </test>
+          <test>
+            <feedback>Remember from last lesson that the worst case scenario is N, where 2^N must be bigger than the length of the list. What is N so that 2^N >= 1000?</feedback>
+          </test>
+        </evaluate>
+      </evaluation>
+    </activity>
+
+  <activity label="search-algorithms-trade-offs">
+  <title>Linear vs. Binary Search Trade-offs</title>
+  <statement>
+    <p>
+      Match each description to the search algorithm and whether it is
+      an advantage or a disadvantage of that algorithm.
+    </p>
+  </statement>
+  <matches>
+    <match>
+      <premise>Works on data in any order, sorted or unsorted</premise>
+      <response>Linear search: advantage</response>
+    </match>
+    <match>
+      <premise>In the worst case, must examine every element, so the time grows in proportion to the list size (<m>O(n)</m>)</premise>
+      <response>Linear search: disadvantage</response>
+    </match>
+    <match>
+      <premise>Eliminates half of the remaining elements with each comparison (<m>O(\log n)</m>)</premise>
+      <response>Binary search: advantage</response>
+    </match>
+    <match>
+      <premise>Requires the data to be sorted, and needs random access to elements</premise>
+      <response>Binary search: disadvantage</response>
+    </match>
+  </matches>
+  </activity>
+
+
 </subsection>
 
 <subsection xml:id="unit3a-4-analyzing-sort-algorithms">
   <title>Analyzing Sort Algorithms</title>
   <p>
+    Sorting algorithms are a little more complicated to analyze than search algorithms. The time it takes to sort a list depends on the number of items in the list, the order of the items in the list, and the algorithm used to sort the list.
+  </p>
+  <p>
+    Watch this Ted-Ed video to learn about three different sorting algorithms and how they work. (There are actually many more sorting algorithms.)
+  </p>
+  <video youtube="WaNLJf8xzC4" label="video-ted-ed-alphabetizing"/>
+  <p>
     Watch the following presentation on analyzing sort algorithms to learn how to determine how fast <term>bubble sort</term>, <term>merge sort</term>  and <term>bucket sort</term> are.
   </p>
   <video youtube="YmCzraw7IcA" label="video-sort-analysis"/>
+
+
+
 </subsection>
 
-   <subsection xml:id="unit3a-4-review">
-    <title>Algorithm Efficiency Review</title>
+<subsection xml:id="unit3a-4-review">
+<title>Algorithm Efficiency Review</title>
 
 <activity label="unit3a-algorithm-efficiency-vocabulary">
 <title>Algorithm Efficiency Vocabulary</title>
-<statement><p>Review the vocabulary in this lesson. Drag the vocabulary term from the left and drop it on its correct definition on the right. Click the "Check Me" button to see if you are correct.</p></statement>
-<feedback><p>Review the vocabulary in this lesson and and try again.</p></feedback>
-<cardsort>
-<match><premise>efficiency</premise><response>how well an algorithm uses time and memory/space resources, CPU and RAM.</response></match>
-<match><premise>more efficient</premise><response>this usually means it runs faster or uses less space.</response></match>
-<match><premise>instance of a problem</premise><response>A specific example or input to a problem. For example, sorting is a problem, and sorting the list (2,3,1,7) is an instance of the problem.</response></match>
-<match><premise>linear or sequential search</premise><response>a search algorithm that checks ever element in a list from the start to the end of the list to find an item.</response></match>
-<match><premise>binary search</premise><response>a search algorithm that repeatedly divides a sorted list to narrow in on the searched-for item</response></match>
-<match><premise>sorting algorithm</premise><response>an algorithm that puts a list into alphabetic or numeric order.</response></match>
-</cardsort>
+  <statement><p>Review the vocabulary in this lesson. Drag the vocabulary term from the left and drop it on its correct definition on the right. Click the "Check Me" button to see if you are correct.</p></statement>
+  <feedback><p>Review the vocabulary in this lesson and and try again.</p></feedback>
+  <cardsort>
+    <match><premise>efficiency</premise><response>how well an algorithm uses time and memory/space resources, CPU and RAM.</response></match>
+    <match><premise>more efficient</premise><response>this usually means it runs faster or uses less space.</response></match>
+    <match><premise>linear or sequential search</premise><response>a search algorithm that checks ever element in a list from the start to the end of the list to find an item.</response></match>
+    <match><premise>binary search</premise><response>a search algorithm that repeatedly divides a sorted list to narrow in on the searched-for item</response></match>
+    <match><premise>sorting algorithm</premise><response>an algorithm that puts a list into alphabetic or numeric order.</response></match>
+  </cardsort>
 </activity>
 
+<activity label="unit3a-algorithm-efficiency-shortanswer-1">
+  <statement>
+    <p>
+      According to the table, how many lookups would be required in the worst case to find a number in a list of 10,000 elements using linear search?
+    </p>
+  </statement>
+  <setup>
+    <var case="sensitive">
+      <condition number="10000">
+        <feedback>
+          <p>Correct! Linear search takes at most N lookups in the worst case.</p>
+        </feedback>
+      </condition>
+      <condition string=".*">
+        <feedback>
+          <p>Incorrect. Check the table row for N = 10000 under Linear Search.</p>
+        </feedback>
+      </condition>
+    </var>
+  </setup>
+</activity>
+
+<activity label="unit3a-algorithm-efficiency-shortanswer-2">
+  <statement>
+    <p>
+      According to the table, how many lookups would be required in the worst case to find a number in a sorted list of 10,000 elements using binary search?
+    </p>
+  </statement>
+  <setup>
+    <var case="sensitive">
+      <condition number="14">
+        <feedback>
+          <p>Correct! Binary search takes at most 14 lookups for a list of 10,000 elements.</p>
+        </feedback>
+      </condition>
+      <condition string=".*">
+        <feedback>
+          <p>Incorrect. Look at the Binary Search column for N = 10000 in the table.</p>
+        </feedback>
+      </condition>
+    </var>
+  </setup>
+</activity>
+
+<activity label="unit3a-algorithm-efficiency-mcq-1">
+<statement>
+    <p>
+      If you were using binary search to find the number 14 in the list [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15], how many iterations would be required to find 14 in the list?
+    </p>
+  </statement>
+  <choices>
+    <choice>
+      <statement><p>3</p></statement>
+      <feedback><p>Incorrect.</p></feedback>
+    </choice>
+    <choice>
+      <statement><p>2</p></statement>
+      <feedback><p>Incorrect.</p></feedback>
+    </choice>
+    <choice>
+      <statement><p>14</p></statement>
+      <feedback><p>Incorrect. Linear search would take 14 steps, but binary search divides the list in half each step.</p></feedback>
+    </choice>
+    <choice correct="yes">
+      <statement><p>4</p></statement>
+      <feedback><p>Correct! Step 1 checks 8 (middle), step 2 checks 12, step 3 checks 14, finding it on the 4th iteration.</p></feedback>
+    </choice>
+  </choices>
+</activity>
+
+<activity label="unit3a-algorithm-efficiency-shortanswer-3">
+<statement>
+    <p>
+      For a list of 500 numbers, at most how many iterations would the loop in binary search run to find a number?
+    </p>
+  </statement>
+  <setup>
+    <var case="sensitive">
+      <condition number="9">
+        <feedback>
+          <p>Correct! 2^9 = 512, which is greater than 500, so it takes at most 9 guesses/iterations.</p>
+        </feedback>
+      </condition>
+      <condition string=".*">
+        <feedback>
+          <p>Incorrect. Think about what power of 2 is just larger than 500.</p>
+        </feedback>
+      </condition>
+    </var>
+  </setup>
+</activity>
+
+<activity label="unit3a-algorithm-efficiency-mcq-2">
+<statement>
+    <p>
+      The function shown in this graph is known as the base-2 logarithm function, y = log2(x). Which search algorithm behaves like this function?
+    </p>
+  </statement>
+  <choices>
+    <choice>
+      <statement><p>Sequential search</p></statement>
+      <feedback><p>Incorrect. Sequential search grows linearly, y = x.</p></feedback>
+    </choice>
+    <choice correct="yes">
+      <statement><p>Binary search</p></statement>
+      <feedback><p>Correct! Binary search has logarithmic time complexity, y = log2(x).</p></feedback>
+    </choice>
+  </choices>
+</activity>
+
+<activity label="unit3a-algorithm-efficiency-mcq-3">
+<statement>
+    <p>
+      In talking about sorting algorithms in general, a sort algorithm’s efficiency refers to ______________________.
+    </p>
+  </statement>
+  <choices>
+    <choice>
+      <statement><p>how many swaps are needed to sort the values.</p></statement>
+      <feedback><p>Incorrect.</p></feedback>
+    </choice>
+    <choice>
+      <statement><p>how many comparisons are needed to sort the values.</p></statement>
+      <feedback><p>Incorrect.</p></feedback>
+    </choice>
+    <choice>
+      <statement><p>whether the algorithm correctly arranges the values in order.</p></statement>
+      <feedback><p>Incorrect. That refers to correctness, not efficiency.</p></feedback>
+    </choice>
+    <choice correct="yes">
+      <statement><p>how long it takes to arrange the values in order.</p></statement>
+      <feedback><p>Correct! Algorithmic efficiency measures run-time relative to input size.</p></feedback>
+    </choice>
+    <choice>
+      <statement><p>whether or not the algorithm contains a bug.</p></statement>
+      <feedback><p>Incorrect.</p></feedback>
+    </choice>
+  </choices>
+</activity>
+
+<activity label="unit3a-algorithm-efficiency-mcq-4">
+<statement>
+    <p>
+      To say that bucket sort is more efficient than bubble sort means that _________________.
+    </p>
+  </statement>
+  <choices>
+    <choice>
+      <statement><p>bucket sort requires fewer swaps than bubble sort.</p></statement>
+      <feedback><p>Incorrect.</p></feedback>
+    </choice>
+    <choice>
+      <statement><p>for any size list, bucket sort will always be faster than bubble sort.</p></statement>
+      <feedback><p>Incorrect. For extremely small lists, simple algorithms can sometimes run faster due to lower overhead.</p></feedback>
+    </choice>
+    <choice correct="yes">
+      <statement><p>as the size of the list grows, bucket sort will be faster than bubble sort.</p></statement>
+      <feedback><p>Correct! Efficiency describes how execution time scales as input size (N) increases.</p></feedback>
+    </choice>
+    <choice>
+      <statement><p>bucket sort requires fewer comparisons than bubble sort.</p></statement>
+      <feedback><p>Incorrect.</p></feedback>
+    </choice>
+  </choices>
+</activity>
+
+<activity label="unit3a-algorithm-efficiency-mcq-5">
+<statement>
+    <p>
+      Which of the following characteristics is true of bubble sort? Choose all that apply.
+    </p>
+  </statement>
+  <choices randomize="no">
+    <choice>
+      <statement><p>More efficient than bucket sort.</p></statement>
+      <feedback><p>Incorrect. Bubble sort is N^2, which is less efficient than bucket sort.</p></feedback>
+    </choice>
+    <choice>
+      <statement><p>Useful only for sorting numbers.</p></statement>
+      <feedback><p>Incorrect. Bubble sort works on any comparable data types.</p></feedback>
+    </choice>
+    <choice correct="yes">
+      <statement><p>A comparison-based algorithm.</p></statement>
+      <feedback><p>Correct! Bubble sort compares adjacent elements.</p></feedback>
+    </choice>
+    <choice>
+      <statement><p>Widely used to sort large data sets.</p></statement>
+      <feedback><p>Incorrect. Bubble sort is inefficient for large datasets due to its N^2 time complexity.</p></feedback>
+    </choice>
+    <choice correct="yes">
+      <statement><p>An N^2 algorithm.</p></statement>
+      <feedback><p>Correct! Bubble sort requires up to N^2 comparisons in the worst case.</p></feedback>
+    </choice>
+  </choices>
+</activity>
+
+<activity label="unit3a-algorithm-efficiency-mcq-6">
+<statement>
+    <p>
+      Which of the following characteristics is true of bucket sort? Choose all that apply.
+    </p>
+  </statement>
+  <choices randomize="no">
+    <choice correct="yes">
+      <statement><p>More efficient than bubble sort.</p></statement>
+      <feedback><p>Correct! Linear time complexity makes bucket sort faster for large input sizes.</p></feedback>
+    </choice>
+    <choice>
+      <statement><p>Useful only for sorting numbers.</p></statement>
+      <feedback><p>Incorrect! A bucket sort can be used to sort many items, including laundry and groceries.</p></feedback>
+    </choice>
+    <choice>
+      <statement><p>An N^2 algorithm.</p></statement>
+      <feedback><p>Incorrect. Bucket sort is linear, O(N).</p></feedback>
+    </choice>
+    <choice>
+      <statement><p>A comparison-based algorithm.</p></statement>
+      <feedback><p>Incorrect. Bucket sort is a distribution-based sort, not comparison-based.</p></feedback>
+    </choice>
+    <choice correct="yes">
+      <statement><p>A linear algorithm</p></statement>
+      <feedback><p>Correct! Bucket sort runs in O(N) linear time under typical conditions.</p></feedback>
+    </choice>
+  </choices>
+</activity>
+
+<activity label="unit3a-algorithm-efficiency-ap-mcq">
+<statement>
+    <p>
+      There are 32 students standing in a classroom. Two different algorithms are given for finding the average height of the students.
+    </p>
+    <p>
+      <em>Algorithm A</em>
+    </p><p>
+      <ul>
+      <li>Step 1: All students stand.</li>
+      <li>Step 2: A randomly selected student writes his or her height on a card and is seated.</li>
+      <li>Step 3: A randomly selected standing student adds his or her height to the value on the card, records the new value on the card, and is seated. The previous value on the card is erased.</li>
+      <li>Step 4: Repeat step 3 until no students remain standing.</li>
+      <li>Step 5: The sum on the card is divided by 32. The result is given to the teacher.</li>
+      </ul>
+    </p>
+    <p>
+      <em>Algorithm B</em>
+    </p><p>
+      <ul>
+      <li>Step 1: All students stand.</li>
+      <li>Step 2: Each student is given a card. Each student writes his or her height on the card.</li>
+      <li>Step 3: Standing students form random pairs at the same time. Each pair adds the numbers written on their cards and writes the result on one student's card; the other student is seated. The previous value on the card is erased.</li>
+      <li>Step 4: Repeat step 3 until one student remains standing.</li>
+      <li>Step 5: The sum on the last student's card is divided by 32. The result is given to the teacher.</li>
+      </ul>
+    </p>
+    <p>Which of the following statements is true?</p>
+  </statement>
+  <choices>
+    <choice>
+      <statement><p>Neither Algorithm A nor Algorithm B calculates the correct average.</p></statement>
+      <feedback><p>Incorrect.</p></feedback>
+    </choice>
+    <choice correct="yes">
+      <statement><p>Both Algorithm A and Algorithm B always calculate the correct average.</p></statement>
+      <feedback><p>Correct! Both algorithms sum all 32 heights correctly (one sequentially, one in parallel pairs) and divide by 32.</p></feedback>
+    </choice>
+    <choice>
+      <statement><p>Algorithm B always calculates the correct average, but Algorithm A does not.</p></statement>
+      <feedback><p>Incorrect.</p></feedback>
+    </choice>
+    <choice>
+      <statement><p>Algorithm A always calculates the correct average, but Algorithm B does not.</p></statement>
+      <feedback><p>Incorrect.</p></feedback>
+    </choice>
+  </choices>
+</activity>
    </subsection>
 </section>

@@ -86,24 +86,52 @@
     Do you need a calculator to figure that out? Not really. Here's an easy way to figure out that maximum number of guesses for any value of N. Just write down the powers of 2 in a table like this:
 </p>
 
-<table xml:id="unit3a-1-powers-of-2">
+<table xml:id="unit3a-1-powers-of-2" width="100%">
 <title>Powers of 2</title>
-<tabular top="minor" bottom="minor" left="minor" right="minor" valign="top" width="50%">					
-<col width="50%" halign="center" />
-<col width="50%" halign="center" />
-<row header="yes"><cell>x</cell><cell><m>2^x</m></cell>	</row>
-<row>	<cell>0</cell><cell>1</cell>	</row>
-<row>	<cell>1</cell><cell>2</cell>	</row>
-<row>	<cell>2</cell><cell>4</cell>	</row>
-<row>	<cell>3</cell><cell>8</cell>	</row>
-<row>	<cell>4</cell><cell>16</cell>	</row>
-<row>	<cell>5</cell><cell>32</cell>	</row>
-<row>	<cell>6</cell><cell>64</cell>	</row>
-<row>	<cell>7</cell><cell>128</cell>	</row>
-<row>	<cell>8</cell><cell>256</cell>	</row>
-<row>	<cell>9</cell><cell>512</cell>	</row>
-<row>	<cell>10</cell><cell>1024</cell>	</row>
-<row>	<cell>...</cell><cell>...</cell>	</row>
+  <tabular top="minor" bottom="minor" left="minor" right="minor">
+    <col halign="center" width="7.7%" />
+    <col halign="center" width="7.7%" />
+    <col halign="center" width="7.7%" />
+    <col halign="center" width="7.7%" />
+    <col halign="center" width="7.7%" />
+    <col halign="center" width="7.7%" />
+    <col halign="center" width="7.7%" />
+    <col halign="center" width="7.7%" />
+    <col halign="center" width="7.7%" />
+    <col halign="center" width="7.7%" />
+    <col halign="center" width="7.7%" />
+    <col halign="center" width="7.7%" />
+    <col halign="center" />
+    <row header="yes" bottom="minor">
+      <cell><m>x</m></cell>
+      <cell><m>0</m></cell>
+      <cell><m>1</m></cell>
+      <cell><m>2</m></cell>
+      <cell><m>3</m></cell>
+      <cell><m>4</m></cell>
+      <cell><m>5</m></cell>
+      <cell><m>6</m></cell>
+      <cell><m>7</m></cell>
+      <cell><m>8</m></cell>
+      <cell><m>9</m></cell>
+      <cell><m>10</m></cell>
+      <cell><m>\dots</m></cell>
+    </row>
+    <row>
+      <cell><m>2^x</m></cell>
+      <cell><m>1</m></cell>
+      <cell><m>2</m></cell>
+      <cell><m>4</m></cell>
+      <cell><m>8</m></cell>
+      <cell><m>16</m></cell>
+      <cell><m>32</m></cell>
+      <cell><m>64</m></cell>
+      <cell><m>128</m></cell>
+      <cell><m>256</m></cell>
+      <cell><m>512</m></cell>
+      <cell><m>1024</m></cell>
+      <cell><m>\dots</m></cell>
+    </row>
 </tabular>
 </table>
 
