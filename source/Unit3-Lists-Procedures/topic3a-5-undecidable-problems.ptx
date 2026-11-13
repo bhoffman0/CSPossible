@@ -5,13 +5,286 @@
   <title>Undecidable Problems (2026)</title>
 <introduction>
   <p>
-    
+    We've been using algorithms to build our apps and we've learned about algorithms for solving certain types of problems, such as searching and sorting problems.
+  </p>
+  <p>
+    It may seem that no matter what the problem, we can find an algorithm to solve it. But that is not true. And in this lesson we want to look at some problems 
+    that algorithms cannot solve or cannot solve efficiently.
   </p>
 </introduction>
 
+<subsection xml:id="unit3a-undecidable-problems-1">
+    <title>Problems that Cannot Be Solved by Algorithms</title>
+<p>
+  There are two categories of problems that an algorithm cannot solve.
+</p>
+<p>
+<ol>
+    <li><term>Undecidable Problems</term>. These problems are the theoretically impossible to solve — by any algorithm. 
+      The halting problem is a decision problem (with a yes or no answer) that is undecidable. A computer cannot tell if 
+      it is in an infinite loop or it will at some point stop!</li>
+    <li><term>Intractable Problems</term>. These problems are theoretically impossible to solve in a reasonable time — 
+      i.e., there are known algorithmic solutions, but the algorithms are too inefficient/slow to solve the problem when 
+      the number of inputs grows large.</li>
+</ol>
+</p>
 
-   <subsection xml:id="unit3a-5-review">
+<p>
+  The following video will give us an overview of these types of limits to algorithms and will illustrate how we can use the 
+  fact that certain problems are intractable to protect our passwords and other information.
+</p>
+ <video youtube="6uErSfQdIc0" label="video-algorithm-limits"/>
+
+ </subsection>
+
+<subsection xml:id="unit3a-">
+  <title>Creating a Strong Password</title>
+
+<p>
+  To give us a better sense of what it takes to create a strong password -- i.e., one that can withstand a brute force attack -- 
+  we're going to use the Password Strength Calculator to test the strength of various password schemes. 
+  <url href="https://mobile-csp.org/webapps/passwords/index.html">(Open widget in a separate window)</url>
+</p>
+
+<interactive iframe="https://mobile-csp.org/webapps/passwords/index.html" width="100%" aspect="1:1"/>
+
+<p>
+  According to <url href="https://en.wikipedia.org/wiki/Password_cracking">Wikipedia</url>, an ordinary desktop computer equipped with special password cracking software can test more than 100 million passwords per second. 
+  The goal of this activity is to come up with the optimal password scheme that would take an ordinary PC, equipped with password-cracking software, more than 10 years to crack.
+</p>
+
+<activity label="unit3a-strong-password-short-answer-1">
+  <statement>
+    <p>
+      A <term>password scheme</term> consists of a minimum password length and the different types of symbols (i.e., letters, numbers, specials) that can be used in the 
+      password. Using the Password Strength Calculator, determine the <term>optimal scheme</term> for withstanding a brute force attack of at least 10 years by an ordinary 
+      PC performing 100 million tests per second.
+    </p>
+  </statement>
+  <response/>
+</activity>
+
+<activity label="unit3a-strong-password-short-answer-2">
+  <statement>
+    <p>
+      According to this <url href="https://www.extremetech.com/extreme/316266-the-nvidia-rtx-3090-gpu-can-probably-crack-your-passwords">2020 article</url>, 
+      a password-cracking computer can try 669 billion passwords per second. 
+      How would you have to modify your scheme to withstand a 10-year attack by this specially designed computer?
+    </p>
+  </statement>
+  <response/>
+</activity>
+
+<activity label="unit3a-strong-password-short-answer-3">
+  <statement>
+    <p>
+      After you've calculated the estimated number of passwords that can be checked per second for the next year, use the Password Strength Calculator to determine an optimal password scheme.
+      
+      <ul>
+        <li>How long should the password be?</li>
+        <li>What combination of characters should it include?</li>
+      </ul>           
+   </p> 
+  </statement>
+  <response/>
+</activity>
+
+</subsection>
+
+<subsection xml:id="unit3a-heuristic-solutions-to-intractable-problems">
+  <title>Heuristic Solutions to Intractable Problems</title>
+  
+<p>
+  For some intractable problems, we need to have practical solutions. One such example is the <term>Traveling Salesman Problem</term>: Construct the most 
+  efficient route, the optimal route, that visits N cities. This is an optimization problem where the goal is to find the "best" (most optimal) 
+  solution among many.
+</p>
+<p>
+  This is a problem we would like to be able to solve. Variations of this problem are the kinds of problems that Google maps and other apps solve 
+  for us when we ask for driving directions.
+</p>
+<p>
+  Fortunately, there are so-called heuristic algorithms that computer scientists use to solve such problems. A <term>heuristic algorithm</term> 
+  is one that provides a solution to a problem, although in many cases the solution may not be the best possible solution -- i.e., it may not be an optimal solution.
+</p>
+<p>
+  The following video will give us an overview of the <term>Traveling Salesman Problem</term>.
+</p>
+ <video youtube="-S3q68v5vts" label="video-traveling-salesman"/>
+
+ </subsection>
+
+ <subsection xml:id="unit3a-traveling-salesman-activity">
+  <title>Traveling Salesman Activity</title>
+  <p>
+    Winnie the Pooh is looking for his friends. He must visit every location once and return home. Which route is shortest?
+  </p>
+
+  <interactive iframe="webapps/traveling-sales.html" width="100%" aspect="2:2"/>
+  <p>
+    Use the activity to answer the following questions.
+  </p>
+
+<activity label="unit3a-traveling-salesman-activity-mc1">
+<statement><p>
+Starting from Pallet Town, how many different round trips visit all 6 cities exactly once? (Direction counts: going clockwise vs. counter-clockwise are different.)
+</p></statement>
+<choices>
+<choice ><statement><p>6</p></statement><feedback><p>Not quite. Pooh’s House is fixed as the start, leaving 5 cities to order: 5! = 5×4×3×2×1 = 120. (Ignoring direction, that’s 60 distinct loops.)</p></feedback></choice>
+<choice ><statement><p>30</p></statement><feedback><p>Not quite. Pooh’s House is fixed as the start, leaving 5 cities to order: 5! = 5×4×3×2×1 = 120. (Ignoring direction, that’s 60 distinct loops.)</p></feedback></choice>
+<choice correct="yes"><statement><p>120</p></statement><feedback><p>Correct! Pooh’s House is fixed as the start, leaving 5 cities to order: 5! = 5×4×3×2×1 = 120. (Ignoring direction, that’s 60 distinct loops.)</p></feedback></choice>
+<choice ><statement><p>720</p></statement><feedback><p>Not quite. Pooh’s House is fixed as the start, leaving 5 cities to order: 5! = 5×4×3×2×1 = 120. (Ignoring direction, that’s 60 distinct loops.)</p></feedback></choice>
+</choices>
+</activity>
+
+<activity label="unit3a-traveling-salesman-activity-mc2">
+<statement><p>
+The “nearest-neighbor” strategy always goes to the closest unvisited city. Press the Nearest-neighbor button. Does it always find the shortest route?
+</p></statement>
+<choices>
+<choice ><statement><p>Yes, always</p></statement><feedback><p>Not quite. Nearest-neighbor is fast but greedy: an early short hop can force a very long hop later. Compare its total to the shortest one.</p></feedback></choice>
+<choice correct="yes"><statement><p>No, not always</p></statement><feedback><p>Correct! Nearest-neighbor is fast but greedy: an early short hop can force a very long hop later. Compare its total to the shortest one.</p></feedback></choice>
+</choices>
+</activity>
+
+<activity label="unit3a-traveling-salesman-activity-mc3">
+<statement><p>
+With 20 cities there are 19! ≈ 1.2 × 10¹⁷ routes. A computer checks 1 million routes per second. About how long to check them all?
+</p></statement>
+<choices>
+<choice ><statement><p>About 2 minutes</p></statement><feedback><p>Not quite. 1.2×10¹⁷ ÷ 10⁶ ≈ 1.2×10¹¹ seconds ≈ 3,800 years. Checking every route doesn’t scale!</p></feedback></choice>
+<choice ><statement><p>About 4 days</p></statement><feedback><p>Not quite. 1.2×10¹⁷ ÷ 10⁶ ≈ 1.2×10¹¹ seconds ≈ 3,800 years. Checking every route doesn’t scale!</p></feedback></choice>
+<choice ><statement><p>About 3,800 years</p></statement><feedback><p>Correct! 1.2×10¹⁷ ÷ 10⁶ ≈ 1.2×10¹¹ seconds ≈ 3,800 years. Checking every route doesn’t scale!</p></feedback></choice>
+<choice ><statement><p>About 1 second</p></statement><feedback><p>Not quite. 1.2×10¹⁷ ÷ 10⁶ ≈ 1.2×10¹¹ seconds ≈ 3,800 years. Checking every route doesn’t scale!</p></feedback></choice>
+</choices>
+</activity>
+
+<activity label="unit3a-traveling-salesman-activity-mc4">
+<statement><p>
+Why do computer scientists care about this problem?
+</p></statement>
+<choices>
+<choice ><statement><p>It’s only about salespeople</p></statement><feedback><p>Not quite. TSP is a famous “hard” problem: real tools use clever shortcuts and good approximations.</p></feedback></choice>
+<choice correct="yes"><statement><p>It models delivery, circuit boards, DNA sequencing, and more — and no fast exact method is known</p></statement><feedback><p>Correct! TSP is a famous “hard” problem: real tools use clever shortcuts and good approximations.</p></feedback></choice>
+<choice ><statement><p>Computers can’t add distances</p></statement><feedback><p>Not quite. TSP is a famous “hard” problem: real tools use clever shortcuts and good approximations.</p></feedback></choice>
+<choice ><statement><p>It’s solved instantly for any size</p></statement><feedback><p>Not quite. TSP is a famous “hard” problem: real tools use clever shortcuts and good approximations.</p></feedback></choice>
+</choices>
+</activity>
+
+
+ </subsection>
+
+<subsection xml:id="unit3a-undecidable-problems-still-curious">
+  <title>Still Curious?</title>
+<ul>
+  <li>
+    <p>Try the <url href="https://www.security.org/how-secure-is-my-password/" visual="security.org/how-secure-is-my-password">How secure is my password site</url>.</p>
+  </li>
+  <li>
+    <p>Check out the article <url href="https://www.wired.com/2013/03/why-so-many-people-make-dragon-their-password/" visual="wired.com">Why So Many People Make Dragon Their Password</url> from Wired magazine.</p>
+  </li>
+  <li>
+    <p>Check out the article <url href="https://www.betterbuys.com/estimating-password-cracking-times/" visual="betterbuys.com">Estimating Password Cracking Times</url> from Better Buys.</p>
+  </li>
+  <li>
+    <p>Do some online research to explore alternatives to passwords schemes -- for example, two-factor authentication, biometrics, virtual tokens. What are their relative advantages and disadvantages?</p>
+  </li>
+  <li>
+    <p>Here's an interactive shortest <url href="https://www.math.uwaterloo.ca/tsp/usa50/index.html" visual="math.uwaterloo.ca/tsp">TSP tour to visit the top 647 colleges in the U.S.</url></p>
+  </li>
+  <li>
+    <p>Here's a neat <url href="https://www.oberlin.edu/math/faculty/bosch/tsp-page.html" visual="oberlin.edu">TSP Game</url> that uses maps in Europe and Africa. You can use it to test the nearest neighbor heuristic for finding good routes through the cities.</p>
+  </li>
+  <li>
+    <p>One field of computer science that makes extensive use of heuristics is <term>Artificial Intelligence (AI)</term>. The field of AI traditionally tackles problems that humans are good at but computers are not (yet) good at — for example, vision, speech recognition, natural language understanding, planning, driving, and so on. However, great progress is being made in these various areas — just think for a moment about how well Siri and similar intelligent digital assistants work today. In fact, try asking Siri "Hey Siri, how do you solve the traveling salesman problem?". AI is a vast field. And, as for many topics, a good way to start learning more about <url href="https://en.wikipedia.org/wiki/Heuristic" visual="en.wikipedia.org/wiki/Heuristic">Heuristics</url> and <url href="https://en.wikipedia.org/wiki/Artificial_intelligence" visual="en.wikipedia.org/wiki/Artificial_intelligence">AI</url> would be to start with <url href="https://www.wikipedia.org/" visual="wikipedia.org">Wikipedia</url>.</p>
+  </li>
+</ul>
+</subsection>
+
+<subsection xml:id="unit3a-undecidable-problems-review">
     <title>Undecidable Problems Review</title>
+
+<activity label="unit3a-undecidable-problems-vocabulary">
+<title>Undecidable Problems Vocabulary</title>
+<statement><p>Review the vocabulary in this lesson. Drag the vocabulary term from the left and drop it on its correct definition on the right. Click the "Check Me" button to see if you are correct.</p></statement>
+<feedback><p>Review the vocabulary in this lesson and and try again.</p></feedback>
+<cardsort>
+<match><premise>reasonable time</premise><response>When a computer can solve a problem quickly enough to actually be useful, even when you give it a huge amount of data</response></match>
+<match><premise>unreasonable time</premise><response>When an algorithm takes so long to run that it becomes practically useless as the problem gets bigger—often taking years, centuries, or even longer than the age of the universe to finish, even on a supercomputer.</response></match>
+<match><premise>brute force</premise><response>solve by trial and error; trying every possible option</response></match>
+<match><premise>decidable problems</premise><response>problems in which an algorithm can be constructed to answer 'yes' or 'no' for all inputs (e.g., 'is the number even?').</response></match>
+<match><premise>intractable problems</premise><response>problems that is practically impossible to solve in a <b>reasonable</b> time — i.e., there are known algorithmic solutions, but the algorithms are too inefficient to solve the problem when the number of inputs grows large</response></match>
+<match><premise>heuristic</premise><response>a technique that may allow us to find an approximate solution when typical methods fail to find an exact solution; helpful for finding a solution in a reasonable amount of time</response></match>
+<match><premise>Halting Problem</premise><response>The theoretical problem of determining whether a computer program will halt (produce an answer) or loop forever on a given input</response></match>
+<match><premise>Traveling Salesman Problem</premise><response>Given a list of cities and the distances between them find the shortest path visiting each city once and returning to the start.</response></match>
+<match><premise>undecidable problem</premise><response>has no algorithm that can be constructed that always leads to a correct yes-or-no answer</response></match>
+</cardsort>
+</activity>
+
+<activity label="unit3a-undecidable-problems-multiple-choice-1">
+<statement><p>
+Is the following problem tractable (solvable in a reasonable amount of time) or intractable (cannot be solved in a reasonable amount of time)?
+</p>
+<p>
+For any length string of letters using any combination of the letters 'a' through 'z', write down all possible strings.
+</p></statement>
+<choices>
+<choice ><statement><p>Tractable</p></statement><feedback><p>Let me add new information to help you solve this question. There are 26 possible 1-letter words, 26 × 26 2 letter words, 26 × 26 × 26 3-letter words, and so on. So there would be 26N N-letter words. This is exponential.</p></feedback></choice>
+<choice correct="yes"><statement><p>Intractable</p></statement><feedback><p>Yes. If the string has N letters 'a' to 'z', then there are 26N possible strings, which is exponential. This is similar to trying to crack a long password made up of lowercase letters. In this case, each letter in the password can be one of 26 possible letters. If you made such a password long enough (e.g., more than 15 letters), it would be fairly secure from brute force attack.</p></feedback></choice>
+</choices>
+</activity>
+
+<activity label="unit3a-undecidable-problems-multiple-choice-2">
+<statement><p>
+An algorithm can be found for any computational problem whatsoever.
+</p></statement>
+<choices>
+<choice ><statement><p>True</p></statement><feedback><p>This is challenging, but rewarding! The Halting Problem is an example of an unsolvable problem.</p></feedback></choice>
+<choice correct="yes"><statement><p>False</p></statement><feedback><p>Yes. The Halting Problem is an example of an undecidable problem, as Turing proved.</p></feedback></choice>
+</choices>
+</activity>
+
+<activity label="unit3a-undecidable-problems-multiple-choice-3">
+<statement><p>
+The Halting Problemis an example of
+</p></statement>
+<choices>
+<choice ><statement><p>a difficult problem.</p></statement><feedback><p></p></feedback></choice>
+<choice correct="yes"><statement><p>an undecidable problem.</p></statement><feedback><p>Yes. As Turing proved, it is impossible to solve the Halting Problem.</p></feedback></choice>
+<choice ><statement><p>an intractable problem.</p></statement><feedback><p>Intractable problems are those for which there are known algorithms but the algorithms are exponential and therefore too inefficient to solve the problem for large N.</p></feedback></choice>
+<choice ><statement><p>an exponential problem.</p></statement><feedback><p></p></feedback></choice>
+</choices>
+</activity>
+
+<activity label="unit3a-undecidable-problems-multiple-choice-4">
+<statement><p>
+Under which of the following conditions is it most beneficial to use a heuristic approach to solve a problem?
+</p></statement>
+<choices>
+<choice ><statement><p>When the problem can be solved in a reasonable time and an approximate solution is acceptable.</p></statement><feedback><p></p></feedback></choice>
+<choice ><statement><p>When the problem can be solved in a reasonable time and an exact solution is needed.</p></statement><feedback><p></p></feedback></choice>
+<choice correct="yes"><statement><p>When the problem cannot be solved in a reasonable time and an approximate solution is acceptable.</p></statement><feedback><p></p></feedback></choice>
+<choice ><statement><p>When the problem cannot be solved in a reasonable time and an exact solution is needed.</p></statement><feedback><p></p></feedback></choice>`
+</choices>
+</activity>
+
+<activity label="unit3a-undecidable-problems-review-short-answer-intractable-problem">
+  <statement>
+    <p>Explain in your own words what it means for a problem to be intractable.
+      Why is that a good thing when it comes to passwords?      
+    </p>
+  </statement>
+  <response/>
+</activity>
+
+<activity label="unit3a-undecidable-problems-review-short-answer-real-world-heuristic">
+  <statement>
+    <p>
+      Describe a heuristic you use in your everyday life. Why is a heuristic needed for this situation?
+    </p>
+  </statement>
+  <response/>
+</activity>
 
    </subsection>
 </section>
