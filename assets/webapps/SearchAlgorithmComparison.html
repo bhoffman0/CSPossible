@@ -156,10 +156,11 @@ function run(){
   $("b-found").textContent=B.i>=0?"found at index "+fmtN(B.i):"not found";
   $("l-cmp").textContent=fmtN(L.c);$("b-cmp").textContent=fmtN(B.c);
   $("l-time").textContent=fmtT(lt);$("b-time").textContent=fmtT(bt);
-  $("bar-lc").style.width="100%";
-  $("bar-bc").style.width=Math.max(0.5,B.c/L.c*100)+"%";
-  const cr=(L.c/B.c).toFixed(1),tr=(lt/bt).toFixed(1);
-  let s=`Binary search used ${cr}× fewer comparisons`;
+  const maxCmp=Math.max(L.c,B.c);
+  $("bar-lc").style.width=Math.max(0.5,L.c/maxCmp*100)+"%";
+  $("bar-bc").style.width=Math.max(0.5,B.c/maxCmp*100)+"%";
+  const tr=(lt/bt).toFixed(1);
+  let s=`Binary search used ${fmtN(B.c)} comparisons versus ${fmtN(L.c)} for linear search`;
   s+=bt<lt?` and was about ${tr}× faster.`:` but was not faster in time here (${tr}× ratio) — with an early match, linear search can win.`;
   if(B.i>=0&&L.i>=0&&B.i!==L.i)s+=" (The list has duplicates, so the two searches landed on different matching indices.)";
   $("summary").textContent=s;
