@@ -79,7 +79,7 @@
       an advantage or a disadvantage of that algorithm.
     </p>
   </statement>
-  <matches>
+  <cardsort>
     <match>
       <premise>Works on data in any order, sorted or unsorted</premise>
       <response>Linear search: advantage</response>
@@ -96,7 +96,7 @@
       <premise>Requires the data to be sorted, and needs random access to elements</premise>
       <response>Binary search: disadvantage</response>
     </match>
-  </matches>
+  </cardsort>
   </activity>
 
 
