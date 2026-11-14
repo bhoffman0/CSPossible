@@ -145,9 +145,9 @@
     </p>
   </statement>
   <choices>
-    <choice>
+    <choice correct="yes">
       <statement><p>3</p></statement>
-      <feedback><p>Incorrect.</p></feedback>
+      <feedback><p>Correct! Step 1 checks 8, step 2 checks 12, and step 3 checks 14, so the search stops on the third iteration.</p></feedback>
     </choice>
     <choice>
       <statement><p>2</p></statement>
@@ -157,9 +157,9 @@
       <statement><p>14</p></statement>
       <feedback><p>Incorrect. Linear search would take 14 steps, but binary search divides the list in half each step.</p></feedback>
     </choice>
-    <choice correct="yes">
+    <choice>
       <statement><p>4</p></statement>
-      <feedback><p>Correct! Step 1 checks 8 (middle), step 2 checks 12, step 3 checks 14, finding it on the 4th iteration.</p></feedback>
+      <feedback><p>Incorrect. The search finds 14 on the third iteration and stops immediately.</p></feedback>
     </choice>
   </choices>
 </activity>
