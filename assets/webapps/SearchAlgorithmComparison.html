@@ -134,10 +134,10 @@ $("gen").onclick=()=>{
   const tail=n>20?" … "+Array.from(a.slice(-5)).map(fmtN).join(", "):"";
   $("preview").textContent=`${fmtN(n)} numbers (0–${fmtN(max)}), sorted: ${head}${tail}`;
   $("target").disabled=false;$("run").disabled=false;
-  $("target").value=a[Math.floor(n/2)];
+  $("target").value=a[Math.floor((n-1)/2)];
   $("results").hidden=true;showMsg("");
   const q=$("quick");q.innerHTML="";
-  [["First element",()=>a[0]],["Middle element",()=>a[n>>1]],["Last element",()=>a[n-1]],["Not in list",()=>max+1]].forEach(([l,f])=>{
+  [["First element",()=>a[0]],["Middle element",()=>a[(n-1)>>1]],["Last element",()=>a[n-1]],["Not in list",()=>max+1]].forEach(([l,f])=>{
     const b=document.createElement("button");b.textContent=l;
     b.onclick=()=>{$("target").value=f();run();};q.appendChild(b);
   });
