@@ -154,7 +154,7 @@ With 20 cities there are 19! ≈ 1.2 × 10¹⁷ routes. A computer checks 1 mill
 <choices>
 <choice ><statement><p>About 2 minutes</p></statement><feedback><p>Not quite. 1.2×10¹⁷ ÷ 10⁶ ≈ 1.2×10¹¹ seconds ≈ 3,800 years. Checking every route doesn’t scale!</p></feedback></choice>
 <choice ><statement><p>About 4 days</p></statement><feedback><p>Not quite. 1.2×10¹⁷ ÷ 10⁶ ≈ 1.2×10¹¹ seconds ≈ 3,800 years. Checking every route doesn’t scale!</p></feedback></choice>
-<choice ><statement><p>About 3,800 years</p></statement><feedback><p>Correct! 1.2×10¹⁷ ÷ 10⁶ ≈ 1.2×10¹¹ seconds ≈ 3,800 years. Checking every route doesn’t scale!</p></feedback></choice>
+<choice correct="yes"><statement><p>About 3,800 years</p></statement><feedback><p>Correct! 1.2×10¹⁷ ÷ 10⁶ ≈ 1.2×10¹¹ seconds ≈ 3,800 years. Checking every route doesn’t scale!</p></feedback></choice>
 <choice ><statement><p>About 1 second</p></statement><feedback><p>Not quite. 1.2×10¹⁷ ÷ 10⁶ ≈ 1.2×10¹¹ seconds ≈ 3,800 years. Checking every route doesn’t scale!</p></feedback></choice>
 </choices>
 </activity>
