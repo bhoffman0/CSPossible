@@ -64,6 +64,7 @@ function edge(a,b,cls,lbl,lc){const x1=C[a][1],y1=C[a][2],x2=C[b][1],y2=C[b][2];
  if(cls)el("line",{x1,y1,x2,y2,class:cls});
  if(lbl){const t=el("text",{x:(x1+x2)/2,y:(y1+y2)/2+4,class:"lbl "+(lc||"")});t.textContent=D[a][b]}}
 function draw(){
+ const focusedCity=Array.from(svg.querySelectorAll(".city")).indexOf(document.activeElement);
  svg.innerHTML="";const all=document.getElementById("all").checked;
  for(let i=0;i<N;i++)for(let j=i+1;j<N;j++)el("line",{x1:C[i][1],y1:C[i][2],x2:C[j][1],y2:C[j][2],class:"edge"});
  if(all)for(let i=0;i<N;i++)for(let j=i+1;j<N;j++)edge(i,j,null,true);
@@ -73,6 +74,7 @@ function draw(){
  C.forEach((c,i)=>{const g=el("g",{class:"city"+(tour.includes(i)?" in":"")+(tour[0]===i?" start":""),tabindex:0,role:"button","aria-label":c[0]});
   el("circle",{cx:c[1],cy:c[2],r:12},g);const t=el("text",{x:c[1],y:c[2]-18,"text-anchor":"middle"},g);t.textContent=c[0];
   g.onclick=()=>pick(i);g.onkeydown=e=>{if(e.key==="Enter"||e.key===" "){e.preventDefault();pick(i)}}});
+ if(focusedCity>=0)svg.querySelectorAll(".city")[focusedCity].focus();
  document.getElementById("len").textContent=len(tour);
  document.getElementById("path").textContent=tour.length?tour.map(i=>C[i][0]).join(" → "):"Tap a city to start.";
  const st=document.getElementById("status");
