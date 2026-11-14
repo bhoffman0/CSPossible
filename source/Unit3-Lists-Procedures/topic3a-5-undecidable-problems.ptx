@@ -117,7 +117,7 @@
  <subsection xml:id="unit3a-traveling-salesman-activity">
   <title>Traveling Salesman Activity</title>
   <p>
-    Winnie the Pooh is looking for his friends. He must visit every location once and return home. Which route is shortest?
+    A Pokémon Trainer starting in Pallet Town must visit every city once and return home. Which route is shortest?
   </p>
 
   <interactive iframe="webapps/traveling-sales.html" width="100%" aspect="2:2"/>
@@ -130,10 +130,10 @@
 Starting from Pallet Town, how many different round trips visit all 6 cities exactly once? (Direction counts: going clockwise vs. counter-clockwise are different.)
 </p></statement>
 <choices>
-<choice ><statement><p>6</p></statement><feedback><p>Not quite. Pooh’s House is fixed as the start, leaving 5 cities to order: 5! = 5×4×3×2×1 = 120. (Ignoring direction, that’s 60 distinct loops.)</p></feedback></choice>
-<choice ><statement><p>30</p></statement><feedback><p>Not quite. Pooh’s House is fixed as the start, leaving 5 cities to order: 5! = 5×4×3×2×1 = 120. (Ignoring direction, that’s 60 distinct loops.)</p></feedback></choice>
-<choice correct="yes"><statement><p>120</p></statement><feedback><p>Correct! Pooh’s House is fixed as the start, leaving 5 cities to order: 5! = 5×4×3×2×1 = 120. (Ignoring direction, that’s 60 distinct loops.)</p></feedback></choice>
-<choice ><statement><p>720</p></statement><feedback><p>Not quite. Pooh’s House is fixed as the start, leaving 5 cities to order: 5! = 5×4×3×2×1 = 120. (Ignoring direction, that’s 60 distinct loops.)</p></feedback></choice>
+<choice ><statement><p>6</p></statement><feedback><p>Not quite. Pallet Town is fixed as the start, leaving 5 cities to order: 5! = 5×4×3×2×1 = 120. (Ignoring direction, that’s 60 distinct loops.)</p></feedback></choice>
+<choice ><statement><p>30</p></statement><feedback><p>Not quite. Pallet Town is fixed as the start, leaving 5 cities to order: 5! = 5×4×3×2×1 = 120. (Ignoring direction, that’s 60 distinct loops.)</p></feedback></choice>
+<choice correct="yes"><statement><p>120</p></statement><feedback><p>Correct! Pallet Town is fixed as the start, leaving 5 cities to order: 5! = 5×4×3×2×1 = 120. (Ignoring direction, that’s 60 distinct loops.)</p></feedback></choice>
+<choice ><statement><p>720</p></statement><feedback><p>Not quite. Pallet Town is fixed as the start, leaving 5 cities to order: 5! = 5×4×3×2×1 = 120. (Ignoring direction, that’s 60 distinct loops.)</p></feedback></choice>
 </choices>
 </activity>
 
