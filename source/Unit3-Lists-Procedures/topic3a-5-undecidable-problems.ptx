@@ -20,7 +20,7 @@
 </p>
 <p>
 <ol>
-    <li><term>Undecidable Problems</term>. These problems are the theoretically impossible to solve — by any algorithm. 
+    <li><term>Undecidable Problems</term>. These problems are theoretically impossible to solve — by any algorithm. 
       The halting problem is a decision problem (with a yes or no answer) that is undecidable. A computer cannot tell if 
       it is in an infinite loop or it will at some point stop!</li>
     <li><term>Intractable Problems</term>. These problems are theoretically impossible to solve in a reasonable time — 
