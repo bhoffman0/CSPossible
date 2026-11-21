@@ -19,7 +19,8 @@
 
   <blurb shelf="AP Computer Science">
     CSPossible is a beta AP CSP Python curriculum to meet the 2027-2028 College Board 
-    standards. It is also an introductory college-level computer programming course in Python.
+    standards. It is also an introductory college-level computer programming course in Python
+    with optional MIT App Inventor lessons.
   </blurb>
 
   <!-- new as of pretext v. 2.4.7 -->
