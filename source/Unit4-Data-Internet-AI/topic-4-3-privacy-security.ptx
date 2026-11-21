@@ -169,8 +169,10 @@
 
 
     <p><term>Personally identifiable information (PII)</term> is any data that can be used to 
-      identify a specific individual, for example a person's name, address, 
-      phone number, email address, or social security number. Watch the following  
+      identify a specific individual, for example a person's name (if it is not very common), 
+      address, phone number, email address, or social security number. 
+      PII can be used by criminals to steal someone's identity or commit fraud.
+      Watch the following  
     <url href="https://www.youtube.com/watch?v=yZj5nmLYiW4">video</url> to learn more about PII:
     </p>
 
@@ -193,14 +195,18 @@
           <url href="https://aboutmyinfo.org/identity">https://aboutmyinfo.org/identity</url> to 
           learn more about PII in census data and how it can be used to identify you. 
           Enter a birthdate (it doesn't have to be your actual birthdate) and your zipcode or take
-          a look at the Samples tab. Then answer the following questions:
+          a look at the Samples tab. The aggregation (combination) of this data can 
+          uniquely identify a person and put them at risk of identity theft or fraud.
+          Answer the following questions below based on your results or one of the samples:
           </p>
           
           <ol>
             <li>What PII is collected by this website?</li>
             <li>In your results or in one of the samples, how many people have the same birthdate in that zip code?</li>
             <li>In your results or in one of the samples, what was the population size for that zip code?</li>
-            <li>Why might a person be easily identifiable by this information?</li>
+            <li>Can this aggregate data be used to identify an individual? In which situations (consider population size
+              in a zip code) could this data be used to identify an individual?
+            </li>
           </ol>
       </statement>
       <response/> 
