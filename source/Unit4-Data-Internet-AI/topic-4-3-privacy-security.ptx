@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+
 <section xml:id="topic-4-3-privacy-security">
   <time minutes="90" />
   <title>Privacy and Security</title>
@@ -7,17 +8,28 @@
   <idx>privacy-security</idx>
   <introduction>
     <p>Quick Links:
-      <xref text="global" ref="data-collection-and-privacy-risks, how-systems-are-compromised,
+      <xref text="global" ref="data-collection, how-systems-are-compromised,
       protecting-digital-systems, LOs-4-3, vocab-4-3"/>
     </p>
     <p>
-      In this topic, we examine how personal data is collected, how systems can be compromised,
-      and how digital systems and information can be protected.
+      In this topic, we examine how apps can collect personal data causing privacy concerns, 
+      how computer systems can be compromised and how they can be protected.
     </p>
+
+    <image source="_static/Unit4images/data-cyber.jpg" alt="data-cybersecurity" width="70%" />
+
   </introduction>
 
-  <subsection xml:id="data-collection-and-privacy-risks">
-    <title>Data Collection, Tracking, and Privacy Risks</title>
+  <subsection xml:id="data-collection">
+    <title>Data Collection and Privacy</title>
+       
+<p>Most of us do not realize the extent to which our personal data is collected by apps and websites. 
+  Watch the following <url href="https://www.youtube.com/watch?v=bqWuioPHhz0">video</url>
+   about the massive amounts of data that apps on our smart phones and computers collect about us.
+  While you are watching the video, write down at least three types of data that is collected about Liz in the video.
+</p>
+
+ <video youtube="bqWuioPHhz0" label="video-data-collection" /> 
 
     <note>
       <title>4.3.A.1</title>
@@ -37,10 +49,34 @@
       </p>
     </note>
 
-    <note>
+     <idx><h>POGIL group activity</h><h>data collection video</h></idx>
+
+    <activity label="data-collection">
+      <title>Data Collection Video Reflection</title>
+      <statement>
+        <p>In groups or individually, after watching the <url href="https://www.youtube.com/watch?v=bqWuioPHhz0">video</url> above,
+          answer the following questions: 
+          </p>
+          <ol>
+            <li>What are three types of data that are collected about Liz in the video?</li>
+            <li>What are some ways that this data can be used? Why do you think companies collect the data?</li>
+            <li>What are some privacy concerns that you have about the collection of this data?</li>
+          </ol>
+      </statement>
+      <response/> 
+      </activity>
+
+      <p>Have you ever gone to a website that recognizes you and welcomes you by name or by filling in 
+        your username and password?
+        Websites use various methods to collect data from users, including 
+        <term>cookies</term> which are small pieces of data stored in your web browser, for example
+        your name or login information or preferences. Companies use this data to
+      personalize your experience, but this can also raise privacy concerns.  </p>
+
+      <note>
       <title>4.3.A.3</title>
       <p>
-        Cookies are small pieces of data that a website stores in a user's browser or device to
+        <term>Cookies</term> are small pieces of data that a website stores in a user's browser or device to
         remember information such as login status, preferences, or items in a shopping cart.
       </p>
     </note>
@@ -54,10 +90,32 @@
       </p>
     </note>
 
+      <activity label="cookies-activity">
+      <title>Cookies Activity</title>
+      <statement>
+        <p>If you are on a Chrome web browser on a computer, go to 
+          <url href="chrome://settings/content/all">chrome://settings/content/all</url> to see a
+          list of websites that you have visited that have stored cookies on your device. If not, answer
+          the following questions using the image below.</p>
+          <image source="_static/Unit4images/cookies.png" alt="cookies" width="100%" />
+          <ol>
+            <li>List a website and the number of cookies it has stored in the web browser Chrome.</li>
+            <li>What purpose do you think the cookies serve? For example, 
+              does the website store your login info?
+            </li>
+          </ol>
+      </statement>
+      <response/> 
+      </activity>
+
+      <p>If your location is enabled on your phone, companies can collect your <term>geolocation data</term>
+      through their apps. This data can be used to provide location-based services, such as maps or local
+      recommendations, but it can also pose privacy risks.  </p>
+
     <note>
       <title>4.3.A.5</title>
       <p>
-        Geolocation data estimates or identifies a device's physical location. It can enable useful
+        <term>Geolocation</term> data estimates or identifies a device's physical location. It can enable useful
         services, like navigation or nearby results, but can also reveal sensitive patterns, such as
         where someone lives, goes to school, works, or spends time.
       </p>
@@ -73,15 +131,118 @@
       </p>
     </note>
 
+
+<activity label="geolocation-match">
+  <statement>
+    <p>
+      Geolocation data can be useful, but it can also create privacy risks.
+      Drag each example from the left and drop it into the correct category:
+      Benefit or Potential Harm of Geolocation Data.
+      Click the "Check Me" button to see if you are correct.
+    </p>
+  </statement>
+
+  <feedback>
+    <p>Think about how knowing someone's physical location can be helpful
+      or potentially put their privacy or safety at risk. Review the
+      geolocation discussion above and try again.</p>
+  </feedback>
+
+  <cardsort>
+    <match>
+      <premise>Driving directions</premise>
+      <premise>Looking for a nearby restaurant</premise>
+      <premise>Local weather alerts</premise>
+      <premise>Helping emergency responders</premise>
+      <response>Benefits of Geolocation Data</response>
+    </match>
+
+    <match>
+      <premise>Showing where someone lives</premise>
+      <premise>Tracking daily routines of others</premise>
+      <premise>Showing when you are on vacation</premise>
+      <premise>Showing ads or selling data to local businesses</premise>
+      <response>Potential Harms</response>
+    </match>
+  </cardsort>
+</activity>
+
+
+    <p><term>Personally identifiable information (PII)</term> is any data that can be used to 
+      identify a specific individual, for example a person's name, address, 
+      phone number, email address, or social security number. Watch the following  
+    <url href="https://www.youtube.com/watch?v=yZj5nmLYiW4">video</url> to learn more about PII:
+    </p>
+
+    <video youtube="yZj5nmLYiW4" label="video-PII" />
+
     <note>
       <title>4.3.A.7</title>
       <p>
-        Some data is personally identifiable information (PII). Some PII is directly identifying,
+        Some data is <term>personally identifiable information (PII)</term>. Some PII is directly identifying,
         like a name or phone number, and some becomes identifying when combined with other data.
         Examples include: full name, phone number, email address, Social Security number,
         government ID numbers, precise location, and biometrics.
       </p>
     </note>
+    
+    <activity label="pii-activity">
+      <title>PII Activity</title>
+      <statement>
+        <p>Go to 
+          <url href="https://aboutmyinfo.org/identity">https://aboutmyinfo.org/identity</url> to 
+          learn more about PII in census data and how it can be used to identify you. 
+          Enter a birthdate (it doesn't have to be your actual birthdate) and your zipcode or take
+          a look at the Samples tab. Then answer the following questions:
+          </p>
+          
+          <ol>
+            <li>What PII is collected by this website?</li>
+            <li>In your results or in one of the samples, how many people have the same birthdate in that zip code?</li>
+            <li>In your results or in one of the samples, what was the population size for that zip code?</li>
+            <li>Why might a person be easily identifiable by this information?</li>
+          </ol>
+      </statement>
+      <response/> 
+      </activity>
+
+   
+<activity label="pii-match">
+  <statement>
+    <p>
+      Drag and drop the types of data below onto the categories of 
+      PII (Personally Identifiable Information) or Non-PII (Non-Personally Identifiable Information). 
+      
+      Some information may not directly identify an individual by itself,
+      but could become identifying when combined with other information.
+      Click the "Check Me" button to see if you are correct.
+    </p>
+  </statement>
+
+  <feedback>
+    <p>Review the discussion of personally identifiable information (PII)
+      in the lesson and try again.</p>
+  </feedback>
+
+  <cardsort>
+    <match>
+      <response>PII</response>
+      <premise>Social Security number</premise>
+      <premise>Email address</premise>
+      <premise>Phone number</premise>
+      <premise>Precise GPS location</premise>
+      <premise>Fingerprint or facial recognition data</premise>       
+    </match>
+
+    <match>
+      <response>Non-PII</response>
+      <premise>Common first name like John</premise>
+      <premise>Favorite type of music</premise>
+      <premise>Number of steps walked in one day</premise>
+      <premise>Type of web browser being used</premise>
+    </match>
+  </cardsort>
+</activity>
 
     <note>
       <title>4.3.A.8</title>
@@ -91,6 +252,59 @@
         others, making it difficult to fully control or remove.
       </p>
     </note>
+
+<activity label="ad-tracking">
+  <statement>
+    <p>A student visits several different shopping websites. Later, the student notices advertisements for products viewed on those websites appearing on unrelated websites.</p>
+    <p>Which of the following best explains how this tracking might occur?</p>
+  </statement>
+  <choices randomize="yes">
+
+    <choice>
+      <statement>
+        <p>Each website has immediate access to the browsing activity and 
+          search history of the user on other websites.</p>
+      </statement>
+      <feedback>
+        <p>No, individual websites do not automatically have access to the browsing activity or search history of every other website.</p>
+      </feedback>
+    </choice>
+
+    <choice correct="yes">
+      <statement>
+        <p>Cookies and other identifiers saved in the browser can allow advertising services to recognize a 
+          browser across multiple websites and associate browsing activity with the same user or device.</p>
+      </statement>
+      <feedback>
+        <p>Correct! Third-party advertising services can use cookies and other identifiers to recognize browsers 
+          across different websites, track browsing activity, and display targeted advertisements based on products 
+          a user has previously viewed.</p>
+      </feedback>
+    </choice>
+
+    <choice>
+      <statement>
+        <p>Websites automatically have access to all files stored on a user's computer.</p>
+      </statement>
+      <feedback>
+        <p>No, websites do not automatically have access to all files from a user's computer. </p>
+      </feedback>
+    </choice>
+
+    <choice>
+      <statement>
+        <p>Search engines require every website to share its complete database of user activity.</p>
+      </statement>
+      <feedback>
+        <p>No, search engines do not require websites to share their complete databases of user activity. 
+      </p>
+      </feedback>
+    </choice>
+
+  </choices>
+</activity>
+
+
   </subsection>
 
   <subsection xml:id="how-systems-are-compromised">
