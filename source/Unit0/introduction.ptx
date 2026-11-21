@@ -60,6 +60,11 @@
       Some materials were borrowed and revised from Mobile CSP, CSAwesome, and Dr. Barb Ericson's 
       AP CSP and Python 4 Everybody courses on Runestone.  Thank you to all of the beta version testers!
       </p>
+    <p>
+    The text in this course was created by the authors with minimal AI assistance.
+    Generative AI tools were used for brainstorming, some PreTeXt formatting, 
+    error checking, and the generation of a few illustrative images. 
+     </p>
 </subsection>
 
 <subsection>
@@ -76,5 +81,7 @@
     non-commercial use to copy, distribute, and change this work, with credit 
     while maintaining free use of the copied work. 
     </p>
+
 </subsection>
+
 </section>
