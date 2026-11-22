@@ -5,13 +5,21 @@
   <time minutes="90" />
   <title>Privacy and Security</title>
 
-  <idx>privacy-security</idx>
+  <idx>privacy</idx>
+  <idx>security</idx>
+  <idx>cyber</idx>
+  <idx>cybersecurity</idx>
+
   <introduction>
     <p>Quick Links:
-      <xref text="global" ref="data-collection, how-systems-are-compromised,
-      protecting-digital-systems, LOs-4-3, vocab-4-3"/>
+      <xref text="global" ref="privacy, cyberattacks,
+      cybersecurity, LOs-4-3, vocab-4-3"/>
     </p>
     <p>
+      <term>Cybersecurity</term> is always in the news and one
+      of the fastest growing career fields.
+      Cybersecurity professionals help organizations to protect their computer systems 
+      and data. 
       In this topic, we examine how apps can collect personal data causing privacy concerns, 
       how computer systems can be compromised and how they can be protected.
     </p>
@@ -20,8 +28,8 @@
 
   </introduction>
 
-  <subsection xml:id="data-collection">
-    <title>Data Collection and Privacy</title>
+  <subsection xml:id="privacy">
+    <title>Data Collection and Data Privacy</title>
        
 <p>Most of us do not realize the extent to which our personal data is collected by apps and websites. 
   Watch the following <url href="https://www.youtube.com/watch?v=bqWuioPHhz0">video</url>
@@ -313,13 +321,18 @@
 
   </subsection>
 
-  <subsection xml:id="how-systems-are-compromised">
-    <title>How Systems and Information Can Be Compromised</title>
+  <subsection xml:id="cyberattacks">
+    <title>Cyber Attacks</title>
 
-    <note>
+    <p><term>Cyber attacks</term> are when <term>hackers</term>
+      exploit vulnerabilities or attack computer systems or users to cause damage, or gain unauthorized access, 
+      or steal data. In a <term>data breach</term>, hackers break into a 
+      computer system to steal sensitive data, for example PII like usernames, passwords, and
+      credit card numbers. This information can be used for identity theft, financial fraud, or other malicious purposes.</p>
+      <note>
       <title>4.3.B.1</title>
       <p>
-        A data breach occurs when sensitive data is accessed, disclosed, or stolen by an unauthorized
+        A <term>data breach</term> occurs when sensitive data is accessed, disclosed, or stolen by an unauthorized
         party, often because data was stored insecurely, shared improperly, or protected by weak
         security controls.
       </p>
@@ -334,6 +347,14 @@
       </p>
     </note>
 
+    <p>
+    <term>Passwords</term> are one of the main ways to protect computers and data 
+    from unauthorized access. Many data breaches occur due to weak passwords that can be
+    easily guessed or reused passwords that have been compromised (stolen) in previous breaches. 
+    </p>
+    
+    we saw that it is very difficult to guess a long complex password (which can be tested in sites such as https://www.security.org/how-secure-is-my-password/).  
+
     <note>
       <title>4.3.B.3</title>
       <p>
@@ -343,10 +364,20 @@
       </p>
     </note>
 
+    <p>
+    <term>Phishing</term> is a common technique that is used to trick a user into providing personal 
+    information usually through email. This is a type of <term>social engineering</term> attack
+    where hackers manipulate people through emails and phone calls to gain access to sensitive information like
+    usernames and passwords to access private accounts.. A malicious phishing or malware link can be disguised 
+    on a web page or in an email message. Watch the following <url href="https://www.youtube.com/watch?v=qkzAveeAuts">video</url> on phishing.
+  </p>
+
+  <video youtube="qkzAveeAuts" label="video-phishing" />
+
     <note>
       <title>4.3.B.4</title>
       <p>
-        Social engineering is a strategy adversaries use to compromise systems by targeting people
+       <term>Social engineering</term> is a strategy adversaries use to compromise systems by targeting people
         rather than exploiting a technical weakness. An adversary influences a user into taking an
         action that compromises security, often by impersonating a trusted source or creating urgency,
         fear, or curiosity.
@@ -356,7 +387,7 @@
     <note>
       <title>4.3.B.5</title>
       <p>
-        Phishing is a type of social engineering in which an adversary attempts to influence a user
+        <term>Phishing</term> is a type of social engineering in which an adversary attempts to influence a user
         into revealing personal information, such as passwords or verification codes. Adversaries can
         use that information to access accounts, financial services, or other protected systems.
       </p>
@@ -389,14 +420,33 @@
       </p>
     </note>
 
+    <p><term>Malware</term> which stands for MALicious softWARE is software intended to damage a computing 
+      system or to take partial control over its operation. A computer <term>virus</term> is a type of malware 
+      that can copy itself to spread from computer to computer. Viruses often attach themselves to emails or downloaded programs. Watch the following <url href="https://www.youtube.com/watch?v=XU8PHihT_P4">video</url> about malware:</p>
+
+      <video youtube="XU8PHihT_P4" label="video-malware" />
+
     <note>
       <title>4.3.B.9</title>
       <p>
-        Malware is software designed to harm a device or enable unauthorized access, such as by
+        <term>Malware</term> is software designed to harm a device or enable unauthorized access, such as by
         stealing data, monitoring user activity, or controlling parts of the system. Malware can be
         installed through unsafe downloads, malicious attachments, or compromised websites.
       </p>
     </note>
+
+    <p>Malware can spread by email attachments, downloading from sites that are not reputable, network 
+      connections from infected computers, and copying infected files from computer to computer on portable 
+      memory. So don’t click or open anything where you don’t know the source. A computer that is infected may 
+      stop working, display strange messages, delete files, be controlled by others, steal personal 
+      information and infect other computers. Recent <term>ransomware</term> attacks encrypt and lock computer systems 
+      until a ransom is paid.</p>
+
+<p>Computer virus and malware scanning software can protect a computing system against infection. Many 
+  operating systems like Windows come with their own free malware scanners like Windows Defender. It is very 
+  important to auto-update the malware scanning software with newly discovered malware signatures. Explore the 
+  malware scanner on your computer. Regular software updates help to fix errors that would compromise a 
+  computing system. All real-world systems have errors or design flaws that can be exploited.</p>
 
     <note>
       <title>4.3.B.10</title>
@@ -408,31 +458,50 @@
     </note>
   </subsection>
 
-  <subsection xml:id="protecting-digital-systems">
-    <title>Protecting Digital Systems and Information</title>
+  <subsection xml:id="cybersecurity">
+    <title>Cybersecurity</title>
 
+    <p><term>User authentication</term> is how computer systems verify who you are. The simplest 
+      authentication method is logging in with usernames and passwords. Some other authentication methods include <term>one-time authentication codes</term> that are texted or generated in apps on your phone, <term>passkeys</term> that are saved on your device, or<term>biometrics</term> which are biological features like fingerprints or face recognition. 
+      Strong authentication is essential for cybersecurity of computer systems to avoid cyber attacks and data breaches.
+    </p>
     <note>
       <title>4.3.C.1</title>
       <p>
-        Authentication is how a system verifies a user's identity, such as with passwords, passkeys,
+        <term>Authentication</term> is how a system verifies a user's identity, such as with passwords, passkeys,
         or biometrics. Strong authentication can reduce unauthorized access to devices and accounts.
       </p>
     </note>
 
+    <p>Many organizations use <term>multi-factor authentication (MFA)</term> which asks 
+    for additional authentication in addition to the password, just in case the password gets compromised. Users are asked to present several separate pieces of evidence such as:
+    </p>
+    <image source="_static/Unit4images/multifactor-authentication.png" alt="mfa" width="100%" />
+    <ul>
+      <li>Something You Know: for example your password or the answers to security questions that you have set up</li>
+      <li>Something You Have: for example a code texted to the your phone, or an authentication app that generates one-time codes on your phone, or passkeys on your device.</li>
+      <li>Something You Are: for example biometrics such as fingerprints or face recognition</li>
+    </ul>
+
+    <p>Watch the following <url href="https://www.youtube.com/watch?v=wUNEXJRKrcI">video</url> for more information on two-factor (2FA) and multi-factor (MFA) authentication.  </p>
+
+    <video youtube="wUNEXJRKrcI" label="video-mfa" />
+
     <note>
       <title>4.3.C.2</title>
       <p>
-        Multifactor authentication (MFA) requires two or more different pieces of evidence, typically
+        <term>Multifactor authentication</term> (MFA) requires two or more different pieces of evidence, typically
         in at least two of the following categories: knowledge (something a user knows), possession
         (something a user has), and biometrics (something a user is). MFA adds protection because an
         attacker must compromise multiple factors, not just a single password, to access an account.
       </p>
     </note>
 
+    <p></p>
     <note>
       <title>4.3.C.3</title>
       <p>
-        Encryption encodes data so it cannot be read without a key. Decryption decodes it so it can
+        <term>Encryption</term> encodes data so it cannot be read without a key. Decryption decodes it so it can
         be read. Encryption helps protect data stored on devices and sent over networks.
       </p>
     </note>
@@ -440,7 +509,7 @@
     <note>
       <title>4.3.C.4</title>
       <p>
-        End-to-end encryption is a method of secure communication in which data are encrypted on the
+        <term>End-to-end encryption</term> is a method of secure communication in which data are encrypted on the
         sender's device and can only be decrypted on the intended recipient's device, so services that
         transmit or store the data along the way cannot read the contents without the decryption key.
       </p>
