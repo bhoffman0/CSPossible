@@ -12,8 +12,8 @@
 
   <introduction>
     <p>Quick Links:
-      <xref text="global" ref="privacy, cyberattacks,
-      cybersecurity, LOs-4-3, vocab-4-3"/>
+      <xref text="global" ref="privacy, data-breaches, phishing, malware,
+      mfa, encryption, LOs-4-3, vocab-4-3"/>
     </p>
     <p>
       <term>Cybersecurity</term> is always in the news and one
@@ -321,14 +321,15 @@
 
   </subsection>
 
-  <subsection xml:id="cyberattacks">
-    <title>Cyber Attacks</title>
+  <subsection xml:id="data-breaches">
+    <title>Data Breaches</title>
 
     <p><term>Cyber attacks</term> are when <term>hackers</term>
-      exploit vulnerabilities or attack computer systems or users to cause damage, or gain unauthorized access, 
-      or steal data. In a <term>data breach</term>, hackers break into a 
+      exploit vulnerabilities or attack computer systems to cause damage, gain unauthorized access, 
+      or steal data. One type of cyber attack is a <term>data breach</term>, where hackers break into a 
       computer system to steal sensitive data, for example PII like usernames, passwords, and
       credit card numbers. This information can be used for identity theft, financial fraud, or other malicious purposes.</p>
+      
       <note>
       <title>4.3.B.1</title>
       <p>
@@ -347,13 +348,21 @@
       </p>
     </note>
 
+      <note>
+      <title>4.3.B.8</title>
+      <p>
+        Email is not inherently private. Email messages can be forwarded, stored, intercepted, or
+        accessed by people other than the sender and receiver, which can expose sensitive information
+        if an account or message is accessed by an unauthorized party.
+      </p>
+    </note>
+
     <p>
     <term>Passwords</term> are one of the main ways to protect computers and data 
     from unauthorized access. Many data breaches occur due to weak passwords that can be
     easily guessed or reused passwords that have been compromised (stolen) in previous breaches. 
     </p>
     
-    we saw that it is very difficult to guess a long complex password (which can be tested in sites such as https://www.security.org/how-secure-is-my-password/).  
 
     <note>
       <title>4.3.B.3</title>
@@ -364,6 +373,27 @@
       </p>
     </note>
 
+    <idx><h>POGIL group activity</h><h>password activity</h></idx>
+
+    <activity label="password-activity">
+      <title>Password Activity</title>
+      <statement>
+        <p>In groups or individually, explore the following websites to answer the questions below:
+          </p>
+          <ol>
+        
+            <li>Go to <url href="https://www.security.org/how-secure-is-my-password/">How Secure Is My Password</url> or <url href="https://mobile-csp.org/webapps/passwords/index.html">Mobile CSP Password Strength Calculator</url> to test the strength of passwords. Do not enter your exact passwords, but try similar passwords of different lengths. Weak passwords are often too short. If you just use lowercase letters, how long does the password need to be so that it is not hacked in 2 minutes or less? How long does it have to be if you add some complexity with numbers, mixed-case, and special characters?</li>
+            
+            <li>Go to <url href="https://haveibeenpwned.com/">Have I Been Pwned</url> which is a website that checks if an email address has been compromised in a data breach where some PII and possibly a password associated with it has been stolen. Try your email address. If it has not been in a breach, try <c>bob@gmail.com</c>. How many times has it been compromised? Scroll down to see the details of the breaches. Describe one of the data breaches and what data was compromised in 1 sentence below. Note that in data breaches that involve passwords, even though they are usually encrypted, the weak passwords can be easily cracked.</li>
+          </ol>
+      </statement>
+      <response/> 
+      </activity>
+
+      </subsection>
+
+     <subsection xml:id="phishing">
+    <title>Phishing</title>
     <p>
     <term>Phishing</term> is a common technique that is used to trick a user into providing personal 
     information usually through email. This is a type of <term>social engineering</term> attack
@@ -411,14 +441,80 @@
       </p>
     </note>
 
-    <note>
-      <title>4.3.B.8</title>
+        <note>
+      <title>4.3.B.10</title>
       <p>
-        Email is not inherently private. Email messages can be forwarded, stored, intercepted, or
-        accessed by people other than the sender and receiver, which can expose sensitive information
-        if an account or message is accessed by an unauthorized party.
+        Adversaries often focus on moments when users are rushed or confused such as with urgent
+        "account locked" messages. These situations increase the chance a user will click a link,
+        share information, or approve access without noticing warning signs.
       </p>
     </note>
+
+    <activity label="phishing-smart-home-device">
+    <title>AP CSP Practice</title>
+      <statement>
+    <p>A user purchased a new smart home device with embedded software and connected the device to a home network. The user then registered the device with the manufacturer, setting up an account using a personal e-mail and password.</p>
+    <p>Which of the following explains how a phishing attack could occur against the user of the smart home device?</p>
+  </statement>
+  <choices randomize="yes">
+    <choice>
+      <statement>
+        <p>The user’s account is sent an overwhelming number of messages in an attempt to disrupt service on the user’s home network.</p>
+      </statement>
+      <feedback>
+        <p>No. This describes a denial-of-service attack, in which an overwhelming amount of traffic or messages is used to disrupt a service or network.</p>
+      </feedback>
+    </choice>
+    <choice correct="yes">
+      <statement>
+        <p>The user is sent an e-mail appearing to be from the manufacturer, asking the user to confirm the account password by clicking on a link in the e-mail and entering the password on the resulting page.</p>
+      </statement>
+      <feedback>
+        <p>Correct! This is an example of a phishing attack. The attacker disguises an e-mail as a legitimate message from the manufacturer to trick the user into revealing a password through a fraudulent Web page.</p>
+      </feedback>
+    </choice>
+    <choice>
+      <statement>
+        <p>A vulnerability in the device’s software is exploited to install software that reveals the user’s password to an unauthorized individual.</p>
+      </statement>
+      <feedback>
+        <p>No. This describes an attack that exploits a software vulnerability to install malicious software, such as spyware or a keylogger, to obtain sensitive information.</p>
+      </feedback>
+    </choice>
+    <choice>
+      <statement>
+        <p>A vulnerability in the device’s software is exploited to gain unauthorized access to other devices on the user’s home network.</p>
+      </statement>
+      <feedback>
+        <p>No. This describes an attack that exploits a software vulnerability to gain unauthorized access to other devices on a network. It is not an example of phishing.</p>
+      </feedback>
+    </choice>
+  </choices>
+</activity>
+
+    <idx><h>POGIL group activity</h><h>phishing quiz</h></idx>
+
+    <activity label="phishing-quiz">
+      <title>Phishing Quiz</title>
+      <statement>
+        <p>In groups or individually, do the <url href="https://phishingquiz.withgoogle.com/">Google Phishing Quiz</url> to practice identifying phishing 
+          emails. Answer the following questions:
+          </p>
+          <ol>
+        
+            <li>What was your score?</li>
+            <li>What are some of the clues that helped you identify phishing emails?</li>
+            <li>What did you find to be the most challenging phishing technique to spot?</li>
+            <li>How do you think the use of generative AI will affect phishing attacks?</li>
+          </ol>
+      </statement>
+      <response/> 
+      </activity>
+ 
+    </subsection>
+   
+    <subsection xml:id="malware">
+    <title>Malware</title>
 
     <p><term>Malware</term> which stands for MALicious softWARE is software intended to damage a computing 
       system or to take partial control over its operation. A computer <term>virus</term> is a type of malware 
@@ -435,6 +531,7 @@
       </p>
     </note>
 
+    
     <p>Malware can spread by email attachments, downloading from sites that are not reputable, network 
       connections from infected computers, and copying infected files from computer to computer on portable 
       memory. So don’t click or open anything where you don’t know the source. A computer that is infected may 
@@ -442,27 +539,84 @@
       information and infect other computers. Recent <term>ransomware</term> attacks encrypt and lock computer systems 
       until a ransom is paid.</p>
 
-<p>Computer virus and malware scanning software can protect a computing system against infection. Many 
+      <activity label="malware-activity">
+      <title>Malware Detection</title>
+      <statement>
+        <p>In groups or individually, go to <url href="https://fortiguard.fortinet.com/threat-map">Cyber Threat Map</url> 
+          to see a real-time map of cyber attacks around the world.  
+          </p>
+          <ol>
+            <li>What is the top targeted country for cyber attacks in the last 24 hours?</li>
+            <li>What is the Top Threat (virus or attack) in the last 24 hours? Click on it to find out more information.</li>
+          </ol>
+      </statement>
+      <response/>
+    </activity>
+
+
+
+      <p>Computer virus and malware scanning software can protect a computing system against infection. Many 
   operating systems like Windows come with their own free malware scanners like Windows Defender. It is very 
   important to auto-update the malware scanning software with newly discovered malware signatures. Explore the 
   malware scanner on your computer. Regular software updates help to fix errors that would compromise a 
   computing system. All real-world systems have errors or design flaws that can be exploited.</p>
 
     <note>
-      <title>4.3.B.10</title>
+      <title>4.3.C.6</title>
       <p>
-        Adversaries often focus on moments when users are rushed or confused such as with urgent
-        "account locked" messages. These situations increase the chance a user will click a link,
-        share information, or approve access without noticing warning signs.
+        Malware scanning tools can help detect or block some malicious software, reducing the chance
+        that a device is infected or controlled without the user's knowledge.
       </p>
     </note>
+
+
+<activity label="malware-prevention">
+  <statement>
+    <p>Which of the following can you do to help prevent malware infections? Select all that apply.</p>
+  </statement>
+  <choices multiple="yes" randomize="yes">
+    <choice correct="yes">
+      <statement>
+        <p>Run regular software updates.</p>
+      </statement>
+      <feedback>
+        <p>Correct! Software updates often include security patches that fix vulnerabilities that malware could exploit.</p>
+      </feedback>
+    </choice>
+    <choice correct="yes">
+      <statement>
+        <p>Run malware scanning software.</p>
+      </statement>
+      <feedback>
+        <p>Correct! Malware scanning software can detect, block, and remove malicious software from a device.</p>
+      </feedback>
+    </choice>
+    <choice correct="yes">
+      <statement>
+        <p>Do not click or open anything from a source that you do not know or cannot identify.</p>
+      </statement>
+      <feedback>
+        <p>Correct! Avoiding suspicious links, downloads, and attachments reduces the risk of accidentally installing malware or exposing a device to malicious content.</p>
+      </feedback>
+    </choice>
+    <choice>
+      <statement>
+        <p>Open an e-mail attachment from an unknown sender.</p>
+      </statement>
+      <feedback>
+        <p>Incorrect. Opening attachments from unknown or untrusted senders can expose a device to malware. Such attachments should be avoided unless their legitimacy can be verified.</p>
+      </feedback>
+    </choice>
+  </choices>
+</activity>
+
   </subsection>
 
-  <subsection xml:id="cybersecurity">
-    <title>Cybersecurity</title>
+  <subsection xml:id="mfa">
+    <title>Multi-factor Authentication</title>
 
     <p><term>User authentication</term> is how computer systems verify who you are. The simplest 
-      authentication method is logging in with usernames and passwords. Some other authentication methods include <term>one-time authentication codes</term> that are texted or generated in apps on your phone, <term>passkeys</term> that are saved on your device, or<term>biometrics</term> which are biological features like fingerprints or face recognition. 
+      authentication method is logging in with usernames and passwords. Some other authentication methods include <term>one-time authentication codes</term> that are texted or generated in apps on your phone, <term>passkeys</term> that are saved on your device, or <term>biometrics</term> which are biological features like fingerprints or face recognition. 
       Strong authentication is essential for cybersecurity of computer systems to avoid cyber attacks and data breaches.
     </p>
     <note>
@@ -497,6 +651,107 @@
       </p>
     </note>
 
+
+
+<activity label="two-factor-authentication-mcq">
+  <statement>
+    <p>Which of the following would NOT count as two-factor authentication (2FA) in addition to entering a password?</p>
+  </statement>
+  <choices randomize="yes">
+    <choice>
+      <statement>
+        <p>Entering a token that is emailed to you.</p>
+      </statement>
+      <feedback>
+        <p>No. An additional verification token sent by e-mail provides another authentication step beyond entering a password.</p>
+      </feedback>
+    </choice>
+    <choice correct="yes">
+      <statement>
+        <p>Entering your password twice.</p>
+      </statement>
+      <feedback>
+        <p>Correct! Entering the same password twice does NOT count as two-factor authentication. Both entries rely on the same authentication factor: something you know.</p>
+      </feedback>
+    </choice>
+    <choice>
+      <statement>
+        <p>Your fingerprint.</p>
+      </statement>
+      <feedback>
+        <p>No. A fingerprint is a biometric authentication factor (something you are), which is different from a password (something you know).</p>
+      </feedback>
+    </choice>
+    <choice>
+      <statement>
+        <p>Entering a token that is sent to your phone.</p>
+      </statement>
+      <feedback>
+        <p>No. A verification token sent to your phone provides an additional authentication step beyond entering a password.</p>
+      </feedback>
+    </choice>
+  </choices>
+</activity>
+
+<activity label="ap-mfa-mcq">
+  <title>AP CSP Practice</title>
+  <statement>
+    <p>A Web site uses several strategies to prevent unauthorized individuals from 
+      accessing user accounts. Which of the following is NOT an example of multifactor 
+      authentication?</p>
+  </statement>
+  <choices randomize="yes">
+    <choice>
+      <statement>
+        <p>Each employee for a company is issued a USB device that contains a unique 
+          token code. To log into a company computer, an employee must insert the USB 
+          device into the computer and provide a correct password.</p>
+      </statement>
+      <feedback>
+        <p>No. This is an example of multifactor authentication because it requires two 
+          different authentication factors: something the employee has (the USB device) 
+          and something the employee knows (the password).</p>
+      </feedback>
+    </choice>
+    <choice>
+      <statement>
+        <p>After logging into an account from a new device, a user must enter a code that
+           is sent via e-mail to the e-mail address on file with the account.</p>
+      </statement>
+      <feedback>
+        <p>No. This is an example of multifactor authentication because it requires a 
+          password and an additional verification code sent through a separate 
+          communication channel.</p>
+      </feedback>
+    </choice>
+    <choice>
+      <statement>
+        <p>In order to log into an account, a user must provide both a password and a 
+          fingerprint that is captured using the user’s device.</p>
+      </statement>
+      <feedback>
+        <p>No. This is an example of multifactor authentication because it requires two 
+          different authentication factors: something the user knows (the password) and 
+          something the user is (the fingerprint).</p>
+      </feedback>
+    </choice>
+    <choice correct="yes">
+      <statement>
+        <p>When a user enters an incorrect password more than two times in a row, the 
+          user is locked out of the account for 24 hours.</p>
+      </statement>
+      <feedback>
+        <p>Correct! This is NOT an example of multifactor authentication. It is an 
+          account security measure that limits repeated login attempts. The user only 
+          needs to provide one authentication factor (a password) to log in.</p>
+      </feedback>
+    </choice>
+  </choices>
+</activity>
+</subsection>
+
+<subsection xml:id="encryption">
+  <title>Encryption and Permissions</title>
     <p></p>
     <note>
       <title>4.3.C.3</title>
@@ -523,13 +778,7 @@
       </p>
     </note>
 
-    <note>
-      <title>4.3.C.6</title>
-      <p>
-        Malware scanning tools can help detect or block some malicious software, reducing the chance
-        that a device is infected or controlled without the user's knowledge.
-      </p>
-    </note>
+  
 
     <note>
       <title>4.3.C.7</title>
