@@ -685,11 +685,11 @@ myTests().main()
 import document
 
 def showImage(image):
-    #id = "cspossible__projectAPI_graphics"
+    id = "cspossible__projectAPI_graphics"
     # for local testing
-    id = "rs-projectAPI_graphics"
+    #id = "rs-projectAPI_graphics"
     output = document.getElementById(id)
-    output.innerHTML = ""
+    output.textContent = ""
     img = document.createElement("img")
     img.src = image
     img.width = 400
