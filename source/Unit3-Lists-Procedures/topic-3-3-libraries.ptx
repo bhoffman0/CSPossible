@@ -689,7 +689,7 @@ def showImage(image):
     # for local testing
     id = "rs-projectAPI_graphics"
     output = document.getElementById(id)
-    output.innerHTML = ""
+    output.textContent = ""
     img = document.createElement("img")
     img.src = image
     img.width = 400
