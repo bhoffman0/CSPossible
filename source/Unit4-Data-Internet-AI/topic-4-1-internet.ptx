@@ -310,6 +310,9 @@
     <subsection xml:id="protocols">
     <title>Internet Protocols for Communication</title>
 
+    <idx>protocols</idx>
+    <idx>IP addresses</idx>
+
     <p>Watch the following <url href="https://www.youtube.com/watch?v=5o8CwafCxnU">video</url> 
       to learn about the protocols and IP addresses that enable communication on the Internet.
     </p>
@@ -435,7 +438,7 @@
        <title>Designing a Protocol</title>
       <statement><p>
         <term>Design a Protocol:</term> In groups or individually, design a protocol for passing notes in class.
-        The note can have 4 fields and separators: the date, the receiver's name, the message, the sender's name. 
+        The note can have 4 fields and separators: the date, the receiver's name, the message, and the sender's name. 
         Each group or person should choose a different order for these fields in their protocol and 
         a way to separate the fields, such as a comma, a semicolon, or a space. 
         Do not label the fields, just put the information in the order you choose, for example:
@@ -468,7 +471,9 @@
 
   <subsection xml:id="network">
     <title>Network Bandwidth and Latency</title>
-
+     <idx>network</idx>
+    <idx>bandwidth</idx>
+    <idx>latency</idx>
     
     <p>Watch the following <url href="https://www.youtube.com/watch?v=ZhEf7e4kopM">video</url> 
       to learn how data travels across the internet using electricity, light, and radio waves (wifi) and about
@@ -659,6 +664,9 @@
   <subsection xml:id="packets">
     <title>The Journey of a Packet</title>
 
+    <idx>packet</idx>
+    <idx>data packet</idx>
+
     <p>When you click on a link for a song or a video on the Internet, how does that song or video travel 
       to your computer or phone? It's too big to be sent all at once, so it is broken into smaller pieces called 
       <term>packets</term> or <term>data packets</term> that travel across the Internet and are reassembled at the 
@@ -676,13 +684,14 @@
 
     <p>Watch the following <url href="https://www.youtube.com/watch?v=AYdF7b3nMto">video</url> 
       to learn how the Internet uses <term>packet routing</term> to be <term>fault-tolerant</term>, meaning it can continue to function even 
-      when some devices or connections fail.  Another fun but longer video is <url href="https://www.youtube.com/watch?v=PBWhzz_Gn10">Warriors of the Net</url> that
+      when some devices or connections fail. Another fun but longer video is <url href="https://www.youtube.com/watch?v=PBWhzz_Gn10">Warriors of the Net</url> that
       animates a packet's journey through the Internet or see this short <url href="https://www.youtube.com/watch?v=m0QxVGiLToA">2-minute video</url>
     about packets. 
     </p>
 
     <video youtube="AYdF7b3nMto" label="video-internet-packet-routing" /> 
 
+    <idx>packet routing</idx>
 
 
     <p>Packets contain data as well as <term>metadata</term> that provides information such as the packet's

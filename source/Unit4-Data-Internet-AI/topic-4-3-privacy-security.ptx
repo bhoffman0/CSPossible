@@ -1,23 +1,44 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+
 <section xml:id="topic-4-3-privacy-security">
   <time minutes="90" />
   <title>Privacy and Security</title>
 
-  <idx>privacy-security</idx>
+  <idx>privacy</idx>
+  <idx>security</idx>
+  <idx>cyber</idx>
+  <idx>cybersecurity</idx>
+
   <introduction>
     <p>Quick Links:
-      <xref text="global" ref="data-collection-and-privacy-risks, how-systems-are-compromised,
-      protecting-digital-systems, LOs-4-3, vocab-4-3"/>
+      <xref text="global" ref="privacy, data-breaches, phishing, malware,
+      mfa, encryption, cyber-project, LOs-4-3, vocab-4-3"/>
     </p>
     <p>
-      In this topic, we examine how personal data is collected, how systems can be compromised,
-      and how digital systems and information can be protected.
+      <term>Cybersecurity</term> is always in the news and one
+      of the fastest growing career fields.
+      Cybersecurity professionals help organizations to protect their computer systems 
+      and data. 
+      In this topic, we examine how apps can collect personal data, which can create privacy concerns, 
+      how computer systems can be compromised, and how they can be protected.
     </p>
+
+    <image source="_static/Unit4images/data-cyber.jpg" alt="data-cybersecurity" width="70%" />
+
   </introduction>
 
-  <subsection xml:id="data-collection-and-privacy-risks">
-    <title>Data Collection, Tracking, and Privacy Risks</title>
+  <subsection xml:id="privacy">
+    <title>Data Collection and Data Privacy</title>
+       <idx>data privacy</idx>
+
+<p>Most of us do not realize the extent to which our personal data is collected by apps and websites. 
+  Watch the <url href="https://www.youtube.com/watch?v=bqWuioPHhz0">video</url> below 
+   about the massive amounts of data that apps on our smart phones and computers collect about us.
+  While you are watching the video, write down at least three types of data that is collected about Liz in the video.
+</p>
+
+ <video youtube="bqWuioPHhz0" label="video-data-collection" /> 
 
     <note>
       <title>4.3.A.1</title>
@@ -37,10 +58,35 @@
       </p>
     </note>
 
-    <note>
+     <idx><h>POGIL group activity</h><h>data collection video</h></idx>
+
+    <activity label="data-collection">
+      <title>Data Collection Video Reflection</title>
+      <statement>
+        <p>In groups or individually, after watching the <url href="https://www.youtube.com/watch?v=bqWuioPHhz0">video</url> above,
+          answer the following questions: 
+          </p>
+          <ol>
+            <li>List at least three types of data that are collected about Liz in the video.</li>
+            <li>What are some ways that this data can be used? Why do you think companies collect the data?</li>
+            <li>What are some privacy concerns that you have about the collection of this data?</li>
+          </ol>
+      </statement>
+      <response/> 
+      </activity>
+
+      <p>Have you ever gone to a website that recognizes you and welcomes you by name or by filling in 
+        your username and password?
+        Websites use various methods to collect data from users, including 
+        <term>cookies</term> which are small pieces of data stored in your web browser, for example
+        your name or login information or preferences. Companies use this data to
+      personalize your experience, but this can also raise privacy concerns.  </p>
+      
+      <idx>cookies</idx>
+      <note>
       <title>4.3.A.3</title>
       <p>
-        Cookies are small pieces of data that a website stores in a user's browser or device to
+        <term>Cookies</term> are small pieces of data that a website stores in a user's browser or device to
         remember information such as login status, preferences, or items in a shopping cart.
       </p>
     </note>
@@ -54,10 +100,43 @@
       </p>
     </note>
 
+      <activity label="cookies-activity">
+      <title>Cookies Activity</title>
+      <statement>
+        <p>If you are on a Chrome web browser on a computer, go to 
+          <url href="chrome://settings/content/all">chrome://settings/content/all</url> to see a
+          list of websites that you have visited that have stored cookies on your device. If not, answer
+          the following questions using the image below.</p>
+          <image source="_static/Unit4images/cookies.png" alt="cookies" width="100%" />
+          <ol>
+            <li>List a website and the number of cookies it has stored in the web browser Chrome for your account or for the account shown in the image above.</li>
+            <li>What purpose do you think the cookies serve? For example, 
+              does the website store login info?
+            </li>
+          </ol>
+      </statement>
+      <response/> 
+      </activity>
+
+      <idx>geolocation</idx>
+
+      <p>If your location is enabled on your phone, companies can collect your <term>geolocation data</term>
+      through their apps. This data can be used to provide location-based services, such as maps or local
+      recommendations, but it can also pose privacy risks. Limiting location access can help protect your privacy.</p>
+
+      <note>
+      <title>4.3.C.7</title>
+      <p>
+        Apps and websites sometimes request permissions like access to location, contacts,
+        microphone, camera, or photos. Reviewing and limiting permissions helps protect privacy
+        and reduces the chance of misuse if an app is untrustworthy or becomes compromised.
+      </p>
+    </note>
+    
     <note>
       <title>4.3.A.5</title>
       <p>
-        Geolocation data estimates or identifies a device's physical location. It can enable useful
+        <term>Geolocation</term> data estimates or identifies a device's physical location. It can enable useful
         services, like navigation or nearby results, but can also reveal sensitive patterns, such as
         where someone lives, goes to school, works, or spends time.
       </p>
@@ -73,15 +152,126 @@
       </p>
     </note>
 
+
+<activity label="geolocation-match">
+  <statement>
+    <p>
+      Geolocation data can be useful, but it can also create privacy risks.
+      Drag each example from the left and drop it into the correct category:
+      Benefit or Potential Harm of Geolocation Data.
+      Click the "Check Me" button to see if you are correct.
+    </p>
+  </statement>
+
+  <feedback>
+    <p>Think about how knowing someone's physical location can be helpful
+      or potentially put their privacy or safety at risk. Review the
+      geolocation discussion above and try again.</p>
+  </feedback>
+
+  <cardsort>
+    <match>
+      <premise>Driving directions</premise>
+      <premise>Looking for a nearby restaurant</premise>
+      <premise>Local weather alerts</premise>
+      <premise>Helping emergency responders</premise>
+      <response>Benefits of Geolocation Data</response>
+    </match>
+
+    <match>
+      <premise>Showing where someone lives</premise>
+      <premise>Tracking daily routines of others</premise>
+      <premise>Showing when you are on vacation</premise>
+      <premise>Showing ads or selling data to local businesses</premise>
+      <response>Potential Harms</response>
+    </match>
+  </cardsort>
+</activity>
+
+   <idx>personally identifiable information</idx>
+    <idx>PII</idx>
+
+    <p><term>Personally identifiable information (PII)</term> is any data that can be used to 
+      identify a specific individual, for example a person's name (if it is not very common), 
+      address, phone number, email address, or social security number. 
+      PII can be used by criminals to steal someone's identity or commit fraud.
+      Watch the following  
+    <url href="https://www.youtube.com/watch?v=yZj5nmLYiW4">video</url> to learn more about PII:
+    </p>
+
+    <video youtube="yZj5nmLYiW4" label="video-PII" />
+
     <note>
       <title>4.3.A.7</title>
       <p>
-        Some data is personally identifiable information (PII). Some PII is directly identifying,
+        Some data is <term>personally identifiable information (PII)</term>. Some PII is directly identifying,
         like a name or phone number, and some becomes identifying when combined with other data.
         Examples include: full name, phone number, email address, Social Security number,
         government ID numbers, precise location, and biometrics.
       </p>
     </note>
+    
+    <activity label="pii-activity">
+      <title>PII Activity</title>
+      <statement>
+        <p>Go to 
+          <url href="https://aboutmyinfo.org/identity">https://aboutmyinfo.org/identity</url> to 
+          learn more about PII in census data and how it can be used to identify you. 
+          Enter a birthdate (it doesn't have to be your actual birthdate) and your zipcode or take
+          a look at the Samples tab. The aggregation (combination) of this data can 
+          uniquely identify a person and put them at risk of identity theft or fraud.
+          Answer the following questions below based on your results or one of the samples:
+          </p>
+          
+          <ol>
+            <li>What PII is collected by this website?</li>
+            <li>In your results or in one of the samples, how many people have the same birthdate in that zip code?</li>
+            <li>In your results or in one of the samples, what was the population size for that zip code?</li>
+            <li>Can this aggregate data be used to identify an individual? In which situations (consider population size
+              in a zip code) could this data be used to identify an individual?
+            </li>
+          </ol>
+      </statement>
+      <response/> 
+      </activity>
+
+   
+<activity label="pii-match">
+  <statement>
+    <p>
+      Drag and drop the types of data below onto the categories of 
+      PII (Personally Identifiable Information) or Non-PII (Non-Personally Identifiable Information). 
+      
+      Some information may not directly identify an individual by itself,
+      but could become identifying when combined with other information.
+      Click the "Check Me" button to see if you are correct.
+    </p>
+  </statement>
+
+  <feedback>
+    <p>Review the discussion of personally identifiable information (PII)
+      in the lesson and try again.</p>
+  </feedback>
+
+  <cardsort>
+    <match>
+      <response>PII</response>
+      <premise>Social Security number</premise>
+      <premise>Email address</premise>
+      <premise>Phone number</premise>
+      <premise>Precise GPS location</premise>
+      <premise>Fingerprint or facial recognition data</premise>       
+    </match>
+
+    <match>
+      <response>Non-PII</response>
+      <premise>Common first name like John</premise>
+      <premise>Favorite type of music</premise>
+      <premise>Number of steps walked in one day</premise>
+      <premise>Type of web browser being used</premise>
+    </match>
+  </cardsort>
+</activity>
 
     <note>
       <title>4.3.A.8</title>
@@ -91,15 +281,77 @@
         others, making it difficult to fully control or remove.
       </p>
     </note>
+
+<activity label="ad-tracking">
+  <statement>
+    <p>An online shopper visits several different shopping websites looking for a new jacket. After completing their shopping, the person starts browsing news and social media websites and is surprised to see advertisements for jackets on these unrelated websites.</p>
+    <p>Which of the following best explains how this might occur?</p>
+  </statement>
+  <choices randomize="yes">
+
+    <choice>
+      <statement>
+        <p>Each website and advertiser has immediate access to the browsing activity and 
+          search history of the user on other websites.</p>
+      </statement>
+      <feedback>
+        <p>No, individual websites and advertisers do not automatically have access to the browsing activity or search history of every other website.</p>
+      </feedback>
+    </choice>
+
+    <choice correct="yes">
+      <statement>
+        <p>Cookies and other identifiers saved in the browser can allow tracking 
+          across multiple websites to serve targeted ads.</p>
+      </statement>
+      <feedback>
+        <p>Correct! Third-party advertising services can use cookies and other identifiers to recognize browsers 
+          across different websites, track browsing activity, and display targeted advertisements based on products 
+          a user has previously viewed.</p>
+      </feedback>
+    </choice>
+
+    <choice>
+      <statement>
+        <p>Purchasing an online item automatically triggers advertisements.</p>
+      </statement>
+      <feedback>
+        <p>No, the purchase of an online item does not automatically trigger advertisements on other websites. </p>
+      </feedback>
+    </choice>
+
+    <choice>
+      <statement>
+        <p>Search engines require every website to share its complete database of user activity.</p>
+      </statement>
+      <feedback>
+        <p>No, search engines do not require websites to share their complete databases of user activity. 
+      </p>
+      </feedback>
+    </choice>
+
+  </choices>
+</activity>
+
+
   </subsection>
 
-  <subsection xml:id="how-systems-are-compromised">
-    <title>How Systems and Information Can Be Compromised</title>
+  <subsection xml:id="data-breaches">
+    <title>Data Breaches</title>
 
-    <note>
+    <idx>data breach</idx>
+    <idx>cyber attack</idx>
+
+    <p><term>Cyber attacks</term> are when <term>hackers</term>
+      exploit vulnerabilities or attack computer systems to cause damage, gain unauthorized access, 
+      or steal data. One type of cyber attack is a <term>data breach</term>, where hackers break into a 
+      computer system to steal sensitive data, for example PII like usernames, passwords, and
+      credit card numbers. This information can be used for identity theft, financial fraud, or other malicious purposes.</p>
+      
+      <note>
       <title>4.3.B.1</title>
       <p>
-        A data breach occurs when sensitive data is accessed, disclosed, or stolen by an unauthorized
+        A <term>data breach</term> occurs when sensitive data is accessed, disclosed, or stolen by an unauthorized
         party, often because data was stored insecurely, shared improperly, or protected by weak
         security controls.
       </p>
@@ -114,6 +366,24 @@
       </p>
     </note>
 
+      <note>
+      <title>4.3.B.8</title>
+      <p>
+        Email is not inherently private. Email messages can be forwarded, stored, intercepted, or
+        accessed by people other than the sender and receiver, which can expose sensitive information
+        if an account or message is accessed by an unauthorized party.
+      </p>
+    </note>
+
+    <p>
+    <term>Passwords</term> are one of the main ways to protect computers and data 
+    from unauthorized access. Many data breaches occur due to weak passwords that can be
+    easily guessed or reused passwords that have been compromised (stolen) in previous breaches. 
+    Watch the <url href="https://www.youtube.com/watch?v=qLMIK5YVgfA">video</url> below about passwords.
+    </p>
+    
+    <video youtube="qLMIK5YVgfA" label="video-passwords" />
+
     <note>
       <title>4.3.B.3</title>
       <p>
@@ -123,10 +393,99 @@
       </p>
     </note>
 
+
+<activity label="password-reuse-data-breach">
+  <statement>
+    <p>A user creates an account on several websites and uses the same password for every account. One of the websites experiences a data breach, exposing the user's username and password.</p>
+    <p>Which of the following is the most likely security risk?</p>
+  </statement>
+  <choices randomize="yes">
+    <choice correct="yes">
+      <statement>
+        <p>The attacker can use the exposed password to attempt to access the user's accounts on other websites.</p>
+      </statement>
+      <feedback>
+        <p>Correct! Reusing passwords across multiple websites creates a security risk. If one website experiences a data breach, an attacker can try the stolen username and password on other websites in an attempt to gain unauthorized access.</p>
+      </feedback>
+    </choice>
+    <choice>
+      <statement>
+        <p>The attacker can lock the user out of their accounts. </p>
+      </statement>
+      <feedback>
+        <p>No. The attacker probably will not be able to lock the user out of their accounts on every website. </p>
+      </feedback>
+    </choice>
+    <choice>
+      <statement>
+        <p>The user's computer will become infected with malware.</p>
+      </statement>
+      <feedback>
+        <p>No. A data breach that exposes a password does not infect the user's computer with malware. The primary risk is that the stolen credentials may be used to access other accounts.</p>
+      </feedback>
+    </choice>
+    <choice>
+      <statement>
+        <p>The attacker can only access the website where the original data breach occurred.</p>
+      </statement>
+      <feedback>
+        <p>No. If the user reuses the same password on multiple websites, an attacker can attempt to use the exposed credentials to access accounts on other services as well.</p>
+      </feedback>
+    </choice>
+  </choices>
+</activity>
+
+    <idx><h>POGIL group activity</h><h>password activity</h></idx>
+
+    <activity label="password-activity">
+      <title>Password Activity</title>
+      <statement>
+        <p>In groups or individually, explore the following websites to answer the questions below:
+          </p>
+          <ol>
+        
+            <li>Go to <url href="https://www.security.org/how-secure-is-my-password/">How Secure Is My Password</url>
+            or <url href="https://mobile-csp.org/webapps/passwords/index.html">Mobile CSP Password Strength Calculator</url> 
+            to test the strength of passwords. Do not enter your exact passwords, but try similar passwords of 
+            different lengths. Weak passwords are often too short. If you just use lowercase letters, how long 
+            does the password need to be so that it is not hacked in 2 minutes or less? 
+            How long does it have to be to last more than 2 minutes if you add some complexity with numbers, 
+            mixed-case, and special characters?</li>
+            
+            <li>Go to <url href="https://haveibeenpwned.com/">Have I Been Pwned</url> which is a website that 
+              checks if an email address has been compromised in a data breach where some PII and possibly a 
+              password associated with it has been stolen. Try your email address. If it has not been in a 
+              breach, try <c>bob@gmail.com</c>. How many times has it been compromised? Scroll down to see the 
+              details of the breaches. Describe one of the data breaches and what data was compromised in 1 
+              sentence below. Note that in data breaches that involve passwords, even though they are usually 
+              encrypted, the weak passwords can be easily cracked.</li>
+          </ol>
+      </statement>
+      <response/> 
+      </activity>
+
+      </subsection>
+
+     <subsection xml:id="phishing">
+    <title>Phishing</title>
+    
+    <idx>phishing</idx>
+
+    <p>
+    <term>Phishing</term> is a common technique that is used to trick a user into providing personal 
+    information usually through email. This is a type of <term>social engineering</term> attack
+    where hackers manipulate people through emails and phone calls to gain access to sensitive information like
+    usernames and passwords to access private accounts. A malicious phishing or malware link can be disguised 
+    on a web page or in an email message. Watch the <url href="https://www.youtube.com/watch?v=qkzAveeAuts">video</url> 
+    below on phishing.
+  </p>
+
+  <video youtube="qkzAveeAuts" label="video-phishing" />
+
     <note>
       <title>4.3.B.4</title>
       <p>
-        Social engineering is a strategy adversaries use to compromise systems by targeting people
+       <term>Social engineering</term> is a strategy adversaries use to compromise systems by targeting people
         rather than exploiting a technical weakness. An adversary influences a user into taking an
         action that compromises security, often by impersonating a trusted source or creating urgency,
         fear, or curiosity.
@@ -136,7 +495,7 @@
     <note>
       <title>4.3.B.5</title>
       <p>
-        Phishing is a type of social engineering in which an adversary attempts to influence a user
+        <term>Phishing</term> is a type of social engineering in which an adversary attempts to influence a user
         into revealing personal information, such as passwords or verification codes. Adversaries can
         use that information to access accounts, financial services, or other protected systems.
       </p>
@@ -160,25 +519,7 @@
       </p>
     </note>
 
-    <note>
-      <title>4.3.B.8</title>
-      <p>
-        Email is not inherently private. Email messages can be forwarded, stored, intercepted, or
-        accessed by people other than the sender and receiver, which can expose sensitive information
-        if an account or message is accessed by an unauthorized party.
-      </p>
-    </note>
-
-    <note>
-      <title>4.3.B.9</title>
-      <p>
-        Malware is software designed to harm a device or enable unauthorized access, such as by
-        stealing data, monitoring user activity, or controlling parts of the system. Malware can be
-        installed through unsafe downloads, malicious attachments, or compromised websites.
-      </p>
-    </note>
-
-    <note>
+        <note>
       <title>4.3.B.10</title>
       <p>
         Adversaries often focus on moments when users are rushed or confused such as with urgent
@@ -186,47 +527,124 @@
         share information, or approve access without noticing warning signs.
       </p>
     </note>
-  </subsection>
 
-  <subsection xml:id="protecting-digital-systems">
-    <title>Protecting Digital Systems and Information</title>
+    <activity label="phishing-smart-home-device">
+    <title>AP CSP Practice</title>
+      <statement>
+    <p>A user purchased a new smart home device with embedded software and connected the device to a home network. The user then registered the device with the manufacturer, setting up an account using a personal email and password.</p>
+    <p>Which of the following explains how a phishing attack could occur against the user of the smart home device?</p>
+  </statement>
+  <choices randomize="yes">
+    <choice>
+      <statement>
+        <p>The user’s account is sent an overwhelming number of messages in an attempt to disrupt service on the user’s home network.</p>
+      </statement>
+      <feedback>
+        <p>No. This describes a denial-of-service attack, in which an overwhelming amount of traffic or messages is used to disrupt a service or network.</p>
+      </feedback>
+    </choice>
+    <choice correct="yes">
+      <statement>
+        <p>The user is sent an email appearing to be from the manufacturer, asking the user to confirm the account password by clicking on a link in the email and entering the password on the resulting page.</p>
+      </statement>
+      <feedback>
+        <p>Correct! This is an example of a phishing attack. The attacker disguises an email as a legitimate message from the manufacturer to trick the user into revealing a password through a fraudulent Web page.</p>
+      </feedback>
+    </choice>
+    <choice>
+      <statement>
+        <p>A vulnerability in the device’s software is exploited to install software that reveals the user’s password to an unauthorized individual.</p>
+      </statement>
+      <feedback>
+        <p>No. This describes an attack that exploits a software vulnerability to install malicious software, such as spyware or a keylogger, to obtain sensitive information.</p>
+      </feedback>
+    </choice>
+    <choice>
+      <statement>
+        <p>A vulnerability in the device’s software is exploited to gain unauthorized access to other devices on the user’s home network.</p>
+      </statement>
+      <feedback>
+        <p>No. This describes an attack that exploits a software vulnerability to gain unauthorized access to other devices on a network. It is not an example of phishing.</p>
+      </feedback>
+    </choice>
+  </choices>
+</activity>
+
+    <idx><h>POGIL group activity</h><h>phishing quiz</h></idx>
+
+    <activity label="phishing-quiz">
+      <title>Phishing Quiz</title>
+      <statement>
+        <p>In groups or individually, do the <url href="https://phishingquiz.withgoogle.com/">Google Phishing Quiz</url> to practice identifying phishing 
+          emails. Answer the following questions:
+          </p>
+          <ol>
+        
+            <li>What was your score?</li>
+            <li>What are some of the clues that helped you identify phishing emails?</li>
+            <li>What did you find to be the most challenging phishing technique to spot?</li>
+            <li>How do you think the use of generative AI will affect phishing attacks?</li>
+          </ol>
+      </statement>
+      <response/> 
+      </activity>
+ 
+    </subsection>
+   
+    <subsection xml:id="malware">
+    <title>Malware</title>
+
+    <idx>malware</idx>
+    <idx>virus</idx>
+
+    <p><term>Malware</term> which stands for MALicious softWARE is software intended to damage a computing 
+      system or to take partial control over its operation. A computer <term>virus</term> is a type of malware 
+      that can copy itself to spread from computer to computer. Viruses often attach themselves to emails or downloaded programs. 
+      Watch the <url href="https://www.youtube.com/watch?v=XU8PHihT_P4">video</url> below about malware:</p>
+
+      <video youtube="XU8PHihT_P4" label="video-malware" />
 
     <note>
-      <title>4.3.C.1</title>
+      <title>4.3.B.9</title>
       <p>
-        Authentication is how a system verifies a user's identity, such as with passwords, passkeys,
-        or biometrics. Strong authentication can reduce unauthorized access to devices and accounts.
+        <term>Malware</term> is software designed to harm a device or enable unauthorized access, such as by
+        stealing data, monitoring user activity, or controlling parts of the system. Malware can be
+        installed through unsafe downloads, malicious attachments, or compromised websites.
       </p>
     </note>
 
-    <note>
-      <title>4.3.C.2</title>
-      <p>
-        Multifactor authentication (MFA) requires two or more different pieces of evidence, typically
-        in at least two of the following categories: knowledge (something a user knows), possession
-        (something a user has), and biometrics (something a user is). MFA adds protection because an
-        attacker must compromise multiple factors, not just a single password, to access an account.
-      </p>
-    </note>
+    <p>Malware can spread by email attachments, downloading from sites that are not reputable, network 
+      connections from infected computers, and copying infected files from computer to computer on portable 
+      memory. So don’t click or open anything where you don’t know the source. A computer that is infected may 
+      stop working, display strange messages, delete files, be controlled by others, steal personal 
+      information and infect other computers. 
+    </p>
+    <p>Other types of cyber attacks include <term>ransomware</term> attacks which 
+      encrypt and lock computer systems until a ransom is paid, and <term>Distributed Denial of Service (DDoS)</term> attacks, where multiple compromised computers are used to overwhelm a target system with requests in order to disrupt its normal operation.</p>
 
-    <note>
-      <title>4.3.C.3</title>
-      <p>
-        Encryption encodes data so it cannot be read without a key. Decryption decodes it so it can
-        be read. Encryption helps protect data stored on devices and sent over networks.
-      </p>
-    </note>
+      <activity label="malware-activity">
+      <title>Malware Detection</title>
+      <statement>
+        <p>In groups or individually, go to <url href="https://fortiguard.fortinet.com/threat-map">Cyber Threat Map</url> 
+          to see a real-time map of cyber attacks around the world.  
+          </p>
+          <ol>
+            <li>What is the top targeted country for cyber attacks in the last 24 hours?</li>
+            <li>What is the Top Threat (virus or attack) in the last 24 hours? Click on it to find out more information.</li>
+          </ol>
+      </statement>
+      <response/>
+    </activity>
 
-    <note>
-      <title>4.3.C.4</title>
-      <p>
-        End-to-end encryption is a method of secure communication in which data are encrypted on the
-        sender's device and can only be decrypted on the intended recipient's device, so services that
-        transmit or store the data along the way cannot read the contents without the decryption key.
-      </p>
-    </note>
 
-    <note>
+
+      <p>Computer virus and malware scanning software can protect a computing system 
+        against infection. Many operating systems like Windows come with their own free 
+        malware scanners like Windows Defender. It is very 
+        important to automatically update the malware scanning software with newly discovered 
+        malware signatures, because new viruses are created every day.  Regular software updates for all software help to fix errors that might allow hackers or malware to compromise them. It's important to update your computer's software regularly to keep it secure. Recent advances in AI have made it easier to create malware and other attacks, but AI tools are also being developed to detect software flaws and to defend against cyber threats.</p>
+
+      <note>
       <title>4.3.C.5</title>
       <p>
         Systems can be compromised when adversaries exploit software flaws. Installing software updates
@@ -242,14 +660,267 @@
       </p>
     </note>
 
+
+<activity label="malware-prevention">
+  <statement>
+    <p>Which of the following can you do to help prevent malware infections? Select all that apply.</p>
+  </statement>
+  <choices multiple="yes" randomize="yes">
+    <choice correct="yes">
+      <statement>
+        <p>Run regular software updates.</p>
+      </statement>
+      <feedback>
+        <p>Correct! Software updates often include security patches that fix vulnerabilities that malware could exploit.</p>
+      </feedback>
+    </choice>
+    <choice correct="yes">
+      <statement>
+        <p>Run malware scanning software.</p>
+      </statement>
+      <feedback>
+        <p>Correct! Malware scanning software can detect, block, and remove malicious software from a device.</p>
+      </feedback>
+    </choice>
+    <choice correct="yes">
+      <statement>
+        <p>Do not click or open anything from a source that you do not know or cannot identify.</p>
+      </statement>
+      <feedback>
+        <p>Correct! Avoiding suspicious links, downloads, and attachments reduces the risk of accidentally installing malware or exposing a device to malicious content.</p>
+      </feedback>
+    </choice>
+    <choice>
+      <statement>
+        <p>Open an email attachment from an unknown sender.</p>
+      </statement>
+      <feedback>
+        <p>Incorrect. Opening attachments from unknown or untrusted senders can expose a device to malware. Such attachments should be avoided unless their legitimacy can be verified.</p>
+      </feedback>
+    </choice>
+  </choices>
+</activity>
+
+  </subsection>
+
+  <subsection xml:id="mfa">
+    <title>Multi-factor Authentication</title>
+    <idx>authentication</idx>
+    <idx>multi-factor authentication</idx>
+    <idx>two-factor authentication</idx>
+    <idx>MFA</idx>
+    <idx>passwords</idx>
+
+    <p><term>User authentication</term> is how computer systems verify who you are. The simplest 
+      authentication method is logging in with usernames and passwords. Some other authentication methods include <term>one-time authentication codes</term> that are texted or generated in apps on your phone, <term>passkeys</term> that are saved on your device, or <term>biometrics</term> which are biological features like fingerprints or face recognition. 
+      Strong authentication is essential for cybersecurity of computer systems to avoid cyber attacks and data breaches.
+    </p>
     <note>
-      <title>4.3.C.7</title>
+      <title>4.3.C.1</title>
       <p>
-        Apps and websites sometimes request permissions like access to location, contacts,
-        microphone, camera, or photos. Reviewing and limiting permissions helps protect privacy
-        and reduces the chance of misuse if an app is untrustworthy or becomes compromised.
+        <term>Authentication</term> is how a system verifies a user's identity, such as with passwords, passkeys,
+        or biometrics. Strong authentication can reduce unauthorized access to devices and accounts.
       </p>
     </note>
+
+    <p>Many organizations use <term>multi-factor authentication (MFA)</term> which asks 
+    for additional authentication in addition to the password, just in case the password gets compromised. Users are asked to present several separate pieces of evidence such as:
+    </p>
+    <image source="_static/Unit4images/multifactor-authentication.png" alt="mfa" width="100%" />
+    <ul>
+      <li><term>Something You Know:</term> for example your password or the answers to security questions that you have set up</li>
+      <li><term>Something You Have:</term> for example a code texted to the your phone, or an authentication app that generates one-time codes on your phone, or passkeys on your device.</li>
+      <li><term>Something You Are:</term> for example biometrics such as fingerprints or face recognition</li>
+    </ul>
+
+    <p>Watch the <url href="https://www.youtube.com/watch?v=wUNEXJRKrcI">video</url> below for more information on two-factor (2FA) and multi-factor (MFA) authentication.  </p>
+
+    <video youtube="wUNEXJRKrcI" label="video-mfa" />
+
+    <note>
+      <title>4.3.C.2</title>
+      <p>
+        <term>Multifactor authentication</term> (MFA) requires two or more different pieces of evidence, typically
+        in at least two of the following categories: knowledge (something a user knows), possession
+        (something a user has), and biometrics (something a user is). MFA adds protection because an
+        attacker must compromise multiple factors, not just a single password, to access an account.
+      </p>
+    </note>
+
+
+
+<activity label="two-factor-authentication-mcq">
+  <statement>
+    <p>Which of the following can be used for two-factor authentication (2FA) in addition to entering a password?</p>
+  </statement>
+  <choices randomize="yes">
+    <choice>
+      <statement correct="yes">
+        <p>Entering a token that is emailed to you.</p>
+      </statement>
+      <feedback>
+        <p>Correct! An additional verification token sent by email provides another authentication step beyond entering a password.</p>
+      </feedback>
+    </choice>
+    <choice correct="no">
+      <statement>
+        <p>Entering your password twice.</p>
+      </statement>
+      <feedback>
+        <p>No. Entering the same password twice does NOT count as two-factor authentication. Both entries rely on the same authentication factor: something you know.</p>
+      </feedback>
+    </choice>
+    <choice correct="yes">
+      <statement>
+        <p>Your device recognizing your face.</p>
+      </statement>
+      <feedback>
+        <p>Yes. Face recognition is a biometric authentication factor (something you are), which is different from a password (something you know).</p>
+      </feedback>
+    </choice>
+    <choice correct="no">
+      <statement>
+        <p>Logging in on two devices</p>
+      </statement>
+      <feedback>
+        <p>No. Logging in on two devices is not 2FA.  </p>
+      </feedback>
+    </choice>
+  </choices>
+</activity>
+
+<activity label="ap-mfa-mcq">
+  <title>AP CSP Practice</title>
+  <statement>
+    <p>A Web site uses several strategies to prevent unauthorized individuals from 
+      accessing user accounts. Which of the following is NOT an example of multifactor 
+      authentication?</p>
+  </statement>
+  <choices randomize="yes">
+    <choice>
+      <statement>
+        <p>Each employee for a company is issued a USB device that contains a unique 
+          token code. To log into a company computer, an employee must insert the USB 
+          device into the computer and provide a correct password.</p>
+      </statement>
+      <feedback>
+        <p>No. This is an example of multifactor authentication because it requires two 
+          different authentication factors: something the employee has (the USB device) 
+          and something the employee knows (the password).</p>
+      </feedback>
+    </choice>
+    <choice>
+      <statement>
+        <p>After logging into an account from a new device, a user must enter a code that
+           is sent via email to the email address on file with the account.</p>
+      </statement>
+      <feedback>
+        <p>No. This is an example of multifactor authentication because it requires a 
+          password and an additional verification code sent through a separate 
+          communication channel.</p>
+      </feedback>
+    </choice>
+    <choice>
+      <statement>
+        <p>In order to log into an account, a user must provide both a password and a 
+          fingerprint that is captured using the user’s device.</p>
+      </statement>
+      <feedback>
+        <p>No. This is an example of multifactor authentication because it requires two 
+          different authentication factors: something the user knows (the password) and 
+          something the user is (the fingerprint).</p>
+      </feedback>
+    </choice>
+    <choice correct="yes">
+      <statement>
+        <p>When a user enters an incorrect password more than two times in a row, the 
+          user is locked out of the account for 24 hours.</p>
+      </statement>
+      <feedback>
+        <p>Correct! This is NOT an example of multifactor authentication. It is an 
+          account security measure that limits repeated login attempts. The user only 
+          needs to provide one authentication factor (a password) to log in.</p>
+      </feedback>
+    </choice>
+  </choices>
+</activity>
+
+     <idx><h>POGIL group activity</h><h>MFA activity</h></idx>
+
+    <activity label="mfa-activity">
+      <title>Multifactor Authentication Activity</title>
+      <statement>
+        <p>In groups or individually, discuss and type in your responses for the following questions:
+          </p>
+          <ol>
+            <li>Share the authentication methods used by your computer or your school account. 
+              Does it use MFA? If it does not use MFA, what could be
+              added to make it more secure? What is one thing you know and one
+              thing you have or are in this MFA method?
+            </li>
+            <li>How does MFA improve security compared to using just a password?
+              If a user fell victim to a phishing attack and their password was stolen, 
+              how would MFA help protect their account?
+            </li>
+          </ol>
+      </statement>
+      <response/> 
+      </activity>
+
+</subsection>
+
+<subsection xml:id="encryption">
+  <title>Encryption and Permissions</title>
+  <idx>encryption</idx>
+  <idx>end-to-end encryption</idx> 
+  <idx>Caesar cipher</idx>
+  
+  <p><term>Encryption</term> is used on the Internet every day to convert sensitive data like
+      passwords and credit card numbers into an unreadable scrambled code that cannot be read by others. 
+      For example, "john" might be encrypted to "k1w*kqz". If you see
+      <term>https</term> in a website's URL, it means that the data sent between your computer and the website 
+      is encrypted. The encrypted data is only decoded with a secret <term>key</term> when it reaches an authorized account using 
+      <term>decryption</term>. This is called <term>end-to-end encryption</term>. Watch the <url href="https://www.youtube.com/watch?v=ZghMPWGXexs">video</url>
+    below to learn more about encryption:</p>
+
+    <video youtube="ZghMPWGXexs" label="video-encryption" />
+
+    <note>
+      <title>4.3.C.3</title>
+      <p>
+        <term>Encryption</term> encodes data so it cannot be read without a key. Decryption decodes it so it can
+        be read. Encryption helps protect data stored on devices and sent over networks.
+      </p>
+    </note>
+
+    <note>
+      <title>4.3.C.4</title>
+      <p>
+        <term>End-to-end encryption</term> is a method of secure communication in which data are encrypted on the
+        sender's device and can only be decrypted on the intended recipient's device, so services that
+        transmit or store the data along the way cannot read the contents without the decryption key.
+      </p>
+    </note>
+
+      <idx><h>POGIL group activity</h><h>encryption</h></idx>
+
+    <activity label="encryption-activity">
+      <title>Caesar Cipher Encryption Activity</title>
+      <statement>
+        <p>In groups or individually, try the <url href="https://raw.org/tool/caesar-cipher/">Caesar Cipher encoder/decoder</url> or the <url href="https://www.mobile-csp.org/webapps/crypto/caesar.html">Mobile CSP Caesar Cipher Tool</url> embedded below to encode and decode messages in the questions below. The Caesar cipher is a simple encryption technique that shifts letters in the alphabet by a fixed number of positions. For example, with a shift of 3, A becomes D, B becomes E, and so on.
+          </p>
+          <interactive iframe="https://mobile-csp.org/webapps/crypto/caesar.html" width="100%" aspect="2:1"/>
+
+          <ol>
+            <li>Use the Caesar cipher to encrypt your name with a shift of 3 and write it below. Then, decrypt your name with the tools above to check your answer. 
+            </li>
+            <li>Use the Caesar cipher to encrypt a short message to someone in your class with a shift of 5 and write the encrypted text below. Decrypt someone else's message (or yours if you are working alone) with the tools above to check your answer.</li>
+            <li>Decrypt the message "IY OY LAT!" and write the decrypted message below. You will have to try different shifts to find the correct one.</li>
+            <li>Why isn't the Caesar cipher used for Internet security? How could it be broken?</li>
+          </ol>
+      </statement>
+      <response/> 
+      </activity>
 
     <note>
       <title>4.3.C.8</title>
@@ -260,6 +931,77 @@
         measure prevents all compromise, so systems often use multiple protections together.
       </p>
     </note>
+
+
+<activity label="security-measures-match">
+  <title>Security Measures</title>
+  <statement>
+    <p>
+      Different security measures help protect computer systems and data
+      against different threats. Drag each security measure from the left
+      and drop it into the cyber threat that it helps to prevent.
+      Click the "Check Me" button to see if you are correct.
+    </p>
+  </statement>
+
+  <feedback>
+    <p>
+      Think about what each security measure is designed to protect against.
+      Authentication controls who can access an account, encryption protects
+      data from being read by unauthorized individuals, software updates
+      address known vulnerabilities, and permissions restrict what an
+      application is allowed to access. Try again!
+    </p>
+  </feedback>
+
+  <cardsort>
+    <match>
+      <premise>Multi-Factor Authentication</premise>
+      <response>Phishing attacks for unauthorized access</response>
+    </match>
+
+    <match>
+      <premise>Encryption</premise>
+      <response>Stolen passwords and credit card numbers being read</response>
+    </match>
+
+    <match>
+      <premise>Software Updates</premise>
+      <response>Hackers exploiting known vulnerabilities</response>
+    </match>
+
+    <match>
+      <premise>Limiting Permissions</premise>
+      <response>Geolocation tracking</response>
+    </match>
+  </cardsort>
+</activity>
+
+
+  </subsection>
+
+  <subsection xml:id="cyber-project">
+    <title>Cybersecurity Project</title>
+         
+    <idx><h>projects</h><h>cybersecurity</h></idx>
+    <idx><h>POGIL group activity</h><h>cyber project</h></idx>
+
+    <activity label="cyber-project-activity">
+      <title>Cybersecurity Project</title>
+      <statement>
+        <p>In groups or individually, Investigate a famous or recent malware, hacking, 
+          or security breach incident. Answer the following questions below:
+          </p>
+          <ol>
+          <li>Describe the incident. What happened? Who was involved? When did it happen? </li>
+          <li>What were the impacts of the incident?</li>
+          <li>What security measures could have been taken to prevent the incident?</li>
+          <li>What lessons can be learned from the incident to improve cybersecurity in the future?</li>
+          </ol>
+      </statement>
+      <response/> 
+      </activity>
+
   </subsection>
 
   <subsection xml:id="LOs-4-3">
@@ -289,5 +1031,56 @@
 
   <subsection xml:id="vocab-4-3">
    <title>Vocabulary Review</title>
+
+    <activity label="vocab-match-4-3">
+          <statement>
+          <p>
+          Review the vocabulary in this lesson. Drag the vocabulary term from the left and drop it
+          on its correct definition on the right.
+          Click the "Check Me" button to see if you are correct.
+        </p>
+      </statement>
+
+      <feedback>
+        <p>Find the words in the lesson above and try again.</p>
+      </feedback>
+       <cardsort>
+       <match>
+          <premise>Cookies</premise>
+          <response>small pieces of data about the user that a website stores in the browser</response>  
+        </match>
+
+        <match>
+          <premise>Personally Identifiable Information (PII)</premise>
+          <response>sensitive information that can be used to identify a specific individual</response>
+        </match>
+        <match></match>
+        <match>
+          <premise>Data Breach</premise>
+          <response>a cyber attack when sensitive data is accessed, disclosed, or stolen by an unauthorized party</response>
+        </match>
+      
+          <match>
+          <premise>Phishing</premise>
+          <response>social engineering to trick people into revealing login information</response>
+          </match>
+          <match>
+          <premise>Malware</premise>
+          <response>software designed to harm a device or enable unauthorized access, </response>
+          </match>
+        
+          <match>
+            <premise>Multifactor authentication (MFA)</premise>
+            <response>verifying a user's identity with two or more different pieces of evidence</response>
+            </match>
+            
+            <match>
+              <premise>End-to-end encryption</premise>
+              <response>secure communication method where data is encrypted on one end and only decrypted when it reaches the other end.</response>
+            </match>
+             
+        </cardsort>
+      </activity>
+
   </subsection>
 </section>

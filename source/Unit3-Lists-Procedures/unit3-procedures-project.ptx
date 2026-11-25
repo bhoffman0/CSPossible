@@ -79,6 +79,8 @@
     <table xml:id="table-password-check">
   <title>Password Validation Requirements and Outputs</title>
   <tabular halign="left">
+    <col width="25%"/>
+    <col width="75%"/>
     <row header="yes" bottom="medium">
       <cell>Input</cell>
       <cell>Output</cell>
